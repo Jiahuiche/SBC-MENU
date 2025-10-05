@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8">
+    <Prefix name="" IRI="http://www.semanticweb.org/x/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Baptism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Client"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Constraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FamilyEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ingredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Menu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wedding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ApplyOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CompatibleWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DrinkOF"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IngredientOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MainCourseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Organize"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ProposedMenu"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SarterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConstraint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NumberOfPeople"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PhoneNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Date/Season"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Baptism"/>
+        <Class IRI="#FamilyEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communion"/>
+        <Class IRI="#FamilyEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conference"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FamilyEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wedding"/>
+        <Class IRI="#FamilyEvent"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Baptism"/>
+        <Class IRI="#Communion"/>
+        <Class IRI="#Wedding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Client"/>
+        <Class IRI="#Constraint"/>
+        <Class IRI="#Dish"/>
+        <Class IRI="#Drink"/>
+        <Class IRI="#Event"/>
+        <Class IRI="#Ingredient"/>
+        <Class IRI="#Menu"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Conference"/>
+        <Class IRI="#FamilyEvent"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ApplyOn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#DrinkOF"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IngredientOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MainCourseOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Organize"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ProposedMenu"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#SarterOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasConstraint"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ApplyOn"/>
+        <Class IRI="#Constraint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <Class IRI="#Dish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <Class IRI="#Drink"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DrinkOF"/>
+        <Class IRI="#Drink"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IngredientOf"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#MainCourseOf"/>
+        <Class IRI="#Dish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Organize"/>
+        <Class IRI="#Client"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ProposedMenu"/>
+        <Class IRI="#Menu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SarterOf"/>
+        <Class IRI="#Dish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasConstraint"/>
+        <Class IRI="#Client"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasConstraint"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ApplyOn"/>
+        <Class IRI="#Menu"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <Class IRI="#Dish"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <Class IRI="#Drink"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DrinkOF"/>
+        <Class IRI="#Menu"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IngredientOf"/>
+        <Class IRI="#Dish"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IngredientOf"/>
+        <Class IRI="#Drink"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#MainCourseOf"/>
+        <Class IRI="#Menu"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Organize"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ProposedMenu"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#SarterOf"/>
+        <Class IRI="#Menu"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConstraint"/>
+        <Class IRI="#Constraint"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Email"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#NumberOfPeople"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PhoneNumber"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Price"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Date/Season"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Email"/>
+        <Class IRI="#Client"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class IRI="#Client"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NumberOfPeople"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PhoneNumber"/>
+        <Class IRI="#Client"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Price"/>
+        <Class IRI="#Menu"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NumberOfPeople"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PhoneNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Price"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
