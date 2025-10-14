@@ -184,7 +184,7 @@
 (restrictions "No restrictions") )
 
 (definstance Recipe_1098393 
- (title "Mardi Gras Shrimp Étouffée") 
+ (title "Mardi Gras Shrimp Ã‰touffÃ©e") 
 (diets "pescatarian") 
  (meal_types "lunch, main course, main dish, dinner") 
 (wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian False) 
@@ -224,7 +224,7 @@
 (restrictions "No restrictions") )
 
 (definstance Recipe_1070648 
- (title "Easy Tomato Basil Chicken – One Pot Meal") 
+ (title "Easy Tomato Basil Chicken Â– One Pot Meal") 
 (diets "dairy free") 
  (meal_types "lunch, main course, main dish, dinner") 
 (wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian False) 
@@ -304,7 +304,7 @@
 (restrictions "No restrictions") )
 
 (definstance Recipe_643268 
- (title "Frank’s® Redhot® Buffalo Chicken Dip") 
+ (title "FrankÂ’sÂ® RedhotÂ® Buffalo Chicken Dip") 
 (diets "") 
  (meal_types "antipasti, condiment, starter, snack, appetizer, dip, antipasto, hor d'oeuvre, spread") 
 (wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian False) 
@@ -422,3 +422,59 @@
 (wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian True) 
 (is_dairy_free False) 
 (restrictions "No restrictions") )
+
+(definstance Recipe_642539 
+ (title "Falafel Burger") 
+(servings 4) 
+(price "164.17") 
+(diets "dairy free, lacto ovo vegetarian") 
+ (meal_types "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian True) 
+(is_dairy_free True) 
+(restrictions "No restrictions") (ingredients "chickpeas, tahini, sriracha sauce, garlic, parsley, onion, peanut oil, cucumber, tomato, hamburger buns, tzatziki") 
+)
+
+(definstance Recipe_651767 
+ (title "Meyer Lemon Scented Farro and Asparagus Salad") 
+(servings 6) 
+(price "179.01") 
+(diets "dairy free, lacto ovo vegetarian") 
+ (meal_types "side dish, antipasti, salad, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian True) 
+(is_dairy_free True) 
+(restrictions "No restrictions") (ingredients "farro, peas, lemon zest, meyer lemon juice, asparagus, olive oil, shallots, crimini mushrooms, herbs de provence, salt and pepper, macadamia nuts, meyer lemon vinagirette, meyer lemon juice, citrus champagne vinegar, vegetable stock, olive oil, garlic clove, honey") 
+)
+
+(definstance Recipe_660146 
+ (title "Simple Squash Salad") 
+(servings 6) 
+(price "57.39") 
+(diets "gluten free, dairy free, lacto ovo vegetarian, vegan") 
+ (meal_types "side dish, antipasti, salad, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan True) (is_gluten_free True) (is_vegetarian True) 
+(is_dairy_free True) 
+(restrictions "No restrictions") (ingredients "bell pepper, pepper, parsley, garlic, garlic powder, capers plus 2 tablespoons caper juice, lemon, onion, oregano, pepper flakes, salt, sugar, vinegar, zucchini") 
+)
+
+(definstance Recipe_664396 
+ (title "Vegan Beet Borscht") 
+(servings 8) 
+(price "39.46") 
+(diets "gluten free, dairy free, lacto ovo vegetarian, whole 30, vegan") 
+ (meal_types "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan True) (is_gluten_free True) (is_vegetarian True) 
+(is_dairy_free True) 
+(restrictions "No restrictions") (ingredients "beetroot, big carrot, onions, celery root, unrefined sunflower oil, vinegar, celery leaves, sea salt, ground pepper, parsley") 
+)
+
+(definstance Recipe_649012 
+ (title "Kolaches") 
+(servings 48) 
+(price "10.24") 
+(diets "") 
+ (meal_types "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian False) 
+(is_dairy_free False) 
+(restrictions "No restrictions") (ingredients "butter, egg yolks, flour, milk, poppy-seed filling, salt, shortening, sugar, warm water, packas yeast") 
+)
+
