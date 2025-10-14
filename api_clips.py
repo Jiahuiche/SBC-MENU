@@ -4,7 +4,7 @@ from spoonacular.rest import ApiException
 from pprint import pprint
 import os
 import json
-#pip install git+https://github.com/ddsky/spoonacular-api-clients/tree/master/python/.git
+#pip install git+https://github.com/ddsky/spoonacular-api-clients.git#subdirectory=python
 def preprocess_ingredients_with_default_image(ingredients, default_image="no_image_available.png"):
     """
     Ensures each ingredient dictionary/object in the list has a non-empty 'image' attribute or key.
