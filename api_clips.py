@@ -4,7 +4,7 @@ from spoonacular.rest import ApiException
 from pprint import pprint
 import os
 import json
-#pip install git+https://github.com/ddsky/spoonacular-api-clients/tree/master/python/.git
+#pip install git+https://github.com/ddsky/spoonacular-api-clients.git#subdirectory=python
 def preprocess_ingredients_with_default_image(ingredients, default_image="no_image_available.png"):
     """
     Ensures each ingredient dictionary/object in the list has a non-empty 'image' attribute or key.
@@ -45,9 +45,9 @@ configuration.api_key['apiKeyScheme'] = os.environ["API_KEY"]
 
 # Definir filtros de búsqueda
 diets = None 
-intolerances = None  
-meal_type = "main dish"  
-num_recipes = 3 # Por ejemplo, obtener 5 recetas
+intolerances = "gluten_free"  
+meal_type = "appetizer"  
+num_recipes = 1 # Por ejemplo, obtener 5 recetas
 
 tags = []
 if diets:
@@ -150,7 +150,9 @@ with spoonacular.ApiClient(configuration) as api_client:
                             ingredient.aisle = ""  # o "unknown"
                 # Escribir la instancia en formato CLIPS
                 f.write(f"\n(definstance Recipe_{recipe_id} \n " 
-                        f"(title \"{title}\") \n"                        
+                        f"(title \"{title}\") \n"  
+                        f"(servings {servings}) \n"
+                        f"(price \"{price_per_serving}\") \n"                      
                         f"(diets \"{diets}\") \n "
                         f"(meal_types \"{meal_types}\") \n"
                         f"(wine_pairing \"{wine_pairing}\") "
@@ -162,21 +164,22 @@ with spoonacular.ApiClient(configuration) as api_client:
                         f")\n")
 
                 # Filtrar la receta para el archivo JSON
-                filtered_recipe = {
-                    "id": recipe_id,
-                    "title": title,
-                    "servings": servings,
-                    "pricePerServing": price_per_serving,
-                    "diets": recipe_data.diets if hasattr(recipe_data, 'diets') else [],
-                    "mealTypes": recipe_data.dish_types if hasattr(recipe_data, 'dish_types') else [],
-                    "winePairing": wine_pairing,
-                    "vegan": vegan,
-                    "glutenFree": gluten_free,
-                    "vegetarian": vegetarian,
-                    "dairyFree": dairy_free,
-                    "restrictions": restrictions
-                }
+                # filtered_recipe = {
+                #     "id": recipe_id,
+                #     "title": title,
+                #     "servings": servings,
+                #     "pricePerServing": price_per_serving,
+                #     "diets": recipe_data.diets if hasattr(recipe_data, 'diets') else [],
+                #     "mealTypes": recipe_data.dish_types if hasattr(recipe_data, 'dish_types') else [],
+                #     "winePairing": wine_pairing,
+                #     "vegan": vegan,
+                #     "glutenFree": gluten_free,
+                #     "vegetarian": vegetarian,
+                #     "dairyFree": dairy_free,
+                #     "restrictions": restrictions
+                # }
 
+                filtered_recipe = api_response.to_dict()
                 # Añadir la receta filtrada a la lista
                 filtered_recipes.append(filtered_recipe)
 
