@@ -45,9 +45,9 @@ configuration.api_key['apiKeyScheme'] = os.environ["API_KEY"]
 
 # Definir filtros de búsqueda
 diets = None 
-intolerances = "gluten_free"  
+intolerances = "dairy_free"  
 meal_type = "appetizer"  
-num_recipes = 1 # Por ejemplo, obtener 5 recetas
+num_recipes = 5 # Por ejemplo, obtener 5 recetas
 
 tags = []
 if diets:
@@ -131,6 +131,9 @@ with spoonacular.ApiClient(configuration) as api_client:
                 if hasattr(recipe_data, 'extended_ingredients'):
                     for ingredient in recipe_data.extended_ingredients:
                         aisle = ingredient.aisle if hasattr(ingredient, 'aisle') and ingredient.aisle else ""
+                        ingredients = [ingredient.name for ingredient in recipe_data.extended_ingredients if hasattr(ingredient, 'name')]
+                        ingredients_str = ", ".join(ingredients) if ingredients else "No ingredients"
+
 
                 for ingredient in recipe_data.extended_ingredients:
                     image = ingredient.image if hasattr(ingredient, 'image') and ingredient.image else "no_image_available.png"
@@ -161,25 +164,27 @@ with spoonacular.ApiClient(configuration) as api_client:
                         f"(is_vegetarian {str(vegetarian)}) \n"
                         f"(is_dairy_free {str(dairy_free)}) \n"
                         f"(restrictions \"{restrictions_str}\") "
+                        # f"(ingredients \"{ingredients_str}\") \n"
                         f")\n")
 
                 # Filtrar la receta para el archivo JSON
-                # filtered_recipe = {
-                #     "id": recipe_id,
-                #     "title": title,
-                #     "servings": servings,
-                #     "pricePerServing": price_per_serving,
-                #     "diets": recipe_data.diets if hasattr(recipe_data, 'diets') else [],
-                #     "mealTypes": recipe_data.dish_types if hasattr(recipe_data, 'dish_types') else [],
-                #     "winePairing": wine_pairing,
-                #     "vegan": vegan,
-                #     "glutenFree": gluten_free,
-                #     "vegetarian": vegetarian,
-                #     "dairyFree": dairy_free,
-                #     "restrictions": restrictions
-                # }
+                filtered_recipe = {
+                    "id": recipe_id,
+                    "title": title,
+                    "servings": servings,
+                    "pricePerServing": price_per_serving,
+                    "diets": recipe_data.diets if hasattr(recipe_data, 'diets') else [],
+                    "mealTypes": recipe_data.dish_types if hasattr(recipe_data, 'dish_types') else [],
+                    "winePairing": wine_pairing,
+                    "vegan": vegan,
+                    "glutenFree": gluten_free,
+                    "vegetarian": vegetarian,
+                    "dairyFree": dairy_free,
+                    "restrictions": restrictions,
+                    "ingredients": ingredients
+                }
 
-                filtered_recipe = api_response.to_dict()
+                # filtered_recipe = api_response.to_dict()
                 # Añadir la receta filtrada a la lista
                 filtered_recipes.append(filtered_recipe)
 
