@@ -45,9 +45,9 @@ configuration.api_key['apiKeyScheme'] = os.environ["API_KEY"]
 
 # Definir filtros de búsqueda
 diets = None 
-intolerances = "dairy_free"  
-meal_type = "appetizer"  
-num_recipes = 5 # Por ejemplo, obtener 5 recetas
+intolerances = "gluten free, dairy free"  
+meal_type = "main course"  
+num_recipes = 10 # Por ejemplo, obtener 5 recetas
 
 tags = []
 if diets:
