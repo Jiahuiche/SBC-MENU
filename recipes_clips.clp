@@ -254,3 +254,171 @@
 (wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free True) (is_vegetarian False) 
 (is_dairy_free True) 
 (restrictions "No restrictions") )
+
+(definstance Recipe_634437 
+ (title "Basil Tagliatelle with Roasted Red Bell Pepper Salad") 
+(diets "gluten free, dairy free, lacto ovo vegetarian, vegan") 
+ (meal_types "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan True) (is_gluten_free True) (is_vegetarian True) 
+(is_dairy_free True) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_721185 
+ (title "avarakkai paruppu curry recipe") 
+(diets "gluten free, dairy free, lacto ovo vegetarian, vegan") 
+ (meal_types "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan True) (is_gluten_free True) (is_vegetarian True) 
+(is_dairy_free True) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_659581 
+ (title "Scotch Eggs") 
+(diets "dairy free") 
+ (meal_types "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian False) 
+(is_dairy_free True) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_644693 
+ (title "Gingerbread Mummies") 
+(diets "lacto ovo vegetarian") 
+ (meal_types "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian True) 
+(is_dairy_free False) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_636488 
+ (title "Butter Chicken") 
+(diets "gluten free") 
+ (meal_types "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free True) (is_vegetarian False) 
+(is_dairy_free False) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_662276 
+ (title "Sun Dried Tomato and Herb Baked Eggs") 
+(diets "gluten free, dairy free, paleolithic, lacto ovo vegetarian, primal, fodmap friendly, whole 30, ketogenic") 
+ (meal_types "antipasti, morning meal, starter, brunch, snack, appetizer, breakfast, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free True) (is_vegetarian True) 
+(is_dairy_free True) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_643268 
+ (title "Frank’s® Redhot® Buffalo Chicken Dip") 
+(diets "") 
+ (meal_types "antipasti, condiment, starter, snack, appetizer, dip, antipasto, hor d'oeuvre, spread") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian False) 
+(is_dairy_free False) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_654241 
+ (title "Oven-Baked Feta Cheese Dip") 
+(diets "gluten free, lacto ovo vegetarian, primal, ketogenic") 
+ (meal_types "antipasti, condiment, starter, snack, appetizer, dip, antipasto, hor d'oeuvre, spread") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free True) (is_vegetarian True) 
+(is_dairy_free False) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_633185 
+ (title "Awesome! No Bake ~ Macaroni and Cheese") 
+(diets "") 
+ (meal_types "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian False) 
+(is_dairy_free False) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_651546 
+ (title "Mexi-Chicken Roll Ups") 
+(diets "gluten free") 
+ (meal_types "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free True) (is_vegetarian False) 
+(is_dairy_free False) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_663680 
+ (title "Torta (Filipino Omelet)") 
+(diets "gluten free, dairy free, lacto ovo vegetarian") 
+ (meal_types "antipasti, morning meal, starter, brunch, snack, appetizer, breakfast, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free True) (is_vegetarian True) 
+(is_dairy_free True) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_664533 
+ (title "Vegetable Cheddar Quiche") 
+(diets "") 
+ (meal_types "antipasti, morning meal, starter, brunch, snack, appetizer, breakfast, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian False) 
+(is_dairy_free False) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_663113 
+ (title "Thai Green Mango Salad") 
+(diets "gluten free, dairy free, paleolithic, primal, pescatarian") 
+ (meal_types "side dish, antipasti, salad, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free True) (is_vegetarian False) 
+(is_dairy_free True) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_636488 
+ (title "Butter Chicken") 
+(diets "gluten free") 
+ (meal_types "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free True) (is_vegetarian False) 
+(is_dairy_free False) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_636576 
+ (title "Butternut Squash and Chorizo Pasta") 
+(diets "") 
+ (meal_types "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian False) 
+(is_dairy_free False) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_636874 
+ (title "Candy Cane Chocolate Marshmallows") 
+(diets "gluten free") 
+ (meal_types "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free True) (is_vegetarian False) 
+(is_dairy_free False) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_664359 
+ (title "Veal Piccatas") 
+(diets "") 
+ (meal_types "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian False) 
+(is_dairy_free False) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_637336 
+ (title "Cedar Smoked Asparagus Soup") 
+(diets "gluten free, dairy free, whole 30") 
+ (meal_types "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free True) (is_vegetarian False) 
+(is_dairy_free True) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_647395 
+ (title "Hot Artichoke Crab Dip") 
+(diets "gluten free") 
+ (meal_types "antipasti, condiment, starter, snack, appetizer, dip, antipasto, hor d'oeuvre, spread") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free True) (is_vegetarian False) 
+(is_dairy_free False) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_661121 
+ (title "Spicy Lemongrass Soup") 
+(diets "dairy free, lacto ovo vegetarian, vegan") 
+ (meal_types "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan True) (is_gluten_free False) (is_vegetarian True) 
+(is_dairy_free True) 
+(restrictions "No restrictions") )
+
+(definstance Recipe_655589 
+ (title "Penne with Goat Cheese and Basil") 
+(diets "lacto ovo vegetarian") 
+ (meal_types "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre") 
+(wine_pairing "No wine pairing") (is_vegan False) (is_gluten_free False) (is_vegetarian True) 
+(is_dairy_free False) 
+(restrictions "No restrictions") )

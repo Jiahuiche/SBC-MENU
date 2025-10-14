@@ -45,9 +45,9 @@ configuration.api_key['apiKeyScheme'] = os.environ["API_KEY"]
 
 # Definir filtros de búsqueda
 diets = None 
-intolerances = None  
-meal_type = "main dish"  
-num_recipes = 3 # Por ejemplo, obtener 5 recetas
+intolerances = "gluten_free"  
+meal_type = "appetizer"  
+num_recipes = 1 # Por ejemplo, obtener 5 recetas
 
 tags = []
 if diets:
@@ -162,21 +162,22 @@ with spoonacular.ApiClient(configuration) as api_client:
                         f")\n")
 
                 # Filtrar la receta para el archivo JSON
-                filtered_recipe = {
-                    "id": recipe_id,
-                    "title": title,
-                    "servings": servings,
-                    "pricePerServing": price_per_serving,
-                    "diets": recipe_data.diets if hasattr(recipe_data, 'diets') else [],
-                    "mealTypes": recipe_data.dish_types if hasattr(recipe_data, 'dish_types') else [],
-                    "winePairing": wine_pairing,
-                    "vegan": vegan,
-                    "glutenFree": gluten_free,
-                    "vegetarian": vegetarian,
-                    "dairyFree": dairy_free,
-                    "restrictions": restrictions
-                }
+                # filtered_recipe = {
+                #     "id": recipe_id,
+                #     "title": title,
+                #     "servings": servings,
+                #     "pricePerServing": price_per_serving,
+                #     "diets": recipe_data.diets if hasattr(recipe_data, 'diets') else [],
+                #     "mealTypes": recipe_data.dish_types if hasattr(recipe_data, 'dish_types') else [],
+                #     "winePairing": wine_pairing,
+                #     "vegan": vegan,
+                #     "glutenFree": gluten_free,
+                #     "vegetarian": vegetarian,
+                #     "dairyFree": dairy_free,
+                #     "restrictions": restrictions
+                # }
 
+                filtered_recipe = api_response.to_dict()
                 # Añadir la receta filtrada a la lista
                 filtered_recipes.append(filtered_recipe)
 

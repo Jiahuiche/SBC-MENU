@@ -1,0 +1,768 @@
+[
+    {
+        "id": 634437,
+        "title": "Basil Tagliatelle with Roasted Red Bell Pepper Salad",
+        "servings": 4,
+        "pricePerServing": 407.11,
+        "diets": [
+            "gluten free",
+            "dairy free",
+            "lacto ovo vegetarian",
+            "vegan"
+        ],
+        "mealTypes": [
+            "side dish",
+            "antipasti",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "restrictions": []
+    },
+    {
+        "id": 721185,
+        "title": "avarakkai paruppu curry recipe",
+        "servings": 3,
+        "pricePerServing": 142.38,
+        "diets": [
+            "gluten free",
+            "dairy free",
+            "lacto ovo vegetarian",
+            "vegan"
+        ],
+        "mealTypes": [
+            "antipasti",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "restrictions": []
+    },
+    {
+        "id": 659581,
+        "title": "Scotch Eggs",
+        "servings": 8,
+        "pricePerServing": 82.93,
+        "diets": [
+            "dairy free"
+        ],
+        "mealTypes": [
+            "antipasti",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": true,
+        "restrictions": []
+    },
+    {
+        "id": 644693,
+        "title": "Gingerbread Mummies",
+        "servings": 18,
+        "pricePerServing": 29.95,
+        "diets": [
+            "lacto ovo vegetarian"
+        ],
+        "mealTypes": [
+            "antipasti",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "restrictions": []
+    },
+    {
+        "id": 636488,
+        "title": "Butter Chicken",
+        "servings": 4,
+        "pricePerServing": 226.2,
+        "diets": [
+            "gluten free"
+        ],
+        "mealTypes": [
+            "antipasti",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": false,
+        "restrictions": []
+    },
+    {
+        "id": 662276,
+        "title": "Sun Dried Tomato and Herb Baked Eggs",
+        "servings": 1,
+        "pricePerServing": 90.05,
+        "diets": [
+            "gluten free",
+            "dairy free",
+            "paleolithic",
+            "lacto ovo vegetarian",
+            "primal",
+            "fodmap friendly",
+            "whole 30",
+            "ketogenic"
+        ],
+        "mealTypes": [
+            "antipasti",
+            "morning meal",
+            "starter",
+            "brunch",
+            "snack",
+            "appetizer",
+            "breakfast",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "restrictions": []
+    },
+    {
+        "id": 643268,
+        "title": "Frank\u2019s\u00ae Redhot\u00ae Buffalo Chicken Dip",
+        "servings": 6,
+        "pricePerServing": 756.21,
+        "diets": [],
+        "mealTypes": [
+            "antipasti",
+            "condiment",
+            "starter",
+            "snack",
+            "appetizer",
+            "dip",
+            "antipasto",
+            "hor d'oeuvre",
+            "spread"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "restrictions": []
+    },
+    {
+        "id": 654241,
+        "title": "Oven-Baked Feta Cheese Dip",
+        "servings": 4,
+        "pricePerServing": 130.04,
+        "diets": [
+            "gluten free",
+            "lacto ovo vegetarian",
+            "primal",
+            "ketogenic"
+        ],
+        "mealTypes": [
+            "antipasti",
+            "condiment",
+            "starter",
+            "snack",
+            "appetizer",
+            "dip",
+            "antipasto",
+            "hor d'oeuvre",
+            "spread"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "restrictions": []
+    },
+    {
+        "id": 633185,
+        "title": "Awesome! No Bake ~ Macaroni and Cheese",
+        "servings": 16,
+        "pricePerServing": 81.67,
+        "diets": [],
+        "mealTypes": [
+            "side dish",
+            "antipasti",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "restrictions": []
+    },
+    {
+        "id": 651546,
+        "title": "Mexi-Chicken Roll Ups",
+        "servings": 6,
+        "pricePerServing": 294.11,
+        "diets": [
+            "gluten free"
+        ],
+        "mealTypes": [
+            "antipasti",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": false,
+        "restrictions": []
+    }
+][
+    {
+        "id": 663680,
+        "title": "Torta (Filipino Omelet)",
+        "servings": 8,
+        "pricePerServing": 52.88,
+        "diets": [
+            "gluten free",
+            "dairy free",
+            "lacto ovo vegetarian"
+        ],
+        "mealTypes": [
+            "antipasti",
+            "morning meal",
+            "starter",
+            "brunch",
+            "snack",
+            "appetizer",
+            "breakfast",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "restrictions": []
+    },
+    {
+        "id": 664533,
+        "title": "Vegetable Cheddar Quiche",
+        "servings": 8,
+        "pricePerServing": 71.8,
+        "diets": [],
+        "mealTypes": [
+            "antipasti",
+            "morning meal",
+            "starter",
+            "brunch",
+            "snack",
+            "appetizer",
+            "breakfast",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "restrictions": []
+    },
+    {
+        "id": 663113,
+        "title": "Thai Green Mango Salad",
+        "servings": 6,
+        "pricePerServing": 119.36,
+        "diets": [
+            "gluten free",
+            "dairy free",
+            "paleolithic",
+            "primal",
+            "pescatarian"
+        ],
+        "mealTypes": [
+            "side dish",
+            "antipasti",
+            "salad",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": true,
+        "restrictions": []
+    },
+    {
+        "id": 636488,
+        "title": "Butter Chicken",
+        "servings": 4,
+        "pricePerServing": 226.2,
+        "diets": [
+            "gluten free"
+        ],
+        "mealTypes": [
+            "antipasti",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": false,
+        "restrictions": []
+    },
+    {
+        "id": 636576,
+        "title": "Butternut Squash and Chorizo Pasta",
+        "servings": 4,
+        "pricePerServing": 124.2,
+        "diets": [],
+        "mealTypes": [
+            "side dish",
+            "antipasti",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "restrictions": []
+    },
+    {
+        "id": 636874,
+        "title": "Candy Cane Chocolate Marshmallows",
+        "servings": 24,
+        "pricePerServing": 17.75,
+        "diets": [
+            "gluten free"
+        ],
+        "mealTypes": [
+            "antipasti",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": false,
+        "restrictions": []
+    },
+    {
+        "id": 664359,
+        "title": "Veal Piccatas",
+        "servings": 4,
+        "pricePerServing": 72.63,
+        "diets": [],
+        "mealTypes": [
+            "antipasti",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "restrictions": []
+    },
+    {
+        "id": 637336,
+        "title": "Cedar Smoked Asparagus Soup",
+        "servings": 4,
+        "pricePerServing": 213.17,
+        "diets": [
+            "gluten free",
+            "dairy free",
+            "whole 30"
+        ],
+        "mealTypes": [
+            "antipasti",
+            "soup",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": true,
+        "restrictions": []
+    },
+    {
+        "id": 647395,
+        "title": "Hot Artichoke Crab Dip",
+        "servings": 4,
+        "pricePerServing": 247.02,
+        "diets": [
+            "gluten free"
+        ],
+        "mealTypes": [
+            "antipasti",
+            "condiment",
+            "starter",
+            "snack",
+            "appetizer",
+            "dip",
+            "antipasto",
+            "hor d'oeuvre",
+            "spread"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": false,
+        "restrictions": []
+    },
+    {
+        "id": 661121,
+        "title": "Spicy Lemongrass Soup",
+        "servings": 4,
+        "pricePerServing": 312.86,
+        "diets": [
+            "dairy free",
+            "lacto ovo vegetarian",
+            "vegan"
+        ],
+        "mealTypes": [
+            "antipasti",
+            "soup",
+            "starter",
+            "snack",
+            "appetizer",
+            "antipasto",
+            "hor d'oeuvre"
+        ],
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "restrictions": []
+    }
+][
+    {
+        "recipes": [
+            {
+                "id": 655589,
+                "title": "Penne with Goat Cheese and Basil",
+                "image": "https://img.spoonacular.com/recipes/655589-556x370.jpg",
+                "imageType": "unknown",
+                "servings": 12,
+                "readyInMinutes": 45,
+                "license": "CC BY 3.0",
+                "sourceName": "Foodista",
+                "sourceUrl": "https://www.foodista.com/recipe/6TFN786K/penne-with-goat-cheese-and-basil",
+                "spoonacularSourceUrl": "https://spoonacular.com/penne-with-goat-cheese-and-basil-655589",
+                "aggregateLikes": 3,
+                "healthScore": 5.0,
+                "spoonacularScore": 45.86885070800781,
+                "pricePerServing": 48.49,
+                "analyzedInstructions": [
+                    {
+                        "name": "",
+                        "steps": [
+                            {
+                                "number": 1,
+                                "step": "Cook pasta according to package directions",
+                                "ingredients": [
+                                    {
+                                        "id": 20420,
+                                        "name": "pasta",
+                                        "localizedName": "pasta",
+                                        "image": "https://spoonacular.com/cdn/ingredients_100x100/fusilli.jpg"
+                                    }
+                                ],
+                                "equipment": []
+                            },
+                            {
+                                "number": 2,
+                                "step": "Arrange basil leaves in a stack, roll like a cigar and proceed to cut crosswise.  This technique is called chiffonade.",
+                                "ingredients": [
+                                    {
+                                        "id": 2044,
+                                        "name": "fresh basil",
+                                        "localizedName": "fresh basil",
+                                        "image": "fresh-basil.jpg"
+                                    },
+                                    {
+                                        "id": 0,
+                                        "name": "roll",
+                                        "localizedName": "roll",
+                                        "image": "dinner-yeast-rolls.jpg"
+                                    }
+                                ],
+                                "equipment": []
+                            },
+                            {
+                                "number": 3,
+                                "step": "Toss pasta with olive oil and goat cheese and let cool for a few minutes.",
+                                "ingredients": [
+                                    {
+                                        "id": 1159,
+                                        "name": "goat cheese",
+                                        "localizedName": "goat cheese",
+                                        "image": "goat-cheese.jpg"
+                                    },
+                                    {
+                                        "id": 4053,
+                                        "name": "olive oil",
+                                        "localizedName": "olive oil",
+                                        "image": "olive-oil.jpg"
+                                    },
+                                    {
+                                        "id": 20420,
+                                        "name": "pasta",
+                                        "localizedName": "pasta",
+                                        "image": "https://spoonacular.com/cdn/ingredients_100x100/fusilli.jpg"
+                                    }
+                                ],
+                                "equipment": []
+                            },
+                            {
+                                "number": 4,
+                                "step": "Add basil, salt, and pepper, and then serve",
+                                "ingredients": [
+                                    {
+                                        "id": 1002030,
+                                        "name": "pepper",
+                                        "localizedName": "pepper",
+                                        "image": "pepper.jpg"
+                                    },
+                                    {
+                                        "id": 2044,
+                                        "name": "basil",
+                                        "localizedName": "basil",
+                                        "image": "basil.jpg"
+                                    },
+                                    {
+                                        "id": 2047,
+                                        "name": "salt",
+                                        "localizedName": "salt",
+                                        "image": "salt.jpg"
+                                    }
+                                ],
+                                "equipment": []
+                            }
+                        ]
+                    }
+                ],
+                "cheap": false,
+                "creditsText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit",
+                "cuisines": [],
+                "dairyFree": false,
+                "diets": [
+                    "lacto ovo vegetarian"
+                ],
+                "gaps": "no",
+                "glutenFree": false,
+                "instructions": "Cook pasta according to package directions\nArrange basil leaves in a stack, roll like a cigar and proceed to cut crosswise.  This technique is called chiffonade.\nToss pasta with olive oil and goat cheese and let cool for a few minutes.  Add basil, salt, and pepper, and then serve",
+                "lowFodmap": false,
+                "occasions": [],
+                "sustainable": false,
+                "vegan": false,
+                "vegetarian": true,
+                "veryHealthy": false,
+                "veryPopular": false,
+                "weightWatcherSmartPoints": 4,
+                "dishTypes": [
+                    "side dish",
+                    "antipasti",
+                    "starter",
+                    "snack",
+                    "appetizer",
+                    "antipasto",
+                    "hor d'oeuvre"
+                ],
+                "extendedIngredients": [
+                    {
+                        "aisle": "Pasta and Rice",
+                        "amount": 12.0,
+                        "consistency": "SOLID",
+                        "id": 11120420,
+                        "image": "penne-pasta.jpg",
+                        "measures": {
+                            "metric": {
+                                "amount": 340.194,
+                                "unitLong": "grams",
+                                "unitShort": "g"
+                            },
+                            "us": {
+                                "amount": 12.0,
+                                "unitLong": "ounces",
+                                "unitShort": "oz"
+                            }
+                        },
+                        "meta": [],
+                        "name": "penne pasta",
+                        "original": "12 ounces penne pasta",
+                        "originalName": "penne pasta",
+                        "unit": "ounces"
+                    },
+                    {
+                        "aisle": "Produce",
+                        "amount": 1.0,
+                        "consistency": "SOLID",
+                        "id": 2044,
+                        "image": "fresh-basil.jpg",
+                        "measures": {
+                            "metric": {
+                                "amount": 24.0,
+                                "unitLong": "grams",
+                                "unitShort": "g"
+                            },
+                            "us": {
+                                "amount": 1.0,
+                                "unitLong": "cup",
+                                "unitShort": "cup"
+                            }
+                        },
+                        "meta": [],
+                        "name": "basil leaves",
+                        "original": "1 cup basil leaves",
+                        "originalName": "basil leaves",
+                        "unit": "cup"
+                    },
+                    {
+                        "aisle": "Cheese",
+                        "amount": 4.0,
+                        "consistency": "SOLID",
+                        "id": 1159,
+                        "image": "goat-cheese.jpg",
+                        "measures": {
+                            "metric": {
+                                "amount": 113.398,
+                                "unitLong": "grams",
+                                "unitShort": "g"
+                            },
+                            "us": {
+                                "amount": 4.0,
+                                "unitLong": "ounces",
+                                "unitShort": "oz"
+                            }
+                        },
+                        "meta": [],
+                        "name": "goat cheese",
+                        "original": "4 ounces Goat Cheese",
+                        "originalName": "Goat Cheese",
+                        "unit": "ounces"
+                    },
+                    {
+                        "aisle": "Oil, Vinegar, Salad Dressing",
+                        "amount": 2.0,
+                        "consistency": "LIQUID",
+                        "id": 4053,
+                        "image": "olive-oil.jpg",
+                        "measures": {
+                            "metric": {
+                                "amount": 2.0,
+                                "unitLong": "Tbsps",
+                                "unitShort": "Tbsps"
+                            },
+                            "us": {
+                                "amount": 2.0,
+                                "unitLong": "Tbsps",
+                                "unitShort": "Tbsps"
+                            }
+                        },
+                        "meta": [],
+                        "name": "olive oil",
+                        "original": "2 tablespoons olive oil",
+                        "originalName": "olive oil",
+                        "unit": "tablespoons"
+                    },
+                    {
+                        "aisle": "Spices and Seasonings",
+                        "amount": 12.0,
+                        "consistency": "SOLID",
+                        "id": 1102047,
+                        "image": "salt-and-pepper.jpg",
+                        "measures": {
+                            "metric": {
+                                "amount": 12.0,
+                                "unitLong": "servings",
+                                "unitShort": "servings"
+                            },
+                            "us": {
+                                "amount": 12.0,
+                                "unitLong": "servings",
+                                "unitShort": "servings"
+                            }
+                        },
+                        "meta": [
+                            "to taste"
+                        ],
+                        "name": "salt and pepper",
+                        "original": "salt and pepper to taste",
+                        "originalName": "salt and pepper to taste",
+                        "unit": "servings"
+                    }
+                ],
+                "summary": "If you want to add more <b>lacto ovo vegetarian</b> recipes to your recipe box, Penne with Goat Cheese and Basil might be a recipe you should try. This recipe serves 12. One portion of this dish contains approximately <b>6g of protein</b>, <b>5g of fat</b>, and a total of <b>151 calories</b>. For <b>48 cents per serving</b>, this recipe <b>covers 5%</b> of your daily requirements of vitamins and minerals. 3 people have made this recipe and would make it again. This recipe from Foodista requires penne pasta, basil leaves, goat cheese, and olive oil. It works well as a hor d'oeuvre. From preparation to the plate, this recipe takes around <b>45 minutes</b>. All things considered, we decided this recipe <b>deserves a spoonacular score of 47%</b>. This score is solid. Similar recipes are <a href=\"https://spoonacular.com/recipes/penne-with-treviso-and-goat-cheese-357189\">Penne with Treviso and Goat Cheese</a>, <a href=\"https://spoonacular.com/recipes/roasted-tomato-penne-with-goat-cheese-494092\">Roasted Tomato Penne with Goat Cheese</a>, and <a href=\"https://spoonacular.com/recipes/sweet-garlic-and-goat-cheese-penne-308660\">Sweet Garlic and Goat Cheese Penne</a>.",
+                "preparationMinutes": null,
+                "cookingMinutes": null
+            }
+        ]
+    }
+]
