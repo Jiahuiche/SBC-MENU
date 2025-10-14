@@ -150,7 +150,9 @@ with spoonacular.ApiClient(configuration) as api_client:
                             ingredient.aisle = ""  # o "unknown"
                 # Escribir la instancia en formato CLIPS
                 f.write(f"\n(definstance Recipe_{recipe_id} \n " 
-                        f"(title \"{title}\") \n"                        
+                        f"(title \"{title}\") \n"  
+                        f"(servings {servings}) \n"
+                        f"(price \"{price_per_serving}\") \n"                      
                         f"(diets \"{diets}\") \n "
                         f"(meal_types \"{meal_types}\") \n"
                         f"(wine_pairing \"{wine_pairing}\") "
