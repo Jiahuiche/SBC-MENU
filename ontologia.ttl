@@ -1,0 +1,485 @@
+@prefix : <http://www.semanticweb.org/x/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/x/> .
+
+<http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#ApplyOn
+:ApplyOn rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Constraint ;
+         rdfs:range :Menu .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#CompatibleWith
+:CompatibleWith rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :Dish ,
+                            :Drink ;
+                rdfs:range :Dish ,
+                           :Drink .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#DrinkOF
+:DrinkOF rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Drink ;
+         rdfs:range :Menu .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#IngredientOf
+:IngredientOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Ingredient ;
+              rdfs:range :Dish ,
+                         :Drink .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#MainCourseOf
+:MainCourseOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Dish ;
+              rdfs:range :Menu .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Organize
+:Organize rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :Client ;
+          rdfs:range :Event .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#ProposedMenu
+:ProposedMenu rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Menu ;
+              rdfs:range :Event .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#SarterOf
+:SarterOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :Dish ;
+          rdfs:range :Menu .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#hasConstraint
+:hasConstraint rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :Client ,
+                           :Event ;
+               rdfs:range :Constraint .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#hasCousineStyle
+:hasCousineStyle rdf:type owl:ObjectProperty ;
+                 rdfs:domain :CousineStyle ;
+                 rdfs:range :Dish ,
+                            :Drink .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Email
+:Email rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Client ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Name
+:Name rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain :Client ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#NumberOfPeople
+:NumberOfPeople rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Event ;
+                rdfs:range xsd:nonNegativeInteger .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#PhoneNumber
+:PhoneNumber rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Client ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Price
+:Price rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Menu ;
+       rdfs:range xsd:nonNegativeInteger .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Date/Season
+<http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Date/Season> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf owl:topDataProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Alcohol
+:Alcohol rdf:type owl:Class ;
+         rdfs:subClassOf :Drink .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#AnimalFat
+:AnimalFat rdf:type owl:Class ;
+           rdfs:subClassOf :Fat .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#AnimalProtein
+:AnimalProtein rdf:type owl:Class ;
+               rdfs:subClassOf :Protein .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Aromatics
+:Aromatics rdf:type owl:Class ;
+           rdfs:subClassOf :Aromatics_Herbs .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Aromatics_Herbs
+:Aromatics_Herbs rdf:type owl:Class ;
+                 rdfs:subClassOf :Ingredient .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#ArtificialSugar
+:ArtificialSugar rdf:type owl:Class ;
+                 rdfs:subClassOf :Sugar .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Baptism
+:Baptism rdf:type owl:Class ;
+         rdfs:subClassOf :FamilyEvent .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#BlueFish
+:BlueFish rdf:type owl:Class ;
+          rdfs:subClassOf :AnimalProtein .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Butter
+:Butter rdf:type owl:Class ;
+        rdfs:subClassOf :Dairy .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Cheese
+:Cheese rdf:type owl:Class ;
+        rdfs:subClassOf :Dairy .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Client
+:Client rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Communion
+:Communion rdf:type owl:Class ;
+           rdfs:subClassOf :FamilyEvent .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Conference
+:Conference rdf:type owl:Class ;
+            rdfs:subClassOf :Event ;
+            owl:disjointWith :FamilyEvent .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Constraint
+:Constraint rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#CousineStyle
+:CousineStyle rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Cream
+:Cream rdf:type owl:Class ;
+       rdfs:subClassOf :Dairy .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#CuredMeat
+:CuredMeat rdf:type owl:Class ;
+           rdfs:subClassOf :AnimalProtein .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Dairy
+:Dairy rdf:type owl:Class ;
+       rdfs:subClassOf :Ingredient .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#DairyFree
+:DairyFree rdf:type owl:Class ;
+           rdfs:subClassOf :Constraint .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Dessert
+:Dessert rdf:type owl:Class ;
+         rdfs:subClassOf :Dish .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Dish
+:Dish rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Drink
+:Drink rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#DryHerbs
+:DryHerbs rdf:type owl:Class ;
+          rdfs:subClassOf :Aromatics_Herbs .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Egg
+:Egg rdf:type owl:Class ;
+     rdfs:subClassOf :AnimalProtein .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Event
+:Event rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#FamilyEvent
+:FamilyEvent rdf:type owl:Class ;
+             rdfs:subClassOf :Event .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Fat
+:Fat rdf:type owl:Class ;
+     rdfs:subClassOf :Ingredient .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Flour
+:Flour rdf:type owl:Class ;
+       rdfs:subClassOf :Starch .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#FreshHerbs
+:FreshHerbs rdf:type owl:Class ;
+            rdfs:subClassOf :Aromatics_Herbs .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Fruit
+:Fruit rdf:type owl:Class ;
+       rdfs:subClassOf :Ingredient .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#GlutenFlour
+:GlutenFlour rdf:type owl:Class ;
+             rdfs:subClassOf :Flour .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#GlutenFree
+:GlutenFree rdf:type owl:Class ;
+            rdfs:subClassOf :Constraint .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#GlutenFreeFlour
+:GlutenFreeFlour rdf:type owl:Class ;
+                 rdfs:subClassOf :Flour .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#GlutenFreeGrain
+:GlutenFreeGrain rdf:type owl:Class ;
+                 rdfs:subClassOf :Grains .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#GlutenGrain
+:GlutenGrain rdf:type owl:Class ;
+             rdfs:subClassOf :Grains .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Grains
+:Grains rdf:type owl:Class ;
+        rdfs:subClassOf :Starch .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Halal
+:Halal rdf:type owl:Class ;
+       rdfs:subClassOf :Constraint .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Ingredient
+:Ingredient rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Kosher
+:Kosher rdf:type owl:Class ;
+        rdfs:subClassOf :Constraint .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Legumes
+:Legumes rdf:type owl:Class ;
+         rdfs:subClassOf :PlantProtein .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Main
+:Main rdf:type owl:Class ;
+      rdfs:subClassOf :Dish .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Menu
+:Menu rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Milk
+:Milk rdf:type owl:Class ;
+      rdfs:subClassOf :Dairy .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#NaturalSugar
+:NaturalSugar rdf:type owl:Class ;
+              rdfs:subClassOf :Sugar .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#NutFree
+:NutFree rdf:type owl:Class ;
+         rdfs:subClassOf :Constraint .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Nuts
+:Nuts rdf:type owl:Class ;
+      rdfs:subClassOf :VegetalFat .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Oil
+:Oil rdf:type owl:Class ;
+     rdfs:subClassOf :VegetalFat .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#PlantProtein
+:PlantProtein rdf:type owl:Class ;
+              rdfs:subClassOf :Protein .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Protein
+:Protein rdf:type owl:Class ;
+         rdfs:subClassOf :Ingredient .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#RedMeat
+:RedMeat rdf:type owl:Class ;
+         rdfs:subClassOf :AnimalProtein .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Shellfish
+:Shellfish rdf:type owl:Class ;
+           rdfs:subClassOf :AnimalProtein .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#ShellfishFree
+:ShellfishFree rdf:type owl:Class ;
+               rdfs:subClassOf :Constraint .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Soft
+:Soft rdf:type owl:Class ;
+      rdfs:subClassOf :Drink .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Spices_Condiments
+:Spices_Condiments rdf:type owl:Class ;
+                   rdfs:subClassOf :Ingredient .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Starch
+:Starch rdf:type owl:Class ;
+        rdfs:subClassOf :Ingredient .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Starter
+:Starter rdf:type owl:Class ;
+         rdfs:subClassOf :Dish .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Sugar
+:Sugar rdf:type owl:Class ;
+       rdfs:subClassOf :Ingredient .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Tubers
+:Tubers rdf:type owl:Class ;
+        rdfs:subClassOf :Starch .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Vegan
+:Vegan rdf:type owl:Class ;
+       rdfs:subClassOf :Constraint .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Vegetable
+:Vegetable rdf:type owl:Class ;
+           rdfs:subClassOf :Ingredient .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#VegetalFat
+:VegetalFat rdf:type owl:Class ;
+            rdfs:subClassOf :Fat .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Vegetarian
+:Vegetarian rdf:type owl:Class ;
+            rdfs:subClassOf :Constraint .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Wedding
+:Wedding rdf:type owl:Class ;
+         rdfs:subClassOf :FamilyEvent .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#WhiteFish
+:WhiteFish rdf:type owl:Class ;
+           rdfs:subClassOf :AnimalProtein .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#WhiteMeat
+:WhiteMeat rdf:type owl:Class ;
+           rdfs:subClassOf :AnimalProtein .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/9/untitled-ontology-8#Yoghurt
+:Yoghurt rdf:type owl:Class ;
+         rdfs:subClassOf :Dairy .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Baptism
+                :Communion
+                :Wedding
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Client
+                :Constraint
+                :CousineStyle
+                :Dish
+                :Drink
+                :Event
+                :Ingredient
+                :Menu
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
