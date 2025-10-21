@@ -98,6 +98,22 @@
     (multislot SarterOf
         (type INSTANCE)
         (create-accessor read-write))
+    ; POPIEDADES COMUNES PARA LAS RECETAS
+    (slot title (type STRING))
+    (slot servings (type INTEGER))
+    (slot price (type FLOAT))
+    (slot wine_pairing (type STRING))
+    (multislot restrictions (type SYMBOL))
+    (slot restrictions_text (type STRING))
+    (slot is_vegan (type SYMBOL))
+    (slot is_gluten_free (type SYMBOL))
+    (slot is_vegetarian (type SYMBOL))
+    (slot is_dairy_free (type SYMBOL))
+    (slot is_kosher (type SYMBOL))
+    (slot is_halal (type SYMBOL))
+    (multislot ingredients (type STRING))
+    (multislot seasons (type SYMBOL))
+    (slot season_text (type STRING))
 )
 
 (defclass Dessert
