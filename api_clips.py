@@ -31,6 +31,127 @@ def preprocess_ingredients_with_default_image(ingredients, default_image="no_ima
             pass  
     return ingredients
 
+def is_kosher_ingredient(ingredient_name):
+    """Check if an ingredient is kosher-friendly by checking each word"""
+    non_kosher_words = {
+        'pork', 'bacon', 'ham', 'lard', 'sausage','shellfish', 'shrimp', 'lobster', 'crab', 
+        'clam', 'oyster', 'mussel', 'scallop', 'catfish', 'eel', 'shark',
+        'gelatin', 'rennet', 'lard','ray', 'gelatin', 'rennet', 'vanilla extract', 'worcestershire sauce'
+    }
+    ingredient_lower = ingredient_name.lower()
+    # Tokenize the ingredient name into individual words
+    words = ingredient_lower.split()
+    
+    # Check if any word matches non-kosher ingredients
+    for word in words:
+        if word in non_kosher_words:
+            return False
+
+    for term in non_kosher_words:
+        if term in ingredient_lower:
+            return False
+            
+    return True
+        
+
+def is_halal_ingredient(ingredient_name):
+    non_halal_words = {
+        'pork', 'bacon', 'ham', 'alcohol', 'wine', 'beer', 'liquor', 'rum',
+        'whiskey', 'vodka', 'gin', 'brandy', 'gelatin', 'rennet', 'lard'
+    }
+    
+    ingredient_lower = ingredient_name.lower()
+    
+    # Check for exact word matches
+    words = ingredient_lower.split()
+    for word in words:
+        if word in non_halal_words:
+            return False
+    
+    # Check for partial matches
+    for term in non_halal_words:
+        if term in ingredient_lower:
+            return False
+            
+    return True
+
+def check_kosher_halal(ingredients_list):
+    """Check if recipe is kosher and halal based on ingredients"""
+    is_kosher = True
+    is_halal = True
+    
+    for ingredient_name in ingredients_list:
+        if not is_kosher_ingredient(ingredient_name):
+            is_kosher = False
+        if not is_halal_ingredient(ingredient_name):
+            is_halal = False
+        # If both are already False, we can break early
+        if not is_kosher and not is_halal:
+            break
+            
+    return is_kosher, is_halal
+
+def classify_by_season_simple(ingredients_list):
+     
+    # Key seasonal ingredients (one word matches)
+    seasonal_ingredients = {
+        'spring': {'asparagus', 'artichoke', 'rhubarb', 'pea', 'radish', 'spinach', 'fava bean'},
+        'summer': {'berry', 'peach', 'watermelon', 'corn', 'fig', 'zucchini', 'nectarine'},
+        'fall': {'pumpkin', 'squash', 'cranberry','brussel sprout', 'sweet potato', 'persimmon', 'chestnut'},
+        'winter': {'citrus', 'pomegranate', 'kale', 'collard', 'leek', 'parsnip', 'turnip'}
+    }
+    
+    found_seasons = set()
+    
+    for ingredient in ingredients_list:
+        ingredient_lower = ingredient.lower()
+        
+        # Check each word in the ingredient name
+        words = ingredient_lower.split()
+        
+        for word in words:
+            for season, ingredients in seasonal_ingredients.items():
+                if word in ingredients:
+                    found_seasons.add(season)
+    
+    # Return results based on the three cases
+    if len(found_seasons) == 1:
+        # Only one season found
+        season = list(found_seasons)[0]
+        return [season], season.capitalize()
+    
+    else:
+        # No seasonal ingredients found
+        return ['any-season'], "Any season"
+def format_ingredient_for_clips(ingredient):
+    """Convert ingredient name to CLIPS-friendly symbol (no spaces, no quotes)"""
+    return ingredient.replace(' ', '-').replace('"', '').replace("'", "")
+
+def bool_to_symbol(value):
+    """Convert boolean to CLIPS TRUE/FALSE"""
+    return "TRUE" if value else "FALSE"
+
+def suggest_wine_for_main(ingredients_list):
+    """Simple wine pairing for main courses based on key ingredients"""
+    
+    ingredients_lower = ' '.join(ingredients_list).lower()
+    
+    # Simple ingredient-based wine pairing
+    if any(meat in ingredients_lower for meat in ['beef', 'steak', 'lamb', 'pork']):
+        return "Red wine"
+    elif any(poultry in ingredients_lower for poultry in ['chicken', 'turkey', 'duck']):
+        return "White wine or light Red wine"
+    elif any(fish in ingredients_lower for fish in ['fish', 'salmon', 'tuna', 'cod']):
+        return "White wine"
+    elif any(seafood in ingredients_lower for seafood in ['shrimp', 'lobster', 'crab', 'scallop']):
+        return "White wine"
+    elif any(pasta in ingredients_lower for pasta in ['pasta', 'spaghetti', 'noodle']):
+        return "Red wine or White wine"
+    elif any(vegetarian in ingredients_lower for vegetarian in ['tofu', 'bean', 'lentil', 'vegetable']):
+        return "Light Red wine or White wine"
+    else:
+        return " No wine pairing"
+
 # Definir las intolerancias posibles
 all_intolerances = [
     "dairy", "egg", "gluten", "grain", "peanut", "seafood", 
@@ -44,10 +165,18 @@ configuration = spoonacular.Configuration(
 configuration.api_key['apiKeyScheme'] = os.environ["API_KEY"]
 
 # Definir filtros de búsqueda
-diets = None 
-intolerances = "gluten free, dairy free"  
-meal_type = "main course"  
-num_recipes = 10 # Por ejemplo, obtener 5 recetas
+diets = None  # Puedes cambiar a 'vegan', 'pescetarian', etc.
+intolerances = 'gluten,dairy'  # Puedes combinar múltiples intolerancias separándolas con comas
+meal_type = "main"  #siempre poner 'main course', 'appetizer' o 'dessert'
+num_recipes = 10
+
+if meal_type ==  'main course': 
+                    dish_class = 'Main'
+
+elif meal_type == 'appetizer':
+    dish_class = 'Starter'
+else:
+    dish_class = 'Dessert'
 
 tags = []
 if diets:
@@ -79,6 +208,7 @@ with spoonacular.ApiClient(configuration) as api_client:
         # Crear una lista para almacenar las recetas filtradas
         filtered_recipes = []
 
+
         # Abrir el archivo CLIPS para escribir las instancias
         with open("recipes_clips.clp", "a") as f:
             for recipe_data in api_response.recipes:
@@ -90,11 +220,7 @@ with spoonacular.ApiClient(configuration) as api_client:
                 diets = ", ".join(recipe_data.diets) if hasattr(recipe_data, 'diets') else 'No diet'
                 meal_types = ", ".join(recipe_data.dish_types) if hasattr(recipe_data, 'dish_types') else 'No dish type'
 
-                wine_pairing = ""
-                if hasattr(recipe_data, 'wine_pairing') and recipe_data.wine_pairing and hasattr(recipe_data.wine_pairing, 'paired_wines'):
-                    wine_pairing = ", ".join(recipe_data.wine_pairing.paired_wines)
-                else:
-                    wine_pairing = 'No wine pairing'
+                
 
                 # wine_pairing = ", ".join(recipe_data.wine_pairing) if hasattr(recipe_data, 'wine_pairing') else 'No wine pairing'
                 vegan = recipe_data.vegan if hasattr(recipe_data, 'vegan') else 'False'
@@ -104,14 +230,24 @@ with spoonacular.ApiClient(configuration) as api_client:
 
                 # Crear lista de intolerancias que estén presentes
                 restrictions = []
-                for intolerance in all_intolerances:
-                    # Verificar si la intolerancia está presente y es True
-                    intolerance_value = getattr(recipe_data, intolerance.lower(), False)
-                    if intolerance_value:
-                        restrictions.append(intolerance)
+                if vegan:
+                    restrictions.append("vegan")
+                    
+                if gluten_free:
+                    restrictions.append("gluten free")
+                if vegetarian:
+                    restrictions.append("vegetarian")
+                if dairy_free:
+                    restrictions.append("dairy free")
 
-                # Convertir la lista de restricciones a una cadena
-                restrictions_str = ", ".join(restrictions) if restrictions else "No restrictions"
+                # Convertir la lista de restricciones a formato CLIPS multislot
+                if restrictions:
+                    restrictions_clips = ' '.join([format_ingredient_for_clips(restriction) for restriction in restrictions])
+                    restrictions_text = ", ".join(restrictions)
+                else:
+                    restrictions_clips = 'none'
+                    restrictions_text = "No restrictions"
+
 
                 # Comprobar si la imagen es None y asignar un valor predeterminado si es necesario
                 image_url = recipe_data.image if hasattr(recipe_data, 'image') and recipe_data.image else "No image available"
@@ -126,14 +262,40 @@ with spoonacular.ApiClient(configuration) as api_client:
                         # In case imageType attribute is missing, set default
                         setattr(recipe_data, 'image_type', "unknown")
 
+                
+
                 # Comprobar si el campo 'aisle' existe y asignar valor predeterminado si es necesario
                 aisle = ""
                 if hasattr(recipe_data, 'extended_ingredients'):
                     for ingredient in recipe_data.extended_ingredients:
                         aisle = ingredient.aisle if hasattr(ingredient, 'aisle') and ingredient.aisle else ""
                         ingredients = [ingredient.name for ingredient in recipe_data.extended_ingredients if hasattr(ingredient, 'name')]
-                        ingredients_str = ", ".join(ingredients) if ingredients else "No ingredients"
 
+                        if ingredients:
+                            ingredients_clips = ' '.join([format_ingredient_for_clips(ingredient) for ingredient in ingredients])
+
+                            # Simple seasonal classification
+                            seasons, season_text = classify_by_season_simple(ingredients)
+                            # Format seasons for CLIPS multislot
+                            seasons_clips = ' '.join(seasons)
+                            
+                            is_kosher, is_halal = check_kosher_halal(ingredients)
+                            
+                        else:
+                            ingredients_clips = 'No-ingredients'
+                            is_kosher, is_halal = False, False
+                            seasons, season_text = ['any-season'], "Any season"
+                            seasons_clips = 'any-season'
+                
+                wine_pairing = ""
+                if hasattr(recipe_data, 'wine_pairing') and recipe_data.wine_pairing and hasattr(recipe_data.wine_pairing, 'paired_wines'):
+                    wine_pairing = ", ".join(recipe_data.wine_pairing.paired_wines)
+                else:
+                    # Only suggest wine for main courses
+                    if dish_class == 'Main':
+                        wine_pairing = suggest_wine_for_main(ingredients)
+                    else:
+                        wine_pairing = "No wine pairing"
 
                 for ingredient in recipe_data.extended_ingredients:
                     image = ingredient.image if hasattr(ingredient, 'image') and ingredient.image else "no_image_available.png"
@@ -151,21 +313,27 @@ with spoonacular.ApiClient(configuration) as api_client:
                     for ingredient in recipe_data.extended_ingredients:
                         if ingredient.aisle is None:
                             ingredient.aisle = ""  # o "unknown"
+
+                
+
                 # Escribir la instancia en formato CLIPS
-                f.write(f"\n(definstance Recipe_{recipe_id} \n " 
-                        f"(title \"{title}\") \n"  
-                        f"(servings {servings}) \n"
-                        f"(price \"{price_per_serving}\") \n"                      
-                        f"(diets \"{diets}\") \n "
-                        f"(meal_types \"{meal_types}\") \n"
-                        f"(wine_pairing \"{wine_pairing}\") "
-                        f"(is_vegan {(vegan)}) "
-                        f"(is_gluten_free {str(gluten_free)}) "
-                        f"(is_vegetarian {str(vegetarian)}) \n"
-                        f"(is_dairy_free {str(dairy_free)}) \n"
-                        f"(restrictions \"{restrictions_str}\") "
-                        # f"(ingredients \"{ingredients_str}\") \n"
-                        f")\n")
+                                
+                f.write(f"(definstance Recipe_{recipe_id} of {dish_class}\n")
+                f.write(f"  (title \"{title}\")\n")
+                f.write(f"  (servings {servings})\n")
+                f.write(f"  (price {price_per_serving/servings:.2f})\n")
+                f.write(f"  (wine_pairing \"{wine_pairing}\")\n")
+                f.write(f"  (restrictions {restrictions_clips})\n")
+                f.write(f"  (restrictions_text \"{restrictions_text}\")\n")
+                f.write(f"  (is_vegan {bool_to_symbol(vegan)})\n")
+                f.write(f"  (is_gluten_free {bool_to_symbol(gluten_free)})\n")
+                f.write(f"  (is_vegetarian {bool_to_symbol(vegetarian)})\n")
+                f.write(f"  (is_dairy_free {bool_to_symbol(dairy_free)})\n")
+                f.write(f"  (is_kosher {bool_to_symbol(is_kosher)})\n")
+                f.write(f"  (is_halal {bool_to_symbol(is_halal)})\n")
+                f.write(f"  (ingredients {ingredients_clips})\n")
+                f.write(f"  (seasons {seasons_clips})\n")
+                f.write(f"  (season_text \"{season_text}\"))\n\n")
 
                 # Filtrar la receta para el archivo JSON
                 filtered_recipe = {
@@ -173,15 +341,20 @@ with spoonacular.ApiClient(configuration) as api_client:
                     "title": title,
                     "servings": servings,
                     "pricePerServing": price_per_serving,
-                    "diets": recipe_data.diets if hasattr(recipe_data, 'diets') else [],
-                    "mealTypes": recipe_data.dish_types if hasattr(recipe_data, 'dish_types') else [],
+                    "priceCalculated": price_per_serving/servings,
+                    "dishClass": dish_class,  # Add dish class
+                    "mealTypes": meal_types,
                     "winePairing": wine_pairing,
                     "vegan": vegan,
                     "glutenFree": gluten_free,
                     "vegetarian": vegetarian,
                     "dairyFree": dairy_free,
+                    "isKosher": is_kosher,
+                    "isHalal": is_halal,
                     "restrictions": restrictions,
-                    "ingredients": ingredients
+                    "ingredients": ingredients,
+                    "seasons": seasons,
+                    "seasonText": season_text
                 }
 
                 # filtered_recipe = api_response.to_dict()
