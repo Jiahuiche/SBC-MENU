@@ -20,17 +20,12 @@
    =>
    (printout t "Event type (wedding/congress/family): ")
    (bind ?type (read))
-   (printout t "Number of guests: ")
-   (bind ?numGuests (read))
+   ;;;(printout t "Number of guests: ")
+   ;;;(bind ?numGuests (read))
    (printout t "Season (spring/summer/autumn/winter): ")
    (bind ?season (read))
-   (printout t "Cuisine style (classic/modern/regional/gourmet): ")
-   (bind ?style (read))
-
-   (printout t "Maximum budget per person: ")
-   (bind ?maxPrice (read))
-   (printout t "Minimum budget per person: ")
-   (bind ?minPrice (read))
+   ;;;(printout t "Cuisine style (classic/modern/regional/gourmet): ")
+   ;;;(bind ?style (read))
 
    (printout t "Vegan? (TRUE/FALSE): ")
    (bind ?vegan (read))
