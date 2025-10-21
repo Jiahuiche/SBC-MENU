@@ -6323,4 +6323,5738 @@
             "tomato"
         ]
     }
+][
+    {
+        "id": 646738,
+        "title": "Herbivoracious' White Bean and Kale Soup",
+        "servings": 6,
+        "pricePerServing": 78.07,
+        "priceCalculated": 13.011666666666665,
+        "dishClass": "Main",
+        "mealTypes": "soup, lunch, main course, main dish, dinner",
+        "winePairing": "Wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "olive oil",
+            "onion",
+            "garlic",
+            "carrot",
+            "kosher salt",
+            "bay leaves",
+            "rosemary leaves",
+            "the following: parmesan rind)",
+            "navy",
+            "water",
+            "dinosaur kale",
+            "juice of lemon"
+        ],
+        "seasons": [
+            "winter"
+        ],
+        "seasonText": "Winter"
+    },
+    {
+        "id": 654905,
+        "title": "Pasta With Chickpeas and Kale",
+        "servings": 4,
+        "pricePerServing": 243.81,
+        "priceCalculated": 60.9525,
+        "dishClass": "Main",
+        "mealTypes": "side dish, lunch, main course, main dish, dinner",
+        "winePairing": "Wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "bell pepper",
+            "chickpeas",
+            "garlic",
+            "kale",
+            "olive oil",
+            "parsley",
+            "salt and pepper",
+            "ziti"
+        ],
+        "seasons": [
+            "winter"
+        ],
+        "seasonText": "Winter"
+    },
+    {
+        "id": 664147,
+        "title": "Tuscan White Bean Soup with Olive Oil and Rosemary",
+        "servings": 6,
+        "pricePerServing": 49.7,
+        "priceCalculated": 8.283333333333333,
+        "dishClass": "Main",
+        "mealTypes": "soup, lunch, main course, main dish, dinner",
+        "winePairing": "Light Red wine or White wine",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "bay leaf",
+            "rosemary",
+            "garlic",
+            "olive oil",
+            "onion",
+            "salt",
+            "water",
+            "beans"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 636436,
+        "title": "Bulgur Pilaf With Green Lentils, Served With Caramelized Onions -Mercimekli Bulgur Pilavi",
+        "servings": 1,
+        "pricePerServing": 2499.73,
+        "priceCalculated": 2499.73,
+        "dishClass": "Main",
+        "mealTypes": "side dish, lunch, main course, main dish, dinner",
+        "winePairing": "Light Red wine or White wine",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "bulgur wheat",
+            "preparation time: minutes cooking time: minutes",
+            "gr/8oz/ green lentils",
+            "salt and ground pepper",
+            "mild olive oil",
+            "onion",
+            "pickled and peppers"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 642540,
+        "title": "Falafel Burgers",
+        "servings": 4,
+        "pricePerServing": 187.34,
+        "priceCalculated": 46.835,
+        "dishClass": "Main",
+        "mealTypes": "lunch, main course, main dish, dinner",
+        "winePairing": "Light Red wine or White wine",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "garbanzo beans",
+            "chili powder",
+            "coriander",
+            "cumin",
+            "flour",
+            "parsley",
+            "garlic",
+            "juice of lemon",
+            "pita pockets",
+            "onion",
+            "salt and pepper",
+            "tahini",
+            "turmeric",
+            "vegetable oil",
+            "water"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 646738,
+        "title": "Herbivoracious' White Bean and Kale Soup",
+        "servings": 6,
+        "pricePerServing": 78.07,
+        "priceCalculated": 13.011666666666665,
+        "dishClass": "Main",
+        "mealTypes": "soup, lunch, main course, main dish, dinner",
+        "winePairing": " No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "olive oil",
+            "onion",
+            "garlic",
+            "carrot",
+            "kosher salt",
+            "bay leaves",
+            "rosemary leaves",
+            "the following: parmesan rind)",
+            "navy",
+            "water",
+            "dinosaur kale",
+            "juice of lemon"
+        ],
+        "seasons": [
+            "winter"
+        ],
+        "seasonText": "Winter"
+    },
+    {
+        "id": 664553,
+        "title": "Vegetable Fried Rice",
+        "servings": 2,
+        "pricePerServing": 321.68,
+        "priceCalculated": 160.84,
+        "dishClass": "Main",
+        "mealTypes": "side dish, lunch, main course, main dish, dinner",
+        "winePairing": "Light Red wine or White wine",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "basmati rice - 2",
+            "bell peppers - i used half of and colour",
+            "carrot",
+            "beans - \u00bd",
+            "peas - \u00bc",
+            "corn - \u00bc",
+            "cabbage - \u00bc",
+            "onions - 1",
+            "ginger garlic paste n",
+            "chillies to 3 depending on your taste",
+            "soya sauce n",
+            "chilli sauce/tomato sauce n",
+            "cashews and raisins",
+            "oil spoons",
+            "salt and pepper"
+        ],
+        "seasons": [
+            "summer"
+        ],
+        "seasonText": "Summer"
+    },
+    {
+        "id": 655573,
+        "title": "Penne Arrabiata",
+        "servings": 4,
+        "pricePerServing": 104.84,
+        "priceCalculated": 26.21,
+        "dishClass": "Main",
+        "mealTypes": "side dish, lunch, main course, main dish, dinner",
+        "winePairing": " No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "tomato",
+            "parsley",
+            "garlic",
+            "olive oil",
+            "pkt penne",
+            "peppers"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 1098387,
+        "title": "Quinoa Salad with Barberries & Nuts",
+        "servings": 4,
+        "pricePerServing": 208.57,
+        "priceCalculated": 52.1425,
+        "dishClass": "Main",
+        "mealTypes": "side dish, lunch, salad, main course, main dish, dinner",
+        "winePairing": " No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "quinoa",
+            "water",
+            "salt",
+            "olive oil",
+            "barberries",
+            "slivered almonds",
+            "slivered pistachios",
+            "coriander",
+            "mint"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 642610,
+        "title": "Farm Fresh Vegetable Stew",
+        "servings": 7,
+        "pricePerServing": 147.24,
+        "priceCalculated": 21.034285714285716,
+        "dishClass": "Main",
+        "mealTypes": "soup, lunch, main course, main dish, dinner",
+        "winePairing": "Light Red wine or White wine",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "extra virgin olive oil",
+            "garlic",
+            "onions",
+            "peppers",
+            "carrots",
+            "celery",
+            "eggplant",
+            "green beans",
+            "squash",
+            "zucchini",
+            "tomatoes",
+            "thyme leaves",
+            "cumin",
+            "kosher salt",
+            "oregano",
+            "kidney beans",
+            "brown lentils"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 664408,
+        "title": "Vegan Chocolate Banana Pie",
+        "servings": 6,
+        "pricePerServing": 108.58,
+        "priceCalculated": 18.096666666666668,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "silken tofu",
+            "bananas",
+            "chocolate-melted in a bain marie",
+            "cornstarch-mixed",
+            "maple syrup",
+            "pie crust"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 662151,
+        "title": "Sugar Cookies",
+        "servings": 16,
+        "pricePerServing": 33.36,
+        "priceCalculated": 2.085,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "flour",
+            "salt",
+            "baking powder",
+            "butter",
+            "sugar",
+            "eggs",
+            "lemon juice",
+            "lemon zest"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 652002,
+        "title": "Mint Chocolate Chip Ice Cream",
+        "servings": 2,
+        "pricePerServing": 399.69,
+        "priceCalculated": 199.845,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free"
+        ],
+        "ingredients": [
+            "milk",
+            "heavy cream",
+            "mint leaves",
+            "granulated sugar",
+            "egg yolks",
+            "semi-sweet chocolate"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 659887,
+        "title": "Shortbread Lemon Cookies",
+        "servings": 36,
+        "pricePerServing": 28.89,
+        "priceCalculated": 0.8025,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "butter",
+            "eggs",
+            "lemon zest",
+            "almond flour",
+            "caster sugar",
+            "flour",
+            "lemon juice",
+            "lemons",
+            "powdered sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 658276,
+        "title": "Rice Pudding",
+        "servings": 4,
+        "pricePerServing": 61.47,
+        "priceCalculated": 15.3675,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "short grain rice",
+            "water",
+            "salt",
+            "milk",
+            "sugar",
+            "vanilla",
+            "egg",
+            "butter",
+            "cinnamon",
+            "nutmeg"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 632573,
+        "title": "Apple Pie Bars",
+        "servings": 24,
+        "pricePerServing": 28.15,
+        "priceCalculated": 1.1729166666666666,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "dairy free"
+        ],
+        "ingredients": [
+            "mcintosh apples",
+            "baking powder",
+            "baking soda",
+            "butterscotch chips",
+            "eggs",
+            "flour",
+            "ground cinnamon",
+            "ground nutmeg",
+            "salt",
+            "sugar",
+            "vegetable oil"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 641308,
+        "title": "Decadent Black Forest Cake",
+        "servings": 20,
+        "pricePerServing": 51.76,
+        "priceCalculated": 2.588,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "duncan hines devil's food cake",
+            "comstock cherry pie filling",
+            "cream cheese",
+            "powdered sugar",
+            "whipping cream",
+            "almond extract",
+            "simple syrup glaze",
+            "water",
+            "sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 657341,
+        "title": "Pumpkin Pecan Streusel Cake - gluten free, soy free, vegan",
+        "servings": 8,
+        "pricePerServing": 119.68,
+        "priceCalculated": 14.96,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "gluten free"
+        ],
+        "ingredients": [
+            "aluminum free baking soda",
+            "aluminum free baking powder",
+            "apple cider vinegar",
+            "bananas",
+            "brown rice flour",
+            "firmly brown sugar",
+            "enjoy life brand chocolate chips",
+            "ground ginger",
+            "ground nutmeg",
+            "kosher salt",
+            "oat flour",
+            "pecans",
+            "roasted pumpkin puree",
+            "rice flour",
+            "sorghum flour",
+            "earth balance soy free spread",
+            "tapioca flour",
+            "coconut yogurt"
+        ],
+        "seasons": [
+            "fall"
+        ],
+        "seasonText": "Fall"
+    },
+    {
+        "id": 637625,
+        "title": "Cheesecake with cranberries",
+        "servings": 10,
+        "pricePerServing": 137.94,
+        "priceCalculated": 13.794,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "allspice",
+            "butter",
+            "mcvitie's wholewheat digestive cookies",
+            "cornstarch",
+            "cranberries",
+            "cream cheese",
+            "eggs",
+            "orange extract",
+            "cream",
+            "sugar",
+            "water"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 716347,
+        "title": "90 Second Cookie in a Bowl",
+        "servings": 1,
+        "pricePerServing": 84.6,
+        "priceCalculated": 84.6,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "butter",
+            "chocolate chips",
+            "coconut",
+            "egg yolk",
+            "flour",
+            "salt",
+            "sugar",
+            "vanilla"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 642413,
+        "title": "English Berry Trifle",
+        "servings": 16,
+        "pricePerServing": 110.62,
+        "priceCalculated": 6.91375,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free"
+        ],
+        "ingredients": [
+            "eggs",
+            "lemon juice",
+            "lemon peel",
+            "pound cake",
+            "sherry",
+            "strawberries",
+            "strawberry preserves",
+            "sugar",
+            "sugar",
+            "butter",
+            "whipped cream"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 663298,
+        "title": "The Lazy Girl's Slow Cooker Rice Pudding",
+        "servings": 6,
+        "pricePerServing": 145.8,
+        "priceCalculated": 24.3,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "cardamom pods",
+            "cashews",
+            "raisins",
+            "rice",
+            "saffron",
+            "salt",
+            "sugar",
+            "vanilla",
+            "milk"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 634091,
+        "title": "Banana Foster Bread Pudding",
+        "servings": 8,
+        "pricePerServing": 220.9,
+        "priceCalculated": 27.6125,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "butter",
+            "brown sugar",
+            "eggs",
+            "bread",
+            "heavy cream",
+            "milk",
+            "cream de banana liqueur",
+            "ground cinnamon",
+            "vanilla",
+            "bananas",
+            "bananas",
+            "butter",
+            "brown sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 643117,
+        "title": "Flour-Less Peanut Butter Cookies",
+        "servings": 24,
+        "pricePerServing": 14.25,
+        "priceCalculated": 0.59375,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "peanut butter",
+            "honey",
+            "egg",
+            "baking soda",
+            "vanilla extract"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 644681,
+        "title": "Gingerbread Christmas Tree Cookies",
+        "servings": 1,
+        "pricePerServing": 207.48,
+        "priceCalculated": 207.48,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "butter",
+            "brown sugar",
+            "b salt",
+            "honey",
+            "milk",
+            "c flour",
+            "baking powder",
+            "ground ginger",
+            "cinnamon powder",
+            "nutmeg",
+            "sieve together in a bowl"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 641958,
+        "title": "Easy Eggplant Curry",
+        "servings": 6,
+        "pricePerServing": 94.87,
+        "priceCalculated": 15.811666666666667,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "eggplants",
+            "ghee/vegetable oil",
+            "onion",
+            "centimeters piece of ginger",
+            "garlic",
+            "fennel seeds",
+            "cumin seeds/ground cumin",
+            "ground coriander",
+            "ground turmeric",
+            "a pinch of chilli powder",
+            "sea salt",
+            "tomatoes"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 658503,
+        "title": "Roasted Beet Hummus",
+        "servings": 10,
+        "pricePerServing": 41.27,
+        "priceCalculated": 4.127000000000001,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, condiment, starter, snack, appetizer, dip, antipasto, hor d'oeuvre, spread",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "roasted beets",
+            "chickpeas",
+            "garlic",
+            "ground cumin",
+            "juice of lemon",
+            "olive oil",
+            "salt",
+            "tahini sesame seed paste"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 716290,
+        "title": "Mango Salsa",
+        "servings": 1,
+        "pricePerServing": 428.51,
+        "priceCalculated": 428.51,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, condiment, starter, snack, appetizer, dip, antipasto, hor d'oeuvre, spread",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "cherry tomatoes",
+            "bell pepper",
+            "lime juice",
+            "mangoes",
+            "mint leaves",
+            "bell pepper",
+            "onions",
+            "sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 716426,
+        "title": "Cauliflower, Brown Rice, and Vegetable Fried Rice",
+        "servings": 8,
+        "pricePerServing": 119.36,
+        "priceCalculated": 14.92,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "grapeseed oil",
+            "coconut oil",
+            "scallions",
+            "garlic",
+            "cauliflower",
+            "brown rice",
+            "broccoli",
+            "peas",
+            "soy sauce",
+            "sesame oil",
+            "sesame seeds",
+            "additional scallion tops",
+            "salt"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 648470,
+        "title": "Japanese Curry Puffs",
+        "servings": 4,
+        "pricePerServing": 150.92,
+        "priceCalculated": 37.73,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "carrots",
+            "potatoes",
+            "onion",
+            "japanese curry",
+            "water",
+            "oil",
+            "puff pastry dough sheets"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 660395,
+        "title": "Smokey Rainbow Chili",
+        "servings": 8,
+        "pricePerServing": 106.62,
+        "priceCalculated": 13.3275,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "olive oil",
+            "zucchini",
+            "bell pepper",
+            "orange bell pepper",
+            "jalapeno pepper",
+            "garlic",
+            "onion",
+            "stewed tomatoes",
+            "tomato paste",
+            "black beans",
+            "kernel corn",
+            "kidney beans",
+            "paprika",
+            "chili powder",
+            "oregano",
+            "ground pepper",
+            "cayenne pepper"
+        ],
+        "seasons": [
+            "summer"
+        ],
+        "seasonText": "Summer"
+    },
+    {
+        "id": 663092,
+        "title": "Thai Coconut Curry Soup",
+        "servings": 6,
+        "pricePerServing": 192.82,
+        "priceCalculated": 32.13666666666666,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "coconut milk",
+            "worth of water",
+            "curry paste",
+            "ginger paste",
+            "snow peas",
+            "string beans",
+            "carrot",
+            "of thai basil leaves",
+            "lime juice",
+            "soy sauce",
+            "a few es of sesame oil",
+            "chili powder",
+            "tofu",
+            "salt",
+            "bell pepper",
+            "pepper"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 660146,
+        "title": "Simple Squash Salad",
+        "servings": 6,
+        "pricePerServing": 57.39,
+        "priceCalculated": 9.565,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, salad, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "bell pepper",
+            "pepper",
+            "parsley",
+            "garlic",
+            "garlic powder",
+            "capers plus 2 tablespoons caper juice",
+            "lemon",
+            "onion",
+            "oregano",
+            "pepper flakes",
+            "salt",
+            "sugar",
+            "vinegar",
+            "zucchini"
+        ],
+        "seasons": [
+            "summer"
+        ],
+        "seasonText": "Summer"
+    },
+    {
+        "id": 658674,
+        "title": "Roasted Sunchoke, Apple, and Onion Soup",
+        "servings": 12,
+        "pricePerServing": 202.79,
+        "priceCalculated": 16.899166666666666,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "sunchokes",
+            "onion",
+            "apple",
+            "vegetable stock",
+            "olive oil",
+            "s&p"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 640104,
+        "title": "Corn Salsa",
+        "servings": 4,
+        "pricePerServing": 150.92,
+        "priceCalculated": 37.73,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, condiment, starter, snack, appetizer, dip, antipasto, hor d'oeuvre, spread",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "bell pepper",
+            "celery",
+            "ears of corn - boil and from the cob",
+            "basil",
+            "garlic",
+            "jalape\u00f1o",
+            "onion",
+            "salt",
+            "sugar",
+            "pickle",
+            "vine tomato",
+            "vinegar"
+        ],
+        "seasons": [
+            "summer"
+        ],
+        "seasonText": "Summer"
+    }
+][
+    {
+        "id": 661121,
+        "title": "Spicy Lemongrass Soup",
+        "servings": 4,
+        "pricePerServing": 312.86,
+        "priceCalculated": 78.215,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "lemongrass",
+            "peppers",
+            "ginger",
+            "garlic",
+            "vegetable broth",
+            "coconut milk if you can find it",
+            "tofu cubes",
+            "snow peas",
+            "mushrooms",
+            "rice noodles",
+            "juice of lime",
+            "ginger"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 659174,
+        "title": "Salsa Verde By Mommie Cooks",
+        "servings": 6,
+        "pricePerServing": 228.11,
+        "priceCalculated": 38.01833333333334,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, condiment, starter, snack, appetizer, dip, antipasto, hor d'oeuvre, spread",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "tomatillos",
+            "vegetable broth",
+            "cumin",
+            "coriander",
+            "juice of lime",
+            "garlic cloves",
+            "chiles",
+            "onion",
+            "cilantro",
+            "pepper",
+            "salt"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 634437,
+        "title": "Basil Tagliatelle with Roasted Red Bell Pepper Salad",
+        "servings": 4,
+        "pricePerServing": 407.11,
+        "priceCalculated": 101.7775,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "tagliatelle",
+            "bell peppers",
+            "garlic cloves",
+            "parsley",
+            "horseradish",
+            "green onions",
+            "lemon juice",
+            "extra virgin olive oil",
+            "sea salt",
+            "ground pepper"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 635058,
+        "title": "Black Bean and Peppers Taco Filling",
+        "servings": 8,
+        "pricePerServing": 54.61,
+        "priceCalculated": 6.82625,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "bell pepper",
+            "black beans",
+            "canned tomatoes",
+            "chili powder",
+            "garlic powder",
+            "ground cumin",
+            "olive oil",
+            "onion",
+            "oregano",
+            "paprika"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 641005,
+        "title": "Cucumber and Cannellini Bean Side Salad",
+        "servings": 10,
+        "pricePerServing": 93.73,
+        "priceCalculated": 9.373000000000001,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, salad, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "artichokes",
+            "pepper",
+            "cannellini beans",
+            "cucumbers",
+            "basil",
+            "capers - plus caper juice",
+            "juice of lemon",
+            "olive oil",
+            "onion",
+            "pepper flakes",
+            "salt",
+            "sugar",
+            "sun tomatoes",
+            "vinegar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 632269,
+        "title": "Amaranth and Roast Veggie Salad",
+        "servings": 2,
+        "pricePerServing": 246.69,
+        "priceCalculated": 123.345,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, salad, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "amaranth",
+            "basil-infused olive oil",
+            "bell pepper",
+            "pumpkin",
+            "onion",
+            "rocket leaves",
+            "herbal salt",
+            "punnet baby tomatoes"
+        ],
+        "seasons": [
+            "fall"
+        ],
+        "seasonText": "Fall"
+    },
+    {
+        "id": 633126,
+        "title": "Avocado and Orange Salad With Orange-Ginger Dressing",
+        "servings": 4,
+        "pricePerServing": 222.04,
+        "priceCalculated": 55.51,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, salad, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "avocados",
+            "oranges",
+            "green onions",
+            "orange juice",
+            "juice of lemon",
+            "ginger paste",
+            "agave syrup",
+            "olive oil",
+            "salt and pepper"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 662551,
+        "title": "Sweet Potato and Celery Soup",
+        "servings": 12,
+        "pricePerServing": 20.21,
+        "priceCalculated": 1.6841666666666668,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "sweet potatoes",
+            "celery",
+            "onion",
+            "olive oil",
+            "basil",
+            "bay leaves",
+            "salt and pepper"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 798400,
+        "title": "Spicy Black-Eyed Pea Curry with Swiss Chard and Roasted Eggplant",
+        "servings": 6,
+        "pricePerServing": 94.05,
+        "priceCalculated": 15.674999999999999,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "black-eyed peas",
+            "curry powder",
+            "garam masala",
+            "globe",
+            "ground coriander",
+            "ground cumin",
+            "ground mustard powder",
+            "juice of lemon",
+            "olive oil",
+            "chilies",
+            "sea salt",
+            "shallots",
+            "swiss chard",
+            "tomato",
+            "water"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 658644,
+        "title": "Roasted Red Pepper & Tomato Salsa",
+        "servings": 8,
+        "pricePerServing": 41.56,
+        "priceCalculated": 5.195,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, condiment, starter, snack, appetizer, dip, antipasto, hor d'oeuvre, spread",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "cilantro",
+            "cumin",
+            "garlic",
+            "jalapeno pepper",
+            "juice of lime",
+            "olive oil",
+            "onion",
+            "bell pepper",
+            "salt ** i used sea salt",
+            "tomatoes"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 658503,
+        "title": "Roasted Beet Hummus",
+        "servings": 10,
+        "pricePerServing": 41.27,
+        "priceCalculated": 4.127000000000001,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, condiment, starter, snack, appetizer, dip, antipasto, hor d'oeuvre, spread",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "roasted beets",
+            "chickpeas",
+            "garlic",
+            "ground cumin",
+            "juice of lemon",
+            "olive oil",
+            "salt",
+            "tahini sesame seed paste"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 642346,
+        "title": "Egyptain Cauliflower Side Salad",
+        "servings": 2,
+        "pricePerServing": 150.58,
+        "priceCalculated": 75.29,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, salad, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "cauliflower",
+            "cumin",
+            "parsley",
+            "lemon juice",
+            "olive oil",
+            "bell pepper",
+            "salt"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 633226,
+        "title": "Baby Bok Choy Stir Fry",
+        "servings": 2,
+        "pricePerServing": 109.24,
+        "priceCalculated": 54.62,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "bok choy",
+            "shallot",
+            "garlic",
+            "coconut oil",
+            "salt",
+            "pepper",
+            "pepper flakes",
+            "almonds"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 636292,
+        "title": "Brown Rice Mushroom Pilaf",
+        "servings": 4,
+        "pricePerServing": 65.37,
+        "priceCalculated": 16.3425,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "onion",
+            "brown rice",
+            "mushrooms",
+            "unrefined sunflower oil",
+            "water",
+            "sea salt",
+            "ground pepper"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 721185,
+        "title": "avarakkai paruppu curry recipe",
+        "servings": 3,
+        "pricePerServing": 142.38,
+        "priceCalculated": 47.46,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "avarakkai / broad beans",
+            "chillies nos)",
+            "coriander seeds",
+            "cumin seeds",
+            "jaggery",
+            "tamarind - lemon size",
+            "mustard",
+            "oil",
+            "oil",
+            "pepper corns tsp",
+            "salt",
+            "tomatoes nos)",
+            "toor dal cup",
+            "turmeric powder tsp"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 649411,
+        "title": "Lebanese Tabouleh",
+        "servings": 2,
+        "pricePerServing": 407.95,
+        "priceCalculated": 203.975,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "bulgur wheat",
+            "flat leaf parsley",
+            "mint",
+            "green onions",
+            "juice from lemon",
+            "olive oil",
+            "roma tomatoes"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 661121,
+        "title": "Spicy Lemongrass Soup",
+        "servings": 4,
+        "pricePerServing": 312.86,
+        "priceCalculated": 78.215,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "lemongrass",
+            "peppers",
+            "ginger",
+            "garlic",
+            "vegetable broth",
+            "coconut milk if you can find it",
+            "tofu cubes",
+            "snow peas",
+            "mushrooms",
+            "rice noodles",
+            "juice of lime",
+            "ginger"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 639618,
+        "title": "Classic Mint Julep",
+        "servings": 1,
+        "pricePerServing": 128.43,
+        "priceCalculated": 128.43,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "mint",
+            "simple syrup",
+            "ice",
+            "bourbon"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 642546,
+        "title": "Falafels With Tahini Sauce",
+        "servings": 4,
+        "pricePerServing": 128.15,
+        "priceCalculated": 32.0375,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "garbazo beans",
+            "onion",
+            "garlic",
+            "cilantro",
+            "parsley",
+            "cumin",
+            "sea salt",
+            "pepper flakes",
+            "baking powder",
+            "flour",
+            "tahini sauce",
+            "tahini paste",
+            "water",
+            "jucie of lemons",
+            "garlic",
+            "sea salt"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 660222,
+        "title": "Skinny Carrot Fritters",
+        "servings": 16,
+        "pricePerServing": 13.47,
+        "priceCalculated": 0.841875,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "baby carrots",
+            "bread crumbs )",
+            "cayenne pepper",
+            "chickpea flour",
+            "cilantro",
+            "salt",
+            "sriracha sauce",
+            "water"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 642546,
+        "title": "Falafels With Tahini Sauce",
+        "servings": 4,
+        "pricePerServing": 128.15,
+        "priceCalculated": 32.0375,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "garbazo beans",
+            "onion",
+            "garlic",
+            "cilantro",
+            "parsley",
+            "cumin",
+            "sea salt",
+            "pepper flakes",
+            "baking powder",
+            "flour",
+            "tahini sauce",
+            "tahini paste",
+            "water",
+            "jucie of lemons",
+            "garlic",
+            "sea salt"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 632252,
+        "title": "Alouette\u00ae Stuffed Mushroom Caps",
+        "servings": 8,
+        "pricePerServing": 150.29,
+        "priceCalculated": 18.78625,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "seasoned bread crumbs",
+            "mushroom caps",
+            "alouette spinach & artichoke spread"
+        ],
+        "seasons": [
+            "spring"
+        ],
+        "seasonText": "Spring"
+    },
+    {
+        "id": 648470,
+        "title": "Japanese Curry Puffs",
+        "servings": 4,
+        "pricePerServing": 150.92,
+        "priceCalculated": 37.73,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "carrots",
+            "potatoes",
+            "onion",
+            "japanese curry",
+            "water",
+            "oil",
+            "puff pastry dough sheets"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 660222,
+        "title": "Skinny Carrot Fritters",
+        "servings": 16,
+        "pricePerServing": 13.47,
+        "priceCalculated": 0.841875,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "baby carrots",
+            "bread crumbs )",
+            "cayenne pepper",
+            "chickpea flour",
+            "cilantro",
+            "salt",
+            "sriracha sauce",
+            "water"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 640720,
+        "title": "Creamy Vegan Butternut Squash Mac and Cheese",
+        "servings": 6,
+        "pricePerServing": 87.89,
+        "priceCalculated": 14.648333333333333,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "breadcrumbs",
+            "butternut squash",
+            "elbow macaroni",
+            "nutritional yeast",
+            "pepper",
+            "salt",
+            "soy milk",
+            "vegan buttery spread",
+            "vegan cheddar shreds",
+            "water"
+        ],
+        "seasons": [
+            "fall"
+        ],
+        "seasonText": "Fall"
+    }
+][
+    {
+        "id": 658753,
+        "title": "Roma Tomato Bruschetta",
+        "servings": 4,
+        "pricePerServing": 189.3,
+        "priceCalculated": 47.325,
+        "dishClass": "Starter",
+        "mealTypes": "fingerfood, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "balsamic vinegar",
+            "extra virgin olive oil",
+            "bread",
+            "basil",
+            "garlic",
+            "bell pepper",
+            "salt",
+            "tomatoes"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 632252,
+        "title": "Alouette\u00ae Stuffed Mushroom Caps",
+        "servings": 8,
+        "pricePerServing": 150.29,
+        "priceCalculated": 18.78625,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "seasoned bread crumbs",
+            "mushroom caps",
+            "alouette spinach & artichoke spread"
+        ],
+        "seasons": [
+            "spring"
+        ],
+        "seasonText": "Spring"
+    },
+    {
+        "id": 660222,
+        "title": "Skinny Carrot Fritters",
+        "servings": 16,
+        "pricePerServing": 13.47,
+        "priceCalculated": 0.841875,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "baby carrots",
+            "bread crumbs )",
+            "cayenne pepper",
+            "chickpea flour",
+            "cilantro",
+            "salt",
+            "sriracha sauce",
+            "water"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 661121,
+        "title": "Spicy Lemongrass Soup",
+        "servings": 4,
+        "pricePerServing": 312.86,
+        "priceCalculated": 78.215,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "lemongrass",
+            "peppers",
+            "ginger",
+            "garlic",
+            "vegetable broth",
+            "coconut milk if you can find it",
+            "tofu cubes",
+            "snow peas",
+            "mushrooms",
+            "rice noodles",
+            "juice of lime",
+            "ginger"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 641014,
+        "title": "Cucumber Mint Tea Sandwiches",
+        "servings": 8,
+        "pricePerServing": 48.96,
+        "priceCalculated": 6.12,
+        "dishClass": "Starter",
+        "mealTypes": "fingerfood, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "bread",
+            "cucumber",
+            "wasabi maple spread",
+            "pepper grinder",
+            "mint leaves",
+            "dill",
+            "vegenaise",
+            "maple syrup",
+            "wasabi powder",
+            "pepper"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][][][
+    {
+        "id": 652038,
+        "title": "Minted Pea & Spinach Soup",
+        "servings": 6,
+        "pricePerServing": 97.28,
+        "priceCalculated": 16.213333333333335,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "chicken stock",
+            "cream",
+            "mint",
+            "milk",
+            "peas",
+            "potatoes",
+            "salt & pepper",
+            "spinach",
+            "sugar",
+            "water",
+            "yoghurt"
+        ],
+        "seasons": [
+            "spring"
+        ],
+        "seasonText": "Spring"
+    },
+    {
+        "id": 640956,
+        "title": "Crunchy Lemon Dill Vegetable Dip",
+        "servings": 10,
+        "pricePerServing": 26.81,
+        "priceCalculated": 2.681,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, condiment, starter, snack, appetizer, dip, antipasto, hor d'oeuvre, spread",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "carrots",
+            "dill",
+            "lemon juice",
+            "lemon zest",
+            "mayonnaise",
+            "pepper",
+            "bell pepper",
+            "salt",
+            "scallions",
+            "cream"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 660842,
+        "title": "Spanakopita Cups",
+        "servings": 36,
+        "pricePerServing": 59.0,
+        "priceCalculated": 1.6388888888888888,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "olive oil",
+            "scallions",
+            "spinach",
+            "dill",
+            "eggs",
+            "feta cheese",
+            "kosher salt",
+            "pepper",
+            "phyllo dough",
+            "butter",
+            "breadcrumbs"
+        ],
+        "seasons": [
+            "spring"
+        ],
+        "seasonText": "Spring"
+    },
+    {
+        "id": 729530,
+        "title": "Upside-Down Blueberry Puffs Brunch",
+        "servings": 6,
+        "pricePerServing": 83.0,
+        "priceCalculated": 13.833333333333334,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "baking powder",
+            "blueberries",
+            "butter",
+            "butter vanilla bakery emulsion",
+            "cream of tartar",
+            "egg",
+            "flour",
+            "milk",
+            "salt",
+            "sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 715389,
+        "title": "Cinnamon Nut Squares",
+        "servings": 24,
+        "pricePerServing": 27.3,
+        "priceCalculated": 1.1375,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "butter",
+            "butter vanilla bakery emulsion",
+            "cinnamon",
+            "egg",
+            "flour",
+            "pecans",
+            "salt",
+            "sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 644693,
+        "title": "Gingerbread Mummies",
+        "servings": 18,
+        "pricePerServing": 29.95,
+        "priceCalculated": 1.6638888888888888,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": false,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "butter",
+            "all purpose flour",
+            "granulated sugar",
+            "molasses",
+            "egg",
+            "balsamic vinegar",
+            "baking powder",
+            "ground ginger",
+            "baking soda",
+            "ground cinnamon",
+            "ground cloves",
+            "ground nutmeg",
+            "kosher salt",
+            "powdered sugar",
+            "vanilla extract",
+            "milk"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 632788,
+        "title": "Arugula Salad With Pomegranate, Avocado and Goat Cheese",
+        "servings": 2,
+        "pricePerServing": 226.32,
+        "priceCalculated": 113.16,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, salad, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "avocado",
+            "baby arugula",
+            "balsamic vinegar or",
+            "cilantro",
+            "goat cheese",
+            "olive oil",
+            "pomegranate molasses",
+            "seeds/arils from 1/ pomegranate",
+            "course sea salt and pepper"
+        ],
+        "seasons": [
+            "winter"
+        ],
+        "seasonText": "Winter"
+    },
+    {
+        "id": 647501,
+        "title": "Hot Pepper Pumpkin Soup",
+        "servings": 4,
+        "pricePerServing": 284.96,
+        "priceCalculated": 71.24,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "vegetable stock",
+            "pumpkin puree",
+            "onion",
+            "coriander leafs",
+            "garlic",
+            "oregano",
+            "peppercorns",
+            "heavy whipping cream",
+            "butter"
+        ],
+        "seasons": [
+            "fall"
+        ],
+        "seasonText": "Fall"
+    },
+    {
+        "id": 661925,
+        "title": "Strawberry-Mango Quinoa Salad",
+        "servings": 4,
+        "pricePerServing": 187.33,
+        "priceCalculated": 46.8325,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, salad, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "cucumber",
+            "mint",
+            "honey",
+            "lime juice",
+            "lime zest",
+            "mango",
+            "olive oil",
+            "bell pepper",
+            "quinoa",
+            "salt",
+            "cream",
+            "strawberries",
+            "water"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 1061943,
+        "title": "How to Make the Ultimate Christmas Fruit Pizza",
+        "servings": 8,
+        "pricePerServing": 39.84,
+        "priceCalculated": 4.98,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "baking powder",
+            "egg",
+            "flour",
+            "granulated sugar",
+            "salt",
+            "butter",
+            "vanilla extract"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 652919,
+        "title": "Nachos Grande",
+        "servings": 4,
+        "pricePerServing": 205.18,
+        "priceCalculated": 51.295,
+        "dishClass": "Starter",
+        "mealTypes": "fingerfood, antipasti, lunch, main course, starter, snack, appetizer, main dish, antipasto, hor d'oeuvre, dinner",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "canned tomatoes",
+            "cheddar cheese",
+            "chili powder",
+            "corn oil",
+            "garlic cloves",
+            "bell pepper",
+            "chili",
+            "ground cumin",
+            "onion",
+            "paprika",
+            "paprika to garnish",
+            "refried beans",
+            "tortilla chips",
+            "water"
+        ],
+        "seasons": [
+            "summer"
+        ],
+        "seasonText": "Summer"
+    },
+    {
+        "id": 642678,
+        "title": "Ferrero Raffaello Coconut Candy Balls",
+        "servings": 24,
+        "pricePerServing": 23.94,
+        "priceCalculated": 0.9975,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": false,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "graham cracker crumbs",
+            "coconut flakes",
+            "hazelnuts",
+            "powdered sugar",
+            "milk",
+            "butter",
+            "coconut flakes"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 644846,
+        "title": "Gluten Free Onion Rings",
+        "servings": 4,
+        "pricePerServing": 85.91,
+        "priceCalculated": 21.4775,
+        "dishClass": "Starter",
+        "mealTypes": "fingerfood, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "egg",
+            "vegetable oil",
+            "milk",
+            "bette hagan's pizza/french bread flour mix",
+            "salt",
+            "baking powder",
+            "onions",
+            "all purpose flour",
+            "oil"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 636598,
+        "title": "Butternut Squash Souffle Side Dish",
+        "servings": 4,
+        "pricePerServing": 81.2,
+        "priceCalculated": 20.3,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": false,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "butter to grease the ramekins",
+            "butternut squash",
+            "cinnamon",
+            "egg whites",
+            "egg yolks",
+            "ground ginger",
+            "heavy cream",
+            "nutmeg",
+            "splash of vanilla extract",
+            "milk"
+        ],
+        "seasons": [
+            "fall"
+        ],
+        "seasonText": "Fall"
+    },
+    {
+        "id": 654241,
+        "title": "Oven-Baked Feta Cheese Dip",
+        "servings": 4,
+        "pricePerServing": 130.04,
+        "priceCalculated": 32.51,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, condiment, starter, snack, appetizer, dip, antipasto, hor d'oeuvre, spread",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "feta cheese",
+            "garlic",
+            "tomato sauce",
+            "part-skim mozzarella cheese",
+            "mild cheddar cheese"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 652513,
+        "title": "Mozzarella Sticks",
+        "servings": 1,
+        "pricePerServing": 1035.09,
+        "priceCalculated": 1035.09,
+        "dishClass": "Starter",
+        "mealTypes": "fingerfood, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "butter",
+            "bread crumbs",
+            "eggs",
+            "flour",
+            "garlic powder",
+            "seasoning",
+            "pepper",
+            "spaghetti sauce",
+            "string cheese",
+            "water"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 639487,
+        "title": "Cinnamon Sugar Fried Apples",
+        "servings": 16,
+        "pricePerServing": 30.24,
+        "priceCalculated": 1.89,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "all purpose flour",
+            "apples",
+            "brown sugar",
+            "cinnamon",
+            "eggs",
+            "granulated sugar",
+            "lemon zest",
+            "milk",
+            "oil",
+            "salt",
+            "butter"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 651767,
+        "title": "Meyer Lemon Scented Farro and Asparagus Salad",
+        "servings": 6,
+        "pricePerServing": 179.01,
+        "priceCalculated": 29.834999999999997,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, salad, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": false,
+        "isHalal": false,
+        "restrictions": [
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "farro",
+            "peas",
+            "lemon zest",
+            "meyer lemon juice",
+            "asparagus",
+            "olive oil",
+            "shallots",
+            "crimini mushrooms",
+            "herbs de provence",
+            "salt and pepper",
+            "macadamia nuts",
+            "meyer lemon vinagirette",
+            "meyer lemon juice",
+            "citrus champagne vinegar",
+            "vegetable stock",
+            "olive oil",
+            "garlic clove",
+            "honey"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 715389,
+        "title": "Cinnamon Nut Squares",
+        "servings": 24,
+        "pricePerServing": 27.3,
+        "priceCalculated": 1.1375,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "butter",
+            "butter vanilla bakery emulsion",
+            "cinnamon",
+            "egg",
+            "flour",
+            "pecans",
+            "salt",
+            "sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 1061943,
+        "title": "How to Make the Ultimate Christmas Fruit Pizza",
+        "servings": 8,
+        "pricePerServing": 39.84,
+        "priceCalculated": 4.98,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "baking powder",
+            "egg",
+            "flour",
+            "granulated sugar",
+            "salt",
+            "butter",
+            "vanilla extract"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 644674,
+        "title": "Gingerbread",
+        "servings": 24,
+        "pricePerServing": 37.98,
+        "priceCalculated": 1.5824999999999998,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "baking powder",
+            "baking soda",
+            "un-packed brown sugar",
+            "butter",
+            "pumpkin",
+            "eggs",
+            "pastry",
+            "ground cinnamon",
+            "ground cloves",
+            "ground ginger",
+            "honey",
+            "molasses",
+            "turbinado sugar",
+            "water"
+        ],
+        "seasons": [
+            "fall"
+        ],
+        "seasonText": "Fall"
+    },
+    {
+        "id": 649411,
+        "title": "Lebanese Tabouleh",
+        "servings": 2,
+        "pricePerServing": 407.95,
+        "priceCalculated": 203.975,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "bulgur wheat",
+            "flat leaf parsley",
+            "mint",
+            "green onions",
+            "juice from lemon",
+            "olive oil",
+            "roma tomatoes"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 635370,
+        "title": "Blue Cheese Tartlets With Fig Jam and Walnuts",
+        "servings": 30,
+        "pricePerServing": 95.48,
+        "priceCalculated": 3.182666666666667,
+        "dishClass": "Starter",
+        "mealTypes": "fingerfood, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "cheese",
+            "butter",
+            "fig jam",
+            "flour",
+            "orange zest",
+            "walnuts"
+        ],
+        "seasons": [
+            "summer"
+        ],
+        "seasonText": "Summer"
+    },
+    {
+        "id": 640720,
+        "title": "Creamy Vegan Butternut Squash Mac and Cheese",
+        "servings": 6,
+        "pricePerServing": 87.89,
+        "priceCalculated": 14.648333333333333,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "breadcrumbs",
+            "butternut squash",
+            "elbow macaroni",
+            "nutritional yeast",
+            "pepper",
+            "salt",
+            "soy milk",
+            "vegan buttery spread",
+            "vegan cheddar shreds",
+            "water"
+        ],
+        "seasons": [
+            "fall"
+        ],
+        "seasonText": "Fall"
+    },
+    {
+        "id": 729530,
+        "title": "Upside-Down Blueberry Puffs Brunch",
+        "servings": 6,
+        "pricePerServing": 83.0,
+        "priceCalculated": 13.833333333333334,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "baking powder",
+            "blueberries",
+            "butter",
+            "butter vanilla bakery emulsion",
+            "cream of tartar",
+            "egg",
+            "flour",
+            "milk",
+            "salt",
+            "sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 649514,
+        "title": "Lemon Bars",
+        "servings": 24,
+        "pricePerServing": 29.79,
+        "priceCalculated": 1.24125,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "butter",
+            "cream cheese",
+            "flour",
+            "reg. size containers lemon pudding",
+            "milk",
+            "cool whip",
+            "nuts",
+            "powdered sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 638879,
+        "title": "Chocolate Caramel Cupcakes",
+        "servings": 20,
+        "pricePerServing": 44.91,
+        "priceCalculated": 2.2455,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "flour",
+            "cocoa powder",
+            "baking soda",
+            "salt",
+            "butter",
+            "sugar",
+            "vanilla extract",
+            "eggs",
+            "semi-sweet chocolate",
+            "milk",
+            "butter",
+            "brown suger",
+            "milk",
+            "powdered confectioners' sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 658850,
+        "title": "Royal Wedding Pear and Coriander Scones",
+        "servings": 8,
+        "pricePerServing": 62.62,
+        "priceCalculated": 7.8275,
+        "dishClass": "Dessert",
+        "mealTypes": "morning meal, dessert, brunch, breakfast",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "pear",
+            "flour",
+            "xanthan gum)",
+            "baking soda",
+            "baking powder",
+            "salt",
+            "butter",
+            "sucanat",
+            "eggs",
+            "cream",
+            "coriander"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 637761,
+        "title": "Cherry ice cream",
+        "servings": 8,
+        "pricePerServing": 56.02,
+        "priceCalculated": 7.0025,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "cherries",
+            "corn starch",
+            "cream",
+            "lemon juice",
+            "milk",
+            "salt",
+            "sugar"
+        ],
+        "seasons": [
+            "summer"
+        ],
+        "seasonText": "Summer"
+    },
+    {
+        "id": 632629,
+        "title": "Apple-Walnut Crisp",
+        "servings": 4,
+        "pricePerServing": 271.66,
+        "priceCalculated": 67.915,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "all purpose flour",
+            "winsap apples",
+            "tbsp. butter",
+            "butter",
+            "cinnamon",
+            "granulated sugar",
+            "lemon juice",
+            "brown sugar",
+            "nutmeg",
+            "oatmeal",
+            "walnuts",
+            "water"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 641435,
+        "title": "Dessert Apple Rings With Cinnamon Cream Syrup",
+        "servings": 6,
+        "pricePerServing": 150.42,
+        "priceCalculated": 25.069999999999997,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "all purpose flour",
+            "canola oil",
+            "cinnamon",
+            "corn syrup",
+            "egg white",
+            "granny smith apples",
+            "salt",
+            "sugar",
+            "vanilla",
+            "water"
+        ],
+        "seasons": [
+            "summer"
+        ],
+        "seasonText": "Summer"
+    },
+    {
+        "id": 641308,
+        "title": "Decadent Black Forest Cake",
+        "servings": 20,
+        "pricePerServing": 51.76,
+        "priceCalculated": 2.588,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "duncan hines devil's food cake",
+            "comstock cherry pie filling",
+            "cream cheese",
+            "powdered sugar",
+            "whipping cream",
+            "almond extract",
+            "simple syrup glaze",
+            "water",
+            "sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 655270,
+        "title": "Peanut Butter Chocolate Chip Pie",
+        "servings": 1,
+        "pricePerServing": 1070.16,
+        "priceCalculated": 1070.16,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": false,
+        "restrictions": [],
+        "ingredients": [
+            "butter",
+            "chocolate chips",
+            "cup plus 2 condensed milk",
+            "cream cheese",
+            "double graham crackers",
+            "heavy cream",
+            "natural peanut butter",
+            "salt"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 657482,
+        "title": "Quad-Chocolate Cookies",
+        "servings": 4,
+        "pricePerServing": 195.84,
+        "priceCalculated": 48.96,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "flour",
+            "cocoa powder",
+            "sugar",
+            "butter",
+            "baking soda",
+            "powder",
+            "salt",
+            "egg",
+            "vanilla",
+            "semi-sweet chocolate chips",
+            "condensed milk",
+            "semi-sweet chocolate chips"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 663861,
+        "title": "Tropical Pineapple Cupcakes",
+        "servings": 18,
+        "pricePerServing": 62.99,
+        "priceCalculated": 3.4994444444444444,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "all purpose flour",
+            "baking powder",
+            "butter",
+            "confectioners' sugar",
+            "cream cheese",
+            "eggs",
+            "granulated sugar",
+            "maraschino cherries",
+            "milk",
+            "pineapple",
+            "pineapple chunks",
+            "pineapple rings",
+            "salt",
+            "vanilla",
+            "vanilla extract"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 665537,
+        "title": "Yoghurt Honey Madeleines",
+        "servings": 15,
+        "pricePerServing": 10.72,
+        "priceCalculated": 0.7146666666666667,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "egg",
+            "honey",
+            "sugar",
+            "natural yoghurt",
+            "flour",
+            "baking powder",
+            "butter"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 653186,
+        "title": "No-Bake Chocolate Peanut Butter Macaroons",
+        "servings": 1,
+        "pricePerServing": 226.59,
+        "priceCalculated": 226.59,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "milk",
+            "coconut",
+            "cocoa",
+            "butter",
+            "brown sugar",
+            "vanilla",
+            "cooking oats",
+            "peanut butter to garnish"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 636632,
+        "title": "Buttery Pull Apart Monkey Bread",
+        "servings": 16,
+        "pricePerServing": 34.0,
+        "priceCalculated": 2.125,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "milk",
+            "potatoes",
+            "shortening",
+            "sugar",
+            "salt",
+            "yeast",
+            "water",
+            "eggs",
+            "flour",
+            "butter"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 631965,
+        "title": "Acorn Squash Biscuits with Sage & Gruyere",
+        "servings": 14,
+        "pricePerServing": 82.33,
+        "priceCalculated": 5.880714285714285,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "flour",
+            "cornstarch",
+            "brown sugar",
+            "baking powder",
+            "baking soda",
+            "salt",
+            "butter",
+            "vegetable shortening",
+            "acorn squash",
+            "apple cider vinegar",
+            "gruyere cheese",
+            "sage",
+            "optional sage leaves"
+        ],
+        "seasons": [
+            "fall"
+        ],
+        "seasonText": "Fall"
+    },
+    {
+        "id": 640352,
+        "title": "Cranberry Apple Crisp",
+        "servings": 4,
+        "pricePerServing": 153.59,
+        "priceCalculated": 38.3975,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "granny smith apples",
+            "cranberries",
+            "sugar",
+            "butter",
+            "regular oats",
+            "brown sugar",
+            "flour",
+            "butter"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 650620,
+        "title": "Magic Cookie Bars",
+        "servings": 24,
+        "pricePerServing": 98.65,
+        "priceCalculated": 4.110416666666667,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": false,
+        "restrictions": [],
+        "ingredients": [
+            "chocolate chips",
+            "graham cracker crumbs",
+            "condensed milk",
+            "coconut",
+            "butter",
+            "walnuts"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 635200,
+        "title": "Blackberry Cobbler",
+        "servings": 6,
+        "pricePerServing": 78.99,
+        "priceCalculated": 13.165,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "baking powder",
+            "blackberry",
+            "butter",
+            "flour",
+            "milk",
+            "salt",
+            "sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 652820,
+        "title": "Mwc Chocolate Cake",
+        "servings": 4,
+        "pricePerServing": 154.43,
+        "priceCalculated": 38.6075,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [],
+        "ingredients": [
+            "baking powder",
+            "cocoa",
+            "cream",
+            "eggs",
+            "fig jam",
+            "flour",
+            "milk",
+            "oil",
+            "rum essence",
+            "salt",
+            "demerarra sugar"
+        ],
+        "seasons": [
+            "summer"
+        ],
+        "seasonText": "Summer"
+    },
+    {
+        "id": 645145,
+        "title": "Grandma B's Rhubarb Cake",
+        "servings": 15,
+        "pricePerServing": 45.06,
+        "priceCalculated": 3.004,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "apple sauce",
+            "baking powder",
+            "brandy",
+            "brown sugar",
+            "cinnamon",
+            "coconut",
+            "egg",
+            "flour",
+            "rhubarb",
+            "salt",
+            "skim milk",
+            "sugar",
+            "walnuts"
+        ],
+        "seasons": [
+            "spring"
+        ],
+        "seasonText": "Spring"
+    },
+    {
+        "id": 639057,
+        "title": "Chocolate Hazelnut Cake",
+        "servings": 12,
+        "pricePerServing": 197.89,
+        "priceCalculated": 16.49083333333333,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "baking soda",
+            "bittersweet chocolate",
+            "brown sugar",
+            "buttermilk",
+            "cake flour",
+            "coffee",
+            "cornstarch",
+            "cream of tartar",
+            "egg whites",
+            "egg yolks",
+            "eggs",
+            "flour",
+            "golden syrup",
+            "hazelnuts",
+            "heavy cream",
+            "kosher salt",
+            "frangelico liqueur",
+            "sugar",
+            "sugar",
+            "sugar",
+            "butter",
+            "vanilla",
+            "vanilla",
+            "water",
+            "water"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 653005,
+        "title": "Neiman Marcus Oatmeal Chocolate Chip Cookies",
+        "servings": 100,
+        "pricePerServing": 29.79,
+        "priceCalculated": 0.2979,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "butter",
+            "granulated sugar",
+            "brown sugar",
+            "eggs",
+            "vanilla",
+            "flour",
+            "blended oatmeal",
+            "salt",
+            "baking powder",
+            "baking soda",
+            "chocolate chips",
+            "chocolate bar",
+            "walnuts"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 636973,
+        "title": "Caramel Apple Cake",
+        "servings": 12,
+        "pricePerServing": 126.79,
+        "priceCalculated": 10.565833333333334,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "apple pie spice",
+            "apples",
+            "baking powder",
+            "brown sugar",
+            "butter",
+            "butter",
+            "cake flour",
+            "caramel candies",
+            "eggs",
+            "evaporated milk",
+            "heavy cream",
+            "powdered sugar",
+            "vanilla",
+            "sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 657917,
+        "title": "Raspberry Walnut Coffee Cake",
+        "servings": 6,
+        "pricePerServing": 93.39,
+        "priceCalculated": 15.565,
+        "dishClass": "Dessert",
+        "mealTypes": "morning meal, dessert, brunch, breakfast",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "dairy free"
+        ],
+        "ingredients": [
+            "almond milk",
+            "baking soda",
+            "cinnamon",
+            "flaxseed",
+            "maple syrup",
+            "oat flour",
+            "oil",
+            "raspberry jam",
+            "rolled oats",
+            "salt",
+            "turbinado sugar",
+            "vanilla",
+            "walnuts"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 641649,
+        "title": "Dried Cranberry Chocolate Cookies",
+        "servings": 35,
+        "pricePerServing": 25.6,
+        "priceCalculated": 0.7314285714285714,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "baking power",
+            "baking soda",
+            "cranberries",
+            "egg",
+            "egg yolk",
+            "granulated sugar",
+            "kosher salt",
+            "brown sugar",
+            "old fashioned rolled oats",
+            "flour",
+            "semisweet chocolate chips",
+            "butter",
+            "vanilla extract",
+            "chocolate chips"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 634854,
+        "title": "Berry Fruit Crumble",
+        "servings": 6,
+        "pricePerServing": 150.81,
+        "priceCalculated": 25.135,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "dairy free"
+        ],
+        "ingredients": [
+            "berries",
+            "maple syrup",
+            "old fashion oatmeal",
+            "almond meal",
+            "brown sugar",
+            "ground cinnamon",
+            "margarine"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 650939,
+        "title": "Maple-Glazed Apple Cookies",
+        "servings": 18,
+        "pricePerServing": 21.14,
+        "priceCalculated": 1.1744444444444444,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "apple",
+            "baking soda",
+            "brown sugar",
+            "butter",
+            "cinnamon",
+            "egg",
+            "flour",
+            "ground cloves",
+            "maple flavoring",
+            "milk",
+            "nutmeg",
+            "powdered sugar",
+            "salt"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 634006,
+        "title": "Banana Bread",
+        "servings": 6,
+        "pricePerServing": 58.25,
+        "priceCalculated": 9.708333333333334,
+        "dishClass": "Dessert",
+        "mealTypes": "morning meal, dessert, brunch, breakfast",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "bananas",
+            "butter",
+            "sugar",
+            "egg",
+            "vanilla",
+            "baking soda",
+            "salt",
+            "flour"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 636324,
+        "title": "Brownie Cake gluten free, dairy free",
+        "servings": 6,
+        "pricePerServing": 148.92,
+        "priceCalculated": 24.819999999999997,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "earth balance soy free spread",
+            "eggs",
+            "cane sugar",
+            "chocolate",
+            "vanilla paste",
+            "espresso powder",
+            "flour blend",
+            "cocoa powder",
+            "coconut oil"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 641889,
+        "title": "Easy Chewy M&M Cookies",
+        "servings": 14,
+        "pricePerServing": 42.6,
+        "priceCalculated": 3.042857142857143,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "baking powder",
+            "baking soda",
+            "eggs",
+            "flour",
+            "brown sugar",
+            "m&m candies",
+            "salt",
+            "sugar",
+            "butter",
+            "vanilla"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 664985,
+        "title": "Wasabi Ice Cream (Wasabi Aisu)",
+        "servings": 8,
+        "pricePerServing": 59.69,
+        "priceCalculated": 7.46125,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free"
+        ],
+        "ingredients": [
+            "egg yolks",
+            "water",
+            "superfine sugar",
+            "wasabi or)",
+            "vanilla extract",
+            "whipping cream",
+            "milk",
+            "salt"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 635524,
+        "title": "Blueberry Ricotta Cake",
+        "servings": 1,
+        "pricePerServing": 554.19,
+        "priceCalculated": 554.19,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "king arthur unbleached flour",
+            "sugar",
+            "baking powder",
+            "salt",
+            "milk",
+            "shortening",
+            "egg",
+            "vanilla",
+            "blueberries",
+            "eggs",
+            "ricotta cheese",
+            "sugar",
+            "vanilla"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 634237,
+        "title": "Bananas Foster Ice Cream",
+        "servings": 2,
+        "pricePerServing": 538.58,
+        "priceCalculated": 269.29,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "milk",
+            "kosher salt",
+            "granulated sugar",
+            "vanilla bean",
+            "egg yolks",
+            "heavy cream",
+            "butter",
+            "brown sugar",
+            "bananas",
+            "rum"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 641993,
+        "title": "Easy Homemade Oreo Cookies",
+        "servings": 68,
+        "pricePerServing": 15.46,
+        "priceCalculated": 0.2273529411764706,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "cream cheese",
+            "eggs",
+            "chocolate cake mix",
+            "icing sugar",
+            "margarine",
+            "milk",
+            "oil",
+            "vanilla"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 639202,
+        "title": "Chocolate Soup For Two",
+        "servings": 2,
+        "pricePerServing": 234.24,
+        "priceCalculated": 117.12,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free"
+        ],
+        "ingredients": [
+            "bittersweet chocolate chips",
+            "cornstarch",
+            "half and half",
+            "cream cheese",
+            "marshmallow creme",
+            "skim milk",
+            "condensed milk",
+            "vanilla extract",
+            "water"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 642551,
+        "title": "Fall Classic: Carrot Cake",
+        "servings": 16,
+        "pricePerServing": 55.91,
+        "priceCalculated": 3.494375,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "baking powder",
+            "baking soda",
+            "brown sugar",
+            "butter",
+            "canola oil",
+            "carrots",
+            "cinnamon",
+            "eggs",
+            "granulated sugar",
+            "icing sugar",
+            "cream cheese",
+            "salt",
+            "vanilla extract",
+            "flour"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 664448,
+        "title": "Vegan Lemon Cookies",
+        "servings": 8,
+        "pricePerServing": 44.18,
+        "priceCalculated": 5.5225,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "applesauce",
+            "baking soda",
+            "flour",
+            "juice from half a lemon",
+            "lemon zest",
+            "maple syrup",
+            "oil",
+            "salt",
+            "extra sugar to coat cookies prior to baking",
+            "turbinado sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 648010,
+        "title": "Irish Whiskey Pie",
+        "servings": 10,
+        "pricePerServing": 77.26,
+        "priceCalculated": 7.726000000000001,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "condensed milk",
+            "cornstarch",
+            "egg yolks",
+            "brown sugar",
+            "homogenized milk",
+            "pastry flour",
+            "salt",
+            "butter",
+            "vodka",
+            "water",
+            "irish whiskey"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 639177,
+        "title": "Chocolate Pudding - Rave Diet",
+        "servings": 3,
+        "pricePerServing": 192.52,
+        "priceCalculated": 64.17333333333333,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "water",
+            "maple syrup",
+            "corn flour",
+            "cocoa powder",
+            "vanilla",
+            "roasted hazelnuts"
+        ],
+        "seasons": [
+            "summer"
+        ],
+        "seasonText": "Summer"
+    },
+    {
+        "id": 633101,
+        "title": "Autumn Pumpkin Cake",
+        "servings": 12,
+        "pricePerServing": 33.48,
+        "priceCalculated": 2.7899999999999996,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "pumpkin",
+            "brown rice flour",
+            "coconut milk",
+            "raisins",
+            "agave syrup"
+        ],
+        "seasons": [
+            "fall"
+        ],
+        "seasonText": "Fall"
+    },
+    {
+        "id": 1005367,
+        "title": "Shortbread Lemon Bars",
+        "servings": 9,
+        "pricePerServing": 36.22,
+        "priceCalculated": 4.024444444444445,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "all purpose flour",
+            "all purpose flour",
+            "eggs",
+            "lemon juice",
+            "lemon zest",
+            "fat milk",
+            "powdered sugar",
+            "salt",
+            "sugar",
+            "butter"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 636292,
+        "title": "Brown Rice Mushroom Pilaf",
+        "servings": 4,
+        "pricePerServing": 65.37,
+        "priceCalculated": 16.3425,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "onion",
+            "brown rice",
+            "mushrooms",
+            "unrefined sunflower oil",
+            "water",
+            "sea salt",
+            "ground pepper"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 649794,
+        "title": "Lemon square bars",
+        "servings": 24,
+        "pricePerServing": 13.63,
+        "priceCalculated": 0.5679166666666667,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "baking powder",
+            "confectioners' sugar",
+            "eggs",
+            "flour",
+            "lemon juice",
+            "lemon rind",
+            "sugar",
+            "butter",
+            "vanilla essence"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 652413,
+        "title": "Moroccan Carrot Soup",
+        "servings": 2,
+        "pricePerServing": 225.31,
+        "priceCalculated": 112.655,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free"
+        ],
+        "ingredients": [
+            "butter",
+            "onion",
+            "carrots",
+            "chicken stock",
+            "cumin seeds",
+            "honey",
+            "lemon juice",
+            "allspice",
+            "salt and pepper",
+            "yogurt"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 654735,
+        "title": "Party Rice Balls",
+        "servings": 24,
+        "pricePerServing": 21.51,
+        "priceCalculated": 0.8962500000000001,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [],
+        "ingredients": [
+            "rice",
+            "water",
+            "salt",
+            "eggs",
+            "romano cheese",
+            "parsley or",
+            "breadcrumbs",
+            "oil"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 657719,
+        "title": "Radish & Snap Pea Quinoa Salad",
+        "servings": 4,
+        "pricePerServing": 168.23,
+        "priceCalculated": 42.0575,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, salad, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "quinoa",
+            "water",
+            "snap peas",
+            "radishes",
+            "flat leaf parsley",
+            "yogurt",
+            "tahini",
+            "juice of lemon",
+            "sea salt",
+            "water"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 636769,
+        "title": "Mini Ham Omelets",
+        "servings": 6,
+        "pricePerServing": 94.47,
+        "priceCalculated": 15.745,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, morning meal, starter, brunch, snack, appetizer, breakfast, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free"
+        ],
+        "ingredients": [
+            "cherry tomatoes",
+            "eggs",
+            "milk",
+            "onions",
+            "parmesan cheese",
+            "bell pepper",
+            "prosciutto"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 632528,
+        "title": "Apple Curry Soup",
+        "servings": 1,
+        "pricePerServing": 390.82,
+        "priceCalculated": 390.82,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, soup, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "apple cider",
+            "coconut milk",
+            "curry powder",
+            "chavrie goat cheese",
+            "granny smith apples",
+            "leeks",
+            "turmeric",
+            "vegetable oil",
+            "mushrooms"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 652750,
+        "title": "Mussels & Clams in White Wine {Cozze e Vongole}",
+        "servings": 4,
+        "pricePerServing": 245.9,
+        "priceCalculated": 61.475,
+        "dishClass": "Starter",
+        "mealTypes": "antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "cherry tomatoes",
+            "chili flakes",
+            "parsley",
+            "garlic",
+            "olive oil",
+            "salt",
+            "white wine"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 634437,
+        "title": "Basil Tagliatelle with Roasted Red Bell Pepper Salad",
+        "servings": 4,
+        "pricePerServing": 407.11,
+        "priceCalculated": 101.7775,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "tagliatelle",
+            "bell peppers",
+            "garlic cloves",
+            "parsley",
+            "horseradish",
+            "green onions",
+            "lemon juice",
+            "extra virgin olive oil",
+            "sea salt",
+            "ground pepper"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 657698,
+        "title": "Quinoa, Tomato, Green Onion Side Salad",
+        "servings": 2,
+        "pricePerServing": 138.73,
+        "priceCalculated": 69.365,
+        "dishClass": "Starter",
+        "mealTypes": "side dish, antipasti, salad, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": true,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": true,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegan",
+            "gluten free",
+            "vegetarian",
+            "dairy free"
+        ],
+        "ingredients": [
+            "green onions",
+            "lemon",
+            "olive oil",
+            "quinoa",
+            "salt and pepper",
+            "tomatoes",
+            "water"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
+][
+    {
+        "id": 716411,
+        "title": "Snickerdoodle Ice Cream",
+        "servings": 4,
+        "pricePerServing": 213.23,
+        "priceCalculated": 53.3075,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "ground cinnamon",
+            "ground nutmeg",
+            "half-and-half",
+            "heavy whipping cream",
+            "brown sugar",
+            "vanilla extract",
+            "vanilla sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 650479,
+        "title": "Luscious Lemon Bars",
+        "servings": 6,
+        "pricePerServing": 52.52,
+        "priceCalculated": 8.753333333333334,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "baking powder",
+            "butter",
+            "eggs",
+            "flour",
+            "juice of lemon",
+            "lemon zest",
+            "powdered sugar",
+            "sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 635248,
+        "title": "Blackberry Walnut Cookies",
+        "servings": 20,
+        "pricePerServing": 31.18,
+        "priceCalculated": 1.559,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "butter",
+            "flour",
+            "granulated sugar",
+            "brown sugar",
+            "raspberry jam",
+            "vanilla extract",
+            "walnuts"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 715378,
+        "title": "Strawberry and Nutella Cobbler",
+        "servings": 3,
+        "pricePerServing": 178.23,
+        "priceCalculated": 59.41,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "baking powder",
+            "cornstarch",
+            "cream",
+            "flour",
+            "nutella",
+            "salt",
+            "strawberries",
+            "sugar",
+            "sugar",
+            "reserve a bit of sugar and cream",
+            "vanilla"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 729532,
+        "title": "Gluten Free Almond Blueberry Coffee Cake",
+        "servings": 8,
+        "pricePerServing": 67.9,
+        "priceCalculated": 8.4875,
+        "dishClass": "Dessert",
+        "mealTypes": "morning meal, dessert, brunch, breakfast",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "gluten free",
+            "vegetarian"
+        ],
+        "ingredients": [
+            "almonds",
+            "baking powder",
+            "blueberries",
+            "canola oil",
+            "egg",
+            "flour",
+            "granulated sugar",
+            "sea salt",
+            "turbinado sugar",
+            "vanilla yogurt",
+            "milk",
+            "xanthan gum"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 651945,
+        "title": "Mini Chocolate Pudding Oreo Cheesecakes",
+        "servings": 12,
+        "pricePerServing": 101.5,
+        "priceCalculated": 8.458333333333334,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "cream cheese",
+            "eggs",
+            "chocolate pudding",
+            "milk",
+            "oreos",
+            "vanilla extract",
+            "sugar"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 638832,
+        "title": "Chocolate Banoffee Pie",
+        "servings": 8,
+        "pricePerServing": 214.73,
+        "priceCalculated": 26.84125,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "bananas",
+            "butter",
+            "chocolate digestives/plain chocolate cookies",
+            "crackers",
+            "thickened cream",
+            "brown sugar",
+            "chocolate",
+            "icing mixture/sugar",
+            "condensed milk",
+            "vanilla essence"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 665276,
+        "title": "Whole Wheat Chocolate Chip Cookies",
+        "servings": 24,
+        "pricePerServing": 30.37,
+        "priceCalculated": 1.2654166666666666,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "baking powder",
+            "baking soda",
+            "chocolate chips",
+            "coconut sugar",
+            "brown sugar",
+            "eggs",
+            "kosher salt",
+            "butter",
+            "vanilla extract",
+            "flour"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 635063,
+        "title": "Black Bean Brownies",
+        "servings": 12,
+        "pricePerServing": 52.8,
+        "priceCalculated": 4.3999999999999995,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "black beans",
+            "canola oil",
+            "applesauce",
+            "eggs",
+            "egg yolk",
+            "sugar",
+            "cocoa",
+            "espresso powder",
+            "semi-sweet chocolate",
+            "butter",
+            "vanilla extract",
+            "salt",
+            "flour",
+            "walnuts"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 657341,
+        "title": "Pumpkin Pecan Streusel Cake - gluten free, soy free, vegan",
+        "servings": 8,
+        "pricePerServing": 119.68,
+        "priceCalculated": 14.96,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": true,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "gluten free"
+        ],
+        "ingredients": [
+            "aluminum free baking soda",
+            "aluminum free baking powder",
+            "apple cider vinegar",
+            "bananas",
+            "brown rice flour",
+            "firmly brown sugar",
+            "enjoy life brand chocolate chips",
+            "ground ginger",
+            "ground nutmeg",
+            "kosher salt",
+            "oat flour",
+            "pecans",
+            "roasted pumpkin puree",
+            "rice flour",
+            "sorghum flour",
+            "earth balance soy free spread",
+            "tapioca flour",
+            "coconut yogurt"
+        ],
+        "seasons": [
+            "fall"
+        ],
+        "seasonText": "Fall"
+    }
+][
+    {
+        "id": 643615,
+        "title": "Fresh Strawberry Yogurt Cake",
+        "servings": 12,
+        "pricePerServing": 72.01,
+        "priceCalculated": 6.0008333333333335,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "baking soda",
+            "butter",
+            "eggs",
+            "flour",
+            "lemon",
+            "powdered sugar",
+            "salt",
+            "strawberries",
+            "sugar",
+            "vanilla"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 658318,
+        "title": "Ricotta and Mascarpone Cheese Tart",
+        "servings": 1,
+        "pricePerServing": 843.42,
+        "priceCalculated": 843.42,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "almonds",
+            "anise biscotti cookies",
+            "butter",
+            "eggs",
+            "mascarpone cheese",
+            "crust - optional",
+            "powdered sugar",
+            "ricotta cheese",
+            "salt",
+            "vanilla bean paste"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 631849,
+        "title": "2 Minute Chocolate Yum",
+        "servings": 1,
+        "pricePerServing": 107.72,
+        "priceCalculated": 107.72,
+        "dishClass": "Dessert",
+        "mealTypes": "lunch, main course, main dish, dinner",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "cocoa powder",
+            "egg",
+            "flour",
+            "milk",
+            "oil",
+            "salt",
+            "sugar",
+            "vanilla"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 632197,
+        "title": "Almond Toffee Bars",
+        "servings": 1,
+        "pricePerServing": 722.56,
+        "priceCalculated": 722.56,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "almond extract",
+            "confectioners sugar",
+            "egg",
+            "unsifted flour",
+            "margarine",
+            "milk chocolate covered 1 cup slivered almonds",
+            "condensed milk"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 645427,
+        "title": "Green Chile & Corn Casserole Side Dish",
+        "servings": 10,
+        "pricePerServing": 54.06,
+        "priceCalculated": 5.406000000000001,
+        "dishClass": "Dessert",
+        "mealTypes": "side dish, antipasti, starter, snack, appetizer, antipasto, hor d'oeuvre",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": false,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "butter",
+            "corn",
+            "extra sharp cheddar cheese",
+            "chile",
+            "seasoned bread crumbs",
+            "kosher salt & pepper",
+            "milk",
+            "cream",
+            "thyme"
+        ],
+        "seasons": [
+            "summer"
+        ],
+        "seasonText": "Summer"
+    },
+    {
+        "id": 634171,
+        "title": "Banana Pudding Cake",
+        "servings": 12,
+        "pricePerServing": 235.66,
+        "priceCalculated": 19.638333333333332,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "baking powder",
+            "bananas",
+            "cocoa powder",
+            "egg yolks",
+            "eggs",
+            "flour",
+            "heavy whipping cream",
+            "milk",
+            "powdered sugar",
+            "salt",
+            "pudding",
+            "sugar",
+            "vanilla",
+            "vanilla extract",
+            "vanilla wafers",
+            "whipped cream"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 639465,
+        "title": "Cinnamon Mocha Quick Bread",
+        "servings": 16,
+        "pricePerServing": 24.23,
+        "priceCalculated": 1.514375,
+        "dishClass": "Dessert",
+        "mealTypes": "morning meal, dessert, brunch, breakfast",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "flour",
+            "granulated sugar",
+            "coffee granules",
+            "cocoa",
+            "baking soda",
+            "salt",
+            "eggs",
+            "buttermilk",
+            "canola oil",
+            "ground cinnamon",
+            "optional: raisins"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 657312,
+        "title": "Pumpkin gnocchi with basil and Parmesan",
+        "servings": 6,
+        "pricePerServing": 154.47,
+        "priceCalculated": 25.745,
+        "dishClass": "Dessert",
+        "mealTypes": "side dish, lunch, main course, main dish, dinner",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "pumpkin",
+            "eggs",
+            "sea salt",
+            "pepper",
+            "basil leaves",
+            "wheat flour",
+            "corn flour",
+            "olive oil",
+            "grana padano cheese",
+            "basil leaves"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 715381,
+        "title": "Creamy Lime Pie Square Bites",
+        "servings": 2,
+        "pricePerServing": 92.47,
+        "priceCalculated": 46.235,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": true,
+        "dairyFree": false,
+        "isKosher": false,
+        "isHalal": false,
+        "restrictions": [
+            "vegetarian"
+        ],
+        "ingredients": [
+            "all purpose flour",
+            "graham cracker crumbs",
+            "lime zest",
+            "sugar",
+            "butter"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    },
+    {
+        "id": 637767,
+        "title": "Cherry Jello Poke Cake",
+        "servings": 18,
+        "pricePerServing": 26.53,
+        "priceCalculated": 1.473888888888889,
+        "dishClass": "Dessert",
+        "mealTypes": "dessert",
+        "winePairing": "No wine pairing",
+        "vegan": false,
+        "glutenFree": false,
+        "vegetarian": false,
+        "dairyFree": false,
+        "isKosher": true,
+        "isHalal": true,
+        "restrictions": [],
+        "ingredients": [
+            "cake mix",
+            "cherry jello",
+            "cool whip"
+        ],
+        "seasons": [
+            "any-season"
+        ],
+        "seasonText": "Any season"
+    }
 ]
