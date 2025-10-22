@@ -13,8 +13,7 @@
         "glutenFree": false,
         "vegetarian": true,
         "restrictions": []
-    }
-][
+    },
     {
         "id": 632017,
         "title": "Agedashi Tofu",
@@ -35,8 +34,7 @@
         "glutenFree": true,
         "vegetarian": false,
         "restrictions": []
-    }
-][
+    },
     {
         "id": 644917,
         "title": "Gnocchi and Wilted Spinach Salad",
@@ -58,8 +56,7 @@
         "glutenFree": false,
         "vegetarian": false,
         "restrictions": []
-    }
-][
+    },
     {
         "id": 664488,
         "title": "Vegan Strawberry Shortcake served with Vegan Whipped Cream",
@@ -225,8 +222,7 @@
         "glutenFree": false,
         "vegetarian": false,
         "restrictions": []
-    }
-][
+    },
     {
         "id": 663987,
         "title": "Turkey and Sausage Boulettes",
@@ -245,8 +241,7 @@
         "vegetarian": false,
         "dairyFree": false,
         "restrictions": []
-    }
-][
+    },
     {
         "id": 642096,
         "title": "Easy Shrimp Scampi",
@@ -291,8 +286,7 @@
         "vegetarian": false,
         "dairyFree": true,
         "restrictions": []
-    }
-][
+    },
     {
         "id": 634476,
         "title": "Bbq Chicken",
@@ -377,8 +371,7 @@
         "vegetarian": false,
         "dairyFree": false,
         "restrictions": []
-    }
-][
+    },
     {
         "id": 655575,
         "title": "Penne Pasta with Broccoli and Cheese",
@@ -446,8 +439,7 @@
         "vegetarian": false,
         "dairyFree": true,
         "restrictions": []
-    }
-][
+    },
     {
         "id": 1098393,
         "title": "Mardi Gras Shrimp \u00c9touff\u00e9e",
@@ -518,8 +510,7 @@
         "vegetarian": true,
         "dairyFree": true,
         "restrictions": []
-    }
-][
+    },
     {
         "id": 663638,
         "title": "Tomato Stack Salad",
@@ -589,8 +580,7 @@
         "vegetarian": false,
         "dairyFree": true,
         "restrictions": []
-    }
-][
+    },
     {
         "id": 641973,
         "title": "Easy Garlic Roast Leg Of Lamb With Rosemary and Parsley",
@@ -660,9 +650,7 @@
         "vegetarian": false,
         "dairyFree": true,
         "restrictions": []
-    }
-]
-[
+    },
     {
         "id": 634437,
         "title": "Basil Tagliatelle with Roasted Red Bell Pepper Salad",
@@ -915,8 +903,7 @@
         "vegetarian": false,
         "dairyFree": false,
         "restrictions": []
-    }
-][
+    },
     {
         "id": 663680,
         "title": "Torta (Filipino Omelet)",
@@ -1164,8 +1151,7 @@
         "vegetarian": true,
         "dairyFree": true,
         "restrictions": []
-    }
-][
+    },
     {
         "recipes": [
             {
@@ -1428,8 +1414,7 @@
                 "cookingMinutes": null
             }
         ]
-    }
-][
+    },
     {
         "id": 642539,
         "title": "Falafel Burger",
@@ -1629,9 +1614,7 @@
             "warm water",
             "packas yeast"
         ]
-    }
-]
-[
+    },
     {
         "id": 654905,
         "title": "Pasta With Chickpeas and Kale",
@@ -1810,8 +1793,7 @@
             "salt and pepper",
             "paprika"
         ]
-    }
-][
+    },
     {
         "id": 636436,
         "title": "Bulgur Pilaf With Green Lentils, Served With Caramelized Onions -Mercimekli Bulgur Pilavi",
@@ -1993,8 +1975,7 @@
             "salt and pepper",
             "ziti"
         ]
-    }
-][
+    },
     {
         "id": 642540,
         "title": "Falafel Burgers",
@@ -2181,8 +2162,7 @@
             "salt and pepper",
             "paprika"
         ]
-    }
-][
+    },
     {
         "id": 642610,
         "title": "Farm Fresh Vegetable Stew",
@@ -2372,8 +2352,7 @@
             "salt",
             "turmeric powder"
         ]
-    }
-][
+    },
     {
         "id": 648780,
         "title": "Kate's Coconut-Cashew Basmati Rice Salad",
@@ -2611,8 +2590,7 @@
             "tomatoes",
             "water"
         ]
-    }
-][
+    },
     {
         "id": 646524,
         "title": "Healthy Vegan Red Velvet Brownies",
@@ -2769,8 +2747,7 @@
             "limoncello",
             "kosher salt"
         ]
-    }
-][
+    },
     {
         "id": 716424,
         "title": "Strawberry Basil Sorbet (no Ice Cream Maker Necessary!)",
@@ -2917,8 +2894,7 @@
             "lavender",
             "ice water"
         ]
-    }
-][
+    },
     {
         "id": 650751,
         "title": "Mango Avocado Ice Cream",
@@ -3065,8 +3041,7 @@
             "cream",
             "coriander"
         ]
-    }
-][
+    },
     {
         "id": 653186,
         "title": "No-Bake Chocolate Peanut Butter Macaroons",
@@ -3204,8 +3179,7 @@
             "vanilla pod",
             "whipping cream"
         ]
-    }
-][
+    },
     {
         "id": 665330,
         "title": "Wild Blackberry Sorbet With Garden Mint & Lavender",
@@ -3354,8 +3328,7 @@
             "honey",
             "strawberries"
         ]
-    }
-][
+    },
     {
         "id": 661757,
         "title": "Strawberry Basil Italian Ice",
@@ -3655,8 +3628,7 @@
             "limoncello",
             "kosher salt"
         ]
-    }
-][
+    },
     {
         "id": 647830,
         "title": "Indian Lentil Dahl",
@@ -4055,8 +4027,7 @@
             "sun-dried tomatoes",
             "turmeric"
         ]
-    }
-][
+    },
     {
         "id": 648780,
         "title": "Kate's Coconut-Cashew Basmati Rice Salad",
@@ -4438,8 +4409,7 @@
             "tomatoes",
             "vegetable stock"
         ]
-    }
-][
+    },
     {
         "id": 648780,
         "title": "Kate's Coconut-Cashew Basmati Rice Salad",
@@ -4832,8 +4802,7 @@
             "salt",
             "white wine vinegar"
         ]
-    }
-][
+    },
     {
         "id": 649944,
         "title": "Lentil Mango Salad",
@@ -5220,8 +5189,7 @@
             "coriander",
             "mint"
         ]
-    }
-][
+    },
     {
         "id": 638073,
         "title": "Chicken Enchilada Chowder",
@@ -5594,8 +5562,7 @@
             "nonfat cottage cheese",
             "swiss cheese"
         ]
-    }
-][
+    },
     {
         "id": 640990,
         "title": "Cuban Flank Steak With Avocado and Tomato Salad",
@@ -5962,8 +5929,7 @@
             "tomato",
             "walnuts"
         ]
-    }
-][
+    },
     {
         "id": 641973,
         "title": "Easy Garlic Roast Leg Of Lamb With Rosemary and Parsley",
@@ -6322,8 +6288,7 @@
             "shrimp",
             "tomato"
         ]
-    }
-][
+    },
     {
         "id": 646738,
         "title": "Herbivoracious' White Bean and Kale Soup",
@@ -6510,8 +6475,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 646738,
         "title": "Herbivoracious' White Bean and Kale Soup",
@@ -6709,8 +6673,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 664408,
         "title": "Vegan Chocolate Banana Pie",
@@ -6873,8 +6836,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 632573,
         "title": "Apple Pie Bars",
@@ -7227,8 +7189,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 641958,
         "title": "Easy Eggplant Curry",
@@ -7620,8 +7581,7 @@
             "summer"
         ],
         "seasonText": "Summer"
-    }
-][
+    },
     {
         "id": 661121,
         "title": "Spicy Lemongrass Soup",
@@ -8190,8 +8150,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 649411,
         "title": "Lebanese Tabouleh",
@@ -8373,8 +8332,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 642546,
         "title": "Falafels With Tahini Sauce",
@@ -8553,8 +8511,7 @@
             "fall"
         ],
         "seasonText": "Fall"
-    }
-][
+    },
     {
         "id": 658753,
         "title": "Roma Tomato Bruschetta",
@@ -8730,8 +8687,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][][][
+    },
     {
         "id": 652038,
         "title": "Minted Pea & Spinach Soup",
@@ -8908,8 +8864,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 644693,
         "title": "Gingerbread Mummies",
@@ -9264,8 +9219,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 652513,
         "title": "Mozzarella Sticks",
@@ -9621,8 +9575,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 649514,
         "title": "Lemon Bars",
@@ -9971,8 +9924,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 665537,
         "title": "Yoghurt Honey Madeleines",
@@ -10321,8 +10273,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 653005,
         "title": "Neiman Marcus Oatmeal Chocolate Chip Cookies",
@@ -10677,8 +10628,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 635524,
         "title": "Blueberry Ricotta Cake",
@@ -11028,8 +10978,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 636292,
         "title": "Brown Rice Mushroom Pilaf",
@@ -11375,8 +11324,7 @@
             "any-season"
         ],
         "seasonText": "Any season"
-    }
-][
+    },
     {
         "id": 716411,
         "title": "Snickerdoodle Ice Cream",
@@ -11726,8 +11674,7 @@
             "fall"
         ],
         "seasonText": "Fall"
-    }
-][
+    },
     {
         "id": 643615,
         "title": "Fresh Strawberry Yogurt Cake",
