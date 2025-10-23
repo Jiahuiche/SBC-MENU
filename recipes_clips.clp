@@ -1,3 +1,5 @@
+(defmodule DATA)
+
 (definstances DATA::recipes-seed
 
   ([Recipe_644094] of ONTOLOGY::Recipe
