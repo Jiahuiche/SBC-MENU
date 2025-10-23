@@ -141,8 +141,8 @@ configuration.api_key['apiKeyScheme'] = os.environ["API_KEY"]
 
 # Definir filtros de búsqueda
 diets = None  # Puedes cambiar a 'vegan', 'pescetarian', etc.
-intolerances = None  # Pon None para no filtrar por intolerancias
-meal_type = None  # Pon None para obtener TODO tipo de platos (main, appetizer, dessert, etc.)
+intolerances = 'gluten'  # Pon None para no filtrar por intolerancias
+meal_type = 'main course'  # Pon uno de estos main course, appetizer o side dish, dessert (para que salga wine pairing)
 num_recipes = 500
 
 # Determinar dish_class basado en meal_type (si existe)
@@ -166,8 +166,8 @@ if meal_type:
 # Obtener las recetas de la API
 with spoonacular.ApiClient(configuration) as api_client:
     api_instance = spoonacular.RecipesApi(api_client)
-    include_nutrition = False  
-    include_tags = ",".join(tags) if tags else None  
+    include_nutrition = False
+    include_tags = ",".join(tags) if tags else None
     # exclude_tags = 'drink,sauce,beverage,breakfast,bread,marinade'
     number = num_recipes
 
@@ -181,7 +181,8 @@ with spoonacular.ApiClient(configuration) as api_client:
         params = {
             'apiKey': configuration.api_key['apiKeyScheme'],
             'number': number,
-            'tags': include_tags if include_tags else ''
+            'tags': include_tags if include_tags else '',
+            
         }
         
         # Hacer petición HTTP directa
@@ -239,7 +240,16 @@ with spoonacular.ApiClient(configuration) as api_client:
                 diets = ", ".join(recipe_data.diets) if hasattr(recipe_data, 'diets') else 'No diet'
                 meal_types = ", ".join(recipe_data.dish_types) if hasattr(recipe_data, 'dish_types') else 'No dish type'
 
-                
+                if dish_class == 'Mixed':
+                    # Split into individual terms and check each one
+                    meal_terms = [term.strip().lower() for term in meal_types.split(',')]
+                    main_words = ['main course', 'main dish', 'launch', 'dinner']
+
+                    for term in meal_terms:
+                        if term in main_words:
+                            dish_class = 'Main'
+                            break
+                            
 
                 # wine_pairing = ", ".join(recipe_data.wine_pairing) if hasattr(recipe_data, 'wine_pairing') else 'No wine pairing'
                 vegan = recipe_data.vegan if hasattr(recipe_data, 'vegan') else 'False'
