@@ -9,31 +9,139 @@
    (slot postre (type INSTANCE))
    (slot precio-total (type FLOAT)))
 
+;;; Template para restricciones del usuario
+(deftemplate REFINAMIENTO::user-restrictions
+    (slot is-vegan (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
+    (slot is-vegetarian (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
+    (slot is-gluten-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
+    (slot is-dairy-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
+    (slot max-price (type NUMBER) (default 10000))
+    ;;;(slot min-price (type NUMBER) (default 0))
+    (slot min-servings (type NUMBER) (default 1)))
+
+;;; Template para candidatos
+(deftemplate REFINAMIENTO::candidate-set
+    (slot recipe-instance (type INSTANCE))
+    (multislot restrictions-met (type SYMBOL))
+    (slot restriction-count (type NUMBER) (default 0)))
 
 
+(deffacts user-example (user-restrictions (is-vegan FALSE) (is-vegetarian FALSE) (is-gluten-free FALSE) (is-dairy-free FALSE) (max-price 500) (min-price 10) (min-servings 1)))
+
+(deffacts candidate-set-test-facts
+  (candidate-set
+    (recipe-instance [Recipe_644094])
+    (restrictions-met vegetarian)
+    (restriction-count 1))
+
+   (candidate-set
+    (recipe-instance [Recipe_647875])
+    (restrictions-met vegetarian)
+    (restriction-count 1))
+
+    (candidate-set
+    (recipe-instance [Recipe_715595])
+    (restrictions-met vegetarian)
+    (restriction-count 1))
+
+    (candidate-set
+    (recipe-instance [Recipe_649560])
+    (restrictions-met vegetarian)
+    (restriction-count 1))
+
+    (candidate-set
+    (recipe-instance [Recipe_716431])
+    (restrictions-met vegetarian)
+    (restriction-count 1))
+
+    (candidate-set
+    (recipe-instance [Recipe_661121])
+    (restrictions-met vegetarian)
+    (restriction-count 1))
+    (candidate-set
+    (recipe-instance [Recipe_716433])
+    (restrictions-met vegetarian)
+    (restriction-count 1))
+    (candidate-set
+    (recipe-instance [Recipe_665203])
+    (restrictions-met vegetarian)
+    (restriction-count 1))
+    (candidate-set
+    (recipe-instance [Recipe_991625])
+    (restrictions-met vegetarian)
+    (restriction-count 1))
+    (candidate-set
+    (recipe-instance [Recipe_1098351])
+    (restrictions-met vegetarian)
+    (restriction-count 1))
+    (candidate-set
+    (recipe-instance [Recipe_632527])
+    (restrictions-met vegetarian)
+    (restriction-count 1))
+)
+    
 
 
-;(assert (candidate-set (recipe-instance (create$))))
-
-(deffacts user-example (user-restrictions (is-vegan FALSE) (is-vegetarian FALSE) (is-gluten-free FALSE) (is-dairy-free FALSE) (max-price 50) (min-price 10) (min-servings 1)))
-
-(deffunction REFINAMIENTO::calc-intervalo-opc1 () ;REFINAMIENTO::
+(deffunction REFINAMIENTO::calc-intervalo () ;REFINAMIENTO::
     (bind ?fact (find-fact ((?f user-restrictions)) TRUE))
    
    (if (neq ?fact FALSE) then
-      (bind ?minPrice (fact-slot-value (nth$ 1 ?fact) min-price))
-      (bind ?maxPrice (fact-slot-value (nth$ 1 ?fact) max-price))
+
+      ;;; Precios min-max user
+      (bind ?minPrice_us (fact-slot-value (nth$ 1 ?fact) min-price))
+      (bind ?maxPrice_us (fact-slot-value (nth$ 1 ?fact) max-price))
+
+      ;;; Precios min-max recetas
+      (bind ?minPrice_candidatos 1000000) ;;; Valor muy alto inicial
+        (bind ?maxPrice_candidatos 0)
+        
+        (bind ?candidatos (find-all-instances ((?c candidate-set)) TRUE))
+        
+        (foreach ?c ?candidatos
+            (bind ?inst (send ?c get-recipe-instance))
+            (bind ?precio (send ?inst get-price))
+            
+            (if (< ?precio ?minPrice_candidatos) then
+                (bind ?minPrice_candidatos ?precio))
+                
+            (if (> ?precio ?maxPrice_candidatos) then
+                (bind ?maxPrice_candidatos ?precio)))
+      ;;; Def limites
+
+      (bind ?minPrice_final (max ?minPrice_us ?minPrice_candidatos))
+      (bind ?maxPrice_final (min ?maxPrice_us ?maxPrice_candidatos))
+
+      ;;; Verificar limites correcto 
+
+      (if (>= ?minPrice_final ?maxPrice_final) then
+            (printout t "ERROR: No hay solapamiento en los rangos de precio" crlf)
+            (printout t "   Usuario: " ?minPrice_us "-" ?maxPrice_us "€" crlf)
+            (printout t "   Candidatos: " ?minPrice_candidatos "-" ?maxPrice_candidatos "€" crlf)
+            (return FALSE))
       
-      (bind ?rango (- ?maxPrice ?minPrice))
+      ;;; Calc interv
+
+      (bind ?rango (- ?maxPrice_final ?minPrice_final))
       (bind ?tercio (/ ?rango 3.0))
-      (bind ?limite1 (+ ?minPrice ?tercio))
+      (bind ?limite1 (+ ?minPrice_final ?tercio))
       (bind ?limite2 (+ ?limite1 ?tercio))
+
+      ;;;Imprimir los limites e intervalos
+
+      (printout t "💰 CÁLCULO DE LÍMITES:" crlf)
+      (printout t "   Usuario: " ?minPrice_us " - " ?maxPrice_us "€" crlf)
+      (printout t "   Candidatos: " ?minPrice_candidatos " - " ?maxPrice_candidatos "€" crlf)
+      (printout t "   Final: " ?minPrice_final " - " ?maxPrice_final "€" crlf)
+      (printout t "   Límites: " ?minPrice_final " | " ?limite1 " | " ?limite2 " | " ?maxPrice_final "€" crlf)
       
-      ;;; Retornar lista con los dos límites: (limite_bajo-medio limite_medio-alto)
+      ;;; Retornar lista con los dos límites: 
+      
       (return (create$ ?minPrice ?limite1 ?limite2 ?maxPrice))
    else
       (printout t "ERROR: No se encontró user-restrictions" crlf)
-      (return FALSE)))
+      (return FALSE)
+   )
+)
 
 
 
