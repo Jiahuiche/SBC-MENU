@@ -19,6 +19,7 @@
     (slot is-gluten-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
     (slot is-dairy-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
     (slot max-price (type NUMBER) (default 10000))
+    ;;;(slot min-price (type NUMBER) (default 0))
     (slot min-servings (type NUMBER) (default 1)))
 
 ;;; Template para candidatos
