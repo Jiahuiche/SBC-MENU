@@ -1,4 +1,4 @@
-(defmodule DATA)
+(defmodule DATA (import ONTOLOGY ?ALL)(export ?ALL))
 
 (definstances DATA::recipes-seed
 
