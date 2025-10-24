@@ -242,7 +242,7 @@ def convert_json_to_clips(json_file='filtered_recipes111.json', output_file='rec
     print(f"💾 Escribiendo instancias en {output_file}...")
     
     with open(output_file, 'w', encoding='utf-8') as f:
-        f.write('(defmodule DATA::recipes-seed\n (import ONTOLOGY ?ALL)\n (export ?ALL))\n\n')
+        f.write('(defmodule DATA\n (import ONTOLOGY ?ALL)\n (export ?ALL))\n\n')
         f.write('(definstances DATA::recipes-seed\n\n')
         f.write('\n\n'.join(instances))
         f.write('\n)\n')
