@@ -1,5 +1,3 @@
-(defmodule DATA (import ONTOLOGY ?ALL)(export ?ALL))
-
 (definstances DATA::recipes-seed
 
   ([Recipe_644094] of ONTOLOGY::Recipe
@@ -11981,39 +11979,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_642254] of ONTOLOGY::Recipe
-    (title "Eggless Brownies")
-    (servings 12)
-    (price 1.81)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients baking-soda butter buttermilk chocolate-chips cocoa-powder icing-sugar coffee nuts flour salt water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653128] of ONTOLOGY::Recipe
-    (title "No Bake Chocolate Bars")
-    (servings 8)
-    (price 8.14)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher)
-    (ingredients allspice chocolate cocoa-powder heavy-whipping-cream powdered-sugar sea-salt ground-espresso)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651103] of ONTOLOGY::Recipe
-    (title "Market Stuffed Squash Blossoms")
-    (servings 4)
-    (price 71.44)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients squash-blossoms garlic-scapes cherries butter panko-bread-crumbs goat-cheese basil salt-and-pepper flour pepper curry-powder salt club-soda oil)
-    (seasons any-season)
-    (season_text "Fall"))
-
   ([Recipe_631751] of ONTOLOGY::Recipe
     (title "Hot Crab Dip")
     (servings 4)
@@ -12022,28 +11987,6 @@
     (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
     (restrictions no-restrictions)
     (ingredients cream-cheese milk crabmeat onion horseradish breadcrumbs butter salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715389] of ONTOLOGY::Recipe
-    (title "Cinnamon Nut Squares")
-    (servings 24)
-    (price 1.14)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter butter-vanilla-bakery-emulsion cinnamon egg flour pecans salt sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632625] of ONTOLOGY::Recipe
-    (title "Apple-Cheesecake Tart with Salted Caramel Glaze")
-    (servings 8)
-    (price 19.34)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter double-cream egg flour granny-smith-apples ground-almonds ground-cinnamon juice-of-lemon full-fat-cream-cheese sugar sea-salt sugar vanilla-extract)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -12066,17 +12009,6 @@
     (meal_types side-dish lunch salad main-course main-dish dinner)
     (restrictions gluten-free halal)
     (ingredients avocado dill garlic-cloves salt-and-ground-pepper greek-yoghurt mayonnaise peas radishes romaine-lettuce-torn-or shrimp)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649030] of ONTOLOGY::Recipe
-    (title "Korean Beef Rice Bowl")
-    (servings 4)
-    (price 86.42)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients fat-trimmed-beef-flank-steak korean-marinade green-beans carrot rice-vinegar asian-sesame-oil sugar salt salad-oil fat-skimmed-beef-broth rice thinly-green-onions sesame-seed)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -12113,17 +12045,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_650602] of ONTOLOGY::Recipe
-    (title "Madeleines With Irish Whiskey Fudge")
-    (servings 4)
-    (price 29.38)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions kosher)
-    (ingredients flour-00 butter sugar-cane-grand-cru-swatziland-waves-of-sugar eggs cream baking-powder coffee-powder irish-whiskey-fudge)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_632173] of ONTOLOGY::Recipe
     (title "Almond Rainbow Cake")
     (servings 8)
@@ -12146,50 +12067,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_640621] of ONTOLOGY::Recipe
-    (title "Creamy Chicken Tikka Masala")
-    (servings 4)
-    (price 55.55)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher)
-    (ingredients pepper tomato-sauce cayenne-pepper cilantro ginger garlic ground-cinnamon ground-cumin heavy-cream jalapeno-pepper lemon-juice paprika salt chicken-breasts butter yogurt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634496] of ONTOLOGY::Recipe
-    (title "BBQ Mac and Cheese")
-    (servings 4)
-    (price 45.51)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients cottage-cheese parmesan-cheese ketchup brown-sugar jalapeo parsley milk garlic onion ground-cumin salt pepper butter cheddar-cheese-or style-breadcrumbs macaroni)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636026] of ONTOLOGY::Recipe
-    (title "Breakfast Biscuits and Gravy")
-    (servings 4)
-    (price 60.88)
-    (wine_pairing "Red wine")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions no-restrictions)
-    (ingredients baking-powder butter flour sage-leaves ground-allspice paprika pork-sausage salt salt-and-pepper unbleached-flour butter milk yogurt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636118] of ONTOLOGY::Recipe
-    (title "Brined Chicken Breast with Sautéed Onion Dipping Sauce")
-    (servings 6)
-    (price 27.45)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients pepper chicken-breast cumin juice-of-lime lemon-juice oregano salt sugar onion vinegar water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_659135] of ONTOLOGY::Recipe
     (title "Salmon with roasted vegetables")
     (servings 2)
@@ -12200,39 +12077,6 @@
     (ingredients potato parsnip carrot onion cherry-tomatoes salmon olive-oil lemon-juice salt rosemary-and-thyme)
     (seasons winter)
     (season_text "Winter"))
-
-  ([Recipe_641811] of ONTOLOGY::Recipe
-    (title "Easy and Addictive Eggplant \"Chips")
-    (servings 3)
-    (price 28.49)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients chicken-broth 1-eggplant garlic-granules soy-sauce sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637766] of ONTOLOGY::Recipe
-    (title "Cherry Lime Mojito")
-    (servings 1)
-    (price 207.39)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients cherries mint-leaves lime demerara-sugar rum carbonated-water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_982382] of ONTOLOGY::Recipe
-    (title "Instant Pot Chicken Taco Soup")
-    (servings 4)
-    (price 67.97)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients bonelessskinless-chicken-breasts black-beans corn chilis canned-tomatoes chili-powder cilantro bell-pepper green-onion olive-oil onion water)
-    (seasons summer)
-    (season_text "Summer"))
 
   ([Recipe_645714] of ONTOLOGY::Recipe
     (title "Grilled Fish With Sun Dried Tomato Relish")
@@ -12267,17 +12111,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_663987] of ONTOLOGY::Recipe
-    (title "Turkey and Sausage Boulettes")
-    (servings 6)
-    (price 42.62)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients pepper bread breadcrumbs cognac sage egg parsley ground-turkey milk oil olive-oil onion parmesan-cheese salt sausage-meat mushrooms)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_633068] of ONTOLOGY::Recipe
     (title "Authentic Bolognese Sauce")
     (servings 8)
@@ -12300,39 +12133,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_639950] of ONTOLOGY::Recipe
-    (title "Colorful Red Quinoa Not So Tabbouleh Salad")
-    (servings 4)
-    (price 34.88)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients quinoa water salt avocado tomato radishes green-onions parsley bell-pepper cucumber cayenne-pepper tumeric cumin red-wine-vinegar extra-virgin-olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660288] of ONTOLOGY::Recipe
-    (title "Slow Cooker Kahlua Pork with Sweet Chili Pineapple Sauce")
-    (servings 12)
-    (price 19.75)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients garlic-chili-sauce hoisin-sauce honey liquid-smoke pineapple-juice pork-butt rice-vinegar regular-sea-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715467] of ONTOLOGY::Recipe
-    (title "Turkey Pot Pie")
-    (servings 8)
-    (price 25.69)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients pepper butter celery celery-seed chicken-broth flour garlic-powder green-beans seasoning milk onion onion-powder peas-and-carrots pie-crusts salt turkey pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_642539] of ONTOLOGY::Recipe
     (title "Falafel Burger")
     (servings 4)
@@ -12344,17 +12144,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_650112] of ONTOLOGY::Recipe
-    (title "Linefish Simmered In A Spiced Coconut Gravy")
-    (servings 4)
-    (price 146.68)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients garlic thumb-sized-piece-of-ginger chilli-powder turmeric salt tamarind-pulp vegetable-oil brown-mustard-seeds fenugreek-seeds cloves cardamom-pods thumb-length-quill-of-cinnamon onions coconut-milk powdered-cumin freshly-milled-pepper cilantro firm-fleshed-fish-fillets)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_716290] of ONTOLOGY::Recipe
     (title "Mango Salsa")
     (servings 1)
@@ -12363,28 +12152,6 @@
     (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
     (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
     (ingredients cherry-tomatoes bell-pepper lime-juice mangoes mint-leaves bell-pepper onions sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662581] of ONTOLOGY::Recipe
-    (title "Sweet Potato Hashbrown Breakfast Bake")
-    (servings 4)
-    (price 29.07)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti morning-meal starter brunch snack appetizer breakfast antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients eggs garlic green-onions kosher-salt-and-ground-pepper olive-oil bell-pepper onion sharp-cheddar-cheese sweet-potatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1082038] of ONTOLOGY::Recipe
-    (title "Big Batch Smoothie Bowl")
-    (servings 6)
-    (price 28.98)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients whey-protein strawberries blueberries bananas pomegranate walnuts pumpkin-seeds flaxseed granola)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -12465,17 +12232,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_664975] of ONTOLOGY::Recipe
-    (title "Wasabi & Honey Glazed-Salmon")
-    (servings 2)
-    (price 254.16)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients ginger-root honey soy-sauce mirin rice-vinegar salmon-fillets wasabi-paste)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_656738] of ONTOLOGY::Recipe
     (title "Pork chops with apples and onions")
     (servings 4)
@@ -12487,17 +12243,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_640832] of ONTOLOGY::Recipe
-    (title "Crispy Rhubarb Pockets")
-    (servings 1)
-    (price 165.92)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal vegan vegetarian)
-    (ingredients rhubarb granulated-sugar cornstarch salt vanilla-extract)
-    (seasons spring)
-    (season_text "Spring"))
-
   ([Recipe_633399] of ONTOLOGY::Recipe
     (title "Bailey's Irish Cream Crepes With Creme")
     (servings 4)
@@ -12506,28 +12251,6 @@
     (meal_types morning-meal dessert brunch breakfast)
     (restrictions gluten-free halal kosher)
     (ingredients bananas brown-sugar browned-butter creme-fraiche eggs baileys-irish-cream milk salt sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_986003] of ONTOLOGY::Recipe
-    (title "Instant Pot Chicken Tacos")
-    (servings 6)
-    (price 74.08)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients pepper chicken-breasts lime-juice purple-onion salsa taco-seasoning)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644846] of ONTOLOGY::Recipe
-    (title "Gluten Free Onion Rings")
-    (servings 4)
-    (price 21.48)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients egg vegetable-oil milk bette-hagans-pizzafrench-bread-flour-mix salt baking-powder onions all-purpose-flour oil)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -12542,39 +12265,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_642346] of ONTOLOGY::Recipe
-    (title "Egyptain Cauliflower Side Salad")
-    (servings 2)
-    (price 75.29)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cauliflower cumin parsley lemon-juice olive-oil bell-pepper salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654735] of ONTOLOGY::Recipe
-    (title "Party Rice Balls")
-    (servings 24)
-    (price 0.9)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher)
-    (ingredients rice water salt eggs romano-cheese parsley-or breadcrumbs oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661365] of ONTOLOGY::Recipe
-    (title "Spinach, Tomato & Onion Couscous")
-    (servings 3)
-    (price 120.49)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients feta olive-oil pine-nuts onion salt spinach tomatoes water couscous)
-    (seasons spring)
-    (season_text "Spring"))
-
   ([Recipe_659674] of ONTOLOGY::Recipe
     (title "Seared Pork Chops with Mango Salsa")
     (servings 4)
@@ -12583,17 +12273,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions dairy-free gluten-free)
     (ingredients bell-pepper-de-seeded pepper cayenne-powder cilantro cumin garlic-powder lime mango mustard-powder onion onion-powder pork-chops salt scallions-scallions tomato vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715420] of ONTOLOGY::Recipe
-    (title "Barbecue Chicken Cauliflower Couscous Bowls")
-    (servings 4)
-    (price 46.42)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients roasted-and-almonds barbecue-sauce cauliflower cilantro garlic garlic-powder olive-oil orange-juice pecorino-romano-cheese sea-salt-and-pepper chicken-breasts soy-sauce swiss-chard butter onion)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -12608,28 +12287,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_662917] of ONTOLOGY::Recipe
-    (title "Tasty Easy Meatloaf")
-    (servings 8)
-    (price 14.6)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients breadcrumbs brown-sugar bulk-sausage tomato-sauce cider-vinegar cumin egg garlic-powder ground-beef onion pepper salt water grain-mustard worcestershire)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633194] of ONTOLOGY::Recipe
-    (title "Azteca Soup")
-    (servings 6)
-    (price 29.54)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients avocado basil-in-ribbons basil-shreds canned-tomatoes celery-stalks chili-powder cumin corn garlic jalapeno-pepper lime-juice nacho-chips olive-oil onions cream vegetable-stock)
-    (seasons summer)
-    (season_text "Summer"))
-
   ([Recipe_640104] of ONTOLOGY::Recipe
     (title "Corn Salsa")
     (servings 4)
@@ -12640,28 +12297,6 @@
     (ingredients bell-pepper celery ears-of-corn-boil-and-from-the-cob basil garlic jalapeo onion salt sugar pickle vine-tomato vinegar)
     (seasons summer)
     (season_text "Summer"))
-
-  ([Recipe_633754] of ONTOLOGY::Recipe
-    (title "Baked Ratatouille")
-    (servings 1)
-    (price 861.26)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients eggplant feta-cheese basil garlic-cloves bell-peppers olive-oil onion-cut-pieces red-wine-vinegar tomatoes zucchini-cut)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_639465] of ONTOLOGY::Recipe
-    (title "Cinnamon Mocha Quick Bread")
-    (servings 16)
-    (price 1.51)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients flour granulated-sugar coffee-granules cocoa baking-soda salt eggs buttermilk canola-oil ground-cinnamon optional-raisins)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_633229] of ONTOLOGY::Recipe
     (title "Baby Chick Cupcakes")
@@ -12685,17 +12320,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_658632] of ONTOLOGY::Recipe
-    (title "Roasted Pumpkin and Barley Risotto")
-    (servings 3)
-    (price 67.45)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients barley butter chicken-stock cumin-powder thyme mint to-garlic big-of-ginger onion oregano pink-peppercorns pumpkin-puree salt-and-pepper cream worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Fall"))
-
   ([Recipe_997285] of ONTOLOGY::Recipe
     (title "Shrimp and Asparagus Foil Packs with Garlic Lemon Butter Sauce")
     (servings 4)
@@ -12706,17 +12330,6 @@
     (ingredients asparagus butter chicken-broth fresh-parsley garlic lemon-juice lemon-zest salt-and-pepper shrimp)
     (seasons spring)
     (season_text "Spring"))
-
-  ([Recipe_641815] of ONTOLOGY::Recipe
-    (title "Easy and Delicious Taco Soup")
-    (servings 6)
-    (price 50.33)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients ground-turkey onion pinto-beans kidney-beans regular-corn tomato-sauce tomatoes chiles olives taco-seasoning cayenne-pepper cilantro cheese tortilla-chips cream)
-    (seasons summer)
-    (season_text "Summer"))
 
   ([Recipe_640279] of ONTOLOGY::Recipe
     (title "Crab Cakes Rockefeller")
@@ -12740,83 +12353,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_662263] of ONTOLOGY::Recipe
-    (title "Summer Veggie Bake")
-    (servings 4)
-    (price 66.34)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients ears-of-corn garlic-powder juice-of-lemon milk chicken-broth onion-powder orzo panko paprika parmesan-cheese parsley pepper rotisserie-chicken mozzarella-cheese tomatoes zucchini)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_641029] of ONTOLOGY::Recipe
-    (title "Cumin and Paprika Rubbed Chicken Drumsticks")
-    (servings 2)
-    (price 33.88)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types seasoning marinade)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients chicken-drumsticks cumin-powder paprika-powder garlic-cloves juice-of-lime salt-and-pepper olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653055] of ONTOLOGY::Recipe
-    (title "New Orleans Red Beans and Rice with Andouille Sausage")
-    (servings 6)
-    (price 40.35)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients andouille-sausage bay-leaves bell-pepper canola-oil celery creole-seasoning garlic onion kidney-beans salt-and-pepper ham-hock tabasco-sauce thyme-leaves rice worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633786] of ONTOLOGY::Recipe
-    (title "Baked Scallops With Parma Ham")
-    (servings 6)
-    (price 25.12)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients big-scallops parma-ham garlic-clove breadcrumbs parsley olive-oil bell-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653185] of ONTOLOGY::Recipe
-    (title "No-Bake Chocolate Peanut Butter Pie")
-    (servings 8)
-    (price 15.0)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher)
-    (ingredients non-dairy-cream-cheese creamy-peanut-butter chocolate-chips peanut-butter-cups powdered-sugar roasted-peanuts earth-balance-soy-free-spread vanilla-coconut-yogurt non-dairy-whipped-topping)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643916] of ONTOLOGY::Recipe
-    (title "Frozen Mojito Pie")
-    (servings 8)
-    (price 17.59)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients pretzels butter cream-cheese sugar lime-zest juice-from-lime mint whipped-topping)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649625] of ONTOLOGY::Recipe
-    (title "Lemon Drop Jello Shots")
-    (servings 4)
-    (price 32.99)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients lemons lemon-jello sugar water lemon-juice lemon-vodka)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_641896] of ONTOLOGY::Recipe
     (title "Easy Chicken Cordon Bleu")
     (servings 8)
@@ -12825,83 +12361,6 @@
     (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions no-restrictions)
     (ingredients chicken-breast ham cheddar-cheese salt ground-peppercorn bread-crumbs-add flour egg butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651407] of ONTOLOGY::Recipe
-    (title "Mediterranean eggplants")
-    (servings 4)
-    (price 82.28)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients almonds bread-crumbs egg eggplants feta-cheese dill mozzarella-cheese olive-oil pepper sausage-without-the-casing)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663853] of ONTOLOGY::Recipe
-    (title "Tropical Breakfast Quinoa")
-    (servings 2)
-    (price 59.72)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients quinoa coconut-milk pineapple cinnamon maple-syrup coconut pecans strawberries balsamic-vinegar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640355] of ONTOLOGY::Recipe
-    (title "Cranberry and White Chocolate Rice Krispies Squares")
-    (servings 9)
-    (price 12.65)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients rice-krispies-cereal cranberries chocolate-chips butter marshmallows vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642548] of ONTOLOGY::Recipe
-    (title "Fall Apple Yeast Bread")
-    (servings 12)
-    (price 3.54)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types bread)
-    (restrictions dairy-free halal vegetarian)
-    (ingredients apple-cider apples driedinstant-yeast eggs flour ground-cinnamon ground-cinnamon orange-zest powdered-sugar runny-honey salt sugar vanilla-extract vegetable-oil water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646512] of ONTOLOGY::Recipe
-    (title "Salmon Caesar Salad")
-    (servings 2)
-    (price 150.47)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients caesar-dressing lemon-juice olive-oil paprika parmesan-cheese add-pepper romaine salmon-fillet salt slivered-almonds)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663348] of ONTOLOGY::Recipe
-    (title "The Ultimate Frozen Coconut ‘Ice Cream’ with Hard Shell Chocolate Sauce")
-    (servings 3)
-    (price 39.22)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients coconut-milk ice-tray bananas chocolate-chips coconut-oil coconut)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641005] of ONTOLOGY::Recipe
-    (title "Cucumber and Cannellini Bean Side Salad")
-    (servings 10)
-    (price 9.37)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients artichokes pepper cannellini-beans cucumbers basil capers-plus-caper-juice juice-of-lemon olive-oil onion pepper-flakes salt sugar sun-tomatoes vinegar)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -12916,17 +12375,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_638693] of ONTOLOGY::Recipe
-    (title "Chinese Potstickers")
-    (servings 24)
-    (price 1.09)
-    (wine_pairing "Red wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free)
-    (ingredients ground-pork water-chestnuts sea-salt sugar ground-pepper soy-sauce sesame-oil shaoxing-huatiao-wine scallions dumpling-wrappers flour-to-dust vegetable-oil water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_637658] of ONTOLOGY::Recipe
     (title "Cheesy Ham and Shrimp Macaroni Au Gratin")
     (servings 4)
@@ -12935,17 +12383,6 @@
     (meal_types side-dish)
     (restrictions no-restrictions)
     (ingredients broccoli cream-sauce elbow-pasta ham big-shitake-mushrooms olive-oil parmesan-and-m-zarella-cheese shrimps water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638939] of ONTOLOGY::Recipe
-    (title "Chocolate Chip Pancakes-gluten free, nut free, vegan")
-    (servings 12)
-    (price 4.41)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients rice-flour sorghum-flour arrowroot teff-flour aluminum-free-baking-powder baking-soda nutmeg cinnamon xylitol chocolate-vegan-chocolate-chips coconut-milk juice-of-lemon pear-sauce sunflower-oil kosher-salt earth-balance-soy-free-spread)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -12960,72 +12397,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_649214] of ONTOLOGY::Recipe
-    (title "Lamb In Red Mole Sauce")
-    (servings 4)
-    (price 38.01)
-    (wine_pairing "Red wine")
-    (meal_types sauce)
-    (restrictions gluten-free halal kosher)
-    (ingredients chipotle-peppers pasilla-peppers plum-tomatoes garlic oregano cinnamon sesame-seeds pepper canola-oil mexican-chocolate salt tomato-sauce canola-oil lamb-shoulder salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646043] of ONTOLOGY::Recipe
-    (title "Gujarati Dry Mung Bean Curry")
-    (servings 4)
-    (price 41.02)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients baking-powder chillies cinnamon-powder coriander cumin-seeds curry-leaves garlic lemon-juice-or mung-beans mustard-seeds salt sugar sunflower-oil tomato turmeric)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645988] of ONTOLOGY::Recipe
-    (title "Guacamole")
-    (servings 4)
-    (price 21.8)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients haas-avocados onion jalapeno-pepper cilantro salt pepper lime-juice basil oregano)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665348] of ONTOLOGY::Recipe
-    (title "Wild Salmon Cakes")
-    (servings 4)
-    (price 67.3)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients salmon-fillet onion capers egg panko)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637488] of ONTOLOGY::Recipe
-    (title "Chavrie Stuffed Turkey Burgers")
-    (servings 6)
-    (price 61.64)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients ea-eggs garlic chavrie-goat-cheese ground-turkey ea-hamburger-rolls thyme-leaves)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644218] of ONTOLOGY::Recipe
-    (title "Garlic & Spice Plantain Chips")
-    (servings 8)
-    (price 2.51)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients plantains olive-oil garlic-powder paprika cumin cayenne-pepper salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_643405] of ONTOLOGY::Recipe
     (title "French Toast Croissants with Strawberries")
     (servings 4)
@@ -13034,28 +12405,6 @@
     (meal_types morning-meal brunch breakfast)
     (restrictions halal)
     (ingredients butter butter croissants eggs milk orange-peel powdered-sugar strawberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642091] of ONTOLOGY::Recipe
-    (title "Easy Shepherd's Pie (Beef And/or Lamb Combo)")
-    (servings 6)
-    (price 31.04)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients beef-stock butter carrot cream-cheese egg-yolk flour parsley-leaves thyme ground-lamb 1-milk olive-oil onion to-1-peas potatoes salt-and-pepper paprika tomato-paste worcestershire)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655212] of ONTOLOGY::Recipe
-    (title "Peanut Butter and Apple Oatmeal Breakfast Bars")
-    (servings 8)
-    (price 6.17)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal vegetarian)
-    (ingredients quaker-oats smooth-peanut-butter butter vegetable-oil flour honey brown-sugar vanilla-extract cinnamon apple)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -13081,28 +12430,6 @@
     (seasons winter)
     (season_text "Winter"))
 
-  ([Recipe_655235] of ONTOLOGY::Recipe
-    (title "Peanut Butter and Jelly Smoothie")
-    (servings 2)
-    (price 72.39)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal brunch beverage breakfast drink)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients almond-milk bananas peanut-butter strawberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1043339] of ONTOLOGY::Recipe
-    (title "Skillet Sweet Potato Casserole with Bacon, Brown Sugar Crumble")
-    (servings 6)
-    (price 19.49)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions no-restrictions)
-    (ingredients bacon flour heavy-cream pecans sea-salt sweet-potatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_655406] of ONTOLOGY::Recipe
     (title "Pear and Walnut Coffee Cake")
     (servings 10)
@@ -13114,50 +12441,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_637919] of ONTOLOGY::Recipe
-    (title "Chicken and Roasted Broccoli Salad With Goat Cheese")
-    (servings 4)
-    (price 51.52)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher)
-    (ingredients head-of-broccoli garlic-cloves goat-cheese juice-from-a-lemon olive-oil oregano pepper bell-pepper a-couple-of-pepper-flakes salt chicken sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643660] of ONTOLOGY::Recipe
-    (title "Fried Asparagus")
-    (servings 3)
-    (price 62.9)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients asparagus all-purpose-flour eggs salt pepper parsley grating-cheese breadcrumbs vegetable-oil)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_646185] of ONTOLOGY::Recipe
-    (title "Ham and Red Bean Soup")
-    (servings 6)
-    (price 26.52)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients leeks thyme bay-leaf coriander-seeds peppercorns cumin-seeds olive-oil carrots celery garlic tomato-paste beans bone-from-ham-3-cups-ham-1-teaspoon-ground-chipotle-chile-powder-salt-and-pepper water ham ground-chipotle-chile-powder salt-and-pepper add-he-ham-and-chipotle-chile-powder-and-stir-in-allow-to-simmer-until-beans-are-and-are-just-begin)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660292] of ONTOLOGY::Recipe
-    (title "Slow Cooker Minestrone Soup")
-    (servings 8)
-    (price 14.22)
-    (wine_pairing "Red wine or White wine")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal kosher)
-    (ingredients carrots zucchini onion celery green-beans garlic garbanzo-beans pd-of-lentils tomatoes veggie-broth curry cumin garam-masala salt pepper noodles)
-    (seasons summer)
-    (season_text "Summer"))
-
   ([Recipe_649503] of ONTOLOGY::Recipe
     (title "Lemon and Honey Chicken")
     (servings 6)
@@ -13166,17 +12449,6 @@
     (meal_types side-dish)
     (restrictions dairy-free gluten-free kosher)
     (ingredients chicken-thighs sea-salt-and-pepper olive-oil garlic thyme-sprigs splash-of-red-wine-vinegar soy-sauce honey lemon flat-leaf-parsley)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664284] of ONTOLOGY::Recipe
-    (title "Vanilla and Lime Flan By Esperanza Platas Alvarez (Planet Food Mexico)")
-    (servings 8)
-    (price 17.92)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients condensed-milk eggs limes sugar vanilla-pod water milk)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -13202,17 +12474,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_634441] of ONTOLOGY::Recipe
-    (title "Basil, Olive and Feta Foccacia")
-    (servings 8)
-    (price 13.8)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-unbleached-flour flour warm-water active-yeast warm-water salt olive-oil olives feta basil course-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_660737] of ONTOLOGY::Recipe
     (title "Soy Ginger Glazed Sea Scallops With Stir Fry Vegetables")
     (servings 2)
@@ -13223,39 +12484,6 @@
     (ingredients asparagus brown-sugar cornstarch garlic ginger bell-pepper scallions sea-scallops sesame-oil sesame-seeds soy-sauce teriyaki-sauce bell-pepper)
     (seasons spring)
     (season_text "Spring"))
-
-  ([Recipe_639482] of ONTOLOGY::Recipe
-    (title "Cinnamon Rolls by Bing")
-    (servings 25)
-    (price 3.7)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients milk vegetable-oil sugar active-yeast flour baking-powder baking-soda salt butter caster-sugar brown-sugar ground-cinnamon pecan-nuts strong-coffee quality-honey butter salt icing-sugar cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633779] of ONTOLOGY::Recipe
-    (title "Baked Salmon With Lime")
-    (servings 2)
-    (price 355.32)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher)
-    (ingredients salmon-cutlet spring-onion ginger chili cooking-wine rind-of-lime lime-juice peppercorns butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641815] of ONTOLOGY::Recipe
-    (title "Easy and Delicious Taco Soup")
-    (servings 6)
-    (price 50.33)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients ground-turkey onion pinto-beans kidney-beans regular-corn tomato-sauce tomatoes chiles olives taco-seasoning cayenne-pepper cilantro cheese tortilla-chips cream)
-    (seasons summer)
-    (season_text "Summer"))
 
   ([Recipe_663985] of ONTOLOGY::Recipe
     (title "Turkey and Rice Stuffed Acorn Squash")
@@ -13279,28 +12507,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_654495] of ONTOLOGY::Recipe
-    (title "Pancakes")
-    (servings 9)
-    (price 1.29)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal kosher)
-    (ingredients baking-powder egg flour margarine milk salt sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651922] of ONTOLOGY::Recipe
-    (title "Minestrone")
-    (servings 9)
-    (price 14.97)
-    (wine_pairing "Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions gluten-free halal)
-    (ingredients butter carrots celery onions garlic cabbage canned-tomatoes water brown-rice salt worcestershire-sauce seasoning pepper potatoes beef-bouillon-cubes zucchini kidney-beans spinach parmesan-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_661602] of ONTOLOGY::Recipe
     (title "Sterling Cooper Blini with Caviar")
     (servings 16)
@@ -13309,72 +12515,6 @@
     (meal_types morning-meal brunch breakfast)
     (restrictions halal kosher)
     (ingredients baking-powder butter caviar egg flour milk cream sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646340] of ONTOLOGY::Recipe
-    (title "Hatch Chile Cornbread Muffins")
-    (servings 12)
-    (price 3.93)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions gluten-free halal kosher)
-    (ingredients milk corn butter eggs cornmeal baking-powder baking-soda salt sugar cheddar-cheese-and-monterrey-jack-cheese chiles)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_639535] of ONTOLOGY::Recipe
-    (title "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather")
-    (servings 2)
-    (price 139.39)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans currants green-onions ground-cumin israeli-couscous juice-of-orange olive-oil parsley pecans bell-pepper rice-vinegar salt-and-pepper paprika)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650546] of ONTOLOGY::Recipe
-    (title "Macaroni and Cheese Gratin")
-    (servings 6)
-    (price 45.13)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher)
-    (ingredients herbed-bread-crumbs butter cheddar elbow-macaroni flour gruyere milk nutmeg parmesan parsley pepper-sauce salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635235] of ONTOLOGY::Recipe
-    (title "Blackberry Pie With Lemon Verbena Whip Cream")
-    (servings 10)
-    (price 10.09)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients defrosted-blackberries butter cinnamon pastry flour lemon-verbena-leaves nutmeg sugar whipping-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658607] of ONTOLOGY::Recipe
-    (title "Roasted Mediterranean Vegetable Soup")
-    (servings 6)
-    (price 32.61)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients oil tomatoes bell-peppers zucchini garlic-cloves onion thyme vegetable-stock non-dairy-creamer-like-mimiccreme salt-and-pepper basil-leaves)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_663763] of ONTOLOGY::Recipe
-    (title "Traditional Garlic and Herb Crusted Prime Rib Roast")
-    (servings 24)
-    (price 18.0)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients bay-leaves pepper parsley-leaves rosemary-leaves tarragon-leaves thyme-leaves gloves-garlic kosher-salt olive-oil prime-rib-roast)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -13389,28 +12529,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_662709] of ONTOLOGY::Recipe
-    (title "Szechuan-Style Shirataki Noodles")
-    (servings 2)
-    (price 431.23)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients shirataki protein soy-sauce rice-wine chili-sauce ginger scallions veggies sesame-oil microwave-the-noodles add-the-soy-sauce add-the-scallions-and-your-protein-and-continue-to-stir-fry-until-its-through-add-the-noodles turn-into-a-bowl)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665276] of ONTOLOGY::Recipe
-    (title "Whole Wheat Chocolate Chip Cookies")
-    (servings 24)
-    (price 1.27)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients baking-powder baking-soda chocolate-chips coconut-sugar brown-sugar eggs kosher-salt butter vanilla-extract flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_633344] of ONTOLOGY::Recipe
     (title "Bacon Wrapped Pork Tenderloin")
     (servings 4)
@@ -13419,61 +12537,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions dairy-free gluten-free)
     (ingredients bacon pepper coarse-salt sage garlic-powder pork-tenderloin)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658004] of ONTOLOGY::Recipe
-    (title "Raw Vegan Blueberry Chocolate Crust \"Cheesecake")
-    (servings 6)
-    (price 48.85)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients agave almonds blueberries cacao-powder coconut-oil lemon-juice macadamia-nuts to-7-medjool-dates cashews sea-salt soy-lecithin-granules vanilla-extract walnuts water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657686] of ONTOLOGY::Recipe
-    (title "Quinoa Tabbouleh Salad")
-    (servings 8)
-    (price 6.44)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients quinoa water green-onions tomato cucumber mint parsley olive-oil lemon-juice garlic-powder freshly-cracked-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1044252] of ONTOLOGY::Recipe
-    (title "Shredded Roast Beef Stuffed Sweet Potatoes (Whole 30 & PALEO)")
-    (servings 5)
-    (price 47.47)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients beef-broth pot-roast salt-and-pepper sweet-potatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637042] of ONTOLOGY::Recipe
-    (title "Caramelised Onion and Mushroom Quiche")
-    (servings 4)
-    (price 33.84)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course morning-meal brunch main-dish breakfast dinner)
-    (restrictions halal kosher)
-    (ingredients nine-inch-pie-shell olive-oil onions garlic chilli-flakes mushrooms thyme eggs half-and-half-cream havarti-cheese salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642878] of ONTOLOGY::Recipe
-    (title "Finger Lickin' Good Stewed Quince Dessert")
-    (servings 6)
-    (price 47.82)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free vegan vegetarian)
-    (ingredients quinces unrefined-oil rice-flour sucanat cinnamon ground-cloves raisins vanilla-extract rum-extract sea-salt)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -13488,28 +12551,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_633830] of ONTOLOGY::Recipe
-    (title "Baked Swedish Pancake")
-    (servings 4)
-    (price 68.59)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal kosher)
-    (ingredients butter eggs flour jam maple-syrup milk cranberry-orange-relish powdered-sugar salt strawberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633692] of ONTOLOGY::Recipe
-    (title "Baked Oatmeal with Dried Cranberries")
-    (servings 9)
-    (price 5.67)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients almond-milk baking-powder bananas cinnamon cranberries eggs flaxseeds oats salt vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_716424] of ONTOLOGY::Recipe
     (title "Strawberry Basil Sorbet (no Ice Cream Maker Necessary!)")
     (servings 1)
@@ -13521,28 +12562,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_662285] of ONTOLOGY::Recipe
-    (title "Sun Dried Tomato Stuffed Mushrooms")
-    (servings 8)
-    (price 16.05)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher)
-    (ingredients button-mushrooms bread-crumbs roasted-pepper from-one-roasted-garlic-bulb kalamata-olives onion sun-dried-tomatoes olive-oil mozzarella provolone asiago parmesan romano pepper-flakes oregano mozzarella of)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639515] of ONTOLOGY::Recipe
-    (title "Citrus Beet Salad")
-    (servings 4)
-    (price 52.95)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients beets olive-oil balsamic-vinegar grapefruit sprouts pumpkin-seeds goat-cheese)
-    (seasons any-season)
-    (season_text "Fall"))
-
   ([Recipe_631849] of ONTOLOGY::Recipe
     (title "2 Minute Chocolate Yum")
     (servings 1)
@@ -13551,61 +12570,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions halal kosher vegetarian)
     (ingredients cocoa-powder egg flour milk oil salt sugar vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663092] of ONTOLOGY::Recipe
-    (title "Thai Coconut Curry Soup")
-    (servings 6)
-    (price 32.14)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients coconut-milk worth-of-water curry-paste ginger-paste snow-peas string-beans carrot of-thai-basil-leaves lime-juice soy-sauce a-few-es-of-sesame-oil chili-powder tofu salt bell-pepper pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637794] of ONTOLOGY::Recipe
-    (title "Cherry-Berry Pie With Agave Nectar All-Butter Crust")
-    (servings 10)
-    (price 12.02)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients agave agave-nectar almond-flour berries butter cherries coconut-flour flour lemon-juice orange-extract tapioca-flour pastry-flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660685] of ONTOLOGY::Recipe
-    (title "Southern 7 Layer Salad in a Mason Jar")
-    (servings 8)
-    (price 16.41)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free)
-    (ingredients bacon pepper eggs lettuce mayo peas bell-pepper cream sugar onion)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648641] of ONTOLOGY::Recipe
-    (title "Julia Child's Ratatouille")
-    (servings 6)
-    (price 15.41)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients eggplant garlic bell-peppers olive-oil parsley salt salt-and-pepper onion zucchini)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_661186] of ONTOLOGY::Recipe
-    (title "Spicy Salmon Patties")
-    (servings 4)
-    (price 75.44)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients pink-salmon eggs parsley-flakes scallions bread-crumbs juice-of-lemon pepper-flakes mayonnaise lemon-juice)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -13642,237 +12606,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_642403] of ONTOLOGY::Recipe
-    (title "Enchiladas Verdes (Green Enchiladas)")
-    (servings 6)
-    (price 43.26)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients chicken-breast anaheim-chili-peppers canola-oil buttermilk-can-be-used-as-a-substitute flour onion corn-tortillas cheese queso-fresco crema salt water)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_716417] of ONTOLOGY::Recipe
-    (title "Strawberry Shortcake w. Mini Strawberry PopTarts")
-    (servings 4)
-    (price 45.44)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal kosher)
-    (ingredients cup-heavy-whipping-cream pie-crust-dough sea-salt strawberries strawberry-jam tsp-vanilla-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715595] of ONTOLOGY::Recipe
-    (title "How to Make the Cheesiest Bowtie Mac and Cheese")
-    (servings 4)
-    (price 33.65)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients bowtie-pasta-cook-as-directed extra-sharp-cheddar-cheese extra-sharp-cheddar-cheese salt-and-pepper cream butter parsley)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634318] of ONTOLOGY::Recipe
-    (title "Barbecued Shrimp & Grits")
-    (servings 6)
-    (price 67.5)
-    (wine_pairing "White wine")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions gluten-free)
-    (ingredients bacon barbecue-sauce butter garlic-cloves grits shrimp salt scallions sharp-cheddar-cheese water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633194] of ONTOLOGY::Recipe
-    (title "Azteca Soup")
-    (servings 6)
-    (price 29.54)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients avocado basil-in-ribbons basil-shreds canned-tomatoes celery-stalks chili-powder cumin corn garlic jalapeno-pepper lime-juice nacho-chips olive-oil onions cream vegetable-stock)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_715467] of ONTOLOGY::Recipe
-    (title "Turkey Pot Pie")
-    (servings 8)
-    (price 25.69)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients pepper butter celery celery-seed chicken-broth flour garlic-powder green-beans seasoning milk onion onion-powder peas-and-carrots pie-crusts salt turkey pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638741] of ONTOLOGY::Recipe
-    (title "Chipotle Black Bean Soup with Avocado Cream")
-    (servings 8)
-    (price 16.86)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients avocado black-beans carrots chicken-broth chipotle-peppers-in-adobo-sauce cilantro-leaves lemon-juice olive-oil onions cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716211] of ONTOLOGY::Recipe
-    (title "Cherry Blueberry Muffins")
-    (servings 12)
-    (price 4.73)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients almond-butter almond-flour baking-powder baking-soda blueberries cherries eggs lemon-juice lemon-zest sea-salt sugar unbleached-flour vanilla yogurt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643059] of ONTOLOGY::Recipe
-    (title "Flank Steak With Garlicky Mediterranean Salad")
-    (servings 2)
-    (price 291.89)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients balsamic-vinegar feta flank-steak garlic grill-seasoning lemon-juice lemon-zest salad-greens mushroom olive-oil olives oregano bell-pepper onion pepper-flakes roma-tomato salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1061943] of ONTOLOGY::Recipe
-    (title "How to Make the Ultimate Christmas Fruit Pizza")
-    (servings 8)
-    (price 4.98)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder egg flour granulated-sugar salt butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654225] of ONTOLOGY::Recipe
-    (title "Oven Roasted Pears With Blackberry Sauce")
-    (servings 10)
-    (price 13.64)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher)
-    (ingredients bittersweet-chocolate blackberries confectioners-sugar cream-of-tartar eggs-whites granulated-sugar juice-from-lemon pears powered-sugar butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661059] of ONTOLOGY::Recipe
-    (title "Spicy Chicken with Salsa Verde")
-    (servings 6)
-    (price 30.25)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients avocado chicken-thigh-fillets chili-powder flour-tortilla-wraps coriander-leaves garlic green-onions jalapeo-peppers limes mint-leaves onion-salt oregano paprika chilli cream vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642638] of ONTOLOGY::Recipe
-    (title "Fava Crostini")
-    (servings 4)
-    (price 23.24)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher)
-    (ingredients broad-bean glugs-of-olive-oil garlic lemon water parmesan salt-pepper crusty-bread)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641565] of ONTOLOGY::Recipe
-    (title "Donkatsu - Korean Breaded Pork Cutlet")
-    (servings 4)
-    (price 52.04)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients cabbage carrot eggs flour katsu-sauce panko-bread-crumbs pork-chops salt-and-pepper vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662668] of ONTOLOGY::Recipe
-    (title "Swiss Chard and Mushroom Popover Bake")
-    (servings 4)
-    (price 24.3)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher)
-    (ingredients cremini-mushrooms eggs bobs-mill-garbanzo-bean-flour garlic-clove margarine olive-oil provolone-cheese onion rosemary salt-and-pepper skim-milk swiss-chard thyme)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663348] of ONTOLOGY::Recipe
-    (title "The Ultimate Frozen Coconut ‘Ice Cream’ with Hard Shell Chocolate Sauce")
-    (servings 3)
-    (price 39.22)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients coconut-milk ice-tray bananas chocolate-chips coconut-oil coconut)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664985] of ONTOLOGY::Recipe
-    (title "Wasabi Ice Cream (Wasabi Aisu)")
-    (servings 8)
-    (price 7.46)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal)
-    (ingredients egg-yolks water superfine-sugar wasabi-or vanilla-extract whipping-cream milk salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633765] of ONTOLOGY::Recipe
-    (title "Baked Rigatoni With Sausage")
-    (servings 6)
-    (price 43.11)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients from-1-bunch-basil pepper canned-tomatoes mozzarella garlic-cloves sausage kosher-salt olive-oil onion parmigiano-reggiano rigatoni)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636365] of ONTOLOGY::Recipe
-    (title "Brussels Sprouts with Bacon and Shallots")
-    (servings 4)
-    (price 33.3)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free)
-    (ingredients bacon brussels-sprouts lemon-juice salt-and-pepper shallot)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632347] of ONTOLOGY::Recipe
-    (title "Ancient Grains Bread")
-    (servings 14)
-    (price 5.9)
-    (wine_pairing " No wine pairing")
-    (meal_types bread)
-    (restrictions halal kosher vegetarian)
-    (ingredients yeast flour flour rye-flakes ground-flaxseed amaranth-grain quinoa soy-flour vital-wheat-gluten skim-milk-powder salt warm-water honey)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659674] of ONTOLOGY::Recipe
-    (title "Seared Pork Chops with Mango Salsa")
-    (servings 4)
-    (price 83.29)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients bell-pepper-de-seeded pepper cayenne-powder cilantro cumin garlic-powder lime mango mustard-powder onion onion-powder pork-chops salt scallions-scallions tomato vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_641794] of ONTOLOGY::Recipe
     (title "Easter Bunny's Vegan Ambrosia Salad")
     (servings 4)
@@ -13881,28 +12614,6 @@
     (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
     (restrictions gluten-free halal kosher)
     (ingredients vegan-heavy-cream-and sugar vegan-cream vegan-marshmallows clementine-orange-segents pineapple coconut pecans maraschino-cherries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645530] of ONTOLOGY::Recipe
-    (title "Green Tea Fruit Medley Smoothie")
-    (servings 4)
-    (price 15.96)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch beverage breakfast drink)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients water tea-bags berries pineapple-juice vanilla-yogurt ice-cubes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651757] of ONTOLOGY::Recipe
-    (title "Meyer Lemon Cheesecake")
-    (servings 12)
-    (price 13.5)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions kosher)
-    (ingredients cream-cheese eggs gingersnaps juice-of-lemon lemon-zest salt cream sugar butter of)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -13917,28 +12628,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_659285] of ONTOLOGY::Recipe
-    (title "Satay Beef Balls")
-    (servings 6)
-    (price 11.4)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients bread glove-garlic ginger ground-beef parsley peanut-butter soya-sauce spring-onion)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_647046] of ONTOLOGY::Recipe
-    (title "Homemade Oatmeal Cream Pies")
-    (servings 10)
-    (price 6.82)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients baking-powder baking-soda brown-sugar butter cinnamon cocoa-powder egg flour marshmallow-fluff powdered-sugar rolled-oats salt vanilla vegetable-shortening)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_650901] of ONTOLOGY::Recipe
     (title "Maple Glazed Bacon Wrapped Pork Tenderloin")
     (servings 4)
@@ -13950,61 +12639,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_642927] of ONTOLOGY::Recipe
-    (title "Fish Crocchette Appetizer")
-    (servings 8)
-    (price 27.8)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients bread-crumbs canola-oil cod-fillet eggs flour garlic rind-of-a-lemon milk parmesan-cheese parsley potatoes salt tuna-in-olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632575] of ONTOLOGY::Recipe
-    (title "Apple Pie Smoothie")
-    (servings 2)
-    (price 52.37)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch beverage breakfast drink)
-    (restrictions halal kosher vegetarian)
-    (ingredients almond-butter apple-sauce vanilla-yogurt grain-granola ground-cinnamon honey ice-cubes maple-syrup milk delicious-apple)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632527] of ONTOLOGY::Recipe
-    (title "Apple Cupcakes")
-    (servings 15)
-    (price 3.67)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder brown-sugar butter cinnamon-powder eggs flour sieve-the-flour apples ground-almond yogurt raisin)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658855] of ONTOLOGY::Recipe
-    (title "Rugelach")
-    (servings 32)
-    (price 0.99)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter block-of-cream-cheese salt flour egg-yolks vanilla-extract caster-sugar fruit-preserves walnuts butter caster-sugar ground-cinnamon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649502] of ONTOLOGY::Recipe
-    (title "Lemon and pepper veal cutlets")
-    (servings 4)
-    (price 143.43)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients pepper butter corn-flour cream rosemary lemon-juice lemon-rind olive-oil cracked-pepper salt cream veal-cutlets)
-    (seasons summer)
-    (season_text "Summer"))
-
   ([Recipe_633160] of ONTOLOGY::Recipe
     (title "Avocado Toast With Caramelized Sweet Onion, Grape Tomatoes, Fresh Garden Chives and Chive Blossoms")
     (servings 2)
@@ -14013,17 +12647,6 @@
     (meal_types main-course)
     (restrictions dairy-free halal kosher vegan vegetarian)
     (ingredients olive-oil onion grape-tomatoes avocado quality-bread springs-chives chive-blossoms salt ground-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636300] of ONTOLOGY::Recipe
-    (title "Brown sugar & Spice Sugar cookie frogs")
-    (servings 30)
-    (price 0.41)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions vegetarian)
-    (ingredients unbleached baking-powder cinnamon ginger nutmeg allspice granulated-sugar brown-sugar butter egg vanilla-extract)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -14049,50 +12672,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_716367] of ONTOLOGY::Recipe
-    (title "Vanilla Pound Cake")
-    (servings 10)
-    (price 6.98)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder butter eggs natural-yogurt granulated-sugar milk nutmeg flour salt vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655634] of ONTOLOGY::Recipe
-    (title "Pepita Crusted Chicken Salad With Sweet Adobo Vinaigrette")
-    (servings 4)
-    (price 73.44)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients strain-adobo-sauce avocado dijon-mustard egg flour ground-cumin honey jicama mango milk oil a-onion pepitas pepper red-wine-vinegar salt chicken-breasts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645978] of ONTOLOGY::Recipe
-    (title "Ground Turkey Stuffed Peppers")
-    (servings 4)
-    (price 74.91)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal)
-    (ingredients bell-peppers pepper tomato-sauce canned-tomatoes parsley eggs garlic ground-beef ground-turkey onion parmesan-cheese rice sugar tomato-soup worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634496] of ONTOLOGY::Recipe
-    (title "BBQ Mac and Cheese")
-    (servings 4)
-    (price 45.51)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients cottage-cheese parmesan-cheese ketchup brown-sugar jalapeo parsley milk garlic onion ground-cumin salt pepper butter cheddar-cheese-or style-breadcrumbs macaroni)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_1062882] of ONTOLOGY::Recipe
     (title "Easy Slow Cooker Whole Chicken With Rosemary")
     (servings 6)
@@ -14101,17 +12680,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions gluten-free kosher)
     (ingredients chicken olive-oil-extra-virgin lemons onion paprika pepper rosemary salt butter water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632101] of ONTOLOGY::Recipe
-    (title "Almond Butter and Chocolate Squares")
-    (servings 16)
-    (price 7.23)
-    (wine_pairing " No wine pairing")
-    (meal_types condiment dip spread)
-    (restrictions kosher vegetarian)
-    (ingredients vegan-butter powdered-sugar vegan-vanilla-cookie-crumbs almond-butter vegan-chocolate)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -14137,39 +12705,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_632862] of ONTOLOGY::Recipe
-    (title "Asian Pear and Gorgonzola Salad With Pomegranate Vinaigrette")
-    (servings 20)
-    (price 2.76)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients greens asian-pears pomegranate-seeds gorgonzola pistachio-nuts pomegranate-seeds red-wine-vinegar sugar shallots extra-virgin-olive-oil kosher-salt-and-cracked-pepper)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_643362] of ONTOLOGY::Recipe
-    (title "French Onion Marsala Soup")
-    (servings 4)
-    (price 59.98)
-    (wine_pairing "Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients butter olive-oil onions beef-broth marsala-wine thyme salt-and-pepper sugar texas-toast-croutons provolone-cheese swiss-cheese parmesan-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661218] of ONTOLOGY::Recipe
-    (title "Spicy Tuna Cakes")
-    (servings 3)
-    (price 48.13)
-    (wine_pairing "White wine")
-    (meal_types main-course)
-    (restrictions kosher)
-    (ingredients cajun-seasoning tuna chili-peppers dijon-mustard egg garlic-cloves greek-yogurt green-onions hot-sauce juice-of-lemon mirepoix panko-breadcrumbs cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_664392] of ONTOLOGY::Recipe
     (title "Vegan Banana Nut Muffins")
     (servings 9)
@@ -14191,17 +12726,6 @@
     (ingredients corn black-beans canned-tomatoes swanson-premium-chicken enchilada-sauce campbells-cream-of-mushroom-soup milk tortilla-chips cheese)
     (seasons summer)
     (season_text "Summer"))
-
-  ([Recipe_663252] of ONTOLOGY::Recipe
-    (title "The Blarney Burger")
-    (servings 4)
-    (price 136.38)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients ground-sirloin irish-whiskey egg onion garlic piccante-gorgonzola-crumbles salt pepper butter purple-cabbage hamburger-buns worchester worchester)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_640827] of ONTOLOGY::Recipe
     (title "Crispy Pineapple Fritters")
@@ -14225,105 +12749,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_632527] of ONTOLOGY::Recipe
-    (title "Apple Cupcakes")
-    (servings 15)
-    (price 3.67)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder brown-sugar butter cinnamon-powder eggs flour sieve-the-flour apples ground-almond yogurt raisin)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716290] of ONTOLOGY::Recipe
-    (title "Mango Salsa")
-    (servings 1)
-    (price 428.51)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cherry-tomatoes bell-pepper lime-juice mangoes mint-leaves bell-pepper onions sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631757] of ONTOLOGY::Recipe
-    (title "Savory Slow Roasted Tomatoes with Filet of Anchovy")
-    (servings 4)
-    (price 20.87)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients round-tomatoes any-herbs-you-like salt-pepper extra-virgin-olive-oil anchovy-filets)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653371] of ONTOLOGY::Recipe
-    (title "Nutella Stuffed French Toast")
-    (servings 2)
-    (price 40.07)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients eggs milk sugar cinnamon-powder bread nutella butter powdered-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634229] of ONTOLOGY::Recipe
-    (title "Bananas Foster")
-    (servings 1)
-    (price 131.37)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients banana banana-liqueur brown-sugar butter cinnamon rum)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639433] of ONTOLOGY::Recipe
-    (title "Cinnamon & Sugar Roasted Chickpeas")
-    (servings 4)
-    (price 11.66)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans olive-oil maple-syrup cinnamon cane-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646930] of ONTOLOGY::Recipe
-    (title "Homemade Broccoli Cheddar Soup")
-    (servings 4)
-    (price 81.19)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients broccoli shallot juice-of-lemon vegetable-broth pepper salt onion yogurt yukon-gold-potatoes parsley bay-leaf olive-oil almond-milk cheddar-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645418] of ONTOLOGY::Recipe
-    (title "Green Beans with Pearl Onions and Salmon")
-    (servings 4)
-    (price 122.74)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients green-beans pearl-onions olive-oil butter chicken-stock brown-sugar salt-and-pepper salmon-steaks)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716272] of ONTOLOGY::Recipe
-    (title "Nutella Crepes and Ice Cream")
-    (servings 6)
-    (price 18.21)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients strawberries-bananas butter butter-milk cinnamon eggs flour ice-cream nutella oil sugar tea-spoon-of-vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_715437] of ONTOLOGY::Recipe
     (title "Homemade King Ranch Chicken Casserole")
     (servings 6)
@@ -14335,39 +12760,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_641836] of ONTOLOGY::Recipe
-    (title "Easy Baked Parmesan Chicken")
-    (servings 4)
-    (price 85.06)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients chicken-breast-halves egg bread-crumbs pasta-sauce mozzarella-cheese parmesan-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632574] of ONTOLOGY::Recipe
-    (title "Apple Persimmon Sauce")
-    (servings 4)
-    (price 34.53)
-    (wine_pairing " No wine pairing")
-    (meal_types sauce)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients persimmons apples ground-cinnamon nutmeg water brown-sugar lemon-juice)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663100] of ONTOLOGY::Recipe
-    (title "Thai Cucumber Salad (By Roz)")
-    (servings 6)
-    (price 32.11)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients cilantro cucumbers jalapeno-pepper lime-juice lime-zest onions pepper-flakes rice-wine-vinegar chop-roasted-peanuts salt coconut-sesame-oil soy-sauce sugar thai-garlic-chili-pepper-sauce pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_661533] of ONTOLOGY::Recipe
     (title "Steaks with pesto, tomatoes and feta cheese")
     (servings 4)
@@ -14376,28 +12768,6 @@
     (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions gluten-free)
     (ingredients cherry-tomatoes feta-cheese capers garlic-cloves cracked-pepper olive-oil basil pork-steaks pesto-rosso cornflour basil sea-salt pepper olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645978] of ONTOLOGY::Recipe
-    (title "Ground Turkey Stuffed Peppers")
-    (servings 4)
-    (price 74.91)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal)
-    (ingredients bell-peppers pepper tomato-sauce canned-tomatoes parsley eggs garlic ground-beef ground-turkey onion parmesan-cheese rice sugar tomato-soup worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657312] of ONTOLOGY::Recipe
-    (title "Pumpkin gnocchi with basil and Parmesan")
-    (servings 6)
-    (price 25.75)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients pumpkin eggs sea-salt pepper basil-leaves wheat-flour corn-flour olive-oil grana-padano-cheese basil-leaves)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -14423,50 +12793,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_1100990] of ONTOLOGY::Recipe
-    (title "Blueberry, Chocolate & Cocao Superfood Pancakes - Gluten-Free/Paleo/Vegan")
-    (servings 2)
-    (price 146.97)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients almond-flour coconut-flour tapiocaarrowroot-flour nuthempcoconut-milk baking-powder vanilla-bean-pasteextract himalayan-sea-salt blueberries cacao-nibs chocolate)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663313] of ONTOLOGY::Recipe
-    (title "The Pearhattan Cocktail")
-    (servings 1)
-    (price 509.89)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients angostura-bitters 3-cups-fresh-juice-of-ripe-usa-pears crme-de-cassis ice juice-of-lemon fresh-squeezed-lemon-juice freshly-usa-pear rye-whiskey salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638235] of ONTOLOGY::Recipe
-    (title "Chicken Parmesan With Pasta")
-    (servings 4)
-    (price 60.85)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients angel-hair-pasta breadcrumbs breasts-of-chicken egg flour garlic-powder mozzarella-cheese pasta-sauce salt-and-pepper vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642129] of ONTOLOGY::Recipe
-    (title "Easy To Make Spring Rolls")
-    (servings 4)
-    (price 94.41)
-    (wine_pairing "White wine")
-    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free)
-    (ingredients you-can-use-regular-basil boston-lettuce chili-pepper fish-sauce coriander-leaves garlic lime-juice mint-leaves bell-pepper rice-vinegar shrimp spring-roll-wrappers sugar water nuoc-cham nuoc-cham)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_715447] of ONTOLOGY::Recipe
     (title "Easy Vegetable Beef Soup")
     (servings 8)
@@ -14477,138 +12803,6 @@
     (ingredients beef-short-ribs elbow-macaroni water-4-qts canned-tomatoes potatoes on-carrots celery onion kernal-corn butter-beans eyed-peas bay-leaves garlic-powder celery-salt worcestershire-sauce salt ground-pepper seasoning beef-bouillon-cubes parsley)
     (seasons summer)
     (season_text "Summer"))
-
-  ([Recipe_1050445] of ONTOLOGY::Recipe
-    (title "How to Make the Best Crock Pot Roast")
-    (servings 8)
-    (price 26.04)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients beef-broth pepperoncini-pepper-juice pepperoncini-peppers pot-roast-cut ranch-seasoning)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636970] of ONTOLOGY::Recipe
-    (title "Caramel Almond Berry Trifle")
-    (servings 10)
-    (price 6.07)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher)
-    (ingredients almond-extract berries mrs-richardsons-butterscotch-caramel-sauce vanilla-pudding milk cool-whip pound-cake)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662895] of ONTOLOGY::Recipe
-    (title "Tarte aux Pommes")
-    (servings 6)
-    (price 21.17)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients apples brown-sugar eggs heavy-whipping-cream pie-crust-already-made-and-on-your-supermarket-refrigerator-section vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661834] of ONTOLOGY::Recipe
-    (title "Strawberry Mango Green Tea Limeade")
-    (servings 6)
-    (price 213.13)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients strawberries mango lime-juice tea simple-syrup)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716422] of ONTOLOGY::Recipe
-    (title "Caramelized Onion Dip")
-    (servings 2)
-    (price 56.63)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients caramelized-onions chives greek-yogurt salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716430] of ONTOLOGY::Recipe
-    (title "Roasted Cabbage Wedge Salad with Yogurt Gorgonzola Dressing")
-    (servings 4)
-    (price 35.32)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients bacon garlic gorgonzola grape-tomatoes grapeseed-oil cabbage juice-of-lemon greek-yogurt salt-and-pepper scallions scallions)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642085] of ONTOLOGY::Recipe
-    (title "Easy Roasted Vegetables")
-    (servings 4)
-    (price 31.93)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients butternut-squash beet-roots potatoes olive-oil paprika basil salt-pepper)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_658108] of ONTOLOGY::Recipe
-    (title "Red Velvet Cupcake")
-    (servings 24)
-    (price 3.67)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients baking-soda butter buttermilk cake-flour cider-vinegar cream-cheese eggs powdered-sugar food-coloring salt sugar butter cocoa vanilla vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_765011] of ONTOLOGY::Recipe
-    (title "Snap Pea and Green Bean Salad with Arugula Pesto")
-    (servings 6)
-    (price 36.98)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients roasted-almonds almonds baby-arugula basil-leaves cilantro extra-virgin-olive-oil garlic micro-greens lemon-zest pistachios salt-and-pepper snap-peas wax-beans yogurt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715493] of ONTOLOGY::Recipe
-    (title "Slow Cooker Red Beans and Rice")
-    (servings 5)
-    (price 32.22)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free halal)
-    (ingredients ancho-chili-powder bay-leaves butter beans canned-tomatoes cayenne-pepper onion rice sausage water pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641973] of ONTOLOGY::Recipe
-    (title "Easy Garlic Roast Leg Of Lamb With Rosemary and Parsley")
-    (servings 8)
-    (price 66.23)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients leg-of-lamb garlic-cloves extra-virgin-olive-oil flat-leaf-parsley rosemary kosher-salt pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633779] of ONTOLOGY::Recipe
-    (title "Baked Salmon With Lime")
-    (servings 2)
-    (price 355.32)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher)
-    (ingredients salmon-cutlet spring-onion ginger chili cooking-wine rind-of-lime lime-juice peppercorns butter)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_660322] of ONTOLOGY::Recipe
     (title "Smashed Fried Lemon Potatoes")
@@ -14643,28 +12837,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_645315] of ONTOLOGY::Recipe
-    (title "Greek Inspired Spring Omelet")
-    (servings 1)
-    (price 220.11)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course morning-meal brunch main-dish breakfast dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients asparagus-spears egg-whites feta-cheese green-onions salt-and-pepper tzatziki cherry-tomatoes)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_649178] of ONTOLOGY::Recipe
-    (title "Lamb & Sweet Potato Pot Pie")
-    (servings 8)
-    (price 37.01)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients bay-leaf pepper butter caraway-seeds celery-stalks cornstarch demi-glace flour flour rosemary thyme garlic ice-water kosher-salt lamb lemon-zest milk olive-oil orange-zest peas crust onion red-wine salt shortening sugar sweet-potatoes water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_658300] of ONTOLOGY::Recipe
     (title "Rich Jelly Scones")
     (servings 4)
@@ -14673,17 +12845,6 @@
     (meal_types morning-meal dessert brunch breakfast)
     (restrictions halal vegetarian)
     (ingredients all-purpose-flour granulated-sugar baking-powder baking-soda salt butter eggs milk vanilla-extract fruit-preserves egg milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651190] of ONTOLOGY::Recipe
-    (title "Masala-Tofu Burger")
-    (servings 4)
-    (price 88.97)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients onion-shopping-list redorangegreen-bell-pepper-shopping-list peas-carrots-mix-shopping-list chillies-shopping-list tofu-shopping-list potato-boils garlic-shopping-list mustard-seeds-shopping-list curry-leaves-shopping-list hing-shopping-list cumin-powder-shopping-list turmeric-shopping-list lemon-shopping-list salt-shopping-list cilantro-washed-finely-shopping-list indian-breadcrumbs-shopping-list vegetable-oil-shopping-list pam-original-flavor-shopping-list redwhite-onion beefsteak-tomatoes cilantro-shopping-list mint-cilantro-chutney-spread-shopping-list portugese-rolls)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -14709,72 +12870,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_656571] of ONTOLOGY::Recipe
-    (title "Polla alla Parmigiana: Chicken Parmesan")
-    (servings 6)
-    (price 48.95)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients bread-crumbs eggs flour marjoram mozzarella oil panko parmesan-cheese bell-pepper salt chicken-breasts tomato-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660406] of ONTOLOGY::Recipe
-    (title "Smoky Chicken Tacos")
-    (servings 8)
-    (price 23.32)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients avocados cabbage chili-powder cilantro corn corn-tortillas cumin evoo garlic-powder garlic-powder jalapeno-pepper juice-of-lime juice-of-lime extra-lime onion-powder pepper onion pepper roma-tomatoes salsa salt salt-and-pepper chicken-breasts cream)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_639535] of ONTOLOGY::Recipe
-    (title "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather")
-    (servings 2)
-    (price 139.39)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans currants green-onions ground-cumin israeli-couscous juice-of-orange olive-oil parsley pecans bell-pepper rice-vinegar salt-and-pepper paprika)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639125] of ONTOLOGY::Recipe
-    (title "Chocolate Orange Madeleines")
-    (servings 8)
-    (price 12.28)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients all-purpose-flour baking-powder chocolate eggs granulated-sugar orange-juice orange-zest sea-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644554] of ONTOLOGY::Recipe
-    (title "Ginger Beef Stir Fry")
-    (servings 4)
-    (price 94.36)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients water-chestnuts carrots ginger-root garlic bell-pepper salad-lettuce onion orange-marmalade soy-sauce top-sirloin-steak vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657917] of ONTOLOGY::Recipe
-    (title "Raspberry Walnut Coffee Cake")
-    (servings 6)
-    (price 15.56)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients almond-milk baking-soda cinnamon flaxseed maple-syrup oat-flour oil raspberry-jam rolled-oats salt turbinado-sugar vanilla walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_642169] of ONTOLOGY::Recipe
     (title "Edamame Hummus")
     (servings 6)
@@ -14797,50 +12892,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_665040] of ONTOLOGY::Recipe
-    (title "Watermelon, Kiwi, Apple and Frozen Banana Smoothie")
-    (servings 3)
-    (price 12.3)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch beverage breakfast drink)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients apple-juice banana ice-cubes kiwi-fruit seededseedless-watermelon)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_715392] of ONTOLOGY::Recipe
-    (title "Easy Slow Cooker Chicken Tortilla Soup")
-    (servings 8)
-    (price 22.96)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients chicken-breast onion chili-powder tomatoes chicken-broth kernel-corn chilis black-beans cilantro)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_641223] of ONTOLOGY::Recipe
-    (title "Damn Good Corn Pudding ~from 12 Bones Smokehouse")
-    (servings 10)
-    (price 10.07)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients flour sugar baking-powder salt pepper-flakes cumin coriander eggs butter heavy-cream creamed-corn poblano-peppers corn)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_642054] of ONTOLOGY::Recipe
-    (title "Easy Parmesan Knots")
-    (servings 10)
-    (price 2.21)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients buttermilk-biscuits canola-oil parsley-flakes garlic-powder oregano parmesan-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_634389] of ONTOLOGY::Recipe
     (title "Basic Hummus")
     (servings 20)
@@ -14849,39 +12900,6 @@
     (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
     (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
     (ingredients chickpeas olive-oil juice-of-lemon garlic tahini water cumin salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_647016] of ONTOLOGY::Recipe
-    (title "HomeMade Hashbrowns with Spinach and Carrots")
-    (servings 3)
-    (price 14.13)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients carrot chilli-powder cornflour onion potatoes salt spinach-leaves)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_661059] of ONTOLOGY::Recipe
-    (title "Spicy Chicken with Salsa Verde")
-    (servings 6)
-    (price 30.25)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients avocado chicken-thigh-fillets chili-powder flour-tortilla-wraps coriander-leaves garlic green-onions jalapeo-peppers limes mint-leaves onion-salt oregano paprika chilli cream vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649004] of ONTOLOGY::Recipe
-    (title "Kohlrabi Salad With Apple, Bacon, and Snow Peas")
-    (servings 1)
-    (price 223.7)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients kohlrabi-bulb fuji-apple snow-peas sunflower-seeds bacon heavy-cream apple-cider-vinegar honey)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -14896,28 +12914,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_635574] of ONTOLOGY::Recipe
-    (title "Boeuf Bourgignon")
-    (servings 4)
-    (price 210.34)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients button-mushrooms butter un-smoked-bacon vegetable-oil well-trimmed-beef-chuck onion shallots carrots salt-and-pepper flour cognac beef-stock cocoa-powder garlic-cloves thyme flat-leaf-parsley-leaves tomato-paste bay-leaf)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644853] of ONTOLOGY::Recipe
-    (title "Gluten Free Profiteroles")
-    (servings 1)
-    (price 121.79)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free vegetarian)
-    (ingredients butter egg flour xantham-gum milk salt sugar water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_640856] of ONTOLOGY::Recipe
     (title "Crock Pot Boneless Beef Ribs")
     (servings 4)
@@ -14929,17 +12925,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_643660] of ONTOLOGY::Recipe
-    (title "Fried Asparagus")
-    (servings 3)
-    (price 62.9)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients asparagus all-purpose-flour eggs salt pepper parsley grating-cheese breadcrumbs vegetable-oil)
-    (seasons spring)
-    (season_text "Spring"))
-
   ([Recipe_665029] of ONTOLOGY::Recipe
     (title "Watermelon Popsicles with Mint, Basil & Lime")
     (servings 8)
@@ -14950,28 +12935,6 @@
     (ingredients basil-leaves juice-of-lime mint-leaves salt watermelon-flesh)
     (seasons summer)
     (season_text "Summer"))
-
-  ([Recipe_643428] of ONTOLOGY::Recipe
-    (title "Fresh and Simple Swai Ceviche")
-    (servings 4)
-    (price 66.66)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients avocado chile-garlic-paste cilantro swai-fillets juice-of-lime olive-oil salt-and-pepper shallot tomato)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652886] of ONTOLOGY::Recipe
-    (title "My Sister's Soup: Creamy Curried Squash and Cauliflower Soup")
-    (servings 6)
-    (price 26.57)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients butternut-squash delicata-squash cauliflower vegetable-stock onion garlic curry-powder butter dashes-of-cayenne-pepper salt-and-pepper)
-    (seasons any-season)
-    (season_text "Fall"))
 
   ([Recipe_652813] of ONTOLOGY::Recipe
     (title "Mutton Rendang")
@@ -14995,17 +12958,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_633428] of ONTOLOGY::Recipe
-    (title "Baked Apple Pancake")
-    (servings 4)
-    (price 26.84)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal kosher)
-    (ingredients whl-apple butter cinnamon whl-eggs flour milk nuts-and-raisins salt sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_648432] of ONTOLOGY::Recipe
     (title "Jambalaya Stew")
     (servings 4)
@@ -15014,83 +12966,6 @@
     (meal_types soup lunch main-course main-dish dinner)
     (restrictions dairy-free gluten-free halal)
     (ingredients chicken-sausage-links canned-tomatoes onion bell-pepper celery chicken-broth brown-rice garlic cajun-seasoning hot-sauce oregano thyme shrimp)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642287] of ONTOLOGY::Recipe
-    (title "Eggplant Fries with Tzatziki Sauce")
-    (servings 2)
-    (price 44.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients eggplants bread-crumbs seasoning-mix yogurt egg)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661602] of ONTOLOGY::Recipe
-    (title "Sterling Cooper Blini with Caviar")
-    (servings 16)
-    (price 1.56)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal kosher)
-    (ingredients baking-powder butter caviar egg flour milk cream sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631880] of ONTOLOGY::Recipe
-    (title "5-Minute Blueberry Chia Jam")
-    (servings 4)
-    (price 19.11)
-    (wine_pairing " No wine pairing")
-    (meal_types condiment dip spread)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients blueberries chia-seeds honeymaple-syrup water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716297] of ONTOLOGY::Recipe
-    (title "Breaded Shrimp and Spicy Mayo Appetizer")
-    (servings 4)
-    (price 22.1)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients all-purpose-flour bread-crumbs chili-powder egg garlic-powder mayonnaise onion-powder suya-pepper salt shrimps sriracha-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665185] of ONTOLOGY::Recipe
-    (title "White Chocolate Mocha Cookies")
-    (servings 48)
-    (price 0.24)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients ap-flour baking-soda cocoa-powder eggs espresso-powder salt semi-sweet-chocolate-chips sugar butter vanilla-extract chocolate-chips)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664269] of ONTOLOGY::Recipe
-    (title "Valentine Hearts")
-    (servings 4)
-    (price 46.81)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients puff-pastry egg-to-glaze castor-sugar crme-fraiche strawberries chocolate)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642346] of ONTOLOGY::Recipe
-    (title "Egyptain Cauliflower Side Salad")
-    (servings 2)
-    (price 75.29)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cauliflower cumin parsley lemon-juice olive-oil bell-pepper salt)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -15104,28 +12979,6 @@
     (ingredients asparagus baking-soda cocoa-powder eggs flour ground-cinnamon orange-peel pecans salt sugar vanilla-extract vegetable-oil)
     (seasons spring)
     (season_text "Spring"))
-
-  ([Recipe_641410] of ONTOLOGY::Recipe
-    (title "Delicious Rhubarb Custard Pie")
-    (servings 8)
-    (price 6.67)
-    (wine_pairing " No wine pairing")
-    (meal_types main-course)
-    (restrictions halal kosher)
-    (ingredients butter eggs flour nutmeg prebaked-pie-crust rhubarb salt)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_642113] of ONTOLOGY::Recipe
-    (title "Easy Pork Chops on Stuffing")
-    (servings 6)
-    (price 38.14)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients butter celery chicken-broth parsley onion bell-pepper pork-chops salt bread)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_640273] of ONTOLOGY::Recipe
     (title "Crab Cake Stuffed Shrimp")
@@ -15149,50 +13002,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_660157] of ONTOLOGY::Recipe
-    (title "Simply Amazing Cinnamon Swirl Wheat Bread")
-    (servings 8)
-    (price 4.66)
-    (wine_pairing " No wine pairing")
-    (meal_types bread)
-    (restrictions halal kosher vegetarian)
-    (ingredients brown-sugar butter cinnamon egg flour yeast non-fat-milk nutmeg salt sugar warm-water flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664501] of ONTOLOGY::Recipe
-    (title "Vegan Taco bowls with Cilantro Lime Cauliflower Rice")
-    (servings 4)
-    (price 64.22)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients avocado-oil cauliflower new-mexico-chili-powder cilantro garlic-powder hass-avocado jalapeno lime-juice onion salt tomato walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633344] of ONTOLOGY::Recipe
-    (title "Bacon Wrapped Pork Tenderloin")
-    (servings 4)
-    (price 55.08)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients bacon pepper coarse-salt sage garlic-powder pork-tenderloin)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641890] of ONTOLOGY::Recipe
-    (title "Easy Cheesy Scrambled Eggs")
-    (servings 4)
-    (price 19.58)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients eggs milk salt-and-pepper jack-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_716293] of ONTOLOGY::Recipe
     (title "Double Chocolate Milo Pancakes")
     (servings 2)
@@ -15204,50 +13013,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_652624] of ONTOLOGY::Recipe
-    (title "Mushroom and Parmesan Brown Rice Risotto")
-    (servings 2)
-    (price 86.54)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients pepper butter cremini-mushrooms garlic olive-oil onion parmesan-cheese parsley salt short-grain-brown-rice vegetable-stock)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1098388] of ONTOLOGY::Recipe
-    (title "Watermelon Salad with Feta, Walnut & Nigella Seeds")
-    (servings 6)
-    (price 31.21)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients walnut-halves watermelon feta-cheese mint nigella-seeds)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_632252] of ONTOLOGY::Recipe
-    (title "Alouette® Stuffed Mushroom Caps")
-    (servings 8)
-    (price 18.79)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients seasoned-bread-crumbs mushroom-caps alouette-spinach-artichoke-spread)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_655400] of ONTOLOGY::Recipe
-    (title "Pear and Pesto Crostini")
-    (servings 3)
-    (price 78.51)
-    (wine_pairing " No wine pairing")
-    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher)
-    (ingredients bread basil-leaves garlic pine-nuts pecorino-romano your-best-olive-oil salt-and-pepper bosc-pear)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_644800] of ONTOLOGY::Recipe
     (title "Gluten Free Blueberry Muffins")
     (servings 12)
@@ -15256,17 +13021,6 @@
     (meal_types morning-meal brunch breakfast)
     (restrictions gluten-free halal vegetarian)
     (ingredients baking-powder driscolls-blueberries eggs flour lemon-zest salt sugar butter vanilla-extract milk xanthan-gum)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651409] of ONTOLOGY::Recipe
-    (title "Mediterranean Herb Dip")
-    (servings 4)
-    (price 150.21)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions gluten-free halal)
-    (ingredients pepper bar-of-cream-cheese feta-cheese basil flat-leaf-parsley garlic-cloves tabasco-hot-sauce roasted-peppers salt sun-tomatoes worcestershire-sauce)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -15303,39 +13057,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_663553] of ONTOLOGY::Recipe
-    (title "Tomato and Bacon Pizza With Rice Crust")
-    (servings 8)
-    (price 10.09)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free)
-    (ingredients bell-pepper rice egg seasoning mozzarella-cheese tomatoes at-least-of-turkey-bacon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643129] of ONTOLOGY::Recipe
-    (title "Flawless Chocolate Fudge")
-    (servings 16)
-    (price 2.08)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal)
-    (ingredients butter evaporated-milk kosher-salt marshmallow-fluff semisweet-chocolate-chips sugar real-vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716432] of ONTOLOGY::Recipe
-    (title "Finger Foods: Frittata Muffins")
-    (servings 1)
-    (price 295.92)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients broccoli chives t-cream eggs orange-pepper salt-and-pepper cheddar-cheese tomato)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_645961] of ONTOLOGY::Recipe
     (title "Indian-Spiced Ground Beef Main Dish")
     (servings 4)
@@ -15347,28 +13068,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_639749] of ONTOLOGY::Recipe
-    (title "Coconut Cream Pie Vegan Milkshake")
-    (servings 3)
-    (price 27.04)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions dairy-free vegan vegetarian)
-    (ingredients coconut-meat lemon-juice coconut-oil coconut-milk banana vanilla-extract graham-cracker-crumbs coconut-flakes ice-cubes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660222] of ONTOLOGY::Recipe
-    (title "Skinny Carrot Fritters")
-    (servings 16)
-    (price 0.84)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients baby-carrots bread-crumbs cayenne-pepper chickpea-flour cilantro salt sriracha-sauce water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_1062883] of ONTOLOGY::Recipe
     (title "How to Make Easy Cheesy Garlic Bread")
     (servings 8)
@@ -15377,17 +13076,6 @@
     (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions kosher)
     (ingredients bread-this-one-is-a-vienna butter mozzarella-cheddar extra-virgin-olive-oil parsley garlic parmigiano-reggiano)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637883] of ONTOLOGY::Recipe
-    (title "Chicken Adobo & Coconut Ginger Rice")
-    (servings 4)
-    (price 48.02)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients apple-cider-vinegar bay-leaves chicken-thighs brown-sugar chicken-broth cornstarch ginger garlic grapeseed-oil kosher-salt soy-sauce parsley peppercorns rice scallions coconut water water)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -15401,17 +13089,6 @@
     (ingredients butter butter brown-sugar sugar eggs vanilla spiced-apple-butter flour baking-soda big-sea-salt rolled-oats brown-sugar-and-cinnamon-oatmeal toffee-chips)
     (seasons any-season)
     (season_text "Any season"))
-
-  ([Recipe_659927] of ONTOLOGY::Recipe
-    (title "Shrimp and Avocado Salad")
-    (servings 4)
-    (price 289.31)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients the-shrimp shrimp garlic-cloves olive-oil juice-of-lime salt-and-pepper the-salad the-of-1-cos-lettuce basil-leaves corn spring-onions pineapple avocados-into-cubes avocado the-dressing tbsp-olive-oil tbsp-honey juice-of-lime)
-    (seasons summer)
-    (season_text "Summer"))
 
   ([Recipe_641435] of ONTOLOGY::Recipe
     (title "Dessert Apple Rings With Cinnamon Cream Syrup")
@@ -15434,28 +13111,6 @@
     (ingredients brie-cheese dill-weed garlic olive-oil olives onion salmon-filets salt-and-pepper spinach tomatoes)
     (seasons spring)
     (season_text "Spring"))
-
-  ([Recipe_636620] of ONTOLOGY::Recipe
-    (title "Butterscotch Pie")
-    (servings 8)
-    (price 17.43)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions no-restrictions)
-    (ingredients the-pie-crust sleeve-of-graham-crackers butter sugar butter brown-sugar-or heavy-cream percent-milk salt cornstarch water vanilla scotch-whiskey the-pie-topping heavy-whipping-cream vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635226] of ONTOLOGY::Recipe
-    (title "Blackberry Peach Betty")
-    (servings 8)
-    (price 12.33)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions no-restrictions)
-    (ingredients peach-pie-filling blackberries tbs-butter graham-cracker-crumbs ground-cinnamon sugar)
-    (seasons summer)
-    (season_text "Summer"))
 
   ([Recipe_638199] of ONTOLOGY::Recipe
     (title "Chicken Mulligatawny Soup")
@@ -15490,17 +13145,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_639866] of ONTOLOGY::Recipe
-    (title "Coffee Cream Martinis")
-    (servings 4)
-    (price 22.48)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients granulated-sugar ground-coffee vodka baileys-irish-cream kahlua chocolate-syrup ice-cubes)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_632502] of ONTOLOGY::Recipe
     (title "Apple Cheddar Turkey Burgers With Chipotle Yogurt Sauce")
     (servings 4)
@@ -15523,39 +13167,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_633998] of ONTOLOGY::Recipe
-    (title "Banana Blueberry Pancakes")
-    (servings 8)
-    (price 6.97)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions dairy-free gluten-free halal kosher vegetarian)
-    (ingredients eggs water liquid-coconut-oil coconut-flour cream-of-tartar ground-cinnamon bananas blueberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636230] of ONTOLOGY::Recipe
-    (title "Broccoli with cheese soup")
-    (servings 4)
-    (price 16.62)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients broccoli-florets flour milk garlic-powder salt ground-pepper feta-cheese swiss-chesee)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661291] of ONTOLOGY::Recipe
-    (title "Spinach Cheese Tortellini")
-    (servings 8)
-    (price 8.13)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher)
-    (ingredients butter tomato cheese-tortellini-prepare cumin basil flour garlic garlic-powder heavy-cream milk olive-oil onion onion-powder oregano parmesan-cheese sugar pepper-flakes pepper-and-salt spinach thyme)
-    (seasons spring)
-    (season_text "Spring"))
-
   ([Recipe_660161] of ONTOLOGY::Recipe
     (title "Simply Bean Soup")
     (servings 1)
@@ -15567,83 +13178,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_645384] of ONTOLOGY::Recipe
-    (title "Greek Yogurt Chicken Salad")
-    (servings 4)
-    (price 77.34)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients cashews chicken-breasts craisins dijon-mustard garlic-powder greek-yogurt salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665642] of ONTOLOGY::Recipe
-    (title "Zesty Lime Marinated Chicken with Homemade Watermelon Salsa")
-    (servings 4)
-    (price 44.89)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients cucumber ear-corn extra-virgin-olive-oil cilantro garlic-powder ground-pepper honey lime-juice orange-pepper onion pepper-flakes salt chicken-breasts tabasco-sauce watermelon)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_660680] of ONTOLOGY::Recipe
-    (title "South Carolina Style Pulled Pork")
-    (servings 10)
-    (price 31.93)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients apple-cider-vinegar barbecue-sauce chili-powder dijon-mustard garlic ground-cumin hoisin-sauce honey maple-syrup boston-butt-pork-shoulder pepper-flakes soy-sauce table-salt tomato-paste vegetable-oil worcestershire-sauce onion)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652624] of ONTOLOGY::Recipe
-    (title "Mushroom and Parmesan Brown Rice Risotto")
-    (servings 2)
-    (price 86.54)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients pepper butter cremini-mushrooms garlic olive-oil onion parmesan-cheese parsley salt short-grain-brown-rice vegetable-stock)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638288] of ONTOLOGY::Recipe
-    (title "Chicken Roll-Ups With Feta Cheese and Arugula")
-    (servings 60)
-    (price 0.37)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients chicken-breast-cutlets coarse-salt-and-ground-pepper baby-arugula feta-cheese olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651426] of ONTOLOGY::Recipe
-    (title "Mediterranean Orzo Salad")
-    (servings 10)
-    (price 19.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher)
-    (ingredients orzo kosher-salt pine-nuts evoo green-onions parsley lemon-zest cucumber bell-pepper cherry-tomatoes onion pepperoncinis feta-cheese red-wine-vinegar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715446] of ONTOLOGY::Recipe
-    (title "Slow Cooker Beef Stew")
-    (servings 6)
-    (price 45.07)
-    (wine_pairing "Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients beef-broth carrots celery cream-of-mushroom-soup green-onions new-potatoes onion dales-seasoning stew-meat water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_637162] of ONTOLOGY::Recipe
     (title "Carrot and Cabbage Salad With Coriander+cumin Dry Rub")
     (servings 1)
@@ -15652,17 +13186,6 @@
     (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
     (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
     (ingredients carrots cumin-seed-powder coriander cabbage ground-coriander juice-of-lime olive-oil cabbage sunflower-seeds)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634437] of ONTOLOGY::Recipe
-    (title "Basil Tagliatelle with Roasted Red Bell Pepper Salad")
-    (servings 4)
-    (price 101.78)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients tagliatelle bell-peppers garlic-cloves parsley horseradish green-onions lemon-juice extra-virgin-olive-oil sea-salt ground-pepper)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -15688,17 +13211,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_655793] of ONTOLOGY::Recipe
-    (title "Peruvian Roast Chicken")
-    (servings 4)
-    (price 42.38)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients chicken garlic-cloves juice-of-lemon red-wine-vinegar soy-sauce olive-oil paprika cumin turmeric salt pepper kitchen-twine kitchen-twine)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_663942] of ONTOLOGY::Recipe
     (title "Tuna Noodle Casserole: Mommie Cooks")
     (servings 8)
@@ -15707,50 +13219,6 @@
     (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions kosher)
     (ingredients bread-crumbs butter mushrooms peas tuna celery-sticks cheese chicken-broth egg-noodles flour garlic milk onion parsley pimientos salt-and-pepper sherry)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650789] of ONTOLOGY::Recipe
-    (title "Mango Guacamole")
-    (servings 6)
-    (price 15.41)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients hass-avocados mango onion serrano-chiles garlic juice-of-lime)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661048] of ONTOLOGY::Recipe
-    (title "Spicy Chicken Corn Dogs with Homemade Chili Sauce")
-    (servings 8)
-    (price 20.16)
-    (wine_pairing "Red wine")
-    (meal_types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients ancho-chili-pepper prunes beef-broth fire-roasted-tomatoes tomato-paste onion molasses garlic pumpkin-seeds ground-cumin oregano masa-harina cornmeal rice-flour baking-powder brown-sugar kosher-salt eggs juice-of-lime rice-milk canola-oil spicy-chicken-sausage-links)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_658503] of ONTOLOGY::Recipe
-    (title "Roasted Beet Hummus")
-    (servings 10)
-    (price 4.13)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients roasted-beets chickpeas garlic ground-cumin juice-of-lemon olive-oil salt tahini-sesame-seed-paste)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641408] of ONTOLOGY::Recipe
-    (title "Delicious Sausage & Peppers")
-    (servings 8)
-    (price 20.29)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients bell-peppers garlic-crushed ground-pepper sausages sausages jalapeo olive-oil parsley salsa sea-salt onion)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -15765,28 +13233,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_652017] of ONTOLOGY::Recipe
-    (title "Mint Oreo Brownies")
-    (servings 25)
-    (price 1.58)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients all-purpose-flour cocoa-powder sea-salt butter chocolate sugar vanilla-extract mint-oreos eggs)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635063] of ONTOLOGY::Recipe
-    (title "Black Bean Brownies")
-    (servings 12)
-    (price 4.4)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients black-beans canola-oil applesauce eggs egg-yolk sugar cocoa espresso-powder semi-sweet-chocolate butter vanilla-extract salt flour walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_1098355] of ONTOLOGY::Recipe
     (title "Bahamian Goombay Smash Cocktail")
     (servings 4)
@@ -15798,28 +13244,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_634318] of ONTOLOGY::Recipe
-    (title "Barbecued Shrimp & Grits")
-    (servings 6)
-    (price 67.5)
-    (wine_pairing "White wine")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions gluten-free)
-    (ingredients bacon barbecue-sauce butter garlic-cloves grits shrimp salt scallions sharp-cheddar-cheese water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645696] of ONTOLOGY::Recipe
-    (title "Grilled Eggplant and Heirloom Tomato Stacks With Basil and Tomato Coulis")
-    (servings 5)
-    (price 50.15)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher)
-    (ingredients basil-leaves pepper eggplant garlic-clove mild-goat-cheese olive-oil pecorino-romano-cheese plum-tomatoes salt tomato-coulis garden-tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_652414] of ONTOLOGY::Recipe
     (title "Moroccan Chicken Pitas")
     (servings 4)
@@ -15828,28 +13252,6 @@
     (meal_types main-course)
     (restrictions kosher)
     (ingredients pita-bread chicken-breasts paprika coriander cinnamon cumin cayenne-pepper garlic ginger salt olive-oil bunchs-parsley quinoa petite-tomatoes onion juice-of-lemon mahjool-dates olive-oil sea-salt greek-yogurt cucumber mint juice-of-lemon combine-everything-in-a-bowl-and-chill)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715515] of ONTOLOGY::Recipe
-    (title "Southern Style Green Bean")
-    (servings 2)
-    (price 101.25)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions gluten-free)
-    (ingredients bacon butter green-beans new-potatoes parsley salt thyme onion)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716301] of ONTOLOGY::Recipe
-    (title "Honey Ginger Lemon Iced Tea")
-    (servings 1)
-    (price 117.6)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions dairy-free gluten-free kosher vegetarian)
-    (ingredients ginger tea-bag honey lemon-juice mint-leaves)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -15875,94 +13277,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_653055] of ONTOLOGY::Recipe
-    (title "New Orleans Red Beans and Rice with Andouille Sausage")
-    (servings 6)
-    (price 40.35)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients andouille-sausage bay-leaves bell-pepper canola-oil celery creole-seasoning garlic onion kidney-beans salt-and-pepper ham-hock tabasco-sauce thyme-leaves rice worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641145] of ONTOLOGY::Recipe
-    (title "Curry-Braised Chicken")
-    (servings 4)
-    (price 54.92)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients basmati-rice brown-sugar fish-sauce lime-juice bell-pepper salt chicken-breasts coconut-milk vegetable-oil curry-paste)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652427] of ONTOLOGY::Recipe
-    (title "Moroccan kofte and sausage stew")
-    (servings 8)
-    (price 20.51)
-    (wine_pairing "Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients beef onion chilli ground-cumin ground-cloves coriander-half ground-coriander egg sea-salt sausage olive-oil harissa tomato chicken-stock cinnamon chili-peppers garlic salt ground-caraway-seeds cumin)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716431] of ONTOLOGY::Recipe
-    (title "Crockpot Applesauce")
-    (servings 3)
-    (price 97.25)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients apples cinnamon juice-of-lemon orange-juice vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632347] of ONTOLOGY::Recipe
-    (title "Ancient Grains Bread")
-    (servings 14)
-    (price 5.9)
-    (wine_pairing " No wine pairing")
-    (meal_types bread)
-    (restrictions halal kosher vegetarian)
-    (ingredients yeast flour flour rye-flakes ground-flaxseed amaranth-grain quinoa soy-flour vital-wheat-gluten skim-milk-powder salt warm-water honey)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652367] of ONTOLOGY::Recipe
-    (title "Montreal style bagels")
-    (servings 12)
-    (price 3.33)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients warm-water granulated-sugar sunflower-oil active-yeast beated-egg maple-syrup all-purpose-flour kosher-salt sesame-seeds water honey)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633754] of ONTOLOGY::Recipe
-    (title "Baked Ratatouille")
-    (servings 1)
-    (price 861.26)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients eggplant feta-cheese basil garlic-cloves bell-peppers olive-oil onion-cut-pieces red-wine-vinegar tomatoes zucchini-cut)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_654032] of ONTOLOGY::Recipe
-    (title "Oreo Hazelnut and Banana Cheesecake")
-    (servings 10)
-    (price 10.17)
-    (wine_pairing " No wine pairing")
-    (meal_types main-course)
-    (restrictions no-restrictions)
-    (ingredients bananas butter cream-cheese gelatin-powder lemon-juice milk nutella oreo-cookies water whipping-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_633082] of ONTOLOGY::Recipe
     (title "Authentic Mexican Wedding Cookies")
     (servings 48)
@@ -15985,28 +13299,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_660216] of ONTOLOGY::Recipe
-    (title "Skillet Chili Mac")
-    (servings 6)
-    (price 25.48)
-    (wine_pairing "Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients canola-oil ground-beef onion chili-powder ground-cumin cayenne-pepper salt-pepper garlic-cloves brown-sugar water grain-macaroni cheddar-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638604] of ONTOLOGY::Recipe
-    (title "Chilled Swiss Oatmeal")
-    (servings 1)
-    (price 188.99)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients old-fashioned-oatmeal vanilla-yogurt milk apple banana cranberry walnuts)
-    (seasons any-season)
-    (season_text "Fall"))
-
   ([Recipe_658384] of ONTOLOGY::Recipe
     (title "Risotto With Fresh Peas")
     (servings 6)
@@ -16018,39 +13310,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_652708] of ONTOLOGY::Recipe
-    (title "Mushroom Tarragon Fish")
-    (servings 4)
-    (price 140.34)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients spice-islands-co bread-crumbs butter green-onions mushrooms pepper salt spice-islands-tarragon fish-fillets)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639900] of ONTOLOGY::Recipe
-    (title "Colcannon")
-    (servings 8)
-    (price 6.16)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free)
-    (ingredients optional-2-rashers-bacon butter cabbage stems-green-onions milk parsley pepper potatoes salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1100990] of ONTOLOGY::Recipe
-    (title "Blueberry, Chocolate & Cocao Superfood Pancakes - Gluten-Free/Paleo/Vegan")
-    (servings 2)
-    (price 146.97)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients almond-flour coconut-flour tapiocaarrowroot-flour nuthempcoconut-milk baking-powder vanilla-bean-pasteextract himalayan-sea-salt blueberries cacao-nibs chocolate)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_658680] of ONTOLOGY::Recipe
     (title "Roasted Sweet Potato Salad")
     (servings 8)
@@ -16059,204 +13318,6 @@
     (meal_types side-dish)
     (restrictions dairy-free gluten-free kosher vegan vegetarian)
     (ingredients sweet-potatoes extra-virgin-olive-oil chipotle-pepper-adobo-sauce balsamic-vinegar salt pepper cranberries pecans chives)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655046] of ONTOLOGY::Recipe
-    (title "Pb, Banana, Chocolate Chip Muffins")
-    (servings 24)
-    (price 1.36)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal)
-    (ingredients baking-powder banana cinnamon egg yogurt flour golden-brown-sugar salt semi-sweet-chocolate-chips skim-milk smooth-peanut-butter sugar vanilla-extract vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655335] of ONTOLOGY::Recipe
-    (title "Peanut Butter Sriracha Cookies")
-    (servings 60)
-    (price 0.27)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter crunchy-peanut-butter sugar brown-sugar sriracha eggs vanilla-extract flour baking-powder salt baking-soda granulated-sugar add-a-hersheys-chocolate-kiss-on-top-as-done)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643241] of ONTOLOGY::Recipe
-    (title "Four-Berry Blast Fruit Smoothie")
-    (servings 4)
-    (price 31.0)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch beverage breakfast drink)
-    (restrictions gluten-free halal vegetarian)
-    (ingredients blackberries blueberries lemonade-concentrate raspberries strawberries sugar vanilla-extract milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641893] of ONTOLOGY::Recipe
-    (title "Easy Cheesy Pizza Casserole")
-    (servings 6)
-    (price 65.92)
-    (wine_pairing "Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients equivalent-amount-of-a-ground-beefbulk-sausage-mix ricotta oregano basil parmesan-cheese pasta-sauce pizza-sauce pepper-flakes pepperoni mozzarella aged-provolone herbed-parmesan-drop-biscuits additional-parmesan-cheese baking-mix parmesan-cheese seasoning milk or or)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649141] of ONTOLOGY::Recipe
-    (title "La Bella Italian Turkey Burger")
-    (servings 4)
-    (price 141.29)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients pepper burger-buns egg extra-virgin-olive-oil extra-virgin-olive-oil basil basil mozzarella rosemary garlic ground-turkey turkey-sausage mayonnaise oregano pepper pine-nuts bell-pepper salt salt spinach-leaves thyme)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_631759] of ONTOLOGY::Recipe
-    (title "Simit (Turkish Circular Bread)")
-    (servings 8)
-    (price 13.0)
-    (wine_pairing " No wine pairing")
-    (meal_types bread)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients flour yeast molasses olive-oil salt sesame-seeds water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637766] of ONTOLOGY::Recipe
-    (title "Cherry Lime Mojito")
-    (servings 1)
-    (price 207.39)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients cherries mint-leaves lime demerara-sugar rum carbonated-water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638939] of ONTOLOGY::Recipe
-    (title "Chocolate Chip Pancakes-gluten free, nut free, vegan")
-    (servings 12)
-    (price 4.41)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients rice-flour sorghum-flour arrowroot teff-flour aluminum-free-baking-powder baking-soda nutmeg cinnamon xylitol chocolate-vegan-chocolate-chips coconut-milk juice-of-lemon pear-sauce sunflower-oil kosher-salt earth-balance-soy-free-spread)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_647210] of ONTOLOGY::Recipe
-    (title "Honey Dijon Roasted Brussels Sprout")
-    (servings 4)
-    (price 13.55)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegetarian)
-    (ingredients brussels-sprouts dijon-mustard honey olive-oil salt-and-pepper-to-tatse)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642346] of ONTOLOGY::Recipe
-    (title "Egyptain Cauliflower Side Salad")
-    (servings 2)
-    (price 75.29)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cauliflower cumin parsley lemon-juice olive-oil bell-pepper salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658004] of ONTOLOGY::Recipe
-    (title "Raw Vegan Blueberry Chocolate Crust \"Cheesecake")
-    (servings 6)
-    (price 48.85)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients agave almonds blueberries cacao-powder coconut-oil lemon-juice macadamia-nuts to-7-medjool-dates cashews sea-salt soy-lecithin-granules vanilla-extract walnuts water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644674] of ONTOLOGY::Recipe
-    (title "Gingerbread")
-    (servings 24)
-    (price 1.58)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher vegetarian)
-    (ingredients baking-powder baking-soda un-packed-brown-sugar butter pumpkin eggs pastry ground-cinnamon ground-cloves ground-ginger honey molasses turbinado-sugar water)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_641005] of ONTOLOGY::Recipe
-    (title "Cucumber and Cannellini Bean Side Salad")
-    (servings 10)
-    (price 9.37)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients artichokes pepper cannellini-beans cucumbers basil capers-plus-caper-juice juice-of-lemon olive-oil onion pepper-flakes salt sugar sun-tomatoes vinegar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657689] of ONTOLOGY::Recipe
-    (title "Quinoa Tabouli with Lemon Garlic Grilled Shrimp")
-    (servings 4)
-    (price 69.86)
-    (wine_pairing "White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients quinoa water sea-salt celery-stalks and-orange-peppers green-onions sun-dried-olives vine-ripened-tomato corn parsley mint-leaves garlic lemon-juice sea-salt grilled-shrimp-seasoned)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_658276] of ONTOLOGY::Recipe
-    (title "Rice Pudding")
-    (servings 4)
-    (price 15.37)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients short-grain-rice water salt milk sugar vanilla egg butter cinnamon nutmeg)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653149] of ONTOLOGY::Recipe
-    (title "No Cook Cranberry Orange Relish")
-    (servings 10)
-    (price 4.52)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients package-cranberries orange sugar pecans)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631912] of ONTOLOGY::Recipe
-    (title "A Post Thanksgiving “sopa De Tortilla”")
-    (servings 5)
-    (price 61.6)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients avocado carrots celery cilantro cumin garlic olive-oil olive-oil onion poblano-pepper stewed-tomatoes fried-tortilla-strips turkey-breast)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635113] of ONTOLOGY::Recipe
-    (title "Black Forest Mini Cheesecakes")
-    (servings 12)
-    (price 8.79)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions no-restrictions)
-    (ingredients cherry-pie-filling cocoa-powder cream-cheese eggs gelatin heavy-cream oreo-cookies powdered-sugar salt semi-sweet-chocolate-chips cream sugar butter vanilla-extract water)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -16282,105 +13343,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_663500] of ONTOLOGY::Recipe
-    (title "Tofu Chickpeas Lettuce Wraps")
-    (servings 8)
-    (price 11.84)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients carrots chickpeas chilies cilantro garlic ginger-paste soy-sauce maple-syrup olive-oil salt tofu warm-water white-of-green-onions sesame-seeds vinegar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644854] of ONTOLOGY::Recipe
-    (title "Gluten Free Quinoa and Corn Flour Crepes")
-    (servings 4)
-    (price 27.32)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients virgin-coconut-oil corn-flour ground-flax-seeds maple-syrup quinoa-flour rice-milk sea-salt tapioca-flour xanthan-gum)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_1000566] of ONTOLOGY::Recipe
-    (title "Easy Instant Pot Beef Tips and Rice")
-    (servings 4)
-    (price 55.08)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients sirloin-beef-tips cream-of-mushroom-soup garlic-powder dales-seasoning-sauce olive-oil onion water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632101] of ONTOLOGY::Recipe
-    (title "Almond Butter and Chocolate Squares")
-    (servings 16)
-    (price 7.23)
-    (wine_pairing " No wine pairing")
-    (meal_types condiment dip spread)
-    (restrictions kosher vegetarian)
-    (ingredients vegan-butter powdered-sugar vegan-vanilla-cookie-crumbs almond-butter vegan-chocolate)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715493] of ONTOLOGY::Recipe
-    (title "Slow Cooker Red Beans and Rice")
-    (servings 5)
-    (price 32.22)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free halal)
-    (ingredients ancho-chili-powder bay-leaves butter beans canned-tomatoes cayenne-pepper onion rice sausage water pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_647016] of ONTOLOGY::Recipe
-    (title "HomeMade Hashbrowns with Spinach and Carrots")
-    (servings 3)
-    (price 14.13)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients carrot chilli-powder cornflour onion potatoes salt spinach-leaves)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_715383] of ONTOLOGY::Recipe
-    (title "Slow Cooker Chicken and Dumplings")
-    (servings 6)
-    (price 24.09)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients butter biscuits condensed-cream-of-chicken-soup flour onion parsley pepper poultry-seasoning chicken-breasts water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649690] of ONTOLOGY::Recipe
-    (title "Lemon Mint Sorbet")
-    (servings 8)
-    (price 13.97)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients water sugar lemon-zest mint-leaves lemon-juice limoncello kosher-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657178] of ONTOLOGY::Recipe
-    (title "Protein Packed Carrot Muffins")
-    (servings 6)
-    (price 27.38)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions gluten-free halal)
-    (ingredients russian-mulling-spice almond-meal baking-powder baking-soda carrots desicated-coconut coconut-oil eggs fruit-bits ground-flaxseed lemon-zest salt oz-tofu vanilla-extract walnut-pieces whey-powder)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_660261] of ONTOLOGY::Recipe
     (title "Slow Cooked Applesauce")
     (servings 10)
@@ -16389,61 +13351,6 @@
     (meal_types side-dish)
     (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
     (ingredients apples-from-a-local-tree-if-possible water brown-sugar cinnamon nutmeg salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655540] of ONTOLOGY::Recipe
-    (title "Pecan-Baked Ham")
-    (servings 12)
-    (price 28.6)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients five-spice-powder brown-sugar butter ham onions pecans)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632625] of ONTOLOGY::Recipe
-    (title "Apple-Cheesecake Tart with Salted Caramel Glaze")
-    (servings 8)
-    (price 19.34)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter double-cream egg flour granny-smith-apples ground-almonds ground-cinnamon juice-of-lemon full-fat-cream-cheese sugar sea-salt sugar vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637591] of ONTOLOGY::Recipe
-    (title "Cheese Tortellini Alfredo")
-    (servings 4)
-    (price 44.04)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients cheese-tortellini-by-buitoni ground-pepper nutmeg parmiggiano-reggiano butter whipping-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659907] of ONTOLOGY::Recipe
-    (title "Shrimp & Orzo")
-    (servings 8)
-    (price 41.73)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients canned-tomatoes wine fennel-bulb feta-cheese parsley loves-of-garlic lemon-wedges chicken-broth olive-oil onion oregano orzo-pasta pepper-flakes salt-pepper shrimp water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644782] of ONTOLOGY::Recipe
-    (title "Gluten And Dairy Free Peanut Butter Cups")
-    (servings 24)
-    (price 2.16)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients enjoy-life-semi-sweet-chocolate-chips non-hydrogenated-shortening creamy-peanut-butter agave-nectar salt)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -16469,61 +13376,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_648176] of ONTOLOGY::Recipe
-    (title "Italian Meatloaf with Hard Boiled Eggs")
-    (servings 8)
-    (price 33.38)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients bacon pepper butter carrots celery rosemary sage-leaves garlic ground-beef ground-pork ground-veal olive-oil sea-salt bread onion hardboiled-eggs vin-santo)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633126] of ONTOLOGY::Recipe
-    (title "Avocado and Orange Salad With Orange-Ginger Dressing")
-    (servings 4)
-    (price 55.51)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients avocados oranges green-onions orange-juice juice-of-lemon ginger-paste agave-syrup olive-oil salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716290] of ONTOLOGY::Recipe
-    (title "Mango Salsa")
-    (servings 1)
-    (price 428.51)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cherry-tomatoes bell-pepper lime-juice mangoes mint-leaves bell-pepper onions sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633133] of ONTOLOGY::Recipe
-    (title "Avocado Chicken Parmigiana")
-    (servings 8)
-    (price 8.72)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher)
-    (ingredients chicken-breast-fillet flour egg breadcrumbs olive-oil tomato-pasta-sauce avocado parmesan-cheese salad-to-serve)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637569] of ONTOLOGY::Recipe
-    (title "Cheese Pork Chops")
-    (servings 4)
-    (price 58.85)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients dijon-mustard gruyere-cheese heavy-cream olive-oil pork-chops salt-and-pepper butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_653008] of ONTOLOGY::Recipe
     (title "Neoguri (Spicy Seafood Ramen)")
     (servings 1)
@@ -16532,17 +13384,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions dairy-free halal)
     (ingredients egg mussels neoguri-ramen scallion seaweed)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632819] of ONTOLOGY::Recipe
-    (title "Asian Chickpea Lettuce Wraps")
-    (servings 6)
-    (price 5.0)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients chickpeas chili-sauce hoison-sauce soy-sauce olive-oil rice-vinegar sugar pepper-flakes sirachi-sauce basil romaine-leaves)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -16568,17 +13409,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_636365] of ONTOLOGY::Recipe
-    (title "Brussels Sprouts with Bacon and Shallots")
-    (servings 4)
-    (price 33.3)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free)
-    (ingredients bacon brussels-sprouts lemon-juice salt-and-pepper shallot)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_644581] of ONTOLOGY::Recipe
     (title "Ginger Garlic Chili Salmon")
     (servings 2)
@@ -16590,28 +13420,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_659285] of ONTOLOGY::Recipe
-    (title "Satay Beef Balls")
-    (servings 6)
-    (price 11.4)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients bread glove-garlic ginger ground-beef parsley peanut-butter soya-sauce spring-onion)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658850] of ONTOLOGY::Recipe
-    (title "Royal Wedding Pear and Coriander Scones")
-    (servings 8)
-    (price 7.83)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients pear flour xanthan-gum baking-soda baking-powder salt butter sucanat eggs cream coriander)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_633587] of ONTOLOGY::Recipe
     (title "Baked Egg Linguine With Onion, Scallion, and Umame")
     (servings 4)
@@ -16620,94 +13428,6 @@
     (meal_types side-dish lunch main-course main-dish dinner)
     (restrictions halal kosher)
     (ingredients linguine eggs half-and-half butter flour parmigiano-reggiano onion scallions pepper truffle-salt truffle-oil bread leftover-robusto-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646358] of ONTOLOGY::Recipe
-    (title "Hawaiian Chicken Chili")
-    (servings 8)
-    (price 31.7)
-    (wine_pairing "No wine pairing")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients jamaican-allspice coconut-milk carrots chicken-breasts chicken-broth cilantro coconut-flakes cumin garlic-cloves great-northern-beans brown-rice pineapple sea-salt cream thyme onion pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644488] of ONTOLOGY::Recipe
-    (title "German Rhubarb Cake with Meringue")
-    (servings 12)
-    (price 4.75)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free halal vegetarian)
-    (ingredients rhubarb sugar sugar vanilla-extract salt eggs flour roasted-almonds baking-powder egg-whites sugar almonds)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_641890] of ONTOLOGY::Recipe
-    (title "Easy Cheesy Scrambled Eggs")
-    (servings 4)
-    (price 19.58)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients eggs milk salt-and-pepper jack-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651767] of ONTOLOGY::Recipe
-    (title "Meyer Lemon Scented Farro and Asparagus Salad")
-    (servings 6)
-    (price 29.83)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free vegetarian)
-    (ingredients farro peas lemon-zest meyer-lemon-juice asparagus olive-oil shallots crimini-mushrooms herbs-de-provence salt-and-pepper macadamia-nuts meyer-lemon-vinagirette meyer-lemon-juice citrus-champagne-vinegar vegetable-stock olive-oil garlic-clove honey)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_149425] of ONTOLOGY::Recipe
-    (title "Herb and Cheddar Cordon Bleu")
-    (servings 2)
-    (price 186.84)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients breadcrumbs cheddar-cheese chicken-breasts deli-ham marjoram parsley rosemary egg flour salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660288] of ONTOLOGY::Recipe
-    (title "Slow Cooker Kahlua Pork with Sweet Chili Pineapple Sauce")
-    (servings 12)
-    (price 19.75)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients garlic-chili-sauce hoisin-sauce honey liquid-smoke pineapple-juice pork-butt rice-vinegar regular-sea-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645002] of ONTOLOGY::Recipe
-    (title "Golden Cream Of Mushroom Soup With Crispy Shallots & Creme Fraiche")
-    (servings 6)
-    (price 17.93)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients chicken-stock creme-fraiche cremini-mushrooms flour thyme garlic half-and-half kosher-salt-pepper shallots tomato-paste)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651341] of ONTOLOGY::Recipe
-    (title "Meatball Sliders")
-    (servings 20)
-    (price 7.04)
-    (wine_pairing "No wine pairing")
-    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions no-restrictions)
-    (ingredients california-bay-leaf coarse-bread-crumbs marjoram eggs flat-leaf-parsley garlic-cloves garlic-cloves ground-pork ground-beef olive-oil oregano parmesan slider-buns sugar tomatoes-in-juice vegetable-oil milk onion)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -16733,105 +13453,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_637744] of ONTOLOGY::Recipe
-    (title "Cherry Coke Float Cupcakes With Chocolate Shell")
-    (servings 12)
-    (price 4.93)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients baking-soda buttermilk ice-cream-chocolate-shell coca-cola cocoa-powder egg flour maraschino-cherries maraschino-cherry-syrup salt sugar butter vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636675] of ONTOLOGY::Recipe
-    (title "Cacao-Pecan Shortbread Cookies")
-    (servings 24)
-    (price 1.9)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter cacao-nibs confectioners-sugar egg flour kosher-salt pecans vanilla-bean vanilla-extract vanilla-sugar water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660292] of ONTOLOGY::Recipe
-    (title "Slow Cooker Minestrone Soup")
-    (servings 8)
-    (price 14.22)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal kosher)
-    (ingredients carrots zucchini onion celery green-beans garlic garbanzo-beans pd-of-lentils tomatoes veggie-broth curry cumin garam-masala salt pepper noodles)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_662871] of ONTOLOGY::Recipe
-    (title "Tapioca Pudding with Pineapple and Coconut")
-    (servings 4)
-    (price 59.45)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients 8-fl-oz-coconut-milk egg-yolks 5-fl-oz-full-milk honey lime 8-oz-pineapple salt sugar 3-oz-of-pearl-tapioca vanilla-pod)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632300] of ONTOLOGY::Recipe
-    (title "Amazing Chicken Burgers")
-    (servings 3)
-    (price 75.27)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients baby-spinach mozzarella ground-chicken seasoned-bread-crumbs pesto roasted-peppers salt-pepper grain-sandwich-thins)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_1098350] of ONTOLOGY::Recipe
-    (title "Light Greek Lemon Chicken Orzo Soup")
-    (servings 8)
-    (price 29.98)
-    (wine_pairing "No wine pairing")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients chicken-breasts chicken-broth carrots celery-stalks thyme extra-virgin-olive-oil orzo-pasta ground-thyme salt pepper lemon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655573] of ONTOLOGY::Recipe
-    (title "Penne Arrabiata")
-    (servings 4)
-    (price 26.21)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients tomato parsley garlic olive-oil pkt-penne peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635561] of ONTOLOGY::Recipe
-    (title "Blueberry-Lavender Sauce and Ginger Snap Ice Cream Cups")
-    (servings 12)
-    (price 7.85)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions kosher)
-    (ingredients berries lavender-buds sugar cornstarch lemon-juice salt ginger-snap-cookies butter sugar salt ice-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636589] of ONTOLOGY::Recipe
-    (title "Butternut Squash Frittata")
-    (servings 1)
-    (price 340.39)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course morning-meal brunch main-dish breakfast dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients butternut-squash goat-cheese liquid-egg-substitute non-fat-milk bell-pepper)
-    (seasons any-season)
-    (season_text "Fall"))
-
   ([Recipe_649248] of ONTOLOGY::Recipe
     (title "Lamb Tagine Stew")
     (servings 4)
@@ -16843,50 +13464,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_646930] of ONTOLOGY::Recipe
-    (title "Homemade Broccoli Cheddar Soup")
-    (servings 4)
-    (price 81.19)
-    (wine_pairing "No wine pairing")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients broccoli shallot juice-of-lemon vegetable-broth pepper salt onion yogurt yukon-gold-potatoes parsley bay-leaf olive-oil almond-milk cheddar-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639433] of ONTOLOGY::Recipe
-    (title "Cinnamon & Sugar Roasted Chickpeas")
-    (servings 4)
-    (price 11.66)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans olive-oil maple-syrup cinnamon cane-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661249] of ONTOLOGY::Recipe
-    (title "Spinach & Ham Quiche")
-    (servings 8)
-    (price 6.81)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti morning-meal starter brunch snack appetizer breakfast antipasto hor-doeuvre)
-    (restrictions no-restrictions)
-    (ingredients butter cheddar-cheese eggs picnic-ham ice-water milk pepper flour salt shallots spinach whipping-cream)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_637683] of ONTOLOGY::Recipe
-    (title "Cheesy Spinach Stuffed Shells")
-    (servings 8)
-    (price 21.51)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients shells spinach wheat-germ parmesan-cheese pecans mexican-cheese green-onions salt basil eggs water alfredo-sauce spaghetti-sauce)
-    (seasons spring)
-    (season_text "Spring"))
-
   ([Recipe_657554] of ONTOLOGY::Recipe
     (title "Quick and Easy Scallop Pasta")
     (servings 2)
@@ -16895,39 +13472,6 @@
     (meal_types side-dish lunch main-course main-dish dinner)
     (restrictions no-restrictions)
     (ingredients scallops japanese-ramen-noodles garlic sesame-oil sauvignon-blanc-white-wine butter parmesan-cheese round-chives lemon-zest sea-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642287] of ONTOLOGY::Recipe
-    (title "Eggplant Fries with Tzatziki Sauce")
-    (servings 2)
-    (price 44.72)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients eggplants bread-crumbs seasoning-mix yogurt egg)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641815] of ONTOLOGY::Recipe
-    (title "Easy and Delicious Taco Soup")
-    (servings 6)
-    (price 50.33)
-    (wine_pairing "No wine pairing")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients ground-turkey onion pinto-beans kidney-beans regular-corn tomato-sauce tomatoes chiles olives taco-seasoning cayenne-pepper cilantro cheese tortilla-chips cream)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_653785] of ONTOLOGY::Recipe
-    (title "Orange & Ginger Chicken")
-    (servings 4)
-    (price 34.92)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients brown-sugar flour ginger-root garlic green-onion lemon-juice olive-oil orange pepper pepper-flakes rice-vinegar salt chicken-breasts soy-sauce water)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -16953,171 +13497,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_656720] of ONTOLOGY::Recipe
-    (title "Pork Carnitas with Chipotle BBQ Sauce and Slaw")
-    (servings 4)
-    (price 79.41)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients pork-chops orange-juice pineapple-juice garlic ground-coriander ground-cumin chili-powder garlic-powder onion-powder pepper ketchup brown-sugar dijon-mustard distilled-vinegar orange-juice honey salt chipotles-in-adobo cabbage onion cilantro juice-of-lime nonfat-greek-yogurt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642719] of ONTOLOGY::Recipe
-    (title "Fettuccine With Bacon Mushroom and Peas")
-    (servings 4)
-    (price 41.99)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients bacon cheese condensed-cream-of-mushroom basil fettuccine ground-pepper mushroom oregano-powder peas)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645530] of ONTOLOGY::Recipe
-    (title "Green Tea Fruit Medley Smoothie")
-    (servings 4)
-    (price 15.96)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal brunch beverage breakfast drink)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients water tea-bags berries pineapple-juice vanilla-yogurt ice-cubes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664726] of ONTOLOGY::Recipe
-    (title "Vegetarian Tostadas With Spicy Black Beans (+gluten free)")
-    (servings 4)
-    (price 41.63)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients corn-tortillas black-beans onions garlic olive-oil chiles-in-adobo-sauce spinach spinkle-of-basil-and-garlic-sea-salt cherry-tomatoes feta-cheese cream salsa)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644842] of ONTOLOGY::Recipe
-    (title "Gluten Free Oatmeal Raisin Cookies")
-    (servings 24)
-    (price 1.67)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients blanched-almond-flour arrowroot-flour sea-salt baking-soda xanthan-gum cinnamon spectrum-non-hydrogenated-shortening agave-nectar palm-sugar vanilla egg cooking-oats)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638249] of ONTOLOGY::Recipe
-    (title "Chicken Piccata with Artichokes")
-    (servings 6)
-    (price 52.96)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients artichoke-hearts capers chicken-breasts extra-virgin-olive-oil flat-leaf-parsley flour lemon-juice parmesan-cheese penne-rigate pepper reduced-sodium-chicken-broth salt)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_637335] of ONTOLOGY::Recipe
-    (title "Cedar-Planked Salmon With Mustard Dill Sauce")
-    (servings 6)
-    (price 50.85)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients salmon olive-oil lemon juice-of-lemon chives dijon-mustard salt pepper cream cucumber dill-or chives)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659143] of ONTOLOGY::Recipe
-    (title "Salmon, Watercress, Fennel and Baby Beetroot Salad With Lemony \"Caviar\" Dressing")
-    (servings 4)
-    (price 106.94)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients arnkha-msc-caviar-substitute baby-beets bay-leaf pepper extra-virgin-olive-oil fennel lemon-juice salmon-fillets tarragon-stalks tarragon-leaves watercress white-wine)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658087] of ONTOLOGY::Recipe
-    (title "Red Quinoa and Roasted Cauliflower Salad")
-    (servings 4)
-    (price 56.62)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients cauliflower quinoa walnuts apricots feta-cheese green-onions parsley salt-and-pepper lemon olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655335] of ONTOLOGY::Recipe
-    (title "Peanut Butter Sriracha Cookies")
-    (servings 60)
-    (price 0.27)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter crunchy-peanut-butter sugar brown-sugar sriracha eggs vanilla-extract flour baking-powder salt baking-soda granulated-sugar add-a-hersheys-chocolate-kiss-on-top-as-done)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657306] of ONTOLOGY::Recipe
-    (title "Pumpkin French Toast")
-    (servings 4)
-    (price 34.88)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients bread brown-sugar cinnamon eggs maple-syrup milk nutmeg pumpkin-pie-spice pumpkin-puree vanilla)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_662038] of ONTOLOGY::Recipe
-    (title "Stuffed Lemons in the Oven")
-    (servings 4)
-    (price 10.34)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients unwaxed-lemons basil-leaves anchovy cherry-tomatoes salt-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633372] of ONTOLOGY::Recipe
-    (title "Bacon-Wrapped Meatloaf")
-    (servings 6)
-    (price 36.72)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients apple-cider-vinegar butter mustard eggs thyme garlic-cloves ground-pepper a-mixture-of-1-pound-ground-chuck-and-1-ground-pork honey milk mustard onion salt salt bacon tomato-paste water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639618] of ONTOLOGY::Recipe
-    (title "Classic Mint Julep")
-    (servings 1)
-    (price 128.43)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients mint simple-syrup ice bourbon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660685] of ONTOLOGY::Recipe
-    (title "Southern 7 Layer Salad in a Mason Jar")
-    (servings 8)
-    (price 16.41)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free)
-    (ingredients bacon pepper eggs lettuce mayo peas bell-pepper cream sugar onion)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_648348] of ONTOLOGY::Recipe
     (title "Jalapeno Cornbread Stuffing")
     (servings 10)
@@ -17126,17 +13505,6 @@
     (meal_types side-dish)
     (restrictions halal kosher vegetarian)
     (ingredients butter onion celery jalapeno-chile-peppers pecans cornbread cilantro salt pepper cayenne-pepper chicken-broth)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639535] of ONTOLOGY::Recipe
-    (title "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather")
-    (servings 2)
-    (price 139.39)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans currants green-onions ground-cumin israeli-couscous juice-of-orange olive-oil parsley pecans bell-pepper rice-vinegar salt-and-pepper paprika)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -17151,28 +13519,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_641972] of ONTOLOGY::Recipe
-    (title "Easy Gluten Free Vegetarian Pasta Salad")
-    (servings 4)
-    (price 23.86)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients pasta greek-yogurt orange-zest orange-juice olive-oil grapes cilantro sea-salt pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645696] of ONTOLOGY::Recipe
-    (title "Grilled Eggplant and Heirloom Tomato Stacks With Basil and Tomato Coulis")
-    (servings 5)
-    (price 50.15)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher)
-    (ingredients basil-leaves pepper eggplant garlic-clove mild-goat-cheese olive-oil pecorino-romano-cheese plum-tomatoes salt tomato-coulis garden-tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_658129] of ONTOLOGY::Recipe
     (title "Red, White, and Blue Fruit Salsa")
     (servings 12)
@@ -17184,61 +13530,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_663313] of ONTOLOGY::Recipe
-    (title "The Pearhattan Cocktail")
-    (servings 1)
-    (price 509.89)
-    (wine_pairing "No wine pairing")
-    (meal_types beverage drink)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients angostura-bitters 3-cups-fresh-juice-of-ripe-usa-pears crme-de-cassis ice juice-of-lemon fresh-squeezed-lemon-juice freshly-usa-pear rye-whiskey salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637631] of ONTOLOGY::Recipe
-    (title "Cheesy Bacon Burger with Spicy Chipotle Aiolo Sauce")
-    (servings 4)
-    (price 77.08)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients chipotle-chiles-in-adobo mayonnaise garlic garlic-powder greek-yogurt bell-pepper ground-cumin ground-pepper ground-beef lime-juice onion wedges-of-laughing-cow-swiss-cheese turkey-bacon hamburger-buns)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631755] of ONTOLOGY::Recipe
-    (title "Peppermint Hot Chocolate Cupcakes")
-    (servings 24)
-    (price 2.44)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients baking-powder baking-soda hot-brewed-coffee butter buttermilk eggs flour heavy-cream marshmallow-creme milk peppermint-candies peppermint-extract powdered-sugar salt semisweet-chocolate semisweet-chocolate-chips sugar butter cocoa-powder vanilla-extract vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634486] of ONTOLOGY::Recipe
-    (title "BBQ Beef Brisket")
-    (servings 8)
-    (price 38.36)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients brisket salt-and-pepper oil onion-powder garlic-powder paprika cumin cayenne-pepper smokey-barbecue-sauce brown-sugar cornstarch)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646340] of ONTOLOGY::Recipe
-    (title "Hatch Chile Cornbread Muffins")
-    (servings 12)
-    (price 3.93)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions gluten-free halal kosher)
-    (ingredients milk corn butter eggs cornmeal baking-powder baking-soda salt sugar cheddar-cheese-and-monterrey-jack-cheese chiles)
-    (seasons summer)
-    (season_text "Summer"))
-
   ([Recipe_637515] of ONTOLOGY::Recipe
     (title "Cheddar Polenta with Sun-dried Tomatoes & Shrimp")
     (servings 2)
@@ -17247,50 +13538,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions gluten-free halal)
     (ingredients precooked-polenta-tube cheddar-cheese onions shrimp sun-dried-tomatoes olive-oil garlic-powder chives lemon-juice salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658491] of ONTOLOGY::Recipe
-    (title "Roasted Asparagus With Bacon and Feta Cheese")
-    (servings 6)
-    (price 14.71)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free)
-    (ingredients asparagus bacon feta-cheese olive-oil salt-and-pepper)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_642406] of ONTOLOGY::Recipe
-    (title "Endive Appetizer With Blue Cheese, Dried Cranberries and Walnuts")
-    (servings 8)
-    (price 11.16)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients apples balsamic-vinaigrette belgian-endive cheese cranberries walnut-pieces)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664288] of ONTOLOGY::Recipe
-    (title "Vanilla Bean Melting Moment Cookies With Caramel Filling")
-    (servings 10)
-    (price 6.5)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter powdered-sugar vanilla-bean-paste ap-flour cornstarch condensed-milk butter golden-syrup)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654953] of ONTOLOGY::Recipe
-    (title "Pasta with Spicy Sausage & Rapini")
-    (servings 8)
-    (price 18.77)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients bow-tie-pasta olive-oil spicy-sausage garlic rapini-leaves chicken-broth cream milk fontina-cheese parmesan-cheese salt-and-pepper)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -17305,28 +13552,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_662515] of ONTOLOGY::Recipe
-    (title "Sweet Florida Orange Breakfast Bread")
-    (servings 16)
-    (price 3.14)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal vegetarian)
-    (ingredients flour baking-powder baking-soda salt buttermilk orange-juice vanilla-extract butter sugar eggs orange-zest brown-sugar note-i-used-oranges)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1062882] of ONTOLOGY::Recipe
-    (title "Easy Slow Cooker Whole Chicken With Rosemary")
-    (servings 6)
-    (price 23.87)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher)
-    (ingredients chicken olive-oil-extra-virgin lemons onion paprika pepper rosemary salt butter water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_663845] of ONTOLOGY::Recipe
     (title "TROPICAL BANANA GREEN SMOOTHIE")
     (servings 1)
@@ -17338,50 +13563,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_641893] of ONTOLOGY::Recipe
-    (title "Easy Cheesy Pizza Casserole")
-    (servings 6)
-    (price 65.92)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients equivalent-amount-of-a-ground-beefbulk-sausage-mix ricotta oregano basil parmesan-cheese pasta-sauce pizza-sauce pepper-flakes pepperoni mozzarella aged-provolone herbed-parmesan-drop-biscuits additional-parmesan-cheese baking-mix parmesan-cheese seasoning milk or or)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634548] of ONTOLOGY::Recipe
-    (title "Beans With Smoked Pork Hock")
-    (servings 4)
-    (price 19.83)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free)
-    (ingredients bay-leaf carrots celery-root garlic beans onion pork-hock salt-and-pepper vegetable-cube)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_945221] of ONTOLOGY::Recipe
-    (title "Watching What I Eat: Peanut Butter Banana Oat Breakfast Cookies with Carob / Chocolate Chips")
-    (servings 16)
-    (price 1.46)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients bananas butter-flavor-shortening chocolate-chips creamy-peanut-butter nuts oatmeal unsweetened-applesauce vanilla-extract vanilla-protein-powder)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715381] of ONTOLOGY::Recipe
-    (title "Creamy Lime Pie Square Bites")
-    (servings 2)
-    (price 46.23)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions vegetarian)
-    (ingredients all-purpose-flour graham-cracker-crumbs lime-zest sugar butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_716414] of ONTOLOGY::Recipe
     (title "Red, White & Blue Crepes: Happy July 4th! @driscollsberry")
     (servings 1)
@@ -17390,61 +13571,6 @@
     (meal_types morning-meal brunch breakfast)
     (restrictions halal kosher)
     (ingredients blueberries crpes feta-cheese raspberries raspberry-fruit-spread)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643362] of ONTOLOGY::Recipe
-    (title "French Onion Marsala Soup")
-    (servings 4)
-    (price 59.98)
-    (wine_pairing "No wine pairing")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients butter olive-oil onions beef-broth marsala-wine thyme salt-and-pepper sugar texas-toast-croutons provolone-cheese swiss-cheese parmesan-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655793] of ONTOLOGY::Recipe
-    (title "Peruvian Roast Chicken")
-    (servings 4)
-    (price 42.38)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients chicken garlic-cloves juice-of-lemon red-wine-vinegar soy-sauce olive-oil paprika cumin turmeric salt pepper kitchen-twine kitchen-twine)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633160] of ONTOLOGY::Recipe
-    (title "Avocado Toast With Caramelized Sweet Onion, Grape Tomatoes, Fresh Garden Chives and Chive Blossoms")
-    (servings 2)
-    (price 128.38)
-    (wine_pairing "No wine pairing")
-    (meal_types main-course)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients olive-oil onion grape-tomatoes avocado quality-bread springs-chives chive-blossoms salt ground-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634660] of ONTOLOGY::Recipe
-    (title "Beef Pot Pies with Irish Cheddar Crust")
-    (servings 6)
-    (price 32.94)
-    (wine_pairing "No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients butter sharp-cheddar-cheese flour sugar salt mustard cayenne-pepper ice-water vegetable-oil beef-chuck-meat salt-pepper onion carrots garlic thyme marjoram flour beef-broth water dijon-mustard parsley egg)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636742] of ONTOLOGY::Recipe
-    (title "Cajun Shrimp Chowder")
-    (servings 8)
-    (price 25.67)
-    (wine_pairing "No wine pairing")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients asparagus-spears bacon seafood-broth cajun-spice corn garlic heavy-cream lemon-pepper old-bay-seasoning onion salt-and-pepper shrimp tomatoes)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -17459,17 +13585,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_639177] of ONTOLOGY::Recipe
-    (title "Chocolate Pudding - Rave Diet")
-    (servings 3)
-    (price 64.17)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients water maple-syrup corn-flour cocoa-powder vanilla roasted-hazelnuts)
-    (seasons summer)
-    (season_text "Summer"))
-
   ([Recipe_644167] of ONTOLOGY::Recipe
     (title "Garam Masala Pork Chops with Mint Yogurt and Spiced Couscous")
     (servings 4)
@@ -17478,39 +13593,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions no-restrictions)
     (ingredients cayenne-pepper chicken-broth couscous mint-leaves garam-masala-spices ground-cumin pork-loin-chops lemon olive-oil raisins salt sesame-seeds yogurt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648852] of ONTOLOGY::Recipe
-    (title "Khachapuri")
-    (servings 8)
-    (price 29.96)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients yeast sugar water milk sugar butter salt swiss-cheese-8-ounces-cheddar-2-eggs muenster-cheese swiss-cheese cheddar eggs parsley pepper dissolve-yeast-and-sugar-in twist-and-ends-together-to-make-a-rough-knob-cover until-deep-golden-brown-remove-bread-from-pan)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651190] of ONTOLOGY::Recipe
-    (title "Masala-Tofu Burger")
-    (servings 4)
-    (price 88.97)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients onion-shopping-list redorangegreen-bell-pepper-shopping-list peas-carrots-mix-shopping-list chillies-shopping-list tofu-shopping-list potato-boils garlic-shopping-list mustard-seeds-shopping-list curry-leaves-shopping-list hing-shopping-list cumin-powder-shopping-list turmeric-shopping-list lemon-shopping-list salt-shopping-list cilantro-washed-finely-shopping-list indian-breadcrumbs-shopping-list vegetable-oil-shopping-list pam-original-flavor-shopping-list redwhite-onion beefsteak-tomatoes cilantro-shopping-list mint-cilantro-chutney-spread-shopping-list portugese-rolls)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652421] of ONTOLOGY::Recipe
-    (title "Moroccan Chicken Tagine")
-    (servings 6)
-    (price 24.89)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients moroccan-spice-mixture almond-slivers apricot-halves chick-peas canned-tomatoes cilantro extra-virgin-olive-oil chicken-broth flour ginger-root garlic-clove salt-and-ground-pepper honey onion chicken-breasts)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -17525,50 +13607,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_643615] of ONTOLOGY::Recipe
-    (title "Fresh Strawberry Yogurt Cake")
-    (servings 12)
-    (price 6.0)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-soda butter eggs flour lemon powdered-sugar salt strawberries sugar vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639099] of ONTOLOGY::Recipe
-    (title "Chocolate Mousse in Chocolate Shell")
-    (servings 6)
-    (price 30.03)
-    (wine_pairing " No wine pairing")
-    (meal_types main-course)
-    (restrictions gluten-free kosher)
-    (ingredients whipping-cream quality-semi-sweet-chocolate-chips strong-coffee rum butter flavorless flavorless)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636864] of ONTOLOGY::Recipe
-    (title "Candied Spiced Pecans")
-    (servings 8)
-    (price 12.67)
-    (wine_pairing " No wine pairing")
-    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients allspice brown-sugar butter cinnamon granulated-sugar ground-cloves maple-extract nutmeg pecans water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641208] of ONTOLOGY::Recipe
-    (title "Dak Bulgogi - Korean BBQ Chicken")
-    (servings 4)
-    (price 40.06)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients apple boston-bibb-lettuce brown-sugar chicken-thighs garlic-cloves ginger pepper-flakes scallions sesame-oil sesame-seeds soy-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_661071] of ONTOLOGY::Recipe
     (title "Spicy Coconut French Toast")
     (servings 6)
@@ -17577,28 +13615,6 @@
     (meal_types morning-meal brunch breakfast)
     (restrictions halal vegetarian)
     (ingredients eggs bread oil-of-frying ground-cayenne-pepper maple-syrup nutmeg salt sugar coconut vanilla-extract milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640104] of ONTOLOGY::Recipe
-    (title "Corn Salsa")
-    (servings 4)
-    (price 37.73)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients bell-pepper celery ears-of-corn-boil-and-from-the-cob basil garlic jalapeo onion salt sugar pickle vine-tomato vinegar)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_650650] of ONTOLOGY::Recipe
-    (title "Make Ahead Quiche")
-    (servings 8)
-    (price 11.51)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course morning-meal brunch main-dish breakfast dinner)
-    (restrictions no-restrictions)
-    (ingredients unbaked-pie-crust cheddar-cheese monterrey-jack-cheese flour ham eggs half-and-half green-onions salt ground-mustard pepper)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -17613,17 +13629,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_1003670] of ONTOLOGY::Recipe
-    (title "Stuffed Chicken Breast")
-    (servings 4)
-    (price 36.36)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher)
-    (ingredients chicken-seasoning cream-cheese green-onions chicken-breast)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_642660] of ONTOLOGY::Recipe
     (title "Fennel and Orange Salad With Toasted Hazelnuts and Cranberries")
     (servings 4)
@@ -17632,17 +13637,6 @@
     (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
     (restrictions dairy-free gluten-free kosher vegan vegetarian)
     (ingredients navel-orange fennel-bulb white-wine-vinegar kosher-salt ground-pepper extra-virgin-olive-oil orange-zest hazelnuts cranberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642678] of ONTOLOGY::Recipe
-    (title "Ferrero Raffaello Coconut Candy Balls")
-    (servings 24)
-    (price 1.0)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions vegetarian)
-    (ingredients graham-cracker-crumbs coconut-flakes hazelnuts powdered-sugar milk butter coconut-flakes)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -17657,28 +13651,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_1082038] of ONTOLOGY::Recipe
-    (title "Big Batch Smoothie Bowl")
-    (servings 6)
-    (price 28.98)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients whey-protein strawberries blueberries bananas pomegranate walnuts pumpkin-seeds flaxseed granola)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1050445] of ONTOLOGY::Recipe
-    (title "How to Make the Best Crock Pot Roast")
-    (servings 8)
-    (price 26.04)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients beef-broth pepperoncini-pepper-juice pepperoncini-peppers pot-roast-cut ranch-seasoning)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_652433] of ONTOLOGY::Recipe
     (title "Moroccan Lemon Shish Kebabs")
     (servings 8)
@@ -17690,105 +13662,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_643091] of ONTOLOGY::Recipe
-    (title "Flax, Quinoa, and Almond Meal Bread")
-    (servings 10)
-    (price 5.27)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegetarian)
-    (ingredients milled-flax-seed blanched-almond-meal quinoa-flour baking-powder salt baking-soda olive-oil eggs water-to-texture-desired)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665573] of ONTOLOGY::Recipe
-    (title "Yorkshire Pudding")
-    (servings 12)
-    (price 2.66)
-    (wine_pairing "Red wine")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients eggs flour milk pan-drippings-from-roast-beef-preferably salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633226] of ONTOLOGY::Recipe
-    (title "Baby Bok Choy Stir Fry")
-    (servings 2)
-    (price 54.62)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients bok-choy shallot garlic coconut-oil salt pepper pepper-flakes almonds)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631965] of ONTOLOGY::Recipe
-    (title "Acorn Squash Biscuits with Sage & Gruyere")
-    (servings 14)
-    (price 5.88)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients flour cornstarch brown-sugar baking-powder baking-soda salt butter vegetable-shortening acorn-squash apple-cider-vinegar gruyere-cheese sage optional-sage-leaves)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_662276] of ONTOLOGY::Recipe
-    (title "Sun Dried Tomato and Herb Baked Eggs")
-    (servings 1)
-    (price 90.05)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti morning-meal starter brunch snack appetizer breakfast antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegetarian)
-    (ingredients eggs basil parsley olive-oil sundried-tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638586] of ONTOLOGY::Recipe
-    (title "Chili-Garlic Stir Fry")
-    (servings 6)
-    (price 35.47)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients sesame-oil chicken-breast bok-choy snow-peas carrots bell-pepper orange-pepper green-onions sauce chicken-broth cooking-sherry cornstarch sriracha garlic sesame-oil stir-fry stir-fry)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639620] of ONTOLOGY::Recipe
-    (title "Classic New England Crab Cakes")
-    (servings 6)
-    (price 51.06)
-    (wine_pairing "White wine")
-    (meal_types antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
-    (restrictions no-restrictions)
-    (ingredients onion celery butter lump-crab-meat bread-crumbs mayonnaise seafood-seasoning worcestershire-sauce hot-sauce parsley)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650231] of ONTOLOGY::Recipe
-    (title "Loaded Baked Potato Soup with Crispy-Fried Potato Skins")
-    (servings 8)
-    (price 19.16)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients bacon russet-potatoes onion thyme flour chicken-broth half-n-half salt-pepper sharp-cheddar-cheese cream thin-scallion)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664396] of ONTOLOGY::Recipe
-    (title "Vegan Beet Borscht")
-    (servings 8)
-    (price 4.93)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients beetroot big-carrot onions celery-root unrefined-sunflower-oil vinegar celery-leaves sea-salt ground-pepper parsley)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_643125] of ONTOLOGY::Recipe
     (title "Flourless Chocolate Cake With Chai Whipped Cream")
     (servings 8)
@@ -17797,28 +13670,6 @@
     (meal_types dessert)
     (restrictions halal)
     (ingredients butter chai-spice cream-of-tartar eggs flour granulated-sugar coffee powdered-sugar semisweet-chocolate vanilla-extract whipping-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716297] of ONTOLOGY::Recipe
-    (title "Breaded Shrimp and Spicy Mayo Appetizer")
-    (servings 4)
-    (price 22.1)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients all-purpose-flour bread-crumbs chili-powder egg garlic-powder mayonnaise onion-powder suya-pepper salt shrimps sriracha-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646358] of ONTOLOGY::Recipe
-    (title "Hawaiian Chicken Chili")
-    (servings 8)
-    (price 31.7)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients jamaican-allspice coconut-milk carrots chicken-breasts chicken-broth cilantro coconut-flakes cumin garlic-cloves great-northern-beans brown-rice pineapple sea-salt cream thyme onion pepper)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -17844,28 +13695,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_715957] of ONTOLOGY::Recipe
-    (title "Zesty Green Pea and Jalapeño Pesto Pasta")
-    (servings 4)
-    (price 28.86)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free halal kosher)
-    (ingredients fresh-basil-leaves fresh-mint-leaves garlic jalapeno juice-of-lemon olive-oil peas rotini-pasta sea-salt red-onion sun-dried-tomatoes ground)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662670] of ONTOLOGY::Recipe
-    (title "Swiss Chard Wraps")
-    (servings 6)
-    (price 13.59)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients swiss-chard-leaves orange-cauliflower olive-oil garlic salt basil zucchini bell-pepper avocado trader-joes-spicy-peanut-vinaigrette)
-    (seasons summer)
-    (season_text "Summer"))
-
   ([Recipe_636812] of ONTOLOGY::Recipe
     (title "California Wild Rice & Beef Cabbage Wrap With Crunchy Ricotta Cheese")
     (servings 8)
@@ -17874,50 +13703,6 @@
     (meal_types side-dish)
     (restrictions gluten-free halal kosher)
     (ingredients carrot ground-beef ground-pepper ground-pepper seasoning paprika ricotta-cheese salt sunflower-seeds tomato-paste water cabbage rice)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654225] of ONTOLOGY::Recipe
-    (title "Oven Roasted Pears With Blackberry Sauce")
-    (servings 10)
-    (price 13.64)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher)
-    (ingredients bittersweet-chocolate blackberries confectioners-sugar cream-of-tartar eggs-whites granulated-sugar juice-from-lemon pears powered-sugar butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634070] of ONTOLOGY::Recipe
-    (title "Banana Creme Brulee")
-    (servings 8)
-    (price 13.63)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients bananas little-demerara-sugar egg-yolks heavy-cream sugar vanilla-pod)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1005367] of ONTOLOGY::Recipe
-    (title "Shortbread Lemon Bars")
-    (servings 9)
-    (price 4.02)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-flour all-purpose-flour eggs lemon-juice lemon-zest fat-milk powdered-sugar salt sugar butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641732] of ONTOLOGY::Recipe
-    (title "Dulce De Leche Swirled Amaretto Frozen Yogurt")
-    (servings 4)
-    (price 3.15)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients vanilla-yogurt amaretto-cream dulce-de-leche)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -17932,17 +13717,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_643859] of ONTOLOGY::Recipe
-    (title "Frittata with Mushrooms, Thyme, and Parmigiano Cheese")
-    (servings 8)
-    (price 13.0)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course morning-meal brunch main-dish breakfast dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients egg-replacement eggs mushrooms thyme-leaves green-onions ground-pepper half-and-half parmigiano-cheese salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_657698] of ONTOLOGY::Recipe
     (title "Quinoa, Tomato, Green Onion Side Salad")
     (servings 2)
@@ -17951,72 +13725,6 @@
     (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
     (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
     (ingredients green-onions lemon olive-oil quinoa salt-and-pepper tomatoes water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654379] of ONTOLOGY::Recipe
-    (title "Palak-tofu (bean curd)")
-    (servings 6)
-    (price 17.82)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions gluten-free kosher)
-    (ingredients butter coriander-powder cumin-seeds garam ginger-garlic-paste chillies kasuri-methi cream-milk oil onions palak-cups salt tofu-a-block tomato turmeric)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639608] of ONTOLOGY::Recipe
-    (title "Classic Hush Puppies")
-    (servings 8)
-    (price 4.26)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder baking-soda canola-oil dehydrated-onion lemon-juice milk parsley pepper-sauce salt sugar flour cornmeal)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642610] of ONTOLOGY::Recipe
-    (title "Farm Fresh Vegetable Stew")
-    (servings 7)
-    (price 21.03)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients extra-virgin-olive-oil garlic onions peppers carrots celery eggplant green-beans squash zucchini tomatoes thyme-leaves cumin kosher-salt oregano kidney-beans brown-lentils)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648910] of ONTOLOGY::Recipe
-    (title "Kimchi")
-    (servings 6)
-    (price 36.52)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients napa-cabbage salt scallions garlic-cloves ginger-root ground-chili-pepper sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_721185] of ONTOLOGY::Recipe
-    (title "avarakkai paruppu curry recipe")
-    (servings 3)
-    (price 47.46)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients avarakkai-broad-beans chillies-nos coriander-seeds cumin-seeds jaggery tamarind-lemon-size mustard oil oil pepper-corns-tsp salt tomatoes-nos toor-dal-cup turmeric-powder-tsp)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665155] of ONTOLOGY::Recipe
-    (title "White cake with marzipan and almonds")
-    (servings 10)
-    (price 9.18)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients almonds amaretto-liqueur baking-powder butter cornstarch egg-whites flour marzipan sugar)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -18053,50 +13761,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_644554] of ONTOLOGY::Recipe
-    (title "Ginger Beef Stir Fry")
-    (servings 4)
-    (price 94.36)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients water-chestnuts carrots ginger-root garlic bell-pepper salad-lettuce onion orange-marmalade soy-sauce top-sirloin-steak vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664269] of ONTOLOGY::Recipe
-    (title "Valentine Hearts")
-    (servings 4)
-    (price 46.81)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients puff-pastry egg-to-glaze castor-sugar crme-fraiche strawberries chocolate)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664284] of ONTOLOGY::Recipe
-    (title "Vanilla and Lime Flan By Esperanza Platas Alvarez (Planet Food Mexico)")
-    (servings 8)
-    (price 17.92)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients condensed-milk eggs limes sugar vanilla-pod water milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663883] of ONTOLOGY::Recipe
-    (title "Tru Chocolate Martini")
-    (servings 4)
-    (price 93.68)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions gluten-free kosher)
-    (ingredients tru-vanilla-vodka crme-de-cocoa ice garnish-bittersweet-chocolate chocolate-kisses martini-glasses martini-glasses)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_657058] of ONTOLOGY::Recipe
     (title "Powdered Buttermilk Beignets With Raspberry and Chocolate Dipping Sauce")
     (servings 30)
@@ -18105,17 +13769,6 @@
     (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions halal kosher)
     (ingredients active-yeast baking-soda bread-flour buttermilk canola-oil golden-syrup half-and-half milk powdered-sugar raspberries raspberry-jam salt semi-sweet-chocolate-chips sugar flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634629] of ONTOLOGY::Recipe
-    (title "Beef Lo Mein Noodles")
-    (servings 4)
-    (price 57.1)
-    (wine_pairing "Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients soba-noodles flank-steak oyster-sauce chicken-stock soy-sauce sesame-oil vegetable-oil garlic ginger green-onions)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -18141,39 +13794,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_640827] of ONTOLOGY::Recipe
-    (title "Crispy Pineapple Fritters")
-    (servings 12)
-    (price 2.99)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher vegetarian)
-    (ingredients pineapple-rings flour cornstarch egg baking-powder salt milk panko-breadcrumbs canola-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636087] of ONTOLOGY::Recipe
-    (title "Breakfast: Waffles")
-    (servings 4)
-    (price 16.12)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder butter eggs flour salt sugar powder-sugar vanilla-extract milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641759] of ONTOLOGY::Recipe
-    (title "Dutch Baby")
-    (servings 4)
-    (price 15.77)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients eggs flour lemons milk confectioners-sugar butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_640742] of ONTOLOGY::Recipe
     (title "Crème Fraiche Coconut Bavarians")
     (servings 8)
@@ -18184,28 +13804,6 @@
     (ingredients gelatin coconut-milk condensed-milk coconut-milk sugar egg-yolks alouette-cuisine-crme-fraiche coconut)
     (seasons any-season)
     (season_text "Any season"))
-
-  ([Recipe_651409] of ONTOLOGY::Recipe
-    (title "Mediterranean Herb Dip")
-    (servings 4)
-    (price 150.21)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions gluten-free halal)
-    (ingredients pepper bar-of-cream-cheese feta-cheese basil flat-leaf-parsley garlic-cloves tabasco-hot-sauce roasted-peppers salt sun-tomatoes worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661323] of ONTOLOGY::Recipe
-    (title "Spinach pie with home made dough")
-    (servings 10)
-    (price 15.66)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-flour butter carrot eggs feta-cheese dill spinach milk onion bell-pepper salt cream water)
-    (seasons spring)
-    (season_text "Spring"))
 
   ([Recipe_646833] of ONTOLOGY::Recipe
     (title "Holiday Egg Nog")
@@ -18226,17 +13824,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions dairy-free gluten-free kosher)
     (ingredients cilantro extra-virgin-olive-oil flat-leaf-parsley garlic-clove ground-pepper kosher-salt-and-pepper lamb-loin-chops lemon mint pinenuts pepper-flakes shallot)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659906] of ONTOLOGY::Recipe
-    (title "Shrimp & Crab Egg Rolls")
-    (servings 6)
-    (price 42.94)
-    (wine_pairing "White wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal)
-    (ingredients bean-sprouts carrots imitation-crab shrimp garlic-cloves brown-sugar green-onions egg-roll-wrappers egg vegetable-oil salt-and-ground-pepper chili-sauce)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -18262,17 +13849,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_633144] of ONTOLOGY::Recipe
-    (title "Avocado Nests")
-    (servings 4)
-    (price 44.75)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free)
-    (ingredients avocados hardboiled-eggs hash-browns bacon mayonaise salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_660146] of ONTOLOGY::Recipe
     (title "Simple Squash Salad")
     (servings 6)
@@ -18295,39 +13871,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_658855] of ONTOLOGY::Recipe
-    (title "Rugelach")
-    (servings 32)
-    (price 0.99)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter block-of-cream-cheese salt flour egg-yolks vanilla-extract caster-sugar fruit-preserves walnuts butter caster-sugar ground-cinnamon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636385] of ONTOLOGY::Recipe
-    (title "Buckwheat Banana Pancakes")
-    (servings 1)
-    (price 134.63)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions gluten-free halal kosher)
-    (ingredients almond-milk baking-powder baking-soda banana buckwheat-flour cinnamon flax-seed maple-syrup oil yogurt rolled-oats salt vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638249] of ONTOLOGY::Recipe
-    (title "Chicken Piccata with Artichokes")
-    (servings 6)
-    (price 52.96)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients artichoke-hearts capers chicken-breasts extra-virgin-olive-oil flat-leaf-parsley flour lemon-juice parmesan-cheese penne-rigate pepper reduced-sodium-chicken-broth salt)
-    (seasons spring)
-    (season_text "Spring"))
-
   ([Recipe_658287] of ONTOLOGY::Recipe
     (title "Rice Stuffed Bell Peppers (Zeytinyagli Biber Dolmasi)")
     (servings 5)
@@ -18336,28 +13879,6 @@
     (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
     (ingredients allspice bell-peppers cinnamon driedfresh-mint olive-oil onions rice salt sugar tomato tomato-paste water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659285] of ONTOLOGY::Recipe
-    (title "Satay Beef Balls")
-    (servings 6)
-    (price 11.4)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients bread glove-garlic ginger ground-beef parsley peanut-butter soya-sauce spring-onion)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644878] of ONTOLOGY::Recipe
-    (title "Gluten-Free Chocolate-Pecan Quickbread")
-    (servings 4)
-    (price 65.09)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions gluten-free halal)
-    (ingredients butter flour sugar brown-sugar baking-soda salt semi-sweet-chocolate-chips pecans eggs applesauce vanilla-honey-greek-yogurt vanilla-extract)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -18372,50 +13893,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_1022743] of ONTOLOGY::Recipe
-    (title "The Best Mashed Potatoes")
-    (servings 8)
-    (price 6.16)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients butter cream-cheese green-onions milk potatoes salt-and-pepper cream water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653304] of ONTOLOGY::Recipe
-    (title "Not Momofuku Ginger Scallion Noodles")
-    (servings 4)
-    (price 43.4)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients fish-sauce garlic ginger grapeseed-oil of-green-onions honey himalayan-salt chile-pepper rice-wine-vinegar sesame-seed-oil shallots soba-noodles wheat-free-tamari-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640819] of ONTOLOGY::Recipe
-    (title "Crispy Italian Cauliflower Poppers Appetizer")
-    (servings 4)
-    (price 53.02)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher)
-    (ingredients canned-tomatoes cauliflower eggs flour basil garlic garlic-powder ground-pepper olive-oil panko-bread-crumbs parmesan-cheese pepper-flakes salt water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636328] of ONTOLOGY::Recipe
-    (title "Brownie Coffins")
-    (servings 5)
-    (price 21.17)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients butter sugar eggs vanilla-extract chocolate-cocoa-powder flour baking-powder salt chocolate candy-pen-and-sprinkles)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_640921] of ONTOLOGY::Recipe
     (title "Stuffed Artichoke Main Dish")
     (servings 2)
@@ -18427,17 +13904,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_633779] of ONTOLOGY::Recipe
-    (title "Baked Salmon With Lime")
-    (servings 2)
-    (price 355.32)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher)
-    (ingredients salmon-cutlet spring-onion ginger chili cooking-wine rind-of-lime lime-juice peppercorns butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_646337] of ONTOLOGY::Recipe
     (title "Hasselback Potatoes")
     (servings 8)
@@ -18446,28 +13912,6 @@
     (meal_types side-dish)
     (restrictions kosher)
     (ingredients breadcrumbs butter parmesan-cheese potatoes salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1043340] of ONTOLOGY::Recipe
-    (title "The BEST Sweet Potato Casserole")
-    (servings 6)
-    (price 13.1)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal vegetarian)
-    (ingredients eggs ground-cinnamon heavy-cream sugared-pecans-make-these-the-day-before salt sweet-potatoes-yams-or-5-and-sweet-potatoes butter vanilla-extract sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635574] of ONTOLOGY::Recipe
-    (title "Boeuf Bourgignon")
-    (servings 4)
-    (price 210.34)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients button-mushrooms butter un-smoked-bacon vegetable-oil well-trimmed-beef-chuck onion shallots carrots salt-and-pepper flour cognac beef-stock cocoa-powder garlic-cloves thyme flat-leaf-parsley-leaves tomato-paste bay-leaf)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -18526,17 +13970,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_650487] of ONTOLOGY::Recipe
-    (title "Lusciously Lemony Lentil Soup")
-    (servings 1)
-    (price 299.83)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients olive-oil onion garlic tomato-paste cumin salt pepper chili-powder broth carrots pd-lentils lemon-juice cilantro salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_635066] of ONTOLOGY::Recipe
     (title "Black Bean Feijoada")
     (servings 8)
@@ -18545,61 +13978,6 @@
     (meal_types side-dish)
     (restrictions dairy-free gluten-free kosher vegan vegetarian)
     (ingredients black-beans cayenne-pepper-or extra-virgin-olive-oil ginger ground-cumin onions ume-plum-vinegar peppers sea-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649004] of ONTOLOGY::Recipe
-    (title "Kohlrabi Salad With Apple, Bacon, and Snow Peas")
-    (servings 1)
-    (price 223.7)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients kohlrabi-bulb fuji-apple snow-peas sunflower-seeds bacon heavy-cream apple-cider-vinegar honey)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646302] of ONTOLOGY::Recipe
-    (title "Hard-Boiled Egg Gratin In A Bechamel Sauce")
-    (servings 3)
-    (price 42.07)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients butter eggs flour gruyre-cheese milk nutmeg onion salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655212] of ONTOLOGY::Recipe
-    (title "Peanut Butter and Apple Oatmeal Breakfast Bars")
-    (servings 8)
-    (price 6.17)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal vegetarian)
-    (ingredients quaker-oats smooth-peanut-butter butter vegetable-oil flour honey brown-sugar vanilla-extract cinnamon apple)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658518] of ONTOLOGY::Recipe
-    (title "Roasted Butternut Squash and Sage Dip")
-    (servings 2)
-    (price 136.59)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions gluten-free halal kosher)
-    (ingredients two-butternut-squash olive-oil sage garlic-powder ground-pepper sea-salt onion garlic anchovy goat-cheese)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_658803] of ONTOLOGY::Recipe
-    (title "Rosemary Rum Raisin Soda Bread with Pecans")
-    (servings 16)
-    (price 2.74)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions kosher vegetarian)
-    (ingredients raisins rum flour flour baking-soda salt rosemary pecans yogurt honey milk anise-seeds)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -18614,72 +13992,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_637638] of ONTOLOGY::Recipe
-    (title "Cheesy Cauliflower")
-    (servings 6)
-    (price 16.27)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients all-purpose-flour cauliflower cayenne-pepper cheese mustard-powder salt-and-pepper butter milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642678] of ONTOLOGY::Recipe
-    (title "Ferrero Raffaello Coconut Candy Balls")
-    (servings 24)
-    (price 1.0)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions vegetarian)
-    (ingredients graham-cracker-crumbs coconut-flakes hazelnuts powdered-sugar milk butter coconut-flakes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_656248] of ONTOLOGY::Recipe
-    (title "Pinot Noir Brownies")
-    (servings 16)
-    (price 26.56)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients pinot-noir-chocolate-brownies eggs sugar vanilla butter handcraft-pinot-noir ghirardelli-ground-cocoa unbleached-flour baking-powder salt walnuts pinot-noir-chocolate-icing butter chocolate granulated-sugar handcraft-pinot-noir)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654944] of ONTOLOGY::Recipe
-    (title "Pasta With Salmon Cream Sauce")
-    (servings 4)
-    (price 40.03)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients butter flour milk onion parmesan-cheese parsley peas penne pepper salmon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657226] of ONTOLOGY::Recipe
-    (title "Pulled Pork Sandwich with Mango BBQ sauce")
-    (servings 4)
-    (price 124.17)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients apple-cider-vinegar pork-shoulder brioche-rolls cumin-seeds brown-sugar fennel-seeds ginger kosher-salt lime-juice mango-puree molasses onion paprika serrano-pepper vegetable-oil worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648475] of ONTOLOGY::Recipe
-    (title "Japanese Gyoza Pot Stickers")
-    (servings 6)
-    (price 19.67)
-    (wine_pairing "Red wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher)
-    (ingredients pepper cabbage chili-sesame-oil mushrooms-soaked-in-warm-2-teaspoons-ginger-root to-4-green-onions ground-beef salad-oil sesame-oil kikkoman-soy-sauce kkikkoman-soy-sauce cooking-wine gy-a-wrappers)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_632678] of ONTOLOGY::Recipe
     (title "Apricot Slice")
     (servings 12)
@@ -18688,28 +14000,6 @@
     (meal_types side-dish)
     (restrictions halal vegetarian)
     (ingredients apricot eggs flour salt caster-sugar butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632862] of ONTOLOGY::Recipe
-    (title "Asian Pear and Gorgonzola Salad With Pomegranate Vinaigrette")
-    (servings 20)
-    (price 2.76)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients greens asian-pears pomegranate-seeds gorgonzola pistachio-nuts pomegranate-seeds red-wine-vinegar sugar shallots extra-virgin-olive-oil kosher-salt-and-cracked-pepper)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_652354] of ONTOLOGY::Recipe
-    (title "Monte Cristo Egg Rolls")
-    (servings 6)
-    (price 9.34)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions no-restrictions)
-    (ingredients deli-forest-ham deli-honey-ham deli-turkey egg-roll-wraps strawberry-jam deli-baby-swiss-cheese)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -18724,83 +14014,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_645418] of ONTOLOGY::Recipe
-    (title "Green Beans with Pearl Onions and Salmon")
-    (servings 4)
-    (price 122.74)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients green-beans pearl-onions olive-oil butter chicken-stock brown-sugar salt-and-pepper salmon-steaks)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639628] of ONTOLOGY::Recipe
-    (title "Classic Pot Roast")
-    (servings 6)
-    (price 31.09)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients chuck-roast salt-and-pepper vegetable-oil onions baby-carrots celery-stalks beer thyme beef-stock worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658808] of ONTOLOGY::Recipe
-    (title "Rosemary Thyme Marinated Mushrooms")
-    (servings 6)
-    (price 7.48)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients water balsamic-vinegar olive-oil garlic rosemary-leaves thyme pepper-flakes mushrooms)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634229] of ONTOLOGY::Recipe
-    (title "Bananas Foster")
-    (servings 1)
-    (price 131.37)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients banana banana-liqueur brown-sugar butter cinnamon rum)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715467] of ONTOLOGY::Recipe
-    (title "Turkey Pot Pie")
-    (servings 8)
-    (price 25.69)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients pepper butter celery celery-seed chicken-broth flour garlic-powder green-beans seasoning milk onion onion-powder peas-and-carrots pie-crusts salt turkey pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636300] of ONTOLOGY::Recipe
-    (title "Brown sugar & Spice Sugar cookie frogs")
-    (servings 30)
-    (price 0.41)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions vegetarian)
-    (ingredients unbleached baking-powder cinnamon ginger nutmeg allspice granulated-sugar brown-sugar butter egg vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715569] of ONTOLOGY::Recipe
-    (title "Strawberry Cheesecake Chocolate Crepes")
-    (servings 4)
-    (price 41.94)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal vegetarian)
-    (ingredients cream-cheese strawberries vanilla-extract lemon-juice granulated-sugar flour cocoa-powder kosher-salt eggs milk water butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_632071] of ONTOLOGY::Recipe
     (title "All American Sloppy Joes")
     (servings 4)
@@ -18811,28 +14024,6 @@
     (ingredients american-barbecue-sauce burger-buns garlic-cloves bell-pepper ground-beef hot-sauce olive-oil salt-and-pepper shallots tomato-sauce worcestershire-sauce)
     (seasons any-season)
     (season_text "Any season"))
-
-  ([Recipe_663595] of ONTOLOGY::Recipe
-    (title "Tomato Free Mexican Lasagna")
-    (servings 10)
-    (price 17.88)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients corn-tortillas extra-ground-beef onion garlic-cloves portobello-mushrooms chilies-use-jalapenos-if-desire-more-spicy black-beans corn oregano chili-powder garlic-powder cumin ground-pepper kosher-salt reduced-fat-mexican-blend-cheese iceberg-lettuce avocado)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_665029] of ONTOLOGY::Recipe
-    (title "Watermelon Popsicles with Mint, Basil & Lime")
-    (servings 8)
-    (price 3.19)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients basil-leaves juice-of-lime mint-leaves salt watermelon-flesh)
-    (seasons summer)
-    (season_text "Summer"))
 
   ([Recipe_647501] of ONTOLOGY::Recipe
     (title "Hot Pepper Pumpkin Soup")
@@ -18845,28 +14036,6 @@
     (seasons any-season)
     (season_text "Fall"))
 
-  ([Recipe_652819] of ONTOLOGY::Recipe
-    (title "My \"Secret\" Bolognese Sauce")
-    (servings 12)
-    (price 22.96)
-    (wine_pairing "Red wine")
-    (meal_types sauce)
-    (restrictions dairy-free gluten-free)
-    (ingredients olive-oil ground-veal ground-beef ground-pork sausage vidalia-onions carrots garlic-cloves oregano red-wine canned-tomatoes tomatoes parsley basil granulated-sugar salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633344] of ONTOLOGY::Recipe
-    (title "Bacon Wrapped Pork Tenderloin")
-    (servings 4)
-    (price 55.08)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients bacon pepper coarse-salt sage garlic-powder pork-tenderloin)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_636593] of ONTOLOGY::Recipe
     (title "Butternut Squash Pizza")
     (servings 4)
@@ -18878,72 +14047,6 @@
     (seasons any-season)
     (season_text "Fall"))
 
-  ([Recipe_643175] of ONTOLOGY::Recipe
-    (title "Focaccia with Tomato, Green Onion and Garlic")
-    (servings 8)
-    (price 18.07)
-    (wine_pairing " No wine pairing")
-    (meal_types bread)
-    (restrictions halal kosher)
-    (ingredients coarse-salt flour garlic-clove green-onion olive-oil oregano parmesan-cheese sugar tomatoes warm-water quick-rising-yeast)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662264] of ONTOLOGY::Recipe
-    (title "summer vegetable pizza")
-    (servings 4)
-    (price 100.29)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients olive-oil onion thyme bell-pepper eggplant garlic-cloves corn-kernels salt pepper refriger-pizza-crust-dough mozzarella-cheese parmigiano-reggiano-cheese cherry-tomatoes basil-leaves)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_639177] of ONTOLOGY::Recipe
-    (title "Chocolate Pudding - Rave Diet")
-    (servings 3)
-    (price 64.17)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients water maple-syrup corn-flour cocoa-powder vanilla roasted-hazelnuts)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_715449] of ONTOLOGY::Recipe
-    (title "How to Make OREO Turkeys for Thanksgiving")
-    (servings 48)
-    (price 13.19)
-    (wine_pairing " No wine pairing")
-    (meal_types main-course)
-    (restrictions halal kosher)
-    (ingredients oreo-cookies-3-cups cream-cheese semi-baking-chocolate candy-corn candy-eyes icing)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_644149] of ONTOLOGY::Recipe
-    (title "Game Day Jerk Wings")
-    (servings 10)
-    (price 22.15)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients chicken-wings pasilla-chile-powder kosher-salt ground-pepper ground-cayenne-pepper jamaican-ground-allspice pickapeppa-sauce butter honey tabasco-sauce pepper-flakes carrot-and-celery-sticks cheese-dressing)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650593] of ONTOLOGY::Recipe
-    (title "Mad Men Oysters Rockefeller")
-    (servings 4)
-    (price 30.18)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions no-restrictions)
-    (ingredients bread-crumbs cayenne-pepper celery parsley oysters sprinkling-of-pepper pernod rock-salt salt shallots spinach butter worcestershire-sauce)
-    (seasons spring)
-    (season_text "Spring"))
-
   ([Recipe_640238] of ONTOLOGY::Recipe
     (title "Couscous with olives")
     (servings 4)
@@ -18952,17 +14055,6 @@
     (meal_types side-dish)
     (restrictions dairy-free halal kosher vegan vegetarian)
     (ingredients couscous vegetable-stock pine-nuts olive-oil olives cherry-tomatoes coriander-and-chives pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662038] of ONTOLOGY::Recipe
-    (title "Stuffed Lemons in the Oven")
-    (servings 4)
-    (price 10.34)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients unwaxed-lemons basil-leaves anchovy cherry-tomatoes salt-pepper)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -18977,17 +14069,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_663392] of ONTOLOGY::Recipe
-    (title "Three-Cup Chicken")
-    (servings 6)
-    (price 45.47)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients basil bulb-garlic old-ginger rice-wine sesame-oil soy-sauce spring-onions sugar chicken)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_639137] of ONTOLOGY::Recipe
     (title "Chocolate Pavlova with Winter Fruit")
     (servings 12)
@@ -18996,17 +14077,6 @@
     (meal_types dessert)
     (restrictions gluten-free halal vegetarian)
     (ingredients 70-chocolate cream-of-tartar dutch-process-cocoa-powder egg-whites winter-fruit granulated-sugar heavy-cream confectioners-sugar tapioca-starch vanilla-bean-paste vanilla-extract vinegar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641408] of ONTOLOGY::Recipe
-    (title "Delicious Sausage & Peppers")
-    (servings 8)
-    (price 20.29)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients bell-peppers garlic-crushed ground-pepper sausages sausages jalapeo olive-oil parsley salsa sea-salt onion)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -19043,39 +14113,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_658004] of ONTOLOGY::Recipe
-    (title "Raw Vegan Blueberry Chocolate Crust \"Cheesecake")
-    (servings 6)
-    (price 48.85)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients agave almonds blueberries cacao-powder coconut-oil lemon-juice macadamia-nuts to-7-medjool-dates cashews sea-salt soy-lecithin-granules vanilla-extract walnuts water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660504] of ONTOLOGY::Recipe
-    (title "Soft Croatian corn bread - proja")
-    (servings 6)
-    (price 15.83)
-    (wine_pairing " No wine pairing")
-    (meal_types main-course)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-flour baking-powder corn-grits cornmeal cottage-cheese eggs natural-yogurt olive-oil salt mineral-water)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_638717] of ONTOLOGY::Recipe
-    (title "Chinese Steamed Flan")
-    (servings 6)
-    (price 27.81)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients eggs granulated-sugar granulated-sugar strawberries vanilla milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_638315] of ONTOLOGY::Recipe
     (title "Chicken Sausage, White Bean and Cabbage Soup")
     (servings 6)
@@ -19098,61 +14135,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_1098299] of ONTOLOGY::Recipe
-    (title "Berry Frozen Yogurt Popsicles")
-    (servings 10)
-    (price 6.32)
-    (wine_pairing " No wine pairing")
-    (meal_types main-course)
-    (restrictions dairy-free gluten-free halal kosher vegetarian)
-    (ingredients vanilla-yogurt raspberries blueberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654532] of ONTOLOGY::Recipe
-    (title "Paneer jalfrezi")
-    (servings 2)
-    (price 98.4)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients paneer oil cumin-seeds tomato tomatoes onion bell-pepper turmeric-powder chilli-powder chillies chillies ginger garam-masala sugar vinegar coriander salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635561] of ONTOLOGY::Recipe
-    (title "Blueberry-Lavender Sauce and Ginger Snap Ice Cream Cups")
-    (servings 12)
-    (price 7.85)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions kosher)
-    (ingredients berries lavender-buds sugar cornstarch lemon-juice salt ginger-snap-cookies butter sugar salt ice-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641650] of ONTOLOGY::Recipe
-    (title "Dried Cherry-Almond Scones")
-    (servings 16)
-    (price 3.13)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients almond-extract almonds baking-powder baking-soda cherries eggs flour salt sugar butter buttermik buttermik)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641799] of ONTOLOGY::Recipe
-    (title "Easter Nest Sweet Cake With Sour Cream-Royal Icing and Pistachios")
-    (servings 8)
-    (price 12.41)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder brown-sugar eggs eggwhite flour food-coloring icing-sugar lemon-juice unshelled-pistachios cream butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_716413] of ONTOLOGY::Recipe
     (title "Oven Roasted Tomato Sauce")
     (servings 4)
@@ -19161,50 +14143,6 @@
     (meal_types sauce)
     (restrictions dairy-free gluten-free kosher vegan vegetarian)
     (ingredients balsamic-vinegar extra-virgin-olive-oil basil garlic grape-tomatoes onion couple-of-of-pepper-flakes salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715573] of ONTOLOGY::Recipe
-    (title "Simple Skillet Lasagna")
-    (servings 5)
-    (price 53.39)
-    (wine_pairing "Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients basil-and-basil-sprig tomatoes garlic sausage m-zarella-cheese onion oregano-flakes no-boil-lasagna-noodles pepper-flakes ricotta-cheese salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_704655] of ONTOLOGY::Recipe
-    (title "Delicious Limeade Triple Berry Smoothies")
-    (servings 2)
-    (price 139.57)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch beverage breakfast drink)
-    (restrictions gluten-free halal kosher)
-    (ingredients berries-i-used-a-blackberry banana vanilla-greek-yogurt almond-milk limeade-more ground-flax-seed)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642660] of ONTOLOGY::Recipe
-    (title "Fennel and Orange Salad With Toasted Hazelnuts and Cranberries")
-    (servings 4)
-    (price 16.2)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients navel-orange fennel-bulb white-wine-vinegar kosher-salt ground-pepper extra-virgin-olive-oil orange-zest hazelnuts cranberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1000566] of ONTOLOGY::Recipe
-    (title "Easy Instant Pot Beef Tips and Rice")
-    (servings 4)
-    (price 55.08)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients sirloin-beef-tips cream-of-mushroom-soup garlic-powder dales-seasoning-sauce olive-oil onion water)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -19230,61 +14168,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_646974] of ONTOLOGY::Recipe
-    (title "Homemade Creamy Ramen Soup")
-    (servings 4)
-    (price 39.76)
-    (wine_pairing "Red wine or White wine")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher)
-    (ingredients carrots celery-seed extra-virgin-olive-oil garlic flour kombu onions poultry-seasoning rice-milk asian-rice-noodles real-salt-sea-salt turmeric vegetable-broth water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661218] of ONTOLOGY::Recipe
-    (title "Spicy Tuna Cakes")
-    (servings 3)
-    (price 48.13)
-    (wine_pairing "White wine")
-    (meal_types main-course)
-    (restrictions kosher)
-    (ingredients cajun-seasoning tuna chili-peppers dijon-mustard egg garlic-cloves greek-yogurt green-onions hot-sauce juice-of-lemon mirepoix panko-breadcrumbs cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634191] of ONTOLOGY::Recipe
-    (title "Banana Split Sundae Ice Cream Cake")
-    (servings 18)
-    (price 4.76)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions no-restrictions)
-    (ingredients graham-cracker-crumbs butter bananas strawberry-ice-cream walnuts chocolate-chips confectioners-sugar evaporated-milk vanilla-extract whipped-topping)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637591] of ONTOLOGY::Recipe
-    (title "Cheese Tortellini Alfredo")
-    (servings 4)
-    (price 44.04)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients cheese-tortellini-by-buitoni ground-pepper nutmeg parmiggiano-reggiano butter whipping-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638199] of ONTOLOGY::Recipe
-    (title "Chicken Mulligatawny Soup")
-    (servings 6)
-    (price 41.67)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients apples basmati-rice butter carrots cayenne-pepper celery chicken-stock curry-powder flour ginger lite-coconut-milk onion salt-and-pepper chicken-breast)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_637297] of ONTOLOGY::Recipe
     (title "Cauliflower Chickpea Stew")
     (servings 4)
@@ -19293,127 +14176,6 @@
     (meal_types soup lunch main-course main-dish dinner)
     (restrictions dairy-free gluten-free kosher vegan vegetarian)
     (ingredients olive-oil brown-rice twice-amount-of-water garlic-gloves tumeric salt-pepper onion canned-tomatoes tomato-puree garlic-gloves cm-ginger chili cinnamon garam-masala paprika sweet-potatoes juice-of-lemon water cauliflower chickpeas)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1098393] of ONTOLOGY::Recipe
-    (title "Mardi Gras Shrimp Étouffée")
-    (servings 4)
-    (price 133.66)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients butter flour bell-peppers celery-stalks onion garlic-cloves thyme tomato-paste worcestershire-sauce creole-seasoning chicken-broth shrimp butter scallions tomato rice)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654959] of ONTOLOGY::Recipe
-    (title "Pasta With Tuna")
-    (servings 4)
-    (price 42.03)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients flour green-onions non-fat-milk olive-oil onion parmesan-cheese parsley tubular-pasta peas dsh-pepper-sauce water-packed-tuna)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644666] of ONTOLOGY::Recipe
-    (title "Ginger-Lemon Panna Cotta with Brandied Berry Sauce")
-    (servings 6)
-    (price 48.05)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types dessert)
-    (restrictions gluten-free)
-    (ingredients vegetable-oil milk heavy-cream vanilla-bean ginger-tea-bags lemon-juice warm-water gelatin granulated-sugar crme-frache lemon-peel lemon-zest sauce blackberries blueberries golden-brown-sugar brandy ground-ginger ground-cardamon cinnamon panna-cotta panna-cotta)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639646] of ONTOLOGY::Recipe
-    (title "Classic Wedge Salad")
-    (servings 4)
-    (price 39.74)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free)
-    (ingredients pepper cheese buttermilk bacon garlic-powder grape-tomatoes iceberg-lettuce mayonnaise onion-powder scallions)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_765011] of ONTOLOGY::Recipe
-    (title "Snap Pea and Green Bean Salad with Arugula Pesto")
-    (servings 6)
-    (price 36.98)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients roasted-almonds almonds baby-arugula basil-leaves cilantro extra-virgin-olive-oil garlic micro-greens lemon-zest pistachios salt-and-pepper snap-peas wax-beans yogurt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665276] of ONTOLOGY::Recipe
-    (title "Whole Wheat Chocolate Chip Cookies")
-    (servings 24)
-    (price 1.27)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients baking-powder baking-soda chocolate-chips coconut-sugar brown-sugar eggs kosher-salt butter vanilla-extract flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664501] of ONTOLOGY::Recipe
-    (title "Vegan Taco bowls with Cilantro Lime Cauliflower Rice")
-    (servings 4)
-    (price 64.22)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients avocado-oil cauliflower new-mexico-chili-powder cilantro garlic-powder hass-avocado jalapeno lime-juice onion salt tomato walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657689] of ONTOLOGY::Recipe
-    (title "Quinoa Tabouli with Lemon Garlic Grilled Shrimp")
-    (servings 4)
-    (price 69.86)
-    (wine_pairing "White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients quinoa water sea-salt celery-stalks and-orange-peppers green-onions sun-dried-olives vine-ripened-tomato corn parsley mint-leaves garlic lemon-juice sea-salt grilled-shrimp-seasoned)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_641732] of ONTOLOGY::Recipe
-    (title "Dulce De Leche Swirled Amaretto Frozen Yogurt")
-    (servings 4)
-    (price 3.15)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients vanilla-yogurt amaretto-cream dulce-de-leche)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648647] of ONTOLOGY::Recipe
-    (title "Jumbo Blueberry Muffins")
-    (servings 6)
-    (price 19.84)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder blueberries butter buttermilk eggs flour granulated-sugar lemon-zest salt vanilla-extract vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631755] of ONTOLOGY::Recipe
-    (title "Peppermint Hot Chocolate Cupcakes")
-    (servings 24)
-    (price 2.44)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients baking-powder baking-soda hot-brewed-coffee butter buttermilk eggs flour heavy-cream marshmallow-creme milk peppermint-candies peppermint-extract powdered-sugar salt semisweet-chocolate semisweet-chocolate-chips sugar butter cocoa-powder vanilla-extract vegetable-oil)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -19428,17 +14190,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_638939] of ONTOLOGY::Recipe
-    (title "Chocolate Chip Pancakes-gluten free, nut free, vegan")
-    (servings 12)
-    (price 4.41)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients rice-flour sorghum-flour arrowroot teff-flour aluminum-free-baking-powder baking-soda nutmeg cinnamon xylitol chocolate-vegan-chocolate-chips coconut-milk juice-of-lemon pear-sauce sunflower-oil kosher-salt earth-balance-soy-free-spread)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_650939] of ONTOLOGY::Recipe
     (title "Maple-Glazed Apple Cookies")
     (servings 18)
@@ -19447,17 +14198,6 @@
     (meal_types dessert)
     (restrictions halal kosher vegetarian)
     (ingredients apple baking-soda brown-sugar butter cinnamon egg flour ground-cloves maple-flavoring milk nutmeg powdered-sugar salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636901] of ONTOLOGY::Recipe
-    (title "Cannellini Bean Side Dish With Fennel, Red Onion, and Saffron")
-    (servings 6)
-    (price 17.97)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients cannellini-beans extra-virgin-olive-oil fennel flat-parsley onion saffron-threads salt-and-pepper vegetable-broth water)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -19494,94 +14234,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_660227] of ONTOLOGY::Recipe
-    (title "Skinny Green Monster Smoothie")
-    (servings 1)
-    (price 199.46)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch beverage breakfast drink)
-    (restrictions gluten-free halal kosher)
-    (ingredients banana baby-spinach peanut-butter vanilla-almond-milk greek-yogurt)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_644218] of ONTOLOGY::Recipe
-    (title "Garlic & Spice Plantain Chips")
-    (servings 8)
-    (price 2.51)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients plantains olive-oil garlic-powder paprika cumin cayenne-pepper salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649625] of ONTOLOGY::Recipe
-    (title "Lemon Drop Jello Shots")
-    (servings 4)
-    (price 32.99)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients lemons lemon-jello sugar water lemon-juice lemon-vodka)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633229] of ONTOLOGY::Recipe
-    (title "Baby Chick Cupcakes")
-    (servings 12)
-    (price 6.94)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients flour sugar butter milk baking-powder salt vanilla egg icing-sugar cream food-colouring coconut brown-and-orange-mms)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641447] of ONTOLOGY::Recipe
-    (title "Detox slaw")
-    (servings 2)
-    (price 43.23)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cabbage purple-cabbage carrot sesame-seeds onion olive-oil lemon-juice agave-nectar tahini-paste water salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645714] of ONTOLOGY::Recipe
-    (title "Grilled Fish With Sun Dried Tomato Relish")
-    (servings 2)
-    (price 341.62)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients balsamic-vinegar cucumber extra-virgin-olive-oil mint olive-oil pepper salt sesame-seeds sugar sun-dried-tomatoes fish-fillet)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633144] of ONTOLOGY::Recipe
-    (title "Avocado Nests")
-    (servings 4)
-    (price 44.75)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free)
-    (ingredients avocados hardboiled-eggs hash-browns bacon mayonaise salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644853] of ONTOLOGY::Recipe
-    (title "Gluten Free Profiteroles")
-    (servings 1)
-    (price 121.79)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free vegetarian)
-    (ingredients butter egg flour xantham-gum milk salt sugar water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_650122] of ONTOLOGY::Recipe
     (title "Linguine and Clams In Garlic White Wine Sauce")
     (servings 6)
@@ -19604,127 +14256,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_660054] of ONTOLOGY::Recipe
-    (title "Siew Mai")
-    (servings 40)
-    (price 2.17)
-    (wine_pairing "Red wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free)
-    (ingredients wonton-wrappers fatty-pork corn-starch salt ground-pepper sugar shaoxing-huatiao-wine worcestershire-sauce sesame-oil water-chestnuts mushrooms shrimp carrot glutinous-rice shallots ginger cooking-oil shrimps scallops mushrooms water soy-sauce salt oyster-sauce ground-pepper lap-cheong lap-cheong)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_640832] of ONTOLOGY::Recipe
-    (title "Crispy Rhubarb Pockets")
-    (servings 1)
-    (price 165.92)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal vegan vegetarian)
-    (ingredients rhubarb granulated-sugar cornstarch salt vanilla-extract)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_641208] of ONTOLOGY::Recipe
-    (title "Dak Bulgogi - Korean BBQ Chicken")
-    (servings 4)
-    (price 40.06)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients apple boston-bibb-lettuce brown-sugar chicken-thighs garlic-cloves ginger pepper-flakes scallions sesame-oil sesame-seeds soy-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662604] of ONTOLOGY::Recipe
-    (title "Sweet Potato, Kale & White Bean Soup")
-    (servings 4)
-    (price 45.2)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients grapeseed-oil sweet-potato onion kale chicken-broth white-wine cannellini-beans oregano thyme salt-ground-pepper)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_637690] of ONTOLOGY::Recipe
-    (title "Cheesy Turkey Meatballs")
-    (servings 4)
-    (price 66.73)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients bbq-sauce breadcrumbs carrot egg garlic ground-turkey milk onion pepper salt cheddar worcestershire)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716252] of ONTOLOGY::Recipe
-    (title "Milky Watermelon Drink")
-    (servings 1)
-    (price 51.09)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients dates evaporated-milk ginger ice blended-watermelon)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_639482] of ONTOLOGY::Recipe
-    (title "Cinnamon Rolls by Bing")
-    (servings 25)
-    (price 3.7)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients milk vegetable-oil sugar active-yeast flour baking-powder baking-soda salt butter caster-sugar brown-sugar ground-cinnamon pecan-nuts strong-coffee quality-honey butter salt icing-sugar cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660261] of ONTOLOGY::Recipe
-    (title "Slow Cooked Applesauce")
-    (servings 10)
-    (price 3.24)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients apples-from-a-local-tree-if-possible water brown-sugar cinnamon nutmeg salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658680] of ONTOLOGY::Recipe
-    (title "Roasted Sweet Potato Salad")
-    (servings 8)
-    (price 13.64)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients sweet-potatoes extra-virgin-olive-oil chipotle-pepper-adobo-sauce balsamic-vinegar salt pepper cranberries pecans chives)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640355] of ONTOLOGY::Recipe
-    (title "Cranberry and White Chocolate Rice Krispies Squares")
-    (servings 9)
-    (price 12.65)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients rice-krispies-cereal cranberries chocolate-chips butter marshmallows vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715438] of ONTOLOGY::Recipe
-    (title "Mexican Casserole")
-    (servings 6)
-    (price 43.91)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients chicken-breasts monterrey-jack cream-of-chicken-soup cream-of-mushroom-soup onion rice salsa cheddar-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_635741] of ONTOLOGY::Recipe
     (title "Bourbon Street Beignets")
     (servings 60)
@@ -19733,72 +14264,6 @@
     (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions halal kosher)
     (ingredients egg flour heavy-cream oil powdered-sugar salt shortening sugar water yeast)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638038] of ONTOLOGY::Recipe
-    (title "Chicken Cordon Bleu With Mushroom Sauce")
-    (servings 4)
-    (price 99.63)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients butter chicken-breasts chicken-broth cooking-oil flour parsley garlic gruyere-cheese half-half ham mushrooms onion panko-bread-crumbs salt tarragon white-wine)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664448] of ONTOLOGY::Recipe
-    (title "Vegan Lemon Cookies")
-    (servings 8)
-    (price 5.52)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients applesauce baking-soda flour juice-from-half-a-lemon lemon-zest maple-syrup oil salt extra-sugar-to-coat-cookies-prior-to-baking turbinado-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665822] of ONTOLOGY::Recipe
-    (title "{No Bake} Cinnamon Butterscotch Energy Bites")
-    (servings 14)
-    (price 2.38)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free halal kosher)
-    (ingredients brown-sugar butterscotch-chips rice-cereal ground-flax-seed honey oats peanut-butter protein-powder ground-oats)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715494] of ONTOLOGY::Recipe
-    (title "Guinness and Brats")
-    (servings 4)
-    (price 31.94)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher)
-    (ingredients bratwurst hotdog-buns onions guinness-s-out-beer)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1064362] of ONTOLOGY::Recipe
-    (title "How to Make The Ultimate Slow Cooker Potato Soup")
-    (servings 6)
-    (price 26.38)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients bacon baking-potatoes pepper cheese bacon flour green-onion-tops half-and-half onion cream vegetable-stock)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664101] of ONTOLOGY::Recipe
-    (title "Turkish squares")
-    (servings 8)
-    (price 11.55)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal vegetarian)
-    (ingredients butter sugar eggs milk vanilla-extract semolina baking-powder almonds water sugar juice-of-lemon)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -19813,72 +14278,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_665303] of ONTOLOGY::Recipe
-    (title "Wholemeal Cake")
-    (servings 4)
-    (price 43.09)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients egg-whites sugar ground-hazelnut brown-sugar flour wholemeal-flour butter apricots-and-cranberries-cut-to-smaller-pieces)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_729532] of ONTOLOGY::Recipe
-    (title "Gluten Free Almond Blueberry Coffee Cake")
-    (servings 8)
-    (price 8.49)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients almonds baking-powder blueberries canola-oil egg flour granulated-sugar sea-salt turbinado-sugar vanilla-yogurt milk xanthan-gum)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638288] of ONTOLOGY::Recipe
-    (title "Chicken Roll-Ups With Feta Cheese and Arugula")
-    (servings 60)
-    (price 0.37)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients chicken-breast-cutlets coarse-salt-and-ground-pepper baby-arugula feta-cheese olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660868] of ONTOLOGY::Recipe
-    (title "Spanish Meatballs In Tomato Sauce")
-    (servings 20)
-    (price 2.98)
-    (wine_pairing "Red wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal kosher)
-    (ingredients bay-leaf garlic ground-beef olive-oil olive-oil onion half-an-onion parsley pimenton-de-la-vera salt-and-pepper sugar tomatoes sandwich-bread egg)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639333] of ONTOLOGY::Recipe
-    (title "Chouquettes")
-    (servings 8)
-    (price 3.98)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients butter sugar salt lemon-rind water flour vanilla rum eggs swedish-pearl-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631868] of ONTOLOGY::Recipe
-    (title "4 Ingredient Chicken Pot Pie")
-    (servings 6)
-    (price 73.44)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients pie-crust campbells-chicken-gravy cut-up-vegetables cans-swanson-premium-chicken-breast-in-water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_655098] of ONTOLOGY::Recipe
     (title "Peach Coconut Ice Cream")
     (servings 14)
@@ -19887,17 +14286,6 @@
     (meal_types dessert)
     (restrictions gluten-free halal kosher vegetarian)
     (ingredients full-fat-coconut-milk half-half cane-sugar peaches)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_724324] of ONTOLOGY::Recipe
-    (title "Creamy Cauliflower Chowder")
-    (servings 8)
-    (price 13.95)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients butter cauliflower-1-head cheddar-cheese chicken-bouillon bacon croutons flour garlic ground-mustard milk onion paprika parmesan-cheese salt)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -19912,17 +14300,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_654225] of ONTOLOGY::Recipe
-    (title "Oven Roasted Pears With Blackberry Sauce")
-    (servings 10)
-    (price 13.64)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher)
-    (ingredients bittersweet-chocolate blackberries confectioners-sugar cream-of-tartar eggs-whites granulated-sugar juice-from-lemon pears powered-sugar butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_663588] of ONTOLOGY::Recipe
     (title "Tomato Cutlets")
     (servings 5)
@@ -19934,39 +14311,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_645634] of ONTOLOGY::Recipe
-    (title "Grilled Chicken Banh Mi")
-    (servings 6)
-    (price 43.08)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients fish-sauce lime-juice sugar garlic jalapeno salt chicken-breasts tap-water rice-vinegar salt pepper carrots daikon-radishes sub-rolls mayonnaise cucumber cilantro-leaves jalapeno)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640722] of ONTOLOGY::Recipe
-    (title "Creamy White Chili")
-    (servings 4)
-    (price 78.32)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients pepper great-northern-beans chicken chicken-broth cumin garlic chilies heavy-whipping-cream olive-oil onion oregano salt cheddar-cheese cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659906] of ONTOLOGY::Recipe
-    (title "Shrimp & Crab Egg Rolls")
-    (servings 6)
-    (price 42.94)
-    (wine_pairing "White wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal)
-    (ingredients bean-sprouts carrots imitation-crab shrimp garlic-cloves brown-sugar green-onions egg-roll-wrappers egg vegetable-oil salt-and-ground-pepper chili-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_637767] of ONTOLOGY::Recipe
     (title "Cherry Jello Poke Cake")
     (servings 18)
@@ -19975,171 +14319,6 @@
     (meal_types dessert)
     (restrictions halal kosher)
     (ingredients cake-mix cherry-jello cool-whip)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641443] of ONTOLOGY::Recipe
-    (title "Detox Orange Carrot Juice")
-    (servings 2)
-    (price 54.27)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions dairy-free gluten-free kosher vegetarian)
-    (ingredients carrots oranges ginger ground-turmeric honey)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641208] of ONTOLOGY::Recipe
-    (title "Dak Bulgogi - Korean BBQ Chicken")
-    (servings 4)
-    (price 40.06)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients apple boston-bibb-lettuce brown-sugar chicken-thighs garlic-cloves ginger pepper-flakes scallions sesame-oil sesame-seeds soy-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658024] of ONTOLOGY::Recipe
-    (title "Minestrone Soup")
-    (servings 8)
-    (price 25.38)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients into-strips kidney-beans canned-tomatoes carrots celery thyme-leaves garlic 5-oz-macaroni olive-oil onion some-parmesan-to-serve salt-and-pepper savoy-cabbage tomato-pure tomatoes-into-8ths vegetable-stock)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652417] of ONTOLOGY::Recipe
-    (title "Moroccan chickpea and lentil stew")
-    (servings 3)
-    (price 42.04)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients broccoli chickpeas carrots celery-stalks lentils couscous cilantro ground-cinnamon ground-cumin ground-turmeric lemon-juice olive-oil paprika salt-and-pepper tomato-paste water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716423] of ONTOLOGY::Recipe
-    (title "Grilled Zucchini with Goat Cheese and Balsamic-Honey Syrup")
-    (servings 2)
-    (price 108.94)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients balsamic-vinegar goat-cheese grapeseed-oil honey pepper salt zucchini)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_716421] of ONTOLOGY::Recipe
-    (title "Grilled Peach Melba with Vanilla Bean Frozen Yogurt")
-    (servings 4)
-    (price 101.38)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients coconut-oil honey honey peaches greek-yogurt raspberries raspberry-fruit-spread vanilla-bean)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634927] of ONTOLOGY::Recipe
-    (title "Best Potato Cheese Soup in a bread bowl")
-    (servings 8)
-    (price 26.41)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients olive-oil onion garlic chicken-stock water salt potatoes carrots milk heavy-cream butter block-veleveeta-cheese sharp-cheedar-cheese salt-and-pepper garnish-bacon-crumbles parmesean parmesean)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641972] of ONTOLOGY::Recipe
-    (title "Easy Gluten Free Vegetarian Pasta Salad")
-    (servings 4)
-    (price 23.86)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients pasta greek-yogurt orange-zest orange-juice olive-oil grapes cilantro sea-salt pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637761] of ONTOLOGY::Recipe
-    (title "Cherry ice cream")
-    (servings 8)
-    (price 7.0)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients cherries corn-starch cream lemon-juice milk salt sugar)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_1098299] of ONTOLOGY::Recipe
-    (title "Berry Frozen Yogurt Popsicles")
-    (servings 10)
-    (price 6.32)
-    (wine_pairing " No wine pairing")
-    (meal_types main-course)
-    (restrictions dairy-free gluten-free halal kosher vegetarian)
-    (ingredients vanilla-yogurt raspberries blueberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659907] of ONTOLOGY::Recipe
-    (title "Shrimp & Orzo")
-    (servings 8)
-    (price 41.73)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients canned-tomatoes wine fennel-bulb feta-cheese parsley loves-of-garlic lemon-wedges chicken-broth olive-oil onion oregano orzo-pasta pepper-flakes salt-pepper shrimp water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1098350] of ONTOLOGY::Recipe
-    (title "Light Greek Lemon Chicken Orzo Soup")
-    (servings 8)
-    (price 29.98)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients chicken-breasts chicken-broth carrots celery-stalks thyme extra-virgin-olive-oil orzo-pasta ground-thyme salt pepper lemon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651202] of ONTOLOGY::Recipe
-    (title "Mashed Cauliflower")
-    (servings 6)
-    (price 35.18)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher)
-    (ingredients cauliflower chicken-broth gruyere-cheese heavy-cream nutmeg parmesan-cheese bell-pepper salt butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660109] of ONTOLOGY::Recipe
-    (title "Simple lentil soup")
-    (servings 3)
-    (price 17.03)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients bay-leaf garlic lentils olive-oil onion salt-pepper tomato vinegar water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_991010] of ONTOLOGY::Recipe
-    (title "Chicken Ranch Burgers")
-    (servings 3)
-    (price 52.35)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients bell-pepper bread-crumbs purple-onion ranch-seasoning chicken)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -20176,94 +14355,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_648048] of ONTOLOGY::Recipe
-    (title "Italian Beef Braciole")
-    (servings 4)
-    (price 95.67)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients round-steak prosciutto genoa-salami bread-crumbs parsley romano-cheese olive-oil garlic marinara-sauce red-wine)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637932] of ONTOLOGY::Recipe
-    (title "Chicken and White Bean Chili")
-    (servings 9)
-    (price 18.67)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients chicken water chicken-soup-base bay-leaf onion bell-pepper garlic-cloves flour 5-can-cannellini-beans mild-chili-powder ground-coriander ground-cumin coriander heavy-whipping-cream soured-cream bell-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636874] of ONTOLOGY::Recipe
-    (title "Candy Cane Chocolate Marshmallows")
-    (servings 24)
-    (price 0.74)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher)
-    (ingredients candy-canes chocolate marshmallows milk-chocolate)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640927] of ONTOLOGY::Recipe
-    (title "Crumbled Feta Couscous Salad")
-    (servings 8)
-    (price 9.46)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients couscous vegetable-stock quality-olive-oil salt roma-tomato onion mint parsley balsamic-vinegar feta-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_729531] of ONTOLOGY::Recipe
-    (title "Roasted Lemon Pepper Pork Tenderloin with Cornbread Stuffing")
-    (servings 4)
-    (price 70.09)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients cornbread egg flour green-onions jalapeno lemon-pepper chicken-broth milk parsley pork-tenderloin salt-and-pepper butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649856] of ONTOLOGY::Recipe
-    (title "Lemonade Bundt Cake")
-    (servings 12)
-    (price 4.49)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients eggs lemon-pudding-mix lemon-cake-mix lemonade-concentrate powdered-sugar cream vegetable-oil water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633858] of ONTOLOGY::Recipe
-    (title "Baked Tortellini In Red Sauce")
-    (servings 3)
-    (price 69.6)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients garlic grana-padano-cheese coarsely-mozzarella olive-oil onion oregano salt-and-pepper sugar tomatoes tortellini)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632539] of ONTOLOGY::Recipe
-    (title "Apple Dumplings In Fanta Sauce")
-    (servings 16)
-    (price 5.49)
-    (wine_pairing " No wine pairing")
-    (meal_types sauce)
-    (restrictions halal kosher vegetarian)
-    (ingredients package-puff-pastry-2-crusts apples juice-of-lemon fanta-lemon sugar butter lemon-extract grounded-cinnamon)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_661259] of ONTOLOGY::Recipe
     (title "Spinach and Gorgonzola Stuffed Flank Steak")
     (servings 4)
@@ -20274,50 +14365,6 @@
     (ingredients flank-steak olive-oil shallot spinach bread-crumbs gorgonzola salt-and-pepper)
     (seasons spring)
     (season_text "Spring"))
-
-  ([Recipe_642121] of ONTOLOGY::Recipe
-    (title "Easy Tabouleh")
-    (servings 1)
-    (price 463.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur cucumbers flat-leaf-parsley lemon-juice-from-a-lemon olive-oil salt tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649827] of ONTOLOGY::Recipe
-    (title "Lemon, Garlic and Thyme Roast Chicken – Quick and Easy Method")
-    (servings 4)
-    (price 30.35)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients butter juice-of-lemon olive-oil roasted-garlic-pieces salt-and-pepper thyme chicken)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636523] of ONTOLOGY::Recipe
-    (title "Butter-Bread")
-    (servings 6)
-    (price 12.97)
-    (wine_pairing " No wine pairing")
-    (meal_types main-course)
-    (restrictions halal kosher vegetarian)
-    (ingredients strong-bread-flour strong-bread-flour butter yeast yeast liquid-malt-extract salt sunflower-oil water water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633779] of ONTOLOGY::Recipe
-    (title "Baked Salmon With Lime")
-    (servings 2)
-    (price 355.32)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher)
-    (ingredients salmon-cutlet spring-onion ginger chili cooking-wine rind-of-lime lime-juice peppercorns butter)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_652332] of ONTOLOGY::Recipe
     (title "Monastery soup")
@@ -20330,17 +14377,6 @@
     (seasons winter)
     (season_text "Winter"))
 
-  ([Recipe_642597] of ONTOLOGY::Recipe
-    (title "Farro & Leek Soup")
-    (servings 4)
-    (price 165.29)
-    (wine_pairing " No wine pairing")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients tablespoons-olive-oil leeks gr-farro celery carrot onion meat-stock-please-do-not-use-bullion-cubes herbs-i-use-1-sprig-of-thyme-a-bay parmesan-cheese salt-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_635820] of ONTOLOGY::Recipe
     (title "Braised Chicken with Artichoke Hearts & Olives")
     (servings 2)
@@ -20352,39 +14388,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_649062] of ONTOLOGY::Recipe
-    (title "Korean Perilla Pesto")
-    (servings 8)
-    (price 9.31)
-    (wine_pairing " No wine pairing")
-    (meal_types condiment dip sauce spread)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients pack-of-sesame-leaves pine-nuts garlic extra-virgin-olive-oilthe-best-you-can-afford salt pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638248] of ONTOLOGY::Recipe
-    (title "Chicken Piccata With Angel Hair Pasta")
-    (servings 2)
-    (price 158.31)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients all-purpose-flour angel-hair-pasta chicken-breast capers chicken-broth basil garlic-cloves kosher-salt-and-pepper lemon-zest lemons olive-oil chili-flakes roma-tomatoes butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658914] of ONTOLOGY::Recipe
-    (title "Rustic Brie Toasts with Wild Mushroom, Cranberry and Shallot")
-    (servings 10)
-    (price 6.62)
-    (wine_pairing " No wine pairing")
-    (meal_types main-course)
-    (restrictions halal kosher vegetarian)
-    (ingredients mushrooms shallot 14-cup-dried-cranberry-juice-sweetened-if-possible thyme rustic-baguette olive-oil wedge-of-beautiful-brie-cheese salt-and-pepper)
-    (seasons any-season)
-    (season_text "Fall"))
-
   ([Recipe_642821] of ONTOLOGY::Recipe
     (title "Figure Friendly Mushroom and Bacon Strata")
     (servings 4)
@@ -20393,39 +14396,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions no-restrictions)
     (ingredients eggs egg-whites milk bread onion bell-peppers bell-pepper mushroom basil bacon-bits olive-oil cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639515] of ONTOLOGY::Recipe
-    (title "Citrus Beet Salad")
-    (servings 4)
-    (price 52.95)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients beets olive-oil balsamic-vinegar grapefruit sprouts pumpkin-seeds goat-cheese)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_645714] of ONTOLOGY::Recipe
-    (title "Grilled Fish With Sun Dried Tomato Relish")
-    (servings 2)
-    (price 341.62)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients balsamic-vinegar cucumber extra-virgin-olive-oil mint olive-oil pepper salt sesame-seeds sugar sun-dried-tomatoes fish-fillet)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663157] of ONTOLOGY::Recipe
-    (title "Thai Street Vendor Salmon Skewers")
-    (servings 4)
-    (price 110.75)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients yu-choy brown-sugar chili-sauce fish-sauce ginger ground-turmeric lime salmon-fillet)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -20440,39 +14410,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_775585] of ONTOLOGY::Recipe
-    (title "Crockpot \"Refried\" Beans")
-    (servings 16)
-    (price 1.17)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients pepper cumin garlic onion pinto-beans up-salt water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639114] of ONTOLOGY::Recipe
-    (title "Chocolate Nutella Walnut Cake")
-    (servings 8)
-    (price 12.86)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients eggs sugar walnuts nutella chocolate butter flour baking-powder salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638832] of ONTOLOGY::Recipe
-    (title "Chocolate Banoffee Pie")
-    (servings 8)
-    (price 26.84)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients bananas butter chocolate-digestivesplain-chocolate-cookies crackers thickened-cream brown-sugar chocolate icing-mixturesugar condensed-milk vanilla-essence)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_663696] of ONTOLOGY::Recipe
     (title "Tortellini In Brodo")
     (servings 6)
@@ -20481,28 +14418,6 @@
     (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions halal kosher)
     (ingredients chicken-stock lemon-juice lemon-zest parmigiano-reggiano salt-and-pepper tortellini)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632021] of ONTOLOGY::Recipe
-    (title "Ahi Tuna Ceviche")
-    (servings 3)
-    (price 76.28)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients ahi-tuna-steak mint juice-of-lime juice-of-lime serrano-pepper sesame-oil in-bowl-mix-soy-sauce soy-sauce even-roasted-sweet-potato)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1003670] of ONTOLOGY::Recipe
-    (title "Stuffed Chicken Breast")
-    (servings 4)
-    (price 36.36)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher)
-    (ingredients chicken-seasoning cream-cheese green-onions chicken-breast)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -20528,28 +14443,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_643428] of ONTOLOGY::Recipe
-    (title "Fresh and Simple Swai Ceviche")
-    (servings 4)
-    (price 66.66)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients avocado chile-garlic-paste cilantro swai-fillets juice-of-lime olive-oil salt-and-pepper shallot tomato)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658498] of ONTOLOGY::Recipe
-    (title "Roasted Beet and Radicchio Salad")
-    (servings 4)
-    (price 76.94)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients beets olive-oil radicchio onion radishes mint-leaves queso-fresco red-wine-vinegar honey garlic-clove salt pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_637625] of ONTOLOGY::Recipe
     (title "Cheesecake with cranberries")
     (servings 10)
@@ -20572,17 +14465,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_644861] of ONTOLOGY::Recipe
-    (title "Gluten Free Yellow Cake And Cupcakes")
-    (servings 24)
-    (price 2.26)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal)
-    (ingredients coconut-flour tapioca-flour salt baking-soda baking-powder xanthan-gum eggs sugar veganaise milk-alternative vanilla-extract earth-balance-butter dairy-free-chocolate-chips salt powdered-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_647433] of ONTOLOGY::Recipe
     (title "Hot Cocaccino")
     (servings 2)
@@ -20594,39 +14476,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_632091] of ONTOLOGY::Recipe
-    (title "Almond and cranberry shortbread")
-    (servings 10)
-    (price 6.22)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter icing-sugar egg-yolks lemon-juice flour almonds cranberries blanched-almonds-and)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1165783] of ONTOLOGY::Recipe
-    (title "Slow Cooker Ranch Chicken")
-    (servings 6)
-    (price 29.31)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients chicken-breasts cream-cheese chicken-broth ranch-seasoning)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642403] of ONTOLOGY::Recipe
-    (title "Enchiladas Verdes (Green Enchiladas)")
-    (servings 6)
-    (price 43.26)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients chicken-breast anaheim-chili-peppers canola-oil buttermilk-can-be-used-as-a-substitute flour onion corn-tortillas cheese queso-fresco crema salt water)
-    (seasons summer)
-    (season_text "Summer"))
-
   ([Recipe_641720] of ONTOLOGY::Recipe
     (title "Duck with Dried Cranberries, Tangerines and Mascarpone Sauce")
     (servings 2)
@@ -20635,17 +14484,6 @@
     (meal_types side-dish)
     (restrictions gluten-free halal kosher)
     (ingredients duck-breast juice-of-6-tangerines mascarpone salt-and-pepper to)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654474] of ONTOLOGY::Recipe
-    (title "Pan-Seared Scallops")
-    (servings 2)
-    (price 222.19)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients clv-garlic ponzu-sauce portabello-mushroom salt-and-pepper scallops shallot soy-sauce)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -20660,61 +14498,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_632280] of ONTOLOGY::Recipe
-    (title "Amaretto Almond Cookies")
-    (servings 18)
-    (price 2.3)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients almond-extract amaretto eggs ground-almonds lemon-rind molasses butter pastry-flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657306] of ONTOLOGY::Recipe
-    (title "Pumpkin French Toast")
-    (servings 4)
-    (price 34.88)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients bread brown-sugar cinnamon eggs maple-syrup milk nutmeg pumpkin-pie-spice pumpkin-puree vanilla)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_639836] of ONTOLOGY::Recipe
-    (title "Coconut-Almond Crusted Tilapia")
-    (servings 4)
-    (price 98.3)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients tilapia lemon coconut-milk almond-flour coconut salt pepper ground-ginger mint oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664429] of ONTOLOGY::Recipe
-    (title "Vegan Dirty Chai Pudding")
-    (servings 6)
-    (price 49.31)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients pudding avocados agave-nectar cocoa-powder chocolate-almond-milk vanilla sea-salt espresso-grounds chai-spice-blend chai-spice-blend cinnamon cardamom ginger nutmeg)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654285] of ONTOLOGY::Recipe
-    (title "Oxtail Ragout")
-    (servings 4)
-    (price 85.28)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients whl-allspice whl-bay-leaf flour garlic lemon-juice onion oxtails paprika bell-pepper salt tomato-juice water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_665777] of ONTOLOGY::Recipe
     (title "Zucchini Ribbon Caper Salad")
     (servings 3)
@@ -20726,94 +14509,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_658850] of ONTOLOGY::Recipe
-    (title "Royal Wedding Pear and Coriander Scones")
-    (servings 8)
-    (price 7.83)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients pear flour xanthan-gum baking-soda baking-powder salt butter sucanat eggs cream coriander)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649178] of ONTOLOGY::Recipe
-    (title "Lamb & Sweet Potato Pot Pie")
-    (servings 8)
-    (price 37.01)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients bay-leaf pepper butter caraway-seeds celery-stalks cornstarch demi-glace flour flour rosemary thyme garlic ice-water kosher-salt lamb lemon-zest milk olive-oil orange-zest peas crust onion red-wine salt shortening sugar sweet-potatoes water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657058] of ONTOLOGY::Recipe
-    (title "Powdered Buttermilk Beignets With Raspberry and Chocolate Dipping Sauce")
-    (servings 30)
-    (price 1.16)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher)
-    (ingredients active-yeast baking-soda bread-flour buttermilk canola-oil golden-syrup half-and-half milk powdered-sugar raspberries raspberry-jam salt semi-sweet-chocolate-chips sugar flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661533] of ONTOLOGY::Recipe
-    (title "Steaks with pesto, tomatoes and feta cheese")
-    (servings 4)
-    (price 56.94)
-    (wine_pairing "Red wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free)
-    (ingredients cherry-tomatoes feta-cheese capers garlic-cloves cracked-pepper olive-oil basil pork-steaks pesto-rosso cornflour basil sea-salt pepper olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649808] of ONTOLOGY::Recipe
-    (title "Lemon Thumbprint Cookies")
-    (servings 42)
-    (price 0.32)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients butter egg-yolks flour granulated-sugar kosher-salt lemon-curd lemon-juice lemon-zest)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645419] of ONTOLOGY::Recipe
-    (title "Green Beans With Roasted Walnuts and Sweet Cranberries")
-    (servings 8)
-    (price 6.8)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients kosher-salt-and-pepper green-beans olive-oil roasted cranberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645696] of ONTOLOGY::Recipe
-    (title "Grilled Eggplant and Heirloom Tomato Stacks With Basil and Tomato Coulis")
-    (servings 5)
-    (price 50.15)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher)
-    (ingredients basil-leaves pepper eggplant garlic-clove mild-goat-cheese olive-oil pecorino-romano-cheese plum-tomatoes salt tomato-coulis garden-tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640621] of ONTOLOGY::Recipe
-    (title "Creamy Chicken Tikka Masala")
-    (servings 4)
-    (price 55.55)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher)
-    (ingredients pepper tomato-sauce cayenne-pepper cilantro ginger garlic ground-cinnamon ground-cumin heavy-cream jalapeno-pepper lemon-juice paprika salt chicken-breasts butter yogurt)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_639303] of ONTOLOGY::Recipe
     (title "Chocolatey Overnight Oats with Strawberries")
     (servings 1)
@@ -20822,17 +14517,6 @@
     (meal_types morning-meal brunch breakfast)
     (restrictions gluten-free halal kosher)
     (ingredients agave-nectar almond-milk chia-seeds cocoa-powder non-fat-greek-yogurt oatmeal strawberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638939] of ONTOLOGY::Recipe
-    (title "Chocolate Chip Pancakes-gluten free, nut free, vegan")
-    (servings 12)
-    (price 4.41)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients rice-flour sorghum-flour arrowroot teff-flour aluminum-free-baking-powder baking-soda nutmeg cinnamon xylitol chocolate-vegan-chocolate-chips coconut-milk juice-of-lemon pear-sauce sunflower-oil kosher-salt earth-balance-soy-free-spread)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -20847,28 +14531,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_632788] of ONTOLOGY::Recipe
-    (title "Arugula Salad With Pomegranate, Avocado and Goat Cheese")
-    (servings 2)
-    (price 113.16)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients avocado baby-arugula balsamic-vinegar-or cilantro goat-cheese olive-oil pomegranate-molasses seedsarils-from-1-pomegranate course-sea-salt-and-pepper)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_640742] of ONTOLOGY::Recipe
-    (title "Crème Fraiche Coconut Bavarians")
-    (servings 8)
-    (price 12.79)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free)
-    (ingredients gelatin coconut-milk condensed-milk coconut-milk sugar egg-yolks alouette-cuisine-crme-fraiche coconut)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_656227] of ONTOLOGY::Recipe
     (title "Pink Grapefruit Slaw")
     (servings 4)
@@ -20877,28 +14539,6 @@
     (meal_types side-dish)
     (restrictions dairy-free gluten-free halal kosher vegetarian)
     (ingredients pepper pink-grapefruit cabbage mayonnaise onion salt-or to-2-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643175] of ONTOLOGY::Recipe
-    (title "Focaccia with Tomato, Green Onion and Garlic")
-    (servings 8)
-    (price 18.07)
-    (wine_pairing " No wine pairing")
-    (meal_types bread)
-    (restrictions halal kosher)
-    (ingredients coarse-salt flour garlic-clove green-onion olive-oil oregano parmesan-cheese sugar tomatoes warm-water quick-rising-yeast)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640990] of ONTOLOGY::Recipe
-    (title "Cuban Flank Steak With Avocado and Tomato Salad")
-    (servings 1)
-    (price 1127.28)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients olive-oil lime-juice orange-juice garlic-cloves water cumin salt pepper oregano hand-full-of-cilantro flank-steak avocado tomato onion)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -20912,83 +14552,6 @@
     (ingredients barbecue-sauce chicken-breasts dole-pineapple-tidbits)
     (seasons any-season)
     (season_text "Any season"))
-
-  ([Recipe_635263] of ONTOLOGY::Recipe
-    (title "Blackened Cajun Chicken")
-    (servings 4)
-    (price 40.91)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients bay-leaves pepper brown-sugar cayenne-pepper rosemary thyme mustard garlic-powder ground-cumin onion-powder paprika salt chicken)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639950] of ONTOLOGY::Recipe
-    (title "Colorful Red Quinoa Not So Tabbouleh Salad")
-    (servings 4)
-    (price 34.88)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients quinoa water salt avocado tomato radishes green-onions parsley bell-pepper cucumber cayenne-pepper tumeric cumin red-wine-vinegar extra-virgin-olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716423] of ONTOLOGY::Recipe
-    (title "Grilled Zucchini with Goat Cheese and Balsamic-Honey Syrup")
-    (servings 2)
-    (price 108.94)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients balsamic-vinegar goat-cheese grapeseed-oil honey pepper salt zucchini)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_638074] of ONTOLOGY::Recipe
-    (title "Chicken Enchilada Salad Wraps")
-    (servings 4)
-    (price 46.96)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients cream-cheese cream chili-powder cumin garlic swanson-premium-chicken cheddar-cheese canned-tomatoes green-onions cilantro lettuce burrito-sized-tortillas)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636328] of ONTOLOGY::Recipe
-    (title "Brownie Coffins")
-    (servings 5)
-    (price 21.17)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients butter sugar eggs vanilla-extract chocolate-cocoa-powder flour baking-powder salt chocolate candy-pen-and-sprinkles)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635195] of ONTOLOGY::Recipe
-    (title "Blackberry Clafoutis")
-    (servings 2)
-    (price 73.47)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients blackberries almond-meal flour milk caster-sugar eggs vanilla-extract salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661240] of ONTOLOGY::Recipe
-    (title "Spiked Watermelon lemonade")
-    (servings 6)
-    (price 30.12)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients sugar water mint lemon-juice-squeezed watermelon gin)
-    (seasons summer)
-    (season_text "Summer"))
 
   ([Recipe_632778] of ONTOLOGY::Recipe
     (title "Artisan Farfalle Pasta With Smoked Salmon and Cream Sauce")
@@ -21012,83 +14575,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_641679] of ONTOLOGY::Recipe
-    (title "Drunken Turkey Chili")
-    (servings 8)
-    (price 23.32)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients extra-virgin-olive-oil onion bell-pepper garlic jalapeno-peppers paprika chili-powder ground-cumin pepper cocoa-powder ground-turkey-meat canned-tomatoes black-beans beer soy-sauce cilantro)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639749] of ONTOLOGY::Recipe
-    (title "Coconut Cream Pie Vegan Milkshake")
-    (servings 3)
-    (price 27.04)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions dairy-free vegan vegetarian)
-    (ingredients coconut-meat lemon-juice coconut-oil coconut-milk banana vanilla-extract graham-cracker-crumbs coconut-flakes ice-cubes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716432] of ONTOLOGY::Recipe
-    (title "Finger Foods: Frittata Muffins")
-    (servings 1)
-    (price 295.92)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients broccoli chives t-cream eggs orange-pepper salt-and-pepper cheddar-cheese tomato)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637919] of ONTOLOGY::Recipe
-    (title "Chicken and Roasted Broccoli Salad With Goat Cheese")
-    (servings 4)
-    (price 51.52)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher)
-    (ingredients head-of-broccoli garlic-cloves goat-cheese juice-from-a-lemon olive-oil oregano pepper bell-pepper a-couple-of-pepper-flakes salt chicken sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642539] of ONTOLOGY::Recipe
-    (title "Falafel Burger")
-    (servings 4)
-    (price 41.04)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free vegetarian)
-    (ingredients chickpeas tahini sriracha-sauce garlic parsley onion peanut-oil cucumber tomato hamburger-buns tzatziki)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644140] of ONTOLOGY::Recipe
-    (title "Gambas Al Ajillo")
-    (servings 4)
-    (price 96.4)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients bacon butter cayenne-pepper chili-powder sherry garlic lemon-wedges olive-oil paprika parsley rustic-bread salt shrimp tomato)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660292] of ONTOLOGY::Recipe
-    (title "Slow Cooker Minestrone Soup")
-    (servings 8)
-    (price 14.22)
-    (wine_pairing "Red wine or White wine")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal kosher)
-    (ingredients carrots zucchini onion celery green-beans garlic garbanzo-beans pd-of-lentils tomatoes veggie-broth curry cumin garam-masala salt pepper noodles)
-    (seasons summer)
-    (season_text "Summer"))
-
   ([Recipe_638775] of ONTOLOGY::Recipe
     (title "Chive and dill muffins")
     (servings 10)
@@ -21097,39 +14583,6 @@
     (meal_types morning-meal brunch breakfast)
     (restrictions halal kosher vegetarian)
     (ingredients all-purpose-flour cornmeal sugar baking-powder salt baking-soda cayenne-pepper chives-and-dill yogurt eggs butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658024] of ONTOLOGY::Recipe
-    (title "Minestrone Soup")
-    (servings 8)
-    (price 25.38)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients into-strips kidney-beans canned-tomatoes carrots celery thyme-leaves garlic 5-oz-macaroni olive-oil onion some-parmesan-to-serve salt-and-pepper savoy-cabbage tomato-pure tomatoes-into-8ths vegetable-stock)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637761] of ONTOLOGY::Recipe
-    (title "Cherry ice cream")
-    (servings 8)
-    (price 7.0)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients cherries corn-starch cream lemon-juice milk salt sugar)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_633692] of ONTOLOGY::Recipe
-    (title "Baked Oatmeal with Dried Cranberries")
-    (servings 9)
-    (price 5.67)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients almond-milk baking-powder bananas cinnamon cranberries eggs flaxseeds oats salt vanilla-extract)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -21144,94 +14597,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_664058] of ONTOLOGY::Recipe
-    (title "Turkey Pot Pie With Cornbread Crust")
-    (servings 5)
-    (price 23.4)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients baking-powder canola-oil carrots celery chicken-stock egg flour flour garlic green-beans ground-sage ground-thyme milk olive-oil onion cracked-pepper salt sugar turkey cornmeal)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637690] of ONTOLOGY::Recipe
-    (title "Cheesy Turkey Meatballs")
-    (servings 4)
-    (price 66.73)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients bbq-sauce breadcrumbs carrot egg garlic ground-turkey milk onion pepper salt cheddar worcestershire)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637473] of ONTOLOGY::Recipe
-    (title "Chavrie Caramelized Red Onion Tarts")
-    (servings 12)
-    (price 4.55)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types antipasti starter dessert snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients goat-cheese grape-jelly onions red-wine-vinegar sugar butter vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715595] of ONTOLOGY::Recipe
-    (title "How to Make the Cheesiest Bowtie Mac and Cheese")
-    (servings 4)
-    (price 33.65)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients bowtie-pasta-cook-as-directed extra-sharp-cheddar-cheese extra-sharp-cheddar-cheese salt-and-pepper cream butter parsley)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716409] of ONTOLOGY::Recipe
-    (title "Cannoli Cream-Filled Strawberries")
-    (servings 2)
-    (price 64.11)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients cream-cheese strawberries honey lemon-zest powdered-sugar ricotta vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640666] of ONTOLOGY::Recipe
-    (title "Creamy Mushrooms Over Soba Noodles (Vegan)")
-    (servings 4)
-    (price 63.56)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients all-purpose-flour white-wine cremini-but-your-choice thyme garlic juice-of-lemon salt-pepper soba-noodles earth-balance-buttery-spread soy-milk mushrooms)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638166] of ONTOLOGY::Recipe
-    (title "Chicken Liver Salad")
-    (servings 2)
-    (price 90.44)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients bacon balsamic-vinegar boston-lettuce chicken-livers olive-oil onion salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1050445] of ONTOLOGY::Recipe
-    (title "How to Make the Best Crock Pot Roast")
-    (servings 8)
-    (price 26.04)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients beef-broth pepperoncini-pepper-juice pepperoncini-peppers pot-roast-cut ranch-seasoning)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_662287] of ONTOLOGY::Recipe
     (title "Sun-dried Tomato & Artichoke Tuna Casserole")
     (servings 4)
@@ -21242,17 +14607,6 @@
     (ingredients sundried-tomato-artichoke-tuna-casserole-serves macaroni artichoke-hearts sundried-tomatoes garlic onion milk butter flour marsala parmesan tuna grain-mustard panko-breadcrumbs olive-oil salt-and-pepper)
     (seasons spring)
     (season_text "Spring"))
-
-  ([Recipe_660884] of ONTOLOGY::Recipe
-    (title "Spare Ribs")
-    (servings 3)
-    (price 67.65)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients oil clear-honey ginger-root soy-sauce hoisin-sauce five-spice-powder garlic-cloves spare-ribs)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_646941] of ONTOLOGY::Recipe
     (title "Homemade Chewy Granola Bars")
@@ -21265,50 +14619,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_661071] of ONTOLOGY::Recipe
-    (title "Spicy Coconut French Toast")
-    (servings 6)
-    (price 26.62)
-    (wine_pairing " No wine pairing")
-    (meal_types morning-meal brunch breakfast)
-    (restrictions halal vegetarian)
-    (ingredients eggs bread oil-of-frying ground-cayenne-pepper maple-syrup nutmeg salt sugar coconut vanilla-extract milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658087] of ONTOLOGY::Recipe
-    (title "Red Quinoa and Roasted Cauliflower Salad")
-    (servings 4)
-    (price 56.62)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients cauliflower quinoa walnuts apricots feta-cheese green-onions parsley salt-and-pepper lemon olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662604] of ONTOLOGY::Recipe
-    (title "Sweet Potato, Kale & White Bean Soup")
-    (servings 4)
-    (price 45.2)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients grapeseed-oil sweet-potato onion kale chicken-broth white-wine cannellini-beans oregano thyme salt-ground-pepper)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_661250] of ONTOLOGY::Recipe
-    (title "Spinach & Toasted Pumpkin Seed Pesto Pasta")
-    (servings 6)
-    (price 24.25)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients chicken-breast-halves juice-of-lemon cooking-fat salt baby-spinach lemon-zest olive-oil scallions garlic pumpkin-seeds parsley salt colorful-pasta coarse-salt shavings-of-parmesan-into-each-bowl-at-serving)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_716202] of ONTOLOGY::Recipe
     (title "Fenugreek Roti")
     (servings 10)
@@ -21317,61 +14627,6 @@
     (meal_types bread)
     (restrictions halal kosher vegetarian)
     (ingredients ajwain-seeds asafetida baking-soda cayenne chickpea-flour chili-powder fenugreek-leaves ghee ground-coriander ground-cumin yogurt sea-salt flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715446] of ONTOLOGY::Recipe
-    (title "Slow Cooker Beef Stew")
-    (servings 6)
-    (price 45.07)
-    (wine_pairing "Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients beef-broth carrots celery cream-of-mushroom-soup green-onions new-potatoes onion dales-seasoning stew-meat water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642332] of ONTOLOGY::Recipe
-    (title "Eggs Florentine")
-    (servings 4)
-    (price 53.03)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter cayenne-pepper eggs muffins kosher-salt lemon-juice spinach water)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_721059] of ONTOLOGY::Recipe
-    (title "Blueberry Almond Crescent Rolls")
-    (servings 8)
-    (price 14.7)
-    (wine_pairing " No wine pairing")
-    (meal_types bread)
-    (restrictions halal kosher vegetarian)
-    (ingredients almond-extract blueberry-jam cream-cheese regular-crescent-rolls egg water flour milk sea-salt confectioners-sugar confectioners-sugar turbinado-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644554] of ONTOLOGY::Recipe
-    (title "Ginger Beef Stir Fry")
-    (servings 4)
-    (price 94.36)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients water-chestnuts carrots ginger-root garlic bell-pepper salad-lettuce onion orange-marmalade soy-sauce top-sirloin-steak vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640383] of ONTOLOGY::Recipe
-    (title "Cranberry Margarita")
-    (servings 6)
-    (price 59.17)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cranberries grand-marnier orange-juice karo-syrup sugar tequila)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -21386,39 +14641,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_642878] of ONTOLOGY::Recipe
-    (title "Finger Lickin' Good Stewed Quince Dessert")
-    (servings 6)
-    (price 47.82)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free vegan vegetarian)
-    (ingredients quinces unrefined-oil rice-flour sucanat cinnamon ground-cloves raisins vanilla-extract rum-extract sea-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636589] of ONTOLOGY::Recipe
-    (title "Butternut Squash Frittata")
-    (servings 1)
-    (price 340.39)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course morning-meal brunch main-dish breakfast dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients butternut-squash goat-cheese liquid-egg-substitute non-fat-milk bell-pepper)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_654028] of ONTOLOGY::Recipe
-    (title "Oreo Cookies & Cream No-Bake Cheesecake")
-    (servings 20)
-    (price 2.41)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients cream-cheese heavy-cream lemon-juice oreo-cookies salt sugar vanilla-powder)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_715545] of ONTOLOGY::Recipe
     (title "How to Make the Best Chicken Jambalaya")
     (servings 8)
@@ -21427,72 +14649,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions gluten-free halal)
     (ingredients butter sausage chicken-breasts onion celery bell-pepper garlic tomato-sauce tomatoes chicken-stock rice 2-bay ground-pepper salt pepper thyme pepper-flakes sage)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631823] of ONTOLOGY::Recipe
-    (title "(Houston's) Spinach Dip")
-    (servings 8)
-    (price 17.76)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions halal kosher)
-    (ingredients artichoke-hearts chicken-stock flour spinach garlic heavy-cream hot-sauce lemon-juice onion pecorino-romano-cheese salt cream butter cheddar-cheese)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_661533] of ONTOLOGY::Recipe
-    (title "Steaks with pesto, tomatoes and feta cheese")
-    (servings 4)
-    (price 56.94)
-    (wine_pairing "Red wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free)
-    (ingredients cherry-tomatoes feta-cheese capers garlic-cloves cracked-pepper olive-oil basil pork-steaks pesto-rosso cornflour basil sea-salt pepper olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634476] of ONTOLOGY::Recipe
-    (title "Bbq Chicken")
-    (servings 4)
-    (price 23.15)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients brown-sugar catsup chicken-pieces mustard soy-sauce worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637488] of ONTOLOGY::Recipe
-    (title "Chavrie Stuffed Turkey Burgers")
-    (servings 6)
-    (price 61.64)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients ea-eggs garlic chavrie-goat-cheese ground-turkey ea-hamburger-rolls thyme-leaves)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652413] of ONTOLOGY::Recipe
-    (title "Moroccan Carrot Soup")
-    (servings 2)
-    (price 112.66)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher)
-    (ingredients butter onion carrots chicken-stock cumin-seeds honey lemon-juice allspice salt-and-pepper yogurt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1098355] of ONTOLOGY::Recipe
-    (title "Bahamian Goombay Smash Cocktail")
-    (servings 4)
-    (price 68.67)
-    (wine_pairing " No wine pairing")
-    (meal_types beverage drink)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients coconut-rum apricot-brandy rum pineapple-juice orange-juice orange pineapple)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -21507,72 +14663,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_656506] of ONTOLOGY::Recipe
-    (title "Poached Prawns with Fettuccine and French String Beans")
-    (servings 4)
-    (price 69.49)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients fettuccine lemon-juice prawns salt-and-pepper string-beans butter water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658680] of ONTOLOGY::Recipe
-    (title "Roasted Sweet Potato Salad")
-    (servings 8)
-    (price 13.64)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients sweet-potatoes extra-virgin-olive-oil chipotle-pepper-adobo-sauce balsamic-vinegar salt pepper cranberries pecans chives)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654241] of ONTOLOGY::Recipe
-    (title "Oven-Baked Feta Cheese Dip")
-    (servings 4)
-    (price 32.51)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients feta-cheese garlic tomato-sauce part-skim-mozzarella-cheese mild-cheddar-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640827] of ONTOLOGY::Recipe
-    (title "Crispy Pineapple Fritters")
-    (servings 12)
-    (price 2.99)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher vegetarian)
-    (ingredients pineapple-rings flour cornstarch egg baking-powder salt milk panko-breadcrumbs canola-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638420] of ONTOLOGY::Recipe
-    (title "Chicken Wings")
-    (servings 30)
-    (price 0.72)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher)
-    (ingredients brown-sugar chicken-drummettes garlic-powder ground-cumin honey kosher-salt tabasco-sauce taco-seasoning vegan-cream-cheese coconut-yogurt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631879] of ONTOLOGY::Recipe
-    (title "5 Minute Xocai Chocolate Mug Cake")
-    (servings 2)
-    (price 66.06)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients chocolate eggs flour honey milk vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_633101] of ONTOLOGY::Recipe
     (title "Autumn Pumpkin Cake")
     (servings 12)
@@ -21583,17 +14673,6 @@
     (ingredients pumpkin brown-rice-flour coconut-milk raisins agave-syrup)
     (seasons any-season)
     (season_text "Fall"))
-
-  ([Recipe_654735] of ONTOLOGY::Recipe
-    (title "Party Rice Balls")
-    (servings 24)
-    (price 0.9)
-    (wine_pairing " No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher)
-    (ingredients rice water salt eggs romano-cheese parsley-or breadcrumbs oil)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_650325] of ONTOLOGY::Recipe
     (title "Loquat Pie")
@@ -21617,28 +14696,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_631759] of ONTOLOGY::Recipe
-    (title "Simit (Turkish Circular Bread)")
-    (servings 8)
-    (price 13.0)
-    (wine_pairing " No wine pairing")
-    (meal_types bread)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients flour yeast molasses olive-oil salt sesame-seeds water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655314] of ONTOLOGY::Recipe
-    (title "Peanut butter ice cream")
-    (servings 8)
-    (price 8.0)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal vegetarian)
-    (ingredients milk sugar salt eggs smooth-peanut-butter heavy-cream vanilla-extract peanuts bits-of-bitter-chocolate)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_632485] of ONTOLOGY::Recipe
     (title "Apple Cake")
     (servings 12)
@@ -21647,28 +14704,6 @@
     (meal_types dessert)
     (restrictions dairy-free halal kosher vegetarian)
     (ingredients apples-preferably-jonathan baking-soda cinnamon eggs flour oil salt sugar vanilla walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645714] of ONTOLOGY::Recipe
-    (title "Grilled Fish With Sun Dried Tomato Relish")
-    (servings 2)
-    (price 341.62)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients balsamic-vinegar cucumber extra-virgin-olive-oil mint olive-oil pepper salt sesame-seeds sugar sun-dried-tomatoes fish-fillet)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640625] of ONTOLOGY::Recipe
-    (title "Creamy Chocolate Pudding With Coconut Whipped Cream")
-    (servings 2)
-    (price 156.93)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients tofu chocolate-chips non-dairy-milk coconut-milk vanilla-extract chocolate-shavings)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -21683,39 +14718,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_646512] of ONTOLOGY::Recipe
-    (title "Salmon Caesar Salad")
-    (servings 2)
-    (price 150.47)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients caesar-dressing lemon-juice olive-oil paprika parmesan-cheese add-pepper romaine salmon-fillet salt slivered-almonds)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654125] of ONTOLOGY::Recipe
-    (title "Osso Buco")
-    (servings 6)
-    (price 123.67)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients veal-shanks parsley rind-lemon flour bell-pepper olive-oil garlic onion chicken-stock wine tomato-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641904] of ONTOLOGY::Recipe
-    (title "Easy Chicken Tandoori")
-    (servings 12)
-    (price 19.16)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients chicken tikka-tandoori-paste coriander-leaves greek-yogurt onions tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_664969] of ONTOLOGY::Recipe
     (title "Warm Quinoa Spinach and Shiitake Salad")
     (servings 6)
@@ -21726,61 +14728,6 @@
     (ingredients baby-spinach pepper chicken-broth feta-cheese olive-oil bell-pepper red-wine-vinegar pc-organics-roasted-garlic-and-herbs-quinoa salt shallots shiitake-mushrooms)
     (seasons spring)
     (season_text "Spring"))
-
-  ([Recipe_650937] of ONTOLOGY::Recipe
-    (title "Maple-Bacon Corn Muffins")
-    (servings 12)
-    (price 2.46)
-    (wine_pairing " No wine pairing")
-    (meal_types bread)
-    (restrictions no-restrictions)
-    (ingredients bacon baking-powder butter eggs flour maple-syrup milk salt sugar cornmeal)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651034] of ONTOLOGY::Recipe
-    (title "Marinated Flat Iron Steak")
-    (servings 4)
-    (price 102.13)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients balsamic-vinegar dijon-mustard flat-iron-steak garlic-cloves ginger herbs-rosemary lemon-zest lemons mayonnaise olive-oil salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637218] of ONTOLOGY::Recipe
-    (title "Carrot Raisin Chocolate Chip Cookies")
-    (servings 36)
-    (price 0.31)
-    (wine_pairing " No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients duncan-hines-classic-decadent-cake-mix eggs butter water chocolate-chips)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654936] of ONTOLOGY::Recipe
-    (title "Pasta with Raw Tomato & Lemon Infused Olive Oil")
-    (servings 8)
-    (price 8.39)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher)
-    (ingredients extra-virgin-olive-oil lemon-zest canned-tomatoes salt-and-chili-flakes aged-pecorino)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658482] of ONTOLOGY::Recipe
-    (title "Roasted Acorn Squash Stuffed with spicy Biryani (Veg/vegan)")
-    (servings 4)
-    (price 102.17)
-    (wine_pairing "Red wine")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients acorn-squashes basmati-rice-soaked-in-water water garam-masala onion peppers cashew-nuts-a-bit saffron cilantro biryani-paste-recipe-below onion salt coarse-pepper pam-original-flavor vegetable-oil onion beefsteak-tomato garlic ginger chili-powder cilantro hefty-biryani-paste vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_646183] of ONTOLOGY::Recipe
     (title "Ham and Peas Farfalle In Creamy Lemon Parmesan Sauce")
@@ -21804,17 +14751,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_652819] of ONTOLOGY::Recipe
-    (title "My \"Secret\" Bolognese Sauce")
-    (servings 12)
-    (price 22.96)
-    (wine_pairing "Red wine")
-    (meal_types sauce)
-    (restrictions dairy-free gluten-free)
-    (ingredients olive-oil ground-veal ground-beef ground-pork sausage vidalia-onions carrots garlic-cloves oregano red-wine canned-tomatoes tomatoes parsley basil granulated-sugar salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_716344] of ONTOLOGY::Recipe
     (title "Kenyan Pilau")
     (servings 4)
@@ -21823,17 +14759,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions dairy-free gluten-free)
     (ingredients peppercorns cardamom-pods cinnamon-sticks cumin-seed-powder garlic ginger goat-meat onion rice salt dressed-shrimp tomatoes cooking-spoon-of-vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1098392] of ONTOLOGY::Recipe
-    (title "Hush Puppies")
-    (servings 6)
-    (price 5.02)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients onion cornmeal flour baking-powder salt egg milk oil)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -21859,28 +14784,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_635070] of ONTOLOGY::Recipe
-    (title "Black Bean Mango Stir Fry with Cilantro Lime Coconut Sauce")
-    (servings 8)
-    (price 35.38)
-    (wine_pairing "White wine")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free)
-    (ingredients peanut-oil snow-pea-pods carrot cucumber cabbage corn black-beans mango imitation-crab-meatshrimp rice-noodles sriracha-saucered-pepper-flakes-if-desired salt-and-pepper coconut-milk cilantro juice-of-lime ginger-root garlic agave-nectar soy-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665537] of ONTOLOGY::Recipe
-    (title "Yoghurt Honey Madeleines")
-    (servings 15)
-    (price 0.71)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients egg honey sugar natural-yoghurt flour baking-powder butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_655515] of ONTOLOGY::Recipe
     (title "Pecan Pie")
     (servings 8)
@@ -21891,61 +14794,6 @@
     (ingredients butter corn-syrup eggs flour pecan-halves pie-crust sugar vanilla-extract)
     (seasons summer)
     (season_text "Summer"))
-
-  ([Recipe_635195] of ONTOLOGY::Recipe
-    (title "Blackberry Clafoutis")
-    (servings 2)
-    (price 73.47)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients blackberries almond-meal flour milk caster-sugar eggs vanilla-extract salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716409] of ONTOLOGY::Recipe
-    (title "Cannoli Cream-Filled Strawberries")
-    (servings 2)
-    (price 64.11)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients cream-cheese strawberries honey lemon-zest powdered-sugar ricotta vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634171] of ONTOLOGY::Recipe
-    (title "Banana Pudding Cake")
-    (servings 12)
-    (price 19.64)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients baking-powder bananas cocoa-powder egg-yolks eggs flour heavy-whipping-cream milk powdered-sugar salt pudding sugar vanilla vanilla-extract vanilla-wafers whipped-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648389] of ONTOLOGY::Recipe
-    (title "Jam Tarts")
-    (servings 12)
-    (price 1.99)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients butter cream-cheese jam lemon-juice maple-syrup unbleached-flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634006] of ONTOLOGY::Recipe
-    (title "Banana Bread")
-    (servings 6)
-    (price 9.71)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients bananas butter sugar egg vanilla baking-soda salt flour)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_640730] of ONTOLOGY::Recipe
     (title "Creme Brulee")
@@ -21969,28 +14817,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_1005367] of ONTOLOGY::Recipe
-    (title "Shortbread Lemon Bars")
-    (servings 9)
-    (price 4.02)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-flour all-purpose-flour eggs lemon-juice lemon-zest fat-milk powdered-sugar salt sugar butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716379] of ONTOLOGY::Recipe
-    (title "Chocolate Coconut Banana Bread")
-    (servings 20)
-    (price 1.61)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher)
-    (ingredients all-purpose-flour baking-powder baking-soda bananas butter coconut-flakes eggs salt semi-sweet-chocolate-chips sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_656569] of ONTOLOGY::Recipe
     (title "Polish Rugelach")
     (servings 18)
@@ -21999,72 +14825,6 @@
     (meal_types dessert)
     (restrictions halal kosher vegetarian)
     (ingredients all-purpose-flour cocoa-powder cream-cheese cranberries raisins ground-cinnamon nutmeg sugar butter walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641799] of ONTOLOGY::Recipe
-    (title "Easter Nest Sweet Cake With Sour Cream-Royal Icing and Pistachios")
-    (servings 8)
-    (price 12.41)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder brown-sugar eggs eggwhite flour food-coloring icing-sugar lemon-juice unshelled-pistachios cream butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648698] of ONTOLOGY::Recipe
-    (title "Kahlua Tiramisu")
-    (servings 11)
-    (price 5.53)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients mascarpone vanilla-extract kahla espresso whipping-cream icing-sugar lady-fingers-depending-on-how-you-will-try-to-fit-them-the-dish cocoa-powder)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653185] of ONTOLOGY::Recipe
-    (title "No-Bake Chocolate Peanut Butter Pie")
-    (servings 8)
-    (price 15.0)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher)
-    (ingredients non-dairy-cream-cheese creamy-peanut-butter chocolate-chips peanut-butter-cups powdered-sugar roasted-peanuts earth-balance-soy-free-spread vanilla-coconut-yogurt non-dairy-whipped-topping)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633229] of ONTOLOGY::Recipe
-    (title "Baby Chick Cupcakes")
-    (servings 12)
-    (price 6.94)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients flour sugar butter milk baking-powder salt vanilla egg icing-sugar cream food-colouring coconut brown-and-orange-mms)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715569] of ONTOLOGY::Recipe
-    (title "Strawberry Cheesecake Chocolate Crepes")
-    (servings 4)
-    (price 41.94)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal vegetarian)
-    (ingredients cream-cheese strawberries vanilla-extract lemon-juice granulated-sugar flour cocoa-powder kosher-salt eggs milk water butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636675] of ONTOLOGY::Recipe
-    (title "Cacao-Pecan Shortbread Cookies")
-    (servings 24)
-    (price 1.9)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter cacao-nibs confectioners-sugar egg flour kosher-salt pecans vanilla-bean vanilla-extract vanilla-sugar water)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -22101,28 +14861,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_641435] of ONTOLOGY::Recipe
-    (title "Dessert Apple Rings With Cinnamon Cream Syrup")
-    (servings 6)
-    (price 25.07)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients all-purpose-flour canola-oil cinnamon corn-syrup egg-white granny-smith-apples salt sugar vanilla water)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_643129] of ONTOLOGY::Recipe
-    (title "Flawless Chocolate Fudge")
-    (servings 16)
-    (price 2.08)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal)
-    (ingredients butter evaporated-milk kosher-salt marshmallow-fluff semisweet-chocolate-chips sugar real-vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_632279] of ONTOLOGY::Recipe
     (title "Amaretto Cheesecake")
     (servings 1)
@@ -22131,28 +14869,6 @@
     (meal_types dessert)
     (restrictions no-restrictions)
     (ingredients almond amaretto cinnamon cream-cheese amaretto eggs graham-cracker-crumbs stk-margarine cream sugar plus-1-tsp-sugar shavings-from-a-hershey-bar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638831] of ONTOLOGY::Recipe
-    (title "Chocolate Banana Zucchini Cake")
-    (servings 8)
-    (price 9.78)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients butter all-purpose-flour cocoa-powder baking-soda baking-powder salt brown-sugar sugar vanilla-extract coffee-granules eggs zucchini overripe-banana bittersweet-chocolate-chips confectioners-sugar-optional)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_658300] of ONTOLOGY::Recipe
-    (title "Rich Jelly Scones")
-    (servings 4)
-    (price 44.94)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal vegetarian)
-    (ingredients all-purpose-flour granulated-sugar baking-powder baking-soda salt butter eggs milk vanilla-extract fruit-preserves egg milk)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -22178,28 +14894,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_640395] of ONTOLOGY::Recipe
-    (title "Cranberry Orange Biscotti")
-    (servings 48)
-    (price 0.51)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder confectioners-sugar cranberries eggs flour orange-juice orange-zest pecans salt sugar butter vanilla-extract pastry-flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636620] of ONTOLOGY::Recipe
-    (title "Butterscotch Pie")
-    (servings 8)
-    (price 17.43)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions no-restrictions)
-    (ingredients the-pie-crust sleeve-of-graham-crackers butter sugar butter brown-sugar-or heavy-cream percent-milk salt cornstarch water vanilla scotch-whiskey the-pie-topping heavy-whipping-cream vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_635552] of ONTOLOGY::Recipe
     (title "Blueberry Vanilla Pie")
     (servings 1)
@@ -22208,28 +14902,6 @@
     (meal_types dessert)
     (restrictions halal)
     (ingredients almonds blueberries butter egg ground-almonds juice-of-lemon lemon-zest flour powdered-sugar salt sugar vanilla-extract vanilla-pod vanilla-sugar whipped-cream density density density)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641644] of ONTOLOGY::Recipe
-    (title "Dreamy Chai Rice Pudding")
-    (servings 4)
-    (price 122.31)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients rice milk freshly-tea cinnamon-powder ginger-powder cardomon-pods star-anise large-cloves vanilla-essence brown-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634425] of ONTOLOGY::Recipe
-    (title "Basil Coconut Ice Cream")
-    (servings 8)
-    (price 13.5)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients basil-leaves full-fat-coconut-milk honey half-half salt)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -22252,28 +14924,6 @@
     (meal_types dessert)
     (restrictions halal kosher vegetarian)
     (ingredients granny-smith-apples cranberries sugar butter regular-oats brown-sugar flour butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651757] of ONTOLOGY::Recipe
-    (title "Meyer Lemon Cheesecake")
-    (servings 12)
-    (price 13.5)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions kosher)
-    (ingredients cream-cheese eggs gingersnaps juice-of-lemon lemon-zest salt cream sugar butter of)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641651] of ONTOLOGY::Recipe
-    (title "Dried Fruit and Ginger Scones")
-    (servings 8)
-    (price 6.19)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions kosher)
-    (ingredients baking-powder butter cake-flour candied-ginger apples cranberries flour heavy-cream salt turbinado-sugar milk)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -22321,17 +14971,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_650479] of ONTOLOGY::Recipe
-    (title "Luscious Lemon Bars")
-    (servings 6)
-    (price 8.75)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder butter eggs flour juice-of-lemon lemon-zest powdered-sugar sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_654034] of ONTOLOGY::Recipe
     (title "Oreo Mini Cheesecake")
     (servings 12)
@@ -22340,39 +14979,6 @@
     (meal_types dessert)
     (restrictions halal vegetarian)
     (ingredients cream-cheese whipping-cream vanilla-extract eggs cream-of-tartar sugar oreo)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631785] of ONTOLOGY::Recipe
-    (title "Impossible\" Coconut Pie")
-    (servings 10)
-    (price 10.39)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients eggs sugar butter desiccated-coconut lemon-zest orange-zest lemon-juice m-orange-juice coconut-milk flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639177] of ONTOLOGY::Recipe
-    (title "Chocolate Pudding - Rave Diet")
-    (servings 3)
-    (price 64.17)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients water maple-syrup corn-flour cocoa-powder vanilla roasted-hazelnuts)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_632169] of ONTOLOGY::Recipe
-    (title "Almond Plum Cake with Creme Fraiche")
-    (servings 6)
-    (price 46.19)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients almond-paste baking-powder butter cake-flour crme-fraiche-and-slivered-almond eggs granulated-sugar plums salt vanilla-bean-lengthwise-seeds-scraped vanilla-extract)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -22409,28 +15015,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_661757] of ONTOLOGY::Recipe
-    (title "Strawberry Basil Italian Ice")
-    (servings 6)
-    (price 23.18)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients basil-leaves juice-of-lemon simple-syrup strawberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636325] of ONTOLOGY::Recipe
-    (title "Brownie Cheesecake")
-    (servings 12)
-    (price 9.23)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions kosher)
-    (ingredients cookie-crumbs cream-cheese eggs granulated-sugar brownies salt sugar butter vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_632622] of ONTOLOGY::Recipe
     (title "Apple- Pomegranate Crisp")
     (servings 12)
@@ -22439,39 +15023,6 @@
     (meal_types dessert)
     (restrictions halal kosher vegetarian)
     (ingredients baked-apples pink-lady-apples pom-wonderful-pomegranate-juice brown-sugar ground-cinnamon ground-allspice lemon-juice corn-starch old-fashioned-rolled-oats unbleached-flour apple-juice pom-wonderful-pomegranate-juice canola-oil brown-sugar salt walnuts butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665155] of ONTOLOGY::Recipe
-    (title "White cake with marzipan and almonds")
-    (servings 10)
-    (price 9.18)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients almonds amaretto-liqueur baking-powder butter cornstarch egg-whites flour marzipan sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658339] of ONTOLOGY::Recipe
-    (title "Ricotta Orange Pound Cake With Amaretto Strawberries")
-    (servings 8)
-    (price 17.64)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients cake-flour baking-powder kosher-salt butter milk-ricotta-cheese sugar eggs vanilla-extract orange-zest amaretto strawberries whipping-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650939] of ONTOLOGY::Recipe
-    (title "Maple-Glazed Apple Cookies")
-    (servings 18)
-    (price 1.17)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients apple baking-soda brown-sugar butter cinnamon egg flour ground-cloves maple-flavoring milk nutmeg powdered-sugar salt)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -22497,28 +15048,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_637832] of ONTOLOGY::Recipe
-    (title "Chia Seed Pudding")
-    (servings 3)
-    (price 51.89)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients agave-syrup almond-milk chia-seeds garnish-raspberries salt vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640451] of ONTOLOGY::Recipe
-    (title "Cranberry-Orange Pistachio Chip Cookies")
-    (servings 30)
-    (price 0.94)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients flour baking-soda salt butter granulated-sugar brown-sugar vanilla-extract eggs nestl-toll-house-premier-morsels pistachios craisins candied-orange-peel)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_651992] of ONTOLOGY::Recipe
     (title "Miniature Cheesecakes")
     (servings 1)
@@ -22541,61 +15070,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_654571] of ONTOLOGY::Recipe
-    (title "Panna Cotta with Raspberry and Orange Sauce")
-    (servings 6)
-    (price 23.85)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free)
-    (ingredients half-and-half mascarpone sugar vanilla powdered-gelatin orange-zest raspberries orange-juice confectioners-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651389] of ONTOLOGY::Recipe
-    (title "Medenjaci - Croatian Honey Spice Cookies")
-    (servings 45)
-    (price 0.47)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions kosher)
-    (ingredients butter demerara-sugar honey eggs baking-soda ground-cinnamon ground-cloves ground-nutmeg powdered-ginger flour flour cake-flour walnut-kernels)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665203] of ONTOLOGY::Recipe
-    (title "White chocolate-cranberry ice cream")
-    (servings 6)
-    (price 24.1)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal vegetarian)
-    (ingredients double-cream cranberries egg-yolks full-fat-milk caster-sugar vanilla-extract chocolate)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665276] of ONTOLOGY::Recipe
-    (title "Whole Wheat Chocolate Chip Cookies")
-    (servings 24)
-    (price 1.27)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients baking-powder baking-soda chocolate-chips coconut-sugar brown-sugar eggs kosher-salt butter vanilla-extract flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658850] of ONTOLOGY::Recipe
-    (title "Royal Wedding Pear and Coriander Scones")
-    (servings 8)
-    (price 7.83)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients pear flour xanthan-gum baking-soda baking-powder salt butter sucanat eggs cream coriander)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_658007] of ONTOLOGY::Recipe
     (title "Raw Vegan Chocolate and Raspberry Cake")
     (servings 12)
@@ -22604,17 +15078,6 @@
     (meal_types dessert)
     (restrictions dairy-free halal kosher)
     (ingredients crust walnuts cocoa-carob-powder sea-salt dates chocolate-cream honey bananas cocoacarob raspberries chocolate-flakes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643615] of ONTOLOGY::Recipe
-    (title "Fresh Strawberry Yogurt Cake")
-    (servings 12)
-    (price 6.0)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-soda butter eggs flour lemon powdered-sugar salt strawberries sugar vanilla)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -22628,72 +15091,6 @@
     (ingredients aluminum-free-baking-soda aluminum-free-baking-powder apple-cider-vinegar bananas brown-rice-flour firmly-brown-sugar enjoy-life-brand-chocolate-chips ground-ginger ground-nutmeg kosher-salt oat-flour pecans roasted-pumpkin-puree rice-flour sorghum-flour earth-balance-soy-free-spread tapioca-flour coconut-yogurt)
     (seasons any-season)
     (season_text "Fall"))
-
-  ([Recipe_641889] of ONTOLOGY::Recipe
-    (title "Easy Chewy M&M Cookies")
-    (servings 14)
-    (price 3.04)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients baking-powder baking-soda eggs flour brown-sugar mm-candies salt sugar butter vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643916] of ONTOLOGY::Recipe
-    (title "Frozen Mojito Pie")
-    (servings 8)
-    (price 17.59)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients pretzels butter cream-cheese sugar lime-zest juice-from-lime mint whipped-topping)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664306] of ONTOLOGY::Recipe
-    (title "Vanilla Coconut Snowball Cupcakes")
-    (servings 13)
-    (price 4.12)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients flour baking-powder salt butter sugar vanilla-extract eggs regular-milk cream unsweeted-coconut-flakes butter cream vanilla confectionerss-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655668] of ONTOLOGY::Recipe
-    (title "Peppermint Brookie Pies - gluten free, dairy free")
-    (servings 16)
-    (price 3.74)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients aluminum-free-baking-powder bittersweet-chocolate candy-canes evaporated-cane-sugar plus-1-tablespoon-evaporated-cane-sugar cocoa-powder egg-whites eggs peppermint-flavor kosher-salt palm-shortening rice-flour semi-sweet-chocolate sorghum-flour tapioca-starch vanilla-paste plus-1-tablespoon-water ground-espresso)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640589] of ONTOLOGY::Recipe
-    (title "Creamsicle Cookies")
-    (servings 36)
-    (price 0.49)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal)
-    (ingredients all-purpose-flour baking-soda firmly-brown-sugar butter egg orange-zest salt sugar vanilla-extract chocolate-chips)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636989] of ONTOLOGY::Recipe
-    (title "Caramel Apple-Brownie Cheesecake")
-    (servings 8)
-    (price 17.89)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-apples baking-powder firmly-brown-sugar butter cream-cheese eggs flour granulated-sugar ground-cinnamon pecans salt baking-apples-are-apples-that-have-a-sweet-tart-balance-and-hold-their-shape-when vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_651974] of ONTOLOGY::Recipe
     (title "Mini Red Velvet Whoopie Pies")
@@ -22739,39 +15136,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_663348] of ONTOLOGY::Recipe
-    (title "The Ultimate Frozen Coconut ‘Ice Cream’ with Hard Shell Chocolate Sauce")
-    (servings 3)
-    (price 39.22)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients coconut-milk ice-tray bananas chocolate-chips coconut-oil coconut)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633101] of ONTOLOGY::Recipe
-    (title "Autumn Pumpkin Cake")
-    (servings 12)
-    (price 2.79)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients pumpkin brown-rice-flour coconut-milk raisins agave-syrup)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_637744] of ONTOLOGY::Recipe
-    (title "Cherry Coke Float Cupcakes With Chocolate Shell")
-    (servings 12)
-    (price 4.93)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients baking-soda buttermilk ice-cream-chocolate-shell coca-cola cocoa-powder egg flour maraschino-cherries maraschino-cherry-syrup salt sugar butter vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_639182] of ONTOLOGY::Recipe
     (title "Chocolate Quark Cake")
     (servings 12)
@@ -22780,28 +15144,6 @@
     (meal_types dessert)
     (restrictions halal)
     (ingredients baking-powder bittersweet-chocolate butter butter cake-flour cocoa-powder eggs flour heavy-cream espresso espresso-powder quark salt sugar sugar chocolate chocolate vanilla-extract vanilla-extract water egg)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665540] of ONTOLOGY::Recipe
-    (title "Yogurt Cake")
-    (servings 8)
-    (price 8.23)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder baking-soda eggs flour full-fat-yogurt nutmeg olive-oil salt sugar vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646825] of ONTOLOGY::Recipe
-    (title "Holiday Cookies")
-    (servings 24)
-    (price 1.09)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions no-restrictions)
-    (ingredients flour walnuts-ground-in-food-processor baking-powder sugar butter eggs vanilla cherry-gelatin)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -22838,83 +15180,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_636324] of ONTOLOGY::Recipe
-    (title "Brownie Cake gluten free, dairy free")
-    (servings 6)
-    (price 24.82)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegetarian)
-    (ingredients earth-balance-soy-free-spread eggs cane-sugar chocolate vanilla-paste espresso-powder flour-blend cocoa-powder coconut-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636970] of ONTOLOGY::Recipe
-    (title "Caramel Almond Berry Trifle")
-    (servings 10)
-    (price 6.07)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher)
-    (ingredients almond-extract berries mrs-richardsons-butterscotch-caramel-sauce vanilla-pudding milk cool-whip pound-cake)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635561] of ONTOLOGY::Recipe
-    (title "Blueberry-Lavender Sauce and Ginger Snap Ice Cream Cups")
-    (servings 12)
-    (price 7.85)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions kosher)
-    (ingredients berries lavender-buds sugar cornstarch lemon-juice salt ginger-snap-cookies butter sugar salt ice-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636315] of ONTOLOGY::Recipe
-    (title "Brown Sugar Sponge Cookie with Chocolate Covered Caramels")
-    (servings 24)
-    (price 0.46)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients all-purpose-flour baking-powder brown-sugar eggs lemon-zest salt vanilla-extract rolos)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641650] of ONTOLOGY::Recipe
-    (title "Dried Cherry-Almond Scones")
-    (servings 16)
-    (price 3.13)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients almond-extract almonds baking-powder baking-soda cherries eggs flour salt sugar butter buttermik buttermik)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649755] of ONTOLOGY::Recipe
-    (title "Lemon Quick Bread")
-    (servings 15)
-    (price 1.94)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal)
-    (ingredients greek-non-fat-yogurt baking-powder baking-soda egg-substitute granulated-sugar lemon-extract lemon-juice lemon-peel salt sugar vanilla-extract pastry-flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641308] of ONTOLOGY::Recipe
-    (title "Decadent Black Forest Cake")
-    (servings 20)
-    (price 2.59)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher)
-    (ingredients duncan-hines-devils-food-cake comstock-cherry-pie-filling cream-cheese powdered-sugar whipping-cream almond-extract simple-syrup-glaze water sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_637513] of ONTOLOGY::Recipe
     (title "Cheddar Pecan Cocktail Biscotti")
     (servings 36)
@@ -22948,94 +15213,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_632625] of ONTOLOGY::Recipe
-    (title "Apple-Cheesecake Tart with Salted Caramel Glaze")
-    (servings 8)
-    (price 19.34)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter double-cream egg flour granny-smith-apples ground-almonds ground-cinnamon juice-of-lemon full-fat-cream-cheese sugar sea-salt sugar vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644666] of ONTOLOGY::Recipe
-    (title "Ginger-Lemon Panna Cotta with Brandied Berry Sauce")
-    (servings 6)
-    (price 48.05)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free)
-    (ingredients vegetable-oil milk heavy-cream vanilla-bean ginger-tea-bags lemon-juice warm-water gelatin granulated-sugar crme-frache lemon-peel lemon-zest sauce blackberries blueberries golden-brown-sugar brandy ground-ginger ground-cardamon cinnamon panna-cotta panna-cotta)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640279] of ONTOLOGY::Recipe
-    (title "Crab Cakes Rockefeller")
-    (servings 6)
-    (price 57.69)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
-    (restrictions no-restrictions)
-    (ingredients lump-crab-claw-meat bell-pepper green-onions bread-crumbs honey chili-powder butter bacon baby-spinach watercress-stems garlic salt-pepper)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_634431] of ONTOLOGY::Recipe
-    (title "Basil Lime White Bean Hummus")
-    (servings 8)
-    (price 11.23)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cannellini-beans garlic basil lime-zest juice-from-lime olive-oil water salt pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654430] of ONTOLOGY::Recipe
-    (title "Pan Seared Fresh Maine Diver Scallops Creamy Avocado Champagne Grape Salad Teriyaki Cabernet Butter Sauce")
-    (servings 4)
-    (price 98.21)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free)
-    (ingredients avocado cabernet champagne-grapes maui-maid-teriyaki olive-oil saltpepper u10-maine-diver-scallops butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663092] of ONTOLOGY::Recipe
-    (title "Thai Coconut Curry Soup")
-    (servings 6)
-    (price 32.14)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients coconut-milk worth-of-water curry-paste ginger-paste snow-peas string-beans carrot of-thai-basil-leaves lime-juice soy-sauce a-few-es-of-sesame-oil chili-powder tofu salt bell-pepper pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661036] of ONTOLOGY::Recipe
-    (title "Spicy Carrot Amaranth Soup")
-    (servings 3)
-    (price 73.51)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients olive-oil cinnamon-stick sage-leaves garlic onions baby-carrots vegetable-broth cayenne-pepper amaranth salt coconut-milk hemp-seeds)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663942] of ONTOLOGY::Recipe
-    (title "Tuna Noodle Casserole: Mommie Cooks")
-    (servings 8)
-    (price 19.65)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher)
-    (ingredients bread-crumbs butter mushrooms peas tuna celery-sticks cheese chicken-broth egg-noodles flour garlic milk onion parsley pimientos salt-and-pepper sherry)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_644570] of ONTOLOGY::Recipe
     (title "Ginger Cookies- gluten free, soy free, vegan")
     (servings 20)
@@ -23046,17 +15223,6 @@
     (ingredients brown-sugar coconut-oil molasses chunky-applesauce flour ground-cinnamon ground-ginger ground-cloves pumpkin-spice-blend baking-soda)
     (seasons any-season)
     (season_text "Fall"))
-
-  ([Recipe_662604] of ONTOLOGY::Recipe
-    (title "Sweet Potato, Kale & White Bean Soup")
-    (servings 4)
-    (price 45.2)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients grapeseed-oil sweet-potato onion kale chicken-broth white-wine cannellini-beans oregano thyme salt-ground-pepper)
-    (seasons winter)
-    (season_text "Winter"))
 
   ([Recipe_651958] of ONTOLOGY::Recipe
     (title "Mini frittatas with quinoa")
@@ -23080,50 +15246,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_645821] of ONTOLOGY::Recipe
-    (title "Grilled Potato Skins")
-    (servings 12)
-    (price 4.32)
-    (wine_pairing "No wine pairing")
-    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free)
-    (ingredients baking-potatoes bacon finely-chopped-ham picante-sauce cheddar-cheese cream butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637473] of ONTOLOGY::Recipe
-    (title "Chavrie Caramelized Red Onion Tarts")
-    (servings 12)
-    (price 4.55)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter dessert snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients goat-cheese grape-jelly onions red-wine-vinegar sugar butter vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639620] of ONTOLOGY::Recipe
-    (title "Classic New England Crab Cakes")
-    (servings 6)
-    (price 51.06)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
-    (restrictions no-restrictions)
-    (ingredients onion celery butter lump-crab-meat bread-crumbs mayonnaise seafood-seasoning worcestershire-sauce hot-sauce parsley)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632252] of ONTOLOGY::Recipe
-    (title "Alouette® Stuffed Mushroom Caps")
-    (servings 8)
-    (price 18.79)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients seasoned-bread-crumbs mushroom-caps alouette-spinach-artichoke-spread)
-    (seasons spring)
-    (season_text "Spring"))
-
   ([Recipe_647623] of ONTOLOGY::Recipe
     (title "Hummus & Ham Tortilla")
     (servings 1)
@@ -23146,39 +15268,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_716422] of ONTOLOGY::Recipe
-    (title "Caramelized Onion Dip")
-    (servings 2)
-    (price 56.63)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients caramelized-onions chives greek-yogurt salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715419] of ONTOLOGY::Recipe
-    (title "Slow Cooker Spicy Hot Wings")
-    (servings 4)
-    (price 25.36)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients brown-sugar cayenne-pepper regular-chicken-wings garlic louisiana-hot-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644376] of ONTOLOGY::Recipe
-    (title "Garlic-Butter Naan")
-    (servings 4)
-    (price 10.18)
-    (wine_pairing "No wine pairing")
-    (meal_types fingerfood antipasti bread starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients ice-water nonfat-greek-yogurt canola-oil egg-yolk flour sugar rapid-rise-yeast salt butter garlic)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_638533] of ONTOLOGY::Recipe
     (title "Chile Underground's Texas Caviar")
     (servings 8)
@@ -23190,17 +15279,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_650901] of ONTOLOGY::Recipe
-    (title "Maple Glazed Bacon Wrapped Pork Tenderloin")
-    (servings 4)
-    (price 42.57)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free)
-    (ingredients pork-tenderloins kosher-salt coarsely-ground-pepper bacon maple-syrup toothpicks toothpicks)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_642863] of ONTOLOGY::Recipe
     (title "Filipino Egg Rolls")
     (servings 1)
@@ -23209,17 +15287,6 @@
     (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions dairy-free halal)
     (ingredients ground-beef shrimps onion carrots garlic salt pepper egg oyster-sauce fish-sauce lumpia-wrappers olive-oil vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631751] of ONTOLOGY::Recipe
-    (title "Hot Crab Dip")
-    (servings 4)
-    (price 34.29)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions no-restrictions)
-    (ingredients cream-cheese milk crabmeat onion horseradish breadcrumbs butter salt)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -23245,61 +15312,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_648709] of ONTOLOGY::Recipe
-    (title "Kale & chickpea stew with cumin, smoked paprika and lime")
-    (servings 6)
-    (price 13.6)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients a-bunch-of-kale chickpeas sweet-potatoes olive-oil shallot garlic basil pepper-flakes beer golden-raisins paprika cumin butter juice-of-lime salt-pepper)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_642283] of ONTOLOGY::Recipe
-    (title "Eggplant Curry")
-    (servings 4)
-    (price 69.14)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients cayenne-pepper coconut-milk cumin eggplants garlic ginger greek-yogurt ground-coriander heirloom-tomatoes pepper-flakes salt turmeric onions)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642878] of ONTOLOGY::Recipe
-    (title "Finger Lickin' Good Stewed Quince Dessert")
-    (servings 6)
-    (price 47.82)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free vegan vegetarian)
-    (ingredients quinces unrefined-oil rice-flour sucanat cinnamon ground-cloves raisins vanilla-extract rum-extract sea-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633330] of ONTOLOGY::Recipe
-    (title "Bacon Wrapped Breadsticks")
-    (servings 4)
-    (price 26.66)
-    (wine_pairing "No wine pairing")
-    (meal_types fingerfood side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions no-restrictions)
-    (ingredients bacon cayenne-pepper garlic-salt long-breadsticks nutmeg parmesan you-will-also-need-parchment-paper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641907] of ONTOLOGY::Recipe
-    (title "Easy Chicken Wings")
-    (servings 4)
-    (price 21.46)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients chicken-wings-drumettes ketchup smoky-bbq-sauce honey sesame-oil capsico-sauce oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_632826] of ONTOLOGY::Recipe
     (title "Asian Dumplings")
     (servings 1)
@@ -23311,116 +15323,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_638603] of ONTOLOGY::Recipe
-    (title "Chilled Lettuce Soup")
-    (servings 2)
-    (price 99.62)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free)
-    (ingredients chicken-stock bacon basil tarragon lettuce olive-oil potato shallot yogurt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_647501] of ONTOLOGY::Recipe
-    (title "Hot Pepper Pumpkin Soup")
-    (servings 4)
-    (price 71.24)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients vegetable-stock pumpkin-puree onion coriander-leafs garlic oregano peppercorns heavy-whipping-cream butter)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_638693] of ONTOLOGY::Recipe
-    (title "Chinese Potstickers")
-    (servings 24)
-    (price 1.09)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free)
-    (ingredients ground-pork water-chestnuts sea-salt sugar ground-pepper soy-sauce sesame-oil shaoxing-huatiao-wine scallions dumpling-wrappers flour-to-dust vegetable-oil water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654735] of ONTOLOGY::Recipe
-    (title "Party Rice Balls")
-    (servings 24)
-    (price 0.9)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher)
-    (ingredients rice water salt eggs romano-cheese parsley-or breadcrumbs oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662276] of ONTOLOGY::Recipe
-    (title "Sun Dried Tomato and Herb Baked Eggs")
-    (servings 1)
-    (price 90.05)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti morning-meal starter brunch snack appetizer breakfast antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegetarian)
-    (ingredients eggs basil parsley olive-oil sundried-tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632862] of ONTOLOGY::Recipe
-    (title "Asian Pear and Gorgonzola Salad With Pomegranate Vinaigrette")
-    (servings 20)
-    (price 2.76)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients greens asian-pears pomegranate-seeds gorgonzola pistachio-nuts pomegranate-seeds red-wine-vinegar sugar shallots extra-virgin-olive-oil kosher-salt-and-cracked-pepper)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_658536] of ONTOLOGY::Recipe
-    (title "Roasted Cauliflower and Leek Soup")
-    (servings 4)
-    (price 39.59)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegetarian)
-    (ingredients cauliflower leeks garlic olive-oil chicken-broth kosher-salt ground-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654738] of ONTOLOGY::Recipe
-    (title "Party Sausage Bites With Pine Nuts")
-    (servings 48)
-    (price 0.66)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher)
-    (ingredients butter onion garlic-cloves mild thyme basil dill pine-nuts salt puff-pastry parmesan egg sesame-seeds)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633194] of ONTOLOGY::Recipe
-    (title "Azteca Soup")
-    (servings 6)
-    (price 29.54)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients avocado basil-in-ribbons basil-shreds canned-tomatoes celery-stalks chili-powder cumin corn garlic jalapeno-pepper lime-juice nacho-chips olive-oil onions cream vegetable-stock)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_640237] of ONTOLOGY::Recipe
-    (title "Couscous Salad With Roasted Vegetables")
-    (servings 10)
-    (price 28.24)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients regular-couscous chicken-stock olive-oil sun-dried-tomatoes basil-pesto balsamic-vinegar salt-and-pepper feta-cheese sized-zucchinis to-3-sized-squashes bell-pepper brown-mushrooms garlic-cloves butternut onions asparagus olive-oil balsamic-vinegar)
-    (seasons spring)
-    (season_text "Spring"))
-
   ([Recipe_715432] of ONTOLOGY::Recipe
     (title "Buffalo Ranch Chicken Dip")
     (servings 7)
@@ -23429,39 +15331,6 @@
     (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
     (restrictions gluten-free halal kosher)
     (ingredients chicken-breasts cream-cheese green-onions louisiana-hot-sauce paul-prudhommes-poultry-seasoning ranch-dressing sharp-cheddar-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651979] of ONTOLOGY::Recipe
-    (title "Mini Spinach and Feta Quiches")
-    (servings 24)
-    (price 1.61)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti morning-meal starter brunch snack appetizer breakfast antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients eggs half-and-half garlic spinach onion basil cheddar-cheese feta-cheese salt-and-pepper)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_659270] of ONTOLOGY::Recipe
-    (title "Sardine Croquettes (Croquetas De Sardinas)")
-    (servings 14)
-    (price 2.18)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher)
-    (ingredients sardines cassava parmesan-cheese egg-yolks egg-whites baking-powder bread-crumbs cilantro oil salt-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664697] of ONTOLOGY::Recipe
-    (title "Vegetarian Scotch Eggs")
-    (servings 4)
-    (price 14.71)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher vegetarian)
-    (ingredients breadcrumbs dessert-spoon-chives eggs dessert-spoon-flat-leaf-parsley salt-and-pepper vegetable-oil)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -23476,61 +15345,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_652038] of ONTOLOGY::Recipe
-    (title "Minted Pea & Spinach Soup")
-    (servings 6)
-    (price 16.21)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients chicken-stock cream mint milk peas potatoes salt-pepper spinach sugar water yoghurt)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_661121] of ONTOLOGY::Recipe
-    (title "Spicy Lemongrass Soup")
-    (servings 4)
-    (price 78.22)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients lemongrass peppers ginger garlic vegetable-broth coconut-milk-if-you-can-find-it tofu-cubes snow-peas mushrooms rice-noodles juice-of-lime ginger)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636602] of ONTOLOGY::Recipe
-    (title "Butternut Squash Soup (In Half An Hour!)")
-    (servings 8)
-    (price 15.56)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free vegan vegetarian)
-    (ingredients butternut-squash black-eyed-peas collard-greens quinoa kombu nutmeg olive-oil salt-and-pepper vegetable-broth onions)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644859] of ONTOLOGY::Recipe
-    (title "Gluten Free Vegetarian Spring Rolls With Thai-Style Peanut Sauce")
-    (servings 15)
-    (price 1.4)
-    (wine_pairing "No wine pairing")
-    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher)
-    (ingredients rice-vermicelli carrots cabbage scallions basil-leaves mint-leaves cilantro peanuts ginger soy-sauce lime-juice sesame-seed-oil es-round-spring-roll-wrappers warm-water sugar creamy-peanut-butter soy-sauce coconut-milk lime-juice chili-paste-depending-on-your-taste-pref garlic)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_647631] of ONTOLOGY::Recipe
-    (title "Hummus Soup")
-    (servings 40)
-    (price 0.63)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients water olive-oil chickpeas sesame-tahini garlic lemons cumin tumeric curry-powder cinnamon sea-salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_655438] of ONTOLOGY::Recipe
     (title "Pear Salad With Walnuts and Blue Cheese")
     (servings 6)
@@ -23542,28 +15356,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_632788] of ONTOLOGY::Recipe
-    (title "Arugula Salad With Pomegranate, Avocado and Goat Cheese")
-    (servings 2)
-    (price 113.16)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients avocado baby-arugula balsamic-vinegar-or cilantro goat-cheese olive-oil pomegranate-molasses seedsarils-from-1-pomegranate course-sea-salt-and-pepper)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_716406] of ONTOLOGY::Recipe
-    (title "Asparagus and Pea Soup: Real Convenience Food")
-    (servings 2)
-    (price 89.19)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients asparagus evoo garlic onion peas vegetable-broth)
-    (seasons spring)
-    (season_text "Spring"))
-
   ([Recipe_716298] of ONTOLOGY::Recipe
     (title "How to Make Party Jollof Rice")
     (servings 3)
@@ -23572,83 +15364,6 @@
     (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions dairy-free gluten-free halal kosher)
     (ingredients bay-leaves curry-powder garlic cubes-of-maggi bulb-of-onion pepper rice roma-tomatoes salt scotch-bonnet-peppers thyme can-of-tomato-puree cooking-spoons-of-vegetable-oil water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636874] of ONTOLOGY::Recipe
-    (title "Candy Cane Chocolate Marshmallows")
-    (servings 24)
-    (price 0.74)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher)
-    (ingredients candy-canes chocolate marshmallows milk-chocolate)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639512] of ONTOLOGY::Recipe
-    (title "Citrus Arugula Salad with Seared Scallops")
-    (servings 2)
-    (price 80.03)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients arugula cara-cars-orange radish persian-cucumber green-onion salt scallops)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_661447] of ONTOLOGY::Recipe
-    (title "Square Deviled Eggs")
-    (servings 6)
-    (price 4.99)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free)
-    (ingredients eggs cream-cheese ham)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642807] of ONTOLOGY::Recipe
-    (title "Fig, Apple, and Arugula Salad")
-    (servings 1)
-    (price 486.36)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients roquette-arugula-lettuce figs an-apple peppers dressing olive-oil maple-syrup rosemary sumac-powder)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651409] of ONTOLOGY::Recipe
-    (title "Mediterranean Herb Dip")
-    (servings 4)
-    (price 150.21)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions gluten-free halal)
-    (ingredients pepper bar-of-cream-cheese feta-cheese basil flat-leaf-parsley garlic-cloves tabasco-hot-sauce roasted-peppers salt sun-tomatoes worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632957] of ONTOLOGY::Recipe
-    (title "Asparagus With Black Pepper-Pecorino Zabaglione")
-    (servings 4)
-    (price 61.92)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher)
-    (ingredients asparagus-spears egg-yolks flat-leaf-parsley-leaves heavy-cream marsala mustard olive-oil pecorino-romano-cheese pepper shallot sherry-vinegar)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_645988] of ONTOLOGY::Recipe
-    (title "Guacamole")
-    (servings 4)
-    (price 21.8)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients haas-avocados onion jalapeno-pepper cilantro salt pepper lime-juice basil oregano)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -23696,39 +15411,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_654835] of ONTOLOGY::Recipe
-    (title "Pasta e Fagioli (Pasta and Beans)")
-    (servings 6)
-    (price 8.51)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher)
-    (ingredients olive-oil cannellini-beans vegetable-stock water tomatoes onion garlic-clove elbow-macaroni parmesan-cheese pepper-flakes salt pepper parsley)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645730] of ONTOLOGY::Recipe
-    (title "Grilled Guacamole with Pistachios")
-    (servings 8)
-    (price 17.2)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients avocados cumin ear-of-corn cilantro garlic ground-pepper ground-pepper jalapeo-peppers lime olive-oil-to-brush-vegetables onion pistachios salt tomatoes)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_661048] of ONTOLOGY::Recipe
-    (title "Spicy Chicken Corn Dogs with Homemade Chili Sauce")
-    (servings 8)
-    (price 20.16)
-    (wine_pairing "No wine pairing")
-    (meal_types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients ancho-chili-pepper prunes beef-broth fire-roasted-tomatoes tomato-paste onion molasses garlic pumpkin-seeds ground-cumin oregano masa-harina cornmeal rice-flour baking-powder brown-sugar kosher-salt eggs juice-of-lime rice-milk canola-oil spicy-chicken-sausage-links)
-    (seasons any-season)
-    (season_text "Fall"))
-
   ([Recipe_632085] of ONTOLOGY::Recipe
     (title "Allergy-Free Thin Mints")
     (servings 100)
@@ -23737,138 +15419,6 @@
     (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions dairy-free gluten-free halal)
     (ingredients baking-powder baking-soda tablespoons-hersheys-special-dark-cocoa-powder tablespoons-dairy-free dairy-free ener-g-egg-replacer my-basic-flour-mix granulated-sugar peppermint-extract salt applesauce vanilla-extract xanthan-gum)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661864] of ONTOLOGY::Recipe
-    (title "Strawberry Pretzel Salad")
-    (servings 4)
-    (price 57.15)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free)
-    (ingredients arugula avocado bacon balsamic-vinegar cucumber flax-seed-oil spring-greens bell-pepper pretzels salt strawberries grain-mustard)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652332] of ONTOLOGY::Recipe
-    (title "Monastery soup")
-    (servings 4)
-    (price 39.2)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients potatoes onion garlic sunflower-oil carrots leek celery broad-beans vegetable-stock parsley salt-and-pepper)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_641014] of ONTOLOGY::Recipe
-    (title "Cucumber Mint Tea Sandwiches")
-    (servings 8)
-    (price 6.12)
-    (wine_pairing "No wine pairing")
-    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bread cucumber wasabi-maple-spread pepper-grinder mint-leaves dill vegenaise maple-syrup wasabi-powder pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662243] of ONTOLOGY::Recipe
-    (title "Summer Rolls")
-    (servings 6)
-    (price 24.43)
-    (wine_pairing "No wine pairing")
-    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal kosher)
-    (ingredients avocado cucumber cilantro garlic lemon-grass pineapple bell-pepper rice-paper vermicelli sesame-oil soy-sauce sugar spicy-tofu sambal-oelek sambal-oelek)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652919] of ONTOLOGY::Recipe
-    (title "Nachos Grande")
-    (servings 4)
-    (price 51.3)
-    (wine_pairing "No wine pairing")
-    (meal_types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients canned-tomatoes cheddar-cheese chili-powder corn-oil garlic-cloves bell-pepper chili ground-cumin onion paprika paprika-to-garnish refried-beans tortilla-chips water)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_636295] of ONTOLOGY::Recipe
-    (title "Brown Rice Vegetable Pulao")
-    (servings 3)
-    (price 22.74)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients brown-basmati-rice carrot celery-stalks chilly lentils onion orange-juice salt-and-pepper spring-onion-including-the-part vegetable-oil vegetable-stock almonds to-garnish)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658503] of ONTOLOGY::Recipe
-    (title "Roasted Beet Hummus")
-    (servings 10)
-    (price 4.13)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients roasted-beets chickpeas garlic ground-cumin juice-of-lemon olive-oil salt tahini-sesame-seed-paste)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641066] of ONTOLOGY::Recipe
-    (title "Curried Chicken Roll-Ups")
-    (servings 4)
-    (price 34.26)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients chicken-breast cucumber bell-pepper celery-stalk green-onion mayonnaise lime-juice curry-paste garlic-powder paprika chili-powder salt-and-pepper grain-tortillas lettuce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665306] of ONTOLOGY::Recipe
-    (title "Wholemeal Steam Bun")
-    (servings 16)
-    (price 0.62)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal kosher)
-    (ingredients double-action-baking-powder yeast pau-flour salt shortening sugar water wholemeal-flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652848] of ONTOLOGY::Recipe
-    (title "My Drunken Fish Fillet")
-    (servings 2)
-    (price 52.48)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher)
-    (ingredients fish salt-to-fillet-fish ground-pepper-to-fillet-fish rice-wine beer eggs-the-egg-yolk-from all-purpose-flour-and-a-little-more salt oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660161] of ONTOLOGY::Recipe
-    (title "Simply Bean Soup")
-    (servings 1)
-    (price 763.95)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients butter onion garlic s-oz-cans-beans basil rosemary thyme white-wine chicken-broth sherry salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_647799] of ONTOLOGY::Recipe
-    (title "Indian Butter Chicken")
-    (servings 48)
-    (price 0.34)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher)
-    (ingredients butter chicken-breasts chicken-broth garam-masala garlic ginger lemon oil yogurt salt-and-pepper cream tomatoes)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -23927,17 +15477,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_656329] of ONTOLOGY::Recipe
-    (title "Pizza bites with pumpkin")
-    (servings 4)
-    (price 48.78)
-    (wine_pairing "No wine pairing")
-    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients pumpkin olive-oil feta-cheese mozzarella eggs oregano parsley garlic)
-    (seasons any-season)
-    (season_text "Fall"))
-
   ([Recipe_635297] of ONTOLOGY::Recipe
     (title "Bleu Cheese Stuffed Wine Cherries With Honeycomb")
     (servings 8)
@@ -23960,28 +15499,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_659581] of ONTOLOGY::Recipe
-    (title "Scotch Eggs")
-    (servings 8)
-    (price 10.37)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal)
-    (ingredients bulk-sausage corn-meal eggs)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_665041] of ONTOLOGY::Recipe
-    (title "Watermelon, Feta And Mint Salad")
-    (servings 6)
-    (price 31.99)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients clear-honey cucumber curly-leaf-lettuce feta-cheese mint lemon olive-oil bell-pepper salt watermelon)
-    (seasons summer)
-    (season_text "Summer"))
-
   ([Recipe_658753] of ONTOLOGY::Recipe
     (title "Roma Tomato Bruschetta")
     (servings 4)
@@ -23993,39 +15510,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_658607] of ONTOLOGY::Recipe
-    (title "Roasted Mediterranean Vegetable Soup")
-    (servings 6)
-    (price 32.61)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients oil tomatoes bell-peppers zucchini garlic-cloves onion thyme vegetable-stock non-dairy-creamer-like-mimiccreme salt-and-pepper basil-leaves)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_636581] of ONTOLOGY::Recipe
-    (title "Butternut Squash and Zucchini Lasagna-Gluten free, Vegan")
-    (servings 8)
-    (price 14.27)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal kosher)
-    (ingredients butternut-squash zucchini tinkyada-rice-lasagna-sheets daiya-wedge sage-leaves earth-balance-coconut-spread brown-rice-flour coconut-milk almond-milk kosher-salt pepper thyme ground-cinnamon ground-nutmeg ground-sage ground-cayenne arrowroot water olive-oil daiya daiya)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663500] of ONTOLOGY::Recipe
-    (title "Tofu Chickpeas Lettuce Wraps")
-    (servings 8)
-    (price 11.84)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients carrots chickpeas chilies cilantro garlic ginger-paste soy-sauce maple-syrup olive-oil salt tofu warm-water white-of-green-onions sesame-seeds vinegar)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_632075] of ONTOLOGY::Recipe
     (title "All Day Simple Slow-Cooker FALL OFF the BONE Ribs")
     (servings 4)
@@ -24034,28 +15518,6 @@
     (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions dairy-free gluten-free)
     (ingredients slabs-of-pork-ribs broth bbq-sauce-i-didnt-need-that-much-but-its-what-i-had-and-didnt-measure-but-it-leaves-extra salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640927] of ONTOLOGY::Recipe
-    (title "Crumbled Feta Couscous Salad")
-    (servings 8)
-    (price 9.46)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients couscous vegetable-stock quality-olive-oil salt roma-tomato onion mint parsley balsamic-vinegar feta-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636292] of ONTOLOGY::Recipe
-    (title "Brown Rice Mushroom Pilaf")
-    (servings 4)
-    (price 16.34)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients onion brown-rice mushrooms unrefined-sunflower-oil water sea-salt ground-pepper)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -24081,28 +15543,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_665550] of ONTOLOGY::Recipe
-    (title "Yogurt Marinated Lamb Skewers")
-    (servings 12)
-    (price 36.92)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients veg-oil cumin leg-of-lamb nutmeg paprika yogurt salt tumeric)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664975] of ONTOLOGY::Recipe
-    (title "Wasabi & Honey Glazed-Salmon")
-    (servings 2)
-    (price 254.16)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients ginger-root honey soy-sauce mirin rice-vinegar salmon-fillets wasabi-paste)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_654435] of ONTOLOGY::Recipe
     (title "Pan Seared Salmon")
     (servings 2)
@@ -24114,28 +15554,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_637932] of ONTOLOGY::Recipe
-    (title "Chicken and White Bean Chili")
-    (servings 9)
-    (price 18.67)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients chicken water chicken-soup-base bay-leaf onion bell-pepper garlic-cloves flour 5-can-cannellini-beans mild-chili-powder ground-coriander ground-cumin coriander heavy-whipping-cream soured-cream bell-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650632] of ONTOLOGY::Recipe
-    (title "Mahi-Mahi With Lemon Caper Sauce")
-    (servings 4)
-    (price 165.26)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher)
-    (ingredients mahi-mahi salt-and-pepper butter shallot white-wine vegetable-broth juice-of-lemon lemon-rind capers)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_653593] of ONTOLOGY::Recipe
     (title "Old Fashioned Mac and Cheese")
     (servings 2)
@@ -24144,83 +15562,6 @@
     (meal_types side-dish lunch main-course main-dish dinner)
     (restrictions kosher vegetarian)
     (ingredients elbow-macaroni block-of-cheddar-cheese milk butter flour salt pepper seasoned-bread-crumbs)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715538] of ONTOLOGY::Recipe
-    (title "What to make for dinner tonight?? Bruschetta Style Pork & Pasta")
-    (servings 5)
-    (price 39.11)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients bow-tie-pasta parmigiano-reggiano recipe-makers-chicken-bruschetta-pasta pork-chops)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645634] of ONTOLOGY::Recipe
-    (title "Grilled Chicken Banh Mi")
-    (servings 6)
-    (price 43.08)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients fish-sauce lime-juice sugar garlic jalapeno salt chicken-breasts tap-water rice-vinegar salt pepper carrots daikon-radishes sub-rolls mayonnaise cucumber cilantro-leaves jalapeno)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640921] of ONTOLOGY::Recipe
-    (title "Stuffed Artichoke Main Dish")
-    (servings 2)
-    (price 178.93)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients artichoke chicken-breasts garlic lemon maple-syrup olive-olive-oil parmesan bell-pepper potato rosemary salt mozzarella-cheese)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_660835] of ONTOLOGY::Recipe
-    (title "Spaghetti With Pesto Trapanese")
-    (servings 6)
-    (price 24.25)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients spaghetti almonds pine-nuts extra-virgin-olive-oil garlic-cloves tomatoes basil salt-and-pepper pecorino)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641842] of ONTOLOGY::Recipe
-    (title "Easy Beef Bourguignon")
-    (servings 4)
-    (price 94.38)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients beef-chuck carrots onion button-mushrooms red-wine beef-broth thyme rosemary cayenne-pepper all-purpose-flour extra-virgin-olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632590] of ONTOLOGY::Recipe
-    (title "Apple Roasted Pork Loin")
-    (servings 6)
-    (price 59.08)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients pork-loin granny-smith-apples olive-oil garlic honey apple-cider-vinegar pepper sea-salt five-spice-powder nutmeg)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663992] of ONTOLOGY::Recipe
-    (title "Turkey BLT with Creamy Dijon Mustard")
-    (servings 4)
-    (price 66.72)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients dijon-mustard bread olive-oil romaine-heart-leaves salad-dressing swiss-cheese tomatoes turkey-bacon vidalia-onion)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -24246,39 +15587,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_656738] of ONTOLOGY::Recipe
-    (title "Pork chops with apples and onions")
-    (servings 4)
-    (price 62.98)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients pork-chops salt-and-ground-pepper sunflower-oil butter onion apples white-wine)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635291] of ONTOLOGY::Recipe
-    (title "Blast Of Color Mexican Stuffed Bell Peppers")
-    (servings 4)
-    (price 52.75)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients bell-pepper black-beans rotisserie-chicken-breast chile chili-seasoning brown-rice corn-kernels garlic cheddar-cheese onion roma-tomato cream)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_665734] of ONTOLOGY::Recipe
-    (title "Zucchini Chicken Omelette")
-    (servings 2)
-    (price 36.1)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course morning-meal brunch main-dish breakfast dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients eggs water zucchini salt-and-pepper oil milanese-chicken-left-over)
-    (seasons summer)
-    (season_text "Summer"))
-
   ([Recipe_639850] of ONTOLOGY::Recipe
     (title "Cod with tomatoes, olives and polenta")
     (servings 4)
@@ -24289,61 +15597,6 @@
     (ingredients olives cod-fillets corn-polenta corn-flour wine parsley olive-oil oregano oregano salt salt tomatoes water pepper white-wine)
     (seasons summer)
     (season_text "Summer"))
-
-  ([Recipe_634927] of ONTOLOGY::Recipe
-    (title "Best Potato Cheese Soup in a bread bowl")
-    (servings 8)
-    (price 26.41)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients olive-oil onion garlic chicken-stock water salt potatoes carrots milk heavy-cream butter block-veleveeta-cheese sharp-cheedar-cheese salt-and-pepper garnish-bacon-crumbles parmesean parmesean)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662264] of ONTOLOGY::Recipe
-    (title "summer vegetable pizza")
-    (servings 4)
-    (price 100.29)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients olive-oil onion thyme bell-pepper eggplant garlic-cloves corn-kernels salt pepper refriger-pizza-crust-dough mozzarella-cheese parmigiano-reggiano-cheese cherry-tomatoes basil-leaves)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_654318] of ONTOLOGY::Recipe
-    (title "Pad Se Ew Tofu With Vegetable Noodles")
-    (servings 6)
-    (price 25.2)
-    (wine_pairing "Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal)
-    (ingredients tofu precooked-vegetable-noodles oyster-sauce soy-bean-paste soy-sauce sugar vinegar pepper broccoli bell-pepper bell-pepper carrot roasted-onions garlic-cloves eggs siracha vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662087] of ONTOLOGY::Recipe
-    (title "Stuffed Salmon With Tomato-Olive Tapenade")
-    (servings 2)
-    (price 293.58)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients brie-cheese dill-weed garlic olive-oil olives onion salmon-filets salt-and-pepper spinach tomatoes)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_632017] of ONTOLOGY::Recipe
-    (title "Agedashi Tofu")
-    (servings 1)
-    (price 303.05)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients cornstarch green-onions hoisin-sauce oil silken-tofu)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_660297] of ONTOLOGY::Recipe
     (title "Slow Cooker Poblano Corn Chowder with Chicken and Chorizo")
@@ -24389,61 +15642,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_632749] of ONTOLOGY::Recipe
-    (title "Arroz Con Pollo")
-    (servings 8)
-    (price 20.34)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients butter garlic chicken-breasts cumin coriander turmeric onion bell-pepper chiles tomatoes chicken-broth rice chili-powder salt onion-powder cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643859] of ONTOLOGY::Recipe
-    (title "Frittata with Mushrooms, Thyme, and Parmigiano Cheese")
-    (servings 8)
-    (price 13.0)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course morning-meal brunch main-dish breakfast dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients egg-replacement eggs mushrooms thyme-leaves green-onions ground-pepper half-and-half parmigiano-cheese salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_149425] of ONTOLOGY::Recipe
-    (title "Herb and Cheddar Cordon Bleu")
-    (servings 2)
-    (price 186.84)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients breadcrumbs cheddar-cheese chicken-breasts deli-ham marjoram parsley rosemary egg flour salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649178] of ONTOLOGY::Recipe
-    (title "Lamb & Sweet Potato Pot Pie")
-    (servings 8)
-    (price 37.01)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients bay-leaf pepper butter caraway-seeds celery-stalks cornstarch demi-glace flour flour rosemary thyme garlic ice-water kosher-salt lamb lemon-zest milk olive-oil orange-zest peas crust onion red-wine salt shortening sugar sweet-potatoes water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645624] of ONTOLOGY::Recipe
-    (title "Grilled Chicken & Eggplant Sandwiches")
-    (servings 4)
-    (price 92.13)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients canned-tomatoes chicken-cutlets eggplant basil garlic slivered-kalamata-olives olive-oil oregano provolone-cheese pepper-flakes salt-pepper sub-roll)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_665352] of ONTOLOGY::Recipe
     (title "Wildwood Ovens Bourbon Apple Glazed Cedar Plank Salmon")
     (servings 6)
@@ -24488,17 +15686,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_640311] of ONTOLOGY::Recipe
-    (title "Crab Salad in Avocado Boats")
-    (servings 2)
-    (price 257.9)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients onion mayonnaise hot-sauce-such-as-sriracha cilantro lime-juice ground-cumin lime-zest lump-crab-meat avocado)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_642540] of ONTOLOGY::Recipe
     (title "Falafel Burgers")
     (servings 4)
@@ -24507,28 +15694,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions dairy-free halal kosher vegan vegetarian)
     (ingredients garbanzo-beans chili-powder coriander cumin flour parsley garlic juice-of-lemon pita-pockets onion salt-and-pepper tahini turmeric vegetable-oil water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638071] of ONTOLOGY::Recipe
-    (title "Chicken En Papillote With Basil and Cherry Tomatoes")
-    (servings 1)
-    (price 262.25)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients chicken-breast salt-and-pepper olive-oil onion garlic-clove white-wine to-5-cherry-tomatoes basil garnish-basil-chiffonade)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665398] of ONTOLOGY::Recipe
-    (title "Wintery Vegetable Beef Soup")
-    (servings 8)
-    (price 23.54)
-    (wine_pairing "Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients butter oil beef-chuck stockbrothwater peppered-bacon sweet-potatoes parsnips carrots sticks-celery onion garlic cabbage cabbage thyme parsley eachs-bay-leaves stockbrothwater pepper)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -24543,17 +15708,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_638199] of ONTOLOGY::Recipe
-    (title "Chicken Mulligatawny Soup")
-    (servings 6)
-    (price 41.67)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients apples basmati-rice butter carrots cayenne-pepper celery chicken-stock curry-powder flour ginger lite-coconut-milk onion salt-and-pepper chicken-breast)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_651911] of ONTOLOGY::Recipe
     (title "Minced Beef Curry")
     (servings 2)
@@ -24562,39 +15716,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions dairy-free gluten-free kosher)
     (ingredients mince-beef onion cardamon-pods garlic ginger turmeric-powder coriander-powder cumin-powder chilli-powder garam-masala cumin-seeds tomato-paste peas chilli some-coriander)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645812] of ONTOLOGY::Recipe
-    (title "Grilled Portabella and Poblano Tacos")
-    (servings 4)
-    (price 67.96)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients canola-oil chipotle-powder cilantro cilantro-sprigs corn-tortillas garlic guacamole lime-juice lime-wedges olive-oil poblano-chile portabella-mushrooms onion roma-tomatoes salt salt-and-pepper cheddar-cheese)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_1165787] of ONTOLOGY::Recipe
-    (title "Instant Pot Chili Mac")
-    (servings 6)
-    (price 42.3)
-    (wine_pairing "Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients olive-oil ground-beef onion bell-pepper cayenne-pepper garlic-powder cumin chili-powder pepper pepper oregano chicken-broth tomatoes kidney-beans monterrey-jack-cheese elbow-macaroni)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639836] of ONTOLOGY::Recipe
-    (title "Coconut-Almond Crusted Tilapia")
-    (servings 4)
-    (price 98.3)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients tilapia lemon coconut-milk almond-flour coconut salt pepper ground-ginger mint oil)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -24608,50 +15729,6 @@
     (ingredients quinoa onion kale garlic-cloves olive-oil poached-salmon vegetable-stock salt bell-pepper)
     (seasons winter)
     (season_text "Winter"))
-
-  ([Recipe_648320] of ONTOLOGY::Recipe
-    (title "Jade Buddha Salmon Tartare")
-    (servings 2)
-    (price 348.02)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients salmon green-onion chives cilantro thai-basil ginger lime-zest lime-juice rice-vinegar habanero-sauce-and-chile salt-and-pepper olive-oil-to-coat)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648432] of ONTOLOGY::Recipe
-    (title "Jambalaya Stew")
-    (servings 4)
-    (price 57.58)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients chicken-sausage-links canned-tomatoes onion bell-pepper celery chicken-broth brown-rice garlic cajun-seasoning hot-sauce oregano thyme shrimp)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716430] of ONTOLOGY::Recipe
-    (title "Roasted Cabbage Wedge Salad with Yogurt Gorgonzola Dressing")
-    (servings 4)
-    (price 35.32)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients bacon garlic gorgonzola grape-tomatoes grapeseed-oil cabbage juice-of-lemon greek-yogurt salt-and-pepper scallions scallions)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643428] of ONTOLOGY::Recipe
-    (title "Fresh and Simple Swai Ceviche")
-    (servings 4)
-    (price 66.66)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients avocado chile-garlic-paste cilantro swai-fillets juice-of-lime olive-oil salt-and-pepper shallot tomato)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_634753] of ONTOLOGY::Recipe
     (title "Beer Can Chicken, Country Style Vegetables with Roasted Garlic")
@@ -24697,39 +15774,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_643150] of ONTOLOGY::Recipe
-    (title "Fluffy frittata with spinach")
-    (servings 4)
-    (price 37.0)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course morning-meal brunch main-dish breakfast dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients eggs garlic ground-pepper nutmeg olive-oil parmesan ricotta-cheese salt spinach spinach)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_645680] of ONTOLOGY::Recipe
-    (title "Grilled Chuck Burgers with Extra Sharp Cheddar and Lemon Garlic Aioli")
-    (servings 4)
-    (price 65.08)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients arugula cheddar-cheese garlic-clove ground-chuck lemon-juice mayonnaise olive-oil parsley bell-pepper onion salt kaiser-rolls worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638038] of ONTOLOGY::Recipe
-    (title "Chicken Cordon Bleu With Mushroom Sauce")
-    (servings 4)
-    (price 99.63)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients butter chicken-breasts chicken-broth cooking-oil flour parsley garlic gruyere-cheese half-half ham mushrooms onion panko-bread-crumbs salt tarragon white-wine)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_640349] of ONTOLOGY::Recipe
     (title "Cranberry and Orange Juice Spareribs")
     (servings 4)
@@ -24752,17 +15796,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_663985] of ONTOLOGY::Recipe
-    (title "Turkey and Rice Stuffed Acorn Squash")
-    (servings 6)
-    (price 49.23)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients olive-oil acorn-squash brown-basmati-rice onion garlic ground-turkey baby-bella-mushrooms spinach vegeta-seasoning bell-pepper-flakes salt-and-pepper bread-crumbs)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_650606] of ONTOLOGY::Recipe
     (title "Madras Beef Curry")
     (servings 4)
@@ -24771,105 +15804,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions dairy-free gluten-free kosher)
     (ingredients garam-masala ground-cinnamon curry-powder pepper salt cayenne-pepper brown-sugar garlic-cloves ginger lemon-juice vegetable-oil beef canned-tomatoes green-onions basmati-rice)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_997285] of ONTOLOGY::Recipe
-    (title "Shrimp and Asparagus Foil Packs with Garlic Lemon Butter Sauce")
-    (servings 4)
-    (price 122.05)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal)
-    (ingredients asparagus butter chicken-broth fresh-parsley garlic lemon-juice lemon-zest salt-and-pepper shrimp)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_644140] of ONTOLOGY::Recipe
-    (title "Gambas Al Ajillo")
-    (servings 4)
-    (price 96.4)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients bacon butter cayenne-pepper chili-powder sherry garlic lemon-wedges olive-oil paprika parsley rustic-bread salt shrimp tomato)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660288] of ONTOLOGY::Recipe
-    (title "Slow Cooker Kahlua Pork with Sweet Chili Pineapple Sauce")
-    (servings 12)
-    (price 19.75)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients garlic-chili-sauce hoisin-sauce honey liquid-smoke pineapple-juice pork-butt rice-vinegar regular-sea-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638455] of ONTOLOGY::Recipe
-    (title "Chicken with White Wine Tarragon Cream Sauce")
-    (servings 4)
-    (price 84.19)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free)
-    (ingredients butter mushrooms onion garlic chicken-breasts white-wine worcestershire-sauce cream tarragon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650122] of ONTOLOGY::Recipe
-    (title "Linguine and Clams In Garlic White Wine Sauce")
-    (servings 6)
-    (price 31.7)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients garlic dozens-little-neck-clams white-wine of-pepper-flakes linguine butter parsley oregano-leaves parmigiano-reggiano kosher-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642719] of ONTOLOGY::Recipe
-    (title "Fettuccine With Bacon Mushroom and Peas")
-    (servings 4)
-    (price 41.99)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients bacon cheese condensed-cream-of-mushroom basil fettuccine ground-pepper mushroom oregano-powder peas)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649049] of ONTOLOGY::Recipe
-    (title "Korean Extra Crispy Fried Chicken w Sweet Spicy Glaze")
-    (servings 6)
-    (price 37.82)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients chicken-wings canola-oil garlic soy-sauce thai-chili-peppers ketchup rice-vinegar brown-sugar sesame-oil honey cornstarch water salt-and-pepper sesame-seeds)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641836] of ONTOLOGY::Recipe
-    (title "Easy Baked Parmesan Chicken")
-    (servings 4)
-    (price 85.06)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients chicken-breast-halves egg bread-crumbs pasta-sauce mozzarella-cheese parmesan-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661741] of ONTOLOGY::Recipe
-    (title "Strawberry and Chocolate Chip Panini")
-    (servings 1)
-    (price 273.93)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients strawberries chocolate-chips-handful sourdough-bread olive-oil-and-brush)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -24884,17 +15818,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_636360] of ONTOLOGY::Recipe
-    (title "Brussels Sprout Carbonara with Fettuccini")
-    (servings 4)
-    (price 71.79)
-    (wine_pairing "Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients 5-lb-of-fettuccini-pasta 2-lb-brussels-sprouts shallots garlic oz-bacon-into-pieces eggs lots-of-pepper 5-oz-parmesan-cheese salt tbsp-of-olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_652834] of ONTOLOGY::Recipe
     (title "My Chicken Korma")
     (servings 3)
@@ -24903,17 +15826,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions dairy-free gluten-free kosher)
     (ingredients chicken-breast coconut-milk coriander-powder cumin-powder gingergarlic-paste ground-almond oil poppy-seeds raisins salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663392] of ONTOLOGY::Recipe
-    (title "Three-Cup Chicken")
-    (servings 6)
-    (price 45.47)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients basil bulb-garlic old-ginger rice-wine sesame-oil soy-sauce spring-onions sugar chicken)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -24928,17 +15840,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_633263] of ONTOLOGY::Recipe
-    (title "Bacon & Potato Soup, Gluten & Dairy Free")
-    (servings 6)
-    (price 32.84)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients olive-oil bacon onions garlic-cloves chicken-stock baking-potaotes savoy-cabbage worcestershire-sauce dijon-mustard flat-leaf-parsley garnish garnish)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_157375] of ONTOLOGY::Recipe
     (title "Steamy Creamy Mushroom Risotto")
     (servings 2)
@@ -24947,39 +15848,6 @@
     (meal_types side-dish lunch main-course main-dish dinner)
     (restrictions gluten-free kosher)
     (ingredients butter chicken chicken-broth mushrooms olive-oil onion parmesan bell-pepper rice salt water white-wine)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634486] of ONTOLOGY::Recipe
-    (title "BBQ Beef Brisket")
-    (servings 8)
-    (price 38.36)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients brisket salt-and-pepper oil onion-powder garlic-powder paprika cumin cayenne-pepper smokey-barbecue-sauce brown-sugar cornstarch)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633344] of ONTOLOGY::Recipe
-    (title "Bacon Wrapped Pork Tenderloin")
-    (servings 4)
-    (price 55.08)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients bacon pepper coarse-salt sage garlic-powder pork-tenderloin)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650487] of ONTOLOGY::Recipe
-    (title "Lusciously Lemony Lentil Soup")
-    (servings 1)
-    (price 299.83)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients olive-oil onion garlic tomato-paste cumin salt pepper chili-powder broth carrots pd-lentils lemon-juice cilantro salt)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -24993,28 +15861,6 @@
     (ingredients chicken-breasts lawrys-garlic-salt-and-pepper olive-oil cheddar-cheese mozzarella-cheese la-victoria-chile-verde-enchilada-sauce corn-tortillas cream guacamole tomatoes green-onions)
     (seasons summer)
     (season_text "Summer"))
-
-  ([Recipe_641972] of ONTOLOGY::Recipe
-    (title "Easy Gluten Free Vegetarian Pasta Salad")
-    (servings 4)
-    (price 23.86)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients pasta greek-yogurt orange-zest orange-juice olive-oil grapes cilantro sea-salt pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639672] of ONTOLOGY::Recipe
-    (title "Coastal Avocado Salad with Grapes and Shrimp")
-    (servings 4)
-    (price 72.83)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients pink-bay-shrimp california-grapes celery water-chestnuts green-onions mayonnaise sherry salt pepper sesame-oil mustard sesame-seeds)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_640117] of ONTOLOGY::Recipe
     (title "Corn-Crusted Fish Tacos With Jalapeno-Lime Sauce and Spicy Black Beans")
@@ -25038,72 +15884,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_648986] of ONTOLOGY::Recipe
-    (title "Knockwurst with sauerkraut")
-    (servings 4)
-    (price 62.2)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher)
-    (ingredients onion beer water cornstarch brown-mustard molasses caraway-seed ground-allspice pepper rutabaga knockwurst cooking-apples sauerkraut)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643857] of ONTOLOGY::Recipe
-    (title "Frittata")
-    (servings 2)
-    (price 135.29)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course morning-meal brunch main-dish breakfast dinner)
-    (restrictions gluten-free halal kosher)
-    (ingredients bell-pepper emmantel-cheese long-stem-chives eggs milk various-mushrooms mustard-greens regular-olive-oil chili-flakes shallots dashs-of-soy-sauce tomatoes water saki saki)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639616] of ONTOLOGY::Recipe
-    (title "Classic Matzo Ball Soup")
-    (servings 6)
-    (price 28.26)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients pepper carrots celery-stalks chicken optional-dill eggs dill matzo-meal onion parsley salt salt-and-pepper seltzer-water vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637631] of ONTOLOGY::Recipe
-    (title "Cheesy Bacon Burger with Spicy Chipotle Aiolo Sauce")
-    (servings 4)
-    (price 77.08)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients chipotle-chiles-in-adobo mayonnaise garlic garlic-powder greek-yogurt bell-pepper ground-cumin ground-pepper ground-beef lime-juice onion wedges-of-laughing-cow-swiss-cheese turkey-bacon hamburger-buns)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642332] of ONTOLOGY::Recipe
-    (title "Eggs Florentine")
-    (servings 4)
-    (price 53.03)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter cayenne-pepper eggs muffins kosher-salt lemon-juice spinach water)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_664786] of ONTOLOGY::Recipe
-    (title "Venison Stew")
-    (servings 7)
-    (price 28.86)
-    (wine_pairing "Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients venison-stew-meat baby-carrots-4-stalks-celery-1-can-mushrooms-1-piece-pepper-1-cup-flour-and-3-tbsp-2-tablespoons-bee water potatoes onion baby-carrots celery mushrooms bell-pepper flour-and-3-tbsp beef-bouillon)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_634509] of ONTOLOGY::Recipe
     (title "Bbq Pork Steak")
     (servings 2)
@@ -25115,61 +15895,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_661126] of ONTOLOGY::Recipe
-    (title "Spicy Lump Crab and Avocado Salad")
-    (servings 4)
-    (price 151.21)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal)
-    (ingredients avocados bell-peppered parsley lemon-juice lump-crabmeat mayonnaise salt-and-pepper scallions sriracha-chile-sauce worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634588] of ONTOLOGY::Recipe
-    (title "Beef Braised In Red Wine")
-    (servings 8)
-    (price 34.11)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free)
-    (ingredients bacon beef-chuck-roast carrot celery full-bodied-wine garlic-cloves olive-oil onion pepper rosemary salt thyme tomato-paste water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663987] of ONTOLOGY::Recipe
-    (title "Turkey and Sausage Boulettes")
-    (servings 6)
-    (price 42.62)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients pepper bread breadcrumbs cognac sage egg parsley ground-turkey milk oil olive-oil onion parmesan-cheese salt sausage-meat mushrooms)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_982365] of ONTOLOGY::Recipe
-    (title "Instant Pot Hawaiian Chicken")
-    (servings 4)
-    (price 58.84)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher)
-    (ingredients barbecue-sauce chicken-breasts dole-pineapple-tidbits)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659180] of ONTOLOGY::Recipe
-    (title "Salsa Verde Chicken Tamales")
-    (servings 48)
-    (price 2.9)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients roasted-chicken chicken garlic onion cumin sea-salt olive-oil water salsa-verde tomatillos pablano-chile jalepeno-chile serano-chiles onion bunch-of-cilantro sea-salt tamale-dough i-would-have-liked-to-use-an-version-of-masa-but-i-couldnt-find-one-at-the-time-of-making-the-tamal masa sea-salt palm-shortening chicken-broth salsa-verde)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_648780] of ONTOLOGY::Recipe
     (title "Kate's Coconut-Cashew Basmati Rice Salad")
     (servings 1)
@@ -25178,39 +15903,6 @@
     (meal_types side-dish lunch salad main-course main-dish dinner)
     (restrictions dairy-free gluten-free kosher vegan vegetarian)
     (ingredients basmati-rice cashews coconut ginger garlic green-onion peanut-oil salt-and-pepper coconut-milk water onion)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637297] of ONTOLOGY::Recipe
-    (title "Cauliflower Chickpea Stew")
-    (servings 4)
-    (price 35.06)
-    (wine_pairing " No wine pairing")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients olive-oil brown-rice twice-amount-of-water garlic-gloves tumeric salt-pepper onion canned-tomatoes tomato-puree garlic-gloves cm-ginger chili cinnamon garam-masala paprika sweet-potatoes juice-of-lemon water cauliflower chickpeas)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664501] of ONTOLOGY::Recipe
-    (title "Vegan Taco bowls with Cilantro Lime Cauliflower Rice")
-    (servings 4)
-    (price 64.22)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients avocado-oil cauliflower new-mexico-chili-powder cilantro garlic-powder hass-avocado jalapeno lime-juice onion salt tomato walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646043] of ONTOLOGY::Recipe
-    (title "Gujarati Dry Mung Bean Curry")
-    (servings 4)
-    (price 41.02)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients baking-powder chillies cinnamon-powder coriander cumin-seeds curry-leaves garlic lemon-juice-or mung-beans mustard-seeds salt sugar sunflower-oil tomato turmeric)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -25225,17 +15917,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_652393] of ONTOLOGY::Recipe
-    (title "Moosewood Lentil Soup")
-    (servings 6)
-    (price 12.39)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients pepper brown-sugar carrots celery herbs garlic grapeseed-oil lemon-juice lentils onion red-wine-vinegar salt tomatoes water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_636436] of ONTOLOGY::Recipe
     (title "Bulgur Pilaf With Green Lentils, Served With Caramelized Onions -Mercimekli Bulgur Pilavi")
     (servings 1)
@@ -25244,39 +15925,6 @@
     (meal_types side-dish lunch main-course main-dish dinner)
     (restrictions dairy-free halal kosher vegan vegetarian)
     (ingredients bulgur-wheat preparation-time-minutes-cooking-time-minutes gr8oz-green-lentils salt-and-ground-pepper mild-olive-oil onion pickled-and-peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646738] of ONTOLOGY::Recipe
-    (title "Herbivoracious' White Bean and Kale Soup")
-    (servings 6)
-    (price 13.01)
-    (wine_pairing " No wine pairing")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients olive-oil onion garlic carrot kosher-salt bay-leaves rosemary-leaves the-following-parmesan-rind navy water dinosaur-kale juice-of-lemon)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_642121] of ONTOLOGY::Recipe
-    (title "Easy Tabouleh")
-    (servings 1)
-    (price 463.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur cucumbers flat-leaf-parsley lemon-juice-from-a-lemon olive-oil salt tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652417] of ONTOLOGY::Recipe
-    (title "Moroccan chickpea and lentil stew")
-    (servings 3)
-    (price 42.04)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients broccoli chickpeas carrots celery-stalks lentils couscous cilantro ground-cinnamon ground-cumin ground-turmeric lemon-juice olive-oil paprika salt-and-pepper tomato-paste water)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -25335,50 +15983,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_639535] of ONTOLOGY::Recipe
-    (title "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather")
-    (servings 2)
-    (price 139.39)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans currants green-onions ground-cumin israeli-couscous juice-of-orange olive-oil parsley pecans bell-pepper rice-vinegar salt-and-pepper paprika)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642610] of ONTOLOGY::Recipe
-    (title "Farm Fresh Vegetable Stew")
-    (servings 7)
-    (price 21.03)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients extra-virgin-olive-oil garlic onions peppers carrots celery eggplant green-beans squash zucchini tomatoes thyme-leaves cumin kosher-salt oregano kidney-beans brown-lentils)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663150] of ONTOLOGY::Recipe
-    (title "Thai Savory Brown Fried Rice")
-    (servings 4)
-    (price 53.57)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients extra-virgin-olive-oil garlic-cloves chili-peppers cashew-nuts coconut stevia-powder bragg-liquid-aminos apple-cider-vinegar flax-egg green-beans regular-bok-choy brown-rice lime-wedges)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715769] of ONTOLOGY::Recipe
-    (title "Broccolini Quinoa Pilaf")
-    (servings 2)
-    (price 207.12)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients broccolini garlic-clove olive-oil onion quinoa vegetable-broth walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_649944] of ONTOLOGY::Recipe
     (title "Lentil Mango Salad")
     (servings 4)
@@ -25387,28 +15991,6 @@
     (meal_types side-dish lunch salad main-course main-dish dinner)
     (restrictions dairy-free gluten-free kosher vegan vegetarian)
     (ingredients cilantro lentils garlic mango olive-oil bell-pepper bell-pepper onion salt white-wine-vinegar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_782601] of ONTOLOGY::Recipe
-    (title "Red Kidney Bean Jambalaya")
-    (servings 6)
-    (price 28.07)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients brown-rice carrots celery celery-seed kidney-beans marjoram thyme eggplant garlic green-beans ground-pepper ground-sage liquid-smoke olive-oil bell-pepper onion sea-salt sriracha tomatoes vegetable-stock)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642540] of ONTOLOGY::Recipe
-    (title "Falafel Burgers")
-    (servings 4)
-    (price 46.84)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans chili-powder coriander cumin flour parsley garlic juice-of-lemon pita-pockets onion salt-and-pepper tahini turmeric vegetable-oil water)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -25434,17 +16016,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_655573] of ONTOLOGY::Recipe
-    (title "Penne Arrabiata")
-    (servings 4)
-    (price 26.21)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients tomato parsley garlic olive-oil pkt-penne peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_664553] of ONTOLOGY::Recipe
     (title "Vegetable Fried Rice")
     (servings 2)
@@ -25455,28 +16026,6 @@
     (ingredients basmati-rice-2 bell-peppers-i-used-half-of-and-colour carrot beans peas corn cabbage onions-1 ginger-garlic-paste-n chillies-to-3-depending-on-your-taste soya-sauce-n chilli-saucetomato-sauce-n cashews-and-raisins oil-spoons salt-and-pepper)
     (seasons summer)
     (season_text "Summer"))
-
-  ([Recipe_647830] of ONTOLOGY::Recipe
-    (title "Indian Lentil Dahl")
-    (servings 4)
-    (price 26.47)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients canola-oil cilantro coconut-milk ginger garam-masala garlic-cloves lime-juice onion plum-tomatoes lentils salt water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660261] of ONTOLOGY::Recipe
-    (title "Slow Cooked Applesauce")
-    (servings 10)
-    (price 3.24)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients apples-from-a-local-tree-if-possible water brown-sugar cinnamon nutmeg salt)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_647333] of ONTOLOGY::Recipe
     (title "Honeydew Fruit Salad")
@@ -25500,94 +16049,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_658808] of ONTOLOGY::Recipe
-    (title "Rosemary Thyme Marinated Mushrooms")
-    (servings 6)
-    (price 7.48)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients water balsamic-vinegar olive-oil garlic rosemary-leaves thyme pepper-flakes mushrooms)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648780] of ONTOLOGY::Recipe
-    (title "Kate's Coconut-Cashew Basmati Rice Salad")
-    (servings 1)
-    (price 732.92)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients basmati-rice cashews coconut ginger garlic green-onion peanut-oil salt-and-pepper coconut-milk water onion)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641005] of ONTOLOGY::Recipe
-    (title "Cucumber and Cannellini Bean Side Salad")
-    (servings 10)
-    (price 9.37)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients artichokes pepper cannellini-beans cucumbers basil capers-plus-caper-juice juice-of-lemon olive-oil onion pepper-flakes salt sugar sun-tomatoes vinegar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715540] of ONTOLOGY::Recipe
-    (title "Summer Berry Salad")
-    (servings 1)
-    (price 175.37)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients apples blackberries romaine-lettuce strawberries basalmic-vinaigrette)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653149] of ONTOLOGY::Recipe
-    (title "No Cook Cranberry Orange Relish")
-    (servings 10)
-    (price 4.52)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients package-cranberries orange sugar pecans)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633212] of ONTOLOGY::Recipe
-    (title "Baba Gonoush (Egyptian Dish)")
-    (servings 5)
-    (price 29.19)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients pepper brinjal garlic lemon-juice olive-oil parsleycoriander-leaves salt tahini)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635066] of ONTOLOGY::Recipe
-    (title "Black Bean Feijoada")
-    (servings 8)
-    (price 6.23)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients black-beans cayenne-pepper-or extra-virgin-olive-oil ginger ground-cumin onions ume-plum-vinegar peppers sea-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641122] of ONTOLOGY::Recipe
-    (title "Curry Leaves Potato Chips")
-    (servings 3)
-    (price 18.17)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients potatoes-remove-skin chili-powder curry-leaves salt oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_149199] of ONTOLOGY::Recipe
     (title "Easy, All-Natural Protein Bars")
     (servings 6)
@@ -25598,28 +16059,6 @@
     (ingredients almonds dates figs hemp-protein-powder)
     (seasons any-season)
     (season_text "Any season"))
-
-  ([Recipe_660146] of ONTOLOGY::Recipe
-    (title "Simple Squash Salad")
-    (servings 6)
-    (price 9.56)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients bell-pepper pepper parsley garlic garlic-powder capers-plus-2-tablespoons-caper-juice lemon onion oregano pepper-flakes salt sugar vinegar zucchini)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_665029] of ONTOLOGY::Recipe
-    (title "Watermelon Popsicles with Mint, Basil & Lime")
-    (servings 8)
-    (price 3.19)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients basil-leaves juice-of-lime mint-leaves salt watermelon-flesh)
-    (seasons summer)
-    (season_text "Summer"))
 
   ([Recipe_664997] of ONTOLOGY::Recipe
     (title "Water-Cado Salad")
@@ -25632,39 +16071,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_637162] of ONTOLOGY::Recipe
-    (title "Carrot and Cabbage Salad With Coriander+cumin Dry Rub")
-    (servings 1)
-    (price 139.83)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients carrots cumin-seed-powder coriander cabbage ground-coriander juice-of-lime olive-oil cabbage sunflower-seeds)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648641] of ONTOLOGY::Recipe
-    (title "Julia Child's Ratatouille")
-    (servings 6)
-    (price 15.41)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients eggplant garlic bell-peppers olive-oil parsley salt salt-and-pepper onion zucchini)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_651823] of ONTOLOGY::Recipe
-    (title "Middle Eastern Chopped Salad")
-    (servings 8)
-    (price 20.99)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients walnuts parsley nioise-olives scallion tomato extra-virgin-olive-oil squeezed-lemon-juice cumin-powder chili-flake kosher-salt-and-coarsely-ground-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_649411] of ONTOLOGY::Recipe
     (title "Lebanese Tabouleh")
     (servings 2)
@@ -25673,17 +16079,6 @@
     (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions dairy-free halal kosher vegan vegetarian)
     (ingredients bulgur-wheat flat-leaf-parsley mint green-onions juice-from-lemon olive-oil roma-tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634437] of ONTOLOGY::Recipe
-    (title "Basil Tagliatelle with Roasted Red Bell Pepper Salad")
-    (servings 4)
-    (price 101.78)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients tagliatelle bell-peppers garlic-cloves parsley horseradish green-onions lemon-juice extra-virgin-olive-oil sea-salt ground-pepper)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -25698,28 +16093,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_649931] of ONTOLOGY::Recipe
-    (title "Lentil Salad With Vegetables")
-    (servings 4)
-    (price 30.07)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients balsamic-vinegar extra-virgin-olive-oil green-onions lentils bell-pepper bell-pepper red-wine-vinegar rosemary salt tomatoes onion)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649137] of ONTOLOGY::Recipe
-    (title "Kyuri Tsukemono")
-    (servings 4)
-    (price 16.21)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients to-4-japanese-cucumbers soy-sauce rice-vinegar sesame-oil chili-peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_632269] of ONTOLOGY::Recipe
     (title "Amaranth and Roast Veggie Salad")
     (servings 2)
@@ -25730,61 +16103,6 @@
     (ingredients amaranth basil-infused-olive-oil bell-pepper pumpkin onion rocket-leaves herbal-salt punnet-baby-tomatoes)
     (seasons any-season)
     (season_text "Fall"))
-
-  ([Recipe_1099404] of ONTOLOGY::Recipe
-    (title "Pan Fried Potato Wedges")
-    (servings 4)
-    (price 19.55)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients potatoes seasoning-salt garlic-powder onion-powder pepper canola-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_647875] of ONTOLOGY::Recipe
-    (title "Indian-Style Dill and Turmeric Potato Salad")
-    (servings 4)
-    (price 29.31)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients of-chilli-flakes dill garlic olive-oil potatoes salt turmeric-powder)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664110] of ONTOLOGY::Recipe
-    (title "Turmeric Ginger Beer")
-    (servings 8)
-    (price 3.67)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients cardamom-pods coriander-seeds ginger turmeric-ginger-syrup lemon-zest soda-water sugar turmeric water prepare-as)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657698] of ONTOLOGY::Recipe
-    (title "Quinoa, Tomato, Green Onion Side Salad")
-    (servings 2)
-    (price 69.36)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients green-onions lemon olive-oil quinoa salt-and-pepper tomatoes water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636436] of ONTOLOGY::Recipe
-    (title "Bulgur Pilaf With Green Lentils, Served With Caramelized Onions -Mercimekli Bulgur Pilavi")
-    (servings 1)
-    (price 2499.73)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur-wheat preparation-time-minutes-cooking-time-minutes gr8oz-green-lentils salt-and-ground-pepper mild-olive-oil onion pickled-and-peppers)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_633548] of ONTOLOGY::Recipe
     (title "Baked Cinnamon Apple Wedges")
@@ -25797,83 +16115,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_657686] of ONTOLOGY::Recipe
-    (title "Quinoa Tabbouleh Salad")
-    (servings 8)
-    (price 6.44)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients quinoa water green-onions tomato cucumber mint parsley olive-oil lemon-juice garlic-powder freshly-cracked-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642121] of ONTOLOGY::Recipe
-    (title "Easy Tabouleh")
-    (servings 1)
-    (price 463.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur cucumbers flat-leaf-parsley lemon-juice-from-a-lemon olive-oil salt tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_647016] of ONTOLOGY::Recipe
-    (title "HomeMade Hashbrowns with Spinach and Carrots")
-    (servings 3)
-    (price 14.13)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients carrot chilli-powder cornflour onion potatoes salt spinach-leaves)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_652813] of ONTOLOGY::Recipe
-    (title "Mutton Rendang")
-    (servings 4)
-    (price 34.19)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients turmeric-powder salt water chillis shallots onion garlic-cloves ginger lemongrass-stalks galangal turmeric cumin-seeds fennel-seeds coconut-milk coconut-milk tamarind turmeric-leaf grounded-coconut salt cooking-oil mutton mutton)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_647679] of ONTOLOGY::Recipe
-    (title "Hyderabadi baghara Baingan")
-    (servings 4)
-    (price 31.07)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients baby-eggplants-10-12 kashmiri-chilies-3-4 coconut coriander-seeds cumin-seeds curry-leaves-8-10 garlic ginger-1 tamarind-a-lime-sized oil onion salt nigella-seeds sesame-seeds turmeric jaggeryns peanutsns cashewnuts cashewnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664689] of ONTOLOGY::Recipe
-    (title "Vegetarian Ratatouille")
-    (servings 6)
-    (price 16.79)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients eggplant zucchini squash tomato bell-pepper orange-bell-pepper onion garlic basil thyme oregano extra-virgin-olive-oil sea-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716627] of ONTOLOGY::Recipe
-    (title "Easy Homemade Rice and Beans")
-    (servings 2)
-    (price 53.01)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients black-beans canned-tomatoes chili-powder cumin ground-pepper optional-of-hot-sauce olive-oil onion rice water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_639650] of ONTOLOGY::Recipe
     (title "Classy Poached Pear In Spicy Mango Nectar With Mango Ice Cream")
     (servings 4)
@@ -25882,105 +16123,6 @@
     (meal_types side-dish)
     (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
     (ingredients cinnamon juice lemon-juice mango-pulp mint-leaves orange-rind pears saffron simple-syrup)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640832] of ONTOLOGY::Recipe
-    (title "Crispy Rhubarb Pockets")
-    (servings 1)
-    (price 165.92)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal vegan vegetarian)
-    (ingredients rhubarb granulated-sugar cornstarch salt vanilla-extract)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_658655] of ONTOLOGY::Recipe
-    (title "Roasted red peppers and tomatoes salad")
-    (servings 2)
-    (price 39.18)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients bell-pepper tomato onion capers olive-oil coarse-salt cracked-pepper thyme)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658509] of ONTOLOGY::Recipe
-    (title "Roasted Broccoli with Lemon and Garlic")
-    (servings 4)
-    (price 7.58)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients broccoli-florets extra-virgin-olive-oil garlic ground-pepper lemon-juice salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642085] of ONTOLOGY::Recipe
-    (title "Easy Roasted Vegetables")
-    (servings 4)
-    (price 31.93)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients butternut-squash beet-roots potatoes olive-oil paprika basil salt-pepper)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_663771] of ONTOLOGY::Recipe
-    (title "Traditional Panzanella")
-    (servings 6)
-    (price 21.37)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients six-day-old-tuscan-bread extra-virgin-olive-oil basil-leaves onion red-wine-vinegar salt-and-pepper tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641811] of ONTOLOGY::Recipe
-    (title "Easy and Addictive Eggplant \"Chips")
-    (servings 3)
-    (price 28.49)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients chicken-broth 1-eggplant garlic-granules soy-sauce sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644218] of ONTOLOGY::Recipe
-    (title "Garlic & Spice Plantain Chips")
-    (servings 8)
-    (price 2.51)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients plantains olive-oil garlic-powder paprika cumin cayenne-pepper salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1098387] of ONTOLOGY::Recipe
-    (title "Quinoa Salad with Barberries & Nuts")
-    (servings 4)
-    (price 52.14)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients quinoa water salt olive-oil barberries slivered-almonds slivered-pistachios coriander mint)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643505] of ONTOLOGY::Recipe
-    (title "Fresh Green Bean and Tomato Salad with Creamy Garlic Dressing")
-    (servings 4)
-    (price 50.04)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients green-beans garlic grape-tomatoes ground-pepper olive-oil pecans red-wine-vinegar salt shallot spicy-brown-mustard)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -26017,105 +16159,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_658680] of ONTOLOGY::Recipe
-    (title "Roasted Sweet Potato Salad")
-    (servings 8)
-    (price 13.64)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients sweet-potatoes extra-virgin-olive-oil chipotle-pepper-adobo-sauce balsamic-vinegar salt pepper cranberries pecans chives)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648910] of ONTOLOGY::Recipe
-    (title "Kimchi")
-    (servings 6)
-    (price 36.52)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients napa-cabbage salt scallions garlic-cloves ginger-root ground-chili-pepper sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639535] of ONTOLOGY::Recipe
-    (title "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather")
-    (servings 2)
-    (price 139.39)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans currants green-onions ground-cumin israeli-couscous juice-of-orange olive-oil parsley pecans bell-pepper rice-vinegar salt-and-pepper paprika)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636901] of ONTOLOGY::Recipe
-    (title "Cannellini Bean Side Dish With Fennel, Red Onion, and Saffron")
-    (servings 6)
-    (price 17.97)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients cannellini-beans extra-virgin-olive-oil fennel flat-parsley onion saffron-threads salt-and-pepper vegetable-broth water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716069] of ONTOLOGY::Recipe
-    (title "Creamy Vegan Coleslaw Dressed with Avocado")
-    (servings 6)
-    (price 12.73)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients avocado carrot celery-seed cider-vinegar coconut-sugar dijon-mustard fresh-chives green-cabbage ground-cumin juice-of-lemon nutritional-yeast poblano-pepper sea-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663587] of ONTOLOGY::Recipe
-    (title "Tomato Cucumber Salad")
-    (servings 2)
-    (price 80.93)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cherry-tomatoes cucumber garlic lemon-juice olive-oil salt-and-pepper shallot parley parley)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663150] of ONTOLOGY::Recipe
-    (title "Thai Savory Brown Fried Rice")
-    (servings 4)
-    (price 53.57)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients extra-virgin-olive-oil garlic-cloves chili-peppers cashew-nuts coconut stevia-powder bragg-liquid-aminos apple-cider-vinegar flax-egg green-beans regular-bok-choy brown-rice lime-wedges)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715769] of ONTOLOGY::Recipe
-    (title "Broccolini Quinoa Pilaf")
-    (servings 2)
-    (price 207.12)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients broccolini garlic-clove olive-oil onion quinoa vegetable-broth walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716426] of ONTOLOGY::Recipe
-    (title "Cauliflower, Brown Rice, and Vegetable Fried Rice")
-    (servings 8)
-    (price 14.92)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients grapeseed-oil coconut-oil scallions garlic cauliflower brown-rice broccoli peas soy-sauce sesame-oil sesame-seeds additional-scallion-tops salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_657723] of ONTOLOGY::Recipe
     (title "Radish and Watercress Salad")
     (servings 1)
@@ -26124,39 +16167,6 @@
     (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
     (restrictions dairy-free gluten-free kosher vegan vegetarian)
     (ingredients salt garlic-powder dijon-mustard red-wine-vinegar olive-oil lemon-juice watercress radishes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662670] of ONTOLOGY::Recipe
-    (title "Swiss Chard Wraps")
-    (servings 6)
-    (price 13.59)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients swiss-chard-leaves orange-cauliflower olive-oil garlic salt basil zucchini bell-pepper avocado trader-joes-spicy-peanut-vinaigrette)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_640238] of ONTOLOGY::Recipe
-    (title "Couscous with olives")
-    (servings 4)
-    (price 35.38)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients couscous vegetable-stock pine-nuts olive-oil olives cherry-tomatoes coriander-and-chives pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649944] of ONTOLOGY::Recipe
-    (title "Lentil Mango Salad")
-    (servings 4)
-    (price 39.81)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients cilantro lentils garlic mango olive-oil bell-pepper bell-pepper onion salt white-wine-vinegar)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -26182,28 +16192,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_660222] of ONTOLOGY::Recipe
-    (title "Skinny Carrot Fritters")
-    (servings 16)
-    (price 0.84)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients baby-carrots bread-crumbs cayenne-pepper chickpea-flour cilantro salt sriracha-sauce water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636292] of ONTOLOGY::Recipe
-    (title "Brown Rice Mushroom Pilaf")
-    (servings 4)
-    (price 16.34)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients onion brown-rice mushrooms unrefined-sunflower-oil water sea-salt ground-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_635414] of ONTOLOGY::Recipe
     (title "Blueberry Basil Galette")
     (servings 10)
@@ -26215,28 +16203,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_641447] of ONTOLOGY::Recipe
-    (title "Detox slaw")
-    (servings 2)
-    (price 43.23)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cabbage purple-cabbage carrot sesame-seeds onion olive-oil lemon-juice agave-nectar tahini-paste water salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654905] of ONTOLOGY::Recipe
-    (title "Pasta With Chickpeas and Kale")
-    (servings 4)
-    (price 60.95)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bell-pepper chickpeas garlic kale olive-oil parsley salt-and-pepper ziti)
-    (seasons winter)
-    (season_text "Winter"))
-
   ([Recipe_637846] of ONTOLOGY::Recipe
     (title "Chicka Chicka Chickpea Salad")
     (servings 1)
@@ -26245,17 +16211,6 @@
     (meal_types side-dish)
     (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
     (ingredients chickpeas roma-tomatoes onion cucumber garlic green-onions olive-oil juice-of-lemon pepper salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716218] of ONTOLOGY::Recipe
-    (title "Tomato and Eggplant Caponata")
-    (servings 10)
-    (price 8.17)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients balsamic-vinegar brown-sugar capers cayenne celery curry-powder eggplants parsley garlic ground-cumin ground-pepper jalapeos kalamata-olives olive-oil onion sea-salt sea-salt tomatoes)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -26270,105 +16225,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_642346] of ONTOLOGY::Recipe
-    (title "Egyptain Cauliflower Side Salad")
-    (servings 2)
-    (price 75.29)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cauliflower cumin parsley lemon-juice olive-oil bell-pepper salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639950] of ONTOLOGY::Recipe
-    (title "Colorful Red Quinoa Not So Tabbouleh Salad")
-    (servings 4)
-    (price 34.88)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients quinoa water salt avocado tomato radishes green-onions parsley bell-pepper cucumber cayenne-pepper tumeric cumin red-wine-vinegar extra-virgin-olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658482] of ONTOLOGY::Recipe
-    (title "Roasted Acorn Squash Stuffed with spicy Biryani (Veg/vegan)")
-    (servings 4)
-    (price 102.17)
-    (wine_pairing "Red wine")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients acorn-squashes basmati-rice-soaked-in-water water garam-masala onion peppers cashew-nuts-a-bit saffron cilantro biryani-paste-recipe-below onion salt coarse-pepper pam-original-flavor vegetable-oil onion beefsteak-tomato garlic ginger chili-powder cilantro hefty-biryani-paste vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633942] of ONTOLOGY::Recipe
-    (title "Balsamic Roasted Vegetables")
-    (servings 6)
-    (price 31.8)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients golden-beets beets bulb-fennel onion fingerling-potatoes kabocha-squash olive-oil balsamic-vinegar)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_660322] of ONTOLOGY::Recipe
-    (title "Smashed Fried Lemon Potatoes")
-    (servings 4)
-    (price 29.04)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients fingerling-potatoes flat-leaf-parsley rosemary thyme-leaves garlic-cloves-and-end-core-removed juice-of-lemon lemon-zest olive-oil red-wine-vinegar sea-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655573] of ONTOLOGY::Recipe
-    (title "Penne Arrabiata")
-    (servings 4)
-    (price 26.21)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients tomato parsley garlic olive-oil pkt-penne peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642660] of ONTOLOGY::Recipe
-    (title "Fennel and Orange Salad With Toasted Hazelnuts and Cranberries")
-    (servings 4)
-    (price 16.2)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients navel-orange fennel-bulb white-wine-vinegar kosher-salt ground-pepper extra-virgin-olive-oil orange-zest hazelnuts cranberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664553] of ONTOLOGY::Recipe
-    (title "Vegetable Fried Rice")
-    (servings 2)
-    (price 160.84)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients basmati-rice-2 bell-peppers-i-used-half-of-and-colour carrot beans peas corn cabbage onions-1 ginger-garlic-paste-n chillies-to-3-depending-on-your-taste soya-sauce-n chilli-saucetomato-sauce-n cashews-and-raisins oil-spoons salt-and-pepper)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_663100] of ONTOLOGY::Recipe
-    (title "Thai Cucumber Salad (By Roz)")
-    (servings 6)
-    (price 32.11)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients cilantro cucumbers jalapeno-pepper lime-juice lime-zest onions pepper-flakes rice-wine-vinegar chop-roasted-peanuts salt coconut-sesame-oil soy-sauce sugar thai-garlic-chili-pepper-sauce pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_795431] of ONTOLOGY::Recipe
     (title "Green Bean Poriyal")
     (servings 6)
@@ -26377,39 +16233,6 @@
     (meal_types side-dish)
     (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
     (ingredients asafetida brown-mustard-seeds chana-dal coconut-oil cumin-seeds curry-leaves chili sea-salt tamarind-pulp coconut skinned-urad-dal)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636733] of ONTOLOGY::Recipe
-    (title "Cajun Potato Wedges")
-    (servings 4)
-    (price 14.07)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cayenne-pepper garlic-powder seasoning olive-oil onion-powder paprika pepper russet-potatoes salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631841] of ONTOLOGY::Recipe
-    (title "15 Minute Healthy Dark Chocolate Truffles")
-    (servings 12)
-    (price 4.12)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal vegan vegetarian)
-    (ingredients dates slivered-almonds pecans cocoa-powder vanilla-extract agave-nectar sea-salt water optional-coconut-flakes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636295] of ONTOLOGY::Recipe
-    (title "Brown Rice Vegetable Pulao")
-    (servings 3)
-    (price 22.74)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients brown-basmati-rice carrot celery-stalks chilly lentils onion orange-juice salt-and-pepper spring-onion-including-the-part vegetable-oil vegetable-stock almonds to-garnish)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -26424,17 +16247,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_633126] of ONTOLOGY::Recipe
-    (title "Avocado and Orange Salad With Orange-Ginger Dressing")
-    (servings 4)
-    (price 55.51)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients avocados oranges green-onions orange-juice juice-of-lemon ginger-paste agave-syrup olive-oil salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_640720] of ONTOLOGY::Recipe
     (title "Creamy Vegan Butternut Squash Mac and Cheese")
     (servings 6)
@@ -26445,94 +16257,6 @@
     (ingredients breadcrumbs butternut-squash elbow-macaroni nutritional-yeast pepper salt soy-milk vegan-buttery-spread vegan-cheddar-shreds water)
     (seasons any-season)
     (season_text "Fall"))
-
-  ([Recipe_649133] of ONTOLOGY::Recipe
-    (title "Kunna (A Delicious Chinioti Dish, Punjab, Pakistan)")
-    (servings 6)
-    (price 5.12)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients garlic-pod ginger-pod oil onion-nos spices-paprika-powder-1 wheat-flour-tea-spoon mutton mutton)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665777] of ONTOLOGY::Recipe
-    (title "Zucchini Ribbon Caper Salad")
-    (servings 3)
-    (price 22.2)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients capers garlic lemon-zest olive-oil salt-and-pepper tomato zucchini)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_662968] of ONTOLOGY::Recipe
-    (title "Tempered Spicy Potatoes")
-    (servings 4)
-    (price 46.47)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cinnamon-stick curry-leaves mustard-seeds oil onions par-potatoes chilli-flakes salt turmeric)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644387] of ONTOLOGY::Recipe
-    (title "Garlicky Kale")
-    (servings 2)
-    (price 34.55)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients balsamic-vinegar garlic curly-kale olive-oil)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_664477] of ONTOLOGY::Recipe
-    (title "Vegan Pumpkin Bundt Cake")
-    (servings 18)
-    (price 5.63)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free vegan vegetarian)
-    (ingredients apple-cider-vinegar baking-powder baking-soda barley-flour canola-oil date-sugar golden-raisins ground-allspice ground-cinnamon ground-cloves ground-ginger maple-syrup nutmeg pecans pumpkin-puree salt soymilk vanilla-extract)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_639177] of ONTOLOGY::Recipe
-    (title "Chocolate Pudding - Rave Diet")
-    (servings 3)
-    (price 64.17)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients water maple-syrup corn-flour cocoa-powder vanilla roasted-hazelnuts)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_658665] of ONTOLOGY::Recipe
-    (title "Roasted Strawberry Coconut Milk Ice Cream")
-    (servings 8)
-    (price 17.96)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients cane-sugar full-fat-coconut-milk ground-cardamom strawberries a-vanilla-bean)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644854] of ONTOLOGY::Recipe
-    (title "Gluten Free Quinoa and Corn Flour Crepes")
-    (servings 4)
-    (price 27.32)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions dairy-free gluten-free kosher vegan vegetarian)
-    (ingredients virgin-coconut-oil corn-flour ground-flax-seeds maple-syrup quinoa-flour rice-milk sea-salt tapioca-flour xanthan-gum)
-    (seasons summer)
-    (season_text "Summer"))
 
   ([Recipe_664473] of ONTOLOGY::Recipe
     (title "Vegan Peanut Butter Chocolate Fudge")
@@ -26556,28 +16280,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_716424] of ONTOLOGY::Recipe
-    (title "Strawberry Basil Sorbet (no Ice Cream Maker Necessary!)")
-    (servings 1)
-    (price 55.58)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients basil-leaves basil-oil honey strawberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649690] of ONTOLOGY::Recipe
-    (title "Lemon Mint Sorbet")
-    (servings 8)
-    (price 13.97)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients water sugar lemon-zest mint-leaves lemon-juice limoncello kosher-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_646524] of ONTOLOGY::Recipe
     (title "Healthy Vegan Red Velvet Brownies")
     (servings 8)
@@ -26586,314 +16288,6 @@
     (meal_types dessert)
     (restrictions dairy-free gluten-free halal vegan vegetarian)
     (ingredients almond-extract apple-sauce baking-powder baking-soda beets brown-sugar cocoa-powder ground-flaxseed kidney-beans salt vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661757] of ONTOLOGY::Recipe
-    (title "Strawberry Basil Italian Ice")
-    (servings 6)
-    (price 23.18)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients basil-leaves juice-of-lemon simple-syrup strawberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650325] of ONTOLOGY::Recipe
-    (title "Loquat Pie")
-    (servings 8)
-    (price 8.46)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients allspice cinnamon flour ginger-pastry loquats salt sugar water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663858] of ONTOLOGY::Recipe
-    (title "Tropical Ice Pops")
-    (servings 6)
-    (price 14.65)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients coconut-beverage coconut-milk mango maple-syrup pineapple popsicle-moulds popsicle-moulds)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633101] of ONTOLOGY::Recipe
-    (title "Autumn Pumpkin Cake")
-    (servings 12)
-    (price 2.79)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
-    (ingredients pumpkin brown-rice-flour coconut-milk raisins agave-syrup)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_664477] of ONTOLOGY::Recipe
-    (title "Vegan Pumpkin Bundt Cake")
-    (servings 18)
-    (price 5.63)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free vegan vegetarian)
-    (ingredients apple-cider-vinegar baking-powder baking-soda barley-flour canola-oil date-sugar golden-raisins ground-allspice ground-cinnamon ground-cloves ground-ginger maple-syrup nutmeg pecans pumpkin-puree salt soymilk vanilla-extract)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_650325] of ONTOLOGY::Recipe
-    (title "Loquat Pie")
-    (servings 8)
-    (price 8.46)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients allspice cinnamon flour ginger-pastry loquats salt sugar water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637440] of ONTOLOGY::Recipe
-    (title "Chapchae (Korean Stir-Fried Noodles)")
-    (servings 4)
-    (price 52.15)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients sweet-potato-vermicelli-noodles onion garlic baby-spinach carrots scallions mushrooms zucchini olive-oil sesame-oil soy-sauce sugar salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649411] of ONTOLOGY::Recipe
-    (title "Lebanese Tabouleh")
-    (servings 2)
-    (price 203.97)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur-wheat flat-leaf-parsley mint green-onions juice-from-lemon olive-oil roma-tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636436] of ONTOLOGY::Recipe
-    (title "Bulgur Pilaf With Green Lentils, Served With Caramelized Onions -Mercimekli Bulgur Pilavi")
-    (servings 1)
-    (price 2499.73)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur-wheat preparation-time-minutes-cooking-time-minutes gr8oz-green-lentils salt-and-ground-pepper mild-olive-oil onion pickled-and-peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642121] of ONTOLOGY::Recipe
-    (title "Easy Tabouleh")
-    (servings 1)
-    (price 463.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur cucumbers flat-leaf-parsley lemon-juice-from-a-lemon olive-oil salt tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663771] of ONTOLOGY::Recipe
-    (title "Traditional Panzanella")
-    (servings 6)
-    (price 21.37)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients six-day-old-tuscan-bread extra-virgin-olive-oil basil-leaves onion red-wine-vinegar salt-and-pepper tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639535] of ONTOLOGY::Recipe
-    (title "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather")
-    (servings 2)
-    (price 139.39)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans currants green-onions ground-cumin israeli-couscous juice-of-orange olive-oil parsley pecans bell-pepper rice-vinegar salt-and-pepper paprika)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640238] of ONTOLOGY::Recipe
-    (title "Couscous with olives")
-    (servings 4)
-    (price 35.38)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients couscous vegetable-stock pine-nuts olive-oil olives cherry-tomatoes coriander-and-chives pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660222] of ONTOLOGY::Recipe
-    (title "Skinny Carrot Fritters")
-    (servings 16)
-    (price 0.84)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients baby-carrots bread-crumbs cayenne-pepper chickpea-flour cilantro salt sriracha-sauce water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635414] of ONTOLOGY::Recipe
-    (title "Blueberry Basil Galette")
-    (servings 10)
-    (price 7.38)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients blueberries virgin-coconut-oil-oil basil-leaves lemon-juice lemon-zest maple-syrup quick-cooking-tapioca sea-salt spelt-flour sugar up-to-water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654905] of ONTOLOGY::Recipe
-    (title "Pasta With Chickpeas and Kale")
-    (servings 4)
-    (price 60.95)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bell-pepper chickpeas garlic kale olive-oil parsley salt-and-pepper ziti)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_655573] of ONTOLOGY::Recipe
-    (title "Penne Arrabiata")
-    (servings 4)
-    (price 26.21)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients tomato parsley garlic olive-oil pkt-penne peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652423] of ONTOLOGY::Recipe
-    (title "Moroccan Couscous and Chickpea Salad")
-    (servings 6)
-    (price 31.19)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients pepper chickpeas cayenne cinnamon couscous green-onions ground-ginger ground-nutmeg lemon olive-oil parsley pistachio-nuts bell-pepper salt turmeric vegetable-broth)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640720] of ONTOLOGY::Recipe
-    (title "Creamy Vegan Butternut Squash Mac and Cheese")
-    (servings 6)
-    (price 14.65)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients breadcrumbs butternut-squash elbow-macaroni nutritional-yeast pepper salt soy-milk vegan-buttery-spread vegan-cheddar-shreds water)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_649133] of ONTOLOGY::Recipe
-    (title "Kunna (A Delicious Chinioti Dish, Punjab, Pakistan)")
-    (servings 6)
-    (price 5.12)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients garlic-pod ginger-pod oil onion-nos spices-paprika-powder-1 wheat-flour-tea-spoon mutton mutton)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636436] of ONTOLOGY::Recipe
-    (title "Bulgur Pilaf With Green Lentils, Served With Caramelized Onions -Mercimekli Bulgur Pilavi")
-    (servings 1)
-    (price 2499.73)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur-wheat preparation-time-minutes-cooking-time-minutes gr8oz-green-lentils salt-and-ground-pepper mild-olive-oil onion pickled-and-peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642121] of ONTOLOGY::Recipe
-    (title "Easy Tabouleh")
-    (servings 1)
-    (price 463.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur cucumbers flat-leaf-parsley lemon-juice-from-a-lemon olive-oil salt tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652417] of ONTOLOGY::Recipe
-    (title "Moroccan chickpea and lentil stew")
-    (servings 3)
-    (price 42.04)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients broccoli chickpeas carrots celery-stalks lentils couscous cilantro ground-cinnamon ground-cumin ground-turmeric lemon-juice olive-oil paprika salt-and-pepper tomato-paste water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655506] of ONTOLOGY::Recipe
-    (title "Pecan Crusted Sweet Potato-Salmon Cakes")
-    (servings 1)
-    (price 691.59)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients jamaican-allspice baby-spinach grape-seed-oil green-onions braggs-sea-kelp-delight-seasoning lemon parsley parsley pecans bell-pepper salt onion sweet-potato tomatoes grain-bread-crumbs redhead-andor-thinkpink redhead-andor-thinkpink)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_639535] of ONTOLOGY::Recipe
-    (title "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather")
-    (servings 2)
-    (price 139.39)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans currants green-onions ground-cumin israeli-couscous juice-of-orange olive-oil parsley pecans bell-pepper rice-vinegar salt-and-pepper paprika)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642540] of ONTOLOGY::Recipe
-    (title "Falafel Burgers")
-    (servings 4)
-    (price 46.84)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans chili-powder coriander cumin flour parsley garlic juice-of-lemon pita-pockets onion salt-and-pepper tahini turmeric vegetable-oil water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654905] of ONTOLOGY::Recipe
-    (title "Pasta With Chickpeas and Kale")
-    (servings 4)
-    (price 60.95)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bell-pepper chickpeas garlic kale olive-oil parsley salt-and-pepper ziti)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_655573] of ONTOLOGY::Recipe
-    (title "Penne Arrabiata")
-    (servings 4)
-    (price 26.21)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients tomato parsley garlic olive-oil pkt-penne peppers)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -26919,17 +16313,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_633766] of ONTOLOGY::Recipe
-    (title "Baked Rigatoni")
-    (servings 6)
-    (price 30.92)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients broccoli-flowerets basil fennel-seeds pasta-sauce rigatoni mozzarella-cheese ready-cut-tomatoes vegetable-burger-crumbles)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_664961] of ONTOLOGY::Recipe
     (title "Warm Goat Cheese Salad")
     (servings 2)
@@ -26938,83 +16321,6 @@
     (meal_types side-dish lunch salad main-course main-dish dinner)
     (restrictions kosher vegetarian)
     (ingredients some-bread-crumbs rounds-goat-cheese grapes lemon-juice olive-oil pepper salad-greens salt-and-pepper shallot walnut-oil walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636178] of ONTOLOGY::Recipe
-    (title "Broccoli Cheddar Soup, A Panera Bread Co. Copycat")
-    (servings 4)
-    (price 49.09)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients bay-leaves broccoli-florets butter carrot flour half-and-half kosher-salt-and-pepper chicken-broth nutmeg onion sharp-and-cheddar-cheese sourdough-bread-boules)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636436] of ONTOLOGY::Recipe
-    (title "Bulgur Pilaf With Green Lentils, Served With Caramelized Onions -Mercimekli Bulgur Pilavi")
-    (servings 1)
-    (price 2499.73)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur-wheat preparation-time-minutes-cooking-time-minutes gr8oz-green-lentils salt-and-ground-pepper mild-olive-oil onion pickled-and-peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661365] of ONTOLOGY::Recipe
-    (title "Spinach, Tomato & Onion Couscous")
-    (servings 3)
-    (price 120.49)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients feta olive-oil pine-nuts onion salt spinach tomatoes water couscous)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_642121] of ONTOLOGY::Recipe
-    (title "Easy Tabouleh")
-    (servings 1)
-    (price 463.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur cucumbers flat-leaf-parsley lemon-juice-from-a-lemon olive-oil salt tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652417] of ONTOLOGY::Recipe
-    (title "Moroccan chickpea and lentil stew")
-    (servings 3)
-    (price 42.04)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients broccoli chickpeas carrots celery-stalks lentils couscous cilantro ground-cinnamon ground-cumin ground-turmeric lemon-juice olive-oil paprika salt-and-pepper tomato-paste water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716245] of ONTOLOGY::Recipe
-    (title "Avocado Egg Salad")
-    (servings 1)
-    (price 152.03)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients pepper eggs seasoning-cube lemon avocado-pear scotch-bonnet-pepper bread)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631849] of ONTOLOGY::Recipe
-    (title "2 Minute Chocolate Yum")
-    (servings 1)
-    (price 107.72)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients cocoa-powder egg flour milk oil salt sugar vanilla)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -27028,28 +16334,6 @@
     (ingredients beef-stock butter chicken-stock colby-monterey-jack-cheese corn-starch-to-thicken-soup bread johnnys-garlic-seasoning montreal-steak-seasoning oil onion bell-pepper mozzarella-cheese)
     (seasons summer)
     (season_text "Summer"))
-
-  ([Recipe_1082038] of ONTOLOGY::Recipe
-    (title "Big Batch Smoothie Bowl")
-    (servings 6)
-    (price 28.98)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients whey-protein strawberries blueberries bananas pomegranate walnuts pumpkin-seeds flaxseed granola)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637535] of ONTOLOGY::Recipe
-    (title "Cheese and Leek Strata")
-    (servings 6)
-    (price 18.35)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients eggs milk porter garlic-clove salt pepper sourdough-bread leek bell-pepper cheddar-cheese swiss-cheese salt-pepper-to-season)
-    (seasons winter)
-    (season_text "Winter"))
 
   ([Recipe_633167] of ONTOLOGY::Recipe
     (title "Avocado Tomato & Mozzarella Panini/sandwiches")
@@ -27073,39 +16357,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_655506] of ONTOLOGY::Recipe
-    (title "Pecan Crusted Sweet Potato-Salmon Cakes")
-    (servings 1)
-    (price 691.59)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients jamaican-allspice baby-spinach grape-seed-oil green-onions braggs-sea-kelp-delight-seasoning lemon parsley parsley pecans bell-pepper salt onion sweet-potato tomatoes grain-bread-crumbs redhead-andor-thinkpink redhead-andor-thinkpink)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_642332] of ONTOLOGY::Recipe
-    (title "Eggs Florentine")
-    (servings 4)
-    (price 53.03)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter cayenne-pepper eggs muffins kosher-salt lemon-juice spinach water)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_639535] of ONTOLOGY::Recipe
-    (title "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather")
-    (servings 2)
-    (price 139.39)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans currants green-onions ground-cumin israeli-couscous juice-of-orange olive-oil parsley pecans bell-pepper rice-vinegar salt-and-pepper paprika)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_665294] of ONTOLOGY::Recipe
     (title "Whole Wheat No-Yeast Pizza with Roasted Garlic, Sweet Potatoes, and Onions")
     (servings 3)
@@ -27117,28 +16368,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_642540] of ONTOLOGY::Recipe
-    (title "Falafel Burgers")
-    (servings 4)
-    (price 46.84)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans chili-powder coriander cumin flour parsley garlic juice-of-lemon pita-pockets onion salt-and-pepper tahini turmeric vegetable-oil water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654905] of ONTOLOGY::Recipe
-    (title "Pasta With Chickpeas and Kale")
-    (servings 4)
-    (price 60.95)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bell-pepper chickpeas garlic kale olive-oil parsley salt-and-pepper ziti)
-    (seasons winter)
-    (season_text "Winter"))
-
   ([Recipe_715563] of ONTOLOGY::Recipe
     (title "Pierogi Casserole")
     (servings 4)
@@ -27147,17 +16376,6 @@
     (meal_types side-dish lunch main-course main-dish dinner)
     (restrictions halal kosher vegetarian)
     (ingredients butter milk onions salt-and-pepper sharp-cheddar-cheese potatoes extra-wide-egg-noodles)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653593] of ONTOLOGY::Recipe
-    (title "Old Fashioned Mac and Cheese")
-    (servings 2)
-    (price 203.13)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients elbow-macaroni block-of-cheddar-cheese milk butter flour salt pepper seasoned-bread-crumbs)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -27172,83 +16390,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_715595] of ONTOLOGY::Recipe
-    (title "How to Make the Cheesiest Bowtie Mac and Cheese")
-    (servings 4)
-    (price 33.65)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients bowtie-pasta-cook-as-directed extra-sharp-cheddar-cheese extra-sharp-cheddar-cheese salt-and-pepper cream butter parsley)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635126] of ONTOLOGY::Recipe
-    (title "Black Lentil and Couscous Salad")
-    (servings 8)
-    (price 20.22)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients couscous lentils ground-cumin cayenne-pepper paprika almond-flakes raisins parsley mint olive-oil apple-cider-vinegar dijon-mustard orange-zest juice-of-orange honey feta)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655573] of ONTOLOGY::Recipe
-    (title "Penne Arrabiata")
-    (servings 4)
-    (price 26.21)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients tomato parsley garlic olive-oil pkt-penne peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660835] of ONTOLOGY::Recipe
-    (title "Spaghetti With Pesto Trapanese")
-    (servings 6)
-    (price 24.25)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients spaghetti almonds pine-nuts extra-virgin-olive-oil garlic-cloves tomatoes basil salt-and-pepper pecorino)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648852] of ONTOLOGY::Recipe
-    (title "Khachapuri")
-    (servings 8)
-    (price 29.96)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients yeast sugar water milk sugar butter salt swiss-cheese-8-ounces-cheddar-2-eggs muenster-cheese swiss-cheese cheddar eggs parsley pepper dissolve-yeast-and-sugar-in twist-and-ends-together-to-make-a-rough-knob-cover until-deep-golden-brown-remove-bread-from-pan)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641631] of ONTOLOGY::Recipe
-    (title "Dragon Salad - Couscous Summer Salad")
-    (servings 6)
-    (price 67.25)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients pepper cherry-tomatoes chicken-broth extra-virgin-olive-oil feta-cheese flat-leaf-parsley mint garlic-cloves juice-of-lemon kalamata-olives salt warm-water couscous)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642585] of ONTOLOGY::Recipe
-    (title "Farfalle with fresh tomatoes, basil and mozzarella")
-    (servings 4)
-    (price 24.28)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients farfalle-pasta-by-barilla basil-leaves mozzarella olive-oil salt-and-pepper tomatoes butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_643633] of ONTOLOGY::Recipe
     (title "Fresh Tomato Mozzarella Side Salad")
     (servings 8)
@@ -27257,28 +16398,6 @@
     (meal_types side-dish lunch salad main-course main-dish dinner)
     (restrictions gluten-free kosher vegetarian)
     (ingredients balsamic-vinegar basil-leaves extra-virgin-olive-oil kosher-salt bel-gioioso-mozzarella 6-roma-tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633754] of ONTOLOGY::Recipe
-    (title "Baked Ratatouille")
-    (servings 1)
-    (price 861.26)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients eggplant feta-cheese basil garlic-cloves bell-peppers olive-oil onion-cut-pieces red-wine-vinegar tomatoes zucchini-cut)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_655523] of ONTOLOGY::Recipe
-    (title "Pecan Sandies")
-    (servings 1)
-    (price 754.61)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter soda cream-of-tartar eggs flour oil pecans powdered-sugar salt sugar vanilla)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -27293,17 +16412,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_633766] of ONTOLOGY::Recipe
-    (title "Baked Rigatoni")
-    (servings 6)
-    (price 30.92)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients broccoli-flowerets basil fennel-seeds pasta-sauce rigatoni mozzarella-cheese ready-cut-tomatoes vegetable-burger-crumbles)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_652696] of ONTOLOGY::Recipe
     (title "Mushroom Spinach Soup")
     (servings 1)
@@ -27315,28 +16423,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_664961] of ONTOLOGY::Recipe
-    (title "Warm Goat Cheese Salad")
-    (servings 2)
-    (price 153.16)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients some-bread-crumbs rounds-goat-cheese grapes lemon-juice olive-oil pepper salad-greens salt-and-pepper shallot walnut-oil walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636178] of ONTOLOGY::Recipe
-    (title "Broccoli Cheddar Soup, A Panera Bread Co. Copycat")
-    (servings 4)
-    (price 49.09)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients bay-leaves broccoli-florets butter carrot flour half-and-half kosher-salt-and-pepper chicken-broth nutmeg onion sharp-and-cheddar-cheese sourdough-bread-boules)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_641059] of ONTOLOGY::Recipe
     (title "Curried Butternut Squash Soup")
     (servings 1)
@@ -27347,50 +16433,6 @@
     (ingredients apple-juice apples butternut-squash chicken-stock curry-powder salt butter onions)
     (seasons any-season)
     (season_text "Fall"))
-
-  ([Recipe_716421] of ONTOLOGY::Recipe
-    (title "Grilled Peach Melba with Vanilla Bean Frozen Yogurt")
-    (servings 4)
-    (price 101.38)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients coconut-oil honey honey peaches greek-yogurt raspberries raspberry-fruit-spread vanilla-bean)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661365] of ONTOLOGY::Recipe
-    (title "Spinach, Tomato & Onion Couscous")
-    (servings 3)
-    (price 120.49)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients feta olive-oil pine-nuts onion salt spinach tomatoes water couscous)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_631849] of ONTOLOGY::Recipe
-    (title "2 Minute Chocolate Yum")
-    (servings 1)
-    (price 107.72)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients cocoa-powder egg flour milk oil salt sugar vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641744] of ONTOLOGY::Recipe
-    (title "Dunkin French Onion Soup")
-    (servings 1)
-    (price 1566.24)
-    (wine_pairing "Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients beef-stock butter chicken-stock colby-monterey-jack-cheese corn-starch-to-thicken-soup bread johnnys-garlic-seasoning montreal-steak-seasoning oil onion bell-pepper mozzarella-cheese)
-    (seasons summer)
-    (season_text "Summer"))
 
   ([Recipe_644108] of ONTOLOGY::Recipe
     (title "Fusilli With Zucchini Flowers, Ricotta and Saffron")
@@ -27414,105 +16456,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_1082038] of ONTOLOGY::Recipe
-    (title "Big Batch Smoothie Bowl")
-    (servings 6)
-    (price 28.98)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients whey-protein strawberries blueberries bananas pomegranate walnuts pumpkin-seeds flaxseed granola)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_157344] of ONTOLOGY::Recipe
-    (title "Spicy Salad with Kidney Beans, Cheddar, and Nuts")
-    (servings 1)
-    (price 458.2)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients almonds avocado balsamic-vinegar cheddar-cheese kidney-beans greens olive-oil roasted-cashews sundried-tomatoes tabasco)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637535] of ONTOLOGY::Recipe
-    (title "Cheese and Leek Strata")
-    (servings 6)
-    (price 18.35)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients eggs milk porter garlic-clove salt pepper sourdough-bread leek bell-pepper cheddar-cheese swiss-cheese salt-pepper-to-season)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_633167] of ONTOLOGY::Recipe
-    (title "Avocado Tomato & Mozzarella Panini/sandwiches")
-    (servings 4)
-    (price 43.25)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients avocado bread mozzarella butter tomatoe tomatoe)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657537] of ONTOLOGY::Recipe
-    (title "Quick and Easy Caprese Salad")
-    (servings 4)
-    (price 49.2)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients balsamic-vinegar basil-leaves mozzarella-cheese olive-oil bell-pepper salt tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652919] of ONTOLOGY::Recipe
-    (title "Nachos Grande")
-    (servings 4)
-    (price 51.3)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients canned-tomatoes cheddar-cheese chili-powder corn-oil garlic-cloves bell-pepper chili ground-cumin onion paprika paprika-to-garnish refried-beans tortilla-chips water)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_657939] of ONTOLOGY::Recipe
-    (title "Ratatouille With Brie")
-    (servings 4)
-    (price 49.2)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients brie-log-such-as-alouette eggplant olive-oil zucchini squash plum-tomatoes thyme)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654532] of ONTOLOGY::Recipe
-    (title "Paneer jalfrezi")
-    (servings 2)
-    (price 98.4)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients paneer oil cumin-seeds tomato tomatoes onion bell-pepper turmeric-powder chilli-powder chillies chillies ginger garam-masala sugar vinegar coriander salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633683] of ONTOLOGY::Recipe
-    (title "Baked Macaroni and Cheese")
-    (servings 1)
-    (price 414.68)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients pkt-elbow-macaroni butter flour milk salt pepper cheddar-cheese bread-crumbs butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_665012] of ONTOLOGY::Recipe
     (title "Watermelon Feta and Mint Salad")
     (servings 1)
@@ -27524,39 +16467,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_642596] of ONTOLOGY::Recipe
-    (title "Farmer's Strata with Kale and Tomatoes")
-    (servings 4)
-    (price 41.85)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients coconut-oil eggs feta-cheese cilantro parsley garlic green-onions kale shitake-mushrooms pepper roma-tomatoes salt)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_642332] of ONTOLOGY::Recipe
-    (title "Eggs Florentine")
-    (servings 4)
-    (price 53.03)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter cayenne-pepper eggs muffins kosher-salt lemon-juice spinach water)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_648769] of ONTOLOGY::Recipe
-    (title "Kashmir Pulav")
-    (servings 1)
-    (price 576.45)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients cardamom cashew-nut cinnamon rice milk oil onion-vertically saffron salt turmeric-powder walnut water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_638779] of ONTOLOGY::Recipe
     (title "Chobani Harvest Fruit Salad")
     (servings 1)
@@ -27565,105 +16475,6 @@
     (meal_types side-dish lunch salad main-course main-dish dinner)
     (restrictions gluten-free halal kosher vegetarian)
     (ingredients pink-lady-apples granny-smith-apples bartlett-pear banana grapes globe-grapes lemon-juice raisins pecan-halves vanilla-flavored-chobani-greek-yogurt honey cinnamon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_656544] of ONTOLOGY::Recipe
-    (title "Polenta gnocchi with savoy cabbage and cheese")
-    (servings 2)
-    (price 119.75)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients buckwheat-flour butter polenta egg fontina garlic sage salt savoy-cabbage)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645315] of ONTOLOGY::Recipe
-    (title "Greek Inspired Spring Omelet")
-    (servings 1)
-    (price 220.11)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course morning-meal brunch main-dish breakfast dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients asparagus-spears egg-whites feta-cheese green-onions salt-and-pepper tzatziki cherry-tomatoes)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_665294] of ONTOLOGY::Recipe
-    (title "Whole Wheat No-Yeast Pizza with Roasted Garlic, Sweet Potatoes, and Onions")
-    (servings 3)
-    (price 162.33)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder bu-of-garlic olive-oil onion roasted-bulb-of-garlic rosemary salt mozzarella skim-milk sweet-potatoes thyme water flour piece-of-foil foil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664726] of ONTOLOGY::Recipe
-    (title "Vegetarian Tostadas With Spicy Black Beans (+gluten free)")
-    (servings 4)
-    (price 41.63)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients corn-tortillas black-beans onions garlic olive-oil chiles-in-adobo-sauce spinach spinkle-of-basil-and-garlic-sea-salt cherry-tomatoes feta-cheese cream salsa)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715563] of ONTOLOGY::Recipe
-    (title "Pierogi Casserole")
-    (servings 4)
-    (price 38.77)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter milk onions salt-and-pepper sharp-cheddar-cheese potatoes extra-wide-egg-noodles)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653593] of ONTOLOGY::Recipe
-    (title "Old Fashioned Mac and Cheese")
-    (servings 2)
-    (price 203.13)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients elbow-macaroni block-of-cheddar-cheese milk butter flour salt pepper seasoned-bread-crumbs)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645812] of ONTOLOGY::Recipe
-    (title "Grilled Portabella and Poblano Tacos")
-    (servings 4)
-    (price 67.96)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients canola-oil chipotle-powder cilantro cilantro-sprigs corn-tortillas garlic guacamole lime-juice lime-wedges olive-oil poblano-chile portabella-mushrooms onion roma-tomatoes salt salt-and-pepper cheddar-cheese)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_665721] of ONTOLOGY::Recipe
-    (title "Zucchini Burgers with Lemon Herb Yogurt Sauce")
-    (servings 1)
-    (price 701.72)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions vegetarian)
-    (ingredients bread-crumbs cheddar-cheese combination-of-herbs-such-as-dill eggs greek-togurt hamburger-bun juice-of-lemon arugula-lettuce-leaf olive-oil onion wheat-germ zucchini)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_715595] of ONTOLOGY::Recipe
-    (title "How to Make the Cheesiest Bowtie Mac and Cheese")
-    (servings 4)
-    (price 33.65)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients bowtie-pasta-cook-as-directed extra-sharp-cheddar-cheese extra-sharp-cheddar-cheese salt-and-pepper cream butter parsley)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -27678,28 +16489,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_635126] of ONTOLOGY::Recipe
-    (title "Black Lentil and Couscous Salad")
-    (servings 8)
-    (price 20.22)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients couscous lentils ground-cumin cayenne-pepper paprika almond-flakes raisins parsley mint olive-oil apple-cider-vinegar dijon-mustard orange-zest juice-of-orange honey feta)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658087] of ONTOLOGY::Recipe
-    (title "Red Quinoa and Roasted Cauliflower Salad")
-    (servings 4)
-    (price 56.62)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients cauliflower quinoa walnuts apricots feta-cheese green-onions parsley salt-and-pepper lemon olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_663638] of ONTOLOGY::Recipe
     (title "Tomato Stack Salad")
     (servings 4)
@@ -27708,17 +16497,6 @@
     (meal_types side-dish lunch salad main-course main-dish dinner)
     (restrictions gluten-free halal kosher vegetarian)
     (ingredients balsamic-vinegar herbs goat-cheese salt tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636199] of ONTOLOGY::Recipe
-    (title "Broccoli Oatmeal Breakfast Casserole")
-    (servings 4)
-    (price 15.22)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course morning-meal brunch main-dish breakfast dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients baking-powder broccoli-florets cayenne-pepper eggs milk oats olive-oil salt)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -27733,39 +16511,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_640798] of ONTOLOGY::Recipe
-    (title "Crisp Winter Salad with Maple Gorgonzola Dressing")
-    (servings 4)
-    (price 78.22)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients broccoli-stems celery cider-vinegar dijon-mustard gorgonzola-cheese jicama kosher-salt cream maple-syrup olive-oil radishes apple romaine-lettuce savoy-cabbage walnuts pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660835] of ONTOLOGY::Recipe
-    (title "Spaghetti With Pesto Trapanese")
-    (servings 6)
-    (price 24.25)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients spaghetti almonds pine-nuts extra-virgin-olive-oil garlic-cloves tomatoes basil salt-and-pepper pecorino)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648852] of ONTOLOGY::Recipe
-    (title "Khachapuri")
-    (servings 8)
-    (price 29.96)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients yeast sugar water milk sugar butter salt swiss-cheese-8-ounces-cheddar-2-eggs muenster-cheese swiss-cheese cheddar eggs parsley pepper dissolve-yeast-and-sugar-in twist-and-ends-together-to-make-a-rough-knob-cover until-deep-golden-brown-remove-bread-from-pan)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_641962] of ONTOLOGY::Recipe
     (title "Easy Eggplant Parmesan")
     (servings 4)
@@ -27774,28 +16519,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions gluten-free halal kosher vegetarian)
     (ingredients olive-oil onion garlic-clove pasta-sauce eggplant style-cheese basil-leaves)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_647563] of ONTOLOGY::Recipe
-    (title "How Sweet It Is Sweet Potato Lasagne")
-    (servings 6)
-    (price 73.33)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients baby-portabella-mushrooms curry-powder basil-leaves eggplants spinach heavy-cream montery-jack-cheddar-cheese-mix jalapenos marinara-sauce salt-pepper sweet-potatoes vegetable-cooking-oil)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_641631] of ONTOLOGY::Recipe
-    (title "Dragon Salad - Couscous Summer Salad")
-    (servings 6)
-    (price 67.25)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients pepper cherry-tomatoes chicken-broth extra-virgin-olive-oil feta-cheese flat-leaf-parsley mint garlic-cloves juice-of-lemon kalamata-olives salt warm-water couscous)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -27810,39 +16533,6 @@
     (seasons any-season)
     (season_text "Fall"))
 
-  ([Recipe_648275] of ONTOLOGY::Recipe
-    (title "Italian Tomato and Mozzarella Caprese")
-    (servings 4)
-    (price 42.58)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients fluid-balsamic-vinegar pepper basil-leaves kosher-salt olive-oil sprinkle-of-oregano-leaves whole-milk-mozzarella vine-ripened-tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642272] of ONTOLOGY::Recipe
-    (title "Eggplant & Artichoke Heart Galettes")
-    (servings 2)
-    (price 186.75)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients artichoke-hearts brown-rice-flour chili-flakes eggplant eggs rosemary garlic-cloves goat-cheese bell-pepper sea-salt)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_637067] of ONTOLOGY::Recipe
-    (title "Caramelized Tofu & Gala Apple Salad")
-    (servings 2)
-    (price 115.65)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients brown-sugar butter extra-firm-tofu gala-apple garlic lettuce wholes-pecans water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_642468] of ONTOLOGY::Recipe
     (title "Ethiopian Lentil Curry")
     (servings 6)
@@ -27851,17 +16541,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions gluten-free halal kosher vegetarian)
     (ingredients amchar-masala brown-lentils canned-tomatoes cauliflower-head garlic-cloves onion peas yogurt masala-molida tomato-paste vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642585] of ONTOLOGY::Recipe
-    (title "Farfalle with fresh tomatoes, basil and mozzarella")
-    (servings 4)
-    (price 24.28)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients farfalle-pasta-by-barilla basil-leaves mozzarella olive-oil salt-and-pepper tomatoes butter)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -27876,39 +16555,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_643633] of ONTOLOGY::Recipe
-    (title "Fresh Tomato Mozzarella Side Salad")
-    (servings 8)
-    (price 16.73)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients balsamic-vinegar basil-leaves extra-virgin-olive-oil kosher-salt bel-gioioso-mozzarella 6-roma-tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716334] of ONTOLOGY::Recipe
-    (title "Plantain Toffee Balls")
-    (servings 2)
-    (price 38.29)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter coconut-flakes coconut-milk flour finger-of-plantain sugar vanilla water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633754] of ONTOLOGY::Recipe
-    (title "Baked Ratatouille")
-    (servings 1)
-    (price 861.26)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients eggplant feta-cheese basil garlic-cloves bell-peppers olive-oil onion-cut-pieces red-wine-vinegar tomatoes zucchini-cut)
-    (seasons summer)
-    (season_text "Summer"))
-
   ([Recipe_645348] of ONTOLOGY::Recipe
     (title "Greek Side Salad")
     (servings 4)
@@ -27917,17 +16563,6 @@
     (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
     (restrictions gluten-free kosher vegetarian)
     (ingredients cucumber extra-virgin-olive-oil greek-feta kalamata-olives onion tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648643] of ONTOLOGY::Recipe
-    (title "Julia Child's Vichyssoise")
-    (servings 6)
-    (price 11.91)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients leeks baking-potatoes-recommended water salt-or crme-frache chives)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -27953,50 +16588,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_765011] of ONTOLOGY::Recipe
-    (title "Snap Pea and Green Bean Salad with Arugula Pesto")
-    (servings 6)
-    (price 36.98)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients roasted-almonds almonds baby-arugula basil-leaves cilantro extra-virgin-olive-oil garlic micro-greens lemon-zest pistachios salt-and-pepper snap-peas wax-beans yogurt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640237] of ONTOLOGY::Recipe
-    (title "Couscous Salad With Roasted Vegetables")
-    (servings 10)
-    (price 28.24)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients regular-couscous chicken-stock olive-oil sun-dried-tomatoes basil-pesto balsamic-vinegar salt-and-pepper feta-cheese sized-zucchinis to-3-sized-squashes bell-pepper brown-mushrooms garlic-cloves butternut onions asparagus olive-oil balsamic-vinegar)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_642287] of ONTOLOGY::Recipe
-    (title "Eggplant Fries with Tzatziki Sauce")
-    (servings 2)
-    (price 44.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients eggplants bread-crumbs seasoning-mix yogurt egg)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641759] of ONTOLOGY::Recipe
-    (title "Dutch Baby")
-    (servings 4)
-    (price 15.77)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients eggs flour lemons milk confectioners-sugar butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_636356] of ONTOLOGY::Recipe
     (title "Bruschetta Stuffed Potatoes")
     (servings 6)
@@ -28007,28 +16598,6 @@
     (ingredients baking-potatoes olive-oil onion tomato garlic basil mozzarella-cheese cultured-dairy butter olive-oil sea-salt-pepper)
     (seasons any-season)
     (season_text "Any season"))
-
-  ([Recipe_642809] of ONTOLOGY::Recipe
-    (title "Fig, Goat Cheese and Walnut Salad")
-    (servings 2)
-    (price 187.06)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients figs goat-cheese lemon-juice greens olive-oil salt-and-pepper walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658506] of ONTOLOGY::Recipe
-    (title "Roasted Beet, Fig and Orange Salad")
-    (servings 1)
-    (price 1061.83)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients baby-spinach beets extra-virgin-olive-oil feta-cheese figs orange freshly-cracked-pepper grey-sea-salt)
-    (seasons spring)
-    (season_text "Spring"))
 
   ([Recipe_661925] of ONTOLOGY::Recipe
     (title "Strawberry-Mango Quinoa Salad")
@@ -28041,50 +16610,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_633766] of ONTOLOGY::Recipe
-    (title "Baked Rigatoni")
-    (servings 6)
-    (price 30.92)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients broccoli-flowerets basil fennel-seeds pasta-sauce rigatoni mozzarella-cheese ready-cut-tomatoes vegetable-burger-crumbles)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716423] of ONTOLOGY::Recipe
-    (title "Grilled Zucchini with Goat Cheese and Balsamic-Honey Syrup")
-    (servings 2)
-    (price 108.94)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients balsamic-vinegar goat-cheese grapeseed-oil honey pepper salt zucchini)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_1043340] of ONTOLOGY::Recipe
-    (title "The BEST Sweet Potato Casserole")
-    (servings 6)
-    (price 13.1)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal vegetarian)
-    (ingredients eggs ground-cinnamon heavy-cream sugared-pecans-make-these-the-day-before salt sweet-potatoes-yams-or-5-and-sweet-potatoes butter vanilla-extract sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641631] of ONTOLOGY::Recipe
-    (title "Dragon Salad - Couscous Summer Salad")
-    (servings 6)
-    (price 67.25)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients pepper cherry-tomatoes chicken-broth extra-virgin-olive-oil feta-cheese flat-leaf-parsley mint garlic-cloves juice-of-lemon kalamata-olives salt warm-water couscous)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_716435] of ONTOLOGY::Recipe
     (title "Herbed Goat Cheese Yogurt Dip w. Caramelized Onions")
     (servings 1)
@@ -28093,61 +16618,6 @@
     (meal_types side-dish)
     (restrictions gluten-free halal kosher vegetarian)
     (ingredients caramelized-onions dill parsley chives goat-cheese greek-yogurt steak-seasoning)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664961] of ONTOLOGY::Recipe
-    (title "Warm Goat Cheese Salad")
-    (servings 2)
-    (price 153.16)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients some-bread-crumbs rounds-goat-cheese grapes lemon-juice olive-oil pepper salad-greens salt-and-pepper shallot walnut-oil walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657899] of ONTOLOGY::Recipe
-    (title "Raspberry Sliced")
-    (servings 8)
-    (price 6.86)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal vegetarian)
-    (ingredients raspberries butter sugar eggs lemon-juice lemon-zest vanilla-extract natural-yoghurtsour-cream flour baking-powder salt milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632678] of ONTOLOGY::Recipe
-    (title "Apricot Slice")
-    (servings 12)
-    (price 2.29)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal vegetarian)
-    (ingredients apricot eggs flour salt caster-sugar butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715588] of ONTOLOGY::Recipe
-    (title "Easy Thanksgiving Entertaining")
-    (servings 6)
-    (price 61.42)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients heavy-cream pumpkin-spice-cookies salt sugar vanilla milk)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_643561] of ONTOLOGY::Recipe
-    (title "Fresh Peach With Goat Cheese Side Salad")
-    (servings 4)
-    (price 50.88)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients basil-leaves goat-cheese honey peaches)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -28173,72 +16643,6 @@
     (seasons winter)
     (season_text "Winter"))
 
-  ([Recipe_653994] of ONTOLOGY::Recipe
-    (title "Orange-Fig Teacake with Caramel Glaze")
-    (servings 10)
-    (price 7.55)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal vegetarian)
-    (ingredients ap-flour baking-powder cardamom eggs figs heavy-cream navel-oranges salt sugar butter vanilla-extract water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639608] of ONTOLOGY::Recipe
-    (title "Classic Hush Puppies")
-    (servings 8)
-    (price 4.26)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder baking-soda canola-oil dehydrated-onion lemon-juice milk parsley pepper-sauce salt sugar flour cornmeal)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662581] of ONTOLOGY::Recipe
-    (title "Sweet Potato Hashbrown Breakfast Bake")
-    (servings 4)
-    (price 29.07)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti morning-meal starter brunch snack appetizer breakfast antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients eggs garlic green-onions kosher-salt-and-ground-pepper olive-oil bell-pepper onion sharp-cheddar-cheese sweet-potatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642138] of ONTOLOGY::Recipe
-    (title "Easy Vegetable Fried Rice")
-    (servings 4)
-    (price 15.9)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients broccoli butter carrots rice egg garlic ginger green-beans peas sesame-oil soy-sauce sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655589] of ONTOLOGY::Recipe
-    (title "Penne with Goat Cheese and Basil")
-    (servings 12)
-    (price 4.04)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients penne-pasta basil-leaves goat-cheese olive-oil salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716416] of ONTOLOGY::Recipe
-    (title "Tomato, Cucumber & Onion Salad with Feta Cheese: Real Convenience Food")
-    (servings 1)
-    (price 525.81)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients balsamic-vinegar extra-virgin-olive-oil feta-cheese grape-tomatoes persian-cucumber onion salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_634213] of ONTOLOGY::Recipe
     (title "Banana, Cranberry and Apple Bread")
     (servings 8)
@@ -28249,259 +16653,6 @@
     (ingredients baking-powder baking-soda bananas-235g-on cranberry-125g eggs flour-200g apple milk salt sugar-140g vanilla tbsp-vegetable-oil-100g)
     (seasons any-season)
     (season_text "Fall"))
-
-  ([Recipe_662560] of ONTOLOGY::Recipe
-    (title "Sweet Potato Casserole with Pecan Crumble Topping")
-    (servings 10)
-    (price 4.86)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients brown-sugar butter egg evaporated-milk flour orange pecan-pieces sugar sweet-potatoes vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651232] of ONTOLOGY::Recipe
-    (title "Mashed Sweet Potatoes")
-    (servings 8)
-    (price 16.3)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients brown-sugar butter cardamom cayenne-pepper cinnamon cream kosher-salt maple-syrup orange-zest sweet-potatoes vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644108] of ONTOLOGY::Recipe
-    (title "Fusilli With Zucchini Flowers, Ricotta and Saffron")
-    (servings 2)
-    (price 214.88)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients almonds oil-evo bell-pepper onion ricotta-cheese saffron salt zucchini-flowers fusilloro-verrigni-o-fusilloni fusilloro-verrigni-o-fusilloni)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_648275] of ONTOLOGY::Recipe
-    (title "Italian Tomato and Mozzarella Caprese")
-    (servings 4)
-    (price 42.58)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients fluid-balsamic-vinegar pepper basil-leaves kosher-salt olive-oil sprinkle-of-oregano-leaves whole-milk-mozzarella vine-ripened-tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651103] of ONTOLOGY::Recipe
-    (title "Market Stuffed Squash Blossoms")
-    (servings 4)
-    (price 71.44)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients squash-blossoms garlic-scapes cherries butter panko-bread-crumbs goat-cheese basil salt-and-pepper flour pepper curry-powder salt club-soda oil)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_640508] of ONTOLOGY::Recipe
-    (title "Cream Cheese Stuffed Baby Bell Pepper Appetizer")
-    (servings 24)
-    (price 1.0)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients cream-cheese garlic green-onion ground-pepper olive-oil salt snack-peppers walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634441] of ONTOLOGY::Recipe
-    (title "Basil, Olive and Feta Foccacia")
-    (servings 8)
-    (price 13.8)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-unbleached-flour flour warm-water active-yeast warm-water salt olive-oil olives feta basil course-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_157344] of ONTOLOGY::Recipe
-    (title "Spicy Salad with Kidney Beans, Cheddar, and Nuts")
-    (servings 1)
-    (price 458.2)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients almonds avocado balsamic-vinegar cheddar-cheese kidney-beans greens olive-oil roasted-cashews sundried-tomatoes tabasco)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636207] of ONTOLOGY::Recipe
-    (title "Broccoli Rabe and Breaded Veal Scallopini")
-    (servings 4)
-    (price 28.91)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients broccoli-rabe butter egg olive-oil salt-and-pepper onion)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639515] of ONTOLOGY::Recipe
-    (title "Citrus Beet Salad")
-    (servings 4)
-    (price 52.95)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients beets olive-oil balsamic-vinegar grapefruit sprouts pumpkin-seeds goat-cheese)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_648348] of ONTOLOGY::Recipe
-    (title "Jalapeno Cornbread Stuffing")
-    (servings 10)
-    (price 18.6)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter onion celery jalapeno-chile-peppers pecans cornbread cilantro salt pepper cayenne-pepper chicken-broth)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639778] of ONTOLOGY::Recipe
-    (title "Coconut Israeli Couscous Studded With Pomegranate")
-    (servings 4)
-    (price 22.21)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients milk coconut-milk pods-cardamom ground-cinnamon sugar pomegranate-seeds)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_639333] of ONTOLOGY::Recipe
-    (title "Chouquettes")
-    (servings 8)
-    (price 3.98)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients butter sugar salt lemon-rind water flour vanilla rum eggs swedish-pearl-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657537] of ONTOLOGY::Recipe
-    (title "Quick and Easy Caprese Salad")
-    (servings 4)
-    (price 49.2)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients balsamic-vinegar basil-leaves mozzarella-cheese olive-oil bell-pepper salt tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657939] of ONTOLOGY::Recipe
-    (title "Ratatouille With Brie")
-    (servings 4)
-    (price 49.2)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients brie-log-such-as-alouette eggplant olive-oil zucchini squash plum-tomatoes thyme)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658498] of ONTOLOGY::Recipe
-    (title "Roasted Beet and Radicchio Salad")
-    (servings 4)
-    (price 76.94)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients beets olive-oil radicchio onion radishes mint-leaves queso-fresco red-wine-vinegar honey garlic-clove salt pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633683] of ONTOLOGY::Recipe
-    (title "Baked Macaroni and Cheese")
-    (servings 1)
-    (price 414.68)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients pkt-elbow-macaroni butter flour milk salt pepper cheddar-cheese bread-crumbs butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1077392] of ONTOLOGY::Recipe
-    (title "How to Cook Sweet Potatoes on the Grill")
-    (servings 6)
-    (price 10.28)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients sweet-potatoes butter cinnamon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655438] of ONTOLOGY::Recipe
-    (title "Pear Salad With Walnuts and Blue Cheese")
-    (servings 6)
-    (price 23.39)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients cheese chives salad-leaves-curly-endive lemon-juice pears safflower-oil walnut-oil walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662501] of ONTOLOGY::Recipe
-    (title "Sweet Corn Pudding")
-    (servings 10)
-    (price 20.33)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter onion garlic ears-corn flour heavy-cream grits jalapeo-peppers salt pepper eggs cheddar-cheese)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_665012] of ONTOLOGY::Recipe
-    (title "Watermelon Feta and Mint Salad")
-    (servings 1)
-    (price 1214.48)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients watermelon feta-cheese mint olive-oil balsamic-vinegar-very pepper-if-you-like-pepper)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_636393] of ONTOLOGY::Recipe
-    (title "Buckwheat Galette With An Egg")
-    (servings 10)
-    (price 1.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients milk sugar sea-salt butter buckwheat-flour flour eggs eggs)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637290] of ONTOLOGY::Recipe
-    (title "Cauliflower and Broccoli Gratin With Camembert Cheese")
-    (servings 4)
-    (price 48.91)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients breadcrumbs broccoli butter camembert-cheese-cut-cubes-plus-extra-to-put-on-top cauliflower flour salt)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_643096] of ONTOLOGY::Recipe
     (title "Flemish Style Asparagus Side Dish")
@@ -28514,61 +16665,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_638779] of ONTOLOGY::Recipe
-    (title "Chobani Harvest Fruit Salad")
-    (servings 1)
-    (price 979.48)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients pink-lady-apples granny-smith-apples bartlett-pear banana grapes globe-grapes lemon-juice raisins pecan-halves vanilla-flavored-chobani-greek-yogurt honey cinnamon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_656544] of ONTOLOGY::Recipe
-    (title "Polenta gnocchi with savoy cabbage and cheese")
-    (servings 2)
-    (price 119.75)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients buckwheat-flour butter polenta egg fontina garlic sage salt savoy-cabbage)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644853] of ONTOLOGY::Recipe
-    (title "Gluten Free Profiteroles")
-    (servings 1)
-    (price 121.79)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free vegetarian)
-    (ingredients butter egg flour xantham-gum milk salt sugar water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636230] of ONTOLOGY::Recipe
-    (title "Broccoli with cheese soup")
-    (servings 4)
-    (price 16.62)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients broccoli-florets flour milk garlic-powder salt ground-pepper feta-cheese swiss-chesee)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637067] of ONTOLOGY::Recipe
-    (title "Caramelized Tofu & Gala Apple Salad")
-    (servings 2)
-    (price 115.65)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients brown-sugar butter extra-firm-tofu gala-apple garlic lettuce wholes-pecans water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_657719] of ONTOLOGY::Recipe
     (title "Radish & Snap Pea Quinoa Salad")
     (servings 4)
@@ -28577,17 +16673,6 @@
     (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
     (restrictions gluten-free halal kosher vegetarian)
     (ingredients quinoa water snap-peas radishes flat-leaf-parsley yogurt tahini juice-of-lemon sea-salt water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639249] of ONTOLOGY::Recipe
-    (title "Chocolate, Pb and Banana Oats")
-    (servings 2)
-    (price 21.25)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients banana brown-sugar cocoa-powder old-fashioned-oats peanut-butter skim-milk)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -28613,28 +16698,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_649611] of ONTOLOGY::Recipe
-    (title "Lemon Delicious")
-    (servings 4)
-    (price 17.82)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients self-raising-flour caster-sugar butter lemon-zest lemon-juice egg-yolks milk egg-whites)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664101] of ONTOLOGY::Recipe
-    (title "Turkish squares")
-    (servings 8)
-    (price 11.55)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal vegetarian)
-    (ingredients butter sugar eggs milk vanilla-extract semolina baking-powder almonds water sugar juice-of-lemon)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_637814] of ONTOLOGY::Recipe
     (title "Chèvre With Sautéed Grapes")
     (servings 4)
@@ -28643,17 +16706,6 @@
     (meal_types side-dish)
     (restrictions gluten-free halal kosher vegetarian)
     (ingredients chvre olive-oil grapes chives chive-blossoms oregano-leaves flaky-sea-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1098392] of ONTOLOGY::Recipe
-    (title "Hush Puppies")
-    (servings 6)
-    (price 5.02)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients onion cornmeal flour baking-powder salt egg milk oil)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -28668,17 +16720,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_715563] of ONTOLOGY::Recipe
-    (title "Pierogi Casserole")
-    (servings 4)
-    (price 38.77)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter milk onions salt-and-pepper sharp-cheddar-cheese potatoes extra-wide-egg-noodles)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_644604] of ONTOLOGY::Recipe
     (title "Ginger Molasses Rounds")
     (servings 6)
@@ -28687,72 +16728,6 @@
     (meal_types side-dish)
     (restrictions kosher vegetarian)
     (ingredients baking-soda butter cinnamon egg flour additional-granulated-sugar ground-ginger molasses salt sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653593] of ONTOLOGY::Recipe
-    (title "Old Fashioned Mac and Cheese")
-    (servings 2)
-    (price 203.13)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients elbow-macaroni block-of-cheddar-cheese milk butter flour salt pepper seasoned-bread-crumbs)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636363] of ONTOLOGY::Recipe
-    (title "Brussels Sprouts In Honey Butter With Chili Flakes")
-    (servings 6)
-    (price 11.18)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients brussels-sprouts butter honey sea-salt sprinkle-of-chili-flakes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641723] of ONTOLOGY::Recipe
-    (title "Dulce De Leche")
-    (servings 4)
-    (price 42.47)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients milk sugar vanilla-bean salt baking-soda)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649504] of ONTOLOGY::Recipe
-    (title "Lemon and Strawberry Loaf")
-    (servings 8)
-    (price 6.53)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter sugar eggs self-raising-flour dessicated-coconut natural-yoghurt juice-of-lemon strawberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715595] of ONTOLOGY::Recipe
-    (title "How to Make the Cheesiest Bowtie Mac and Cheese")
-    (servings 4)
-    (price 33.65)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients bowtie-pasta-cook-as-directed extra-sharp-cheddar-cheese extra-sharp-cheddar-cheese salt-and-pepper cream butter parsley)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635126] of ONTOLOGY::Recipe
-    (title "Black Lentil and Couscous Salad")
-    (servings 8)
-    (price 20.22)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients couscous lentils ground-cumin cayenne-pepper paprika almond-flakes raisins parsley mint olive-oil apple-cider-vinegar dijon-mustard orange-zest juice-of-orange honey feta)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -28778,94 +16753,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_658087] of ONTOLOGY::Recipe
-    (title "Red Quinoa and Roasted Cauliflower Salad")
-    (servings 4)
-    (price 56.62)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients cauliflower quinoa walnuts apricots feta-cheese green-onions parsley salt-and-pepper lemon olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649518] of ONTOLOGY::Recipe
-    (title "Lemon Blondies with Lemon Glaze")
-    (servings 12)
-    (price 1.55)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter eggs flour granulated-sugar lemon-juice lemon-zest powdered-sugar salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664969] of ONTOLOGY::Recipe
-    (title "Warm Quinoa Spinach and Shiitake Salad")
-    (servings 6)
-    (price 51.77)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients baby-spinach pepper chicken-broth feta-cheese olive-oil bell-pepper red-wine-vinegar pc-organics-roasted-garlic-and-herbs-quinoa salt shallots shiitake-mushrooms)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_640827] of ONTOLOGY::Recipe
-    (title "Crispy Pineapple Fritters")
-    (servings 12)
-    (price 2.99)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher vegetarian)
-    (ingredients pineapple-rings flour cornstarch egg baking-powder salt milk panko-breadcrumbs canola-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663638] of ONTOLOGY::Recipe
-    (title "Tomato Stack Salad")
-    (servings 4)
-    (price 74.0)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients balsamic-vinegar herbs goat-cheese salt tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654534] of ONTOLOGY::Recipe
-    (title "Paneer Makhani")
-    (servings 4)
-    (price 21.32)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients paneer onion garlic ginger turmeric-powder coriander-powder cumin-powder tomato-paste kasuri-methi heavy-whipping-cream salt sugar canola-oil kashmiri-mirch)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636199] of ONTOLOGY::Recipe
-    (title "Broccoli Oatmeal Breakfast Casserole")
-    (servings 4)
-    (price 15.22)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course morning-meal brunch main-dish breakfast dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients baking-powder broccoli-florets cayenne-pepper eggs milk oats olive-oil salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640798] of ONTOLOGY::Recipe
-    (title "Crisp Winter Salad with Maple Gorgonzola Dressing")
-    (servings 4)
-    (price 78.22)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients broccoli-stems celery cider-vinegar dijon-mustard gorgonzola-cheese jicama kosher-salt cream maple-syrup olive-oil radishes apple romaine-lettuce savoy-cabbage walnuts pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_659782] of ONTOLOGY::Recipe
     (title "Sex in a glass")
     (servings 6)
@@ -28876,17 +16763,6 @@
     (ingredients caramel-dessert-topping cream dulce-de-leche-ice-cream espresso sugar sugar water water)
     (seasons any-season)
     (season_text "Any season"))
-
-  ([Recipe_645704] of ONTOLOGY::Recipe
-    (title "Grilled Fattoush")
-    (servings 6)
-    (price 36.23)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients cucumber cumin feta-cheese mint green-onions kalamata-olives lemon olive-oil parsley pita-breads bell-peppers salt-and-pepper tomato zucchini)
-    (seasons summer)
-    (season_text "Summer"))
 
   ([Recipe_660842] of ONTOLOGY::Recipe
     (title "Spanakopita Cups")
@@ -28899,94 +16775,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_645427] of ONTOLOGY::Recipe
-    (title "Green Chile & Corn Casserole Side Dish")
-    (servings 10)
-    (price 5.41)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher vegetarian)
-    (ingredients butter corn extra-sharp-cheddar-cheese chile seasoned-bread-crumbs kosher-salt-pepper milk cream thyme)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_632862] of ONTOLOGY::Recipe
-    (title "Asian Pear and Gorgonzola Salad With Pomegranate Vinaigrette")
-    (servings 20)
-    (price 2.76)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients greens asian-pears pomegranate-seeds gorgonzola pistachio-nuts pomegranate-seeds red-wine-vinegar sugar shallots extra-virgin-olive-oil kosher-salt-and-cracked-pepper)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_660835] of ONTOLOGY::Recipe
-    (title "Spaghetti With Pesto Trapanese")
-    (servings 6)
-    (price 24.25)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients spaghetti almonds pine-nuts extra-virgin-olive-oil garlic-cloves tomatoes basil salt-and-pepper pecorino)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632481] of ONTOLOGY::Recipe
-    (title "Apple Brown Betty")
-    (servings 6)
-    (price 25.03)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients apples apples bread butter butter butter cinnamon cinnamon juice-of-lemon nutmeg nutmeg sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632788] of ONTOLOGY::Recipe
-    (title "Arugula Salad With Pomegranate, Avocado and Goat Cheese")
-    (servings 2)
-    (price 113.16)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients avocado baby-arugula balsamic-vinegar-or cilantro goat-cheese olive-oil pomegranate-molasses seedsarils-from-1-pomegranate course-sea-salt-and-pepper)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_665537] of ONTOLOGY::Recipe
-    (title "Yoghurt Honey Madeleines")
-    (servings 15)
-    (price 0.71)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients egg honey sugar natural-yoghurt flour baking-powder butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635195] of ONTOLOGY::Recipe
-    (title "Blackberry Clafoutis")
-    (servings 2)
-    (price 73.47)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients blackberries almond-meal flour milk caster-sugar eggs vanilla-extract salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637016] of ONTOLOGY::Recipe
-    (title "Caramel Peanut Fudge Cake")
-    (servings 10)
-    (price 12.43)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients almonds cocoa chocolate-of-at-least-cocoa-parts cream eggs peanuts rum sugar water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_633091] of ONTOLOGY::Recipe
     (title "Autumn Cheesecake")
     (servings 8)
@@ -28998,17 +16786,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_634229] of ONTOLOGY::Recipe
-    (title "Bananas Foster")
-    (servings 1)
-    (price 131.37)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients banana banana-liqueur brown-sugar butter cinnamon rum)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_646868] of ONTOLOGY::Recipe
     (title "Home made coffee ice cream")
     (servings 6)
@@ -29017,17 +16794,6 @@
     (meal_types dessert)
     (restrictions gluten-free halal vegetarian)
     (ingredients cream egg-yolks coffee-granules milk sugar vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641799] of ONTOLOGY::Recipe
-    (title "Easter Nest Sweet Cake With Sour Cream-Royal Icing and Pistachios")
-    (servings 8)
-    (price 12.41)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder brown-sugar eggs eggwhite flour food-coloring icing-sugar lemon-juice unshelled-pistachios cream butter)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -29053,72 +16819,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_665155] of ONTOLOGY::Recipe
-    (title "White cake with marzipan and almonds")
-    (servings 10)
-    (price 9.18)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients almonds amaretto-liqueur baking-powder butter cornstarch egg-whites flour marzipan sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635041] of ONTOLOGY::Recipe
-    (title "Bittersweet chocolate pudding")
-    (servings 6)
-    (price 8.42)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal vegetarian)
-    (ingredients cocoa-powder cornstarch egg milk salt sugar butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658300] of ONTOLOGY::Recipe
-    (title "Rich Jelly Scones")
-    (servings 4)
-    (price 44.94)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal vegetarian)
-    (ingredients all-purpose-flour granulated-sugar baking-powder baking-soda salt butter eggs milk vanilla-extract fruit-preserves egg milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639644] of ONTOLOGY::Recipe
-    (title "Classic Vanilla-Orange Sugar Cookies")
-    (servings 24)
-    (price 1.62)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients ap-flour chocolate egg egg-yolk granulated-sugar milk orange-zest salt butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_729532] of ONTOLOGY::Recipe
-    (title "Gluten Free Almond Blueberry Coffee Cake")
-    (servings 8)
-    (price 8.49)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients almonds baking-powder blueberries canola-oil egg flour granulated-sugar sea-salt turbinado-sugar vanilla-yogurt milk xanthan-gum)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651434] of ONTOLOGY::Recipe
-    (title "Mediterranean semolina cake")
-    (servings 10)
-    (price 14.36)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients sugar eggs yoghurt lemon-zest orange-zest almond-meal semolina baking-powder olive-oil almonds raisins cranberries honey juice-of-orange)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_634237] of ONTOLOGY::Recipe
     (title "Bananas Foster Ice Cream")
     (servings 2)
@@ -29141,72 +16841,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_633229] of ONTOLOGY::Recipe
-    (title "Baby Chick Cupcakes")
-    (servings 12)
-    (price 6.94)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients flour sugar butter milk baking-powder salt vanilla egg icing-sugar cream food-colouring coconut brown-and-orange-mms)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655202] of ONTOLOGY::Recipe
-    (title "Peanut Brittle")
-    (servings 4)
-    (price 26.77)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients butter soda coconut corn-syrup peanuts salt sugar water)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_715381] of ONTOLOGY::Recipe
-    (title "Creamy Lime Pie Square Bites")
-    (servings 2)
-    (price 46.23)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions vegetarian)
-    (ingredients all-purpose-flour graham-cracker-crumbs lime-zest sugar butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640395] of ONTOLOGY::Recipe
-    (title "Cranberry Orange Biscotti")
-    (servings 48)
-    (price 0.51)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder confectioners-sugar cranberries eggs flour orange-juice orange-zest pecans salt sugar butter vanilla-extract pastry-flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654034] of ONTOLOGY::Recipe
-    (title "Oreo Mini Cheesecake")
-    (servings 12)
-    (price 4.27)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients cream-cheese whipping-cream vanilla-extract eggs cream-of-tartar sugar oreo)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655314] of ONTOLOGY::Recipe
-    (title "Peanut butter ice cream")
-    (servings 8)
-    (price 8.0)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal vegetarian)
-    (ingredients milk sugar salt eggs smooth-peanut-butter heavy-cream vanilla-extract peanuts bits-of-bitter-chocolate)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_648010] of ONTOLOGY::Recipe
     (title "Irish Whiskey Pie")
     (servings 10)
@@ -29215,28 +16849,6 @@
     (meal_types dessert)
     (restrictions kosher vegetarian)
     (ingredients condensed-milk cornstarch egg-yolks brown-sugar homogenized-milk pastry-flour salt butter vodka water irish-whiskey)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642551] of ONTOLOGY::Recipe
-    (title "Fall Classic: Carrot Cake")
-    (servings 16)
-    (price 3.49)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder baking-soda brown-sugar butter canola-oil carrots cinnamon eggs granulated-sugar icing-sugar cream-cheese salt vanilla-extract flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632525] of ONTOLOGY::Recipe
-    (title "Apple Custard Pie With Oatmeal Crust")
-    (servings 10)
-    (price 6.72)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients apples brown-sugar butter cinnamon eggs flour milk oats sugar vanilla-extract)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -29273,17 +16885,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_646385] of ONTOLOGY::Recipe
-    (title "Hazelnut & Coconut Shortbread Sandwich Cookies")
-    (servings 22)
-    (price 0.68)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients coconut flour hazelnuts salt sugar butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_636333] of ONTOLOGY::Recipe
     (title "Brownie Pudding")
     (servings 1)
@@ -29292,94 +16893,6 @@
     (meal_types dessert)
     (restrictions halal kosher vegetarian)
     (ingredients baking-powder brown-sugar cocoa cocoa flour milk oil salt sugar vanilla walnuts water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640767] of ONTOLOGY::Recipe
-    (title "Crepes Suzette")
-    (servings 4)
-    (price 21.99)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter eggs flour lemon-juice lemon-zest milk salt sugar butter water sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655145] of ONTOLOGY::Recipe
-    (title "Peach Pie")
-    (servings 6)
-    (price 28.51)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients almond-paste brown-sugar brown-eggs heavy-cream pastry-crust cut-up-peaches vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658850] of ONTOLOGY::Recipe
-    (title "Royal Wedding Pear and Coriander Scones")
-    (servings 8)
-    (price 7.83)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients pear flour xanthan-gum baking-soda baking-powder salt butter sucanat eggs cream coriander)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652284] of ONTOLOGY::Recipe
-    (title "Molten Chocolate Liquor Cakes")
-    (servings 6)
-    (price 15.75)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients chocolate egg-yolks eggs liquor powdered-sugar salt butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637473] of ONTOLOGY::Recipe
-    (title "Chavrie Caramelized Red Onion Tarts")
-    (servings 12)
-    (price 4.55)
-    (wine_pairing "No wine pairing")
-    (meal_types antipasti starter dessert snack appetizer antipasto hor-doeuvre)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients goat-cheese grape-jelly onions red-wine-vinegar sugar butter vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664306] of ONTOLOGY::Recipe
-    (title "Vanilla Coconut Snowball Cupcakes")
-    (servings 13)
-    (price 4.12)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients flour baking-powder salt butter sugar vanilla-extract eggs regular-milk cream unsweeted-coconut-flakes butter cream vanilla confectionerss-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653445] of ONTOLOGY::Recipe
-    (title "Oatmeal Coconut Cookies")
-    (servings 32)
-    (price 0.23)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients rolled-oats coconut flour caster-sugar salt butter inverted-sugar-syrup baking-soda water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632176] of ONTOLOGY::Recipe
-    (title "Almond Ricotta Cake")
-    (servings 16)
-    (price 3.18)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions kosher vegetarian)
-    (ingredients all-purpose-flour almond-extract almonds apricot-jam baking-powder canola-oil egg eggs lemon-juice lemon-zest milk orange-liqueur 2-ricotta-cheese rum salt tablespoon-sugar sugar vanilla)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -29394,28 +16907,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_637161] of ONTOLOGY::Recipe
-    (title "Carrot and Banana Snacking Cake")
-    (servings 8)
-    (price 4.05)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients banana carrots egg non-fat-yogurt sugar brown-sugar vegetable-oil flour pastry-flour baking-soda cinnamon raisins)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636315] of ONTOLOGY::Recipe
-    (title "Brown Sugar Sponge Cookie with Chocolate Covered Caramels")
-    (servings 24)
-    (price 0.46)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients all-purpose-flour baking-powder brown-sugar eggs lemon-zest salt vanilla-extract rolos)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_645145] of ONTOLOGY::Recipe
     (title "Grandma B's Rhubarb Cake")
     (servings 15)
@@ -29426,17 +16917,6 @@
     (ingredients apple-sauce baking-powder brandy brown-sugar cinnamon coconut egg flour rhubarb salt skim-milk sugar walnuts)
     (seasons spring)
     (season_text "Spring"))
-
-  ([Recipe_661633] of ONTOLOGY::Recipe
-    (title "Sticky Toffee Pudding")
-    (servings 8)
-    (price 12.57)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder butter corn-syrup dates eggs flour heavy-cream brown-sugar salt sugar vanilla-extract water)
-    (seasons summer)
-    (season_text "Summer"))
 
   ([Recipe_634091] of ONTOLOGY::Recipe
     (title "Banana Foster Bread Pudding")
@@ -29449,83 +16929,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_662871] of ONTOLOGY::Recipe
-    (title "Tapioca Pudding with Pineapple and Coconut")
-    (servings 4)
-    (price 59.45)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients 8-fl-oz-coconut-milk egg-yolks 5-fl-oz-full-milk honey lime 8-oz-pineapple salt sugar 3-oz-of-pearl-tapioca vanilla-pod)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632625] of ONTOLOGY::Recipe
-    (title "Apple-Cheesecake Tart with Salted Caramel Glaze")
-    (servings 8)
-    (price 19.34)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter double-cream egg flour granny-smith-apples ground-almonds ground-cinnamon juice-of-lemon full-fat-cream-cheese sugar sea-salt sugar vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664284] of ONTOLOGY::Recipe
-    (title "Vanilla and Lime Flan By Esperanza Platas Alvarez (Planet Food Mexico)")
-    (servings 8)
-    (price 17.92)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients condensed-milk eggs limes sugar vanilla-pod water milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632622] of ONTOLOGY::Recipe
-    (title "Apple- Pomegranate Crisp")
-    (servings 12)
-    (price 8.79)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baked-apples pink-lady-apples pom-wonderful-pomegranate-juice brown-sugar ground-cinnamon ground-allspice lemon-juice corn-starch old-fashioned-rolled-oats unbleached-flour apple-juice pom-wonderful-pomegranate-juice canola-oil brown-sugar salt walnuts butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663756] of ONTOLOGY::Recipe
-    (title "Traditional Banana Bread")
-    (servings 8)
-    (price 4.28)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients granulated-sugar butter eggs bananas milk ground-cinnamon flour baking-powder baking-soda salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642256] of ONTOLOGY::Recipe
-    (title "Eggless Cardamom and Chocolate Cheesecake")
-    (servings 12)
-    (price 8.41)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder butter cardamom cocoa-powder cornflour cream-cheese double-cream lemon-juice flour ricotta-cheese sugar sugar vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641730] of ONTOLOGY::Recipe
-    (title "Dulce De Leche Cheesecake")
-    (servings 10)
-    (price 12.7)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients almond-cookies cornstarch philiadelphia-balance-cream-cheese dulce-de-leche eggs juice-of-lemon salt sugar butter yogurt)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_653074] of ONTOLOGY::Recipe
     (title "New York Cheesecake")
     (servings 4)
@@ -29534,39 +16937,6 @@
     (meal_types dessert)
     (restrictions vegetarian)
     (ingredients butter of-cream-cheese egg-yolks eggs flour ground-graham-crackers lemon-zest orange-zest salt sugar sugar vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658803] of ONTOLOGY::Recipe
-    (title "Rosemary Rum Raisin Soda Bread with Pecans")
-    (servings 16)
-    (price 2.74)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions kosher vegetarian)
-    (ingredients raisins rum flour flour baking-soda salt rosemary pecans yogurt honey milk anise-seeds)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632656] of ONTOLOGY::Recipe
-    (title "Apricot Clafouti With Lavender & Pecans")
-    (servings 10)
-    (price 15.02)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients all-natural-apricot-nectar apricot-preserves california-apricots apricots cardamom eggs honey culinary-lavender-buds lemon-juice lemon-zest cream nonfat-milk pecans salt unbleached-flour vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632629] of ONTOLOGY::Recipe
-    (title "Apple-Walnut Crisp")
-    (servings 4)
-    (price 67.92)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-flour winsap-apples tbsp-butter butter cinnamon granulated-sugar lemon-juice brown-sugar nutmeg oatmeal walnuts water)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -29581,17 +16951,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_637181] of ONTOLOGY::Recipe
-    (title "Carrot Cake Muffin Cookies")
-    (servings 64)
-    (price 0.14)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions vegetarian)
-    (ingredients butter brown-sugar maple-syrup baking-soda ground-cinnamon ground-ginger salt egg applesauce vanilla-extract pastry-flour flour carrots raisin walnuts turbinado-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_644907] of ONTOLOGY::Recipe
     (title "Gluten-Free Tres Leches Cake")
     (servings 10)
@@ -29600,28 +16959,6 @@
     (meal_types dessert)
     (restrictions gluten-free halal vegetarian)
     (ingredients baking-powder butter cinnamon cream-of-tartar eggs evaporated-milk half-and-half masa-harina milk strawberries-and-mint-leaves orange-zest salt sorghum-flour sugar sugar condensed-milk vanilla vanilla-extract whipping-cream xanthan-gum)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716409] of ONTOLOGY::Recipe
-    (title "Cannoli Cream-Filled Strawberries")
-    (servings 2)
-    (price 64.11)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients cream-cheese strawberries honey lemon-zest powdered-sugar ricotta vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641445] of ONTOLOGY::Recipe
-    (title "Dessert That's No Problem: Baked Pears with Oatmeal Crumble")
-    (servings 4)
-    (price 14.76)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients pears oatmeal brown-sugar flour cinnamon butter)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -29636,39 +16973,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_636331] of ONTOLOGY::Recipe
-    (title "Brownie Cupcakes")
-    (servings 24)
-    (price 0.87)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients chocolate butter granulated-sugar vanilla-extract eggs all-purpose-flour salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651945] of ONTOLOGY::Recipe
-    (title "Mini Chocolate Pudding Oreo Cheesecakes")
-    (servings 12)
-    (price 8.46)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients cream-cheese eggs chocolate-pudding milk oreos vanilla-extract sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663861] of ONTOLOGY::Recipe
-    (title "Tropical Pineapple Cupcakes")
-    (servings 18)
-    (price 3.5)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients all-purpose-flour baking-powder butter confectioners-sugar cream-cheese eggs granulated-sugar maraschino-cherries milk pineapple pineapple-chunks pineapple-rings salt vanilla vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_644642] of ONTOLOGY::Recipe
     (title "Ginger Snap and Pumpkin Ice Cream Sandwiches")
     (servings 20)
@@ -29679,28 +16983,6 @@
     (ingredients milk heavy-cream granulated-sugar cinnamon nutmeg ground-ginger cinnamon-stick kosher-salt egg-yolks pumpkin-puree vanilla all-purpose-flour baking-soda ground-cinnamon ground-ginger ground-nutmeg ground-pepper butter granulated-sugar vanilla-extract molasses egg)
     (seasons any-season)
     (season_text "Fall"))
-
-  ([Recipe_715569] of ONTOLOGY::Recipe
-    (title "Strawberry Cheesecake Chocolate Crepes")
-    (servings 4)
-    (price 41.94)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal vegetarian)
-    (ingredients cream-cheese strawberries vanilla-extract lemon-juice granulated-sugar flour cocoa-powder kosher-salt eggs milk water butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644900] of ONTOLOGY::Recipe
-    (title "Gluten-Free Pressed Lemon Butter Cookies")
-    (servings 60)
-    (price 0.21)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients butter sugar egg-yolks lemon-extract lemon-zest lemon-juice flour xanthan-gum)
-    (seasons any-season)
-    (season_text "Any season"))
 
   ([Recipe_657842] of ONTOLOGY::Recipe
     (title "Raspberry Cheesecake Bars By Mommie Cooks")
@@ -29713,28 +16995,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_716367] of ONTOLOGY::Recipe
-    (title "Vanilla Pound Cake")
-    (servings 10)
-    (price 6.98)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder butter eggs natural-yogurt granulated-sugar milk nutmeg flour salt vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632115] of ONTOLOGY::Recipe
-    (title "Almond Coffee Cupcakes with Kahlua Liqueur")
-    (servings 6)
-    (price 19.03)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients almond-meal-30g butter kahlua-coffee-liqueur egg-whites-80g chocolate-icing icing-sugar-55g coffee-powder flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_715439] of ONTOLOGY::Recipe
     (title "OREO Cookie Balls – Snowman")
     (servings 12)
@@ -29743,17 +17003,6 @@
     (meal_types dessert)
     (restrictions halal kosher vegetarian)
     (ingredients oreo-cookies cream-cheese bakers-chocolate rolo-chocolate-candy gel-icing orange-gel-icing additional-supplies-to-decorate-snowmen additional-supplies-to-decorate-snowmen)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650482] of ONTOLOGY::Recipe
-    (title "Luscious Lemon Soufflé Pudding")
-    (servings 6)
-    (price 8.24)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter-to cream-of-tartar eggs flour lemon-juice lemon-zest powdered-sugar salt sugar vanilla milk)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -29768,28 +17017,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_641644] of ONTOLOGY::Recipe
-    (title "Dreamy Chai Rice Pudding")
-    (servings 4)
-    (price 122.31)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free kosher vegetarian)
-    (ingredients rice milk freshly-tea cinnamon-powder ginger-powder cardomon-pods star-anise large-cloves vanilla-essence brown-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646361] of ONTOLOGY::Recipe
-    (title "Hawaiian Cookie Tarts")
-    (servings 12)
-    (price 5.35)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients ap-flour apple-sauce butter coconut cornstarch egg granulated-sugar pineapple-preserves powdered-sugar vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_653186] of ONTOLOGY::Recipe
     (title "No-Bake Chocolate Peanut Butter Macaroons")
     (servings 1)
@@ -29798,28 +17025,6 @@
     (meal_types dessert)
     (restrictions gluten-free halal kosher vegetarian)
     (ingredients milk coconut cocoa butter brown-sugar vanilla cooking-oats peanut-butter-to-garnish)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655098] of ONTOLOGY::Recipe
-    (title "Peach Coconut Ice Cream")
-    (servings 14)
-    (price 5.17)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients full-fat-coconut-milk half-half cane-sugar peaches)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636300] of ONTOLOGY::Recipe
-    (title "Brown sugar & Spice Sugar cookie frogs")
-    (servings 30)
-    (price 0.41)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions vegetarian)
-    (ingredients unbleached baking-powder cinnamon ginger nutmeg allspice granulated-sugar brown-sugar butter egg vanilla-extract)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -29834,17 +17039,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_637761] of ONTOLOGY::Recipe
-    (title "Cherry ice cream")
-    (servings 8)
-    (price 7.0)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients cherries corn-starch cream lemon-juice milk salt sugar)
-    (seasons summer)
-    (season_text "Summer"))
-
   ([Recipe_648501] of ONTOLOGY::Recipe
     (title "Japanese Souffle Cheesecake")
     (servings 1)
@@ -29853,61 +17047,6 @@
     (meal_types dessert)
     (restrictions halal kosher vegetarian)
     (ingredients cream-cheese butter milk caster-sugar eggs cream-of-tartar self-raising-flour salt scant-orange-juice orange-zest)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662151] of ONTOLOGY::Recipe
-    (title "Sugar Cookies")
-    (servings 16)
-    (price 2.08)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients flour salt baking-powder butter sugar eggs lemon-juice lemon-zest)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651990] of ONTOLOGY::Recipe
-    (title "Mini-Cherry Pies")
-    (servings 12)
-    (price 9.29)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients cherries cornstarch flour granulated-sugar heavy-whipping-cream lemon-juice pecans turbinado-sugar butter vanilla-extract plus-2-water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659463] of ONTOLOGY::Recipe
-    (title "Savory Cheese Dill Scones")
-    (servings 12)
-    (price 2.29)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder a-pinch-of-baking-soda pepper tablespoons-butter buttermilk coarsely-cheddar-cheese cottage-cheese dill shallot sugar unbleached-flour flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650751] of ONTOLOGY::Recipe
-    (title "Mango Avocado Ice Cream")
-    (servings 8)
-    (price 9.15)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients flesh-of-avocados honey juice-of-lime flesh-of-ataulfo-mango milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_656248] of ONTOLOGY::Recipe
-    (title "Pinot Noir Brownies")
-    (servings 16)
-    (price 26.56)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients pinot-noir-chocolate-brownies eggs sugar vanilla butter handcraft-pinot-noir ghirardelli-ground-cocoa unbleached-flour baking-powder salt walnuts pinot-noir-chocolate-icing butter chocolate granulated-sugar handcraft-pinot-noir)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -29922,17 +17061,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_658855] of ONTOLOGY::Recipe
-    (title "Rugelach")
-    (servings 32)
-    (price 0.99)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter block-of-cream-cheese salt flour egg-yolks vanilla-extract caster-sugar fruit-preserves walnuts butter caster-sugar ground-cinnamon)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_631741] of ONTOLOGY::Recipe
     (title "Divine Christmas Candy Cane Cookies")
     (servings 15)
@@ -29941,83 +17069,6 @@
     (meal_types dessert)
     (restrictions halal vegetarian)
     (ingredients all-purpose-flour egg-yolk food-coloring peppermint-extract powdered-sugar butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716407] of ONTOLOGY::Recipe
-    (title "Simple Whole Wheat Crepes")
-    (servings 4)
-    (price 13.6)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter eggs maple-syrup milk sea-salt flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651992] of ONTOLOGY::Recipe
-    (title "Miniature Cheesecakes")
-    (servings 1)
-    (price 569.65)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients cream-cheese eggs sugar vanilla vanilla-wafers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640730] of ONTOLOGY::Recipe
-    (title "Creme Brulee")
-    (servings 8)
-    (price 11.97)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients egg egg-yolks milk caster-sugar vanilla-pod whipping-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655132] of ONTOLOGY::Recipe
-    (title "Peach Melba Clafoutis")
-    (servings 6)
-    (price 33.64)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients eggs flour milk peaches raspberries salt vanilla-extract vanilla-sugar whipping-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637171] of ONTOLOGY::Recipe
-    (title "Carrot Banana Bread")
-    (servings 10)
-    (price 4.78)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal vegetarian)
-    (ingredients baking-soda banana carrot eggs flour golden-raisins ground-cinnamon honey non-fat-greek-yogurt nutmeg nuts oatmeal salt vanilla-extract flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653352] of ONTOLOGY::Recipe
-    (title "Nutella Brownies")
-    (servings 18)
-    (price 1.68)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients eggs flour nutella salt sugar butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646905] of ONTOLOGY::Recipe
-    (title "Homemade Animal Crackers")
-    (servings 8)
-    (price 4.69)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients allspice baking-powder brown-sugar butter cinnamon cocoa-powder egg flour oats salt vanilla)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -30032,127 +17083,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_634070] of ONTOLOGY::Recipe
-    (title "Banana Creme Brulee")
-    (servings 8)
-    (price 13.63)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions gluten-free halal kosher vegetarian)
-    (ingredients bananas little-demerara-sugar egg-yolks heavy-cream sugar vanilla-pod)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637824] of ONTOLOGY::Recipe
-    (title "Chewy Gingersnaps")
-    (servings 75)
-    (price 0.4)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions kosher vegetarian)
-    (ingredients baking-soda brown-sugar butter cinnamon eggs flour ginger kosher-salt molasses oil pepper sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715439] of ONTOLOGY::Recipe
-    (title "OREO Cookie Balls – Snowman")
-    (servings 12)
-    (price 26.54)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients oreo-cookies cream-cheese bakers-chocolate rolo-chocolate-candy gel-icing orange-gel-icing additional-supplies-to-decorate-snowmen additional-supplies-to-decorate-snowmen)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652017] of ONTOLOGY::Recipe
-    (title "Mint Oreo Brownies")
-    (servings 25)
-    (price 1.58)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients all-purpose-flour cocoa-powder sea-salt butter chocolate sugar vanilla-extract mint-oreos eggs)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634006] of ONTOLOGY::Recipe
-    (title "Banana Bread")
-    (servings 6)
-    (price 9.71)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients bananas butter sugar egg vanilla baking-soda salt flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633091] of ONTOLOGY::Recipe
-    (title "Autumn Cheesecake")
-    (servings 8)
-    (price 13.9)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions vegetarian)
-    (ingredients baking-apples apricot-preserve butter cinnamon cream-cheese eggs graham-crackers-to-crumbs-1 pecans sugar vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1005367] of ONTOLOGY::Recipe
-    (title "Shortbread Lemon Bars")
-    (servings 9)
-    (price 4.02)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-flour all-purpose-flour eggs lemon-juice lemon-zest fat-milk powdered-sugar salt sugar butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664477] of ONTOLOGY::Recipe
-    (title "Vegan Pumpkin Bundt Cake")
-    (servings 18)
-    (price 5.63)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free vegan vegetarian)
-    (ingredients apple-cider-vinegar baking-powder baking-soda barley-flour canola-oil date-sugar golden-raisins ground-allspice ground-cinnamon ground-cloves ground-ginger maple-syrup nutmeg pecans pumpkin-puree salt soymilk vanilla-extract)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_656569] of ONTOLOGY::Recipe
-    (title "Polish Rugelach")
-    (servings 18)
-    (price 2.17)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-flour cocoa-powder cream-cheese cranberries raisins ground-cinnamon nutmeg sugar butter walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645145] of ONTOLOGY::Recipe
-    (title "Grandma B's Rhubarb Cake")
-    (servings 15)
-    (price 3.0)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions kosher vegetarian)
-    (ingredients apple-sauce baking-powder brandy brown-sugar cinnamon coconut egg flour rhubarb salt skim-milk sugar walnuts)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_715395] of ONTOLOGY::Recipe
-    (title "Delicious Lemon Cake")
-    (servings 1)
-    (price 293.08)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder eggs flour milk powdered-sugar salt sugar sugar butter water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_635248] of ONTOLOGY::Recipe
     (title "Blackberry Walnut Cookies")
     (servings 20)
@@ -30161,457 +17091,6 @@
     (meal_types dessert)
     (restrictions halal vegetarian)
     (ingredients butter flour granulated-sugar brown-sugar raspberry-jam vanilla-extract walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651992] of ONTOLOGY::Recipe
-    (title "Miniature Cheesecakes")
-    (servings 1)
-    (price 569.65)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients cream-cheese eggs sugar vanilla vanilla-wafers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665257] of ONTOLOGY::Recipe
-    (title "Whole Grain Pumpkin Bread")
-    (servings 24)
-    (price 1.97)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-soda firmly-brown-sugar pumpkin cinnamon eggs flour ground-cloves molasses nutmeg oat-bran oil pecans salt wheat-bran wheat-germ flour)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_651434] of ONTOLOGY::Recipe
-    (title "Mediterranean semolina cake")
-    (servings 10)
-    (price 14.36)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients sugar eggs yoghurt lemon-zest orange-zest almond-meal semolina baking-powder olive-oil almonds raisins cranberries honey juice-of-orange)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640352] of ONTOLOGY::Recipe
-    (title "Cranberry Apple Crisp")
-    (servings 4)
-    (price 38.4)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients granny-smith-apples cranberries sugar butter regular-oats brown-sugar flour butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715381] of ONTOLOGY::Recipe
-    (title "Creamy Lime Pie Square Bites")
-    (servings 2)
-    (price 46.23)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions vegetarian)
-    (ingredients all-purpose-flour graham-cracker-crumbs lime-zest sugar butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650479] of ONTOLOGY::Recipe
-    (title "Luscious Lemon Bars")
-    (servings 6)
-    (price 8.75)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder butter eggs flour juice-of-lemon lemon-zest powdered-sugar sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639114] of ONTOLOGY::Recipe
-    (title "Chocolate Nutella Walnut Cake")
-    (servings 8)
-    (price 12.86)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients eggs sugar walnuts nutella chocolate butter flour baking-powder salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631785] of ONTOLOGY::Recipe
-    (title "Impossible\" Coconut Pie")
-    (servings 10)
-    (price 10.39)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients eggs sugar butter desiccated-coconut lemon-zest orange-zest lemon-juice m-orange-juice coconut-milk flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655132] of ONTOLOGY::Recipe
-    (title "Peach Melba Clafoutis")
-    (servings 6)
-    (price 33.64)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients eggs flour milk peaches raspberries salt vanilla-extract vanilla-sugar whipping-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642551] of ONTOLOGY::Recipe
-    (title "Fall Classic: Carrot Cake")
-    (servings 16)
-    (price 3.49)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder baking-soda brown-sugar butter canola-oil carrots cinnamon eggs granulated-sugar icing-sugar cream-cheese salt vanilla-extract flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632525] of ONTOLOGY::Recipe
-    (title "Apple Custard Pie With Oatmeal Crust")
-    (servings 10)
-    (price 6.72)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients apples brown-sugar butter cinnamon eggs flour milk oats sugar vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635231] of ONTOLOGY::Recipe
-    (title "Blackberry Pie Bars")
-    (servings 6)
-    (price 27.54)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients tbsp-all-purpose-flour all-purpose-flour blackberries butter eggs lemon-zest salt cream sugar walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641168] of ONTOLOGY::Recipe
-    (title "Cyndee's Neiman Marcus Cake")
-    (servings 12)
-    (price 5.62)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-soda butter cornstarch cream-cheese eggs flour kosher-salt lemon-zest cream sugar vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632593] of ONTOLOGY::Recipe
-    (title "Apple Soft Pound Cake")
-    (servings 1)
-    (price 610.28)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter sugar eggs vanilla-extract flour corn-flour baking-powder apple lemon-zest)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_632527] of ONTOLOGY::Recipe
-    (title "Apple Cupcakes")
-    (servings 15)
-    (price 3.67)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder brown-sugar butter cinnamon-powder eggs flour sieve-the-flour apples ground-almond yogurt raisin)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639580] of ONTOLOGY::Recipe
-    (title "Classic Carrot Cake With Cream Cheese Frosting")
-    (servings 8)
-    (price 26.71)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder baking-soda buttermilk carrots cinnamon confectioners-sugar cream-cheese eggs flour pecans pecans salt sugar butter vanilla-extract vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665303] of ONTOLOGY::Recipe
-    (title "Wholemeal Cake")
-    (servings 4)
-    (price 43.09)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients egg-whites sugar ground-hazelnut brown-sugar flour wholemeal-flour butter apricots-and-cranberries-cut-to-smaller-pieces)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657842] of ONTOLOGY::Recipe
-    (title "Raspberry Cheesecake Bars By Mommie Cooks")
-    (servings 15)
-    (price 6.49)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients almond-extract brown-sugar butter cornstarch cream-cheese egg flour heavy-whipping-cream lemon-zest raspberries salt condensed-milk vanilla water sugar sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632660] of ONTOLOGY::Recipe
-    (title "Apricot Glazed Apple Tart")
-    (servings 4)
-    (price 39.8)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients flour salt butter-butter ice-water sugar apples cinnamon apricot-preserves)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643615] of ONTOLOGY::Recipe
-    (title "Fresh Strawberry Yogurt Cake")
-    (servings 12)
-    (price 6.0)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-soda butter eggs flour lemon powdered-sugar salt strawberries sugar vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633851] of ONTOLOGY::Recipe
-    (title "Baked Tofu Cheesecake")
-    (servings 12)
-    (price 5.18)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients cream-cheese egg-whites egg-yolks lemon-juice soya-milk flour silken-tofu caster-sugar vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650939] of ONTOLOGY::Recipe
-    (title "Maple-Glazed Apple Cookies")
-    (servings 18)
-    (price 1.17)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients apple baking-soda brown-sugar butter cinnamon egg flour ground-cloves maple-flavoring milk nutmeg powdered-sugar salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653445] of ONTOLOGY::Recipe
-    (title "Oatmeal Coconut Cookies")
-    (servings 32)
-    (price 0.23)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients rolled-oats coconut flour caster-sugar salt butter inverted-sugar-syrup baking-soda water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632176] of ONTOLOGY::Recipe
-    (title "Almond Ricotta Cake")
-    (servings 16)
-    (price 3.18)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions kosher vegetarian)
-    (ingredients all-purpose-flour almond-extract almonds apricot-jam baking-powder canola-oil egg eggs lemon-juice lemon-zest milk orange-liqueur 2-ricotta-cheese rum salt tablespoon-sugar sugar vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631879] of ONTOLOGY::Recipe
-    (title "5 Minute Xocai Chocolate Mug Cake")
-    (servings 2)
-    (price 66.06)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients chocolate eggs flour honey milk vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653352] of ONTOLOGY::Recipe
-    (title "Nutella Brownies")
-    (servings 18)
-    (price 1.68)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients eggs flour nutella salt sugar butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658855] of ONTOLOGY::Recipe
-    (title "Rugelach")
-    (servings 32)
-    (price 0.99)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter block-of-cream-cheese salt flour egg-yolks vanilla-extract caster-sugar fruit-preserves walnuts butter caster-sugar ground-cinnamon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641650] of ONTOLOGY::Recipe
-    (title "Dried Cherry-Almond Scones")
-    (servings 16)
-    (price 3.13)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients almond-extract almonds baking-powder baking-soda cherries eggs flour salt sugar butter buttermik buttermik)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664288] of ONTOLOGY::Recipe
-    (title "Vanilla Bean Melting Moment Cookies With Caramel Filling")
-    (servings 10)
-    (price 6.5)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter powdered-sugar vanilla-bean-paste ap-flour cornstarch condensed-milk butter golden-syrup)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632656] of ONTOLOGY::Recipe
-    (title "Apricot Clafouti With Lavender & Pecans")
-    (servings 10)
-    (price 15.02)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients all-natural-apricot-nectar apricot-preserves california-apricots apricots cardamom eggs honey culinary-lavender-buds lemon-juice lemon-zest cream nonfat-milk pecans salt unbleached-flour vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653074] of ONTOLOGY::Recipe
-    (title "New York Cheesecake")
-    (servings 4)
-    (price 46.18)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions vegetarian)
-    (ingredients butter of-cream-cheese egg-yolks eggs flour ground-graham-crackers lemon-zest orange-zest salt sugar sugar vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632622] of ONTOLOGY::Recipe
-    (title "Apple- Pomegranate Crisp")
-    (servings 12)
-    (price 8.79)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baked-apples pink-lady-apples pom-wonderful-pomegranate-juice brown-sugar ground-cinnamon ground-allspice lemon-juice corn-starch old-fashioned-rolled-oats unbleached-flour apple-juice pom-wonderful-pomegranate-juice canola-oil brown-sugar salt walnuts butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663756] of ONTOLOGY::Recipe
-    (title "Traditional Banana Bread")
-    (servings 8)
-    (price 4.28)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients granulated-sugar butter eggs bananas milk ground-cinnamon flour baking-powder baking-soda salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642256] of ONTOLOGY::Recipe
-    (title "Eggless Cardamom and Chocolate Cheesecake")
-    (servings 12)
-    (price 8.41)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder butter cardamom cocoa-powder cornflour cream-cheese double-cream lemon-juice flour ricotta-cheese sugar sugar vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632632] of ONTOLOGY::Recipe
-    (title "Applesauce Cake")
-    (servings 12)
-    (price 8.92)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients brown-sugar cinnamon baking-soda raisins cherries sugar butter eggs applesauce flour nuts-pecans vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632091] of ONTOLOGY::Recipe
-    (title "Almond and cranberry shortbread")
-    (servings 10)
-    (price 6.22)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter icing-sugar egg-yolks lemon-juice flour almonds cranberries blanched-almonds-and)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634091] of ONTOLOGY::Recipe
-    (title "Banana Foster Bread Pudding")
-    (servings 8)
-    (price 27.61)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter brown-sugar eggs bread heavy-cream milk cream-de-banana-liqueur ground-cinnamon vanilla bananas bananas butter brown-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641445] of ONTOLOGY::Recipe
-    (title "Dessert That's No Problem: Baked Pears with Oatmeal Crumble")
-    (servings 4)
-    (price 14.76)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients pears oatmeal brown-sugar flour cinnamon butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655078] of ONTOLOGY::Recipe
-    (title "Peach Blueberry Cobbler")
-    (servings 1)
-    (price 968.89)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients peaches blueberries granulated-sugar cornstarch light-brown-sugar lemon-zest lemon-juice nutmeg cinnamon salt flour baking-powder butter vanilla-extract plus-1-heavy-cream sanding-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632485] of ONTOLOGY::Recipe
-    (title "Apple Cake")
-    (servings 12)
-    (price 5.13)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients apples-preferably-jonathan baking-soda cinnamon eggs flour oil salt sugar vanilla walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639209] of ONTOLOGY::Recipe
-    (title "Chocolate Spelt Cake")
-    (servings 8)
-    (price 11.58)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients spelt butter warm-coffee coffee vanilla baking-soda salt brown-sugar sugar eggs coco-powder cream currants)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -30626,39 +17105,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_644642] of ONTOLOGY::Recipe
-    (title "Ginger Snap and Pumpkin Ice Cream Sandwiches")
-    (servings 20)
-    (price 3.78)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions vegetarian)
-    (ingredients milk heavy-cream granulated-sugar cinnamon nutmeg ground-ginger cinnamon-stick kosher-salt egg-yolks pumpkin-puree vanilla all-purpose-flour baking-soda ground-cinnamon ground-ginger ground-nutmeg ground-pepper butter granulated-sugar vanilla-extract molasses egg)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_644488] of ONTOLOGY::Recipe
-    (title "German Rhubarb Cake with Meringue")
-    (servings 12)
-    (price 4.75)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free halal vegetarian)
-    (ingredients rhubarb sugar sugar vanilla-extract salt eggs flour roasted-almonds baking-powder egg-whites sugar almonds)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_715569] of ONTOLOGY::Recipe
-    (title "Strawberry Cheesecake Chocolate Crepes")
-    (servings 4)
-    (price 41.94)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal vegetarian)
-    (ingredients cream-cheese strawberries vanilla-extract lemon-juice granulated-sugar flour cocoa-powder kosher-salt eggs milk water butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_657823] of ONTOLOGY::Recipe
     (title "Raspberry Almond Buttermilk Cake")
     (servings 1)
@@ -30667,28 +17113,6 @@
     (meal_types dessert)
     (restrictions halal vegetarian)
     (ingredients pastry-flour baking-powder baking-soda salt butter sugar vanilla-extract almond-extract egg buttermilk frozenfresh-raspberries blanched-almond-slivers adapted-from-smitten-kitchen adapted-from-smitten-kitchen)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635235] of ONTOLOGY::Recipe
-    (title "Blackberry Pie With Lemon Verbena Whip Cream")
-    (servings 10)
-    (price 10.09)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients defrosted-blackberries butter cinnamon pastry flour lemon-verbena-leaves nutmeg sugar whipping-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716367] of ONTOLOGY::Recipe
-    (title "Vanilla Pound Cake")
-    (servings 10)
-    (price 6.98)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder butter eggs natural-yogurt granulated-sugar milk nutmeg flour salt vanilla-extract)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -30703,61 +17127,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_665155] of ONTOLOGY::Recipe
-    (title "White cake with marzipan and almonds")
-    (servings 10)
-    (price 9.18)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients almonds amaretto-liqueur baking-powder butter cornstarch egg-whites flour marzipan sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639456] of ONTOLOGY::Recipe
-    (title "Cinnamon Eggless Coffee Cake")
-    (servings 6)
-    (price 5.65)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-flour wholewheat-flour powdered-sugar vegetable-oil vinegar coffee-powder cinnamon-powder baking-soda salt vanilla-essence curd strong-coffee-decoction)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640389] of ONTOLOGY::Recipe
-    (title "Cranberry Orange Banana Bread")
-    (servings 18)
-    (price 1.06)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions dairy-free halal vegetarian)
-    (ingredients baking-powder bananas cranberries eggs flour orange-extract orange-zest salt sugar applesauce vanilla-extract flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655406] of ONTOLOGY::Recipe
-    (title "Pear and Walnut Coffee Cake")
-    (servings 10)
-    (price 10.78)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions vegetarian)
-    (ingredients baking-powder baking-soda brown-sugar brown-sugar butter eggs flour flour ground-allspice ground-cardamom ground-cinnamon ground-ginger juice-of-lemon kosher-salt lemon-zest pears cream butter vanilla-extract walnuts wheat-germ)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634986] of ONTOLOGY::Recipe
-    (title "Bing's Banana Cake")
-    (servings 10)
-    (price 2.71)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients baking-powder banana-flavoured-essence bananas bicarbonate-of-soda eggs flour sugar optional-walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_657907] of ONTOLOGY::Recipe
     (title "Raspberry Thumbprint Wholewheat Scones With Macadamia Nuts")
     (servings 20)
@@ -30766,94 +17135,6 @@
     (meal_types morning-meal dessert brunch breakfast)
     (restrictions halal vegetarian)
     (ingredients flour flour rolled-oats brown-sugar baking-powder baking-soda salt ground-cinnamon ground-allspice butter nonfat-sour-cream vanilla-extract cranberries macadamia-nuts powdered-sugar milk raspberry-jam)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639465] of ONTOLOGY::Recipe
-    (title "Cinnamon Mocha Quick Bread")
-    (servings 16)
-    (price 1.51)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients flour granulated-sugar coffee-granules cocoa baking-soda salt eggs buttermilk canola-oil ground-cinnamon optional-raisins)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636331] of ONTOLOGY::Recipe
-    (title "Brownie Cupcakes")
-    (servings 24)
-    (price 0.87)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients chocolate butter granulated-sugar vanilla-extract eggs all-purpose-flour salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662151] of ONTOLOGY::Recipe
-    (title "Sugar Cookies")
-    (servings 16)
-    (price 2.08)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients flour salt baking-powder butter sugar eggs lemon-juice lemon-zest)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651990] of ONTOLOGY::Recipe
-    (title "Mini-Cherry Pies")
-    (servings 12)
-    (price 9.29)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients cherries cornstarch flour granulated-sugar heavy-whipping-cream lemon-juice pecans turbinado-sugar butter vanilla-extract plus-2-water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659463] of ONTOLOGY::Recipe
-    (title "Savory Cheese Dill Scones")
-    (servings 12)
-    (price 2.29)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder a-pinch-of-baking-soda pepper tablespoons-butter buttermilk coarsely-cheddar-cheese cottage-cheese dill shallot sugar unbleached-flour flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654028] of ONTOLOGY::Recipe
-    (title "Oreo Cookies & Cream No-Bake Cheesecake")
-    (servings 20)
-    (price 2.41)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients cream-cheese heavy-cream lemon-juice oreo-cookies salt sugar vanilla-powder)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_656248] of ONTOLOGY::Recipe
-    (title "Pinot Noir Brownies")
-    (servings 16)
-    (price 26.56)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients pinot-noir-chocolate-brownies eggs sugar vanilla butter handcraft-pinot-noir ghirardelli-ground-cocoa unbleached-flour baking-powder salt walnuts pinot-noir-chocolate-icing butter chocolate granulated-sugar handcraft-pinot-noir)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636989] of ONTOLOGY::Recipe
-    (title "Caramel Apple-Brownie Cheesecake")
-    (servings 8)
-    (price 17.89)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-apples baking-powder firmly-brown-sugar butter cream-cheese eggs flour granulated-sugar ground-cinnamon pecans salt baking-apples-are-apples-that-have-a-sweet-tart-balance-and-hold-their-shape-when vanilla-extract)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -30879,61 +17160,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_665540] of ONTOLOGY::Recipe
-    (title "Yogurt Cake")
-    (servings 8)
-    (price 8.23)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder baking-soda eggs flour full-fat-yogurt nutmeg olive-oil salt sugar vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661633] of ONTOLOGY::Recipe
-    (title "Sticky Toffee Pudding")
-    (servings 8)
-    (price 12.57)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients baking-powder butter corn-syrup dates eggs flour heavy-cream brown-sugar salt sugar vanilla-extract water)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_650482] of ONTOLOGY::Recipe
-    (title "Luscious Lemon Soufflé Pudding")
-    (servings 6)
-    (price 8.24)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter-to cream-of-tartar eggs flour lemon-juice lemon-zest powdered-sugar salt sugar vanilla milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636333] of ONTOLOGY::Recipe
-    (title "Brownie Pudding")
-    (servings 1)
-    (price 637.85)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder brown-sugar cocoa cocoa flour milk oil salt sugar vanilla walnuts water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633082] of ONTOLOGY::Recipe
-    (title "Authentic Mexican Wedding Cookies")
-    (servings 48)
-    (price 0.29)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter powdered-sugar vanilla-extract all-purpose-flour pecans ground-cinnamon)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_632552] of ONTOLOGY::Recipe
     (title "Apple Hand Pies")
     (servings 16)
@@ -30956,17 +17182,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_632280] of ONTOLOGY::Recipe
-    (title "Amaretto Almond Cookies")
-    (servings 18)
-    (price 2.3)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients almond-extract amaretto eggs ground-almonds lemon-rind molasses butter pastry-flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_661765] of ONTOLOGY::Recipe
     (title "Strawberry Brie Tartlets")
     (servings 40)
@@ -30975,39 +17190,6 @@
     (meal_types fingerfood antipasti starter dessert snack appetizer antipasto hor-doeuvre)
     (restrictions halal kosher vegetarian)
     (ingredients brie egg thyme honey puff-pastry salt strawberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637824] of ONTOLOGY::Recipe
-    (title "Chewy Gingersnaps")
-    (servings 75)
-    (price 0.4)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions kosher vegetarian)
-    (ingredients baking-soda brown-sugar butter cinnamon eggs flour ginger kosher-salt molasses oil pepper sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658803] of ONTOLOGY::Recipe
-    (title "Rosemary Rum Raisin Soda Bread with Pecans")
-    (servings 16)
-    (price 2.74)
-    (wine_pairing "No wine pairing")
-    (meal_types morning-meal dessert brunch breakfast)
-    (restrictions kosher vegetarian)
-    (ingredients raisins rum flour flour baking-soda salt rosemary pecans yogurt honey milk anise-seeds)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659887] of ONTOLOGY::Recipe
-    (title "Shortbread Lemon Cookies")
-    (servings 36)
-    (price 0.8)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter eggs lemon-zest almond-flour caster-sugar flour lemon-juice lemons powdered-sugar)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -31022,303 +17204,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_637161] of ONTOLOGY::Recipe
-    (title "Carrot and Banana Snacking Cake")
-    (servings 8)
-    (price 4.05)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients banana carrots egg non-fat-yogurt sugar brown-sugar vegetable-oil flour pastry-flour baking-soda cinnamon raisins)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651945] of ONTOLOGY::Recipe
-    (title "Mini Chocolate Pudding Oreo Cheesecakes")
-    (servings 12)
-    (price 8.46)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients cream-cheese eggs chocolate-pudding milk oreos vanilla-extract sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636675] of ONTOLOGY::Recipe
-    (title "Cacao-Pecan Shortbread Cookies")
-    (servings 24)
-    (price 1.9)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter cacao-nibs confectioners-sugar egg flour kosher-salt pecans vanilla-bean vanilla-extract vanilla-sugar water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646905] of ONTOLOGY::Recipe
-    (title "Homemade Animal Crackers")
-    (servings 8)
-    (price 4.69)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal kosher vegetarian)
-    (ingredients allspice baking-powder brown-sugar butter cinnamon cocoa-powder egg flour oats salt vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641435] of ONTOLOGY::Recipe
-    (title "Dessert Apple Rings With Cinnamon Cream Syrup")
-    (servings 6)
-    (price 25.07)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients all-purpose-flour canola-oil cinnamon corn-syrup egg-white granny-smith-apples salt sugar vanilla water)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_646385] of ONTOLOGY::Recipe
-    (title "Hazelnut & Coconut Shortbread Sandwich Cookies")
-    (servings 22)
-    (price 0.68)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients coconut flour hazelnuts salt sugar butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655335] of ONTOLOGY::Recipe
-    (title "Peanut Butter Sriracha Cookies")
-    (servings 60)
-    (price 0.27)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients butter crunchy-peanut-butter sugar brown-sugar sriracha eggs vanilla-extract flour baking-powder salt baking-soda granulated-sugar add-a-hersheys-chocolate-kiss-on-top-as-done)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650325] of ONTOLOGY::Recipe
-    (title "Loquat Pie")
-    (servings 8)
-    (price 8.46)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients allspice cinnamon flour ginger-pastry loquats salt sugar water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639644] of ONTOLOGY::Recipe
-    (title "Classic Vanilla-Orange Sugar Cookies")
-    (servings 24)
-    (price 1.62)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients ap-flour chocolate egg egg-yolk granulated-sugar milk orange-zest salt butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663861] of ONTOLOGY::Recipe
-    (title "Tropical Pineapple Cupcakes")
-    (servings 18)
-    (price 3.5)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions halal vegetarian)
-    (ingredients all-purpose-flour baking-powder butter confectioners-sugar cream-cheese eggs granulated-sugar maraschino-cherries milk pineapple pineapple-chunks pineapple-rings salt vanilla vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642620] of ONTOLOGY::Recipe
-    (title "Fat Free Gingerbread Cookies")
-    (servings 20)
-    (price 1.64)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free vegetarian)
-    (ingredients all-purpose-flour flour baking-soda salt ground-ginger cinnamon ground-cloves pepper ground-nutmeg ground-allspice brown-sugar blackstrap-molasses apple-sauce vanilla-extract maple-extract chai-concentrate egg-whites candied-ginger granulated-sugar cinnamon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664448] of ONTOLOGY::Recipe
-    (title "Vegan Lemon Cookies")
-    (servings 8)
-    (price 5.52)
-    (wine_pairing "No wine pairing")
-    (meal_types dessert)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients applesauce baking-soda flour juice-from-half-a-lemon lemon-zest maple-syrup oil salt extra-sugar-to-coat-cookies-prior-to-baking turbinado-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637440] of ONTOLOGY::Recipe
-    (title "Chapchae (Korean Stir-Fried Noodles)")
-    (servings 4)
-    (price 52.15)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients sweet-potato-vermicelli-noodles onion garlic baby-spinach carrots scallions mushrooms zucchini olive-oil sesame-oil soy-sauce sugar salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642585] of ONTOLOGY::Recipe
-    (title "Farfalle with fresh tomatoes, basil and mozzarella")
-    (servings 4)
-    (price 24.28)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients farfalle-pasta-by-barilla basil-leaves mozzarella olive-oil salt-and-pepper tomatoes butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716334] of ONTOLOGY::Recipe
-    (title "Plantain Toffee Balls")
-    (servings 2)
-    (price 38.29)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter coconut-flakes coconut-milk flour finger-of-plantain sugar vanilla water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652367] of ONTOLOGY::Recipe
-    (title "Montreal style bagels")
-    (servings 12)
-    (price 3.33)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients warm-water granulated-sugar sunflower-oil active-yeast beated-egg maple-syrup all-purpose-flour kosher-salt sesame-seeds water honey)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640237] of ONTOLOGY::Recipe
-    (title "Couscous Salad With Roasted Vegetables")
-    (servings 10)
-    (price 28.24)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients regular-couscous chicken-stock olive-oil sun-dried-tomatoes basil-pesto balsamic-vinegar salt-and-pepper feta-cheese sized-zucchinis to-3-sized-squashes bell-pepper brown-mushrooms garlic-cloves butternut onions asparagus olive-oil balsamic-vinegar)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_642287] of ONTOLOGY::Recipe
-    (title "Eggplant Fries with Tzatziki Sauce")
-    (servings 2)
-    (price 44.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients eggplants bread-crumbs seasoning-mix yogurt egg)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649411] of ONTOLOGY::Recipe
-    (title "Lebanese Tabouleh")
-    (servings 2)
-    (price 203.97)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur-wheat flat-leaf-parsley mint green-onions juice-from-lemon olive-oil roma-tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641759] of ONTOLOGY::Recipe
-    (title "Dutch Baby")
-    (servings 4)
-    (price 15.77)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients eggs flour lemons milk confectioners-sugar butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633766] of ONTOLOGY::Recipe
-    (title "Baked Rigatoni")
-    (servings 6)
-    (price 30.92)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients broccoli-flowerets basil fennel-seeds pasta-sauce rigatoni mozzarella-cheese ready-cut-tomatoes vegetable-burger-crumbles)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664961] of ONTOLOGY::Recipe
-    (title "Warm Goat Cheese Salad")
-    (servings 2)
-    (price 153.16)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients some-bread-crumbs rounds-goat-cheese grapes lemon-juice olive-oil pepper salad-greens salt-and-pepper shallot walnut-oil walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657899] of ONTOLOGY::Recipe
-    (title "Raspberry Sliced")
-    (servings 8)
-    (price 6.86)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal vegetarian)
-    (ingredients raspberries butter sugar eggs lemon-juice lemon-zest vanilla-extract natural-yoghurtsour-cream flour baking-powder salt milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632678] of ONTOLOGY::Recipe
-    (title "Apricot Slice")
-    (servings 12)
-    (price 2.29)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal vegetarian)
-    (ingredients apricot eggs flour salt caster-sugar butter vanilla-extract)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652240] of ONTOLOGY::Recipe
-    (title "Moist Zucchini Pineapple Sweetbread")
-    (servings 12)
-    (price 5.22)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free halal vegetarian)
-    (ingredients baking-powder pineapple cinnamon dates eggs nutmeg nuts oil salt vanilla-extract sugar flour zucchini)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_636436] of ONTOLOGY::Recipe
-    (title "Bulgur Pilaf With Green Lentils, Served With Caramelized Onions -Mercimekli Bulgur Pilavi")
-    (servings 1)
-    (price 2499.73)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur-wheat preparation-time-minutes-cooking-time-minutes gr8oz-green-lentils salt-and-ground-pepper mild-olive-oil onion pickled-and-peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653994] of ONTOLOGY::Recipe
-    (title "Orange-Fig Teacake with Caramel Glaze")
-    (servings 10)
-    (price 7.55)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal vegetarian)
-    (ingredients ap-flour baking-powder cardamom eggs figs heavy-cream navel-oranges salt sugar butter vanilla-extract water)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_638557] of ONTOLOGY::Recipe
     (title "Chili Gobi")
     (servings 4)
@@ -31330,72 +17215,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_642121] of ONTOLOGY::Recipe
-    (title "Easy Tabouleh")
-    (servings 1)
-    (price 463.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur cucumbers flat-leaf-parsley lemon-juice-from-a-lemon olive-oil salt tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639608] of ONTOLOGY::Recipe
-    (title "Classic Hush Puppies")
-    (servings 8)
-    (price 4.26)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder baking-soda canola-oil dehydrated-onion lemon-juice milk parsley pepper-sauce salt sugar flour cornmeal)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716245] of ONTOLOGY::Recipe
-    (title "Avocado Egg Salad")
-    (servings 1)
-    (price 152.03)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients pepper eggs seasoning-cube lemon avocado-pear scotch-bonnet-pepper bread)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655589] of ONTOLOGY::Recipe
-    (title "Penne with Goat Cheese and Basil")
-    (servings 12)
-    (price 4.04)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients penne-pasta basil-leaves goat-cheese olive-oil salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634213] of ONTOLOGY::Recipe
-    (title "Banana, Cranberry and Apple Bread")
-    (servings 8)
-    (price 5.97)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder baking-soda bananas-235g-on cranberry-125g eggs flour-200g apple milk salt sugar-140g vanilla tbsp-vegetable-oil-100g)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_662560] of ONTOLOGY::Recipe
-    (title "Sweet Potato Casserole with Pecan Crumble Topping")
-    (servings 10)
-    (price 4.86)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients brown-sugar butter egg evaporated-milk flour orange pecan-pieces sugar sweet-potatoes vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_641063] of ONTOLOGY::Recipe
     (title "Curried Cauliflower Gratin")
     (servings 6)
@@ -31404,50 +17223,6 @@
     (meal_types side-dish)
     (restrictions kosher vegetarian)
     (ingredients breadcrumbs coconut-milk cauliflower garnish-cilantro cinnamon cumin-seeds curry-powder flour ginger garlic ground-cardamom ground-cumin ground-nutmeg kosher-salt peanut-oil shallot butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651103] of ONTOLOGY::Recipe
-    (title "Market Stuffed Squash Blossoms")
-    (servings 4)
-    (price 71.44)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients squash-blossoms garlic-scapes cherries butter panko-bread-crumbs goat-cheese basil salt-and-pepper flour pepper curry-powder salt club-soda oil)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_634441] of ONTOLOGY::Recipe
-    (title "Basil, Olive and Feta Foccacia")
-    (servings 8)
-    (price 13.8)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-unbleached-flour flour warm-water active-yeast warm-water salt olive-oil olives feta basil course-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648348] of ONTOLOGY::Recipe
-    (title "Jalapeno Cornbread Stuffing")
-    (servings 10)
-    (price 18.6)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter onion celery jalapeno-chile-peppers pecans cornbread cilantro salt pepper cayenne-pepper chicken-broth)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639333] of ONTOLOGY::Recipe
-    (title "Chouquettes")
-    (servings 8)
-    (price 3.98)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients butter sugar salt lemon-rind water flour vanilla rum eggs swedish-pearl-sugar)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -31462,303 +17237,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_663771] of ONTOLOGY::Recipe
-    (title "Traditional Panzanella")
-    (servings 6)
-    (price 21.37)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients six-day-old-tuscan-bread extra-virgin-olive-oil basil-leaves onion red-wine-vinegar salt-and-pepper tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633683] of ONTOLOGY::Recipe
-    (title "Baked Macaroni and Cheese")
-    (servings 1)
-    (price 414.68)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients pkt-elbow-macaroni butter flour milk salt pepper cheddar-cheese bread-crumbs butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716267] of ONTOLOGY::Recipe
-    (title "Soft Chin Chin")
-    (servings 4)
-    (price 13.91)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-flour baking-powder buttermargarine coconut-milk egg oil salt sugar vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662501] of ONTOLOGY::Recipe
-    (title "Sweet Corn Pudding")
-    (servings 10)
-    (price 20.33)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter onion garlic ears-corn flour heavy-cream grits jalapeo-peppers salt pepper eggs cheddar-cheese)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_636393] of ONTOLOGY::Recipe
-    (title "Buckwheat Galette With An Egg")
-    (servings 10)
-    (price 1.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients milk sugar sea-salt butter buckwheat-flour flour eggs eggs)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639535] of ONTOLOGY::Recipe
-    (title "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather")
-    (servings 2)
-    (price 139.39)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans currants green-onions ground-cumin israeli-couscous juice-of-orange olive-oil parsley pecans bell-pepper rice-vinegar salt-and-pepper paprika)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637290] of ONTOLOGY::Recipe
-    (title "Cauliflower and Broccoli Gratin With Camembert Cheese")
-    (servings 4)
-    (price 48.91)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients breadcrumbs broccoli butter camembert-cheese-cut-cubes-plus-extra-to-put-on-top cauliflower flour salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636230] of ONTOLOGY::Recipe
-    (title "Broccoli with cheese soup")
-    (servings 4)
-    (price 16.62)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients broccoli-florets flour milk garlic-powder salt ground-pepper feta-cheese swiss-chesee)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640238] of ONTOLOGY::Recipe
-    (title "Couscous with olives")
-    (servings 4)
-    (price 35.38)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients couscous vegetable-stock pine-nuts olive-oil olives cherry-tomatoes coriander-and-chives pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660222] of ONTOLOGY::Recipe
-    (title "Skinny Carrot Fritters")
-    (servings 16)
-    (price 0.84)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients baby-carrots bread-crumbs cayenne-pepper chickpea-flour cilantro salt sriracha-sauce water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641766] of ONTOLOGY::Recipe
-    (title "Dutch Babies With Mulberry-Rhubarb Compote")
-    (servings 6)
-    (price 43.01)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter cornstarch eggs flour milk mint-leaves mulberries orange-juice rhubarb salt sugar vanilla-sugar)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_649611] of ONTOLOGY::Recipe
-    (title "Lemon Delicious")
-    (servings 4)
-    (price 17.82)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients self-raising-flour caster-sugar butter lemon-zest lemon-juice egg-yolks milk egg-whites)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635414] of ONTOLOGY::Recipe
-    (title "Blueberry Basil Galette")
-    (servings 10)
-    (price 7.38)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients blueberries virgin-coconut-oil-oil basil-leaves lemon-juice lemon-zest maple-syrup quick-cooking-tapioca sea-salt spelt-flour sugar up-to-water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664101] of ONTOLOGY::Recipe
-    (title "Turkish squares")
-    (servings 8)
-    (price 11.55)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal vegetarian)
-    (ingredients butter sugar eggs milk vanilla-extract semolina baking-powder almonds water sugar juice-of-lemon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654905] of ONTOLOGY::Recipe
-    (title "Pasta With Chickpeas and Kale")
-    (servings 4)
-    (price 60.95)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bell-pepper chickpeas garlic kale olive-oil parsley salt-and-pepper ziti)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_715563] of ONTOLOGY::Recipe
-    (title "Pierogi Casserole")
-    (servings 4)
-    (price 38.77)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter milk onions salt-and-pepper sharp-cheddar-cheese potatoes extra-wide-egg-noodles)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642606] of ONTOLOGY::Recipe
-    (title "Farro With Porcini, Chanterelles & Mascarpone")
-    (servings 4)
-    (price 163.32)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients farro warm-water porcini mascarpone chanterelles butter garlic salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_653593] of ONTOLOGY::Recipe
-    (title "Old Fashioned Mac and Cheese")
-    (servings 2)
-    (price 203.13)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients elbow-macaroni block-of-cheddar-cheese milk butter flour salt pepper seasoned-bread-crumbs)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649504] of ONTOLOGY::Recipe
-    (title "Lemon and Strawberry Loaf")
-    (servings 8)
-    (price 6.53)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter sugar eggs self-raising-flour dessicated-coconut natural-yoghurt juice-of-lemon strawberries)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715595] of ONTOLOGY::Recipe
-    (title "How to Make the Cheesiest Bowtie Mac and Cheese")
-    (servings 4)
-    (price 33.65)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients bowtie-pasta-cook-as-directed extra-sharp-cheddar-cheese extra-sharp-cheddar-cheese salt-and-pepper cream butter parsley)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635126] of ONTOLOGY::Recipe
-    (title "Black Lentil and Couscous Salad")
-    (servings 8)
-    (price 20.22)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients couscous lentils ground-cumin cayenne-pepper paprika almond-flakes raisins parsley mint olive-oil apple-cider-vinegar dijon-mustard orange-zest juice-of-orange honey feta)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655573] of ONTOLOGY::Recipe
-    (title "Penne Arrabiata")
-    (servings 4)
-    (price 26.21)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients tomato parsley garlic olive-oil pkt-penne peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649518] of ONTOLOGY::Recipe
-    (title "Lemon Blondies with Lemon Glaze")
-    (servings 12)
-    (price 1.55)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter eggs flour granulated-sugar lemon-juice lemon-zest powdered-sugar salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640927] of ONTOLOGY::Recipe
-    (title "Crumbled Feta Couscous Salad")
-    (servings 8)
-    (price 9.46)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients couscous vegetable-stock quality-olive-oil salt roma-tomato onion mint parsley balsamic-vinegar feta-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635786] of ONTOLOGY::Recipe
-    (title "Braid sweet citrus flavored licorice")
-    (servings 4)
-    (price 39.32)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients cream grand-cru-muscovado-sugar-waves-of-sugar lemon lime orange puff-pastry-buitoni what-you-need what-you-need)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651767] of ONTOLOGY::Recipe
-    (title "Meyer Lemon Scented Farro and Asparagus Salad")
-    (servings 6)
-    (price 29.83)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free vegetarian)
-    (ingredients farro peas lemon-zest meyer-lemon-juice asparagus olive-oil shallots crimini-mushrooms herbs-de-provence salt-and-pepper macadamia-nuts meyer-lemon-vinagirette meyer-lemon-juice citrus-champagne-vinegar vegetable-stock olive-oil garlic-clove honey)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645704] of ONTOLOGY::Recipe
-    (title "Grilled Fattoush")
-    (servings 6)
-    (price 36.23)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients cucumber cumin feta-cheese mint green-onions kalamata-olives lemon olive-oil parsley pita-breads bell-peppers salt-and-pepper tomato zucchini)
-    (seasons summer)
-    (season_text "Summer"))
-
   ([Recipe_64694] of ONTOLOGY::Recipe
     (title "Gingerbread")
     (servings 14)
@@ -31767,138 +17245,6 @@
     (meal_types side-dish)
     (restrictions dairy-free kosher vegetarian)
     (ingredients molasses salt eggs salad-oil sugar soda water flour ginger cinnamon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660842] of ONTOLOGY::Recipe
-    (title "Spanakopita Cups")
-    (servings 36)
-    (price 1.64)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher vegetarian)
-    (ingredients olive-oil scallions spinach dill eggs feta-cheese kosher-salt pepper phyllo-dough butter breadcrumbs)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_645427] of ONTOLOGY::Recipe
-    (title "Green Chile & Corn Casserole Side Dish")
-    (servings 10)
-    (price 5.41)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher vegetarian)
-    (ingredients butter corn extra-sharp-cheddar-cheese chile seasoned-bread-crumbs kosher-salt-pepper milk cream thyme)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_652423] of ONTOLOGY::Recipe
-    (title "Moroccan Couscous and Chickpea Salad")
-    (servings 6)
-    (price 31.19)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients pepper chickpeas cayenne cinnamon couscous green-onions ground-ginger ground-nutmeg lemon olive-oil parsley pistachio-nuts bell-pepper salt turmeric vegetable-broth)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660835] of ONTOLOGY::Recipe
-    (title "Spaghetti With Pesto Trapanese")
-    (servings 6)
-    (price 24.25)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients spaghetti almonds pine-nuts extra-virgin-olive-oil garlic-cloves tomatoes basil salt-and-pepper pecorino)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632481] of ONTOLOGY::Recipe
-    (title "Apple Brown Betty")
-    (servings 6)
-    (price 25.03)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients apples apples bread butter butter butter cinnamon cinnamon juice-of-lemon nutmeg nutmeg sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641631] of ONTOLOGY::Recipe
-    (title "Dragon Salad - Couscous Summer Salad")
-    (servings 6)
-    (price 67.25)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients pepper cherry-tomatoes chicken-broth extra-virgin-olive-oil feta-cheese flat-leaf-parsley mint garlic-cloves juice-of-lemon kalamata-olives salt warm-water couscous)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644604] of ONTOLOGY::Recipe
-    (title "Ginger Molasses Rounds")
-    (servings 6)
-    (price 8.14)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients baking-soda butter cinnamon egg flour additional-granulated-sugar ground-ginger molasses salt sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1098392] of ONTOLOGY::Recipe
-    (title "Hush Puppies")
-    (servings 6)
-    (price 5.02)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients onion cornmeal flour baking-powder salt egg milk oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640827] of ONTOLOGY::Recipe
-    (title "Crispy Pineapple Fritters")
-    (servings 12)
-    (price 2.99)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher vegetarian)
-    (ingredients pineapple-rings flour cornstarch egg baking-powder salt milk panko-breadcrumbs canola-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640720] of ONTOLOGY::Recipe
-    (title "Creamy Vegan Butternut Squash Mac and Cheese")
-    (servings 6)
-    (price 14.65)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients breadcrumbs butternut-squash elbow-macaroni nutritional-yeast pepper salt soy-milk vegan-buttery-spread vegan-cheddar-shreds water)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_649133] of ONTOLOGY::Recipe
-    (title "Kunna (A Delicious Chinioti Dish, Punjab, Pakistan)")
-    (servings 6)
-    (price 5.12)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients garlic-pod ginger-pod oil onion-nos spices-paprika-powder-1 wheat-flour-tea-spoon mutton mutton)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637440] of ONTOLOGY::Recipe
-    (title "Chapchae (Korean Stir-Fried Noodles)")
-    (servings 4)
-    (price 52.15)
-    (wine_pairing "No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients sweet-potato-vermicelli-noodles onion garlic baby-spinach carrots scallions mushrooms zucchini olive-oil sesame-oil soy-sauce sugar salt)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -31913,39 +17259,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_636212] of ONTOLOGY::Recipe
-    (title "Broccoli Rabe with Tomatoes, Anchovies & Spaghetti")
-    (servings 4)
-    (price 51.66)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients broccoli-rabe anchovies garlic juice-of-lemon pepper-flakes romano-cheese spaghetti tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645704] of ONTOLOGY::Recipe
-    (title "Grilled Fattoush")
-    (servings 6)
-    (price 36.23)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients cucumber cumin feta-cheese mint green-onions kalamata-olives lemon olive-oil parsley pita-breads bell-peppers salt-and-pepper tomato zucchini)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_642054] of ONTOLOGY::Recipe
-    (title "Easy Parmesan Knots")
-    (servings 10)
-    (price 2.21)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients buttermilk-biscuits canola-oil parsley-flakes garlic-powder oregano parmesan-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_658947] of ONTOLOGY::Recipe
     (title "S'mores-n-berry Bars for National S'mores Day - August 10")
     (servings 9)
@@ -31954,17 +17267,6 @@
     (meal_types side-dish)
     (restrictions no-restrictions)
     (ingredients brownie-mix egg graham-cracker-crumbs graham-crackers marshmallows raspberries sugar butter vegetable-oil water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649133] of ONTOLOGY::Recipe
-    (title "Kunna (A Delicious Chinioti Dish, Punjab, Pakistan)")
-    (servings 6)
-    (price 5.12)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients garlic-pod ginger-pod oil onion-nos spices-paprika-powder-1 wheat-flour-tea-spoon mutton mutton)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -31979,83 +17281,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_661059] of ONTOLOGY::Recipe
-    (title "Spicy Chicken with Salsa Verde")
-    (servings 6)
-    (price 30.25)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients avocado chicken-thigh-fillets chili-powder flour-tortilla-wraps coriander-leaves garlic green-onions jalapeo-peppers limes mint-leaves onion-salt oregano paprika chilli cream vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661291] of ONTOLOGY::Recipe
-    (title "Spinach Cheese Tortellini")
-    (servings 8)
-    (price 8.13)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher)
-    (ingredients butter tomato cheese-tortellini-prepare cumin basil flour garlic garlic-powder heavy-cream milk olive-oil onion onion-powder oregano parmesan-cheese sugar pepper-flakes pepper-and-salt spinach thyme)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_640238] of ONTOLOGY::Recipe
-    (title "Couscous with olives")
-    (servings 4)
-    (price 35.38)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients couscous vegetable-stock pine-nuts olive-oil olives cherry-tomatoes coriander-and-chives pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642606] of ONTOLOGY::Recipe
-    (title "Farro With Porcini, Chanterelles & Mascarpone")
-    (servings 4)
-    (price 163.32)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients farro warm-water porcini mascarpone chanterelles butter garlic salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639535] of ONTOLOGY::Recipe
-    (title "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather")
-    (servings 2)
-    (price 139.39)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients garbanzo-beans currants green-onions ground-cumin israeli-couscous juice-of-orange olive-oil parsley pecans bell-pepper rice-vinegar salt-and-pepper paprika)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637591] of ONTOLOGY::Recipe
-    (title "Cheese Tortellini Alfredo")
-    (servings 4)
-    (price 44.04)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients cheese-tortellini-by-buitoni ground-pepper nutmeg parmiggiano-reggiano butter whipping-cream)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652367] of ONTOLOGY::Recipe
-    (title "Montreal style bagels")
-    (servings 12)
-    (price 3.33)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients warm-water granulated-sugar sunflower-oil active-yeast beated-egg maple-syrup all-purpose-flour kosher-salt sesame-seeds water honey)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_652059] of ONTOLOGY::Recipe
     (title "Miso Eggplant Gratin")
     (servings 4)
@@ -32064,17 +17289,6 @@
     (meal_types side-dish)
     (restrictions halal kosher)
     (ingredients butter granulated-chicken-stock-powder cornstarch eggplant flour garlic heavy-cream milk miso parmesan-cheese salt-and-pepper tofu vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660382] of ONTOLOGY::Recipe
-    (title "Smoked Salmon Pasta")
-    (servings 4)
-    (price 74.08)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients butter thyme garlic-cloves heavy-whipping-cream milk onion parmesan-cheese penne-pasta bell-pepper salt-and-pepper salmon)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -32089,50 +17303,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_640237] of ONTOLOGY::Recipe
-    (title "Couscous Salad With Roasted Vegetables")
-    (servings 10)
-    (price 28.24)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher vegetarian)
-    (ingredients regular-couscous chicken-stock olive-oil sun-dried-tomatoes basil-pesto balsamic-vinegar salt-and-pepper feta-cheese sized-zucchinis to-3-sized-squashes bell-pepper brown-mushrooms garlic-cloves butternut onions asparagus olive-oil balsamic-vinegar)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_633330] of ONTOLOGY::Recipe
-    (title "Bacon Wrapped Breadsticks")
-    (servings 4)
-    (price 26.66)
-    (wine_pairing " No wine pairing")
-    (meal_types fingerfood side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions no-restrictions)
-    (ingredients bacon cayenne-pepper garlic-salt long-breadsticks nutmeg parmesan you-will-also-need-parchment-paper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655806] of ONTOLOGY::Recipe
-    (title "Pesto & Yogurt Pasta")
-    (servings 4)
-    (price 36.37)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients farfalle flat-leaf-parsley garlic yogurt nuts olive-oil parmesan-cheese salt-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654901] of ONTOLOGY::Recipe
-    (title "Pasta With Chicken and Broccoli")
-    (servings 4)
-    (price 48.34)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients olive-oil chicken-breasts pepper-flakes lasagna-noodles garlic-cloves broccoli-florets basil-leaves white-wine chicken-broth parmesan-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_631863] of ONTOLOGY::Recipe
     (title "3 Cheese Ravioli")
     (servings 6)
@@ -32144,215 +17314,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_661864] of ONTOLOGY::Recipe
-    (title "Strawberry Pretzel Salad")
-    (servings 4)
-    (price 57.15)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti salad starter snack appetizer antipasto hor-doeuvre)
-    (restrictions dairy-free)
-    (ingredients arugula avocado bacon balsamic-vinegar cucumber flax-seed-oil spring-greens bell-pepper pretzels salt strawberries grain-mustard)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636230] of ONTOLOGY::Recipe
-    (title "Broccoli with cheese soup")
-    (servings 4)
-    (price 16.62)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients broccoli-florets flour milk garlic-powder salt ground-pepper feta-cheese swiss-chesee)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662287] of ONTOLOGY::Recipe
-    (title "Sun-dried Tomato & Artichoke Tuna Casserole")
-    (servings 4)
-    (price 73.99)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients sundried-tomato-artichoke-tuna-casserole-serves macaroni artichoke-hearts sundried-tomatoes garlic onion milk butter flour marsala parmesan tuna grain-mustard panko-breadcrumbs olive-oil salt-and-pepper)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_637290] of ONTOLOGY::Recipe
-    (title "Cauliflower and Broccoli Gratin With Camembert Cheese")
-    (servings 4)
-    (price 48.91)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients breadcrumbs broccoli butter camembert-cheese-cut-cubes-plus-extra-to-put-on-top cauliflower flour salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641759] of ONTOLOGY::Recipe
-    (title "Dutch Baby")
-    (servings 4)
-    (price 15.77)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients eggs flour lemons milk confectioners-sugar butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663985] of ONTOLOGY::Recipe
-    (title "Turkey and Rice Stuffed Acorn Squash")
-    (servings 6)
-    (price 49.23)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients olive-oil acorn-squash brown-basmati-rice onion garlic ground-turkey baby-bella-mushrooms spinach vegeta-seasoning bell-pepper-flakes salt-and-pepper bread-crumbs)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649518] of ONTOLOGY::Recipe
-    (title "Lemon Blondies with Lemon Glaze")
-    (servings 12)
-    (price 1.55)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter eggs flour granulated-sugar lemon-juice lemon-zest powdered-sugar salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640666] of ONTOLOGY::Recipe
-    (title "Creamy Mushrooms Over Soba Noodles (Vegan)")
-    (servings 4)
-    (price 63.56)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients all-purpose-flour white-wine cremini-but-your-choice thyme garlic juice-of-lemon salt-pepper soba-noodles earth-balance-buttery-spread soy-milk mushrooms)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634629] of ONTOLOGY::Recipe
-    (title "Beef Lo Mein Noodles")
-    (servings 4)
-    (price 57.1)
-    (wine_pairing "Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients soba-noodles flank-steak oyster-sauce chicken-stock soy-sauce sesame-oil vegetable-oil garlic ginger green-onions)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663833] of ONTOLOGY::Recipe
-    (title "Triple Chocolate Whoppers")
-    (servings 10)
-    (price 12.85)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal)
-    (ingredients semisweet-baking-chocolate baking-powder brown-sugar chocolate-into-chunks eggs plus-2-espresso-powder pecans sea-salt semisweet-chocolate-chips unbleached-flour butter vanilla-extract walnuts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662709] of ONTOLOGY::Recipe
-    (title "Szechuan-Style Shirataki Noodles")
-    (servings 2)
-    (price 431.23)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients shirataki protein soy-sauce rice-wine chili-sauce ginger scallions veggies sesame-oil microwave-the-noodles add-the-soy-sauce add-the-scallions-and-your-protein-and-continue-to-stir-fry-until-its-through-add-the-noodles turn-into-a-bowl)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641972] of ONTOLOGY::Recipe
-    (title "Easy Gluten Free Vegetarian Pasta Salad")
-    (servings 4)
-    (price 23.86)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients pasta greek-yogurt orange-zest orange-juice olive-oil grapes cilantro sea-salt pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_665573] of ONTOLOGY::Recipe
-    (title "Yorkshire Pudding")
-    (servings 12)
-    (price 2.66)
-    (wine_pairing "Red wine")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients eggs flour milk pan-drippings-from-roast-beef-preferably salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638074] of ONTOLOGY::Recipe
-    (title "Chicken Enchilada Salad Wraps")
-    (servings 4)
-    (price 46.96)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients cream-cheese cream chili-powder cumin garlic swanson-premium-chicken cheddar-cheese canned-tomatoes green-onions cilantro lettuce burrito-sized-tortillas)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654935] of ONTOLOGY::Recipe
-    (title "Pasta with Peas and Italian Sausage")
-    (servings 4)
-    (price 33.49)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients butter canned-tomatoes farfalle-pasta sausage olive-oil peas salt-and-pepper pomi-strained-tomato-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1043339] of ONTOLOGY::Recipe
-    (title "Skillet Sweet Potato Casserole with Bacon, Brown Sugar Crumble")
-    (servings 6)
-    (price 19.49)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions no-restrictions)
-    (ingredients bacon flour heavy-cream pecans sea-salt sweet-potatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635414] of ONTOLOGY::Recipe
-    (title "Blueberry Basil Galette")
-    (servings 10)
-    (price 7.38)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients blueberries virgin-coconut-oil-oil basil-leaves lemon-juice lemon-zest maple-syrup quick-cooking-tapioca sea-salt spelt-flour sugar up-to-water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663696] of ONTOLOGY::Recipe
-    (title "Tortellini In Brodo")
-    (servings 6)
-    (price 7.28)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal kosher)
-    (ingredients chicken-stock lemon-juice lemon-zest parmigiano-reggiano salt-and-pepper tortellini)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637593] of ONTOLOGY::Recipe
-    (title "Cheese Tortellini With Shrimp In Tomato Cream Sauce")
-    (servings 4)
-    (price 103.01)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients canned-tomatoes cheese-tortellini chicken-bullion-cube parsley thyme garlic-cloves half-and-half olive-oil parmesan-cheese salt-and-freshly-grounded-pepper shrimp)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_634873] of ONTOLOGY::Recipe
     (title "Best Baked Macaroni and Cheese")
     (servings 12)
@@ -32361,127 +17322,6 @@
     (meal_types side-dish lunch main-course main-dish dinner)
     (restrictions halal kosher)
     (ingredients pepper cayenne-pepper elbow-macaroni flour gruyere kosher-salt nutmeg butter bread cheddar-cheese milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633884] of ONTOLOGY::Recipe
-    (title "Baked Ziti Or Rigatoni")
-    (servings 4)
-    (price 65.02)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients ziti egg parmesan-cheese ricotta mozzarella spaghetti-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646626] of ONTOLOGY::Recipe
-    (title "Heirloom Tomato Basil and Olive Oil Wine Sauce over Pasta")
-    (servings 4)
-    (price 47.5)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients og-pasta heirloom-tomatoes basil garlic extra-virgin-olive wine sea-salt-or)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636436] of ONTOLOGY::Recipe
-    (title "Bulgur Pilaf With Green Lentils, Served With Caramelized Onions -Mercimekli Bulgur Pilavi")
-    (servings 1)
-    (price 2499.73)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur-wheat preparation-time-minutes-cooking-time-minutes gr8oz-green-lentils salt-and-ground-pepper mild-olive-oil onion pickled-and-peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_644917] of ONTOLOGY::Recipe
-    (title "Gnocchi and Wilted Spinach Salad")
-    (servings 4)
-    (price 77.71)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients d-gnocchi baby-spinach-leaves bacon shallots walnut-pieces juice-of-lemon tsp-nutmeg honey cherries)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_660216] of ONTOLOGY::Recipe
-    (title "Skillet Chili Mac")
-    (servings 6)
-    (price 25.48)
-    (wine_pairing "Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients canola-oil ground-beef onion chili-powder ground-cumin cayenne-pepper salt-pepper garlic-cloves brown-sugar water grain-macaroni cheddar-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646302] of ONTOLOGY::Recipe
-    (title "Hard-Boiled Egg Gratin In A Bechamel Sauce")
-    (servings 3)
-    (price 42.07)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients butter eggs flour gruyre-cheese milk nutmeg onion salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651987] of ONTOLOGY::Recipe
-    (title "Mini Zucchini Bites (Cuadritos De Calabacin)")
-    (servings 12)
-    (price 7.85)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions no-restrictions)
-    (ingredients bacon onion zucchini gouda-cheese flour baking-powder vegetable-oil eggs salt-pepper butter bread-crumbs)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_637638] of ONTOLOGY::Recipe
-    (title "Cheesy Cauliflower")
-    (servings 6)
-    (price 16.27)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients all-purpose-flour cauliflower cayenne-pepper cheese mustard-powder salt-and-pepper butter milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638557] of ONTOLOGY::Recipe
-    (title "Chili Gobi")
-    (servings 4)
-    (price 33.26)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegetarian)
-    (ingredients cauliflower chili-powder chili-sauce corn-starch curry-leaves egg ginger chilies oil onions flour soy-sauce sugar tomato-sauce vegetable-bouillon-cube)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_654913] of ONTOLOGY::Recipe
-    (title "Pasta With Chicken and Mushrooms")
-    (servings 6)
-    (price 29.19)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients balsamic-vinegar bay-leaf chicken-breast-halves chicken-broth flour linguini mushrooms olive-oil pepper salt thyme)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646337] of ONTOLOGY::Recipe
-    (title "Hasselback Potatoes")
-    (servings 8)
-    (price 3.66)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher)
-    (ingredients breadcrumbs butter parmesan-cheese potatoes salt)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -32507,28 +17347,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_660842] of ONTOLOGY::Recipe
-    (title "Spanakopita Cups")
-    (servings 36)
-    (price 1.64)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher vegetarian)
-    (ingredients olive-oil scallions spinach dill eggs feta-cheese kosher-salt pepper phyllo-dough butter breadcrumbs)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_663942] of ONTOLOGY::Recipe
-    (title "Tuna Noodle Casserole: Mommie Cooks")
-    (servings 8)
-    (price 19.65)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher)
-    (ingredients bread-crumbs butter mushrooms peas tuna celery-sticks cheese chicken-broth egg-noodles flour garlic milk onion parsley pimientos salt-and-pepper sherry)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_634345] of ONTOLOGY::Recipe
     (title "Barnaby's Caesar Salad")
     (servings 4)
@@ -32537,61 +17355,6 @@
     (meal_types side-dish lunch salad main-course main-dish dinner)
     (restrictions halal kosher)
     (ingredients anchovy-paste ciabatta juice-of-lemon olive-oil parmigiano-reggiano-cheese cracked-pepper romaine-lettuce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716245] of ONTOLOGY::Recipe
-    (title "Avocado Egg Salad")
-    (servings 1)
-    (price 152.03)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients pepper eggs seasoning-cube lemon avocado-pear scotch-bonnet-pepper bread)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664269] of ONTOLOGY::Recipe
-    (title "Valentine Hearts")
-    (servings 4)
-    (price 46.81)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients puff-pastry egg-to-glaze castor-sugar crme-fraiche strawberries chocolate)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_639629] of ONTOLOGY::Recipe
-    (title "Classic Macaroni and Cheese")
-    (servings 6)
-    (price 28.8)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients bread-crumbs butter cayenne-pepper flour heavy-cream short-macaroni salt-and-pepper sharp-cheddar milk)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635126] of ONTOLOGY::Recipe
-    (title "Black Lentil and Couscous Salad")
-    (servings 8)
-    (price 20.22)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients couscous lentils ground-cumin cayenne-pepper paprika almond-flakes raisins parsley mint olive-oil apple-cider-vinegar dijon-mustard orange-zest juice-of-orange honey feta)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657312] of ONTOLOGY::Recipe
-    (title "Pumpkin gnocchi with basil and Parmesan")
-    (servings 6)
-    (price 25.75)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients pumpkin eggs sea-salt pepper basil-leaves wheat-flour corn-flour olive-oil grana-padano-cheese basil-leaves)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -32605,72 +17368,6 @@
     (ingredients cellantani-pasta cauliflower chicken-breast olive-oil butter flour colemans-mustard soy-milk onion bay-leaves paprika juice-of-lemon thyme garlic-powder szechuan-peppers eggs goat-cheese parmesan-cheese emmental-cheese panko-bread-crumbs kosher-salt ground-pepper)
     (seasons any-season)
     (season_text "Any season"))
-
-  ([Recipe_715494] of ONTOLOGY::Recipe
-    (title "Guinness and Brats")
-    (servings 4)
-    (price 31.94)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher)
-    (ingredients bratwurst hotdog-buns onions guinness-s-out-beer)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634213] of ONTOLOGY::Recipe
-    (title "Banana, Cranberry and Apple Bread")
-    (servings 8)
-    (price 5.97)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients baking-powder baking-soda bananas-235g-on cranberry-125g eggs flour-200g apple milk salt sugar-140g vanilla tbsp-vegetable-oil-100g)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_650546] of ONTOLOGY::Recipe
-    (title "Macaroni and Cheese Gratin")
-    (servings 6)
-    (price 45.13)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher)
-    (ingredients herbed-bread-crumbs butter cheddar elbow-macaroni flour gruyere milk nutmeg parmesan parsley pepper-sauce salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641063] of ONTOLOGY::Recipe
-    (title "Curried Cauliflower Gratin")
-    (servings 6)
-    (price 26.44)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients breadcrumbs coconut-milk cauliflower garnish-cilantro cinnamon cumin-seeds curry-powder flour ginger garlic ground-cardamom ground-cumin ground-nutmeg kosher-salt peanut-oil shallot butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657159] of ONTOLOGY::Recipe
-    (title "Prosciutto and Mushroom Ravioli With Basil Browned Butter Sauce")
-    (servings 4)
-    (price 47.82)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients all-purpose-flour butter butter eggs basil garlic mushrooms onion oregano prosciutto salt spinach)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_651103] of ONTOLOGY::Recipe
-    (title "Market Stuffed Squash Blossoms")
-    (servings 4)
-    (price 71.44)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients squash-blossoms garlic-scapes cherries butter panko-bread-crumbs goat-cheese basil salt-and-pepper flour pepper curry-powder salt club-soda oil)
-    (seasons any-season)
-    (season_text "Fall"))
 
   ([Recipe_633185] of ONTOLOGY::Recipe
     (title "Awesome! No Bake ~ Macaroni and Cheese")
@@ -32694,28 +17391,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_650139] of ONTOLOGY::Recipe
-    (title "Linguine with Prawns, Fresh Tomatoes and Spinach")
-    (servings 4)
-    (price 98.34)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients baby-spinach-stems-removed fettuccine-barilla garlic-clove olive-oil freshly-parsley prawns salt-and-pepper tomatoes butter white-wine)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_634441] of ONTOLOGY::Recipe
-    (title "Basil, Olive and Feta Foccacia")
-    (servings 8)
-    (price 13.8)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-unbleached-flour flour warm-water active-yeast warm-water salt olive-oil olives feta basil course-salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_640633] of ONTOLOGY::Recipe
     (title "Creamy Curry Cheese and Macaroni With Langostino Tails and Black Truffle Oil")
     (servings 1)
@@ -32724,50 +17399,6 @@
     (meal_types side-dish lunch main-course main-dish dinner)
     (restrictions kosher)
     (ingredients trader-joes-langostino-tails fontina-cheese cheddar-cheese heavy-cream butter onion flour nutmeg chili-curry-powder fusili-pasta panko-bread-crumbs parmesan-cheese arugula an-evoo balsamic-vinegar sea-salt cracked-pepper truffle-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646183] of ONTOLOGY::Recipe
-    (title "Ham and Peas Farfalle In Creamy Lemon Parmesan Sauce")
-    (servings 4)
-    (price 33.24)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients farfalle-pasta flour butter cream parmesan-cheese juice-of-lemon ham peas salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638088] of ONTOLOGY::Recipe
-    (title "Chicken Farfalle with Low-Fat Alfredo Sauce")
-    (servings 4)
-    (price 49.45)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients bell-pepper butter chicken-breasts farfalle-pasta flour garlic-powder juice-of-lemon parmesan-cheese salt skim-milk white-wine)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649611] of ONTOLOGY::Recipe
-    (title "Lemon Delicious")
-    (servings 4)
-    (price 17.82)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients self-raising-flour caster-sugar butter lemon-zest lemon-juice egg-yolks milk egg-whites)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654959] of ONTOLOGY::Recipe
-    (title "Pasta With Tuna")
-    (servings 4)
-    (price 42.03)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients flour green-onions non-fat-milk olive-oil onion parmesan-cheese parsley tubular-pasta peas dsh-pepper-sauce water-packed-tuna)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -32804,105 +17435,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_639333] of ONTOLOGY::Recipe
-    (title "Chouquettes")
-    (servings 8)
-    (price 3.98)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions kosher vegetarian)
-    (ingredients butter sugar salt lemon-rind water flour vanilla rum eggs swedish-pearl-sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642594] of ONTOLOGY::Recipe
-    (title "Farfalle with Shrimps, Tomatoes Basil Sauce")
-    (servings 4)
-    (price 70.36)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients butter farfalle-pasta-by-barilla basil-leaves salt-and-ground-pepper shrimps tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715595] of ONTOLOGY::Recipe
-    (title "How to Make the Cheesiest Bowtie Mac and Cheese")
-    (servings 4)
-    (price 33.65)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients bowtie-pasta-cook-as-directed extra-sharp-cheddar-cheese extra-sharp-cheddar-cheese salt-and-pepper cream butter parsley)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664273] of ONTOLOGY::Recipe
-    (title "Valentine's Day Potted Plant Ice-Cream Desserts")
-    (servings 5)
-    (price 11.7)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher)
-    (ingredients lit-vanilla-ice-cream palm-seeds nuts berries oreo-cookies parsley)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660670] of ONTOLOGY::Recipe
-    (title "Sourdough Stuffing with Sage Sausage and Apples")
-    (servings 8)
-    (price 25.77)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish)
-    (restrictions no-restrictions)
-    (ingredients sausage butter shallots garlic celery-stalks apple portabello-mushrooms thyme sage wine sourdough-bread chicken-broth salt-and-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663771] of ONTOLOGY::Recipe
-    (title "Traditional Panzanella")
-    (servings 6)
-    (price 21.37)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher vegan vegetarian)
-    (ingredients six-day-old-tuscan-bread extra-virgin-olive-oil basil-leaves onion red-wine-vinegar salt-and-pepper tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654944] of ONTOLOGY::Recipe
-    (title "Pasta With Salmon Cream Sauce")
-    (servings 4)
-    (price 40.03)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients butter flour milk onion parmesan-cheese parsley peas penne pepper salmon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636576] of ONTOLOGY::Recipe
-    (title "Butternut Squash and Chorizo Pasta")
-    (servings 4)
-    (price 31.05)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions halal)
-    (ingredients olive-oil chili-flakes onion garlic chorizo-sausage-cut butternut-squash-and-cubes thyme cavatelli-pasta pecorino-cheese)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_641060] of ONTOLOGY::Recipe
-    (title "Curried Cabbage & Kale Gratin")
-    (servings 8)
-    (price 14.92)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions no-restrictions)
-    (ingredients fat-my-preference-is-always-animal-fat bacon-totally-optional leek garlic curry-powder cabbage-head kale water salt-and-pepper thyme eggs milk bread-crumbs gruyere-cheese butter)
-    (seasons winter)
-    (season_text "Winter"))
-
   ([Recipe_634217] of ONTOLOGY::Recipe
     (title "Banana- Honey Chocolate Chip Bread")
     (servings 1)
@@ -32911,160 +17443,6 @@
     (meal_types side-dish)
     (restrictions halal)
     (ingredients baking-powder baking-soda bananas butter buttermilk eggs flour honey salt semi-sweet-chocolate-chips vanilla-extract vegetable-oil walnuts sugar flour)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633537] of ONTOLOGY::Recipe
-    (title "Baked Chicken Thighs with Satay Sauce and Tomato Salad")
-    (servings 3)
-    (price 71.88)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish)
-    (restrictions dairy-free kosher)
-    (ingredients chicken-thighs salt-and-pepper cayenne-pepper soy-sauce apple-cider-vinegar peanut-butter sesame-oil satay-sauce walnuts ginger garlic water smooth-peanut-butter honey tomato-salad tomatoes celery-leaves mirin olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_660835] of ONTOLOGY::Recipe
-    (title "Spaghetti With Pesto Trapanese")
-    (servings 6)
-    (price 24.25)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher vegetarian)
-    (ingredients spaghetti almonds pine-nuts extra-virgin-olive-oil garlic-cloves tomatoes basil salt-and-pepper pecorino)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640827] of ONTOLOGY::Recipe
-    (title "Crispy Pineapple Fritters")
-    (servings 12)
-    (price 2.99)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
-    (restrictions kosher vegetarian)
-    (ingredients pineapple-rings flour cornstarch egg baking-powder salt milk panko-breadcrumbs canola-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642719] of ONTOLOGY::Recipe
-    (title "Fettuccine With Bacon Mushroom and Peas")
-    (servings 4)
-    (price 41.99)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients bacon cheese condensed-cream-of-mushroom basil fettuccine ground-pepper mushroom oregano-powder peas)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716267] of ONTOLOGY::Recipe
-    (title "Soft Chin Chin")
-    (servings 4)
-    (price 13.91)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients all-purpose-flour baking-powder buttermargarine coconut-milk egg oil salt sugar vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642556] of ONTOLOGY::Recipe
-    (title "Fall Farro Salad with Pomegranate, Walnut & Truffles")
-    (servings 4)
-    (price 82.45)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients extra-virgin-olive-oil farro parmesan-into-ribbons pomegranate radicchio-thinly salt-and-pepper truffle-mushroom vinegar walnuts)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_662501] of ONTOLOGY::Recipe
-    (title "Sweet Corn Pudding")
-    (servings 10)
-    (price 20.33)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish)
-    (restrictions halal kosher vegetarian)
-    (ingredients butter onion garlic ears-corn flour heavy-cream grits jalapeo-peppers salt pepper eggs cheddar-cheese)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_735820] of ONTOLOGY::Recipe
-    (title "Crock-Pot: Asian-Style Country Ribs with Black Bean Garlic Sauce")
-    (servings 4)
-    (price 58.75)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients black-bean-garlic-sauce-from-a-jar chicken-stock cornstarch country sesame-oil garlic ginger-root honey coarsely-cracked-pepper pork-ribs soy-salt tablespoons-scallions)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642113] of ONTOLOGY::Recipe
-    (title "Easy Pork Chops on Stuffing")
-    (servings 6)
-    (price 38.14)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients butter celery chicken-broth parsley onion bell-pepper pork-chops salt bread)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657226] of ONTOLOGY::Recipe
-    (title "Pulled Pork Sandwich with Mango BBQ sauce")
-    (servings 4)
-    (price 124.17)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients apple-cider-vinegar pork-shoulder brioche-rolls cumin-seeds brown-sugar fennel-seeds ginger kosher-salt lime-juice mango-puree molasses onion paprika serrano-pepper vegetable-oil worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654913] of ONTOLOGY::Recipe
-    (title "Pasta With Chicken and Mushrooms")
-    (servings 6)
-    (price 29.19)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients balsamic-vinegar bay-leaf chicken-breast-halves chicken-broth flour linguini mushrooms olive-oil pepper salt thyme)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648713] of ONTOLOGY::Recipe
-    (title "Kale and Chickpea Soup with Lemon")
-    (servings 4)
-    (price 49.45)
-    (wine_pairing " No wine pairing")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients banana-shallots bay-leaf chickpeas celery chilli-flakes crusty-bread garlic-clove juice-of-lemon kale lemon olive-oil parmesan-cheese rosemary salt stock)
-    (seasons winter)
-    (season_text "Winter"))
-
-  ([Recipe_633251] of ONTOLOGY::Recipe
-    (title "Bacalhau Macau")
-    (servings 4)
-    (price 42.26)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients japanese-breadcrumbs butter cilantro egg egg-white garlic ginger green-onion russet-idaho-potato oil-cured-olives salt salt-cod-fillets sesame-oil whipping-cream pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642585] of ONTOLOGY::Recipe
-    (title "Farfalle with fresh tomatoes, basil and mozzarella")
-    (servings 4)
-    (price 24.28)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients farfalle-pasta-by-barilla basil-leaves mozzarella olive-oil salt-and-pepper tomatoes butter)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -33079,39 +17457,6 @@
     (seasons winter)
     (season_text "Winter"))
 
-  ([Recipe_645710] of ONTOLOGY::Recipe
-    (title "Grilled Fish Sandwiches")
-    (servings 4)
-    (price 96.98)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients butter another-fish parsley garlic-clove hamburger-buns lemon-juice mayonnaise toppings-such-as-pickles salt salt-pepper paprika vegetable-oil mustard)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_652417] of ONTOLOGY::Recipe
-    (title "Moroccan chickpea and lentil stew")
-    (servings 3)
-    (price 42.04)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients broccoli chickpeas carrots celery-stalks lentils couscous cilantro ground-cinnamon ground-cumin ground-turmeric lemon-juice olive-oil paprika salt-and-pepper tomato-paste water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657312] of ONTOLOGY::Recipe
-    (title "Pumpkin gnocchi with basil and Parmesan")
-    (servings 6)
-    (price 25.75)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients pumpkin eggs sea-salt pepper basil-leaves wheat-flour corn-flour olive-oil grana-padano-cheese basil-leaves)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_642722] of ONTOLOGY::Recipe
     (title "Fettuccine With Smashed Peas")
     (servings 8)
@@ -33120,116 +17465,6 @@
     (meal_types side-dish lunch main-course main-dish dinner)
     (restrictions halal kosher)
     (ingredients fettuccine-pasta peas ricotta-cheese coarse-salt pepper chives olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654318] of ONTOLOGY::Recipe
-    (title "Pad Se Ew Tofu With Vegetable Noodles")
-    (servings 6)
-    (price 25.2)
-    (wine_pairing "Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal)
-    (ingredients tofu precooked-vegetable-noodles oyster-sauce soy-bean-paste soy-sauce sugar vinegar pepper broccoli bell-pepper bell-pepper carrot roasted-onions garlic-cloves eggs siracha vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_657710] of ONTOLOGY::Recipe
-    (title "Rack of Lamb With Parsley")
-    (servings 4)
-    (price 88.97)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients lamb peanut-oil salt pepper dijon-mustard bread parsley garlic-clove shallot herbes-de-province butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664270] of ONTOLOGY::Recipe
-    (title "Valentine's Chicken Marsala")
-    (servings 3)
-    (price 93.46)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients mushrooms chicken-breast garlic butter olive-oil seasoned-breadcrumbscoating-mix marsala-wine heavy-cream pasta)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_729531] of ONTOLOGY::Recipe
-    (title "Roasted Lemon Pepper Pork Tenderloin with Cornbread Stuffing")
-    (servings 4)
-    (price 70.09)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients cornbread egg flour green-onions jalapeno lemon-pepper chicken-broth milk parsley pork-tenderloin salt-and-pepper butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638035] of ONTOLOGY::Recipe
-    (title "Chicken Cordon Bleu")
-    (servings 6)
-    (price 30.18)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients deli-ham eggs flour thyme-leaves kosher-salt-and-pepper olive-oil panko-bread-crumbs chicken-breasts swiss-cheese water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641543] of ONTOLOGY::Recipe
-    (title "Ditalini with peas")
-    (servings 4)
-    (price 60.56)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients coarse-sea-salt ditalini-pasta ground-pepper ham olive-oil onion pancetta parmesan ricotta-cheese turmeric-in-2-ladels-of-water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655634] of ONTOLOGY::Recipe
-    (title "Pepita Crusted Chicken Salad With Sweet Adobo Vinaigrette")
-    (servings 4)
-    (price 73.44)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients strain-adobo-sauce avocado dijon-mustard egg flour ground-cumin honey jicama mango milk oil a-onion pepitas pepper red-wine-vinegar salt chicken-breasts)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1165787] of ONTOLOGY::Recipe
-    (title "Instant Pot Chili Mac")
-    (servings 6)
-    (price 42.3)
-    (wine_pairing "Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients olive-oil ground-beef onion bell-pepper cayenne-pepper garlic-powder cumin chili-powder pepper pepper oregano chicken-broth tomatoes kidney-beans monterrey-jack-cheese elbow-macaroni)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641955] of ONTOLOGY::Recipe
-    (title "Easy Eclairs")
-    (servings 6)
-    (price 33.8)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients choux-pastry water full-cream-milk butter sugar salt flour eggs pastry-cream milk sugar egg-yolks cornstarch cream chocolate ganache ganache)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648048] of ONTOLOGY::Recipe
-    (title "Italian Beef Braciole")
-    (servings 4)
-    (price 95.67)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients round-steak prosciutto genoa-salami bread-crumbs parsley romano-cheese olive-oil garlic marinara-sauce red-wine)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -33244,94 +17479,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_632778] of ONTOLOGY::Recipe
-    (title "Artisan Farfalle Pasta With Smoked Salmon and Cream Sauce")
-    (servings 2)
-    (price 324.99)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients chicken-broth 5-cooking-cream extra-virgin-oil artisan-pasta shallots salmon sun-tomatoes white-wine)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641836] of ONTOLOGY::Recipe
-    (title "Easy Baked Parmesan Chicken")
-    (servings 4)
-    (price 85.06)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients chicken-breast-halves egg bread-crumbs pasta-sauce mozzarella-cheese parmesan-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636593] of ONTOLOGY::Recipe
-    (title "Butternut Squash Pizza")
-    (servings 4)
-    (price 118.99)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients pizza-dough greens onion roasted-butternut-squash pine-nuts bacon balsamic-reduction manchego-cheese mozzarella-cheese)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_642121] of ONTOLOGY::Recipe
-    (title "Easy Tabouleh")
-    (servings 1)
-    (price 463.72)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur cucumbers flat-leaf-parsley lemon-juice-from-a-lemon olive-oil salt tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634320] of ONTOLOGY::Recipe
-    (title "Barbecued Pulled Beef Sandwiches")
-    (servings 6)
-    (price 45.25)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients bacon beef-chuck olive-oil brown-sugar salt-and-pepper onion to-3-of-barbecue-sauce hawaiian-rolls)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643362] of ONTOLOGY::Recipe
-    (title "French Onion Marsala Soup")
-    (servings 4)
-    (price 59.98)
-    (wine_pairing "Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients butter olive-oil onions beef-broth marsala-wine thyme salt-and-pepper sugar texas-toast-croutons provolone-cheese swiss-cheese parmesan-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_633063] of ONTOLOGY::Recipe
-    (title "Austrian Goulash")
-    (servings 12)
-    (price 15.1)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients beef-stew-cut-meat beef-stock tomato-sauce caraway-seeds flour garlic-cloves hungarian-paprika lemon-zest olive-oil onions mild-paprika salt-pepper tomato-paste)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636360] of ONTOLOGY::Recipe
-    (title "Brussels Sprout Carbonara with Fettuccini")
-    (servings 4)
-    (price 71.79)
-    (wine_pairing "Red wine or White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients 5-lb-of-fettuccini-pasta 2-lb-brussels-sprouts shallots garlic oz-bacon-into-pieces eggs lots-of-pepper 5-oz-parmesan-cheese salt tbsp-of-olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_643471] of ONTOLOGY::Recipe
     (title "fresh corn, roasted tomato & pickled garlic pizza with cornmeal crust")
     (servings 4)
@@ -33343,39 +17490,6 @@
     (seasons summer)
     (season_text "Summer"))
 
-  ([Recipe_648524] of ONTOLOGY::Recipe
-    (title "Jean's Seafood Gumbo")
-    (servings 9)
-    (price 59.12)
-    (wine_pairing "White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free halal)
-    (ingredients shrimp crabs celery parsley peppers onion green-onions garlic bay-leaves tomato-paste vegetable-oil flour salt ground-pepper thyme worcestershire-sauce canned-tomatoes all-the-tabasco-sauce-you-handle creole-seasoning andouille fil-powder okra louisiana-rice)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_649817] of ONTOLOGY::Recipe
-    (title "Lemon White Wine Chicken over Linguini")
-    (servings 2)
-    (price 256.83)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients chicken-breasts chicken-broth parsley juice-of-lemon al-dente-grain-linguini olive-oil pecorino-cheese shallot white-wine)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_656819] of ONTOLOGY::Recipe
-    (title "Pork schnitzel with tarragon cream sauce")
-    (servings 2)
-    (price 196.11)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients pepper breadcrumbs cornflour cornstarch double-cream eggs parmesan-cheese pork-escalopes sunflower-oil tarragon vegetable-stock-from white-wine)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_633569] of ONTOLOGY::Recipe
     (title "Baked Crusty Chicken")
     (servings 6)
@@ -33384,50 +17498,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions dairy-free kosher)
     (ingredients bread-crumbs butter chicken basil flour parsley ground-pepper juice-of-lemon paprika salt vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_637631] of ONTOLOGY::Recipe
-    (title "Cheesy Bacon Burger with Spicy Chipotle Aiolo Sauce")
-    (servings 4)
-    (price 77.08)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients chipotle-chiles-in-adobo mayonnaise garlic garlic-powder greek-yogurt bell-pepper ground-cumin ground-pepper ground-beef lime-juice onion wedges-of-laughing-cow-swiss-cheese turkey-bacon hamburger-buns)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_635574] of ONTOLOGY::Recipe
-    (title "Boeuf Bourgignon")
-    (servings 4)
-    (price 210.34)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients button-mushrooms butter un-smoked-bacon vegetable-oil well-trimmed-beef-chuck onion shallots carrots salt-and-pepper flour cognac beef-stock cocoa-powder garlic-cloves thyme flat-leaf-parsley-leaves tomato-paste bay-leaf)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641687] of ONTOLOGY::Recipe
-    (title "Dry Mee Siam")
-    (servings 3)
-    (price 94.79)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal)
-    (ingredients spice-paste bean-sprouts chillies chives eggs fish-sauce garlic limes-and-chillies-when-serve oil rice-vermicelli shallots shrimps sugar tau-kwa taucheo taucheo)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_715437] of ONTOLOGY::Recipe
-    (title "Homemade King Ranch Chicken Casserole")
-    (servings 6)
-    (price 41.54)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients butter chicken-breasts cream-of-chicken-soup cream-of-mushroom-soup tomatoes-and-chilis flour-tortillas mexican-cheddar-jack-cheese onion)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -33442,116 +17512,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_641893] of ONTOLOGY::Recipe
-    (title "Easy Cheesy Pizza Casserole")
-    (servings 6)
-    (price 65.92)
-    (wine_pairing "Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients equivalent-amount-of-a-ground-beefbulk-sausage-mix ricotta oregano basil parmesan-cheese pasta-sauce pizza-sauce pepper-flakes pepperoni mozzarella aged-provolone herbed-parmesan-drop-biscuits additional-parmesan-cheese baking-mix parmesan-cheese seasoning milk or or)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_641679] of ONTOLOGY::Recipe
-    (title "Drunken Turkey Chili")
-    (servings 8)
-    (price 23.32)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients extra-virgin-olive-oil onion bell-pepper garlic jalapeno-peppers paprika chili-powder ground-cumin pepper cocoa-powder ground-turkey-meat canned-tomatoes black-beans beer soy-sauce cilantro)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_1054737] of ONTOLOGY::Recipe
-    (title "How to make the World’s Greatest Lasagna Roll Ups")
-    (servings 18)
-    (price 7.39)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients tomato-sauce basil egg extra-virgin-olive-oil canned-tomatoes parsley garlic ground-beef-i-like ground-pepper sausage seasoning lasagna-noodles m-zarella-cheese onion parmesan-reggiano ricotta-cheese salt tomato-paste water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_661531] of ONTOLOGY::Recipe
-    (title "Steak with lemon and capers")
-    (servings 2)
-    (price 323.21)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients beef-steak butter capers wine flour garlic ground-pepper lemon-juice lemon-wedges olive-oil parsley salt)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659638] of ONTOLOGY::Recipe
-    (title "Seafood Gumbo")
-    (servings 12)
-    (price 40.62)
-    (wine_pairing "White wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free halal)
-    (ingredients bay-leaves celery rice fil-powder fish-stock flour garlic bell-peppers lump-crab-meat oil okra onions dozens-oysters salt-and-pepper creole-seasoning-blend shrimp thyme-leaves tomato-pure tomatoes)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_646034] of ONTOLOGY::Recipe
-    (title "Guinness Braised Corned Beef and Cabbage")
-    (servings 6)
-    (price 48.25)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients corned-beef-brisket carrots parsnips potatoes garlic guinness beef-broth pickling-spice brown-sugar bay-leaf spicy-honey-mustard)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645680] of ONTOLOGY::Recipe
-    (title "Grilled Chuck Burgers with Extra Sharp Cheddar and Lemon Garlic Aioli")
-    (servings 4)
-    (price 65.08)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients arugula cheddar-cheese garlic-clove ground-chuck lemon-juice mayonnaise olive-oil parsley bell-pepper onion salt kaiser-rolls worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_663985] of ONTOLOGY::Recipe
-    (title "Turkey and Rice Stuffed Acorn Squash")
-    (servings 6)
-    (price 49.23)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients olive-oil acorn-squash brown-basmati-rice onion garlic ground-turkey baby-bella-mushrooms spinach vegeta-seasoning bell-pepper-flakes salt-and-pepper bread-crumbs)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_643669] of ONTOLOGY::Recipe
-    (title "Fried Bee Hoon/ Vermicelli")
-    (servings 3)
-    (price 84.68)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal)
-    (ingredients shrimp bean-sprouts garlic-cloves spring-onions chicken-breast-meat carrot corn-olive-oil flavoured-pepper soy-sauce cornstarch-to-marinate-chicken tablepsoon-sugar vermicelli water sambal-oelek sambal-oelek)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642821] of ONTOLOGY::Recipe
-    (title "Figure Friendly Mushroom and Bacon Strata")
-    (servings 4)
-    (price 37.6)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients eggs egg-whites milk bread onion bell-peppers bell-pepper mushroom basil bacon-bits olive-oil cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_633519] of ONTOLOGY::Recipe
     (title "Baked Chicken Dijon")
     (servings 6)
@@ -33560,138 +17520,6 @@
     (meal_types lunch main-course main-dish dinner)
     (restrictions kosher)
     (ingredients bread-crumbs chicken dijon-mustard marjoram nonfat-yogurt pepper breasts-2 salt salt-and-pepper-optional)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716245] of ONTOLOGY::Recipe
-    (title "Avocado Egg Salad")
-    (servings 1)
-    (price 152.03)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegetarian)
-    (ingredients pepper eggs seasoning-cube lemon avocado-pear scotch-bonnet-pepper bread)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664011] of ONTOLOGY::Recipe
-    (title "Turkey Burgers")
-    (servings 4)
-    (price 60.66)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients carrots egg garlic green-onions extra-ground-turkey panko bell-pepper salt-and-pepper paprika spinach tomato-paste zucchini)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_632071] of ONTOLOGY::Recipe
-    (title "All American Sloppy Joes")
-    (servings 4)
-    (price 45.56)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal)
-    (ingredients american-barbecue-sauce burger-buns garlic-cloves bell-pepper ground-beef hot-sauce olive-oil salt-and-pepper shallots tomato-sauce worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_655573] of ONTOLOGY::Recipe
-    (title "Penne Arrabiata")
-    (servings 4)
-    (price 26.21)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients tomato parsley garlic olive-oil pkt-penne peppers)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634891] of ONTOLOGY::Recipe
-    (title "Best Chicken Parmesan")
-    (servings 6)
-    (price 43.63)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients style-bread-crumbs chicken-cutlets eggs flour mozzarella-cheese parmesan-cheese vegetable-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_651407] of ONTOLOGY::Recipe
-    (title "Mediterranean eggplants")
-    (servings 4)
-    (price 82.28)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients almonds bread-crumbs egg eggplants feta-cheese dill mozzarella-cheese olive-oil pepper sausage-without-the-casing)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642927] of ONTOLOGY::Recipe
-    (title "Fish Crocchette Appetizer")
-    (servings 8)
-    (price 27.8)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients bread-crumbs canola-oil cod-fillet eggs flour garlic rind-of-a-lemon milk parmesan-cheese parsley potatoes salt tuna-in-olive-oil)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_634345] of ONTOLOGY::Recipe
-    (title "Barnaby's Caesar Salad")
-    (servings 4)
-    (price 59.47)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients anchovy-paste ciabatta juice-of-lemon olive-oil parmigiano-reggiano-cheese cracked-pepper romaine-lettuce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_648176] of ONTOLOGY::Recipe
-    (title "Italian Meatloaf with Hard Boiled Eggs")
-    (servings 8)
-    (price 33.38)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients bacon pepper butter carrots celery rosemary sage-leaves garlic ground-beef ground-pork ground-veal olive-oil sea-salt bread onion hardboiled-eggs vin-santo)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_650139] of ONTOLOGY::Recipe
-    (title "Linguine with Prawns, Fresh Tomatoes and Spinach")
-    (servings 4)
-    (price 98.34)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients baby-spinach-stems-removed fettuccine-barilla garlic-clove olive-oil freshly-parsley prawns salt-and-pepper tomatoes butter white-wine)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_650255] of ONTOLOGY::Recipe
-    (title "Lobster Macaroni and Cheese")
-    (servings 6)
-    (price 63.49)
-    (wine_pairing "White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients elbow-macaroni-pasta lobster-tail-pieces butter flour milk cups-cheese truffle-oil bread-crumbs parmesan-cheese)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631868] of ONTOLOGY::Recipe
-    (title "4 Ingredient Chicken Pot Pie")
-    (servings 6)
-    (price 73.44)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients pie-crust campbells-chicken-gravy cut-up-vegetables cans-swanson-premium-chicken-breast-in-water)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -33728,17 +17556,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_651190] of ONTOLOGY::Recipe
-    (title "Masala-Tofu Burger")
-    (servings 4)
-    (price 88.97)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients onion-shopping-list redorangegreen-bell-pepper-shopping-list peas-carrots-mix-shopping-list chillies-shopping-list tofu-shopping-list potato-boils garlic-shopping-list mustard-seeds-shopping-list curry-leaves-shopping-list hing-shopping-list cumin-powder-shopping-list turmeric-shopping-list lemon-shopping-list salt-shopping-list cilantro-washed-finely-shopping-list indian-breadcrumbs-shopping-list vegetable-oil-shopping-list pam-original-flavor-shopping-list redwhite-onion beefsteak-tomatoes cilantro-shopping-list mint-cilantro-chutney-spread-shopping-list portugese-rolls)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_633661] of ONTOLOGY::Recipe
     (title "Baked Lasagne")
     (servings 4)
@@ -33772,160 +17589,6 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_644917] of ONTOLOGY::Recipe
-    (title "Gnocchi and Wilted Spinach Salad")
-    (servings 4)
-    (price 77.71)
-    (wine_pairing " No wine pairing")
-    (meal_types side-dish lunch salad main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients d-gnocchi baby-spinach-leaves bacon shallots walnut-pieces juice-of-lemon tsp-nutmeg honey cherries)
-    (seasons spring)
-    (season_text "Spring"))
-
-  ([Recipe_654935] of ONTOLOGY::Recipe
-    (title "Pasta with Peas and Italian Sausage")
-    (servings 4)
-    (price 33.49)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients butter canned-tomatoes farfalle-pasta sausage olive-oil peas salt-and-pepper pomi-strained-tomato-sauce)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640843] of ONTOLOGY::Recipe
-    (title "Crispy Southern Fried Chicken")
-    (servings 4)
-    (price 31.22)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients 6-lb-chicken-legs-and-thighs-this-weight-usually-gives-me-4-legs-and-4-thighs pt-buttermilk salt oz-flour salt tsps-of-spicy-paprika-powder tsps-thyme pepper vegetable-oil-to-fry-the-chicken)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_654285] of ONTOLOGY::Recipe
-    (title "Oxtail Ragout")
-    (servings 4)
-    (price 85.28)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients whl-allspice whl-bay-leaf flour garlic lemon-juice onion oxtails paprika bell-pepper salt tomato-juice water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664786] of ONTOLOGY::Recipe
-    (title "Venison Stew")
-    (servings 7)
-    (price 28.86)
-    (wine_pairing "Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients venison-stew-meat baby-carrots-4-stalks-celery-1-can-mushrooms-1-piece-pepper-1-cup-flour-and-3-tbsp-2-tablespoons-bee water potatoes onion baby-carrots celery mushrooms bell-pepper flour-and-3-tbsp beef-bouillon)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_631849] of ONTOLOGY::Recipe
-    (title "2 Minute Chocolate Yum")
-    (servings 1)
-    (price 107.72)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients cocoa-powder egg flour milk oil salt sugar vanilla)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_645634] of ONTOLOGY::Recipe
-    (title "Grilled Chicken Banh Mi")
-    (servings 6)
-    (price 43.08)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients fish-sauce lime-juice sugar garlic jalapeno salt chicken-breasts tap-water rice-vinegar salt pepper carrots daikon-radishes sub-rolls mayonnaise cucumber cilantro-leaves jalapeno)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659909] of ONTOLOGY::Recipe
-    (title "Shrimp & Sausage Étouffée")
-    (servings 6)
-    (price 52.41)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients celery garlic-cloves bell-pepper chicken-stock olive-oil onion parsley shrimp salt-pepper scallions cajun-seasoning-mix turkey-sausage unbleached-flour butter)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_642597] of ONTOLOGY::Recipe
-    (title "Farro & Leek Soup")
-    (servings 4)
-    (price 165.29)
-    (wine_pairing " No wine pairing")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients tablespoons-olive-oil leeks gr-farro celery carrot onion meat-stock-please-do-not-use-bullion-cubes herbs-i-use-1-sprig-of-thyme-a-bay parmesan-cheese salt-pepper)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_982376] of ONTOLOGY::Recipe
-    (title "Chicken Noodle Casserole Dish")
-    (servings 6)
-    (price 41.59)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients bread-crumbs butter carrots chicken-broth egg-noodles flour corn garlic-powder seasoning milk parmesan parmesan-cheese peas salt-and-pepper chicken mozzarella cream onion)
-    (seasons summer)
-    (season_text "Summer"))
-
-  ([Recipe_715383] of ONTOLOGY::Recipe
-    (title "Slow Cooker Chicken and Dumplings")
-    (servings 6)
-    (price 24.09)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions halal kosher)
-    (ingredients butter biscuits condensed-cream-of-chicken-soup flour onion parsley pepper poultry-seasoning chicken-breasts water)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659285] of ONTOLOGY::Recipe
-    (title "Satay Beef Balls")
-    (servings 6)
-    (price 11.4)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients bread glove-garlic ginger ground-beef parsley peanut-butter soya-sauce spring-onion)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_659316] of ONTOLOGY::Recipe
-    (title "Saucy Shredded Barbecue Chicken")
-    (servings 4)
-    (price 45.01)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients barbecue-sauce chicken-breasts hamburger-buns)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_662694] of ONTOLOGY::Recipe
-    (title "Swordfish with Orange Caramel Sauce")
-    (servings 4)
-    (price 115.26)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients equal-sizes-of-swordfish milk panko bread-crumbs parmesan-cheese salt-and-pepper sage-and-marjoram orange butter sugar)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_631747] of ONTOLOGY::Recipe
     (title "Dutch Oven Paella")
     (servings 6)
@@ -33937,72 +17600,6 @@
     (seasons spring)
     (season_text "Spring"))
 
-  ([Recipe_637593] of ONTOLOGY::Recipe
-    (title "Cheese Tortellini With Shrimp In Tomato Cream Sauce")
-    (servings 4)
-    (price 103.01)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions halal)
-    (ingredients canned-tomatoes cheese-tortellini chicken-bullion-cube parsley thyme garlic-cloves half-and-half olive-oil parmesan-cheese salt-and-freshly-grounded-pepper shrimp)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_636178] of ONTOLOGY::Recipe
-    (title "Broccoli Cheddar Soup, A Panera Bread Co. Copycat")
-    (servings 4)
-    (price 49.09)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types soup lunch main-course main-dish dinner)
-    (restrictions halal kosher vegetarian)
-    (ingredients bay-leaves broccoli-florets butter carrot flour half-and-half kosher-salt-and-pepper chicken-broth nutmeg onion sharp-and-cheddar-cheese sourdough-bread-boules)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_640666] of ONTOLOGY::Recipe
-    (title "Creamy Mushrooms Over Soba Noodles (Vegan)")
-    (servings 4)
-    (price 63.56)
-    (wine_pairing "Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions dairy-free kosher)
-    (ingredients all-purpose-flour white-wine cremini-but-your-choice thyme garlic juice-of-lemon salt-pepper soba-noodles earth-balance-buttery-spread soy-milk mushrooms)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_658632] of ONTOLOGY::Recipe
-    (title "Roasted Pumpkin and Barley Risotto")
-    (servings 3)
-    (price 67.45)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients barley butter chicken-stock cumin-powder thyme mint to-garlic big-of-ginger onion oregano pink-peppercorns pumpkin-puree salt-and-pepper cream worcestershire-sauce)
-    (seasons any-season)
-    (season_text "Fall"))
-
-  ([Recipe_648974] of ONTOLOGY::Recipe
-    (title "Kk's Fish Tacos")
-    (servings 10)
-    (price 45.43)
-    (wine_pairing " No wine pairing")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free)
-    (ingredients tilapia flour-tortillas cilantro limes iceberg-lettuce tomatoes onion bread-crumbs creole-seasoning lard)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_664828] of ONTOLOGY::Recipe
-    (title "Vietnamese Banh Mi")
-    (servings 6)
-    (price 31.07)
-    (wine_pairing "White wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients rolls loin-thinly garlic fish-sauce sugar ground-pepper onion vegetable-oil sesame-seed-oil mayo cilantro-sprigs pickled-carrot-and-daikon pate cucumber jalapeno)
-    (seasons any-season)
-    (season_text "Any season"))
-
   ([Recipe_640619] of ONTOLOGY::Recipe
     (title "Creamy Chicken Orzo Soup")
     (servings 4)
@@ -34011,28 +17608,6 @@
     (meal_types soup lunch main-course main-dish dinner)
     (restrictions dairy-free halal kosher)
     (ingredients olive-oil celery baby-carrots onion kosher-salt ground-pepper swanson-premium-chicken swanson-chicken-broth poultry-seasoning orzo cream-of-chicken-condensed-soup)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_716300] of ONTOLOGY::Recipe
-    (title "Plantain Pizza")
-    (servings 3)
-    (price 48.85)
-    (wine_pairing "Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions dairy-free halal kosher)
-    (ingredients beef bell-pepper bell-peppers bread-flour seasoning-cube oil oil onions over-ripe-plantain salt sugar tomato water yeast)
-    (seasons any-season)
-    (season_text "Any season"))
-
-  ([Recipe_638235] of ONTOLOGY::Recipe
-    (title "Chicken Parmesan With Pasta")
-    (servings 4)
-    (price 60.85)
-    (wine_pairing "White wine or light Red wine")
-    (meal_types lunch main-course main-dish dinner)
-    (restrictions kosher)
-    (ingredients angel-hair-pasta breadcrumbs breasts-of-chicken egg flour garlic-powder mozzarella-cheese pasta-sauce salt-and-pepper vegetable-oil)
     (seasons any-season)
     (season_text "Any season"))
 
@@ -34047,47 +17622,1312 @@
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_636436] of ONTOLOGY::Recipe
-    (title "Bulgur Pilaf With Green Lentils, Served With Caramelized Onions -Mercimekli Bulgur Pilavi")
-    (servings 1)
-    (price 2499.73)
-    (wine_pairing "Light Red wine or White wine")
-    (meal_types side-dish lunch main-course main-dish dinner)
+  ([Recipe_642546] of ONTOLOGY::Recipe
+    (title "Falafels With Tahini Sauce")
+    (servings 4)
+    (price 32.04)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
     (restrictions dairy-free halal kosher vegan vegetarian)
-    (ingredients bulgur-wheat preparation-time-minutes-cooking-time-minutes gr8oz-green-lentils salt-and-ground-pepper mild-olive-oil onion pickled-and-peppers)
+    (ingredients garbazo-beans onion garlic cilantro parsley cumin sea-salt pepper-flakes baking-powder flour tahini-sauce tahini-paste water jucie-of-lemons garlic sea-salt)
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_661741] of ONTOLOGY::Recipe
-    (title "Strawberry and Chocolate Chip Panini")
+  ([Recipe_798400] of ONTOLOGY::Recipe
+    (title "Spicy Black-Eyed Pea Curry with Swiss Chard and Roasted Eggplant")
+    (servings 6)
+    (price 15.67)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients black-eyed-peas curry-powder garam-masala globe ground-coriander ground-cumin ground-mustard-powder juice-of-lemon olive-oil chilies sea-salt shallots swiss-chard tomato water)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_640062] of ONTOLOGY::Recipe
+    (title "Corn Avocado Salsa")
+    (servings 2)
+    (price 65.36)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients avocado balsamic-vinegar cumin corn garlic bell-pepper)
+    (seasons summer)
+    (season_text "Summer"))
+
+  ([Recipe_639165] of ONTOLOGY::Recipe
+    (title "Chocolate Pistachio Energy Bites")
+    (servings 15)
+    (price 3.83)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients pistachios coconut cocoa-powder salt vanilla medjool-dates chocolate)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_641057] of ONTOLOGY::Recipe
+    (title "Curried Butternut Squash and Apple Soup")
     (servings 1)
-    (price 273.93)
-    (wine_pairing " No wine pairing")
+    (price 141.44)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients cauliflower butternut-squash apple water braggs-liquid-aminos curry-powder ginger-powder a-squirt-sriracha block-lite-tofu)
+    (seasons any-season)
+    (season_text "Fall"))
+
+  ([Recipe_658674] of ONTOLOGY::Recipe
+    (title "Roasted Sunchoke, Apple, and Onion Soup")
+    (servings 12)
+    (price 16.9)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients sunchokes onion apple vegetable-stock olive-oil sp)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_639410] of ONTOLOGY::Recipe
+    (title "Cilantro Hummus")
+    (servings 8)
+    (price 2.64)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients garbanzo-beans tahini lemon-juice garlic-cloves salt cayenne-pepper water olive-oil cilantro)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_650871] of ONTOLOGY::Recipe
+    (title "Maple & Curry Acorn Squash")
+    (servings 3)
+    (price 19.17)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients acorn-squash curry-powder maple-syrup olive-oil salt)
+    (seasons any-season)
+    (season_text "Fall"))
+
+  ([Recipe_634992] of ONTOLOGY::Recipe
+    (title "Bing's Mango Salsa")
+    (servings 4)
+    (price 51.96)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients mangoes lime-zest juice-of-lime mint-leaves shallotsred-onion salt pepper sugar chilli)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_662551] of ONTOLOGY::Recipe
+    (title "Sweet Potato and Celery Soup")
+    (servings 12)
+    (price 1.68)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients sweet-potatoes celery onion olive-oil basil bay-leaves salt-and-pepper)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_647634] of ONTOLOGY::Recipe
+    (title "Hummus with roasted orange peppers")
+    (servings 2)
+    (price 83.69)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients chickpeas-can-also-use-chickpeas orange-bell-peppers cooking-oil-olive-oil olive-oil salt bell-pepper garlic roasted-sesame-seeds sugar paprika-chilli-powder lemon-juice vinegar)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_640366] of ONTOLOGY::Recipe
+    (title "Cranberry Crumb Bars")
+    (servings 24)
+    (price 1.22)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher vegetarian)
+    (ingredients all-purpose-flour almond-meal baking-powder butter cinnamon cornstarch cranberries egg juice-of-orange salt vanilla sugar)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_635370] of ONTOLOGY::Recipe
+    (title "Blue Cheese Tartlets With Fig Jam and Walnuts")
+    (servings 30)
+    (price 3.18)
+    (wine_pairing "No wine pairing")
+    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher vegetarian)
+    (ingredients cheese butter fig-jam flour orange-zest walnuts)
+    (seasons summer)
+    (season_text "Summer"))
+
+  ([Recipe_636098] of ONTOLOGY::Recipe
+    (title "Brie Bundles with Homemade Fig Jam")
+    (servings 24)
+    (price 1.11)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher vegetarian)
+    (ingredients puff-pastry brie-log figs apple-juice sugar juice-of-lemon)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_649794] of ONTOLOGY::Recipe
+    (title "Lemon square bars")
+    (servings 24)
+    (price 0.57)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher vegetarian)
+    (ingredients baking-powder confectioners-sugar eggs flour lemon-juice lemon-rind sugar butter vanilla-essence)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_652513] of ONTOLOGY::Recipe
+    (title "Mozzarella Sticks")
+    (servings 1)
+    (price 1035.09)
+    (wine_pairing "No wine pairing")
+    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher vegetarian)
+    (ingredients butter bread-crumbs eggs flour garlic-powder seasoning pepper spaghetti-sauce string-cheese water)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_633067] of ONTOLOGY::Recipe
+    (title "Authentic Biscochitos")
+    (servings 4)
+    (price 23.03)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free vegetarian)
+    (ingredients sugar egg vanilla-extract brandy anise-seeds all-purpose-flour salt baking-powder cinnamon sugar lard lard)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_632493] of ONTOLOGY::Recipe
+    (title "Apple Cheddar Palmiers")
+    (servings 30)
+    (price 0.9)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher vegetarian)
+    (ingredients butter baking-apples shallots nutmeg salt-and-pepper sharp-cheddar puff-pastry egg)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_649361] of ONTOLOGY::Recipe
+    (title "Layered Poppy Seed Pastries")
+    (servings 24)
+    (price 2.2)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal vegetarian)
+    (ingredients baking-powder butter whl-egg-plus egg-yolk egg-yolk-with flour lemon-zest warm-milk poppy-seed-filling salt dsh-sugar sugar vanilla-extract ground-walnuts water pkt-yeast)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_636558] of ONTOLOGY::Recipe
+    (title "Buttermilk Onion Rings")
+    (servings 3)
+    (price 74.92)
+    (wine_pairing "No wine pairing")
+    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher vegetarian)
+    (ingredients vidalia-onion flour baking-powder salt egg buttermilk bread-crumbs panko-bread-crumbs salt vegetable-oil sriracha-chili-sauce crema-mexicana)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_640956] of ONTOLOGY::Recipe
+    (title "Crunchy Lemon Dill Vegetable Dip")
+    (servings 10)
+    (price 2.68)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
+    (restrictions gluten-free halal kosher vegetarian)
+    (ingredients carrots dill lemon-juice lemon-zest mayonnaise pepper bell-pepper salt scallions cream)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_632528] of ONTOLOGY::Recipe
+    (title "Apple Curry Soup")
+    (servings 1)
+    (price 390.82)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
+    (restrictions gluten-free halal kosher vegetarian)
+    (ingredients apple-cider coconut-milk curry-powder chavrie-goat-cheese granny-smith-apples leeks turmeric vegetable-oil mushrooms)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_800754] of ONTOLOGY::Recipe
+    (title "Buttered Plantain Fries and Seasoned Avocado")
+    (servings 3)
+    (price 39.13)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish)
+    (restrictions gluten-free halal kosher vegetarian)
+    (ingredients avocado butter chili-pepper garlic onions-to-garnish plantain salt vegetable-oil)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_645068] of ONTOLOGY::Recipe
+    (title "Gooey Chocolate Buttermilk Sheet Cake")
+    (servings 12)
+    (price 3.24)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal vegetarian)
+    (ingredients all-purpose-flour baking-soda butter buttermilk cocoa-powder eggs icing-sugar milk salt sugar vanilla-extract vegetable-oil water)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_1098347] of ONTOLOGY::Recipe
+    (title "Homemade Banana Bread")
+    (servings 8)
+    (price 4.78)
+    (wine_pairing "No wine pairing")
+    (meal_types morning-meal dessert brunch breakfast)
+    (restrictions halal kosher vegetarian)
+    (ingredients bananas flour granulated-sugar butter egg vanilla baking-soda salt walnuts)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_631762] of ONTOLOGY::Recipe
+    (title "Strawberry Tart")
+    (servings 4)
+    (price 97.04)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal vegetarian)
+    (ingredients ap-flour butter water egg-yolk confectioners-sugar vanilla-extract orange-zest cherry-preserves strawberries whipping-cream)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_636766] of ONTOLOGY::Recipe
+    (title "Cake with lemon, rosewater and pistachios")
+    (servings 12)
+    (price 5.65)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher vegetarian)
+    (ingredients flour baking-powder salt ground-almonds caster-sugar eggs runny-honey natural-yoghurt sunflower-oil lemon-zest pistachios water caster-sugar juice-of-lemon rosewater)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_639537] of ONTOLOGY::Recipe
+    (title "Clafoutis with sour cherries")
+    (servings 8)
+    (price 9.4)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher vegetarian)
+    (ingredients almond-essence amaretto cherries eggs milk flour salt demerrara-sugar whipping-cream)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_715477] of ONTOLOGY::Recipe
+    (title "The BEST Lemon Bars")
+    (servings 6)
+    (price 15.35)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher vegetarian)
+    (ingredients butter granulated-sugar flour-2-cups lemons eggs powdered-sugar-topping)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_67565] of ONTOLOGY::Recipe
+    (title "Chocolate Sponge Cake")
+    (servings 1)
+    (price 452.08)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions dairy-free halal kosher vegetarian)
+    (ingredients superfine-sugar flour cocoa egg-whites cream-of-tartar vanilla)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_642041] of ONTOLOGY::Recipe
+    (title "Easy Onion Cheese Rounds")
+    (servings 8)
+    (price 3.72)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish)
+    (restrictions halal kosher)
+    (ingredients onion mayonnaise parmesan-cheese parsley sea-salt-and-pepper bread)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_657377] of ONTOLOGY::Recipe
+    (title "Pumpkin Ravioli With Browned Butter Sage Sauce")
+    (servings 4)
+    (price 57.93)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions halal kosher)
+    (ingredients dough cream egg flour-to-make-a-dough splash-of-milk pumpkin-puree parmesan-cheese egg-yolk rubbed-sage salt pepper water parmesan-cheese sauce butter)
+    (seasons any-season)
+    (season_text "Fall"))
+
+  ([Recipe_631890] of ONTOLOGY::Recipe
+    (title "A Classic Caesar Salad")
+    (servings 1)
+    (price 577.53)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions no-restrictions)
+    (ingredients thickly-crusty-bread egg-yolk extra-virgin-olive-oil lemon-juice mustard-powder parmesan-cheese romaine-lettuce sunflower-oil tabasco-sauce worcestershire-sauce)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_655706] of ONTOLOGY::Recipe
+    (title "Peppery Absorption-Cooked Red-Wine Capellini")
+    (servings 4)
+    (price 98.42)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free kosher)
+    (ingredients angel-hair-pasta olive-oil half-alarge-onion garlic-cloves kosher-salt zucchini asparagus cherry-tomatoes paprika pepper cayenne-pepper oregano-leaves rosemary red-wine water flat-parsley-leaves)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_658517] of ONTOLOGY::Recipe
+    (title "Roasted Brussels Sprouts With Red Onions and Pancetta")
+    (servings 5)
+    (price 37.66)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish)
+    (restrictions dairy-free halal kosher)
+    (ingredients brussels-sprouts pancetta garlic olive-oil bread)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_636552] of ONTOLOGY::Recipe
+    (title "Buttermilk Cornbread and Sage Stuffing")
+    (servings 10)
+    (price 17.12)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish)
+    (restrictions kosher)
+    (ingredients coarse-bread-crumbs buttermilk-corn-bread flat-leaf-parsley sage kosher-salt pepper butter onions turkey-liver celery eggs chicken-broth heavy-cream)
+    (seasons summer)
+    (season_text "Summer"))
+
+  ([Recipe_655601] of ONTOLOGY::Recipe
+    (title "Penne with Sausage, Tomatoes and Potatoes")
+    (servings 4)
+    (price 57.0)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions halal)
+    (ingredients butter canned-tomatoes sausages olive-oil penne-pasta potatoes salt)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_665172] of ONTOLOGY::Recipe
+    (title "White Chocolate Cheesecake With Raspberries")
+    (servings 16)
+    (price 8.73)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions no-restrictions)
+    (ingredients graham-wafer-crumbs sugar butter whipping-cream chocolate-chips eight-packages-ounces-cream-cheese sugar eggs vanilla-extract whipping-cream raspberries)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_644681] of ONTOLOGY::Recipe
+    (title "Gingerbread Christmas Tree Cookies")
+    (servings 1)
+    (price 207.48)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions kosher vegetarian)
+    (ingredients butter brown-sugar b-salt honey milk c-flour baking-powder ground-ginger cinnamon-powder nutmeg sieve-together-in-a-bowl)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_649532] of ONTOLOGY::Recipe
+    (title "Lemon Brunch Cake")
+    (servings 1)
+    (price 471.92)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher)
+    (ingredients all-purpose-flour baking-powder butter eggs lemon-juice lemon-juice lemon-rind milk powdered-sugar salt sugar)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_649598] of ONTOLOGY::Recipe
+    (title "Lemon Curd Cheesecake")
+    (servings 12)
+    (price 9.01)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions no-restrictions)
+    (ingredients cream-cheese digestive-biscuits-crumbs egg gelatin lemon-curd add-2-lemon-juice lemon-juice lemon-zest sugar butter whipping-cream)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_715568] of ONTOLOGY::Recipe
+    (title "Chocolate Chip Cookies")
+    (servings 6)
+    (price 25.45)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher)
+    (ingredients all-purpose-flour baking-powder brown-sugar eggs granulated-sugar montana-huckleberry-milk-chocolate salt butter vanilla)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_632157] of ONTOLOGY::Recipe
+    (title "Almond Orange Anytime Cookies")
+    (servings 4)
+    (price 14.42)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher)
+    (ingredients almond-filling baking-soda butter egg flour milk orange powdered-sugar sugar vanilla)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_657261] of ONTOLOGY::Recipe
+    (title "Pumpkin Caramel Apple Pie")
+    (servings 8)
+    (price 36.03)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions no-restrictions)
+    (ingredients graham-cracker-crust caramel-apple-pie-filling gelatin cornstarch pumpkin-pie-spice salt saigon-cinnamon pumpkin-puree evaporated-milk eggs sugar)
+    (seasons any-season)
+    (season_text "Fall"))
+
+  ([Recipe_653836] of ONTOLOGY::Recipe
+    (title "Orange Chocolate Cake")
+    (servings 12)
+    (price 3.6)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal)
+    (ingredients baking-powder baking-soda butter eggs flour natural-yoghurt orange-juice orange-rind salt semi-sweet-chocolate caster-sugar vanilla-extract)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_636973] of ONTOLOGY::Recipe
+    (title "Caramel Apple Cake")
+    (servings 12)
+    (price 10.57)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher)
+    (ingredients apple-pie-spice apples baking-powder brown-sugar butter butter cake-flour caramel-candies eggs evaporated-milk heavy-cream powdered-sugar vanilla sugar)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_635756] of ONTOLOGY::Recipe
+    (title "Boysenberry Cobbler")
+    (servings 2)
+    (price 411.38)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher)
+    (ingredients baking-powder boysenberries butter cornstarch flour lemon-juice salt sugar vanilla-ice-cream)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_655270] of ONTOLOGY::Recipe
+    (title "Peanut Butter Chocolate Chip Pie")
+    (servings 1)
+    (price 1070.16)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions no-restrictions)
+    (ingredients butter chocolate-chips cup-plus-2-condensed-milk cream-cheese double-graham-crackers heavy-cream natural-peanut-butter salt)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_650092] of ONTOLOGY::Recipe
+    (title "Lime S’more Tartlets")
+    (servings 1)
+    (price 2471.04)
+    (wine_pairing "No wine pairing")
+    (meal_types fingerfood antipasti starter dessert snack appetizer antipasto hor-doeuvre)
+    (restrictions no-restrictions)
+    (ingredients bittersweet-chocolate butter cream-of-tartar egg-whites eggs-yolks graham-crackers granulated-sugar lime-juice lime-zest salt spring-form-tart-pans eggs)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_659380] of ONTOLOGY::Recipe
+    (title "Sausage Rolls By Bing")
+    (servings 4)
+    (price 61.01)
+    (wine_pairing "No wine pairing")
+    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions no-restrictions)
+    (ingredients leafs-of-basil butter extra-virgin-olive-oil parmesan-cheese puff-pastry sausages cajun-seasonings)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_658920] of ONTOLOGY::Recipe
+    (title "Rustic Grilled Peaches Pizza")
+    (servings 4)
+    (price 33.03)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher)
+    (ingredients arugula-leaves balsamic-vinegar cheese sage mozzarella-cheese onion peach uncook-pizza-crust salt-and-pepper walnuts)
+    (seasons summer)
+    (season_text "Summer"))
+
+  ([Recipe_640907] of ONTOLOGY::Recipe
+    (title "Croissants With Sesame Seeds (Kifli)")
+    (servings 50)
+    (price 0.78)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher)
+    (ingredients milk active-yeast sugar flour baking-powder salt vegetable-oil eggs flour margarine sesame-seeds)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_640323] of ONTOLOGY::Recipe
+    (title "Crab Wontons")
+    (servings 12)
+    (price 3.53)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal)
+    (ingredients crabmeat cream-cheese reduced-fat-mayonnaise soy-sauce garlic onion-powder ground-pepper won-ton-wrappers)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_665170] of ONTOLOGY::Recipe
+    (title "White Chocolate Cherry Hand Pies")
+    (servings 10)
+    (price 8.75)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter dessert snack appetizer antipasto hor-doeuvre)
+    (restrictions halal)
+    (ingredients pie-crust flour all-purpose-flour brown-sugar salt butter greek-yogurt sunflower-oil ice-water egg-white cream-cheese cherries vanilla-extract chocolate-chips)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_660709] of ONTOLOGY::Recipe
+    (title "Southwest Blt Crostini")
+    (servings 10)
+    (price 6.61)
+    (wine_pairing "No wine pairing")
+    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions no-restrictions)
+    (ingredients ancho-chili-pepper bacon baguette cilantro cumin-and-chili-powder arugula-lettuce mayo olive-oil pepper-jack-cheese salsa tomato)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_632425] of ONTOLOGY::Recipe
+    (title "Antioxidant Almond Snack Mix")
+    (servings 4)
+    (price 90.29)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free halal kosher)
+    (ingredients multi-grain-cereal-squares fibre-cereal-twigs cranberries chocolate-morsels almond-butter enriched-margarine almond-flour almonds confectioners-sugar)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_640575] of ONTOLOGY::Recipe
+    (title "Creamed Sweet Onion with Butter Basil Biscuits")
+    (servings 4)
+    (price 33.47)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions no-restrictions)
+    (ingredients onion bacon olive-oil thyme chicken-broth white-wine butter flour half-and-half nutmeg salt-and-pepper all-purpose-flour baking-powder salt butter basil half-and-half)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_716412] of ONTOLOGY::Recipe
+    (title "Roasted Cranberries, Ricotta & Honey Crostini")
+    (servings 1)
+    (price 147.74)
+    (wine_pairing "No wine pairing")
+    (meal_types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher)
+    (ingredients peasant-bread fresh-ground-pepper honey ricotta ricotta sea-salt roasted-cranberry-sauce)
+    (seasons any-season)
+    (season_text "Fall"))
+
+  ([Recipe_653234] of ONTOLOGY::Recipe
+    (title "Noodle Kugel with Pineapple-Gluten free, Dairy Free")
+    (servings 24)
+    (price 3.45)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free halal kosher)
+    (ingredients spiral-rice-pasta pineapple-chunks vanilla-coconut-milk-or coconut-creamer sunflower-oil egg-yolks xylitol-use-sugar-if-not-available evaporated-cane-sugar ground-cinnamon ground-nutmeg kosher-salt cupcake-liners cinnamon evaporated-cane-sugar earth-balance-soy-free-margarine brown-rice-flour)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_640944] of ONTOLOGY::Recipe
+    (title "Crunchy Chicken Stuffed Waffle Pops & Maple Dijon Dip")
+    (servings 12)
+    (price 19.43)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti condiment starter snack appetizer dip antipasto hor-doeuvre spread)
+    (restrictions halal kosher)
+    (ingredients chicken-breasts eggs milk salt-pepper corn-flakes bisquick-baking-mix milk vegetable-oil eggs mayonnaise maple-syrup dijon-mustard wooden-skewers wooden-skewers)
+    (seasons summer)
+    (season_text "Summer"))
+
+  ([Recipe_652825] of ONTOLOGY::Recipe
+    (title "My Asian Calamari")
+    (servings 4)
+    (price 65.09)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free halal kosher)
+    (ingredients all-spice-powder all-purpose-flour baking-powder oil cornstarch curry-powder egg-white ground-pepper paprika salt squid-rings sugar)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_635869] of ONTOLOGY::Recipe
+    (title "Braised Smoky Pork With Fresh Pappardelle")
+    (servings 4)
+    (price 160.28)
+    (wine_pairing "Red wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions no-restrictions)
+    (ingredients pork-shoulder sea-salt-applewood-works-very canola-oil granny-smith-apple onion carrots celery garlic-cloves thyme-sprigs paprika tomato-paste wine chicken-broth champagne-vinegar honey mascarpone-cheese salt-and-pepper pappardelle flat-leaf-parsley extra-virgin-olive-oil thyme-leaves)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_660234] of ONTOLOGY::Recipe
+    (title "Skirt Steak Fajitas")
+    (servings 6)
+    (price 75.18)
+    (wine_pairing "Red wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions halal kosher)
+    (ingredients bell-peppers brown-sugar canola-oil chile-powder cilantro cumin flour-tortillas garlic squeezed-lime-juice lime-wedges salsa skirt-steak cream soy-sauce onion)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_638369] of ONTOLOGY::Recipe
+    (title "Korean Sweet n Sour Chicken")
+    (servings 4)
+    (price 67.84)
+    (wine_pairing "White wine or light Red wine")
     (meal_types lunch main-course main-dish dinner)
     (restrictions dairy-free halal kosher)
-    (ingredients strawberries chocolate-chips-handful sourdough-bread olive-oil-and-brush)
-    (seasons any-season)
-    (season_text "Any season"))
+    (ingredients carrots chicken-breasts cider-vinegar corn-starch cornstarch edamame egg flour onion pineapple-juice soy-sauce sugar vegetable-oil water)
+    (seasons summer)
+    (season_text "Summer"))
 
-  ([Recipe_640803] of ONTOLOGY::Recipe
-    (title "Crispy Buttermilk Fried Chicken")
+  ([Recipe_640886] of ONTOLOGY::Recipe
+    (title "Crockpot Chicken and Dumplings")
     (servings 6)
-    (price 11.16)
+    (price 32.14)
     (wine_pairing "White wine or light Red wine")
     (meal_types lunch main-course main-dish dinner)
     (restrictions halal kosher)
-    (ingredients chicken flour salt paprika pepper buttermilk vegetable-oil)
+    (ingredients chicken-breasts butter cream-of-chicken-soup chicken-broth onion parsley grands-flaky-refrigerator-biscuits)
     (seasons any-season)
     (season_text "Any season"))
 
-  ([Recipe_645732] of ONTOLOGY::Recipe
-    (title "Grilled Ham and Cheese French Toast For A Quick Weeknight Dinner")
+  ([Recipe_715527] of ONTOLOGY::Recipe
+    (title "Sweet and Sticky Chicken Strips")
     (servings 4)
-    (price 33.51)
+    (price 52.81)
     (wine_pairing "White wine or light Red wine")
     (meal_types lunch main-course main-dish dinner)
-    (restrictions no-restrictions)
-    (ingredients buttermilk egg-whites dijon-mustard wheat-bread jarlsberg-cheese turkey-ham dill-pickles smart-balance-heart-right)
+    (restrictions kosher)
+    (ingredients brown-sugar eggs flour garlic-powder ground-cayenne-pepper kosher-salt panko-bread-crumbs cayenne-pepper-sauce ranch chicken-breast butter)
     (seasons any-season)
     (season_text "Any season"))
+
+  ([Recipe_639597] of ONTOLOGY::Recipe
+    (title "Classic French Onion Soup")
+    (servings 4)
+    (price 73.48)
+    (wine_pairing "Red wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions halal kosher)
+    (ingredients butter onions flour sherry beef-broth thyme parsley bay-leaf salt-and-pepper crusty-baguette gruyere-cheese)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_660038] of ONTOLOGY::Recipe
+    (title "Siamese Laksa")
+    (servings 1)
+    (price 2225.65)
+    (wine_pairing "White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher)
+    (ingredients angel-hair-spaghetti-until-al-dente bean-sprouts candlenut coconut-cream cucumber fish-sauce galangal garlic kaffir-lime-leaves lemongrass mint-leaves onion preserved-radish salt sardine shallots sugar tamarind-paste tumeric water bunga-kantan bunga-kantan bunga-kantan bunga-kantan)
+    (seasons spring)
+    (season_text "Spring"))
+
+  ([Recipe_665779] of ONTOLOGY::Recipe
+    (title "Zucchini Ribbon and Ricotta Pizza")
+    (servings 4)
+    (price 202.69)
+    (wine_pairing " No wine pairing")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions halal kosher)
+    (ingredients pizza-crust ricotta-cheese zucchini olive-oil garlic-clove lemon-zest salt ground-pepper kalamata-olives pine-nuts parmesan-cheese)
+    (seasons summer)
+    (season_text "Summer"))
+
+  ([Recipe_663364] of ONTOLOGY::Recipe
+    (title "Thin Crust Spinach Parmesan Pizza")
+    (servings 1)
+    (price 534.59)
+    (wine_pairing " No wine pairing")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions halal kosher)
+    (ingredients cheddar-cheese cornmeal olive-oil parmesan pesto pizza-dough salt-and-pepper spinach)
+    (seasons spring)
+    (season_text "Spring"))
+
+  ([Recipe_686582] of ONTOLOGY::Recipe
+    (title "Pasta casserole with zucchini and chicken")
+    (servings 4)
+    (price 59.35)
+    (wine_pairing "White wine or light Red wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions halal kosher)
+    (ingredients cheese chicken-breast garlic olive-oil paprika pasta bell-pepper salt single-cream cream zucchini)
+    (seasons summer)
+    (season_text "Summer"))
+
+  ([Recipe_716358] of ONTOLOGY::Recipe
+    (title "Popcorn Chicken")
+    (servings 2)
+    (price 80.27)
+    (wine_pairing "White wine or light Red wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free kosher)
+    (ingredients all-purpose-flour pepper breadcrumbs chicken-breast chili-powder eggs garlic-clove ginger-powder seasoning-cubes oil salt)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_729366] of ONTOLOGY::Recipe
+    (title "Plantain Salad")
+    (servings 1)
+    (price 539.61)
+    (wine_pairing "White wine")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions gluten-free halal)
+    (ingredients chili-dressing bell-pepper seasoning-cube lettuce bulb-of-onions parmesan-cheese finger-of-plantain bell-pepper shrimps tomatoes vegetable-oil bell-pepper)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_648636] of ONTOLOGY::Recipe
+    (title "Julia Child's Boeuf Bourguignon")
+    (servings 8)
+    (price 69.65)
+    (wine_pairing "Red wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions no-restrictions)
+    (ingredients bacon beef-chuck bouquet-garnic butter beef-broth carrots chicken-stock cremini-mushrooms flour olive-oil onions pearl-onions red-wine salt-and-pepper tomatoes)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_647015] of ONTOLOGY::Recipe
+    (title "Homemade Hard Taco Night with Carnitas and Pinto Beans")
+    (servings 2)
+    (price 417.62)
+    (wine_pairing "Red wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions gluten-free)
+    (ingredients avocados pork-shoulder chicken-stock cilantro corn-tortillas evoo garlic jalapeno lime monterey-jack-cheese navel-orange oil onion sea-salt fresh-tomatoes)
+    (seasons summer)
+    (season_text "Summer"))
+
+  ([Recipe_661340] of ONTOLOGY::Recipe
+    (title "Spinach Salad with Strawberry Vinaigrette")
+    (servings 1)
+    (price 338.97)
+    (wine_pairing "White wine or light Red wine")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions gluten-free halal kosher)
+    (ingredients almonds balsamic-vinegar chicken dijon-mustard feta-cheese thyme ground-pepper shallot spinach-leaves strawberries strawberries water)
+    (seasons spring)
+    (season_text "Spring"))
+
+  ([Recipe_643514] of ONTOLOGY::Recipe
+    (title "Fresh Herb Omelette")
+    (servings 1)
+    (price 169.34)
+    (wine_pairing " No wine pairing")
+    (meal_types lunch main-course morning-meal brunch main-dish breakfast dinner)
+    (restrictions gluten-free halal kosher)
+    (ingredients eggs pepper green-onion cherry-tomatoes basil parmesan-cheese olive-oil)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_634727] of ONTOLOGY::Recipe
+    (title "Beef, Poblano & Cheese Tamales")
+    (servings 4)
+    (price 37.17)
+    (wine_pairing "Red wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions gluten-free halal kosher)
+    (ingredients corn-husks california-chili-pods ground-beef mozzarella-cheese poblano-pepper garlic olive-oil goya-seasoning salt chili-powder)
+    (seasons summer)
+    (season_text "Summer"))
+
+  ([Recipe_659686] of ONTOLOGY::Recipe
+    (title "Seared Wild Sea Scallops With Garbanzo Beans and Barley")
+    (servings 4)
+    (price 93.26)
+    (wine_pairing "White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions no-restrictions)
+    (ingredients olive-oil sea-scallops garbanzo-beans barley green-beans wine butter parsley lemon-zest sea-salt-and-freshly-cracked-pepper)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_647922] of ONTOLOGY::Recipe
+    (title "Insalata Caprese With Pesto Vinaigrette")
+    (servings 1)
+    (price 1093.98)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions gluten-free halal kosher)
+    (ingredients mozzarella-cheese tomatoes-1-inch basil-leaves parmesan-cheese olive-oil salt-and-pepper balsamic-vinegar)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_633258] of ONTOLOGY::Recipe
+    (title "Bacon & Crimini Mushroom Risotto")
+    (servings 1)
+    (price 1899.87)
+    (wine_pairing "White wine or light Red wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions gluten-free)
+    (ingredients bacon onion garlic-clove pack-crimini-mushrooms white-wine arborio-rice white-wine chicken-broth heavy-cream parmesan salt-and-pepper)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_646651] of ONTOLOGY::Recipe
+    (title "Herb chicken with sweet potato mash and sautéed broccoli")
+    (servings 4)
+    (price 78.14)
+    (wine_pairing "White wine or light Red wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions gluten-free halal kosher)
+    (ingredients broccoli pack-maggi-so-herbs olive-oil russet-potato pepper-and-salt chicken-breasts sweet-potatoes butter)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_660944] of ONTOLOGY::Recipe
+    (title "Spiced Chicken With Risotto, Wild Mushroom Cognac Cream, and Pan-Seared Ramps")
+    (servings 2)
+    (price 386.27)
+    (wine_pairing "White wine or light Red wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions gluten-free)
+    (ingredients chicken-quarters arborio-rice shallot shitake-mushrooms oyster-mushrooms baby-bella-mushrooms garden-cut-chives ramps parmigiano-reggiano heavy-cream white-wine parsley fennel-salt sea-salt cracked-pepper cayenne-pepper paprika evoo butter)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_640136] of ONTOLOGY::Recipe
+    (title "Corned Beef And Cabbage With Irish Mustard Sauce")
+    (servings 6)
+    (price 89.82)
+    (wine_pairing "Red wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions gluten-free halal kosher)
+    (ingredients bay-leaf butter cabbage carrot cider-vinegar corned-beef-brisket cornstarch mustard egg-yolks parsley horseradish new-potatoes onions pepper salt sugar water)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_715385] of ONTOLOGY::Recipe
+    (title "Slow Cooker Baked Potato Soup")
+    (servings 3)
+    (price 94.47)
+    (wine_pairing "White wine or light Red wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions no-restrictions)
+    (ingredients all-purpose-flour bacon-bits baking-potatoes chicken-bouillom-cubes green-onion-tops ground-pepper half-and-half onion cheddar-cheese cream water)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_1039293] of ONTOLOGY::Recipe
+    (title "Pulled Pork Nachos")
+    (servings 8)
+    (price 20.41)
+    (wine_pairing "Red wine")
+    (meal_types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
+    (restrictions gluten-free)
+    (ingredients nacho-chips pico-de-gallo pork-rub pork-shoulder cheese cream vegetable-broth)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_640676] of ONTOLOGY::Recipe
+    (title "Creamy Polenta with Egg, Arrabiata & Bacon")
+    (servings 4)
+    (price 72.0)
+    (wine_pairing " No wine pairing")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions gluten-free)
+    (ingredients bacon cream-cheese eggs parsley goat-cheese olive-oil polenta salt-pepper)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_637670] of ONTOLOGY::Recipe
+    (title "Cheesy Pasta in a Pot")
+    (servings 8)
+    (price 33.69)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions halal kosher)
+    (ingredients ground-beef onions garlic-clove spaghetti-sauce canned-tomatoes mushrooms shell-pasta provolone mozzarella)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_632935] of ONTOLOGY::Recipe
+    (title "Asparagus Lemon Risotto")
+    (servings 4)
+    (price 97.52)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions gluten-free kosher)
+    (ingredients vegetable-broth water olive-oil onion garlic arborio-rice other-short-grain-rice wine pepper asparagus-cut peas parmesan-cheese parsley lemon-rind lemon-juice)
+    (seasons spring)
+    (season_text "Spring"))
+
+  ([Recipe_634300] of ONTOLOGY::Recipe
+    (title "Barbecued Corn on the Cob With Spiced Butter")
+    (servings 4)
+    (price 31.28)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish)
+    (restrictions gluten-free halal kosher vegetarian)
+    (ingredients butter garlic honey chilli-powder ground-cumin ground-coriander ground-pepper corn-cobs)
+    (seasons summer)
+    (season_text "Summer"))
+
+  ([Recipe_655853] of ONTOLOGY::Recipe
+    (title "Pesto Zucchini \"Spaghetti")
+    (servings 4)
+    (price 47.42)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions gluten-free)
+    (ingredients zucchini salt bacon green-onions broccoli-florets basil-pesto romano-cheese)
+    (seasons summer)
+    (season_text "Summer"))
+
+  ([Recipe_640677] of ONTOLOGY::Recipe
+    (title "Creamy Porcini Mushroom Polenta")
+    (servings 6)
+    (price 28.1)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish)
+    (restrictions gluten-free halal kosher)
+    (ingredients butter porcini-mushrooms heavy-cream parmesan-cheese polenta salt water)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_641047] of ONTOLOGY::Recipe
+    (title "Curious George's Gluten-Free Banana Nut Bread")
+    (servings 8)
+    (price 8.97)
+    (wine_pairing "No wine pairing")
+    (meal_types morning-meal dessert brunch breakfast)
+    (restrictions gluten-free halal kosher)
+    (ingredients shortening butter sugar very-browned-bananas lemon-juice eggs flour baking-powder salt ground-walnuts)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_652885] of ONTOLOGY::Recipe
+    (title "My Simple Custard Flan ( Filipino Leche Flan)")
+    (servings 4)
+    (price 38.46)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions gluten-free halal kosher vegetarian)
+    (ingredients brown-sugar egg-yolk evaporated-milk lemon-juice condensed-milk vanilla-essence water)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_639202] of ONTOLOGY::Recipe
+    (title "Chocolate Soup For Two")
+    (servings 2)
+    (price 117.12)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions gluten-free halal)
+    (ingredients bittersweet-chocolate-chips cornstarch half-and-half cream-cheese marshmallow-creme skim-milk condensed-milk vanilla-extract water)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_632197] of ONTOLOGY::Recipe
+    (title "Almond Toffee Bars")
+    (servings 1)
+    (price 722.56)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher)
+    (ingredients almond-extract confectioners-sugar egg unsifted-flour margarine milk-chocolate-covered-1-cup-slivered-almonds condensed-milk)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_661889] of ONTOLOGY::Recipe
+    (title "Strawberry Shortcake with Homemade Donuts")
+    (servings 6)
+    (price 26.28)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions no-restrictions)
+    (ingredients baking-powder cake-flour confectioners-sugar egg-yolks granulated-sugar salt cream strawberries vanilla-extract shorteningvegetable-lard whipped-cream milk)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_639361] of ONTOLOGY::Recipe
+    (title "Christmas Fruit Cake")
+    (servings 36)
+    (price 1.37)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions gluten-free vegetarian)
+    (ingredients butter sugar eggs flour baking-powder spice fruit prune-cut-to-pieces walnut-chop-to-pieces rum orange-juice orange-zest vanilla-extract line-a-8-square-cake-tin line-a-8-cake-tin)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_636138] of ONTOLOGY::Recipe
+    (title "Brittle, Salted, Crunchy Almond Roca")
+    (servings 1)
+    (price 772.3)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions gluten-free halal kosher)
+    (ingredients note-if-using-butter butter sugar slivered-almonds chocolate-chips almonds)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_635524] of ONTOLOGY::Recipe
+    (title "Blueberry Ricotta Cake")
+    (servings 1)
+    (price 554.19)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher)
+    (ingredients king-arthur-unbleached-flour sugar baking-powder salt milk shortening egg vanilla blueberries eggs ricotta-cheese sugar vanilla)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_639492] of ONTOLOGY::Recipe
+    (title "Cinnamon Twists")
+    (servings 14)
+    (price 1.36)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions gluten-free halal kosher)
+    (ingredients active-yeast butter eggs milk salt sugar)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_655740] of ONTOLOGY::Recipe
+    (title "Classic Apple Pie with Perfect Crust")
+    (servings 6)
+    (price 20.41)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher)
+    (ingredients butter plus-1-cornstarch egg flour granny-smith-apples ground-cinnamon lemon-juice brown-sugar nutmeg salt salt shortening water sugar vinegar)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_649514] of ONTOLOGY::Recipe
+    (title "Lemon Bars")
+    (servings 24)
+    (price 1.24)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher)
+    (ingredients butter cream-cheese flour reg-size-containers-lemon-pudding milk cool-whip nuts powdered-sugar)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_663462] of ONTOLOGY::Recipe
+    (title "Toasted Marshmallow Ice Cream")
+    (servings 8)
+    (price 9.33)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions gluten-free halal)
+    (ingredients egg-yolks granulated-sugar heavy-cream kosher-salt marshmallows vanilla-extract milk)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_642003] of ONTOLOGY::Recipe
+    (title "Easy Key Lime Pie")
+    (servings 8)
+    (price 12.11)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions no-restrictions)
+    (ingredients butter egg-yolks graham-crackers lime-juice sugar condensed-milk water whipped-cream)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_634040] of ONTOLOGY::Recipe
+    (title "Banana Chocolate Chip Cake With Peanut Butter Frosting - gluten free, dairy free, soy free")
+    (servings 8)
+    (price 137.63)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions dairy-free gluten-free halal)
+    (ingredients you-will-need-two-cake-pans potato-starch rice-flour sorghum-flour tapioca-starch baking-soda kosher-salt evaporated-cane-sugar earth-balance-soy-free-spread brown-sugar eggs vanilla-extract bananas vegan-cream gfdfsf-chocolate-chips creamy-peanut-butter powdered-sugar earth-balance-soy-free-spread vanilla-extract extra-chocolate-chips)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_652002] of ONTOLOGY::Recipe
+    (title "Mint Chocolate Chip Ice Cream")
+    (servings 2)
+    (price 199.84)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions gluten-free halal kosher)
+    (ingredients milk heavy-cream mint-leaves granulated-sugar egg-yolks semi-sweet-chocolate)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_658318] of ONTOLOGY::Recipe
+    (title "Ricotta and Mascarpone Cheese Tart")
+    (servings 1)
+    (price 843.42)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher)
+    (ingredients almonds anise-biscotti-cookies butter eggs mascarpone-cheese crust-optional powdered-sugar ricotta-cheese salt vanilla-bean-paste)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_715514] of ONTOLOGY::Recipe
+    (title "Rice Krispie Treats and Christmas")
+    (servings 3)
+    (price 49.06)
+    (wine_pairing "No wine pairing")
+    (meal_types dessert)
+    (restrictions halal kosher)
+    (ingredients butter candy-melts rice-krispie-cereal marshmallows sprinkles vegetable-oil)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_803364] of ONTOLOGY::Recipe
+    (title "Stuffed Buttercup Squash- Whole Grain Rice & Chicken")
+    (servings 2)
+    (price 142.47)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish)
+    (restrictions dairy-free gluten-free halal kosher)
+    (ingredients almonds buttercup-squash meat-chicken cranberries grain-rice olive-oil raisins salt-pepper sunflower-seeds)
+    (seasons any-season)
+    (season_text "Fall"))
+
+  ([Recipe_655609] of ONTOLOGY::Recipe
+    (title "Pennsylvania Dutch Pickled Eggs")
+    (servings 12)
+    (price 7.04)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish)
+    (restrictions dairy-free gluten-free halal kosher vegetarian)
+    (ingredients beets cider-vinegar eggs granulated-sugar onion table-salt)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_654965] of ONTOLOGY::Recipe
+    (title "Pasta With Wild Mushrooms, Peas and Bacon")
+    (servings 2)
+    (price 202.91)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions no-restrictions)
+    (ingredients fettuccine mushrooms peas bacon olive-oil salt-and-pepper shallot parmeggiano-reggiano parsley garlic)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_654679] of ONTOLOGY::Recipe
+    (title "Parmesan Mashed Potatoes")
+    (servings 4)
+    (price 34.87)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish)
+    (restrictions gluten-free halal kosher)
+    (ingredients butter cream parmesan-cheese russet-potatoes salt-and-pepper)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_663905] of ONTOLOGY::Recipe
+    (title "Tuna and Tofu Cold Dish")
+    (servings 4)
+    (price 20.2)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free gluten-free kosher)
+    (ingredients block-silken-tofu tuna-in-water cherry-tomatoes pepper sauce extra-virgin-olive-oil vinegar kikkoman-soya-sauce garlic pepper)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_642595] of ONTOLOGY::Recipe
+    (title "Farmer's Market Wild Mushroom Risotto")
+    (servings 6)
+    (price 134.53)
+    (wine_pairing "No wine pairing")
+    (meal_types side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions gluten-free kosher)
+    (ingredients arborio-rice bay-leaves butter parmesano-reggian-cheese chicken-broth crimini-mushrooms wine garlic morel-mushrooms olive-oil onion parsley salt-and-pepper ts-thyme truffle-oil)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_664636] of ONTOLOGY::Recipe
+    (title "Vegetarian Bean and Pumpkin Chili")
+    (servings 8)
+    (price 18.78)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
+    (restrictions gluten-free halal kosher)
+    (ingredients canned-tomatoes pumpkin-puree serrano-chiles chipotle-chiles-adobo vegetable-stock water onion garlic cumin cinnamon-stick ground-coriander salt chili-powder several-of-tabasco cheese cilantro cream rinse-the-beans)
+    (seasons any-season)
+    (season_text "Fall"))
+
+  ([Recipe_660283] of ONTOLOGY::Recipe
+    (title "SLOW COOKER CHICKEN GUMBO SOUP")
+    (servings 6)
+    (price 22.9)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti soup starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free gluten-free halal kosher)
+    (ingredients chicken can-chicken-broth carrot bell-pepper onion canned-tomatoes okra water cajun-seasoning pepper salt hot-sauce rice)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_640844] of ONTOLOGY::Recipe
+    (title "Crispy Tiger Prawns With Honey and Garlic Sauce")
+    (servings 3)
+    (price 38.82)
+    (wine_pairing "No wine pairing")
+    (meal_types antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free gluten-free kosher)
+    (ingredients tiger-prawns cornflour water soy-sauce egg-yolk sesame-oil vegetable-oil spring-onion honey shao-hsing-wine garlic-cloves soy-sauce)
+    (seasons any-season)
+    (season_text "Any season"))
+
+  ([Recipe_732255] of ONTOLOGY::Recipe
+    (title "Cheesy Cowboy Quesadillas")
+    (servings 4)
+    (price 32.82)
+    (wine_pairing "No wine pairing")
+    (meal_types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
+    (restrictions gluten-free halal kosher)
+    (ingredients bell-pepper butter black-beans cheese chili-powder corn cream-cheese cumin garlic onions salt chicken tortillas)
+    (seasons summer)
+    (season_text "Summer"))
 )

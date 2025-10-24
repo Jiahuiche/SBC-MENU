@@ -141,14 +141,14 @@ configuration.api_key['apiKeyScheme'] = os.environ["API_KEY"]
 
 # Definir filtros de búsqueda
 diets = None  # Puedes cambiar a 'vegan', 'pescetarian', etc.
-intolerances = 'gluten'  # Pon None para no filtrar por intolerancias
+intolerances = None  # Pon None para no filtrar por intolerancias
 meal_type = 'main course'  # Pon uno de estos main course, appetizer o side dish, dessert (para que salga wine pairing)
 num_recipes = 500
 
 # Determinar dish_class basado en meal_type (si existe)
 if meal_type == 'main course': 
     dish_class = 'Main'
-elif meal_type == 'appetizer':
+elif meal_type == 'appetizer' or meal_type == 'side dish':
     dish_class = 'Starter'
 elif meal_type == 'dessert':
     dish_class = 'Dessert'
