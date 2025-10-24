@@ -16,7 +16,7 @@
     (slot is-gluten-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
     (slot is-dairy-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
     (slot max-price (type NUMBER) (default 10000))
-    ;;;(slot min-price (type NUMBER) (default 0))
+    (slot min-price (type NUMBER) (default 0))
     (slot min-servings (type NUMBER) (default 1)))
 
 ;;; Template para candidatos
@@ -83,29 +83,39 @@
 
 
 (deffunction REFINAMIENTO::calc-intervalo () ;REFINAMIENTO::
-    (bind ?fact (find-fact ((?f user-restrictions)) TRUE))
+    (bind ?facts (find-fact ((?f user-restrictions)) TRUE))
    
-   (if (neq ?fact FALSE) then
+   (if (neq ?facts FALSE) then
 
       ;;; Precios min-max user
-      (bind ?minPrice_us (fact-slot-value (nth$ 1 ?fact) min-price))
-      (bind ?maxPrice_us (fact-slot-value (nth$ 1 ?fact) max-price))
+      (bind ?fact (nth$ 1 ?facts))
+      (bind ?minPrice_us (fact-slot-value ?fact min-price))
+      (bind ?maxPrice_us (fact-slot-value ?fact max-price))
 
       ;;; Precios min-max recetas
       (bind ?minPrice_candidatos 1000000) ;;; Valor muy alto inicial
-        (bind ?maxPrice_candidatos 0)
+      (bind ?maxPrice_candidatos 0)
+      (bind ?candidatos-encontrados FALSE)
+      (bind ?candidate-facts (find-all-facts ((?c candidate-set)) TRUE))
+      
+      (if (or (eq ?candidate-facts FALSE) 
+                (and (neq ?candidate-facts FALSE) (= (length$ ?candidate-facts) 0))) then
+            (printout t "ERROR: No hay candidatos disponibles (en verificar)" crlf)
+            (return FALSE)
+      )
         
-        (bind ?candidatos (find-all-instances ((?c candidate-set)) TRUE))
-        
-        (foreach ?c ?candidatos
-            (bind ?inst (send ?c get-recipe-instance))
-            (bind ?precio (send ?inst get-price))
+      (printout t "Debug: Encontrados " (length$ ?candidate-facts) " candidatos" crlf)
             
-            (if (< ?precio ?minPrice_candidatos) then
-                (bind ?minPrice_candidatos ?precio))
-                
-            (if (> ?precio ?maxPrice_candidatos) then
-                (bind ?maxPrice_candidatos ?precio)))
+      (foreach ?cf ?candidate-facts
+         (bind ?inst (fact-slot-value ?cf recipe-instance))
+         (bind ?precio (send ?inst get-price))
+         
+         (if (< ?precio ?minPrice_candidatos) then
+            (bind ?minPrice_candidatos ?precio))
+            
+         (if (> ?precio ?maxPrice_candidatos) then
+            (bind ?maxPrice_candidatos ?precio)))
+
       ;;; Def limites
 
       (bind ?minPrice_final (max ?minPrice_us ?minPrice_candidatos))
@@ -128,7 +138,7 @@
 
       ;;;Imprimir los limites e intervalos
 
-      (printout t "💰 CÁLCULO DE LÍMITES:" crlf)
+      (printout t "CÁLCULO DE LÍMITES:" crlf)
       (printout t "   Usuario: " ?minPrice_us " - " ?maxPrice_us "€" crlf)
       (printout t "   Candidatos: " ?minPrice_candidatos " - " ?maxPrice_candidatos "€" crlf)
       (printout t "   Final: " ?minPrice_final " - " ?maxPrice_final "€" crlf)
@@ -136,7 +146,7 @@
       
       ;;; Retornar lista con los dos límites: 
       
-      (return (create$ ?minPrice ?limite1 ?limite2 ?maxPrice))
+      (return (create$ ?minPrice_final ?limite1 ?limite2 ?maxPrice_final))
    else
       (printout t "ERROR: No se encontró user-restrictions" crlf)
       (return FALSE)
