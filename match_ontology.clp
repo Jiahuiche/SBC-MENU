@@ -122,7 +122,8 @@
                     ?season-pref))))
     (retract ?ctrl)
     (assert (match-control (phase complete)))
-    (printout t crlf "📋 Evaluadas combinaciones de restricciones: " ?combo-count crlf))
+    (printout t crlf "📋 Evaluadas combinaciones de restricciones: " ?combo-count crlf)
+)
 
 
 ;;;----------------------------------------------------------------------------

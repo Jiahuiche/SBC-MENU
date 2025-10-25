@@ -5,10 +5,6 @@
    (export ?ALL) ; exporta todas las reglas, funciones y templates
 )
 
-(defrule MAIN::start-input
-   =>
-   (focus input))
-
 ;; ===========================
 ;; Plantillas (estructuras de hechos)
 ;; ===========================

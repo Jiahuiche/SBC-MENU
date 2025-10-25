@@ -16266,4 +16266,733 @@
     (restrictions dairy-free gluten-free halal kosher)
     (ingredients sea-bream garlic-cloves olives anchovies olive-oil peppers sundried-tomatoes)
     (seasons any-season))
+
+  ([Recipe_648780] of ONTOLOGY::Recipe
+    (title "Kate's Coconut-Cashew Basmati Rice Salad")
+    (price 732.92)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients basmati-rice cashews coconut ginger garlic green-onion peanut-oil salt-and-pepper coconut-milk water onion)
+    (seasons any-season))
+
+  ([Recipe_637297] of ONTOLOGY::Recipe
+    (title "Cauliflower Chickpea Stew")
+    (price 35.06)
+    (wine_pairing " No wine pairing")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients olive-oil brown-rice twice-amount-of-water garlic-gloves tumeric salt-pepper onion canned-tomatoes tomato-puree garlic-gloves cm-ginger chili cinnamon garam-masala paprika sweet-potatoes juice-of-lemon water cauliflower chickpeas)
+    (seasons any-season))
+
+  ([Recipe_664501] of ONTOLOGY::Recipe
+    (title "Vegan Taco bowls with Cilantro Lime Cauliflower Rice")
+    (price 64.22)
+    (wine_pairing " No wine pairing")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients avocado-oil cauliflower new-mexico-chili-powder cilantro garlic-powder hass-avocado jalapeno lime-juice onion salt tomato walnuts)
+    (seasons any-season))
+
+  ([Recipe_646043] of ONTOLOGY::Recipe
+    (title "Gujarati Dry Mung Bean Curry")
+    (price 41.02)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients baking-powder chillies cinnamon-powder coriander cumin-seeds curry-leaves garlic lemon-juice-or mung-beans mustard-seeds salt sugar sunflower-oil tomato turmeric)
+    (seasons any-season))
+
+  ([Recipe_635642] of ONTOLOGY::Recipe
+    (title "Bombay Potatoes")
+    (price 189.84)
+    (wine_pairing " No wine pairing")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients brown-mustard-seeds cooking-oil coriander-leaf potatoes salt turmeric-powder)
+    (seasons any-season))
+
+  ([Recipe_652393] of ONTOLOGY::Recipe
+    (title "Moosewood Lentil Soup")
+    (price 12.39)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients pepper brown-sugar carrots celery herbs garlic grapeseed-oil lemon-juice lentils onion red-wine-vinegar salt tomatoes water)
+    (seasons any-season))
+
+  ([Recipe_636436] of ONTOLOGY::Recipe
+    (title "Bulgur Pilaf With Green Lentils, Served With Caramelized Onions -Mercimekli Bulgur Pilavi")
+    (price 2499.73)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients bulgur-wheat preparation-time-minutes-cooking-time-minutes gr8oz-green-lentils salt-and-ground-pepper mild-olive-oil onion pickled-and-peppers)
+    (seasons any-season))
+
+  ([Recipe_646738] of ONTOLOGY::Recipe
+    (title "Herbivoracious' White Bean and Kale Soup")
+    (price 13.01)
+    (wine_pairing " No wine pairing")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients olive-oil onion garlic carrot kosher-salt bay-leaves rosemary-leaves the-following-parmesan-rind navy water dinosaur-kale juice-of-lemon)
+    (seasons winter))
+
+  ([Recipe_642121] of ONTOLOGY::Recipe
+    (title "Easy Tabouleh")
+    (price 463.72)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients bulgur cucumbers flat-leaf-parsley lemon-juice-from-a-lemon olive-oil salt tomatoes)
+    (seasons any-season))
+
+  ([Recipe_652417] of ONTOLOGY::Recipe
+    (title "Moroccan chickpea and lentil stew")
+    (price 42.04)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients broccoli chickpeas carrots celery-stalks lentils couscous cilantro ground-cinnamon ground-cumin ground-turmeric lemon-juice olive-oil paprika salt-and-pepper tomato-paste water)
+    (seasons any-season))
+
+  ([Recipe_716627] of ONTOLOGY::Recipe
+    (title "Easy Homemade Rice and Beans")
+    (price 53.01)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients black-beans canned-tomatoes chili-powder cumin ground-pepper optional-of-hot-sauce olive-oil onion rice water)
+    (seasons any-season))
+
+  ([Recipe_649886] of ONTOLOGY::Recipe
+    (title "Lemony Greek Lentil Soup")
+    (price 14.74)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients brown-lentils carrot water thyme lemon-juice basil thyme oregano pepper salt onion garlic olive-oil canned-tomatoes teaspoon)
+    (seasons any-season))
+
+  ([Recipe_1098387] of ONTOLOGY::Recipe
+    (title "Quinoa Salad with Barberries & Nuts")
+    (price 52.14)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients quinoa water salt olive-oil barberries slivered-almonds slivered-pistachios coriander mint)
+    (seasons any-season))
+
+  ([Recipe_663559] of ONTOLOGY::Recipe
+    (title "Tomato and lentil soup")
+    (price 28.89)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients olive-oil onion garlic carrots tomatoes bay-leaf water lentils salt parsley)
+    (seasons any-season))
+
+  ([Recipe_655506] of ONTOLOGY::Recipe
+    (title "Pecan Crusted Sweet Potato-Salmon Cakes")
+    (price 691.59)
+    (wine_pairing " No wine pairing")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free kosher vegan vegetarian)
+    (ingredients jamaican-allspice baby-spinach grape-seed-oil green-onions braggs-sea-kelp-delight-seasoning lemon parsley parsley pecans bell-pepper salt onion sweet-potato tomatoes grain-bread-crumbs redhead-andor-thinkpink redhead-andor-thinkpink)
+    (seasons spring))
+
+  ([Recipe_639535] of ONTOLOGY::Recipe
+    (title "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather")
+    (price 139.39)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients garbanzo-beans currants green-onions ground-cumin israeli-couscous juice-of-orange olive-oil parsley pecans bell-pepper rice-vinegar salt-and-pepper paprika)
+    (seasons any-season))
+
+  ([Recipe_642610] of ONTOLOGY::Recipe
+    (title "Farm Fresh Vegetable Stew")
+    (price 21.03)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients extra-virgin-olive-oil garlic onions peppers carrots celery eggplant green-beans squash zucchini tomatoes thyme-leaves cumin kosher-salt oregano kidney-beans brown-lentils)
+    (seasons any-season))
+
+  ([Recipe_663150] of ONTOLOGY::Recipe
+    (title "Thai Savory Brown Fried Rice")
+    (price 53.57)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients extra-virgin-olive-oil garlic-cloves chili-peppers cashew-nuts coconut stevia-powder bragg-liquid-aminos apple-cider-vinegar flax-egg green-beans regular-bok-choy brown-rice lime-wedges)
+    (seasons any-season))
+
+  ([Recipe_715769] of ONTOLOGY::Recipe
+    (title "Broccolini Quinoa Pilaf")
+    (price 207.12)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients broccolini garlic-clove olive-oil onion quinoa vegetable-broth walnuts)
+    (seasons any-season))
+
+  ([Recipe_649944] of ONTOLOGY::Recipe
+    (title "Lentil Mango Salad")
+    (price 39.81)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients cilantro lentils garlic mango olive-oil bell-pepper bell-pepper onion salt white-wine-vinegar)
+    (seasons any-season))
+
+  ([Recipe_782601] of ONTOLOGY::Recipe
+    (title "Red Kidney Bean Jambalaya")
+    (price 28.07)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients brown-rice carrots celery celery-seed kidney-beans marjoram thyme eggplant garlic green-beans ground-pepper ground-sage liquid-smoke olive-oil bell-pepper onion sea-salt sriracha tomatoes vegetable-stock)
+    (seasons any-season))
+
+  ([Recipe_642540] of ONTOLOGY::Recipe
+    (title "Falafel Burgers")
+    (price 46.84)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients garbanzo-beans chili-powder coriander cumin flour parsley garlic juice-of-lemon pita-pockets onion salt-and-pepper tahini turmeric vegetable-oil water)
+    (seasons any-season))
+
+  ([Recipe_654905] of ONTOLOGY::Recipe
+    (title "Pasta With Chickpeas and Kale")
+    (price 60.95)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients bell-pepper chickpeas garlic kale olive-oil parsley salt-and-pepper ziti)
+    (seasons winter))
+
+  ([Recipe_664147] of ONTOLOGY::Recipe
+    (title "Tuscan White Bean Soup with Olive Oil and Rosemary")
+    (price 8.28)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients bay-leaf rosemary garlic olive-oil onion salt water beans)
+    (seasons any-season))
+
+  ([Recipe_655573] of ONTOLOGY::Recipe
+    (title "Penne Arrabiata")
+    (price 26.21)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients tomato parsley garlic olive-oil pkt-penne peppers)
+    (seasons any-season))
+
+  ([Recipe_664553] of ONTOLOGY::Recipe
+    (title "Vegetable Fried Rice")
+    (price 160.84)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients basmati-rice-2 bell-peppers-i-used-half-of-and-colour carrot beans peas corn cabbage onions-1 ginger-garlic-paste-n chillies-to-3-depending-on-your-taste soya-sauce-n chilli-saucetomato-sauce-n cashews-and-raisins oil-spoons salt-and-pepper)
+    (seasons summer))
+
+  ([Recipe_647830] of ONTOLOGY::Recipe
+    (title "Indian Lentil Dahl")
+    (price 26.47)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients canola-oil cilantro coconut-milk ginger garam-masala garlic-cloves lime-juice onion plum-tomatoes lentils salt water)
+    (seasons any-season))
+
+  ([Recipe_648780] of ONTOLOGY::Recipe
+    (title "Kate's Coconut-Cashew Basmati Rice Salad")
+    (price 732.92)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients basmati-rice cashews coconut ginger garlic green-onion peanut-oil salt-and-pepper coconut-milk water onion)
+    (seasons any-season))
+
+  ([Recipe_637297] of ONTOLOGY::Recipe
+    (title "Cauliflower Chickpea Stew")
+    (price 35.06)
+    (wine_pairing " No wine pairing")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients olive-oil brown-rice twice-amount-of-water garlic-gloves tumeric salt-pepper onion canned-tomatoes tomato-puree garlic-gloves cm-ginger chili cinnamon garam-masala paprika sweet-potatoes juice-of-lemon water cauliflower chickpeas)
+    (seasons any-season))
+
+  ([Recipe_664501] of ONTOLOGY::Recipe
+    (title "Vegan Taco bowls with Cilantro Lime Cauliflower Rice")
+    (price 64.22)
+    (wine_pairing " No wine pairing")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients avocado-oil cauliflower new-mexico-chili-powder cilantro garlic-powder hass-avocado jalapeno lime-juice onion salt tomato walnuts)
+    (seasons any-season))
+
+  ([Recipe_646043] of ONTOLOGY::Recipe
+    (title "Gujarati Dry Mung Bean Curry")
+    (price 41.02)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients baking-powder chillies cinnamon-powder coriander cumin-seeds curry-leaves garlic lemon-juice-or mung-beans mustard-seeds salt sugar sunflower-oil tomato turmeric)
+    (seasons any-season))
+
+  ([Recipe_635642] of ONTOLOGY::Recipe
+    (title "Bombay Potatoes")
+    (price 189.84)
+    (wine_pairing " No wine pairing")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients brown-mustard-seeds cooking-oil coriander-leaf potatoes salt turmeric-powder)
+    (seasons any-season))
+
+  ([Recipe_652393] of ONTOLOGY::Recipe
+    (title "Moosewood Lentil Soup")
+    (price 12.39)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients pepper brown-sugar carrots celery herbs garlic grapeseed-oil lemon-juice lentils onion red-wine-vinegar salt tomatoes water)
+    (seasons any-season))
+
+  ([Recipe_636436] of ONTOLOGY::Recipe
+    (title "Bulgur Pilaf With Green Lentils, Served With Caramelized Onions -Mercimekli Bulgur Pilavi")
+    (price 2499.73)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients bulgur-wheat preparation-time-minutes-cooking-time-minutes gr8oz-green-lentils salt-and-ground-pepper mild-olive-oil onion pickled-and-peppers)
+    (seasons any-season))
+
+  ([Recipe_646738] of ONTOLOGY::Recipe
+    (title "Herbivoracious' White Bean and Kale Soup")
+    (price 13.01)
+    (wine_pairing " No wine pairing")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients olive-oil onion garlic carrot kosher-salt bay-leaves rosemary-leaves the-following-parmesan-rind navy water dinosaur-kale juice-of-lemon)
+    (seasons winter))
+
+  ([Recipe_642121] of ONTOLOGY::Recipe
+    (title "Easy Tabouleh")
+    (price 463.72)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients bulgur cucumbers flat-leaf-parsley lemon-juice-from-a-lemon olive-oil salt tomatoes)
+    (seasons any-season))
+
+  ([Recipe_652417] of ONTOLOGY::Recipe
+    (title "Moroccan chickpea and lentil stew")
+    (price 42.04)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients broccoli chickpeas carrots celery-stalks lentils couscous cilantro ground-cinnamon ground-cumin ground-turmeric lemon-juice olive-oil paprika salt-and-pepper tomato-paste water)
+    (seasons any-season))
+
+  ([Recipe_716627] of ONTOLOGY::Recipe
+    (title "Easy Homemade Rice and Beans")
+    (price 53.01)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients black-beans canned-tomatoes chili-powder cumin ground-pepper optional-of-hot-sauce olive-oil onion rice water)
+    (seasons any-season))
+
+  ([Recipe_649886] of ONTOLOGY::Recipe
+    (title "Lemony Greek Lentil Soup")
+    (price 14.74)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients brown-lentils carrot water thyme lemon-juice basil thyme oregano pepper salt onion garlic olive-oil canned-tomatoes teaspoon)
+    (seasons any-season))
+
+  ([Recipe_1098387] of ONTOLOGY::Recipe
+    (title "Quinoa Salad with Barberries & Nuts")
+    (price 52.14)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients quinoa water salt olive-oil barberries slivered-almonds slivered-pistachios coriander mint)
+    (seasons any-season))
+
+  ([Recipe_663559] of ONTOLOGY::Recipe
+    (title "Tomato and lentil soup")
+    (price 28.89)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients olive-oil onion garlic carrots tomatoes bay-leaf water lentils salt parsley)
+    (seasons any-season))
+
+  ([Recipe_655506] of ONTOLOGY::Recipe
+    (title "Pecan Crusted Sweet Potato-Salmon Cakes")
+    (price 691.59)
+    (wine_pairing " No wine pairing")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free kosher vegan vegetarian)
+    (ingredients jamaican-allspice baby-spinach grape-seed-oil green-onions braggs-sea-kelp-delight-seasoning lemon parsley parsley pecans bell-pepper salt onion sweet-potato tomatoes grain-bread-crumbs redhead-andor-thinkpink redhead-andor-thinkpink)
+    (seasons spring))
+
+  ([Recipe_639535] of ONTOLOGY::Recipe
+    (title "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather")
+    (price 139.39)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients garbanzo-beans currants green-onions ground-cumin israeli-couscous juice-of-orange olive-oil parsley pecans bell-pepper rice-vinegar salt-and-pepper paprika)
+    (seasons any-season))
+
+  ([Recipe_642610] of ONTOLOGY::Recipe
+    (title "Farm Fresh Vegetable Stew")
+    (price 21.03)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients extra-virgin-olive-oil garlic onions peppers carrots celery eggplant green-beans squash zucchini tomatoes thyme-leaves cumin kosher-salt oregano kidney-beans brown-lentils)
+    (seasons any-season))
+
+  ([Recipe_663150] of ONTOLOGY::Recipe
+    (title "Thai Savory Brown Fried Rice")
+    (price 53.57)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients extra-virgin-olive-oil garlic-cloves chili-peppers cashew-nuts coconut stevia-powder bragg-liquid-aminos apple-cider-vinegar flax-egg green-beans regular-bok-choy brown-rice lime-wedges)
+    (seasons any-season))
+
+  ([Recipe_715769] of ONTOLOGY::Recipe
+    (title "Broccolini Quinoa Pilaf")
+    (price 207.12)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients broccolini garlic-clove olive-oil onion quinoa vegetable-broth walnuts)
+    (seasons any-season))
+
+  ([Recipe_649944] of ONTOLOGY::Recipe
+    (title "Lentil Mango Salad")
+    (price 39.81)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients cilantro lentils garlic mango olive-oil bell-pepper bell-pepper onion salt white-wine-vinegar)
+    (seasons any-season))
+
+  ([Recipe_782601] of ONTOLOGY::Recipe
+    (title "Red Kidney Bean Jambalaya")
+    (price 28.07)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients brown-rice carrots celery celery-seed kidney-beans marjoram thyme eggplant garlic green-beans ground-pepper ground-sage liquid-smoke olive-oil bell-pepper onion sea-salt sriracha tomatoes vegetable-stock)
+    (seasons any-season))
+
+  ([Recipe_642540] of ONTOLOGY::Recipe
+    (title "Falafel Burgers")
+    (price 46.84)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients garbanzo-beans chili-powder coriander cumin flour parsley garlic juice-of-lemon pita-pockets onion salt-and-pepper tahini turmeric vegetable-oil water)
+    (seasons any-season))
+
+  ([Recipe_654905] of ONTOLOGY::Recipe
+    (title "Pasta With Chickpeas and Kale")
+    (price 60.95)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients bell-pepper chickpeas garlic kale olive-oil parsley salt-and-pepper ziti)
+    (seasons winter))
+
+  ([Recipe_664147] of ONTOLOGY::Recipe
+    (title "Tuscan White Bean Soup with Olive Oil and Rosemary")
+    (price 8.28)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients bay-leaf rosemary garlic olive-oil onion salt water beans)
+    (seasons any-season))
+
+  ([Recipe_655573] of ONTOLOGY::Recipe
+    (title "Penne Arrabiata")
+    (price 26.21)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients tomato parsley garlic olive-oil pkt-penne peppers)
+    (seasons any-season))
+
+  ([Recipe_664553] of ONTOLOGY::Recipe
+    (title "Vegetable Fried Rice")
+    (price 160.84)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients basmati-rice-2 bell-peppers-i-used-half-of-and-colour carrot beans peas corn cabbage onions-1 ginger-garlic-paste-n chillies-to-3-depending-on-your-taste soya-sauce-n chilli-saucetomato-sauce-n cashews-and-raisins oil-spoons salt-and-pepper)
+    (seasons summer))
+
+  ([Recipe_647830] of ONTOLOGY::Recipe
+    (title "Indian Lentil Dahl")
+    (price 26.47)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients canola-oil cilantro coconut-milk ginger garam-masala garlic-cloves lime-juice onion plum-tomatoes lentils salt water)
+    (seasons any-season))
+
+  ([Recipe_648780] of ONTOLOGY::Recipe
+    (title "Kate's Coconut-Cashew Basmati Rice Salad")
+    (price 732.92)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients basmati-rice cashews coconut ginger garlic green-onion peanut-oil salt-and-pepper coconut-milk water onion)
+    (seasons any-season))
+
+  ([Recipe_637297] of ONTOLOGY::Recipe
+    (title "Cauliflower Chickpea Stew")
+    (price 35.06)
+    (wine_pairing " No wine pairing")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients olive-oil brown-rice twice-amount-of-water garlic-gloves tumeric salt-pepper onion canned-tomatoes tomato-puree garlic-gloves cm-ginger chili cinnamon garam-masala paprika sweet-potatoes juice-of-lemon water cauliflower chickpeas)
+    (seasons any-season))
+
+  ([Recipe_664501] of ONTOLOGY::Recipe
+    (title "Vegan Taco bowls with Cilantro Lime Cauliflower Rice")
+    (price 64.22)
+    (wine_pairing " No wine pairing")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients avocado-oil cauliflower new-mexico-chili-powder cilantro garlic-powder hass-avocado jalapeno lime-juice onion salt tomato walnuts)
+    (seasons any-season))
+
+  ([Recipe_646043] of ONTOLOGY::Recipe
+    (title "Gujarati Dry Mung Bean Curry")
+    (price 41.02)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients baking-powder chillies cinnamon-powder coriander cumin-seeds curry-leaves garlic lemon-juice-or mung-beans mustard-seeds salt sugar sunflower-oil tomato turmeric)
+    (seasons any-season))
+
+  ([Recipe_635642] of ONTOLOGY::Recipe
+    (title "Bombay Potatoes")
+    (price 189.84)
+    (wine_pairing " No wine pairing")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients brown-mustard-seeds cooking-oil coriander-leaf potatoes salt turmeric-powder)
+    (seasons any-season))
+
+  ([Recipe_652393] of ONTOLOGY::Recipe
+    (title "Moosewood Lentil Soup")
+    (price 12.39)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients pepper brown-sugar carrots celery herbs garlic grapeseed-oil lemon-juice lentils onion red-wine-vinegar salt tomatoes water)
+    (seasons any-season))
+
+  ([Recipe_636436] of ONTOLOGY::Recipe
+    (title "Bulgur Pilaf With Green Lentils, Served With Caramelized Onions -Mercimekli Bulgur Pilavi")
+    (price 2499.73)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients bulgur-wheat preparation-time-minutes-cooking-time-minutes gr8oz-green-lentils salt-and-ground-pepper mild-olive-oil onion pickled-and-peppers)
+    (seasons any-season))
+
+  ([Recipe_646738] of ONTOLOGY::Recipe
+    (title "Herbivoracious' White Bean and Kale Soup")
+    (price 13.01)
+    (wine_pairing " No wine pairing")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients olive-oil onion garlic carrot kosher-salt bay-leaves rosemary-leaves the-following-parmesan-rind navy water dinosaur-kale juice-of-lemon)
+    (seasons winter))
+
+  ([Recipe_642121] of ONTOLOGY::Recipe
+    (title "Easy Tabouleh")
+    (price 463.72)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients bulgur cucumbers flat-leaf-parsley lemon-juice-from-a-lemon olive-oil salt tomatoes)
+    (seasons any-season))
+
+  ([Recipe_652417] of ONTOLOGY::Recipe
+    (title "Moroccan chickpea and lentil stew")
+    (price 42.04)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients broccoli chickpeas carrots celery-stalks lentils couscous cilantro ground-cinnamon ground-cumin ground-turmeric lemon-juice olive-oil paprika salt-and-pepper tomato-paste water)
+    (seasons any-season))
+
+  ([Recipe_716627] of ONTOLOGY::Recipe
+    (title "Easy Homemade Rice and Beans")
+    (price 53.01)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients black-beans canned-tomatoes chili-powder cumin ground-pepper optional-of-hot-sauce olive-oil onion rice water)
+    (seasons any-season))
+
+  ([Recipe_649886] of ONTOLOGY::Recipe
+    (title "Lemony Greek Lentil Soup")
+    (price 14.74)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients brown-lentils carrot water thyme lemon-juice basil thyme oregano pepper salt onion garlic olive-oil canned-tomatoes teaspoon)
+    (seasons any-season))
+
+  ([Recipe_1098387] of ONTOLOGY::Recipe
+    (title "Quinoa Salad with Barberries & Nuts")
+    (price 52.14)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients quinoa water salt olive-oil barberries slivered-almonds slivered-pistachios coriander mint)
+    (seasons any-season))
+
+  ([Recipe_663559] of ONTOLOGY::Recipe
+    (title "Tomato and lentil soup")
+    (price 28.89)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients olive-oil onion garlic carrots tomatoes bay-leaf water lentils salt parsley)
+    (seasons any-season))
+
+  ([Recipe_655506] of ONTOLOGY::Recipe
+    (title "Pecan Crusted Sweet Potato-Salmon Cakes")
+    (price 691.59)
+    (wine_pairing " No wine pairing")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free kosher vegan vegetarian)
+    (ingredients jamaican-allspice baby-spinach grape-seed-oil green-onions braggs-sea-kelp-delight-seasoning lemon parsley parsley pecans bell-pepper salt onion sweet-potato tomatoes grain-bread-crumbs redhead-andor-thinkpink redhead-andor-thinkpink)
+    (seasons spring))
+
+  ([Recipe_639535] of ONTOLOGY::Recipe
+    (title "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather")
+    (price 139.39)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients garbanzo-beans currants green-onions ground-cumin israeli-couscous juice-of-orange olive-oil parsley pecans bell-pepper rice-vinegar salt-and-pepper paprika)
+    (seasons any-season))
+
+  ([Recipe_642610] of ONTOLOGY::Recipe
+    (title "Farm Fresh Vegetable Stew")
+    (price 21.03)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients extra-virgin-olive-oil garlic onions peppers carrots celery eggplant green-beans squash zucchini tomatoes thyme-leaves cumin kosher-salt oregano kidney-beans brown-lentils)
+    (seasons any-season))
+
+  ([Recipe_663150] of ONTOLOGY::Recipe
+    (title "Thai Savory Brown Fried Rice")
+    (price 53.57)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients extra-virgin-olive-oil garlic-cloves chili-peppers cashew-nuts coconut stevia-powder bragg-liquid-aminos apple-cider-vinegar flax-egg green-beans regular-bok-choy brown-rice lime-wedges)
+    (seasons any-season))
+
+  ([Recipe_715769] of ONTOLOGY::Recipe
+    (title "Broccolini Quinoa Pilaf")
+    (price 207.12)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients broccolini garlic-clove olive-oil onion quinoa vegetable-broth walnuts)
+    (seasons any-season))
+
+  ([Recipe_649944] of ONTOLOGY::Recipe
+    (title "Lentil Mango Salad")
+    (price 39.81)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch salad main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients cilantro lentils garlic mango olive-oil bell-pepper bell-pepper onion salt white-wine-vinegar)
+    (seasons any-season))
+
+  ([Recipe_782601] of ONTOLOGY::Recipe
+    (title "Red Kidney Bean Jambalaya")
+    (price 28.07)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients brown-rice carrots celery celery-seed kidney-beans marjoram thyme eggplant garlic green-beans ground-pepper ground-sage liquid-smoke olive-oil bell-pepper onion sea-salt sriracha tomatoes vegetable-stock)
+    (seasons any-season))
+
+  ([Recipe_642540] of ONTOLOGY::Recipe
+    (title "Falafel Burgers")
+    (price 46.84)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients garbanzo-beans chili-powder coriander cumin flour parsley garlic juice-of-lemon pita-pockets onion salt-and-pepper tahini turmeric vegetable-oil water)
+    (seasons any-season))
+
+  ([Recipe_654905] of ONTOLOGY::Recipe
+    (title "Pasta With Chickpeas and Kale")
+    (price 60.95)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients bell-pepper chickpeas garlic kale olive-oil parsley salt-and-pepper ziti)
+    (seasons winter))
+
+  ([Recipe_664147] of ONTOLOGY::Recipe
+    (title "Tuscan White Bean Soup with Olive Oil and Rosemary")
+    (price 8.28)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types soup lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free halal kosher vegan vegetarian)
+    (ingredients bay-leaf rosemary garlic olive-oil onion salt water beans)
+    (seasons any-season))
+
+  ([Recipe_655573] of ONTOLOGY::Recipe
+    (title "Penne Arrabiata")
+    (price 26.21)
+    (wine_pairing " No wine pairing")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free halal kosher vegan vegetarian)
+    (ingredients tomato parsley garlic olive-oil pkt-penne peppers)
+    (seasons any-season))
+
+  ([Recipe_664553] of ONTOLOGY::Recipe
+    (title "Vegetable Fried Rice")
+    (price 160.84)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types side-dish lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients basmati-rice-2 bell-peppers-i-used-half-of-and-colour carrot beans peas corn cabbage onions-1 ginger-garlic-paste-n chillies-to-3-depending-on-your-taste soya-sauce-n chilli-saucetomato-sauce-n cashews-and-raisins oil-spoons salt-and-pepper)
+    (seasons summer))
+
+  ([Recipe_647830] of ONTOLOGY::Recipe
+    (title "Indian Lentil Dahl")
+    (price 26.47)
+    (wine_pairing "Light Red wine or White wine")
+    (meal_types lunch main-course main-dish dinner)
+    (restrictions dairy-free gluten-free kosher vegan vegetarian)
+    (ingredients canola-oil cilantro coconut-milk ginger garam-masala garlic-cloves lime-juice onion plum-tomatoes lentils salt water)
+    (seasons any-season))
 )
