@@ -1,5 +1,5 @@
 (defmodule REFINAMIENTO (import ONTOLOGY ?ALL) 
-                        (import MATCH ?ALL ) ;hacer module match 
+                        (import MATCH ?ALL )
                         (import DATA ?ALL)
                         (import input ?ALL) (export ?ALL))
 
@@ -14,21 +14,6 @@
    (slot postre (type INSTANCE))
    (slot precio-total (type FLOAT)))
 
-;; Template para restricciones del usuario
-; (deftemplate REFINAMIENTO::user-restrictions
-;     (slot is-vegan (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-;     (slot is-vegetarian (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-;     (slot is-gluten-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-;     (slot is-dairy-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-;     (slot max-price (type NUMBER) (default 10000))
-;     (slot min-price (type NUMBER) (default 0))
-;     (slot min-servings (type NUMBER) (default 1)))
-
-; ;; Template para candidatos
-; (deftemplate REFINAMIENTO::candidate-set
-;     (slot recipe-instance (type INSTANCE))
-;     (multislot restrictions-met (type SYMBOL))
-;     (slot restriction-count (type NUMBER) (default 0)))
 
 (deftemplate limites-calculados
     (slot min-price (type FLOAT))
@@ -36,67 +21,7 @@
     (slot limite-medio (type FLOAT))
     (slot max-price (type FLOAT)))
 
-; (deftemplate match-control
-;     (slot phase (type SYMBOL)))
 
-
-; (deffacts user-example (user-restrictions (is-vegan FALSE) (is-vegetarian TRUE) (is-gluten-free FALSE) (is-dairy-free FALSE) (max-price 300) (min-price 10) (min-servings 1)))
-
-; (deffacts candidate-set-test-facts
-;   (candidate-set
-;     (recipe-instance [Recipe_644094])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-
-;    (candidate-set
-;     (recipe-instance [Recipe_647875])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-
-;     (candidate-set
-;     (recipe-instance [Recipe_715595])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-
-;     (candidate-set
-;     (recipe-instance [Recipe_649560])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-
-;     (candidate-set
-;     (recipe-instance [Recipe_716431])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-
-;     (candidate-set
-;     (recipe-instance [Recipe_661121])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-;     (candidate-set
-;     (recipe-instance [Recipe_716433])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-;     (candidate-set
-;     (recipe-instance [Recipe_665203])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-;     (candidate-set
-;     (recipe-instance [Recipe_991625])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-;     (candidate-set
-;     (recipe-instance [Recipe_1098351])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-;     (candidate-set
-;     (recipe-instance [Recipe_632527])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-;     (candidate-set
-;     (recipe-instance [Recipe_641445])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-; )
 
 (deffacts sistema-inicio
     (match-control (phase complete))
@@ -273,7 +198,7 @@
 
 (defrule REFINAMIENTO::iniciar-creacion-menus
     (declare (salience 100))
-    ; ?ctrl <- (match-control (phase match-complete))
+    ; ?ctrl <- (match-control (phase complete))
     =>
     ; (retract ?ctrl)
     (printout t "INICIANDO CREACIÓN DE MENÚS" crlf)
@@ -429,87 +354,3 @@
         (printout t "❌ No se pudo crear ningún menú" crlf))
 )
 
-
-
-;; (deffunction REFINAMIENTO::get-precios-recipe (instancias o classes de recipies)
-;; ;;; igual no hay que hacerlo 
-
-;; )
-
-;(defrule REFINAMIENTO::make-menus (parametros) 
- ;;; coger las candidatos de recetas y coger un meal-type para cada menu 
- ;;;y calcular con los precios y separarlos en 3 menus 
- ;;; hay que calcular si estan todas las restricciones en un grupo de menus y sino hacer varios grupos
-
-;()
-;; ;=>
-;; ()
-
-;;  )
-
- ;(defrule REFINAMIENTO::seleccionar-mejor-menu-barato
-   ; (user-restrictions (min-price ?minP) (max-price ?maxP))
-   
-    ;(candidate-set (recipe-instance ?e))
-    ;(candidate-set (recipe-instance ?p))
- ;   (candidate-set (recipe-instance ?po))
-  ;  
- ;   (test (member$ starter (send ?e get-meal_types)))
-  ;  (test (member$ main-course (send ?p get-meal_types)))
-   ; (test (member$ dessert (send ?po get-meal_types)))
-   ; (test (and (neq ?e ?p) (neq ?e ?po) (neq ?p ?po)))
-   
-   ; No existe ya un menú barato
-  ;  (not (menu (categoria barato)))
-   ; =>
-   ; (bind ?precio-total (+ (send ?e get-price) (send ?p get-price) (send ?po get-price)))
-   ; (bind ?limites (crear-rangos-desde-restricciones))
-    ;(bind ?limite1 (nth$ 1 ?limites))
-   
-   ; Solo si es barato
-  ;  (if (<= ?precio-total ?limite1) then
-   ;    (assert (menu (categoria barato) (entrante ?e) (principal ?p) (postre ?po) (precio-total ?precio-total)))
-    ;   (printout t "✓ Menú BARATO: " ?precio-total "€" crlf)))
-
- ;(defrule REFINAMIENTO::seleccionar-mejor-menu-medio
-   ; (user-restrictions (min-price ?minP) (max-price ?maxP))
-   ; (candidate-set (recipe-instance ?e))
-   ; (candidate-set (recipe-instance ?p))
-   ; (candidate-set (recipe-instance ?po))
-   
- ;  (test (member$ starter (send ?e get-meal_types)))
- ;  (test (member$ main-course (send ?p get-meal_types)))
- ;  (test (member$ dessert (send ?po get-meal_types)))
- ;  (test (and (neq ?e ?p) (neq ?e ?po) (neq ?p ?po)))
-   
- ;  (not (menu (categoria medio)))
- ;  =>
- ;  (bind ?precio-total (+ (send ?e get-price) (send ?p get-price) (send ?po get-price)))
- ;  (bind ?limites (crear-rangos-desde-restricciones))
- ;  (bind ?limite1 (nth$ 1 ?limites))
- ;  (bind ?limite2 (nth$ 2 ?limites))
-   
- ;  (if (and (> ?precio-total ?limite1) (<= ?precio-total ?limite2)) then
- ;     (assert (menu (categoria medio) (entrante ?e) (principal ?p) (postre ?po) (precio-total ?precio-total)))
- ;     (printout t "✓ Menú MEDIO: " ?precio-total "€" crlf)))
-
-;(defrule REFINAMIENTO::seleccionar-mejor-menu-caro
-;   (user-restrictions (min-price ?minP) (max-price ?maxP))
-;   (candidate-set (recipe-instance ?e))
-;   (candidate-set (recipe-instance ?p))
-;   (candidate-set (recipe-instance ?po))
-   
-;   (test (member$ starter (send ?e get-meal_types)))
-;   (test (member$ main-course (send ?p get-meal_types)))
-;   (test (member$ dessert (send ?po get-meal_types)))
-;   (test (and (neq ?e ?p) (neq ?e ?po) (neq ?p ?po)))
-   
-;   (not (menu (categoria caro)))
- ;  =>
- ;  (bind ?precio-total (+ (send ?e get-price) (send ?p get-price) (send ?po get-price)))
- ;  (bind ?limites (crear-rangos-desde-restricciones))
- ;  (bind ?limite2 (nth$ 2 ?limites))
-   
-  ; (if (and (> ?precio-total ?limite2) (<= ?precio-total ?maxP)) then
-;      (assert (menu (categoria caro) (entrante ?e) (principal ?p) (postre ?po) (precio-total ?precio-total)))
-;      (printout t "✓ Menú CARO: " ?precio-total "€" crlf)))
