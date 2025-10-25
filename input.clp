@@ -1,54 +1,49 @@
-(deftemplate event-info
-   "Información general del evento"
-   (slot event-type (type SYMBOL) (allowed-symbols boda congreso familiar))
-   (slot guests (type NUMBER))
-   (slot season (type SYMBOL) (allowed-symbols primavera verano otoño invierno))
-   (slot style (type SYMBOL) (allowed-symbols clasico moderno regional sibarita)))
-   
-(deftemplate user-restrictions
-   "Restricciones dietéticas y preferencias del usuario"
-   (slot is-vegan (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-   (slot is-vegetarian (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-   (slot is-gluten-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-   (slot is-dairy-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-   (slot max-price (type NUMBER) (default 1000))
-   (slot min-servings (type NUMBER) (default 1)))
+;; ===========================
+;; Módulo input
+;; ===========================
+(defmodule input
+   (export ?ALL) ; exporta todas las reglas y globals si hubiera
+)
 
+;; ===========================
+;; Plantillas (estructuras de hechos)
+;; ===========================
+(deftemplate input::restriction
+   (slot name)
+   ;;(slot num_people)
+)
 
-(defrule request-data
-   (initial-fact)
+(deftemplate input::event
+   (slot type)
+   (slot season)
+)
+
+;; ===========================
+;; Regla principal de entrada de datos
+;; ===========================
+(defrule input::request-data
    =>
+   ;; === Solicitar tipo de evento ===
    (printout t "Event type (wedding/congress/family): ")
-   (bind ?type (read))
-   ;;;(printout t "Number of guests: ")
-   ;;;(bind ?numGuests (read))
+   (bind ?type (string-to-field (readline)))
+
+   ;; === Solicitar estación ===
    (printout t "Season (spring/summer/autumn/winter): ")
-   (bind ?season (read))
-   ;;;(printout t "Cuisine style (classic/modern/regional/gourmet): ")
-   ;;;(bind ?style (read))
+   (bind ?season (string-to-field (readline)))
 
-   (printout t "Vegan? (TRUE/FALSE): ")
-   (bind ?vegan (read))
-   (printout t "Vegetarian? (TRUE/FALSE): ")
-   (bind ?vegetarian (read))
-   (printout t "Gluten-free? (TRUE/FALSE): ")
-   (bind ?glutenFree (read))
-   (printout t "Dairy-free? (TRUE/FALSE): ")
-   (bind ?dairyFree (read))
+   ;; Crear hecho del evento
+   (assert (event (type ?type) (season ?season)))
 
-   (assert (event-info
-               (event-type ?type)
-               (guests ?numGuests)
-               (season ?season)
-               (style ?style)))
+   ;; === Solicitar restricciones dietéticas ===
+   (printout t "What diet restrictions do you have? (type 'exit' or press Enter to finish)" crlf)
 
-   (assert (user-restrictions
-               (is-vegan ?vegan)
-               (is-vegetarian ?vegetarian)
-               (is-gluten-free ?glutenFree)
-               (is-dairy-free ?dairyFree)
-               (max-price ?maxPrice)
-               (min-servings ?minPrice)))
-
-   (printout t crlf "Data successfully recorded." crlf))
-
+   (bind ?r "NONE")
+   (while (and (neq ?r "exit") (neq ?r ""))
+      (printout t "> ")
+      (bind ?r (readline))
+      (if (and (neq ?r "exit") (neq ?r ""))
+          then
+             (if (not (any-factp ((?f restriction)) (eq ?f:name ?r)))
+                 then (assert (restriction (name ?r))))))
+   (printout t crlf "Data successfully recorded." crlf)
+)
