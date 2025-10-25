@@ -42,19 +42,14 @@
    ;; === Solicitar tipo de evento ===
    (printout t "Event type (wedding/congress/family): ")
    (bind ?type-token (read))
-   (bind ?type-string (if (symbolp ?type-token)
-                          then (lowcase (symbol-name ?type-token))
-                          else (lowcase ?type-token)))
-   (bind ?type (string-to-field ?type-string))
+   (bind ?type (string-to-field (lowcase (str-cat ?type-token))))
 
    ;; === Solicitar estación ===
    (printout t "Season (spring/summer/autumn/winter): ")
    (bind ?season-token (read))
-   (bind ?season-string (if (symbolp ?season-token)
-                            then (lowcase (symbol-name ?season-token))
-                            else (lowcase ?season-token)))
+   (bind ?season-string (lowcase (str-cat ?season-token)))
    (if (or (eq ?season-string "") (eq ?season-string "any")) then
-       (bind ?season-string "any-season"))
+      (bind ?season-string "any-season"))
    (bind ?season (string-to-field ?season-string))
 
    ;; === Solicitar restricciones dietéticas ===

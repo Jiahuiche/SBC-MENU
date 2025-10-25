@@ -9,8 +9,6 @@
 
 (load "match_ontology.clp")
 
-(load "refinamiento.clp")
-
 (reset)
 
 (run)

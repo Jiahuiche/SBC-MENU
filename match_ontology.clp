@@ -119,7 +119,7 @@
                     ?requested
                     ?min-p
                     ?max-p
-                    ?season-pref)))))
+                    ?season-pref))))
     (retract ?ctrl)
     (assert (match-control (phase complete)))
     (printout t crlf "📋 Evaluadas combinaciones de restricciones: " ?combo-count crlf))
