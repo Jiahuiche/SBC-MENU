@@ -16,7 +16,8 @@
 (defmodule MATCH
     (import ONTOLOGY ?ALL)
     (import DATA ?ALL)
-    (import input ?ALL))
+    (import input ?ALL)
+    (export ?ALL))
 
 ;;; Template para candidatos
 (deftemplate MATCH::candidate-set
