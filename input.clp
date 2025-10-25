@@ -5,10 +5,6 @@
    (export ?ALL) ; exporta todas las reglas, funciones y templates
 )
 
-(defrule MAIN::start-input
-   =>
-   (focus input))
-
 ;; ===========================
 ;; Plantillas (estructuras de hechos)
 ;; ===========================
@@ -43,7 +39,7 @@
    (printout t "Event type (wedding/congress/family): ")
    (bind ?type-token (read))
    (bind ?type-string (if (symbolp ?type-token)
-                          then (lowcase (symbol-name ?type-token))
+                          then (lowcase (str-cat ?type-token))
                           else (lowcase ?type-token)))
    (bind ?type (string-to-field ?type-string))
 
@@ -51,7 +47,7 @@
    (printout t "Season (spring/summer/autumn/winter): ")
    (bind ?season-token (read))
    (bind ?season-string (if (symbolp ?season-token)
-                            then (lowcase (symbol-name ?season-token))
+                            then (lowcase (str-cat ?season-token))
                             else (lowcase ?season-token)))
    (if (or (eq ?season-string "") (eq ?season-string "any")) then
        (bind ?season-string "any-season"))
