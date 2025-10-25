@@ -22,6 +22,7 @@
 (deftemplate user-restrictions
     (multislot requested (type SYMBOL) (default-dynamic (create$)))
     (slot max-price (type NUMBER) (default 10000))
+    ;;;(slot min-price (type NUMBER) (default 0))
     (slot min-servings (type NUMBER) (default 1)))
 
 ;;; Template para candidatos
