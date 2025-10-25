@@ -192,6 +192,116 @@
              " (" (send (fact-slot-value ?m postre) get-price) "€)" crlf crlf)
 )
 
+;;; Versión relajada de búsqueda (no verifica platos usados)
+
+(deffunction REFINAMIENTO::buscar-combinacion-valida-relajada (?precio-min ?precio-max)
+    ;;; Versión relajada que no verifica platos usados
+    (bind ?entrantes (create$))
+    (bind ?principales (create$))
+    (bind ?postres (create$))
+    
+    ;;; Separar candidatos por tipo de plato (igual que antes)
+    (do-for-all-facts ((?c candidate-set)) TRUE
+        (bind ?inst (fact-slot-value ?c recipe-instance))
+        (bind ?meal-types (send ?inst get-meal_types))
+        
+        (if (and (not (member$ main-course ?meal-types))
+                 (not (member$ dessert ?meal-types))
+                 (or (member$ starter ?meal-types)
+                     (member$ appetizer ?meal-types)
+                     (member$ side-dish ?meal-types))) then
+            (bind ?entrantes (create$ ?entrantes ?inst)))
+        
+        (if (and (not (member$ starter ?meal-types))
+                 (not (member$ dessert ?meal-types))
+                 (not (member$ appetizer ?meal-types))
+                 (not (member$ side-dish ?meal-types))
+                 (or (member$ main-course ?meal-types)
+                     (member$ main-dish ?meal-types))) then
+            (bind ?principales (create$ ?principales ?inst)))
+            
+        (if (and (not (member$ starter ?meal-types))
+                 (not (member$ main-course ?meal-types))
+                 (not (member$ appetizer ?meal-types))
+                 (not (member$ side-dish ?meal-types))
+                 (not (member$ brunch ?meal-types))
+                 (member$ dessert ?meal-types)) then
+            (bind ?postres (create$ ?postres ?inst))))
+    
+    ;;; Buscar combinación (solo verifica que no sean la misma receta)
+    (foreach ?e ?entrantes
+        (foreach ?p ?principales
+            (foreach ?po ?postres
+                ;;; SOLO verificar que no sean la misma receta (no verificar uso previo)
+                (if (and (neq ?e ?p) (neq ?e ?po) (neq ?p ?po)) then
+                    (bind ?precio-total (+ (send ?e get-price) 
+                                         (send ?p get-price) 
+                                         (send ?po get-price)))
+                    (if (and (>= ?precio-total ?precio-min) 
+                             (<= ?precio-total ?precio-max)) then
+                        (return (create$ ?e ?p ?po ?precio-total)))))))
+    
+    (return FALSE)
+)
+
+;;; Reintentar creando menus permitiendo platos repetidos
+
+(deffunction REFINAMIENTO::reintentar-con-platos-repetidos (?limites)
+    (bind ?min (fact-slot-value ?limites min-price))
+    (bind ?limBarato (fact-slot-value ?limites limite-barato))
+    (bind ?limMedio (fact-slot-value ?limites limite-medio))
+    (bind ?max (fact-slot-value ?limites max-price))
+    
+    (printout t "      Permitiendo platos repetidos entre menús..." crlf)
+    
+    ;;; Limpiar menús existentes
+    (do-for-all-facts ((?m menu)) TRUE (retract ?m))
+    
+    ;;; Crear menús barato (sin verificar platos usados)
+    (bind ?menu-barato (buscar-combinacion-valida-relajada ?min ?limBarato))
+    (if (neq ?menu-barato FALSE) then
+        (assert (menu (categoria barato)
+                     (entrante (nth$ 1 ?menu-barato))
+                     (principal (nth$ 2 ?menu-barato))
+                     (postre (nth$ 3 ?menu-barato))
+                     (precio-total (nth$ 4 ?menu-barato))))
+        (printout t "      ✅ Menú barato creado" crlf)
+    )
+    
+    ;;; Crear menú medio (sin verificar platos usados)
+    (bind ?menu-medio (buscar-combinacion-valida-relajada ?limBarato ?limMedio))
+    (if (neq ?menu-medio FALSE) then
+        (assert (menu (categoria medio)
+                     (entrante (nth$ 1 ?menu-medio))
+                     (principal (nth$ 2 ?menu-medio))
+                     (postre (nth$ 3 ?menu-medio))
+                     (precio-total (nth$ 4 ?menu-medio))))
+        (printout t "      ✅ Menú medio creado" crlf)
+    )
+    
+    ;;; Crear menú caro (sin verificar platos usados)
+    (bind ?menu-caro (buscar-combinacion-valida-relajada ?limMedio ?max))
+    (if (neq ?menu-caro FALSE) then
+        (assert (menu (categoria caro)
+                     (entrante (nth$ 1 ?menu-caro))
+                     (principal (nth$ 2 ?menu-caro))
+                     (postre (nth$ 3 ?menu-caro))
+                     (precio-total (nth$ 4 ?menu-caro))))
+        (printout t "      ✅ Menú caro creado" crlf)
+    )
+    
+    ; Verificar si se crearon todos los menús
+    (if (and (find-fact ((?m menu)) (eq ?m:categoria barato))
+         (find-fact ((?m menu)) (eq ?m:categoria medio))
+         (find-fact ((?m menu)) (eq ?m:categoria caro))) then
+    (return TRUE)
+    else
+        ;Limpiar si no se completó
+        (do-for-all-facts ((?m menu)) TRUE (retract ?m))
+        (return FALSE)
+    )
+)
+
 
 
 ;;; REGLAS PARA CREAR MENUS
@@ -305,9 +415,16 @@
     =>
     (printout t crlf "Algunos menús no se pudieron crear, intentando ajustar..." crlf)
     
-    ;;; Aquí puedes implementar una estrategia alternativa
-    ;;; Por ejemplo, ampliar los rangos de precio o permitir reutilizar platos
-    (printout t "  Estrategia de reintento no implementada" crlf)
+    ;;;; Permitir repetir platos
+    (printout t "  Permitiendo repetir platos..." crlf)
+    (bind ?exito-repetidos (reintentar-con-platos-repetidos ?limites))
+    
+    (if (neq ?exito-repetidos FALSE) then
+        (printout t "  Éxito con platos repetidos" crlf)
+        (return)
+    )
+
+    (printout t "  Estrategia de reintento fallada" crlf)
 )
 
 
