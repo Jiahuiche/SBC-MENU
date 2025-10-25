@@ -177,7 +177,6 @@ def recipe_to_clips_instance(recipe):
     
     # Extraer campos
     title = escape_clips_string(recipe.get('title', 'Unknown Recipe'))
-    servings = recipe.get('servings', 1)
     price = calculate_price(recipe)
     wine_pairing = escape_clips_string(recipe.get('winePairing', 'No wine pairing'))
     
@@ -185,12 +184,10 @@ def recipe_to_clips_instance(recipe):
     ingredients = extract_ingredients(recipe)
     meal_types = extract_meal_types(recipe)
     seasons = extract_seasons(recipe)
-    season_text = escape_clips_string(recipe.get('seasonText', ''))
     
     # Construir la instancia CLIPS
     instance_str = f'  ([{instance_name}] of ONTOLOGY::Recipe\n'
     instance_str += f'    (title "{title}")\n'
-    instance_str += f'    (servings {servings})\n'
     instance_str += f'    (price {price})\n'
     instance_str += f'    (wine_pairing "{wine_pairing}")\n'
     
@@ -204,10 +201,7 @@ def recipe_to_clips_instance(recipe):
     instance_str += f'    (ingredients {" ".join(ingredients)})\n'
     
     # Slot seasons (símbolo único)
-    instance_str += f'    (seasons {seasons})\n'
-    
-    # Slot season_text (string)
-    instance_str += f'    (season_text "{season_text}"))'
+    instance_str += f'    (seasons {seasons}))'
     
     return instance_str
 

@@ -61442,5 +61442,3151 @@
       "summer"
     ],
     "seasonText": "Summer"
+  },
+  {
+    "id": 651585,
+    "title": "Mexican Chicken Lettuce Wraps",
+    "servings": 6,
+    "pricePerServing": 155.38,
+    "priceCalculated": 25.896666666666665,
+    "dishClass": "Main",
+    "mealTypes": "antipasti, lunch, main course, starter, snack, appetizer, main dish, antipasto, hor d'oeuvre, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "chicken breast",
+      "lime juice",
+      "ground cumin",
+      "ground chile powder",
+      "seasoned salt",
+      "garlic powder",
+      "olive oil",
+      "black beans",
+      "tomato",
+      "onion",
+      "bell pepper",
+      "avocado",
+      "boston lettuce leaves"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 662442,
+    "title": "Sweet and Sour BBQ Spare Ribs",
+    "servings": 2,
+    "pricePerServing": 418.4,
+    "priceCalculated": 209.2,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "pork spare ribs",
+      "butter",
+      "onions",
+      "ketchup",
+      "barbecue sauce",
+      "vinegar",
+      "brown sugar",
+      "mustard powder",
+      "garlic powder",
+      "worcestershire sauce",
+      "salt and pepper"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 639752,
+    "title": "Coconut Crusted Rockfish",
+    "servings": 4,
+    "pricePerServing": 547.08,
+    "priceCalculated": 136.77,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine",
+    "vegan": false,
+    "glutenFree": false,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [],
+    "ingredients": [
+      "basmati rice",
+      "butter",
+      "eggs",
+      "flour",
+      "cilantro",
+      "lime juice",
+      "limes",
+      "mango",
+      "onion",
+      "orange juice",
+      "panko breadcrumbs",
+      "bell pepper",
+      "rockfish",
+      "salt & pepper",
+      "serrano chile",
+      "coconut",
+      "vegetable oil",
+      "water"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 716296,
+    "title": "Peri Peri Chicken and Savoury Rice",
+    "servings": 6,
+    "pricePerServing": 143.05,
+    "priceCalculated": 23.84166666666667,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "bell pepper",
+      "bird's eye chilli pepper",
+      "pepper",
+      "chicken pieces",
+      "chilli powder",
+      "garlic",
+      "ginger",
+      "seasoning cube",
+      "lemon",
+      "bulb of onion",
+      "oregano",
+      "paprika",
+      "food colouring",
+      "salt",
+      "scotch bonnet pepper",
+      "vegetable oil",
+      "vinegar"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 633921,
+    "title": "Balsamic & Honey Glazed Salmon with Lemony Asparagus",
+    "servings": 2,
+    "pricePerServing": 443.76,
+    "priceCalculated": 221.88,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "apple cider vinegar",
+      "asparagus",
+      "balsamic vinegar",
+      "dill",
+      "garlic",
+      "grapeseed oil",
+      "herbs de provence",
+      "honey",
+      "juice of lemon",
+      "lemon zest",
+      "salmon fillet",
+      "salt and pepper",
+      "vegetable stock"
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "seasonText": "Spring"
+  },
+  {
+    "id": 631750,
+    "title": "Flank Steak with Mushroom Sauce",
+    "servings": 4,
+    "pricePerServing": 171.15,
+    "priceCalculated": 42.7875,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "flavor concentrated beef broth",
+      "butter",
+      "flank steak",
+      "rosemary leaves",
+      "garlic",
+      "mushrooms",
+      "olive oil",
+      "shallot",
+      "water"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 645753,
+    "title": "Grilled Lemon Garlic Chicken",
+    "servings": 4,
+    "pricePerServing": 259.0,
+    "priceCalculated": 64.75,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "chicken breast",
+      "garlic olive oil",
+      "lemon juice",
+      "tumeric",
+      "salt and pepper",
+      "cilantro"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 631888,
+    "title": "A Christmas With Peking Duck",
+    "servings": 12,
+    "pricePerServing": 228.79,
+    "priceCalculated": 19.065833333333334,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "corn syrup",
+      "duck",
+      "five spice powder",
+      "hoisin sauce",
+      "honey",
+      "rice wine vinegar",
+      "salt",
+      "scallions",
+      "water",
+      "pepper"
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "seasonText": "Summer"
+  },
+  {
+    "id": 637942,
+    "title": "Chicken Arrozcaldo",
+    "servings": 9,
+    "pricePerServing": 492.76,
+    "priceCalculated": 54.75111111111111,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "chicken",
+      "garlic",
+      "onion",
+      "thumb sized ginger",
+      "chicken cube",
+      "rice",
+      "water",
+      "fish sauce",
+      "safflower",
+      "green onion",
+      "fried garlic",
+      "hardboiled quail eggs",
+      "salt and pepper",
+      "pcs lemon",
+      "in a soup pot over heat",
+      "add ginger and onion",
+      "add chicken and stir until it melts",
+      "add chicken and stir-fry until both sides turn brown",
+      "add fish sauce and simmer",
+      "add rice and water. mix well. cover and simmer in heat",
+      "put-in the hardboiled eggs",
+      "add the safflower",
+      "stir in a amount of green onions. add salt and pepper if necessary",
+      "if rice soup becomes too",
+      "sprinkle a little lemon juice on the soup"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 662535,
+    "title": "Sweet Mustard BBQ Pork Chops",
+    "servings": 4,
+    "pricePerServing": 215.43,
+    "priceCalculated": 53.8575,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "pork chops",
+      "dijon mustard",
+      "garlic",
+      "coarsely ground pepper",
+      "honey",
+      "lemon juice",
+      "soy sauce"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 659060,
+    "title": "Salmon Confit with Lemongrass Sauce",
+    "servings": 2,
+    "pricePerServing": 885.94,
+    "priceCalculated": 442.97,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "butter",
+      "carrot",
+      "liquid chicken stock",
+      "chives to garnish",
+      "cooking oil",
+      "cream",
+      "extra virgin olive oil",
+      "garlic",
+      "lemon grass",
+      "lemon juice",
+      "lemons",
+      "salmon fillets",
+      "salt and pepper",
+      "spinach leaves"
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "seasonText": "Spring"
+  },
+  {
+    "id": 636641,
+    "title": "Cabbage and sausages in beer",
+    "servings": 3,
+    "pricePerServing": 191.11,
+    "priceCalculated": 63.70333333333334,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "beer",
+      "butter",
+      "cabbage",
+      "onion",
+      "bell pepper",
+      "potatoes",
+      "salt",
+      "sausages",
+      "sugar"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 730914,
+    "title": "Basil Infused Balsamic Oven Baked Chicken",
+    "servings": 1,
+    "pricePerServing": 313.8,
+    "priceCalculated": 313.8,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "balsamic vinegar",
+      "chicken breast",
+      "m zarella cheese",
+      "basil olive oil",
+      "tomato"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 639411,
+    "title": "Cilantro Lime Halibut",
+    "servings": 2,
+    "pricePerServing": 881.11,
+    "priceCalculated": 440.555,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "chicken stock",
+      "cilantro",
+      "green onions",
+      "pacific halibut filets",
+      "juice of lime",
+      "another slug of blood orange olive oil",
+      "mollie stone's blood orange olive oil",
+      "dusting of garlic-pepper",
+      "salt and pepper",
+      "white wine"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 649132,
+    "title": "Kung-Pao Chicken",
+    "servings": 1,
+    "pricePerServing": 707.35,
+    "priceCalculated": 707.35,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "chicken breasts",
+      "peanuts",
+      "to 4 chili peppers",
+      "peanut oil",
+      "green onions w/tops",
+      "ginger",
+      "garlic",
+      "corn starch",
+      "sherry",
+      "pepper",
+      "chicken stock",
+      "soy sauce",
+      "sherry",
+      "white wine vinegar",
+      "sugar"
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "seasonText": "Summer"
+  },
+  {
+    "id": 658126,
+    "title": "Red Wine Stewed Oxtail",
+    "servings": 6,
+    "pricePerServing": 416.91,
+    "priceCalculated": 69.485,
+    "dishClass": "Main",
+    "mealTypes": "soup, lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "bay leaf",
+      "canned tomatoes",
+      "garlic",
+      "olive oil",
+      "approximately oxtail",
+      "red wine",
+      "salt and pepper",
+      "onion"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 646217,
+    "title": "Ham with Orange Rosemary Marmalade Glaze",
+    "servings": 4,
+    "pricePerServing": 1448.18,
+    "priceCalculated": 362.045,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "ham",
+      "orange zest",
+      "apple cider",
+      "apple juice",
+      "orange juice",
+      "orange marmalade",
+      "brown sugar",
+      "rosemary",
+      "ginger"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 634295,
+    "title": "Barbecued Baby Back Pork Ribs and Bush's Grillin' Beans",
+    "servings": 2,
+    "pricePerServing": 196.28,
+    "priceCalculated": 98.14,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "baby back pork ribs",
+      "peppercorns",
+      "brown sugar",
+      "cider vinegar",
+      "coriander",
+      "garlic",
+      "green onions",
+      "ketchup",
+      "molasses",
+      "orange zest",
+      "soy sauce"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 648721,
+    "title": "Kale and Roasted Sweet Potato Soup with Chicken Sausage",
+    "servings": 4,
+    "pricePerServing": 292.88,
+    "priceCalculated": 73.22,
+    "dishClass": "Main",
+    "mealTypes": "soup, lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "sweet potatoes",
+      "onion",
+      "kale",
+      "mushrooms",
+      "chicken sausage",
+      "chicken stock",
+      "garlic",
+      "thyme",
+      "ground coriander",
+      "chili flakes",
+      "sea salt",
+      "pepper",
+      "olive oil"
+    ],
+    "seasons": [
+      "winter"
+    ],
+    "seasonText": "Winter"
+  },
+  {
+    "id": 632452,
+    "title": "Apple & Cream Cheese Braid",
+    "servings": 1,
+    "pricePerServing": 1028.49,
+    "priceCalculated": 1028.49,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": false,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [],
+    "ingredients": [
+      "all purpose flour",
+      "blanched almonds",
+      "sweet-roll dough",
+      "brown sugar",
+      "butter",
+      "cinnamon",
+      "cream cheese",
+      "yeast",
+      "egg",
+      "egg yolk",
+      "eggs",
+      "granny smith applies",
+      "lemon rind",
+      "milk",
+      "salt",
+      "sugar",
+      "sugar",
+      "butter",
+      "vanilla",
+      "warm water",
+      "mix together until smooth. set aside",
+      "mix together until smooth. set aside"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 663104,
+    "title": "Thai Fried Rice",
+    "servings": 1,
+    "pricePerServing": 677.79,
+    "priceCalculated": 677.79,
+    "dishClass": "Main",
+    "mealTypes": "side dish, lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "eggs",
+      "garlic",
+      "bell pepper",
+      "oil",
+      "big onion",
+      "bell pepper",
+      "pork",
+      "rice",
+      "salt",
+      "soy sauce",
+      "sugar",
+      "tomato",
+      "water"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 645671,
+    "title": "Grilled Chicken with Sateay Sauce",
+    "servings": 4,
+    "pricePerServing": 346.66,
+    "priceCalculated": 86.665,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "lemon juice",
+      "olive oil",
+      "salt",
+      "thyme leaves",
+      "chicken breasts",
+      "olive oil",
+      "sesame oil",
+      "small-diced onion",
+      "garlic",
+      "ginger root",
+      "red wine pepper flakes",
+      "red wine vinegar",
+      "brown sugar",
+      "soy sauce",
+      "smooth peanut butter",
+      "ketchup",
+      "sherry",
+      "lime juice"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 664080,
+    "title": "Turkey-Spinach Burgers With Sweet Soy-Ginger Sauce",
+    "servings": 4,
+    "pricePerServing": 250.84,
+    "priceCalculated": 62.71,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "baby spinach",
+      "pepper",
+      "canola oil",
+      "brown sugar",
+      "ginger",
+      "ground turkey",
+      "mirin",
+      "salt",
+      "scallions",
+      "sesame oil",
+      "soy sauce"
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "seasonText": "Spring"
+  },
+  {
+    "id": 716268,
+    "title": "African Chicken Peanut Stew",
+    "servings": 1,
+    "pricePerServing": 352.64,
+    "priceCalculated": 352.64,
+    "dishClass": "Main",
+    "mealTypes": "soup, lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "bell peppers",
+      "chicken",
+      "cooking spoons of oil",
+      "curry",
+      "garlic cloves",
+      "of ginger",
+      "groundnut",
+      "onions",
+      "bell pepper",
+      "salt",
+      "seasoning",
+      "sweet potato",
+      "thyme",
+      "tomato",
+      "cooking spoons of blended tomato"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 657167,
+    "title": "Prosciutto Wrapped Broccolini With Basil Crisps",
+    "servings": 4,
+    "pricePerServing": 767.02,
+    "priceCalculated": 191.755,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "broccolini",
+      "basil",
+      "your preferred cured meat",
+      "balsamic vinegar",
+      "olive oil",
+      "salt and pepper"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 1046982,
+    "title": "How to Make the Perfect Sweet Potato Sloppy Joes",
+    "servings": 4,
+    "pricePerServing": 481.76,
+    "priceCalculated": 120.44,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "bell pepper",
+      "garlic",
+      "ground turkey",
+      "olive oil",
+      "onion",
+      "salt and pepper",
+      "sweet potatoes",
+      "tomato paste",
+      "tomato sauce",
+      "water"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 660133,
+    "title": "Simple Roast Chicken",
+    "servings": 4,
+    "pricePerServing": 275.63,
+    "priceCalculated": 68.9075,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "chicken",
+      "butter",
+      "garlic",
+      "rind of two lemons",
+      "chilli flakes",
+      "salt and pepper",
+      "lemon",
+      "yukon gold potatoes",
+      "sweet potatoes",
+      "chilli flakes",
+      "olive oil"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 716361,
+    "title": "Stir Fried Quinoa, Brown Rice and Chicken Breast",
+    "servings": 1,
+    "pricePerServing": 357.8,
+    "priceCalculated": 357.8,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "suya spice",
+      "quinoa and brown rice mix",
+      "butter",
+      "carrots",
+      "cherry tomatoes",
+      "chicken breast",
+      "garlic",
+      "seasoning cubes",
+      "bell pepper",
+      "roma tomato",
+      "scotch bonnet pepper",
+      "spring onion",
+      "vegetable oil",
+      "water"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 644173,
+    "title": "Garbanzo Beans & Greens",
+    "servings": 4,
+    "pricePerServing": 493.75,
+    "priceCalculated": 123.4375,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Light Red wine or White wine",
+    "vegan": false,
+    "glutenFree": false,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [],
+    "ingredients": [
+      "bacon",
+      "carrots",
+      "onion",
+      "garlic gloves",
+      "paprika",
+      "kosher salt",
+      "cumin",
+      "pepper",
+      "vegetable broth",
+      "garbanzo beans",
+      "kale",
+      "toppings: greek yogurt",
+      "soup pot on heat. remove bacon",
+      "crumble bacon and set aside",
+      "add carrot and onion to bacon fat . cook",
+      "add garlic and stir",
+      "add paprika",
+      "turn up the heat and add broth and beans. bring to a boil. reduce to a simmer and cook",
+      "add kale and cover the mixture and simmer",
+      "sprinkle in bacon crumbles and stir",
+      "top"
+    ],
+    "seasons": [
+      "winter"
+    ],
+    "seasonText": "Winter"
+  },
+  {
+    "id": 640700,
+    "title": "Creamy Shrimp Bisque",
+    "servings": 4,
+    "pricePerServing": 336.62,
+    "priceCalculated": 84.155,
+    "dishClass": "Main",
+    "mealTypes": "soup, lunch, main course, main dish, dinner",
+    "winePairing": "White wine",
+    "vegan": false,
+    "glutenFree": false,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": false,
+    "isHalal": true,
+    "restrictions": [],
+    "ingredients": [
+      "celery stalks",
+      "green onions",
+      "butter",
+      "garlic",
+      "flour",
+      "half & half",
+      "fish stock",
+      "parsley",
+      "shrimp",
+      "potatoes",
+      "cayenne pepper",
+      "onion powder",
+      "garlic powder",
+      "old bay",
+      "salt & pepper"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 640321,
+    "title": "Crab Stacks",
+    "servings": 3,
+    "pricePerServing": 646.04,
+    "priceCalculated": 215.34666666666666,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "dungeness crab- cooked&",
+      "quinoa",
+      "orange juice",
+      "chicken stock",
+      "mango",
+      "fresno chile",
+      "avocado",
+      "lime",
+      "roma tomato",
+      "cilantro",
+      "green onion",
+      "clove garlic",
+      "salmon"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 662075,
+    "title": "Stuffed Pork Tenderloin with Marsala-Port Sauce",
+    "servings": 4,
+    "pricePerServing": 518.73,
+    "priceCalculated": 129.6825,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "shallot",
+      "onion",
+      "mushrooms",
+      "apricots",
+      "raisins",
+      "cranberries",
+      "flat leaves parsley",
+      "pork tenderloin",
+      "marsala",
+      "port",
+      "butter",
+      "heavy cream",
+      "olive oil",
+      "salt and pepper"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 649733,
+    "title": "Lemon Pilaf Chicken",
+    "servings": 4,
+    "pricePerServing": 52.25,
+    "priceCalculated": 13.0625,
+    "dishClass": "Main",
+    "mealTypes": "side dish, lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "broccoli flowerets",
+      "chicken",
+      "lemon juice",
+      "lemon peel",
+      "olive oil",
+      "pkt near east rice pilaf see note"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 650225,
+    "title": "Liz's Lomo Saltado",
+    "servings": 4,
+    "pricePerServing": 715.15,
+    "priceCalculated": 178.7875,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "beef tenderloin",
+      "cumin",
+      "complete seasoning",
+      "bell pepper",
+      "bell pepper",
+      "onion",
+      "garlic cloves",
+      "jalapeno pepper",
+      "red wine vinegar",
+      "soy sauce",
+      "plum tomatoes",
+      "fries",
+      "cilantro"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 641970,
+    "title": "Easy Fish Molee (South Indian-Style Fish Stew With Coconut)",
+    "servings": 2,
+    "pricePerServing": 1641.57,
+    "priceCalculated": 820.785,
+    "dishClass": "Main",
+    "mealTypes": "soup, lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "basa fillets",
+      "turmeric powder",
+      "chilli powder",
+      "lemon juice",
+      "salt",
+      "olive oil",
+      "curry leaves",
+      "mustard seeds",
+      "chillies",
+      "onion",
+      "garlic cloves",
+      "ginger piece",
+      "coconut milk",
+      "vinegar",
+      "coriander",
+      "tomato"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 645884,
+    "title": "Grilled Spareribs With Birmingham Bbq Sauce",
+    "servings": 6,
+    "pricePerServing": 311.41,
+    "priceCalculated": 51.90166666666667,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "pork spareribs",
+      "peanut oil",
+      "garlic cloves",
+      "onion",
+      "tomato catsup",
+      "cider vinegar",
+      "worcestershire sauce",
+      "lemon juice",
+      "mustard",
+      "ground ginger",
+      "salt",
+      "honey",
+      "brown sugar"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 649131,
+    "title": "Kung Po Chicken",
+    "servings": 4,
+    "pricePerServing": 217.17,
+    "priceCalculated": 54.2925,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "whl chicken breasts",
+      "whl chili pepper",
+      "corn oil",
+      "cornstarch",
+      "egg white",
+      "roasted peanuts",
+      "salt",
+      "scallions",
+      "sesame oil",
+      "soy sauce",
+      "water",
+      "distilled vinegar"
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "seasonText": "Summer"
+  },
+  {
+    "id": 715391,
+    "title": "Slow Cooker Chicken Taco Soup",
+    "servings": 6,
+    "pricePerServing": 141.43,
+    "priceCalculated": 23.57166666666667,
+    "dishClass": "Main",
+    "mealTypes": "soup, lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "black beans",
+      "tomatoes",
+      "canned tomatoes",
+      "chili beans",
+      "kernal corn",
+      "onion",
+      "chicken breasts"
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "seasonText": "Summer"
+  },
+  {
+    "id": 646673,
+    "title": "Herb Roasted Chicken",
+    "servings": 6,
+    "pricePerServing": 123.07,
+    "priceCalculated": 20.511666666666667,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "bay leaves",
+      "brown sugar",
+      "butter",
+      "basil",
+      "rosemary",
+      "thyme",
+      "fennel seeds",
+      "ice water",
+      "kosher salt",
+      "coarse pepper",
+      "water",
+      "chicken"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 636415,
+    "title": "Buffalo Chicken Pizza",
+    "servings": 6,
+    "pricePerServing": 391.51,
+    "priceCalculated": 65.25166666666667,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": false,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [],
+    "ingredients": [
+      "cheese",
+      "butter",
+      "chicken breast in water",
+      "frank's® sauce",
+      "bell pepper",
+      "pizza crust"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 638714,
+    "title": "Chinese Style Chicken and Noodle Stir Fry",
+    "servings": 6,
+    "pricePerServing": 213.5,
+    "priceCalculated": 35.583333333333336,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": false,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "dairy free"
+    ],
+    "ingredients": [
+      "chow mein noodles",
+      "chicken broth",
+      "sugar",
+      "oyster sauce",
+      "soy sauce",
+      "water",
+      "vegetable oil",
+      "garlic",
+      "ginger",
+      "chicken thighs",
+      "onion",
+      "bell pepper",
+      "carrots",
+      "sugar snap peas"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 654614,
+    "title": "Pappa Al Pomodoro",
+    "servings": 4,
+    "pricePerServing": 489.94,
+    "priceCalculated": 122.485,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": false,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "dairy free"
+    ],
+    "ingredients": [
+      "olive oil",
+      "garlic cloves",
+      "leeks",
+      "meat stock",
+      "puréed tomatoes",
+      "day-old country bread",
+      "basil leaves",
+      "sea salt and pepper",
+      "extra virgin olive oil to drizzle"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 663383,
+    "title": "Three Meat Stromboli",
+    "servings": 4,
+    "pricePerServing": 504.39,
+    "priceCalculated": 126.0975,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": false,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [],
+    "ingredients": [
+      "ham deli",
+      "parsley flakes",
+      "egg yolk",
+      "garlic powder",
+      "oregano",
+      "parmigiano-reggiano cheese",
+      "pepper",
+      "pepperoni",
+      "pizza dough",
+      "provolone cheese",
+      "salami",
+      "mozzarella"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 640663,
+    "title": "Creamy Mushroom Soup ~ with a “Kick”",
+    "servings": 8,
+    "pricePerServing": 158.37,
+    "priceCalculated": 19.79625,
+    "dishClass": "Main",
+    "mealTypes": "soup, lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "bacon",
+      "button mushrooms",
+      "cilantro",
+      "garlic",
+      "juice of lime",
+      "long pepper",
+      "milk",
+      "olive oil",
+      "potato buds",
+      "cheddar cheese",
+      "onion",
+      "vegeta bouillon - plus 6 of water"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 638073,
+    "title": "Chicken Enchilada Chowder",
+    "servings": 6,
+    "pricePerServing": 250.66,
+    "priceCalculated": 41.776666666666664,
+    "dishClass": "Main",
+    "mealTypes": "soup, lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "black beans",
+      "tomatoes",
+      "onion",
+      "orange bell pepper",
+      "enchilada sauce",
+      "cream of chicken soup",
+      "milk",
+      "cream corn",
+      "chiles",
+      "jalapeño",
+      "chicken breast",
+      "monterey jack cheese",
+      "cheddar cheese",
+      "cream",
+      "tortilla chips"
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "seasonText": "Summer"
+  },
+  {
+    "id": 645761,
+    "title": "Grilled Marinated Pork Chops",
+    "servings": 1,
+    "pricePerServing": 2738.97,
+    "priceCalculated": 2738.97,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "a jar apple jelly",
+      "apple juice",
+      "mustard",
+      "gingerroot",
+      "garlic cloves forced through a garlic press",
+      "golden",
+      "honey",
+      "lemon juice",
+      "nutmeg",
+      "pork chops",
+      "soy sauce",
+      "dsh worcestershire sauce"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 641071,
+    "title": "Curried Chicken Salad With Red Grapes and Walnuts",
+    "servings": 1,
+    "pricePerServing": 1326.72,
+    "priceCalculated": 1326.72,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "champagne vinegar",
+      "chicken breasts",
+      "curry",
+      "mayo",
+      "greens",
+      "olive oil",
+      "pepper",
+      "non fat yogurt",
+      "grapes",
+      "salt",
+      "walnuts"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 637924,
+    "title": "Chicken and Spring Mix Salad with Spicy Pineapple Dressing",
+    "servings": 2,
+    "pricePerServing": 339.45,
+    "priceCalculated": 169.725,
+    "dishClass": "Main",
+    "mealTypes": "side dish, lunch, salad, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "apple cider vinegar",
+      "garlic powder",
+      "olive oil",
+      "orange juice",
+      "paprika",
+      "pineapple",
+      "bell pepper",
+      "onion",
+      "salt",
+      "serrano pepper",
+      "chicken breast halves",
+      "spring mix of spinach"
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "seasonText": "Spring"
+  },
+  {
+    "id": 638488,
+    "title": "Chicken-Tortilla Chip Soup",
+    "servings": 8,
+    "pricePerServing": 109.32,
+    "priceCalculated": 13.665,
+    "dishClass": "Main",
+    "mealTypes": "soup, lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "water",
+      "chicken breasts",
+      "bouillon cubes",
+      "carrots",
+      "cilantro",
+      "lawry's seasoned salt"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 633841,
+    "title": "Baked Teriyaki Chicken Drumsticks",
+    "servings": 1,
+    "pricePerServing": 475.3,
+    "priceCalculated": 475.3,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "chicken drumsticks",
+      "garlic",
+      "ginger",
+      "honey",
+      "onion",
+      "salt",
+      "teriyaki sauce",
+      "vegetable oil"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 665778,
+    "title": "Zucchini Quiche Appetizers",
+    "servings": 1,
+    "pricePerServing": 502.31,
+    "priceCalculated": 502.31,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, morning meal, brunch, main dish, breakfast, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": false,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [],
+    "ingredients": [
+      "zucchini",
+      "bisquick",
+      "onion",
+      "parmesan cheese",
+      "parsley",
+      "salt",
+      "oregano",
+      "basil",
+      "bell pepper",
+      "garlic clove",
+      "canola oil",
+      "eggs"
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "seasonText": "Summer"
+  },
+  {
+    "id": 644571,
+    "title": "Ginger Chicken Stir-Fry",
+    "servings": 6,
+    "pricePerServing": 152.33,
+    "priceCalculated": 25.388333333333335,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "broccoli/cauliflower/carrots",
+      "chicken breasts",
+      "chicken broth",
+      "brown rice",
+      "cornstarch",
+      "ground ginger",
+      "onion",
+      "teriyaki sauce",
+      "vegetable oil",
+      "water"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 643061,
+    "title": "Flank Steak with Herbed Salsa",
+    "servings": 4,
+    "pricePerServing": 268.73,
+    "priceCalculated": 67.1825,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "cilantro",
+      "extra virgin olive oil",
+      "flank steak",
+      "garlic clove",
+      "jalapeno",
+      "juice of lemon",
+      "juice of lime",
+      "salt and pepper",
+      "scallions",
+      "tomatoes"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 635182,
+    "title": "Blackberry Balsamic Drumsticks",
+    "servings": 2,
+    "pricePerServing": 254.64,
+    "priceCalculated": 127.32,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "skin-on chicken drumsticks",
+      "blackberries",
+      "balsamic vinegar",
+      "demerara sugar",
+      "rosemary",
+      "butter",
+      "grain mustard",
+      "salt and pepper"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 631738,
+    "title": "Chicken with Grape Tomatoes and Mushrooms",
+    "servings": 4,
+    "pricePerServing": 299.67,
+    "priceCalculated": 74.9175,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "olive oil",
+      "chicken breast halves",
+      "mushrooms",
+      "garlic",
+      "grape tomatoes",
+      "green onions",
+      "flavor concentrated chicken broth",
+      "water"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 633932,
+    "title": "Balsamic Marinated Lamb Chops",
+    "servings": 2,
+    "pricePerServing": 626.13,
+    "priceCalculated": 313.065,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "lamb loin chops",
+      "garlic",
+      "balsamic vinegar",
+      "dijon mustard",
+      "each; oregano",
+      "all of these herbs",
+      "red wine vinegar",
+      "olive oil",
+      "brown sugar",
+      "kosher salt",
+      "pepper"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 660284,
+    "title": "Slow Cooker Chicken Mole",
+    "servings": 9,
+    "pricePerServing": 107.67,
+    "priceCalculated": 11.963333333333333,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "chicken breasts",
+      "canned tomatoes",
+      "chilies",
+      "chili powder",
+      "cumin",
+      "salt",
+      "sugar",
+      "onion",
+      "garlic",
+      "balsamic vinegar",
+      "chocolate"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 640959,
+    "title": "Crunchy Prawn Skewers With Lemony Avocado Dip",
+    "servings": 4,
+    "pricePerServing": 325.68,
+    "priceCalculated": 81.42,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": false,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [],
+    "ingredients": [
+      "flesh of avocado",
+      "crème fraiche",
+      "juice of lemon",
+      "breadcrumbs",
+      "prawns",
+      "olive oil",
+      "bamboo skewers"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 658579,
+    "title": "Roasted Endive Salad With Prosciutto, Figs and Pistachios",
+    "servings": 4,
+    "pricePerServing": 366.31,
+    "priceCalculated": 91.5775,
+    "dishClass": "Main",
+    "mealTypes": "side dish, lunch, salad, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "endive",
+      "olive oil",
+      "prosciutto",
+      "figs",
+      "pistachio nuts",
+      "honey"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 648474,
+    "title": "Japanese Fried Rice",
+    "servings": 2,
+    "pricePerServing": 219.84,
+    "priceCalculated": 109.92,
+    "dishClass": "Main",
+    "mealTypes": "side dish, lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "peas",
+      "japanese rice",
+      "carrot",
+      "garlic cloves",
+      "chicken breast",
+      "oil",
+      "tonkatsu sauce",
+      "soy sauce",
+      "pepper",
+      "kosher salt",
+      "eggs"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 634434,
+    "title": "Basil Marinated Grilled Chicken",
+    "servings": 8,
+    "pricePerServing": 259.49,
+    "priceCalculated": 32.43625,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "garlic",
+      "lightly basil leaves",
+      "extra virgin olive oil",
+      "salt",
+      "chicken breasts"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 633723,
+    "title": "Baked Polenta With Ricotta Cheese",
+    "servings": 4,
+    "pricePerServing": 437.87,
+    "priceCalculated": 109.4675,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "dashs dashes of cinnamon - not too much",
+      "sack of corn meal",
+      "garlic",
+      "ground pepper",
+      "lemon zest",
+      "bunchs of parsley - without stems",
+      "marinated peppers",
+      "provolone",
+      "ricotta cheese",
+      "romano cheese",
+      "salami",
+      "sea salt"
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "seasonText": "Summer"
+  },
+  {
+    "id": 716370,
+    "title": "Semi Ripe Plantain Pottage",
+    "servings": 2,
+    "pricePerServing": 409.55,
+    "priceCalculated": 204.775,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "cooking spoon of scent leaves",
+      "crayfish powder",
+      "seasoning cubes",
+      "onions",
+      "cooking spoon of palm oil",
+      "semi-ripe plantain fingers",
+      "vegetables",
+      "scotch bonnet peppers reduce amount if you do not like spicy",
+      "shrimp",
+      "tomato"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 637323,
+    "title": "Cauliflower, Leek and Cheddar Cheese Soup",
+    "servings": 4,
+    "pricePerServing": 242.17,
+    "priceCalculated": 60.5425,
+    "dishClass": "Main",
+    "mealTypes": "soup, lunch, main course, main dish, dinner",
+    "winePairing": "Light Red wine or White wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": false,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "cauliflower",
+      "leek",
+      "olive oil",
+      "thyme",
+      "garlic",
+      "worcestershire sauce",
+      "vegetable broth",
+      "evaporated milk",
+      "cheddar cheese",
+      "cheddar cheese"
+    ],
+    "seasons": [
+      "winter"
+    ],
+    "seasonText": "Winter"
+  },
+  {
+    "id": 639306,
+    "title": "Simple Poached Egg Dinner",
+    "servings": 2,
+    "pricePerServing": 347.53,
+    "priceCalculated": 173.765,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "full baby spinach",
+      "bacon",
+      "pasteurized eggs",
+      "olive oil",
+      "onion or",
+      "salt & pepper",
+      "vinegar"
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "seasonText": "Spring"
+  },
+  {
+    "id": 649487,
+    "title": "Lemon - Garlic Chicken",
+    "servings": 1,
+    "pricePerServing": 535.27,
+    "priceCalculated": 535.27,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "chicken breasts",
+      "mint",
+      "garlic",
+      "lemon juice",
+      "olive oil",
+      "salt and pepper"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 716377,
+    "title": "Vegetable Rice",
+    "servings": 2,
+    "pricePerServing": 140.42,
+    "priceCalculated": 70.21,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Light Red wine or White wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "butter",
+      "chili powder",
+      "garlic",
+      "seasoning cubes",
+      "lemon juice",
+      "rice",
+      "vegetables"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 634309,
+    "title": "Barbecued Lamb Chops",
+    "servings": 1,
+    "pricePerServing": 2023.04,
+    "priceCalculated": 2023.04,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "basil leaves",
+      "mint leaves",
+      "bell pepper",
+      "loin lamb chops",
+      "red wine",
+      "salt and pepper",
+      "onion",
+      "armenian"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 641908,
+    "title": "Easy Chicken Tikka Masala",
+    "servings": 4,
+    "pricePerServing": 219.1,
+    "priceCalculated": 54.775,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "chicken breasts",
+      "grape seed oil",
+      "onion",
+      "garlic",
+      "garam masala",
+      "cumin",
+      "coriander",
+      "turmeric",
+      "cardamon",
+      "cinnamon",
+      "ginger",
+      "cayenne",
+      "paprika",
+      "tomato paste",
+      "tomato",
+      "water",
+      "yogurt",
+      "coriander",
+      "salt"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 638772,
+    "title": "Chiquetaille: Cod Fish Salad",
+    "servings": 8,
+    "pricePerServing": 193.53,
+    "priceCalculated": 24.19125,
+    "dishClass": "Main",
+    "mealTypes": "side dish, lunch, salad, main course, main dish, dinner",
+    "winePairing": "White wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "cod",
+      "onion",
+      "shallots",
+      "garlic",
+      "carrots",
+      "young green beans",
+      "bell pepper",
+      "bell pepper",
+      "jalapeno",
+      "vinegar",
+      "olive oil",
+      "cloves",
+      "salt and pepper"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 645754,
+    "title": "Grilled Lemongrass Shrimp",
+    "servings": 1,
+    "pricePerServing": 1206.13,
+    "priceCalculated": 1206.13,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "bamboo skewers soaked in",
+      "ground chili paste",
+      "fish sauce",
+      "garlic",
+      "lemongrass",
+      "shrimp",
+      "pch salt",
+      "soy sauce",
+      "sugar",
+      "vegetable oil",
+      "water"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 662654,
+    "title": "Sweet-N-Smoky Salmon With Ginger Mahogany Rice",
+    "servings": 4,
+    "pricePerServing": 477.97,
+    "priceCalculated": 119.4925,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "brown sugar",
+      "chicken stock",
+      "ginger",
+      "liquid smoke",
+      "peanut oil",
+      "mahogany rice",
+      "salmon",
+      "salt and pepper",
+      "soy sauce"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 1063645,
+    "title": "The Secret to Easy Skillet Filet Mignon Steak Tacos",
+    "servings": 4,
+    "pricePerServing": 439.16,
+    "priceCalculated": 109.79,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "sou cream",
+      "olive oil extra virgin",
+      "filet mignon steaks",
+      "guacamole",
+      "cracked pepper",
+      "cheddar cheese",
+      "corn tortillas"
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "seasonText": "Summer"
+  },
+  {
+    "id": 637999,
+    "title": "Chicken Burritos",
+    "servings": 4,
+    "pricePerServing": 276.83,
+    "priceCalculated": 69.2075,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": false,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "dairy free"
+    ],
+    "ingredients": [
+      "avocadoes",
+      "chicken thigh meat",
+      "cilantro",
+      "flour tortillas",
+      "juice from lemon",
+      "onion",
+      "pepper",
+      "salt",
+      "tomatoes"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 664025,
+    "title": "Turkey Enchilada Bake",
+    "servings": 8,
+    "pricePerServing": 273.07,
+    "priceCalculated": 34.13375,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "avocados",
+      "black beans",
+      "chili powder",
+      "chipotles in adobo",
+      "cilantro",
+      "corn tortillas",
+      "canned tomatoes",
+      "garlic",
+      "chilies",
+      "tsp ground coriander",
+      "ground cumin",
+      "juice of lime",
+      "ground turkey",
+      "a onion",
+      "paprika",
+      "salsa",
+      "a mexican blend",
+      "cream",
+      "tomatillos",
+      "onion"
+    ],
+    "seasons": [
+      "summer"
+    ],
+    "seasonText": "Summer"
+  },
+  {
+    "id": 645670,
+    "title": "Grilled Chicken With Pineapple Salsa",
+    "servings": 1,
+    "pricePerServing": 1020.19,
+    "priceCalculated": 1020.19,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "rice",
+      "clv garlic",
+      "green onions",
+      "honey",
+      "jalapeno pepper",
+      "lime juice",
+      "mango",
+      "pineapple",
+      "bell pepper",
+      "chicken breasts"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 634972,
+    "title": "Bigoli with smoked salmon",
+    "servings": 3,
+    "pricePerServing": 627.47,
+    "priceCalculated": 209.15666666666667,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine",
+    "vegan": false,
+    "glutenFree": false,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [],
+    "ingredients": [
+      "pine nuts",
+      "bigoli pasta",
+      "olive oil",
+      "onion",
+      "garlic",
+      "wine",
+      "lemon juice",
+      "lemon zest",
+      "cream",
+      "chives",
+      "salmon",
+      "pepper"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 716004,
+    "title": "Quinoa and Chickpea Salad with Sun-Dried Tomatoes and Dried Cherries",
+    "servings": 6,
+    "pricePerServing": 186.91,
+    "priceCalculated": 31.151666666666667,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": true,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "vegetarian",
+      "dairy free"
+    ],
+    "ingredients": [
+      "cashews",
+      "dried cherries",
+      "dried chickpeas",
+      "dried thyme",
+      "ground cumin",
+      "honey",
+      "juice of orange",
+      "olive oil",
+      "quinoa",
+      "red wine vinegar",
+      "sea-salt",
+      "sun-dried tomatoes",
+      "turmeric"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 656791,
+    "title": "Pork Menudo",
+    "servings": 4,
+    "pricePerServing": 454.35,
+    "priceCalculated": 113.5875,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "size bell pepper",
+      "butter",
+      "carrots",
+      "chorizo",
+      "garbanzo beans",
+      "garlic",
+      "oil",
+      "size onions",
+      "peas",
+      "bell pepper",
+      "pork livers",
+      "pork cubes",
+      "potatoes",
+      "raisins",
+      "salt",
+      "size tomatoes"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 648895,
+    "title": "Kielbasa With Brussels Sprouts In Mustard Cream Sauce",
+    "servings": 4,
+    "pricePerServing": 275.75,
+    "priceCalculated": 68.9375,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Light Red wine or White wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "brussels sprouts",
+      "kidney beans",
+      "coarse mustard",
+      "extra virgin olive oil",
+      "garlic",
+      "heavy cream",
+      "kielbasa",
+      "shallot"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 648983,
+    "title": "Knishes - Potato Filling",
+    "servings": 1,
+    "pricePerServing": 265.41,
+    "priceCalculated": 265.41,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "chicken fat",
+      "egg",
+      "onions",
+      "pepper",
+      "potatoes",
+      "salt"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 632874,
+    "title": "Asian Salmon Burgers With Tangy Ginger Lime Sauce",
+    "servings": 4,
+    "pricePerServing": 370.04,
+    "priceCalculated": 92.51,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine",
+    "vegan": false,
+    "glutenFree": false,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [],
+    "ingredients": [
+      "burger buns",
+      "basil",
+      "garlic",
+      "green onion",
+      "juice of lime",
+      "mayonnaise",
+      "oyster sauce",
+      "powdered ginger",
+      "salmon",
+      "sesame oil",
+      "cream",
+      "soy sauce"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 635601,
+    "title": "Boiled Egg Curry",
+    "servings": 2,
+    "pricePerServing": 206.76,
+    "priceCalculated": 103.38,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": true,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "vegetarian",
+      "dairy free"
+    ],
+    "ingredients": [
+      "canola oil",
+      "chilli powder",
+      "hardboiled eggs",
+      "coriander to garnish",
+      "ginger",
+      "garam masala",
+      "garlic cloves",
+      "chillies",
+      "ground coriander",
+      "ground cumin",
+      "onions",
+      "salt",
+      "big tomatoes",
+      "turmeric powder"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 659419,
+    "title": "Sauteed Chicken With Mushrooms and Cream",
+    "servings": 4,
+    "pricePerServing": 159.62,
+    "priceCalculated": 39.905,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "White wine or light Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": false,
+    "isKosher": true,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free"
+    ],
+    "ingredients": [
+      "frying chicken parts",
+      "mushrooms",
+      "butter",
+      "olive oil",
+      "salt",
+      "ground pepper",
+      "wine",
+      "heavy cream"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 715481,
+    "title": "Easy Baked Pork Chop",
+    "servings": 3,
+    "pricePerServing": 318.84,
+    "priceCalculated": 106.27999999999999,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": "Red wine",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": false,
+    "isHalal": false,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "ketchup",
+      "lemon juice",
+      "cut pork chops",
+      "soy sauce",
+      "vegetable oil",
+      "worcestershire sauce"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
+  },
+  {
+    "id": 658661,
+    "title": "Roasted Sea Bream With Anchoiade",
+    "servings": 6,
+    "pricePerServing": 553.36,
+    "priceCalculated": 92.22666666666667,
+    "dishClass": "Main",
+    "mealTypes": "lunch, main course, main dish, dinner",
+    "winePairing": " No wine pairing",
+    "vegan": false,
+    "glutenFree": true,
+    "vegetarian": false,
+    "dairyFree": true,
+    "isKosher": true,
+    "isHalal": true,
+    "restrictions": [
+      "gluten free",
+      "dairy free"
+    ],
+    "ingredients": [
+      "sea bream",
+      "garlic cloves",
+      "olives",
+      "anchovies",
+      "olive oil",
+      "peppers",
+      "sundried tomatoes"
+    ],
+    "seasons": [
+      "any-season"
+    ],
+    "seasonText": "Any season"
   }
 ]
