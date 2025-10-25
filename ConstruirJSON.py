@@ -140,7 +140,7 @@ configuration = spoonacular.Configuration(
 configuration.api_key['apiKeyScheme'] = os.environ["API_KEY"]
 
 # Definir filtros de búsqueda
-diets = None  # Puedes cambiar a 'vegan', 'pescetarian', etc.
+diets = 'vegan'  # Puedes cambiar a 'vegan', 'pescetarian', etc.
 intolerances = None  # Pon None para no filtrar por intolerancias
 meal_type = 'main course'  # Pon uno de estos main course, appetizer o side dish, dessert (para que salga wine pairing)
 num_recipes = 500
