@@ -5,6 +5,8 @@
 
 (load "recipes_clips.clp")
 
+(load "input.clp")
+
 (load "match_ontology.clp")
 
 (reset)

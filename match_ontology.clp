@@ -7,26 +7,16 @@
 ;;; IMPORTANTE: Cargar en este orden:
 ;;; 1. (load "onto.clp")
 ;;; 2. (load "recipes_clips.clp")
-;;; 3. (load "match_ontology.clp")
-;;; 4. (reset)
-;;; 5. (run)
+;;; 3. (load "input.clp")
+;;; 4. (load "match_ontology.clp")
+;;; 5. (reset)
+;;; 6. (run)
 ;;;============================================================================
 
 (defmodule MATCH
     (import ONTOLOGY ?ALL)
-    (import DATA ?ALL))
-
-;;; Empuja automáticamente el foco al módulo MATCH cuando se ejecuta (run)
-(defrule MAIN::auto-focus-match
-    =>
-    (focus MATCH))
-
-;;; Template para restricciones del usuario
-(deftemplate MATCH::user-restrictions
-    (multislot requested (type SYMBOL) (default-dynamic (create$)))
-    (slot max-price (type NUMBER) (default 10000))
-    ;;;(slot min-price (type NUMBER) (default 0))
-    (slot min-servings (type NUMBER) (default 1)))
+    (import DATA ?ALL)
+    (import input ?ALL))
 
 ;;; Template para candidatos
 (deftemplate MATCH::candidate-set
@@ -34,24 +24,17 @@
     (multislot restrictions-met (type SYMBOL))
     (slot restriction-count (type NUMBER) (default 0)))
 
-;;; Control de fases
 (deftemplate MATCH::match-control
     (slot phase (type SYMBOL) (allowed-symbols init complete)))
-
-;;; DATOS DE EJEMPLO: Usuario vegano sin gluten
-(deffacts MATCH::user-example  
-    (user-restrictions 
-        (requested vegan gluten-free kosher dairy-free)
-        (max-price 500)
-        (min-servings 4)))
 
 ;;;------------------------------------------------------------------------
 ;;; Funciones auxiliares
 ;;;------------------------------------------------------------------------
 
-(deffunction MATCH::passes-thresholds (?recipe ?max-price ?min-servings)
-    "Verifica umbrales de precio y raciones"
+(deffunction MATCH::passes-thresholds (?recipe ?min-price ?max-price ?min-servings)
+    "Verifica umbrales de precio mínimo/máximo y raciones"
     (bind ?price (send ?recipe get-price))
+    (if (< ?price ?min-price) then (return FALSE))
     (if (> ?price ?max-price) then (return FALSE))
     (bind ?servings (send ?recipe get-servings))
     (if (< ?servings ?min-servings) then (return FALSE))
@@ -83,9 +66,9 @@
         (bind ?total (+ ?total (emit-subsets ?rest ?current ?recipe))))
     (return ?total))
 
-(deffunction MATCH::generate-candidates-for-recipe (?recipe ?requested ?max-price ?min-servings)
+(deffunction MATCH::generate-candidates-for-recipe (?recipe ?requested ?min-price ?max-price ?min-servings)
     "Genera candidatos para una receta específica y devuelve cuántos se crearon"
-    (if (not (passes-thresholds ?recipe ?max-price ?min-servings)) then
+    (if (not (passes-thresholds ?recipe ?min-price ?max-price ?min-servings)) then
         (return 0))
 
     (bind ?requested-count (length$ ?requested))
@@ -120,7 +103,7 @@
 
 (defrule MATCH::build-candidates
     ?ctrl <- (match-control (phase init))
-    ?prefs <- (user-restrictions (max-price ?max-p) (min-servings ?min-s))
+    ?prefs <- (user-restrictions (min-price ?min-p) (max-price ?max-p) (min-servings ?min-s))
     =>
     (do-for-all-facts ((?c candidate-set)) TRUE (retract ?c))
     (bind ?requested (fact-slot-value ?prefs requested))
@@ -131,6 +114,7 @@
                               (generate-candidates-for-recipe
                                 ?recipe
                                 ?requested
+                                                                ?min-p
                                 ?max-p
                                 ?min-s))))
     (retract ?ctrl)
