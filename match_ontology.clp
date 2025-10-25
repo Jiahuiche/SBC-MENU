@@ -41,7 +41,7 @@
 ;;; DATOS DE EJEMPLO: Usuario vegano sin gluten
 (deffacts MATCH::user-example  
     (user-restrictions 
-        (requested vegan gluten-free)
+        (requested vegan gluten-free kosher dairy-free)
         (max-price 500)
         (min-servings 4)))
 
@@ -133,7 +133,9 @@
                                 ?requested
                                 ?max-p
                                 ?min-s))))
-)
+    (retract ?ctrl)
+    (assert (match-control (phase complete)))
+    (printout t crlf "📋 Evaluadas combinaciones de restricciones: " ?combo-count crlf))
 
 
 ;;;----------------------------------------------------------------------------
