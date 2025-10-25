@@ -1,6 +1,11 @@
 (defmodule REFINAMIENTO (import ONTOLOGY ?ALL) 
-                        ;(import MAIN ?ALL ) ;hacer module match 
-                         (import DATA ?ALL) (export ?ALL))
+                        (import MATCH ?ALL ) ;hacer module match 
+                        (import DATA ?ALL)
+                        (import input ?ALL) (export ?ALL))
+
+(defrule MAIN::auto-focus-refinamiento
+    =>
+    (focus REFINAMIENTO))
 
 (deftemplate REFINAMIENTO::menu
     (slot categoria (type SYMBOL)) ;;; barato, medio, caro
@@ -9,21 +14,21 @@
    (slot postre (type INSTANCE))
    (slot precio-total (type FLOAT)))
 
-;;; Template para restricciones del usuario
-(deftemplate REFINAMIENTO::user-restrictions
-    (slot is-vegan (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-    (slot is-vegetarian (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-    (slot is-gluten-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-    (slot is-dairy-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-    (slot max-price (type NUMBER) (default 10000))
-    (slot min-price (type NUMBER) (default 0))
-    (slot min-servings (type NUMBER) (default 1)))
+;; Template para restricciones del usuario
+; (deftemplate REFINAMIENTO::user-restrictions
+;     (slot is-vegan (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
+;     (slot is-vegetarian (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
+;     (slot is-gluten-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
+;     (slot is-dairy-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
+;     (slot max-price (type NUMBER) (default 10000))
+;     (slot min-price (type NUMBER) (default 0))
+;     (slot min-servings (type NUMBER) (default 1)))
 
-;;; Template para candidatos
-(deftemplate REFINAMIENTO::candidate-set
-    (slot recipe-instance (type INSTANCE))
-    (multislot restrictions-met (type SYMBOL))
-    (slot restriction-count (type NUMBER) (default 0)))
+; ;; Template para candidatos
+; (deftemplate REFINAMIENTO::candidate-set
+;     (slot recipe-instance (type INSTANCE))
+;     (multislot restrictions-met (type SYMBOL))
+;     (slot restriction-count (type NUMBER) (default 0)))
 
 (deftemplate limites-calculados
     (slot min-price (type FLOAT))
@@ -31,67 +36,67 @@
     (slot limite-medio (type FLOAT))
     (slot max-price (type FLOAT)))
 
-(deftemplate match-control
-    (slot phase (type SYMBOL)))
+; (deftemplate match-control
+;     (slot phase (type SYMBOL)))
 
 
-(deffacts user-example (user-restrictions (is-vegan FALSE) (is-vegetarian TRUE) (is-gluten-free FALSE) (is-dairy-free FALSE) (max-price 100) (min-price 10) (min-servings 1)))
+; (deffacts user-example (user-restrictions (is-vegan FALSE) (is-vegetarian TRUE) (is-gluten-free FALSE) (is-dairy-free FALSE) (max-price 300) (min-price 10) (min-servings 1)))
 
-(deffacts candidate-set-test-facts
-  (candidate-set
-    (recipe-instance [Recipe_644094])
-    (restrictions-met vegetarian)
-    (restriction-count 1))
+; (deffacts candidate-set-test-facts
+;   (candidate-set
+;     (recipe-instance [Recipe_644094])
+;     (restrictions-met vegetarian)
+;     (restriction-count 1))
 
-   (candidate-set
-    (recipe-instance [Recipe_647875])
-    (restrictions-met vegetarian)
-    (restriction-count 1))
+;    (candidate-set
+;     (recipe-instance [Recipe_647875])
+;     (restrictions-met vegetarian)
+;     (restriction-count 1))
 
-    (candidate-set
-    (recipe-instance [Recipe_715595])
-    (restrictions-met vegetarian)
-    (restriction-count 1))
+;     (candidate-set
+;     (recipe-instance [Recipe_715595])
+;     (restrictions-met vegetarian)
+;     (restriction-count 1))
 
-    (candidate-set
-    (recipe-instance [Recipe_649560])
-    (restrictions-met vegetarian)
-    (restriction-count 1))
+;     (candidate-set
+;     (recipe-instance [Recipe_649560])
+;     (restrictions-met vegetarian)
+;     (restriction-count 1))
 
-    (candidate-set
-    (recipe-instance [Recipe_716431])
-    (restrictions-met vegetarian)
-    (restriction-count 1))
+;     (candidate-set
+;     (recipe-instance [Recipe_716431])
+;     (restrictions-met vegetarian)
+;     (restriction-count 1))
 
-    (candidate-set
-    (recipe-instance [Recipe_661121])
-    (restrictions-met vegetarian)
-    (restriction-count 1))
-    (candidate-set
-    (recipe-instance [Recipe_716433])
-    (restrictions-met vegetarian)
-    (restriction-count 1))
-    (candidate-set
-    (recipe-instance [Recipe_665203])
-    (restrictions-met vegetarian)
-    (restriction-count 1))
-    (candidate-set
-    (recipe-instance [Recipe_991625])
-    (restrictions-met vegetarian)
-    (restriction-count 1))
-    (candidate-set
-    (recipe-instance [Recipe_1098351])
-    (restrictions-met vegetarian)
-    (restriction-count 1))
-    (candidate-set
-    (recipe-instance [Recipe_632527])
-    (restrictions-met vegetarian)
-    (restriction-count 1))
-    (candidate-set
-    (recipe-instance [Recipe_641445])
-    (restrictions-met vegetarian)
-    (restriction-count 1))
-)
+;     (candidate-set
+;     (recipe-instance [Recipe_661121])
+;     (restrictions-met vegetarian)
+;     (restriction-count 1))
+;     (candidate-set
+;     (recipe-instance [Recipe_716433])
+;     (restrictions-met vegetarian)
+;     (restriction-count 1))
+;     (candidate-set
+;     (recipe-instance [Recipe_665203])
+;     (restrictions-met vegetarian)
+;     (restriction-count 1))
+;     (candidate-set
+;     (recipe-instance [Recipe_991625])
+;     (restrictions-met vegetarian)
+;     (restriction-count 1))
+;     (candidate-set
+;     (recipe-instance [Recipe_1098351])
+;     (restrictions-met vegetarian)
+;     (restriction-count 1))
+;     (candidate-set
+;     (recipe-instance [Recipe_632527])
+;     (restrictions-met vegetarian)
+;     (restriction-count 1))
+;     (candidate-set
+;     (recipe-instance [Recipe_641445])
+;     (restrictions-met vegetarian)
+;     (restriction-count 1))
+; )
 
 (deffacts sistema-inicio
     (match-control (phase complete))
@@ -268,9 +273,9 @@
 
 (defrule REFINAMIENTO::iniciar-creacion-menus
     (declare (salience 100))
-    ?ctrl <- (match-control (phase complete))
+    ; ?ctrl <- (match-control (phase match-complete))
     =>
-    (retract ?ctrl)
+    ; (retract ?ctrl)
     (printout t "INICIANDO CREACIÓN DE MENÚS" crlf)
     
     
