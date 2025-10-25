@@ -74,8 +74,8 @@
                then (assert (restriction (name ?symbol))))))
 
    ;; === Solicitar presupuestos ===
-   (bind ?min-price (prompt-number "Minimum price per dish (>= 0): " 0))
-   (bind ?max-price (prompt-number "Maximum price per dish (>= minimum): " ?min-price))
+   (bind ?min-price (prompt-number "Minimum price per menu (>= 0): " 0))
+   (bind ?max-price (prompt-number "Maximum price per menu (>= minimum): " ?min-price))
 
    ;; === Solicitar porciones mínimas ===
    (bind ?min-servings (round (prompt-number "Minimum servings required (>= 1): " 1)))
