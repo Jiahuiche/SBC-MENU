@@ -179,6 +179,88 @@
     (return FALSE)
 )
 
+;;; Sugerir bebidas basado en los platos del menú
+(deffunction REFINAMIENTO::sugerir-bebidas (?m)
+    (bind ?entrante (fact-slot-value ?m entrante))
+    (bind ?principal (fact-slot-value ?m principal))
+    (bind ?postre (fact-slot-value ?m postre))
+    
+    (bind ?bebidas (create$))
+    
+    ;;; Bebidas basadas en el plato principal
+    (bind ?tipos-principal (send ?principal get-meal_types))
+    (bind ?ingredientes-principal (send ?principal get-ingredients))
+    
+    ;;; Agua siempre incluida
+    (bind ?bebidas (create$ ?bebidas "agua"))
+    
+    ;;; Sugerencias basadas en el tipo de plato principal
+    (if (or (member$ fish ?ingredientes-principal)
+            (member$ salmon ?ingredientes-principal)
+            (member$ tuna ?ingredientes-principal)
+            (member$ cod ?ingredientes-principal)
+            (member$ shrimp ?ingredientes-principal)
+            (member$ lobster ?ingredientes-principal)
+            (member$ crab ?ingredientes-principal)
+            (member$ octopus ?ingredientes-principal)
+            (member$ scallop ?ingredientes-principal)
+            (member$ seafood ?ingredientes-principal)) then
+        (bind ?bebidas (create$ ?bebidas "vino-blanco" "cerveza-lager"))
+    )
+    
+    (if (or (member$ beef ?ingredientes-principal)
+            (member$ steak ?ingredientes-principal)
+            (member$ lamb ?ingredientes-principal)
+            (member$ pork ?ingredientes-principal)) then
+        (bind ?bebidas (create$ ?bebidas "vino-tinto" "cerveza-ambar"))
+    )
+    
+    (if (or (member$ chicken ?ingredientes-principal)
+            (member$ turkey ?ingredientes-principal)
+            (member$ duck ?ingredientes-principal)
+            (member$ poultry ?ingredientes-principal)) then
+        (bind ?bebidas (create$ ?bebidas "vino-rosado" "cerveza-rubia"))
+    )
+
+    (if (or (member$ pasta ?ingredientes-principal)
+            (member$ spaghetti ?ingredientes-principal)
+            (member$ noodle ?ingredientes-principal)
+            (member$ macaroni ?ingredientes-principal)
+            (member$ fettuccine ?ingredientes-principal)
+            (member$ ravioli ?ingredientes-principal)) then
+        (bind ?bebidas (create$ ?bebidas "vino-tinto" "vino-blanco"))
+    )
+
+    (if (or (member$ tofu ?ingredientes-principal)
+            (member$ bean ?ingredientes-principal)
+            (member$ lentil ?ingredientes-principal)
+            (member$ vegetable ?ingredientes-principal)
+            (member$ chickpea ?ingredientes-principal)) then
+        (bind ?bebidas (create$ ?bebidas "vino-rosado" "vino-blanco"))
+    )
+    
+    (if (member$ spicy ?ingredientes-principal) then
+        (bind ?bebidas (create$ ?bebidas "cerveza" "limonada"))
+    )
+    
+    ;;; Refrescos para postres dulces
+    (bind ?tipos-postre (send ?postre get-meal_types))
+    (if (member$ dessert ?tipos-postre) then
+        (bind ?bebidas (create$ ?bebidas "café" "té"))
+    )
+    
+    ;;; Bebidas universales
+    (bind ?bebidas (create$ ?bebidas "refrescos"))
+    
+    ;;; Eliminar duplicados
+    (bind ?bebidas-unicas (create$))
+    (foreach ?b ?bebidas
+        (if (not (member$ ?b ?bebidas-unicas)) then
+            (bind ?bebidas-unicas (create$ ?bebidas-unicas ?b))))
+    
+    (return ?bebidas-unicas)
+)
+
 ;;; Mostrar detalles menu
 
 
@@ -188,8 +270,159 @@
              " (" (send (fact-slot-value ?m entrante) get-price) "€)" crlf)
     (printout t "   🍖 Principal: " (send (fact-slot-value ?m principal) get-title) 
              " (" (send (fact-slot-value ?m principal) get-price) "€)" crlf)
+    
+    ;;; MOSTRAR VINO RECOMENDADO PARA EL PLATO PRINCIPAL
+    (bind ?vino-principal (send (fact-slot-value ?m principal) get-wine_pairing))
+    (if (and (neq ?vino-principal "") (neq ?vino-principal "No wine pairing")) then
+        (printout t "   🍷 Vino recomendado: " ?vino-principal crlf)
+    else
+        (printout t "   🍷 Vino recomendado: No se especifica" crlf)
+    )
+    
     (printout t "   🍰 Postre: " (send (fact-slot-value ?m postre) get-title) 
-             " (" (send (fact-slot-value ?m postre) get-price) "€)" crlf crlf)
+             " (" (send (fact-slot-value ?m postre) get-price) "€)" crlf)
+    
+    ;;; SUGERIR BEBIDAS/REFRESCOS BASADO EN LOS PLATOS
+    (printout t "   🥤 Bebidas sugeridas: ")
+    (bind ?bebidas-sugeridas (sugerir-bebidas ?m))
+    (printout t (implode$ ?bebidas-sugeridas) crlf crlf)
+)
+
+;;; Versión relajada de búsqueda (no verifica platos usados)
+
+(deffunction REFINAMIENTO::buscar-combinacion-valida-relajada (?precio-min ?precio-max)
+    ;;; Versión relajada que no verifica platos usados
+    (bind ?entrantes (create$))
+    (bind ?principales (create$))
+    (bind ?postres (create$))
+    
+    ;;; Separar candidatos por tipo de plato
+    (do-for-all-facts ((?c candidate-set)) TRUE
+        (bind ?inst (fact-slot-value ?c recipe-instance))
+        (bind ?meal-types (send ?inst get-meal_types))
+        
+        (if (and (not (member$ main-course ?meal-types))
+                 (not (member$ dessert ?meal-types))
+                 (or (member$ starter ?meal-types)
+                     (member$ appetizer ?meal-types)
+                     (member$ side-dish ?meal-types))) then
+            (bind ?entrantes (create$ ?entrantes ?inst)))
+        
+        (if (and (not (member$ starter ?meal-types))
+                 (not (member$ dessert ?meal-types))
+                 (not (member$ appetizer ?meal-types))
+                 (not (member$ side-dish ?meal-types))
+                 (or (member$ main-course ?meal-types)
+                     (member$ main-dish ?meal-types))) then
+            (bind ?principales (create$ ?principales ?inst)))
+            
+        (if (and (not (member$ starter ?meal-types))
+                 (not (member$ main-course ?meal-types))
+                 (not (member$ appetizer ?meal-types))
+                 (not (member$ side-dish ?meal-types))
+                 (not (member$ brunch ?meal-types))
+                 (member$ dessert ?meal-types)) then
+            (bind ?postres (create$ ?postres ?inst))))
+    
+    ;;; DEBUG: Mostrar cantidades
+    (printout t "        [DEBUG] Entrantes: " (length$ ?entrantes) 
+             " | Principales: " (length$ ?principales) 
+             " | Postres: " (length$ ?postres) crlf)
+    
+    ;;; Buscar combinación (solo verifica que no sean la misma receta)
+    (foreach ?e ?entrantes
+        (foreach ?p ?principales
+            (foreach ?po ?postres
+                ;;; SOLO verificar que no sean la misma receta (no verificar uso previo)
+                (if (and (neq ?e ?p) (neq ?e ?po) (neq ?p ?po)) then
+                    (bind ?precio-total (+ (send ?e get-price) 
+                                         (send ?p get-price) 
+                                         (send ?po get-price)))
+                    (if (and (>= ?precio-total ?precio-min) 
+                             (<= ?precio-total ?precio-max)) then
+                        (printout t "        [DEBUG] Combinación encontrada: " ?precio-total "€" crlf)
+                        (return (create$ ?e ?p ?po ?precio-total)))))))
+    
+    (printout t "        [DEBUG] No se encontró combinación en rango " ?precio-min "-" ?precio-max "€" crlf)
+    (return FALSE)
+)
+
+;;; Reintentar creando menus permitiendo platos repetidos
+
+;;; Reintentar creando menus permitiendo platos repetidos
+(deffunction REFINAMIENTO::reintentar-con-platos-repetidos (?limites)
+    (bind ?min (fact-slot-value ?limites min-price))
+    (bind ?limBarato (fact-slot-value ?limites limite-barato))
+    (bind ?limMedio (fact-slot-value ?limites limite-medio))
+    (bind ?max (fact-slot-value ?limites max-price))
+    
+    (printout t "      Permitiendo platos repetidos entre menús..." crlf)
+    
+    ;;; Limpiar menús existentes
+    (do-for-all-facts ((?m menu)) TRUE (retract ?m))
+    
+    ;;; DEBUG: Mostrar rangos de precio
+    (printout t "      Rangos: Barato(" ?min "-" ?limBarato 
+             ") Medio(" ?limBarato "-" ?limMedio 
+             ") Caro(" ?limMedio "-" ?max ")" crlf)
+    
+    ;;; Crear menús barato (sin verificar platos usados)
+    (bind ?menu-barato (buscar-combinacion-valida-relajada ?min ?limBarato))
+    (if (neq ?menu-barato FALSE) then
+        (assert (menu (categoria barato)
+                     (entrante (nth$ 1 ?menu-barato))
+                     (principal (nth$ 2 ?menu-barato))
+                     (postre (nth$ 3 ?menu-barato))
+                     (precio-total (nth$ 4 ?menu-barato))))
+        (printout t "      ✅ Menú barato creado: " (nth$ 4 ?menu-barato) "€" crlf)
+    else
+        (printout t "      ❌ No se pudo crear menú barato" crlf)
+    )
+    
+    ;;; Crear menú medio (sin verificar platos usados)
+    (bind ?menu-medio (buscar-combinacion-valida-relajada ?limBarato ?limMedio))
+    (if (neq ?menu-medio FALSE) then
+        (assert (menu (categoria medio)
+                     (entrante (nth$ 1 ?menu-medio))
+                     (principal (nth$ 2 ?menu-medio))
+                     (postre (nth$ 3 ?menu-medio))
+                     (precio-total (nth$ 4 ?menu-medio))))
+        (printout t "      ✅ Menú medio creado: " (nth$ 4 ?menu-medio) "€" crlf)
+    else
+        (printout t "      ❌ No se pudo crear menú medio" crlf)
+    )
+    
+    ;;; Crear menú caro (sin verificar platos usados)
+    (bind ?menu-caro (buscar-combinacion-valida-relajada ?limMedio ?max))
+    (if (neq ?menu-caro FALSE) then
+        (assert (menu (categoria caro)
+                     (entrante (nth$ 1 ?menu-caro))
+                     (principal (nth$ 2 ?menu-caro))
+                     (postre (nth$ 3 ?menu-caro))
+                     (precio-total (nth$ 4 ?menu-caro))))
+        (printout t "      ✅ Menú caro creado: " (nth$ 4 ?menu-caro) "€" crlf)
+    else
+        (printout t "      ❌ No se pudo crear menú caro" crlf)
+    )
+    
+    ;;; DEBUG: Contar menús creados
+    (bind ?count-barato (length$ (find-all-facts ((?m menu)) (eq ?m:categoria barato))))
+    (bind ?count-medio (length$ (find-all-facts ((?m menu)) (eq ?m:categoria medio))))
+    (bind ?count-caro (length$ (find-all-facts ((?m menu)) (eq ?m:categoria caro))))
+    
+    (printout t "      Menús creados: Barato(" ?count-barato 
+             ") Medio(" ?count-medio ") Caro(" ?count-caro ")" crlf)
+    
+    ; Verificar si se crearon todos los menús
+    (if (and (> ?count-barato 0) (> ?count-medio 0) (> ?count-caro 0)) then
+        (printout t "      ✅ TODOS los menús creados exitosamente" crlf)
+        (return TRUE)
+    else
+        ;Limpiar si no se completó
+        (do-for-all-facts ((?m menu)) TRUE (retract ?m))
+        (printout t "      ❌ No se pudieron crear todos los menús" crlf)
+        (return FALSE)
+    )
 )
 
 
@@ -305,9 +538,16 @@
     =>
     (printout t crlf "Algunos menús no se pudieron crear, intentando ajustar..." crlf)
     
-    ;;; Aquí puedes implementar una estrategia alternativa
-    ;;; Por ejemplo, ampliar los rangos de precio o permitir reutilizar platos
-    (printout t "  Estrategia de reintento no implementada" crlf)
+    ;;;; Permitir repetir platos
+    (printout t "  Estrategia 1: Permitir platos repetidos..." crlf)
+    (bind ?exito-repetidos (reintentar-con-platos-repetidos ?limites))
+    
+    (if (eq ?exito-repetidos TRUE) then
+        (printout t "  ✅ Éxito con platos repetidos" crlf)
+    else
+        (printout t "  ❌ Falló con platos repetidos" crlf)
+        ;;; Aquí puedes añadir más estrategias...
+    )
 )
 
 
