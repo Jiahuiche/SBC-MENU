@@ -16,79 +16,97 @@
     (import ONTOLOGY ?ALL)
     (import DATA ?ALL))
 
-(in-module MATCH)
+;;; Empuja automáticamente el foco al módulo MATCH cuando se ejecuta (run)
+(defrule MAIN::auto-focus-match
+    =>
+    (focus MATCH))
 
 ;;; Template para restricciones del usuario
-(deftemplate user-restrictions
+(deftemplate MATCH::user-restrictions
     (multislot requested (type SYMBOL) (default-dynamic (create$)))
     (slot max-price (type NUMBER) (default 10000))
     ;;;(slot min-price (type NUMBER) (default 0))
     (slot min-servings (type NUMBER) (default 1)))
 
 ;;; Template para candidatos
-(deftemplate candidate-set
+(deftemplate MATCH::candidate-set
     (slot recipe-instance (type INSTANCE))
     (multislot restrictions-met (type SYMBOL))
     (slot restriction-count (type NUMBER) (default 0)))
 
 ;;; Control de fases
-(deftemplate match-control
+(deftemplate MATCH::match-control
     (slot phase (type SYMBOL) (allowed-symbols init complete)))
 
 ;;; DATOS DE EJEMPLO: Usuario vegano sin gluten
-(deffacts user-example  
+(deffacts MATCH::user-example  
     (user-restrictions 
         (requested vegan gluten-free)
         (max-price 500)
         (min-servings 4)))
 
 ;;;------------------------------------------------------------------------
-;;; Funciones auxiliares (adaptadas de combinatoria.clp)
+;;; Funciones auxiliares
 ;;;------------------------------------------------------------------------
 
-(deffunction combinaciones (?lista)
-    "Combinaciones de tamaño >= 2 a partir de una lista"
-    (if (<= (length$ ?lista) 1) then
-        (return (create$)))
-    (bind ?primero (nth$ 1 ?lista))
-    (bind ?resto (rest$ ?lista))
-    (bind ?subcombs (combinaciones ?resto))
-    (bind ?resultado ?subcombs)
-    (foreach ?c ?subcombs
-        (bind ?resultado (create$ ?resultado (create$ ?primero ?c))))
-    (loop-for-count (?i 1 (length$ ?resto))
-        (bind ?elem (nth$ ?i ?resto))
-        (bind ?resultado (create$ ?resultado (create$ ?primero ?elem))))
-    (return ?resultado))
-
-(deffunction all-restriction-combinations (?reqs)
-    "Devuelve todas las combinaciones desde 1 hasta N restricciones"
-    (bind ?total (length$ ?reqs))
-    (if (= ?total 0) then
-        (return (create$ (create$))))
-    (bind ?resultado (create$))
-    (loop-for-count (?i 1 ?total)
-        (bind ?resultado (create$ ?resultado (create$ (nth$ ?i ?reqs)))))
-    (bind ?resultado (create$ ?resultado (combinaciones ?reqs)))
-    (return ?resultado))
-
-(deffunction recipe-satisfies (?recipe ?combo ?max-price ?min-servings)
-    "Comprueba si una receta cumple la combinación y los umbrales"
+(deffunction MATCH::passes-thresholds (?recipe ?max-price ?min-servings)
+    "Verifica umbrales de precio y raciones"
     (bind ?price (send ?recipe get-price))
     (if (> ?price ?max-price) then (return FALSE))
     (bind ?servings (send ?recipe get-servings))
     (if (< ?servings ?min-servings) then (return FALSE))
-    (bind ?restrictions (send ?recipe get-restrictions))
-    (loop-for-count (?i 1 (length$ ?combo))
-        (bind ?needed (nth$ ?i ?combo))
-        (if (not (member$ ?needed ?restrictions)) then (return FALSE)))
     (return TRUE))
+
+(deffunction MATCH::matched-restrictions (?requested ?recipe)
+    "Devuelve las restricciones solicitadas que la receta cumple"
+    (bind ?result (create$))
+    (bind ?available (send ?recipe get-restrictions))
+    (loop-for-count (?i 1 (length$ ?requested))
+        (bind ?item (nth$ ?i ?requested))
+        (if (member$ ?item ?available) then
+            (bind ?result (create$ ?result ?item))))
+    (return ?result))
+
+(deffunction MATCH::emit-subsets (?remaining ?current ?recipe)
+    "Genera todas las combinaciones no vacías de ?remaining, acumulando en ?current"
+    (bind ?total 0)
+    (if (> (length$ ?remaining) 0) then
+        (bind ?first (nth$ 1 ?remaining))
+        (bind ?rest (rest$ ?remaining))
+        (bind ?with-first (create$ ?current ?first))
+        (assert (candidate-set
+                    (recipe-instance ?recipe)
+                    (restrictions-met ?with-first)
+                    (restriction-count (length$ ?with-first))))
+        (bind ?total (+ ?total 1))
+        (bind ?total (+ ?total (emit-subsets ?rest ?with-first ?recipe)))
+        (bind ?total (+ ?total (emit-subsets ?rest ?current ?recipe))))
+    (return ?total))
+
+(deffunction MATCH::generate-candidates-for-recipe (?recipe ?requested ?max-price ?min-servings)
+    "Genera candidatos para una receta específica y devuelve cuántos se crearon"
+    (if (not (passes-thresholds ?recipe ?max-price ?min-servings)) then
+        (return 0))
+
+    (bind ?requested-count (length$ ?requested))
+    (if (= ?requested-count 0) then
+        (assert (candidate-set
+                    (recipe-instance ?recipe)
+                    (restrictions-met (create$))
+                    (restriction-count 0)))
+        (return 1))
+
+    (bind ?matched (matched-restrictions ?requested ?recipe))
+    (if (> (length$ ?matched) 0) then
+        (return (emit-subsets ?matched (create$) ?recipe))
+     else
+        (return 0)))
 
 ;;;----------------------------------------------------------------------------
 ;;; INICIALIZACIÓN
 ;;;----------------------------------------------------------------------------
 
-(defrule init-system
+(defrule MATCH::init-system
     (declare (salience 100))
     =>
     (printout t "========================================" crlf)
@@ -100,31 +118,29 @@
 ;;; GENERACIÓN DINÁMICA DE CANDIDATOS
 ;;;----------------------------------------------------------------------------
 
-(defrule build-candidates
+(defrule MATCH::build-candidates
     ?ctrl <- (match-control (phase init))
     ?prefs <- (user-restrictions (max-price ?max-p) (min-servings ?min-s))
     =>
     (do-for-all-facts ((?c candidate-set)) TRUE (retract ?c))
     (bind ?requested (fact-slot-value ?prefs requested))
-    (bind ?combos (all-restriction-combinations ?requested))
+    (bind ?recipes (find-all-instances ((?recipe ONTOLOGY::Recipe)) TRUE))
     (bind ?combo-count 0)
-    (foreach ?combo ?combos
-        (bind ?combo-count (+ ?combo-count 1))
-        (do-for-all-instances ((?recipe ONTOLOGY::Recipe)) TRUE
-            (if (recipe-satisfies ?recipe ?combo ?max-p ?min-s) then
-                (assert (candidate-set
-                            (recipe-instance ?recipe)
-                            (restrictions-met (expand$ ?combo))
-                            (restriction-count (length$ ?combo)))))))
-    (retract ?ctrl)
-    (assert (match-control (phase complete)))
-    (printout t crlf "📋 Evaluadas combinaciones de restricciones: " ?combo-count crlf))
+    (foreach ?recipe ?recipes
+        (bind ?combo-count (+ ?combo-count
+                              (generate-candidates-for-recipe
+                                ?recipe
+                                ?requested
+                                ?max-p
+                                ?min-s))))
+)
+
 
 ;;;----------------------------------------------------------------------------
 ;;; REFINAMIENTO Y ESTADÍSTICAS
 ;;;----------------------------------------------------------------------------
 
-(defrule finish-matching
+(defrule MATCH::finish-matching
     ?ctrl <- (match-control (phase complete))
     =>
     (retract ?ctrl)
@@ -132,7 +148,7 @@
     (printout t "📊 ESTADÍSTICAS DE CANDIDATOS" crlf)
     (printout t "========================================" crlf))
 
-(defrule show-statistics
+(defrule MATCH::show-statistics
     (declare (salience -10))
     (not (match-control))
     =>
@@ -157,7 +173,7 @@
     (printout t "Recetas con 4 restricciones: " ?count-4 crlf)
     (printout t "TOTAL de candidatos: " (+ ?count-0 ?count-1 ?count-2 ?count-3 ?count-4) crlf))
 
-(defrule show-best-candidates
+(defrule MATCH::show-best-candidates
     (declare (salience -20))
     (not (match-control))
     =>
@@ -181,7 +197,7 @@
                         (if (= ?max-count 0) then "sin requisitos" else (implode$ ?c:restrictions-met))
                         crlf crlf))))
 
-(defrule finish-system
+(defrule MATCH::finish-system
     (declare (salience -30))
     (not (match-control))
     =>
