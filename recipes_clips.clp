@@ -1,3 +1,7 @@
+(defmodule DATA
+ (import ONTOLOGY ?ALL)
+ (export ?ALL))
+
 (definstances DATA::recipes-seed
 
   ([Recipe_644094] of ONTOLOGY::Recipe
