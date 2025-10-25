@@ -103,7 +103,7 @@ def extract_meal_types(recipe):
             if sanitized:
                 meal_types_symbols.append(sanitized)
     
-    return meal_types_symbols if meal_types_symbols else ['main-course']
+    return meal_types_symbols if meal_types_symbols else ['unknown-meal-type']
 
 
 def extract_seasons(recipe):

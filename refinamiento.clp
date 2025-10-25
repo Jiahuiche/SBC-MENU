@@ -35,7 +35,7 @@
     (slot phase (type SYMBOL)))
 
 
-(deffacts user-example (user-restrictions (is-vegan FALSE) (is-vegetarian TRUE) (is-gluten-free FALSE) (is-dairy-free FALSE) (max-price 200) (min-price 10) (min-servings 1)))
+(deffacts user-example (user-restrictions (is-vegan FALSE) (is-vegetarian TRUE) (is-gluten-free FALSE) (is-dairy-free FALSE) (max-price 100) (min-price 10) (min-servings 1)))
 
 (deffacts candidate-set-test-facts
   (candidate-set
