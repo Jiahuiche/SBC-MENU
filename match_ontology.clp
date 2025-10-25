@@ -32,13 +32,14 @@
 ;;; Funciones auxiliares
 ;;;------------------------------------------------------------------------
 
-(deffunction MATCH::passes-thresholds (?recipe ?min-price ?max-price ?min-servings)
-    "Verifica umbrales de precio mínimo/máximo y raciones"
+(deffunction MATCH::passes-thresholds (?recipe ?min-price ?max-price ?preferred-season)
+    "Verifica umbrales de precio y estación preferida"
     (bind ?price (send ?recipe get-price))
     (if (< ?price ?min-price) then (return FALSE))
     (if (> ?price ?max-price) then (return FALSE))
-    (bind ?servings (send ?recipe get-servings))
-    (if (< ?servings ?min-servings) then (return FALSE))
+    (bind ?recipe-season (send ?recipe get-seasons))
+    (if (and (neq ?preferred-season any-season) (neq ?preferred-season ?recipe-season)) then
+        (return FALSE))
     (return TRUE))
 
 (deffunction MATCH::matched-restrictions (?requested ?recipe)
@@ -67,9 +68,9 @@
         (bind ?total (+ ?total (emit-subsets ?rest ?current ?recipe))))
     (return ?total))
 
-(deffunction MATCH::generate-candidates-for-recipe (?recipe ?requested ?min-price ?max-price ?min-servings)
+(deffunction MATCH::generate-candidates-for-recipe (?recipe ?requested ?min-price ?max-price ?preferred-season)
     "Genera candidatos para una receta específica y devuelve cuántos se crearon"
-    (if (not (passes-thresholds ?recipe ?min-price ?max-price ?min-servings)) then
+    (if (not (passes-thresholds ?recipe ?min-price ?max-price ?preferred-season)) then
         (return 0))
 
     (bind ?requested-count (length$ ?requested))
@@ -104,20 +105,21 @@
 
 (defrule MATCH::build-candidates
     ?ctrl <- (match-control (phase init))
-    ?prefs <- (user-restrictions (min-price ?min-p) (max-price ?max-p) (min-servings ?min-s))
+    ?prefs <- (user-restrictions (min-price ?min-p) (max-price ?max-p) (season ?season-pref))
     =>
     (do-for-all-facts ((?c candidate-set)) TRUE (retract ?c))
     (bind ?requested (fact-slot-value ?prefs requested))
     (bind ?recipes (find-all-instances ((?recipe ONTOLOGY::Recipe)) TRUE))
     (bind ?combo-count 0)
     (foreach ?recipe ?recipes
-        (bind ?combo-count (+ ?combo-count
-                              (generate-candidates-for-recipe
-                                ?recipe
-                                ?requested
-                                                                ?min-p
-                                ?max-p
-                                ?min-s))))
+        (bind ?combo-count
+            (+ ?combo-count
+               (generate-candidates-for-recipe
+                    ?recipe
+                    ?requested
+                    ?min-p
+                    ?max-p
+                    ?season-pref)))))
     (retract ?ctrl)
     (assert (match-control (phase complete)))
     (printout t crlf "📋 Evaluadas combinaciones de restricciones: " ?combo-count crlf))
@@ -179,7 +181,7 @@
         (do-for-all-facts ((?c candidate-set)) (= ?c:restriction-count ?max-count)
             (bind ?inst ?c:recipe-instance)
             (printout t "• " (send ?inst get-title) crlf)
-            (printout t "  Precio: " (send ?inst get-price) " | Porciones: " (send ?inst get-servings) crlf)
+            (printout t "  Precio: " (send ?inst get-price) crlf)
             (printout t "  Restricciones: "
                         (if (= ?max-count 0) then "sin requisitos" else (implode$ ?c:restrictions-met))
                         crlf crlf))))
