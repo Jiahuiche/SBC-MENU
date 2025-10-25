@@ -1,4 +1,5 @@
-(defmodule ONTOLOGY)
+(defmodule ONTOLOGY
+  (export ?ALL))
 
 (defclass ONTOLOGY::Recipe
   (is-a USER)

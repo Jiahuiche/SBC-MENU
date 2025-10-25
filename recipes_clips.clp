@@ -1,4 +1,5 @@
-(defmodule DATA)
+(defmodule DATA
+  (export ?ALL))
 
 (definstances DATA::recipes-seed
 
