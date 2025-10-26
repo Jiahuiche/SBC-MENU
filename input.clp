@@ -5,6 +5,10 @@
    (export ?ALL) ; exporta todas las reglas, funciones y templates
 )
 
+(defrule MAIN::start-input
+   =>
+   (focus input))
+
 ;; ===========================
 ;; Plantillas (estructuras de hechos)
 ;; ===========================
@@ -14,11 +18,11 @@
 )
 
 (deftemplate input::user-restrictions
-   (slot type (type SYMBOL) (default unknown-event))
-   (slot season (type SYMBOL) (default any-season))
    (multislot requested (type SYMBOL) (default-dynamic (create$)))
    (slot max-price (type NUMBER) (default 1000))
    (slot min-price (type NUMBER) (default 0))
+   (slot type (type SYMBOL) (default unknown-event))
+   (slot season (type SYMBOL) (default any-season))
 )
 
 (deffunction input::prompt-number (?prompt ?minimum)

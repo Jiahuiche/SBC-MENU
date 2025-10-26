@@ -11,8 +11,5 @@
 
 (reset)
 
-(focus input)
-
-
 (run)
 
