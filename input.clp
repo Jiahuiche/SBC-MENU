@@ -72,8 +72,8 @@
                then (assert (restriction (name ?symbol))))))
 
    ;; === Solicitar presupuestos ===
-   (bind ?min-price (prompt-number "Minimum price per menu (>= 0): " 0))
-   (bind ?max-price (prompt-number "Maximum price per menu (>= minimum): " ?min-price))
+   (bind ?min-price (prompt-number "Minimum price per person (>= 0): " 0))
+   (bind ?max-price (prompt-number "Maximum price per person (>= minimum): " ?min-price))
 
    ;; Crear hecho de preferencias del usuario
    (assert (user-restrictions
