@@ -32,6 +32,67 @@ def sanitize_for_clips(text):
     
     return text
 
+def detect_restrictions_from_ingredients(ingredients):
+    """
+    Detecta restricciones alimentarias basadas en los ingredientes.
+    Retorna un conjunto de restricciones detectadas.
+    """
+
+    restrictions = set()
+    
+    
+    ingredients_text = ' '.join(ingredients).lower()
+    
+    
+    # Detectar frutos secos
+    nut_patterns = [
+        'almond', 'walnut', 'hazelnut',
+        'peanut', 'pistachio', 'cashew',
+        'nuts', 'macadamia-nut', 'pine-nut',
+    ]
+    
+    nut_detected = any(pattern in ingredients_text for pattern in nut_patterns)
+    if not nut_detected:
+        restrictions.add('nut-free')
+    
+    # Detectar mariscos específicamente
+    shellfish_patterns = [
+        'shrimp', 'prawn', 'lobster',
+        'crab', 'mussel', 'clam',
+        'oyster', 'scallop', 'shellfish'
+    ]
+    
+    shellfish_detected = any(pattern in ingredients_text for pattern in shellfish_patterns)
+    if not shellfish_detected:
+        restrictions.add('shellfish-free')
+    
+    # Detectar soja
+    soy_patterns = [
+        'soy', 'tofu', 'tempeh', 'soy-sauce',
+        'soy-milk', 'edamame'
+    ]
+    
+    soy_detected = any(pattern in ingredients_text for pattern in soy_patterns)
+    if not soy_detected:
+        restrictions.add('soy-free')
+    
+    return restrictions
+
+def extract_ingredients(recipe):
+    """
+    Extrae y sanitiza lista de ingredientes para CLIPS.
+    Convierte cada ingrediente a formato símbolo válido.
+    """
+    if 'ingredients' not in recipe or not recipe['ingredients']:
+        return ['unknown-ingredient']
+    
+    ingredients_symbols = []
+    for ingredient in recipe['ingredients']:
+        sanitized = sanitize_for_clips(ingredient)
+        if sanitized:
+            ingredients_symbols.append(sanitized)
+    
+    return ingredients_symbols if ingredients_symbols else ['unknown-ingredient']
 
 def extract_restrictions(recipe):
     """
@@ -61,6 +122,11 @@ def extract_restrictions(recipe):
             sanitized = sanitize_for_clips(restriction)
             if sanitized:
                 restrictions_set.add(sanitized)
+
+    #Detectar restricciones basadas en ingredientes
+    ingredients = extract_ingredients(recipe)
+    ingredient_restrictions = detect_restrictions_from_ingredients(ingredients)
+    restrictions_set.update(ingredient_restrictions)
     
     # Si no hay restricciones, indicar "no-restrictions"
     if not restrictions_set:
