@@ -276,7 +276,7 @@
     (if (and (neq ?vino-principal "") (neq ?vino-principal "No wine pairing")) then
         (printout t "   🍷 Vino recomendado: " ?vino-principal crlf)
     else
-        (printout t "   🍷 Vino recomendado: No se especifica" crlf)
+        (printout t "   🍷 Vino recomendado: Cualquier Vino" crlf)
     )
     
     (printout t "   🍰 Postre: " (send (fact-slot-value ?m postre) get-title) 
