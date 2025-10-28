@@ -42,12 +42,15 @@
 (deffunction MATCH::passes-thresholds (?recipe ?min-price ?max-price ?preferred-season)
     "Verifica umbrales de precio y estación preferida"
     (bind ?price (send ?recipe get-price))
-    (if (< ?price ?min-price) then (return FALSE))
+    ; (if (< ?price ?min-price) then (return FALSE))
     (if (> ?price ?max-price) then (return FALSE))
     (bind ?recipe-season (send ?recipe get-seasons))
-    (if (and (neq ?preferred-season any-season) (neq ?preferred-season ?recipe-season)) then
-        (return FALSE))
-    (return TRUE))
+    (if (or (eq ?preferred-season any-season)
+            (eq ?recipe-season any-season )
+            (eq ?recipe-season ?preferred-season )) then
+        (return TRUE)
+        else
+        (return FALSE)))
 
 (deffunction MATCH::matched-restrictions (?requested ?recipe)
     "Devuelve las restricciones solicitadas que la receta cumple"
