@@ -25,6 +25,10 @@
     (multislot restrictions-met (type SYMBOL))
     (slot restriction-count (type NUMBER) (default 0)))
 
+(deftemplate MATCH::combinationMAX
+    (multislot requested (type SYMBOL))
+    (multislot recipes (type SYMBOL)))
+
 (deftemplate MATCH::match-control
     (slot phase (type SYMBOL) (allowed-symbols init complete)))
 
@@ -169,19 +173,40 @@
 (defrule MATCH::show-best-candidates
     (declare (salience -20))
     (not (match-control))
+    ?user <- (user-restrictions (requested $?requested))
     =>
+    (do-for-all-facts ((?combination combinationMAX)) TRUE (retract ?combination))
+    (bind ?requested-count (length$ ?requested))
     (bind ?max-count -1)
-    
-    ;; Encontrar máximo nivel de restricciones
+
+    ;; Encontrar máximo nivel de restricciones alcanzado por los candidatos
     (do-for-all-facts ((?c candidate-set)) TRUE
         (if (> ?c:restriction-count ?max-count) then
             (bind ?max-count ?c:restriction-count)))
-    
+
+    ;; Construir la lista de recetas que cumplen todas las restricciones (si existen)
+    (bind ?perfect-matches (create$))
+    (if (= ?max-count ?requested-count) then
+        (do-for-all-facts ((?c candidate-set)) (= ?c:restriction-count ?requested-count)
+            (bind ?recipe-name (instance-name ?c:recipe-instance))
+            (if (not (member$ ?recipe-name ?perfect-matches)) then
+                (bind ?perfect-matches (create$ ?perfect-matches ?recipe-name)))))
+
+    (if (= ?max-count ?requested-count) then
+        (assert (combinationMAX (requested $?requested) (recipes $?perfect-matches)))
+        (printout t crlf "🎯 Se encontraron platos que satisfacen todas las " ?requested-count " restricciones." crlf)
+        (if (> (length$ ?perfect-matches) 0) then
+            (printout t "Recetas compatibles:" crlf)
+            (foreach ?r ?perfect-matches
+                (printout t " - " ?r crlf)))
+    else
+        (assert (combinationMAX (requested $?requested) (recipes)))
+        (printout t crlf "⚠️  Ningún plato cubre las " ?requested-count " restricciones solicitadas." crlf))
+
     (if (>= ?max-count 0) then
         (printout t crlf "========================================" crlf)
         (printout t "🏆 MEJORES CANDIDATOS (" ?max-count " restricciones)" crlf)
         (printout t "========================================" crlf)
-        
         (do-for-all-facts ((?c candidate-set)) (= ?c:restriction-count ?max-count)
             (bind ?inst ?c:recipe-instance)
             (printout t "• " (send ?inst get-title) crlf)
@@ -196,7 +221,4 @@
     =>
     (printout t "========================================" crlf)
     (printout t "✅ SISTEMA FINALIZADO" crlf)
-    (printout t "========================================" crlf)
-    (if (not (any-factp ((?r refinement-request)) TRUE)) then
-        (assert (refinement-request (status pending))))
-    (focus REFINAMIENTO))
+    (printout t "========================================" crlf))

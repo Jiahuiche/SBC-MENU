@@ -136,7 +136,7 @@
     (bind ?principales (create$))
     (bind ?postres (create$))
     
-    ;;; Separar candidatos por tipo de plato
+     ;;; Separar candidatos por tipo de plato
     (do-for-all-facts ((?c candidate-set)) TRUE
         (bind ?inst (fact-slot-value ?c recipe-instance))
         (bind ?meal-types (send ?inst get-meal_types))
