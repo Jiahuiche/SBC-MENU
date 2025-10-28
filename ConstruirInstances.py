@@ -153,16 +153,30 @@ def extract_ingredients(recipe):
 
 
 def extract_mealtypes(recipe):
-    """Obtiene la clase del plato desde dishClass."""
-    dish_class_value = recipe.get('dishClass')
-    if not dish_class_value:
-        return 'mixed'
+    """Obtiene la lista de tipos de comida desde mealTypes."""
+    raw = recipe.get('mealTypes')
+    if not raw:
+        return ['mixed']
 
-    sanitized = sanitize_for_clips(dish_class_value)
-    if not sanitized:
-        return 'mixed'
+    if isinstance(raw, str):
+        candidates = [item.strip() for item in raw.split(',') if item.strip()]
+    elif isinstance(raw, list):
+        candidates = []
+        for entry in raw:
+            if isinstance(entry, str):
+                value = entry.strip()
+                if value:
+                    candidates.append(value)
+    else:
+        candidates = []
 
-    return sanitized
+    meal_types = []
+    for candidate in candidates:
+        sanitized = sanitize_for_clips(candidate)
+        if sanitized and sanitized not in meal_types:
+            meal_types.append(sanitized)
+
+    return meal_types if meal_types else ['mixed']
 
 
 def extract_seasons(recipe):
@@ -241,7 +255,7 @@ def recipe_to_clips_instance(recipe):
     
     restrictions = extract_restrictions(recipe)
     ingredients = extract_ingredients(recipe)
-    dish_class = extract_dish_class(recipe)
+    meal_types = extract_mealtypes(recipe)
     seasons = extract_seasons(recipe)
     
     # Construir la instancia CLIPS
@@ -250,8 +264,8 @@ def recipe_to_clips_instance(recipe):
     instance_str += f'    (price {price})\n'
     instance_str += f'    (wine_pairing "{wine_pairing}")\n'
     
-    # Clase general del plato
-    instance_str += f'    (dish-class {dish_class})\n'
+    # Multislot meal-types
+    instance_str += f'    (meal-types {" ".join(meal_types)})\n'
     
     # Multislot restrictions
     instance_str += f'    (restrictions {" ".join(restrictions)})\n'
