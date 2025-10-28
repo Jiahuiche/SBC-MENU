@@ -1,515 +1,388 @@
-(defmodule REFINAMIENTO (import ONTOLOGY ?ALL) 
-                        (import MATCH ?ALL ) ;hacer module match 
-                        (import DATA ?ALL)
-                        (import input ?ALL) (export ?ALL))
+(defmodule REFINAMIENTO
+    (import ONTOLOGY ?ALL)
+    (import MATCH ?ALL)
+    (import DATA ?ALL)
+    (import input ?ALL)
+    (export ?ALL))
 
-(defrule MAIN::auto-focus-refinamiento
-    =>
-    (focus REFINAMIENTO))
+(deftemplate REFINAMIENTO::menu-candidate
+    (slot tier (type SYMBOL) (default unknown))
+    (slot index (type INTEGER) (default 0))
+    (slot coverage-count (type INTEGER) (default 0))
+    (multislot restrictions-covered (type SYMBOL))
+    (multislot requested (type SYMBOL))
+    (slot starter (type INSTANCE))
+    (slot main (type INSTANCE))
+    (slot dessert (type INSTANCE))
+    (slot total-price (type FLOAT)))
 
-(deftemplate REFINAMIENTO::menu
-    (slot categoria (type SYMBOL)) ;;; barato, medio, caro
-   (slot entrante (type INSTANCE))
-   (slot principal (type INSTANCE))
-   (slot postre (type INSTANCE))
-   (slot precio-total (type FLOAT)))
+(deftemplate REFINAMIENTO::menu-pointer
+    (slot tier (type SYMBOL))
+    (slot position (type INTEGER))
+    (slot max (type INTEGER)))
 
-;; Template para restricciones del usuario
-; (deftemplate REFINAMIENTO::user-restrictions
-;     (slot is-vegan (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-;     (slot is-vegetarian (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-;     (slot is-gluten-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-;     (slot is-dairy-free (type SYMBOL) (allowed-symbols TRUE FALSE) (default FALSE))
-;     (slot max-price (type NUMBER) (default 10000))
-;     (slot min-price (type NUMBER) (default 0))
-;     (slot min-servings (type NUMBER) (default 1)))
+(deftemplate REFINAMIENTO::menu-component
+    (slot category (type SYMBOL))
+    (slot recipe (type INSTANCE))
+    (multislot restrictions (type SYMBOL))
+    (slot price (type FLOAT)))
 
-; ;; Template para candidatos
-; (deftemplate REFINAMIENTO::candidate-set
-;     (slot recipe-instance (type INSTANCE))
-;     (multislot restrictions-met (type SYMBOL))
-;     (slot restriction-count (type NUMBER) (default 0)))
+(deftemplate REFINAMIENTO::tier-summary
+    (slot tier (type SYMBOL))
+    (slot count (type INTEGER)))
 
-(deftemplate limites-calculados
-    (slot min-price (type FLOAT))
-    (slot limite-barato (type FLOAT))
-    (slot limite-medio (type FLOAT))
-    (slot max-price (type FLOAT)))
+(deftemplate REFINAMIENTO::session
+    (slot phase (type SYMBOL))
+    (slot tier (type SYMBOL) (default none))
+    (slot best-coverage (type INTEGER) (default 0))
+    (slot requested-total (type INTEGER) (default 0))
+    (slot menu-count (type INTEGER) (default 0))
+    (multislot requested (type SYMBOL)))
 
-; (deftemplate match-control
-;     (slot phase (type SYMBOL)))
+;;;============================================================================
+;;; Reglas y funciones para el refinamiento de menús
+;;;============================================================================
 
+(deffunction REFINAMIENTO::dish-fits (?recipe ?category)
+    (bind ?types (send ?recipe get-meal_types))
+    (if (eq ?category starter) then
+        (if (or (member$ starter ?types)
+                (member$ appetizer ?types)
+                (member$ side-dish ?types)) then
+            (return TRUE)
+        else
+            (return FALSE)))
+    (if (eq ?category main) then
+        (if (or (member$ main-course ?types)
+                (member$ main-dish ?types)
+                (member$ lunch ?types)) then
+            (return TRUE)
+        else
+            (return FALSE)))
+    (if (eq ?category dessert) then
+        (if (member$ dessert ?types) then
+            (return TRUE)
+        else
+            (return FALSE)))
+    (return FALSE))
 
-; (deffacts user-example (user-restrictions (is-vegan FALSE) (is-vegetarian TRUE) (is-gluten-free FALSE) (is-dairy-free FALSE) (max-price 300) (min-price 10) (min-servings 1)))
+(deffunction REFINAMIENTO::union-restrictions (?current ?extra)
+    (bind ?result ?current)
+    (foreach ?item ?extra
+        (if (not (member$ ?item ?result)) then
+            (bind ?result (create$ ?result ?item))))
+    (return ?result))
 
-; (deffacts candidate-set-test-facts
-;   (candidate-set
-;     (recipe-instance [Recipe_644094])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
+(deffunction REFINAMIENTO::missing-restrictions (?requested ?covered)
+    (bind ?missing (create$))
+    (foreach ?item ?requested
+        (if (not (member$ ?item ?covered)) then
+            (bind ?missing (create$ ?missing ?item))))
+    (return ?missing))
 
-;    (candidate-set
-;     (recipe-instance [Recipe_647875])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
+(deffunction REFINAMIENTO::find-min-price (?facts)
+    (if (= (length$ ?facts) 0) then (return FALSE))
+    (bind ?best (nth$ 1 ?facts))
+    (bind ?best-price (fact-slot-value ?best total-price))
+    (foreach ?fact ?facts
+        (bind ?price (fact-slot-value ?fact total-price))
+        (if (< ?price ?best-price) then
+            (bind ?best ?fact)
+            (bind ?best-price ?price)))
+    (return ?best))
 
-;     (candidate-set
-;     (recipe-instance [Recipe_715595])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
+(deffunction REFINAMIENTO::remove-fact (?facts ?target)
+    (bind ?result (create$))
+    (foreach ?fact ?facts
+        (if (neq ?fact ?target) then
+            (bind ?result (create$ ?result ?fact))))
+    (return ?result))
 
-;     (candidate-set
-;     (recipe-instance [Recipe_649560])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
+(deffunction REFINAMIENTO::order-by-price (?facts)
+    (bind ?ordered (create$))
+    (bind ?remaining ?facts)
+    (while (> (length$ ?remaining) 0)
+        (bind ?next (find-min-price ?remaining))
+        (if (eq ?next FALSE) then
+            (bind ?remaining (create$))
+        else
+            (bind ?ordered (create$ ?ordered ?next))
+            (bind ?remaining (remove-fact ?remaining ?next))))
+    (return ?ordered))
 
-;     (candidate-set
-;     (recipe-instance [Recipe_716431])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-
-;     (candidate-set
-;     (recipe-instance [Recipe_661121])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-;     (candidate-set
-;     (recipe-instance [Recipe_716433])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-;     (candidate-set
-;     (recipe-instance [Recipe_665203])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-;     (candidate-set
-;     (recipe-instance [Recipe_991625])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-;     (candidate-set
-;     (recipe-instance [Recipe_1098351])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-;     (candidate-set
-;     (recipe-instance [Recipe_632527])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-;     (candidate-set
-;     (recipe-instance [Recipe_641445])
-;     (restrictions-met vegetarian)
-;     (restriction-count 1))
-; )
-
-(deffacts sistema-inicio
-    (match-control (phase complete))
-)
-    
-;;; Calcula rangos de precio de los menus
-
-(deffunction REFINAMIENTO::calc-intervalo () ;REFINAMIENTO::
-    (bind ?facts (find-fact ((?f user-restrictions)) TRUE))
-   
-   (if (neq ?facts FALSE) then
-
-      ;;; Precios min-max user
-      (bind ?fact (nth$ 1 ?facts))
-      (bind ?minPrice_us (fact-slot-value ?fact min-price))
-      (bind ?maxPrice_us (fact-slot-value ?fact max-price))
-
-      ;;; Precios min-max recetas
-      (bind ?minPrice_candidatos 1000000) ;;; Valor muy alto inicial
-      (bind ?maxPrice_candidatos 0)
-      (bind ?candidatos-encontrados FALSE)
-      (bind ?candidate-facts (find-all-facts ((?c candidate-set)) TRUE))
-      
-      (if (or (eq ?candidate-facts FALSE) 
-                (and (neq ?candidate-facts FALSE) (= (length$ ?candidate-facts) 0))) then
-            (printout t "ERROR: No hay candidatos disponibles (en verificar)" crlf)
-            (return FALSE)
-      )
-        
-      (printout t "Debug: Encontrados " (length$ ?candidate-facts) " candidatos" crlf)
-            
-      (foreach ?cf ?candidate-facts
-         (bind ?inst (fact-slot-value ?cf recipe-instance))
-         (bind ?precio (send ?inst get-price))
-         
-         (if (< ?precio ?minPrice_candidatos) then
-            (bind ?minPrice_candidatos ?precio))
-            
-         (if (> ?precio ?maxPrice_candidatos) then
-            (bind ?maxPrice_candidatos ?precio)))
-
-      ;;; Def limites
-
-      (bind ?minPrice_final (max ?minPrice_us ?minPrice_candidatos))
-      (bind ?maxPrice_final ?maxPrice_us)
-
-      ;;; Verificar limites correcto 
-
-      (if (>= ?minPrice_final ?maxPrice_final) then
-            (printout t "ERROR: No hay solapamiento en los rangos de precio" crlf)
-            (printout t "   Usuario: " ?minPrice_us "-" ?maxPrice_us "€" crlf)
-            (printout t "   Candidatos: " ?minPrice_candidatos "-" ?maxPrice_candidatos "€" crlf)
-            (return FALSE))
-      
-      ;;; Calc interv
-
-      (bind ?rango (- ?maxPrice_final ?minPrice_final))
-      (bind ?tercio (/ ?rango 3.0))
-      (bind ?limite1 (+ ?minPrice_final ?tercio))
-      (bind ?limite2 (+ ?limite1 ?tercio))
-
-      ;;;Imprimir los limites e intervalos
-
-      (printout t "CÁLCULO DE LÍMITES:" crlf)
-      (printout t "   Usuario: " ?minPrice_us " - " ?maxPrice_us "€" crlf)
-      (printout t "   Candidatos: " ?minPrice_candidatos " - " ?maxPrice_candidatos "€" crlf)
-      (printout t "   Final: " ?minPrice_final " - " ?maxPrice_final "€" crlf)
-      (printout t "   Límites: " ?minPrice_final " | " ?limite1 " | " ?limite2 " | " ?maxPrice_final "€" crlf)
-      
-      ;;; Retornar lista con los dos límites: 
-      
-      (return (create$ ?minPrice_final ?limite1 ?limite2 ?maxPrice_final))
-   else
-      (printout t "ERROR: No se encontró user-restrictions" crlf)
-      (return FALSE)
-   )
-)
-
-;;;Verifica platos usados
-
-(deffunction REFINAMIENTO::plato-ya-usado (?e ?p ?po)
-    (do-for-all-facts ((?m menu)) TRUE
-        (if (or (eq ?m:entrante ?e) 
-                (eq ?m:principal ?p) 
-                (eq ?m:postre ?po)) then
-            (return TRUE)))
-    (return FALSE)
-)
-
-;;;Verifica combinacion platos es valida
-
-(deffunction REFINAMIENTO::combinacion-es-valida (?entrante ?principal ?postre)
-    ;;; Verificar que no sean la misma receta
-    (if (or (eq ?entrante ?principal) 
-            (eq ?entrante ?postre) 
-            (eq ?principal ?postre)) then
-        (return FALSE)
-    )
-    
-    ;;; Verificar que no estén ya en otro menú
-    (if (plato-ya-usado ?entrante ?principal ?postre) then
-        (return FALSE)
-    )
-    
-    (return TRUE)
-)
-
-;;; Busca combinacion de platos valida para el menu
-
-(deffunction REFINAMIENTO::buscar-combinacion-valida (?precio-min ?precio-max)
-    (bind ?entrantes (create$))
-    (bind ?principales (create$))
-    (bind ?postres (create$))
-    
-    ;;; Separar candidatos por tipo de plato
-    (do-for-all-facts ((?c candidate-set)) TRUE
-        (bind ?inst (fact-slot-value ?c recipe-instance))
-        (bind ?meal-types (send ?inst get-meal_types))
-        
-        (if (and (not (member$ main-course ?meal-types))
-         (not (member$ dessert ?meal-types))
-         (or (member$ starter ?meal-types)
-             (member$ appetizer ?meal-types)
-             (member$ side-dish ?meal-types))) then
-            (bind ?entrantes (create$ ?entrantes ?inst)))
-        
-        (if (and (not (member$ starter ?meal-types))
-         (not (member$ dessert ?meal-types))
-         (not (member$ appetizer ?meal-types))
-         (not (member$ side-dish ?meal-types))
-         (or (member$ main-course ?meal-types)
-             (member$ main-dish ?meal-types)))then
-            (bind ?principales (create$ ?principales ?inst)))
-            
-        (if (and (not (member$ starter ?meal-types))
-         (not (member$ main-course ?meal-types))
-         (not (member$ appetizer ?meal-types))
-         (not (member$ side-dish ?meal-types))
-         (not (member$ brunch ?meal-types))
-         (member$ dessert ?meal-types)) then
-            (bind ?postres (create$ ?postres ?inst))))
-    
-    ;;; Buscar combinación que cumpla con el rango de precio
-    (foreach ?e ?entrantes
-        (foreach ?p ?principales
-            (foreach ?po ?postres
-                (if (combinacion-es-valida ?e ?p ?po) then
-                    (bind ?precio-total (+ (send ?e get-price) 
-                                         (send ?p get-price) 
-                                         (send ?po get-price)))
-                    (if (and (>= ?precio-total ?precio-min) 
-                             (<= ?precio-total ?precio-max)) then
-                        (return (create$ ?e ?p ?po ?precio-total)))))))
-    
-    (return FALSE)
-)
-
-;;; Mostrar detalles menu
-
-
-(deffunction REFINAMIENTO::mostrar-detalles-menu (?m)
-    (printout t "   💰 Precio total: " (fact-slot-value ?m precio-total) "€" crlf)
-    (printout t "   🥗 Entrante: " (send (fact-slot-value ?m entrante) get-title) 
-             " (" (send (fact-slot-value ?m entrante) get-price) "€)" crlf)
-    (printout t "   🍖 Principal: " (send (fact-slot-value ?m principal) get-title) 
-             " (" (send (fact-slot-value ?m principal) get-price) "€)" crlf)
-    (printout t "   🍰 Postre: " (send (fact-slot-value ?m postre) get-title) 
-             " (" (send (fact-slot-value ?m postre) get-price) "€)" crlf crlf)
-)
-
-
-
-;;; REGLAS PARA CREAR MENUS
-
-(defrule REFINAMIENTO::iniciar-creacion-menus
-    (declare (salience 100))
-    ; ?ctrl <- (match-control (phase match-complete))
-    =>
-    ; (retract ?ctrl)
-    (printout t "INICIANDO CREACIÓN DE MENÚS" crlf)
-    
-    
-    (bind ?limites (calc-intervalo))
-    
-    (if (neq ?limites FALSE) then
-        (assert (limites-calculados
-            (min-price (nth$ 1 ?limites))
-            (limite-barato (nth$ 2 ?limites))
-            (limite-medio (nth$ 3 ?limites))
-            (max-price (nth$ 4 ?limites))))
+(deffunction REFINAMIENTO::assign-tier-metadata ()
+    (do-for-all-facts ((?summary tier-summary)) TRUE (retract ?summary))
+    (do-for-all-facts ((?pointer menu-pointer)) TRUE (retract ?pointer))
+    (bind ?menus (find-all-facts ((?m menu-candidate)) TRUE))
+    (if (eq ?menus FALSE) then
+        (bind ?menus (create$)))
+    (if (= (length$ ?menus) 0) then (return 0))
+    (bind ?min-price (fact-slot-value (nth$ 1 ?menus) total-price))
+    (bind ?max-price ?min-price)
+    (foreach ?menu ?menus
+        (bind ?price (fact-slot-value ?menu total-price))
+        (if (< ?price ?min-price) then (bind ?min-price ?price))
+        (if (> ?price ?max-price) then (bind ?max-price ?price)))
+    (bind ?range (- ?max-price ?min-price))
+    (if (<= ?range 0.0) then
+        (bind ?cheap-limit ?max-price)
+        (bind ?medium-limit ?max-price)
     else
-        (printout t "No se pudieron calcular los límites" crlf)
-    )
-)
+        (bind ?step (/ ?range 3.0))
+        (bind ?cheap-limit (+ ?min-price ?step))
+        (bind ?medium-limit (+ ?min-price (* 2 ?step))))
+    (do-for-all-facts ((?menu menu-candidate)) TRUE
+        (bind ?price (fact-slot-value ?menu total-price))
+        (if (<= ?price ?cheap-limit) then
+            (modify ?menu (tier cheap))
+        else
+            (if (<= ?price ?medium-limit) then
+                (modify ?menu (tier medium))
+            else
+                (modify ?menu (tier expensive)))))
+    (bind ?total 0)
+    (bind ?tiers (create$ cheap medium expensive))
+    (foreach ?tier ?tiers
+        (bind ?facts (find-all-facts ((?m menu-candidate)) (eq ?m:tier ?tier)))
+        (if (eq ?facts FALSE) then
+            (bind ?facts (create$)))
+        (if (> (length$ ?facts) 0) then
+            (bind ?ordered (order-by-price ?facts))
+            (bind ?position 0)
+            (foreach ?menu ?ordered
+                (bind ?position (+ ?position 1))
+                (modify ?menu (index ?position)))
+            (assert (tier-summary (tier ?tier) (count ?position)))
+            (assert (menu-pointer (tier ?tier) (position 0) (max ?position)))
+            (bind ?total (+ ?total ?position))))
+    (return ?total))
 
+(deffunction REFINAMIENTO::find-menu (?tier ?index)
+    (bind ?result FALSE)
+    (do-for-all-facts ((?m menu-candidate)) (and (eq ?m:tier ?tier) (= ?m:index ?index))
+        (bind ?result ?m))
+    (return ?result))
 
-(defrule REFINAMIENTO::crear-menu-barato
-    (declare (salience 90))
-    ?limites <- (limites-calculados 
-        (min-price ?min) 
-        (limite-barato ?limBarato)
-        (limite-medio ?limMedio) 
-        (max-price ?max))
-    (not (menu (categoria barato)))
-    =>
-    (printout t crlf " BUSCANDO MENÚ BARATO (≤ " ?limBarato "€)..." crlf)
-    (bind ?menu-barato (buscar-combinacion-valida ?min ?limBarato))
-    
-    (if (neq ?menu-barato FALSE) then
-        (assert (menu 
-            (categoria barato)
-            (entrante (nth$ 1 ?menu-barato))
-            (principal (nth$ 2 ?menu-barato))
-            (postre (nth$ 3 ?menu-barato))
-            (precio-total (nth$ 4 ?menu-barato))))
-        (printout t "     MENÚ BARATO CREADO: " (nth$ 4 ?menu-barato) "€" crlf)
+(deffunction REFINAMIENTO::print-menu (?menu)
+    (bind ?tier (fact-slot-value ?menu tier))
+    (bind ?index (fact-slot-value ?menu index))
+    (bind ?total (fact-slot-value ?menu total-price))
+    (bind ?coverage (fact-slot-value ?menu coverage-count))
+    (bind ?requested (fact-slot-value ?menu requested))
+    (bind ?covered (fact-slot-value ?menu restrictions-covered))
+    (bind ?missing (missing-restrictions ?requested ?covered))
+    (bind ?requested-count (length$ ?requested))
+    (printout t crlf "[" ?tier "] opción " ?index crlf)
+    (printout t "Cobertura: " ?coverage " de " ?requested-count " restricciones" crlf)
+    (if (> (length$ ?covered) 0) then
+        (printout t "Cumple: " (implode$ ?covered) crlf)
     else
-        (printout t "       No se pudo crear menú barato" crlf)
-    )
+        (printout t "Cumple: ninguna restricción solicitada" crlf))
+    (if (> (length$ ?missing) 0) then
+        (printout t "Pendiente: " (implode$ ?missing) crlf))
+    (format t "Precio total: %.2f euros%n" ?total)
+    (bind ?starter (fact-slot-value ?menu starter))
+    (bind ?main (fact-slot-value ?menu main))
+    (bind ?dessert (fact-slot-value ?menu dessert))
+    (format t " Entrante: %s (%.2f euros)%n" (send ?starter get-title) (send ?starter get-price))
+    (format t " Principal: %s (%.2f euros)%n" (send ?main get-title) (send ?main get-price))
+    (format t " Postre: %s (%.2f euros)%n" (send ?dessert get-title) (send ?dessert get-price)))
+
+(deffunction REFINAMIENTO::generate-menus ()
+    (do-for-all-facts ((?m menu-candidate)) TRUE (retract ?m))
+    (do-for-all-facts ((?p menu-pointer)) TRUE (retract ?p))
+    (do-for-all-facts ((?s tier-summary)) TRUE (retract ?s))
+    (do-for-all-facts ((?sess session)) TRUE (retract ?sess))
+    (do-for-all-facts ((?comp menu-component)) TRUE (retract ?comp))
+    (bind ?user (find-fact ((?u user-restrictions)) TRUE))
+    (if (eq ?user FALSE) then
+        (printout t "No se encontraron preferencias del usuario." crlf)
+        (return failure))
+    (bind ?requested (fact-slot-value ?user requested))
+    (bind ?requested-count (length$ ?requested))
+    (bind ?min-budget (fact-slot-value ?user min-price))
+    (bind ?max-budget (fact-slot-value ?user max-price))
+    (bind ?modules (get-module-list))
+    (if (not (member$ MATCH ?modules)) then
+        (printout t "El módulo MATCH no está disponible. Cargue primero el módulo de matching." crlf)
+        (return failure))
+    (bind ?candidate-facts (get-fact-list MATCH))
+    (foreach ?cand ?candidate-facts
+        (if (eq (fact-relation ?cand) candidate-set) then
+            (bind ?recipe (fact-slot-value ?cand recipe-instance))
+            (bind ?restrictions (fact-slot-value ?cand restrictions-met))
+            (bind ?price (send ?recipe get-price))
+            (if (dish-fits ?recipe starter) then
+                (assert (menu-component
+                    (category starter)
+                    (recipe ?recipe)
+                    (restrictions ?restrictions)
+                    (price ?price))))
+            (if (dish-fits ?recipe main) then
+                (assert (menu-component
+                    (category main)
+                    (recipe ?recipe)
+                    (restrictions ?restrictions)
+                    (price ?price))))
+            (if (dish-fits ?recipe dessert) then
+                (assert (menu-component
+                    (category dessert)
+                    (recipe ?recipe)
+                    (restrictions ?restrictions)
+                    (price ?price))))))
+    (bind ?starters (find-all-facts ((?c menu-component)) (eq ?c:category starter)))
+    (if (eq ?starters FALSE) then (bind ?starters (create$)))
+    (bind ?mains (find-all-facts ((?c menu-component)) (eq ?c:category main)))
+    (if (eq ?mains FALSE) then (bind ?mains (create$)))
+    (bind ?desserts (find-all-facts ((?c menu-component)) (eq ?c:category dessert)))
+    (if (eq ?desserts FALSE) then (bind ?desserts (create$)))
+    (if (or (= (length$ ?starters) 0)
+            (= (length$ ?mains) 0)
+            (= (length$ ?desserts) 0)) then
+        (printout t "No hay suficientes platos para formar un menú completo." crlf)
+        (return failure))
+    (bind ?starter-count (length$ ?starters))
+    (bind ?main-count (length$ ?mains))
+    (bind ?dessert-count (length$ ?desserts))
+    (bind ?best-coverage -1)
+    (bind ?attempted 0)
+    (loop-for-count (?i 1 ?starter-count)
+        (bind ?starter (nth$ ?i ?starters))
+        (bind ?starter-recipe (fact-slot-value ?starter recipe))
+        (bind ?starter-res (fact-slot-value ?starter restrictions))
+        (bind ?starter-price (fact-slot-value ?starter price))
+        (loop-for-count (?j 1 ?main-count)
+            (bind ?main (nth$ ?j ?mains))
+            (bind ?main-recipe (fact-slot-value ?main recipe))
+            (if (neq ?starter-recipe ?main-recipe) then
+                (bind ?main-res (fact-slot-value ?main restrictions))
+                (bind ?main-price (fact-slot-value ?main price))
+                (loop-for-count (?k 1 ?dessert-count)
+                    (bind ?dessert (nth$ ?k ?desserts))
+                    (bind ?dessert-recipe (fact-slot-value ?dessert recipe))
+                    (if (and (neq ?dessert-recipe ?starter-recipe)
+                             (neq ?dessert-recipe ?main-recipe)) then
+                        (bind ?attempted (+ ?attempted 1))
+                        (bind ?dessert-res (fact-slot-value ?dessert restrictions))
+                        (bind ?dessert-price (fact-slot-value ?dessert price))
+                        (bind ?total (+ ?starter-price ?main-price ?dessert-price))
+                        (if (and (>= ?total ?min-budget) (<= ?total ?max-budget)) then
+                            (bind ?coverage-list (create$))
+                            (bind ?coverage-list (union-restrictions ?coverage-list ?starter-res))
+                            (bind ?coverage-list (union-restrictions ?coverage-list ?main-res))
+                            (bind ?coverage-list (union-restrictions ?coverage-list ?dessert-res))
+                            (bind ?coverage (length$ ?coverage-list))
+                            (if (> ?coverage ?best-coverage) then
+                                (do-for-all-facts ((?old menu-candidate)) TRUE (retract ?old))
+                                (bind ?best-coverage ?coverage))
+                            (if (= ?coverage ?best-coverage) then
+                                (assert (menu-candidate
+                                    (coverage-count ?coverage)
+                                    (restrictions-covered ?coverage-list)
+                                    (requested ?requested)
+                                    (starter ?starter-recipe)
+                                    (main ?main-recipe)
+                                    (dessert ?dessert-recipe)
+                                    (total-price ?total))))))))))
+    (if (= ?best-coverage -1) then
+        (printout t "No se encontraron menús dentro del rango de precios especificado." crlf)
+        (if (> ?attempted 0) then
+            (printout t "Intente ampliar el presupuesto o reducir restricciones." crlf))
+        (return failure))
+    (bind ?total-menus (assign-tier-metadata))
+    (if (= ?total-menus 0) then
+        (printout t "No se pudieron organizar los menús por rangos de precio." crlf)
+        (return failure))
+    (assert (session
+        (phase initial)
+        (best-coverage ?best-coverage)
+        (requested-total ?requested-count)
+        (menu-count ?total-menus)
+        (requested ?requested)))
+    (printout t crlf "Generados " ?total-menus " menús con cobertura "
+        ?best-coverage " de " ?requested-count " restricciones." crlf)
+    (if (< ?best-coverage ?requested-count) then
+        (printout t "Aviso: no se pudieron satisfacer todas las restricciones." crlf))
+    (return success)
 )
 
-(defrule REFINAMIENTO::crear-menu-medio
-    (declare (salience 80))
-    ?limites <- (limites-calculados 
-        (min-price ?min) 
-        (limite-barato ?limBarato)
-        (limite-medio ?limMedio) 
-        (max-price ?max))
-    (not (menu (categoria medio)))
+(defrule REFINAMIENTO::start-refinement
+    ?req <- (refinement-request (status pending))
     =>
-    (printout t crlf "BUSCANDO MENÚ MEDIO (" ?limBarato "€ - " ?limMedio "€)..." crlf)
-    (bind ?menu-medio (buscar-combinacion-valida ?limBarato ?limMedio))
-    
-    (if (neq ?menu-medio FALSE) then
-        (assert (menu 
-            (categoria medio)
-            (entrante (nth$ 1 ?menu-medio))
-            (principal (nth$ 2 ?menu-medio))
-            (postre (nth$ 3 ?menu-medio))
-            (precio-total (nth$ 4 ?menu-medio))))
-        (printout t "     MENÚ MEDIO CREADO: " (nth$ 4 ?menu-medio) "€" crlf)
+    (retract ?req)
+    (bind ?result (generate-menus))
+    (if (eq ?result failure) then
+        (assert (session (phase finished)))))
+
+(defrule REFINAMIENTO::prompt-tier-list
+    ?s <- (session (phase initial) (best-coverage ?coverage) (requested-total ?total) (menu-count ?count))
+    =>
+    (printout t crlf "Menús disponibles: " ?count crlf)
+    (printout t "Cobertura máxima: " ?coverage " de " ?total " restricciones" crlf)
+    (printout t "Categorías disponibles:" crlf)
+    (do-for-all-facts ((?ts tier-summary)) TRUE
+        (printout t " - " ?ts:tier " (" ?ts:count " opciones)" crlf))
+    (printout t "Escriba la categoría deseada (cheap/medium/expensive) o 'exit' para terminar." crlf)
+    (modify ?s (phase reading-tier) (tier none)))
+
+(defrule REFINAMIENTO::read-tier-selection
+    ?s <- (session (phase reading-tier))
+    =>
+    (printout t "> ")
+    (bind ?input (lowcase (readline)))
+    (if (or (eq ?input "exit") (eq ?input "quit")) then
+        (modify ?s (phase finished))
     else
-        (printout t "       No se pudo crear menú medio" crlf)
-    )
-)
+        (bind ?symbol (string-to-field ?input))
+        (if (any-factp ((?ts tier-summary)) (eq ?ts:tier ?symbol)) then
+            (modify ?s (phase showing) (tier ?symbol))
+        else
+            (printout t "Categoría no reconocida." crlf)
+            (modify ?s (phase reading-tier)))))
 
-(defrule REFINAMIENTO::crear-menu-caro
-    (declare (salience 70))
-    ?limites <- (limites-calculados 
-        (min-price ?min) 
-        (limite-barato ?limBarato)
-        (limite-medio ?limMedio) 
-        (max-price ?max))
-    (not (menu (categoria caro)))
+(defrule REFINAMIENTO::show-next-menu
+    ?s <- (session (phase showing) (tier ?tier) (requested-total ?total))
+    ?pointer <- (menu-pointer (tier ?tier) (position ?pos) (max ?max))
     =>
-    (printout t crlf "BUSCANDO MENÚ CARO (≥ " ?limMedio "€)..." crlf)
-    (bind ?menu-caro (buscar-combinacion-valida ?limMedio ?max))
-    
-    (if (neq ?menu-caro FALSE) then
-        (assert (menu 
-            (categoria caro)
-            (entrante (nth$ 1 ?menu-caro))
-            (principal (nth$ 2 ?menu-caro))
-            (postre (nth$ 3 ?menu-caro))
-            (precio-total (nth$ 4 ?menu-caro))))
-        (printout t "     MENÚ CARO CREADO: " (nth$ 4 ?menu-caro) "€" crlf)
+    (if (= ?pos ?max) then
+        (printout t "Ya se han mostrado todas las opciones de la categoría " ?tier "." crlf)
+        (modify ?s (phase initial) (tier none))
     else
-        (printout t "       No se pudo crear menú caro" crlf)
-    )
-)
+        (bind ?next (+ ?pos 1))
+        (bind ?menu (find-menu ?tier ?next))
+        (if (eq ?menu FALSE) then
+            (printout t "No se pudo recuperar el menú solicitado." crlf)
+            (modify ?s (phase finished))
+        else
+            (print-menu ?menu)
+            (modify ?pointer (position ?next))
+            (modify ?s (phase prompt-next)))))
 
-;;; Reintentar con otro metodo si es necesario
-
-(defrule REFINAMIENTO::reintentar-con-metodo-alternativo
-    (declare (salience 50))
-    ?limites <- (limites-calculados (min-price ?min) (limite-barato ?lb) 
-                                   (limite-medio ?lm) (max-price ?max))
-    (or (not (menu (categoria barato)))
-        (not (menu (categoria medio)))
-        (not (menu (categoria caro))))
+(defrule REFINAMIENTO::prompt-next-step
+    ?s <- (session (phase prompt-next) (tier ?tier))
     =>
-    (printout t crlf "Algunos menús no se pudieron crear, intentando ajustar..." crlf)
-    
-    ;;; Aquí puedes implementar una estrategia alternativa
-    ;;; Por ejemplo, ampliar los rangos de precio o permitir reutilizar platos
-    (printout t "  Estrategia de reintento no implementada" crlf)
-)
+    (printout t "Escriba 'next' para otra opción de " ?tier ", 'back' para elegir otra categoría o 'exit' para terminar." crlf)
+    (modify ?s (phase waiting-next)))
 
-
-;;; Mostrar resultados finales
-
-(defrule REFINAMIENTO::mostrar-resultados-finales
-    (declare (salience -100))
+(defrule REFINAMIENTO::handle-next-response
+    ?s <- (session (phase waiting-next) (tier ?tier))
     =>
-    (printout t crlf "========================================" crlf)
-    (printout t "📊 RESUMEN FINAL DE MENÚS" crlf)
-    (printout t "========================================" crlf)
-    
-    (bind ?barato (if (> (length$ (find-all-facts ((?m menu)) (eq ?m:categoria barato))) 0) 
-                     then "✅" else "❌"))
-    (bind ?medio (if (> (length$ (find-all-facts ((?m menu)) (eq ?m:categoria medio))) 0) 
-                    then "✅" else "❌"))
-    (bind ?caro (if (> (length$ (find-all-facts ((?m menu)) (eq ?m:categoria caro))) 0) 
-                   then "✅" else "❌"))
-    
-    (printout t "Barato: " ?barato " | Medio: " ?medio " | Caro: " ?caro crlf crlf)
-    
-    ;;; Mostrar detalles de cada menú creado
-    (bind ?menus-baratos (find-all-facts ((?m menu)) (eq ?m:categoria barato)))
-    (if (> (length$ ?menus-baratos) 0) then
-        (printout t "🍽️  MENÚ BARATO:" crlf)
-        (foreach ?m ?menus-baratos
-            (mostrar-detalles-menu ?m)))
-            
-    (bind ?menus-medios (find-all-facts ((?m menu)) (eq ?m:categoria medio)))
-    (if (> (length$ ?menus-medios) 0) then
-        (printout t "🍽️  MENÚ MEDIO:" crlf)
-        (foreach ?m ?menus-medios
-            (mostrar-detalles-menu ?m)))
-            
-    (bind ?menus-caros (find-all-facts ((?m menu)) (eq ?m:categoria caro)))
-    (if (> (length$ ?menus-caros) 0) then
-        (printout t "🍽️  MENÚ CARO:" crlf)
-        (foreach ?m ?menus-caros
-            (mostrar-detalles-menu ?m)))
-            
-    (if (and (= (length$ ?menus-baratos) 0) 
-             (= (length$ ?menus-medios) 0) 
-             (= (length$ ?menus-caros) 0)) then
-        (printout t "❌ No se pudo crear ningún menú" crlf))
-)
+    (printout t "> ")
+    (bind ?input (lowcase (readline)))
+    (if (or (eq ?input "next") (eq ?input "n")) then
+        (modify ?s (phase showing))
+    else
+        (if (or (eq ?input "back") (eq ?input "b") (eq ?input "tier")) then
+            (modify ?s (phase initial) (tier none))
+        else
+            (if (or (eq ?input "exit") (eq ?input "quit")) then
+                (modify ?s (phase finished))
+            else
+                (printout t "Entrada no reconocida." crlf)
+                (modify ?s (phase prompt-next))))))
 
-
-
-;; (deffunction REFINAMIENTO::get-precios-recipe (instancias o classes de recipies)
-;; ;;; igual no hay que hacerlo 
-
-;; )
-
-;(defrule REFINAMIENTO::make-menus (parametros) 
- ;;; coger las candidatos de recetas y coger un meal-type para cada menu 
- ;;;y calcular con los precios y separarlos en 3 menus 
- ;;; hay que calcular si estan todas las restricciones en un grupo de menus y sino hacer varios grupos
-
-;()
-;; ;=>
-;; ()
-
-;;  )
-
- ;(defrule REFINAMIENTO::seleccionar-mejor-menu-barato
-   ; (user-restrictions (min-price ?minP) (max-price ?maxP))
-   
-    ;(candidate-set (recipe-instance ?e))
-    ;(candidate-set (recipe-instance ?p))
- ;   (candidate-set (recipe-instance ?po))
-  ;  
- ;   (test (member$ starter (send ?e get-meal_types)))
-  ;  (test (member$ main-course (send ?p get-meal_types)))
-   ; (test (member$ dessert (send ?po get-meal_types)))
-   ; (test (and (neq ?e ?p) (neq ?e ?po) (neq ?p ?po)))
-   
-   ; No existe ya un menú barato
-  ;  (not (menu (categoria barato)))
-   ; =>
-   ; (bind ?precio-total (+ (send ?e get-price) (send ?p get-price) (send ?po get-price)))
-   ; (bind ?limites (crear-rangos-desde-restricciones))
-    ;(bind ?limite1 (nth$ 1 ?limites))
-   
-   ; Solo si es barato
-  ;  (if (<= ?precio-total ?limite1) then
-   ;    (assert (menu (categoria barato) (entrante ?e) (principal ?p) (postre ?po) (precio-total ?precio-total)))
-    ;   (printout t "✓ Menú BARATO: " ?precio-total "€" crlf)))
-
- ;(defrule REFINAMIENTO::seleccionar-mejor-menu-medio
-   ; (user-restrictions (min-price ?minP) (max-price ?maxP))
-   ; (candidate-set (recipe-instance ?e))
-   ; (candidate-set (recipe-instance ?p))
-   ; (candidate-set (recipe-instance ?po))
-   
- ;  (test (member$ starter (send ?e get-meal_types)))
- ;  (test (member$ main-course (send ?p get-meal_types)))
- ;  (test (member$ dessert (send ?po get-meal_types)))
- ;  (test (and (neq ?e ?p) (neq ?e ?po) (neq ?p ?po)))
-   
- ;  (not (menu (categoria medio)))
- ;  =>
- ;  (bind ?precio-total (+ (send ?e get-price) (send ?p get-price) (send ?po get-price)))
- ;  (bind ?limites (crear-rangos-desde-restricciones))
- ;  (bind ?limite1 (nth$ 1 ?limites))
- ;  (bind ?limite2 (nth$ 2 ?limites))
-   
- ;  (if (and (> ?precio-total ?limite1) (<= ?precio-total ?limite2)) then
- ;     (assert (menu (categoria medio) (entrante ?e) (principal ?p) (postre ?po) (precio-total ?precio-total)))
- ;     (printout t "✓ Menú MEDIO: " ?precio-total "€" crlf)))
-
-;(defrule REFINAMIENTO::seleccionar-mejor-menu-caro
-;   (user-restrictions (min-price ?minP) (max-price ?maxP))
-;   (candidate-set (recipe-instance ?e))
-;   (candidate-set (recipe-instance ?p))
-;   (candidate-set (recipe-instance ?po))
-   
-;   (test (member$ starter (send ?e get-meal_types)))
-;   (test (member$ main-course (send ?p get-meal_types)))
-;   (test (member$ dessert (send ?po get-meal_types)))
-;   (test (and (neq ?e ?p) (neq ?e ?po) (neq ?p ?po)))
-   
-;   (not (menu (categoria caro)))
- ;  =>
- ;  (bind ?precio-total (+ (send ?e get-price) (send ?p get-price) (send ?po get-price)))
- ;  (bind ?limites (crear-rangos-desde-restricciones))
- ;  (bind ?limite2 (nth$ 2 ?limites))
-   
-  ; (if (and (> ?precio-total ?limite2) (<= ?precio-total ?maxP)) then
-;      (assert (menu (categoria caro) (entrante ?e) (principal ?p) (postre ?po) (precio-total ?precio-total)))
-;      (printout t "✓ Menú CARO: " ?precio-total "€" crlf)))
+(defrule REFINAMIENTO::finish-session
+    ?s <- (session (phase finished))
+    =>
+    (retract ?s)
+    (printout t "Finalizando refinamiento de menús." crlf))

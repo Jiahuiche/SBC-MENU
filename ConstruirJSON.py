@@ -127,6 +127,41 @@ def suggest_wine_for_main(ingredients_list):
     else:
         return " No wine pairing"
 
+
+STARTER_TERMS = {
+    'starter', 'appetizer', 'antipasti', 'antipasto', 'snack', 'fingerfood',
+    'side dish', 'side-dish', 'salad', 'soup', 'breakfast', 'brunch', 'morning meal'
+}
+MAIN_TERMS = {
+    'main course', 'main-course', 'main dish', 'main-dish', 'main', 'dinner', 'lunch'
+}
+DESSERT_TERMS = {'dessert', 'treat'}
+DISH_CLASS_BY_FILTER = {
+    'main course': 'Main',
+    'main': 'Main',
+    'appetizer': 'Starter',
+    'side dish': 'Starter',
+    'dessert': 'Dessert'
+}
+
+
+def determine_dish_class(meal_type_filter, dish_types):
+    """Resolve recipe dish class using API dish types and requested meal type."""
+    base_class = DISH_CLASS_BY_FILTER.get(meal_type_filter, 'Mixed')
+    if not dish_types:
+        return base_class
+
+    normalized = {term.strip().lower() for term in dish_types if term}
+
+    if normalized & DESSERT_TERMS:
+        return 'Dessert'
+    if normalized & MAIN_TERMS:
+        return 'Main'
+    if normalized & STARTER_TERMS:
+        return 'Starter'
+
+    return base_class
+
 # Definir las intolerancias posibles
 all_intolerances = [
     "dairy", "egg", "gluten", "grain", "peanut", "seafood", 
@@ -144,16 +179,6 @@ diets = 'vegan'  # Puedes cambiar a 'vegan', 'pescetarian', etc.
 intolerances = None  # Pon None para no filtrar por intolerancias
 meal_type = 'main course'  # Pon uno de estos main course, appetizer o side dish, dessert (para que salga wine pairing)
 num_recipes = 500
-
-# Determinar dish_class basado en meal_type (si existe)
-if meal_type == 'main course': 
-    dish_class = 'Main'
-elif meal_type == 'appetizer' or meal_type == 'side dish':
-    dish_class = 'Starter'
-elif meal_type == 'dessert':
-    dish_class = 'Dessert'
-else:
-    dish_class = 'Mixed'  # Para cuando no hay filtro específico
 
 tags = []
 if diets:
@@ -238,17 +263,12 @@ with spoonacular.ApiClient(configuration) as api_client:
                 servings = recipe_data.servings if hasattr(recipe_data, 'servings') else 0
                 price_per_serving = recipe_data.price_per_serving if hasattr(recipe_data, 'price_per_serving') else 0
                 diets = ", ".join(recipe_data.diets) if hasattr(recipe_data, 'diets') else 'No diet'
-                meal_types = ", ".join(recipe_data.dish_types) if hasattr(recipe_data, 'dish_types') else 'No dish type'
+                raw_dish_types = []
+                if hasattr(recipe_data, 'dish_types') and recipe_data.dish_types:
+                    raw_dish_types = [dt for dt in recipe_data.dish_types if dt]
 
-                if dish_class == 'Mixed':
-                    # Split into individual terms and check each one
-                    meal_terms = [term.strip().lower() for term in meal_types.split(',')]
-                    main_words = ['main course', 'main dish', 'launch', 'dinner']
-
-                    for term in meal_terms:
-                        if term in main_words:
-                            dish_class = 'Main'
-                            break
+                meal_types = ", ".join(raw_dish_types) if raw_dish_types else 'No dish type'
+                dish_class = determine_dish_class(meal_type, raw_dish_types)
                             
 
                 # wine_pairing = ", ".join(recipe_data.wine_pairing) if hasattr(recipe_data, 'wine_pairing') else 'No wine pairing'
