@@ -152,7 +152,7 @@ def extract_ingredients(recipe):
     return ingredients_symbols if ingredients_symbols else ['unknown-ingredient']
 
 
-def extract_dish_class(recipe):
+def extract_mealtypes(recipe):
     """Obtiene la clase del plato desde dishClass."""
     dish_class_value = recipe.get('dishClass')
     if not dish_class_value:

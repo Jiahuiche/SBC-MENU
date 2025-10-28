@@ -27,7 +27,7 @@
 
 (deftemplate MATCH::combinationMAX
     (multislot requested (type SYMBOL))
-    (multislot recipes (type SYMBOL)))
+    (slot recipe (type SYMBOL)))
 
 (deftemplate MATCH::match-control
     (slot phase (type SYMBOL) (allowed-symbols init complete)))
@@ -184,23 +184,20 @@
         (if (> ?c:restriction-count ?max-count) then
             (bind ?max-count ?c:restriction-count)))
 
-    ;; Construir la lista de recetas que cumplen todas las restricciones (si existen)
-    (bind ?perfect-matches (create$))
+    ;; Generar un fact combinationMAX por cada receta que cumpla todas las restricciones
+    (bind ?perfect-match-count 0)
     (if (= ?max-count ?requested-count) then
         (do-for-all-facts ((?c candidate-set)) (= ?c:restriction-count ?requested-count)
-            (bind ?recipe-name (instance-name ?c:recipe-instance))
-            (if (not (member$ ?recipe-name ?perfect-matches)) then
-                (bind ?perfect-matches (create$ ?perfect-matches ?recipe-name)))))
+            (bind ?inst ?c:recipe-instance)
+                (bind ?recipe-name (instance-name ?inst))
+                (assert (combinationMAX (requested $?requested) (recipe ?recipe-name)))
+            (if (= ?perfect-match-count 0) then
+                (printout t crlf "🎯 Se encontraron platos que satisfacen todas las " ?requested-count " restricciones." crlf)
+                (printout t "Recetas compatibles:" crlf))
+                (printout t " - " ?recipe-name crlf)
+            (bind ?perfect-match-count (+ ?perfect-match-count 1))))
 
-    (if (= ?max-count ?requested-count) then
-        (assert (combinationMAX (requested $?requested) (recipes $?perfect-matches)))
-        (printout t crlf "🎯 Se encontraron platos que satisfacen todas las " ?requested-count " restricciones." crlf)
-        (if (> (length$ ?perfect-matches) 0) then
-            (printout t "Recetas compatibles:" crlf)
-            (foreach ?r ?perfect-matches
-                (printout t " - " ?r crlf)))
-    else
-        (assert (combinationMAX (requested $?requested) (recipes)))
+    (if (= ?perfect-match-count 0) then
         (printout t crlf "⚠️  Ningún plato cubre las " ?requested-count " restricciones solicitadas." crlf))
 
     (if (>= ?max-count 0) then
