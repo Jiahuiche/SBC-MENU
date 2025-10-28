@@ -54,7 +54,7 @@
 
    ;; === Solicitar restricciones dietéticas ===
    (printout t "What diet restrictions do you have? (type 'exit' or press Enter to finish)" crlf)
-
+   (printout t "Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free" crlf)
    (bind ?restrictions (create$))
    (bind ?continue TRUE)
    (while ?continue
@@ -86,3 +86,4 @@
    (printout t crlf "Data successfully recorded." crlf)
    (focus MATCH)
 )
+
