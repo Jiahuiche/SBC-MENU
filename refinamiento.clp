@@ -136,7 +136,7 @@
     (bind ?principales (create$))
     (bind ?postres (create$))
     
-    ;;; Separar candidatos por tipo de plato
+     ;;; Separar candidatos por tipo de plato
     (do-for-all-facts ((?c candidate-set)) TRUE
         (bind ?inst (fact-slot-value ?c recipe-instance))
         (bind ?meal-types (send ?inst get-meal_types))
@@ -265,25 +265,25 @@
 
 
 (deffunction REFINAMIENTO::mostrar-detalles-menu (?m)
-    (printout t "   💰 Precio total: " (fact-slot-value ?m precio-total) "€" crlf)
-    (printout t "   🥗 Entrante: " (send (fact-slot-value ?m entrante) get-title) 
+    (printout t " Precio total: " (fact-slot-value ?m precio-total) "€" crlf)
+    (printout t "Entrante: " (send (fact-slot-value ?m entrante) get-title) 
              " (" (send (fact-slot-value ?m entrante) get-price) "€)" crlf)
-    (printout t "   🍖 Principal: " (send (fact-slot-value ?m principal) get-title) 
+    (printout t "Principal: " (send (fact-slot-value ?m principal) get-title) 
              " (" (send (fact-slot-value ?m principal) get-price) "€)" crlf)
     
     ;;; MOSTRAR VINO RECOMENDADO PARA EL PLATO PRINCIPAL
     (bind ?vino-principal (send (fact-slot-value ?m principal) get-wine_pairing))
     (if (and (neq ?vino-principal "") (neq ?vino-principal "No wine pairing")) then
-        (printout t "   🍷 Vino recomendado: " ?vino-principal crlf)
+        (printout t "Vino recomendado: " ?vino-principal crlf)
     else
-        (printout t "   🍷 Vino recomendado: No se especifica" crlf)
+        (printout t "Vino recomendado: Cualquier Vino" crlf)
     )
     
-    (printout t "   🍰 Postre: " (send (fact-slot-value ?m postre) get-title) 
+    (printout t "Postre: " (send (fact-slot-value ?m postre) get-title) 
              " (" (send (fact-slot-value ?m postre) get-price) "€)" crlf)
     
     ;;; SUGERIR BEBIDAS/REFRESCOS BASADO EN LOS PLATOS
-    (printout t "   🥤 Bebidas sugeridas: ")
+    (printout t "Bebidas sugeridas: ")
     (bind ?bebidas-sugeridas (sugerir-bebidas ?m))
     (printout t (implode$ ?bebidas-sugeridas) crlf crlf)
 )

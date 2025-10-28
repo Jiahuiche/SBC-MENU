@@ -5,6 +5,10 @@
    (export ?ALL) ; exporta todas las reglas, funciones y templates
 )
 
+(defrule MAIN::start-input
+   =>
+   (focus input))
+
 ;; ===========================
 ;; Plantillas (estructuras de hechos)
 ;; ===========================
@@ -14,11 +18,11 @@
 )
 
 (deftemplate input::user-restrictions
-   (slot type (type SYMBOL) (default unknown-event))
-   (slot season (type SYMBOL) (default any-season))
    (multislot requested (type SYMBOL) (default-dynamic (create$)))
    (slot max-price (type NUMBER) (default 1000))
    (slot min-price (type NUMBER) (default 0))
+   (slot type (type SYMBOL) (default unknown-event))
+   (slot season (type SYMBOL) (default any-season))
 )
 
 (deffunction input::prompt-number (?prompt ?minimum)
@@ -38,19 +42,14 @@
    ;; === Solicitar tipo de evento ===
    (printout t "Event type (wedding/congress/family): ")
    (bind ?type-token (read))
-   (bind ?type-string (if (symbolp ?type-token)
-                          then (lowcase (str-cat ?type-token))
-                          else (lowcase ?type-token)))
-   (bind ?type (string-to-field ?type-string))
+   (bind ?type (string-to-field (lowcase (str-cat ?type-token))))
 
    ;; === Solicitar estación ===
    (printout t "Season (spring/summer/autumn/winter): ")
    (bind ?season-token (read))
-   (bind ?season-string (if (symbolp ?season-token)
-                            then (lowcase (str-cat ?season-token))
-                            else (lowcase ?season-token)))
+   (bind ?season-string (lowcase (str-cat ?season-token)))
    (if (or (eq ?season-string "") (eq ?season-string "any")) then
-       (bind ?season-string "any-season"))
+      (bind ?season-string "any-season"))
    (bind ?season (string-to-field ?season-string))
 
    ;; === Solicitar restricciones dietéticas ===
@@ -73,8 +72,8 @@
                then (assert (restriction (name ?symbol))))))
 
    ;; === Solicitar presupuestos ===
-   (bind ?min-price (prompt-number "Minimum price per menu (>= 0): " 0))
-   (bind ?max-price (prompt-number "Maximum price per menu (>= minimum): " ?min-price))
+   (bind ?min-price (prompt-number "Minimum price per person (>= 0): " 0))
+   (bind ?max-price (prompt-number "Maximum price per person (>= minimum): " ?min-price))
 
    ;; Crear hecho de preferencias del usuario
    (assert (user-restrictions

@@ -7,14 +7,11 @@
 
 (load "input.clp")
 
-(load "match_ontology.clp")
+(load "match_max.clp")
 
 (load "refinamiento.clp")
 
 (reset)
-
-(focus input)
-
 
 (run)
 
