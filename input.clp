@@ -21,8 +21,9 @@
    (multislot requested (type SYMBOL) (default-dynamic (create$)))
    (slot max-price (type NUMBER) (default 1000))
    (slot min-price (type NUMBER) (default 0))
-   (slot type (type SYMBOL) (default unknown-event))
+   (slot event-type (type SYMBOL) (default unknown-event))
    (slot season (type SYMBOL) (default any-season))
+   (slot quiere-tarta (type SYMBOL) (default FALSE))
 )
 
 (deffunction input::prompt-number (?prompt ?minimum)
@@ -42,7 +43,17 @@
    ;; === Solicitar tipo de evento ===
    (printout t "Event type (wedding/congress/family): ")
    (bind ?type-token (read))
-   (bind ?type (string-to-field (lowcase (str-cat ?type-token))))
+   (bind ?event-type (string-to-field (lowcase (str-cat ?type-token))))
+   (if (or(eq ?event-type wedding) (eq ?event-type family)) then
+      (printout t "Will there be a cake? (yes/no): ")
+      (bind ?cake-token (read))
+      (bind ?cake-response (lowcase (str-cat ?cake-token)))
+      (if (eq ?cake-response "yes") then
+         (bind ?quiere-tarta TRUE)
+         else
+         (bind ?quiere-tarta FALSE))
+      else 
+      (bind ?quiere-tarta FALSE))
 
    ;; === Solicitar estación ===
    (printout t "Season (spring/summer/autumn/winter): ")
@@ -77,11 +88,12 @@
 
    ;; Crear hecho de preferencias del usuario
    (assert (user-restrictions
-             (type ?type)
+             (event-type ?event-type)
              (season ?season)
               (requested ?restrictions)
               (max-price ?max-price)
-              (min-price ?min-price)))
+              (min-price ?min-price)
+              (quiere-tarta ?quiere-tarta)))
 
    (printout t crlf "Data successfully recorded." crlf)
    (focus MATCH)

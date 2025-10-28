@@ -16995,4 +16995,868 @@
     (restrictions dairy-free gluten-free kosher nut-free shellfish-free soy-free vegan vegetarian)
     (ingredients canola-oil cilantro coconut-milk ginger garam-masala garlic-cloves lime-juice onion plum-tomatoes lentils salt water)
     (seasons any-season))
+
+  ([Recipe_641014] of ONTOLOGY::Recipe
+    (title "Cucumber Mint Tea Sandwiches")
+    (price 6.12)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free halal kosher nut-free shellfish-free soy-free vegan vegetarian)
+    (ingredients bread cucumber wasabi-maple-spread pepper-grinder mint-leaves dill vegenaise maple-syrup wasabi-powder pepper)
+    (seasons any-season))
+
+  ([Recipe_658753] of ONTOLOGY::Recipe
+    (title "Roma Tomato Bruschetta")
+    (price 47.33)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free kosher nut-free shellfish-free soy-free vegan vegetarian)
+    (ingredients balsamic-vinegar extra-virgin-olive-oil bread basil garlic bell-pepper salt tomatoes)
+    (seasons any-season))
+
+  ([Recipe_646660] of ONTOLOGY::Recipe
+    (title "Goat Cheese and Fig Crostini")
+    (price 29.05)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients baguette cream-cheese fig-preserves goat-cheese olive-oil)
+    (seasons summer))
+
+  ([Recipe_650092] of ONTOLOGY::Recipe
+    (title "Lime S’more Tartlets")
+    (price 2471.04)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter dessert snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients bittersweet-chocolate butter cream-of-tartar egg-whites eggs-yolks graham-crackers granulated-sugar lime-juice lime-zest salt spring-form-tart-pans eggs)
+    (seasons any-season))
+
+  ([Recipe_732255] of ONTOLOGY::Recipe
+    (title "Cheesy Cowboy Quesadillas")
+    (price 32.82)
+    (wine_pairing "White wine or light Red wine")
+    (meal-types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
+    (restrictions gluten-free halal kosher nut-free shellfish-free soy-free)
+    (ingredients bell-pepper butter black-beans cheese chili-powder corn cream-cheese cumin garlic onions salt chicken tortillas)
+    (seasons summer))
+
+  ([Recipe_659380] of ONTOLOGY::Recipe
+    (title "Sausage Rolls By Bing")
+    (price 61.01)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients leafs-of-basil butter extra-virgin-olive-oil parmesan-cheese puff-pastry sausages cajun-seasonings)
+    (seasons any-season))
+
+  ([Recipe_635370] of ONTOLOGY::Recipe
+    (title "Blue Cheese Tartlets With Fig Jam and Walnuts")
+    (price 3.18)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher shellfish-free soy-free vegetarian)
+    (ingredients cheese butter fig-jam flour orange-zest walnuts)
+    (seasons summer))
+
+  ([Recipe_655400] of ONTOLOGY::Recipe
+    (title "Pear and Pesto Crostini")
+    (price 78.51)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher shellfish-free soy-free)
+    (ingredients bread basil-leaves garlic pine-nuts pecorino-romano your-best-olive-oil salt-and-pepper bosc-pear)
+    (seasons any-season))
+
+  ([Recipe_651341] of ONTOLOGY::Recipe
+    (title "Meatball Sliders")
+    (price 7.04)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients california-bay-leaf coarse-bread-crumbs marjoram eggs flat-leaf-parsley garlic-cloves garlic-cloves ground-pork ground-beef olive-oil oregano parmesan slider-buns sugar tomatoes-in-juice vegetable-oil milk onion)
+    (seasons any-season))
+
+  ([Recipe_656329] of ONTOLOGY::Recipe
+    (title "Pizza bites with pumpkin")
+    (price 48.78)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions gluten-free halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients pumpkin olive-oil feta-cheese mozzarella eggs oregano parsley garlic)
+    (seasons any-season))
+
+  ([Recipe_642373] of ONTOLOGY::Recipe
+    (title "Elk Sliders With Pancetta Bacon and Smoked Mozzarella")
+    (price 48.29)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free)
+    (ingredients bread-crumbs cherry-tomatoes egg garlic-powder ground-elk-meat hawaiian-rolls mozzarella pancetta salt-and-pepper steak-sauce grain-mustard worcestershire)
+    (seasons any-season))
+
+  ([Recipe_652513] of ONTOLOGY::Recipe
+    (title "Mozzarella Sticks")
+    (price 1035.09)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients butter bread-crumbs eggs flour garlic-powder seasoning pepper spaghetti-sauce string-cheese water)
+    (seasons any-season))
+
+  ([Recipe_652919] of ONTOLOGY::Recipe
+    (title "Nachos Grande")
+    (price 51.3)
+    (wine_pairing "Light Red wine or White wine")
+    (meal-types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
+    (restrictions gluten-free halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients canned-tomatoes cheddar-cheese chili-powder corn-oil garlic-cloves bell-pepper chili ground-cumin onion paprika paprika-to-garnish refried-beans tortilla-chips water)
+    (seasons summer))
+
+  ([Recipe_660709] of ONTOLOGY::Recipe
+    (title "Southwest Blt Crostini")
+    (price 6.61)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients ancho-chili-pepper bacon baguette cilantro cumin-and-chili-powder arugula-lettuce mayo olive-oil pepper-jack-cheese salsa tomato)
+    (seasons any-season))
+
+  ([Recipe_633330] of ONTOLOGY::Recipe
+    (title "Bacon Wrapped Breadsticks")
+    (price 26.66)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients bacon cayenne-pepper garlic-salt long-breadsticks nutmeg parmesan you-will-also-need-parchment-paper)
+    (seasons any-season))
+
+  ([Recipe_643809] of ONTOLOGY::Recipe
+    (title "Fried String Cheese Sticks")
+    (price 309.4)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients individual-string-cheese-sticks flour egg-2-water seasoned-bread-crumbs vegetable-oil)
+    (seasons any-season))
+
+  ([Recipe_1039293] of ONTOLOGY::Recipe
+    (title "Pulled Pork Nachos")
+    (price 20.41)
+    (wine_pairing "Red wine")
+    (meal-types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
+    (restrictions gluten-free nut-free shellfish-free soy-free)
+    (ingredients nacho-chips pico-de-gallo pork-rub pork-shoulder cheese cream vegetable-broth)
+    (seasons any-season))
+
+  ([Recipe_716412] of ONTOLOGY::Recipe
+    (title "Roasted Cranberries, Ricotta & Honey Crostini")
+    (price 147.74)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free)
+    (ingredients peasant-bread fresh-ground-pepper honey ricotta ricotta sea-salt roasted-cranberry-sauce)
+    (seasons any-season))
+
+  ([Recipe_631756] of ONTOLOGY::Recipe
+    (title "Savory Radicchio and Prosciutto Crostini Topped with Sweet Syrupy Sapa")
+    (price 29.75)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free)
+    (ingredients toasty-bread garlic glugs-of-olive-oil pancetta radicchio salt-pepper optional-few-of-cheese-we-use-sheeps-milk if-unavailable)
+    (seasons any-season))
+
+  ([Recipe_642638] of ONTOLOGY::Recipe
+    (title "Fava Crostini")
+    (price 23.24)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free)
+    (ingredients broad-bean glugs-of-olive-oil garlic lemon water parmesan salt-pepper crusty-bread)
+    (seasons any-season))
+
+  ([Recipe_645821] of ONTOLOGY::Recipe
+    (title "Grilled Potato Skins")
+    (price 4.32)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions gluten-free nut-free shellfish-free soy-free)
+    (ingredients baking-potatoes bacon finely-chopped-ham picante-sauce cheddar-cheese cream butter)
+    (seasons any-season))
+
+  ([Recipe_661765] of ONTOLOGY::Recipe
+    (title "Strawberry Brie Tartlets")
+    (price 0.76)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter dessert snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients brie egg thyme honey puff-pastry salt strawberries)
+    (seasons any-season))
+
+  ([Recipe_644376] of ONTOLOGY::Recipe
+    (title "Garlic-Butter Naan")
+    (price 10.18)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti bread starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients ice-water nonfat-greek-yogurt canola-oil egg-yolk flour sugar rapid-rise-yeast salt butter garlic)
+    (seasons any-season))
+
+  ([Recipe_644846] of ONTOLOGY::Recipe
+    (title "Gluten Free Onion Rings")
+    (price 21.48)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients egg vegetable-oil milk bette-hagans-pizzafrench-bread-flour-mix salt baking-powder onions all-purpose-flour oil)
+    (seasons any-season))
+
+  ([Recipe_636864] of ONTOLOGY::Recipe
+    (title "Candied Spiced Pecans")
+    (price 12.67)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions gluten-free halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients allspice brown-sugar butter cinnamon granulated-sugar ground-cloves maple-extract nutmeg pecans water)
+    (seasons any-season))
+
+  ([Recipe_636558] of ONTOLOGY::Recipe
+    (title "Buttermilk Onion Rings")
+    (price 74.92)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients vidalia-onion flour baking-powder salt egg buttermilk bread-crumbs panko-bread-crumbs salt vegetable-oil sriracha-chili-sauce crema-mexicana)
+    (seasons any-season))
+
+  ([Recipe_646660] of ONTOLOGY::Recipe
+    (title "Goat Cheese and Fig Crostini")
+    (price 29.05)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients baguette cream-cheese fig-preserves goat-cheese olive-oil)
+    (seasons summer))
+
+  ([Recipe_650092] of ONTOLOGY::Recipe
+    (title "Lime S’more Tartlets")
+    (price 2471.04)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter dessert snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients bittersweet-chocolate butter cream-of-tartar egg-whites eggs-yolks graham-crackers granulated-sugar lime-juice lime-zest salt spring-form-tart-pans eggs)
+    (seasons any-season))
+
+  ([Recipe_644965] of ONTOLOGY::Recipe
+    (title "Goat Cheese, Fig And Proscuitto Crostini")
+    (price 32.2)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free halal kosher nut-free shellfish-free soy-free)
+    (ingredients biscuit-type-crackers fig-jam prosciutto peppercorns-cracked)
+    (seasons summer))
+
+  ([Recipe_659380] of ONTOLOGY::Recipe
+    (title "Sausage Rolls By Bing")
+    (price 61.01)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients leafs-of-basil butter extra-virgin-olive-oil parmesan-cheese puff-pastry sausages cajun-seasonings)
+    (seasons any-season))
+
+  ([Recipe_635370] of ONTOLOGY::Recipe
+    (title "Blue Cheese Tartlets With Fig Jam and Walnuts")
+    (price 3.18)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher shellfish-free soy-free vegetarian)
+    (ingredients cheese butter fig-jam flour orange-zest walnuts)
+    (seasons summer))
+
+  ([Recipe_655400] of ONTOLOGY::Recipe
+    (title "Pear and Pesto Crostini")
+    (price 78.51)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher shellfish-free soy-free)
+    (ingredients bread basil-leaves garlic pine-nuts pecorino-romano your-best-olive-oil salt-and-pepper bosc-pear)
+    (seasons any-season))
+
+  ([Recipe_651341] of ONTOLOGY::Recipe
+    (title "Meatball Sliders")
+    (price 7.04)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients california-bay-leaf coarse-bread-crumbs marjoram eggs flat-leaf-parsley garlic-cloves garlic-cloves ground-pork ground-beef olive-oil oregano parmesan slider-buns sugar tomatoes-in-juice vegetable-oil milk onion)
+    (seasons any-season))
+
+  ([Recipe_640461] of ONTOLOGY::Recipe
+    (title "Crawfish Cake Sliders")
+    (price 8.14)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free kosher nut-free shellfish-free soy-free)
+    (ingredients oil crawfish-tails onion garlic creole-spice egg bread-crumbs slider-buns tartar-sauce)
+    (seasons any-season))
+
+  ([Recipe_642373] of ONTOLOGY::Recipe
+    (title "Elk Sliders With Pancetta Bacon and Smoked Mozzarella")
+    (price 48.29)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free)
+    (ingredients bread-crumbs cherry-tomatoes egg garlic-powder ground-elk-meat hawaiian-rolls mozzarella pancetta salt-and-pepper steak-sauce grain-mustard worcestershire)
+    (seasons any-season))
+
+  ([Recipe_652513] of ONTOLOGY::Recipe
+    (title "Mozzarella Sticks")
+    (price 1035.09)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients butter bread-crumbs eggs flour garlic-powder seasoning pepper spaghetti-sauce string-cheese water)
+    (seasons any-season))
+
+  ([Recipe_644859] of ONTOLOGY::Recipe
+    (title "Gluten Free Vegetarian Spring Rolls With Thai-Style Peanut Sauce")
+    (price 1.4)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free kosher shellfish-free)
+    (ingredients rice-vermicelli carrots cabbage scallions basil-leaves mint-leaves cilantro peanuts ginger soy-sauce lime-juice sesame-seed-oil es-round-spring-roll-wrappers warm-water sugar creamy-peanut-butter soy-sauce coconut-milk lime-juice chili-paste-depending-on-your-taste-pref garlic)
+    (seasons any-season))
+
+  ([Recipe_660709] of ONTOLOGY::Recipe
+    (title "Southwest Blt Crostini")
+    (price 6.61)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients ancho-chili-pepper bacon baguette cilantro cumin-and-chili-powder arugula-lettuce mayo olive-oil pepper-jack-cheese salsa tomato)
+    (seasons any-season))
+
+  ([Recipe_662243] of ONTOLOGY::Recipe
+    (title "Summer Rolls")
+    (price 24.43)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free halal kosher nut-free shellfish-free)
+    (ingredients avocado cucumber cilantro garlic lemon-grass pineapple bell-pepper rice-paper vermicelli sesame-oil soy-sauce sugar spicy-tofu sambal-oelek sambal-oelek)
+    (seasons any-season))
+
+  ([Recipe_633330] of ONTOLOGY::Recipe
+    (title "Bacon Wrapped Breadsticks")
+    (price 26.66)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients bacon cayenne-pepper garlic-salt long-breadsticks nutmeg parmesan you-will-also-need-parchment-paper)
+    (seasons any-season))
+
+  ([Recipe_641014] of ONTOLOGY::Recipe
+    (title "Cucumber Mint Tea Sandwiches")
+    (price 6.12)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free halal kosher nut-free shellfish-free soy-free vegan vegetarian)
+    (ingredients bread cucumber wasabi-maple-spread pepper-grinder mint-leaves dill vegenaise maple-syrup wasabi-powder pepper)
+    (seasons any-season))
+
+  ([Recipe_643809] of ONTOLOGY::Recipe
+    (title "Fried String Cheese Sticks")
+    (price 309.4)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients individual-string-cheese-sticks flour egg-2-water seasoned-bread-crumbs vegetable-oil)
+    (seasons any-season))
+
+  ([Recipe_716412] of ONTOLOGY::Recipe
+    (title "Roasted Cranberries, Ricotta & Honey Crostini")
+    (price 147.74)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free)
+    (ingredients peasant-bread fresh-ground-pepper honey ricotta ricotta sea-salt roasted-cranberry-sauce)
+    (seasons any-season))
+
+  ([Recipe_631756] of ONTOLOGY::Recipe
+    (title "Savory Radicchio and Prosciutto Crostini Topped with Sweet Syrupy Sapa")
+    (price 29.75)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free)
+    (ingredients toasty-bread garlic glugs-of-olive-oil pancetta radicchio salt-pepper optional-few-of-cheese-we-use-sheeps-milk if-unavailable)
+    (seasons any-season))
+
+  ([Recipe_642638] of ONTOLOGY::Recipe
+    (title "Fava Crostini")
+    (price 23.24)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free)
+    (ingredients broad-bean glugs-of-olive-oil garlic lemon water parmesan salt-pepper crusty-bread)
+    (seasons any-season))
+
+  ([Recipe_661765] of ONTOLOGY::Recipe
+    (title "Strawberry Brie Tartlets")
+    (price 0.76)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter dessert snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients brie egg thyme honey puff-pastry salt strawberries)
+    (seasons any-season))
+
+  ([Recipe_644376] of ONTOLOGY::Recipe
+    (title "Garlic-Butter Naan")
+    (price 10.18)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti bread starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients ice-water nonfat-greek-yogurt canola-oil egg-yolk flour sugar rapid-rise-yeast salt butter garlic)
+    (seasons any-season))
+
+  ([Recipe_658753] of ONTOLOGY::Recipe
+    (title "Roma Tomato Bruschetta")
+    (price 47.33)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free kosher nut-free shellfish-free soy-free vegan vegetarian)
+    (ingredients balsamic-vinegar extra-virgin-olive-oil bread basil garlic bell-pepper salt tomatoes)
+    (seasons any-season))
+
+  ([Recipe_644846] of ONTOLOGY::Recipe
+    (title "Gluten Free Onion Rings")
+    (price 21.48)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients egg vegetable-oil milk bette-hagans-pizzafrench-bread-flour-mix salt baking-powder onions all-purpose-flour oil)
+    (seasons any-season))
+
+  ([Recipe_636558] of ONTOLOGY::Recipe
+    (title "Buttermilk Onion Rings")
+    (price 74.92)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients vidalia-onion flour baking-powder salt egg buttermilk bread-crumbs panko-bread-crumbs salt vegetable-oil sriracha-chili-sauce crema-mexicana)
+    (seasons any-season))
+
+  ([Recipe_646660] of ONTOLOGY::Recipe
+    (title "Goat Cheese and Fig Crostini")
+    (price 29.05)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients baguette cream-cheese fig-preserves goat-cheese olive-oil)
+    (seasons summer))
+
+  ([Recipe_635370] of ONTOLOGY::Recipe
+    (title "Blue Cheese Tartlets With Fig Jam and Walnuts")
+    (price 3.18)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher shellfish-free soy-free vegetarian)
+    (ingredients cheese butter fig-jam flour orange-zest walnuts)
+    (seasons summer))
+
+  ([Recipe_656329] of ONTOLOGY::Recipe
+    (title "Pizza bites with pumpkin")
+    (price 48.78)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions gluten-free halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients pumpkin olive-oil feta-cheese mozzarella eggs oregano parsley garlic)
+    (seasons any-season))
+
+  ([Recipe_652513] of ONTOLOGY::Recipe
+    (title "Mozzarella Sticks")
+    (price 1035.09)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients butter bread-crumbs eggs flour garlic-powder seasoning pepper spaghetti-sauce string-cheese water)
+    (seasons any-season))
+
+  ([Recipe_652919] of ONTOLOGY::Recipe
+    (title "Nachos Grande")
+    (price 51.3)
+    (wine_pairing "Light Red wine or White wine")
+    (meal-types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
+    (restrictions gluten-free halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients canned-tomatoes cheddar-cheese chili-powder corn-oil garlic-cloves bell-pepper chili ground-cumin onion paprika paprika-to-garnish refried-beans tortilla-chips water)
+    (seasons summer))
+
+  ([Recipe_641014] of ONTOLOGY::Recipe
+    (title "Cucumber Mint Tea Sandwiches")
+    (price 6.12)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free halal kosher nut-free shellfish-free soy-free vegan vegetarian)
+    (ingredients bread cucumber wasabi-maple-spread pepper-grinder mint-leaves dill vegenaise maple-syrup wasabi-powder pepper)
+    (seasons any-season))
+
+  ([Recipe_643809] of ONTOLOGY::Recipe
+    (title "Fried String Cheese Sticks")
+    (price 309.4)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients individual-string-cheese-sticks flour egg-2-water seasoned-bread-crumbs vegetable-oil)
+    (seasons any-season))
+
+  ([Recipe_661765] of ONTOLOGY::Recipe
+    (title "Strawberry Brie Tartlets")
+    (price 0.76)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter dessert snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients brie egg thyme honey puff-pastry salt strawberries)
+    (seasons any-season))
+
+  ([Recipe_644376] of ONTOLOGY::Recipe
+    (title "Garlic-Butter Naan")
+    (price 10.18)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti bread starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients ice-water nonfat-greek-yogurt canola-oil egg-yolk flour sugar rapid-rise-yeast salt butter garlic)
+    (seasons any-season))
+
+  ([Recipe_658753] of ONTOLOGY::Recipe
+    (title "Roma Tomato Bruschetta")
+    (price 47.33)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free kosher nut-free shellfish-free soy-free vegan vegetarian)
+    (ingredients balsamic-vinegar extra-virgin-olive-oil bread basil garlic bell-pepper salt tomatoes)
+    (seasons any-season))
+
+  ([Recipe_644846] of ONTOLOGY::Recipe
+    (title "Gluten Free Onion Rings")
+    (price 21.48)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients egg vegetable-oil milk bette-hagans-pizzafrench-bread-flour-mix salt baking-powder onions all-purpose-flour oil)
+    (seasons any-season))
+
+  ([Recipe_636864] of ONTOLOGY::Recipe
+    (title "Candied Spiced Pecans")
+    (price 12.67)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions gluten-free halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients allspice brown-sugar butter cinnamon granulated-sugar ground-cloves maple-extract nutmeg pecans water)
+    (seasons any-season))
+
+  ([Recipe_636558] of ONTOLOGY::Recipe
+    (title "Buttermilk Onion Rings")
+    (price 74.92)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients vidalia-onion flour baking-powder salt egg buttermilk bread-crumbs panko-bread-crumbs salt vegetable-oil sriracha-chili-sauce crema-mexicana)
+    (seasons any-season))
+
+  ([Recipe_646660] of ONTOLOGY::Recipe
+    (title "Goat Cheese and Fig Crostini")
+    (price 29.05)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients baguette cream-cheese fig-preserves goat-cheese olive-oil)
+    (seasons summer))
+
+  ([Recipe_650092] of ONTOLOGY::Recipe
+    (title "Lime S’more Tartlets")
+    (price 2471.04)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter dessert snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients bittersweet-chocolate butter cream-of-tartar egg-whites eggs-yolks graham-crackers granulated-sugar lime-juice lime-zest salt spring-form-tart-pans eggs)
+    (seasons any-season))
+
+  ([Recipe_644965] of ONTOLOGY::Recipe
+    (title "Goat Cheese, Fig And Proscuitto Crostini")
+    (price 32.2)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free halal kosher nut-free shellfish-free soy-free)
+    (ingredients biscuit-type-crackers fig-jam prosciutto peppercorns-cracked)
+    (seasons summer))
+
+  ([Recipe_732255] of ONTOLOGY::Recipe
+    (title "Cheesy Cowboy Quesadillas")
+    (price 32.82)
+    (wine_pairing "White wine or light Red wine")
+    (meal-types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
+    (restrictions gluten-free halal kosher nut-free shellfish-free soy-free)
+    (ingredients bell-pepper butter black-beans cheese chili-powder corn cream-cheese cumin garlic onions salt chicken tortillas)
+    (seasons summer))
+
+  ([Recipe_659380] of ONTOLOGY::Recipe
+    (title "Sausage Rolls By Bing")
+    (price 61.01)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients leafs-of-basil butter extra-virgin-olive-oil parmesan-cheese puff-pastry sausages cajun-seasonings)
+    (seasons any-season))
+
+  ([Recipe_635370] of ONTOLOGY::Recipe
+    (title "Blue Cheese Tartlets With Fig Jam and Walnuts")
+    (price 3.18)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher shellfish-free soy-free vegetarian)
+    (ingredients cheese butter fig-jam flour orange-zest walnuts)
+    (seasons summer))
+
+  ([Recipe_655400] of ONTOLOGY::Recipe
+    (title "Pear and Pesto Crostini")
+    (price 78.51)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher shellfish-free soy-free)
+    (ingredients bread basil-leaves garlic pine-nuts pecorino-romano your-best-olive-oil salt-and-pepper bosc-pear)
+    (seasons any-season))
+
+  ([Recipe_651341] of ONTOLOGY::Recipe
+    (title "Meatball Sliders")
+    (price 7.04)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients california-bay-leaf coarse-bread-crumbs marjoram eggs flat-leaf-parsley garlic-cloves garlic-cloves ground-pork ground-beef olive-oil oregano parmesan slider-buns sugar tomatoes-in-juice vegetable-oil milk onion)
+    (seasons any-season))
+
+  ([Recipe_640461] of ONTOLOGY::Recipe
+    (title "Crawfish Cake Sliders")
+    (price 8.14)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free kosher nut-free shellfish-free soy-free)
+    (ingredients oil crawfish-tails onion garlic creole-spice egg bread-crumbs slider-buns tartar-sauce)
+    (seasons any-season))
+
+  ([Recipe_656329] of ONTOLOGY::Recipe
+    (title "Pizza bites with pumpkin")
+    (price 48.78)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions gluten-free halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients pumpkin olive-oil feta-cheese mozzarella eggs oregano parsley garlic)
+    (seasons any-season))
+
+  ([Recipe_642373] of ONTOLOGY::Recipe
+    (title "Elk Sliders With Pancetta Bacon and Smoked Mozzarella")
+    (price 48.29)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free)
+    (ingredients bread-crumbs cherry-tomatoes egg garlic-powder ground-elk-meat hawaiian-rolls mozzarella pancetta salt-and-pepper steak-sauce grain-mustard worcestershire)
+    (seasons any-season))
+
+  ([Recipe_652513] of ONTOLOGY::Recipe
+    (title "Mozzarella Sticks")
+    (price 1035.09)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients butter bread-crumbs eggs flour garlic-powder seasoning pepper spaghetti-sauce string-cheese water)
+    (seasons any-season))
+
+  ([Recipe_644859] of ONTOLOGY::Recipe
+    (title "Gluten Free Vegetarian Spring Rolls With Thai-Style Peanut Sauce")
+    (price 1.4)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free kosher shellfish-free)
+    (ingredients rice-vermicelli carrots cabbage scallions basil-leaves mint-leaves cilantro peanuts ginger soy-sauce lime-juice sesame-seed-oil es-round-spring-roll-wrappers warm-water sugar creamy-peanut-butter soy-sauce coconut-milk lime-juice chili-paste-depending-on-your-taste-pref garlic)
+    (seasons any-season))
+
+  ([Recipe_652919] of ONTOLOGY::Recipe
+    (title "Nachos Grande")
+    (price 51.3)
+    (wine_pairing "Light Red wine or White wine")
+    (meal-types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
+    (restrictions gluten-free halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients canned-tomatoes cheddar-cheese chili-powder corn-oil garlic-cloves bell-pepper chili ground-cumin onion paprika paprika-to-garnish refried-beans tortilla-chips water)
+    (seasons summer))
+
+  ([Recipe_660709] of ONTOLOGY::Recipe
+    (title "Southwest Blt Crostini")
+    (price 6.61)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients ancho-chili-pepper bacon baguette cilantro cumin-and-chili-powder arugula-lettuce mayo olive-oil pepper-jack-cheese salsa tomato)
+    (seasons any-season))
+
+  ([Recipe_662243] of ONTOLOGY::Recipe
+    (title "Summer Rolls")
+    (price 24.43)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free halal kosher nut-free shellfish-free)
+    (ingredients avocado cucumber cilantro garlic lemon-grass pineapple bell-pepper rice-paper vermicelli sesame-oil soy-sauce sugar spicy-tofu sambal-oelek sambal-oelek)
+    (seasons any-season))
+
+  ([Recipe_661048] of ONTOLOGY::Recipe
+    (title "Spicy Chicken Corn Dogs with Homemade Chili Sauce")
+    (price 20.16)
+    (wine_pairing "Red wine")
+    (meal-types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
+    (restrictions dairy-free gluten-free halal nut-free shellfish-free soy-free)
+    (ingredients ancho-chili-pepper prunes beef-broth fire-roasted-tomatoes tomato-paste onion molasses garlic pumpkin-seeds ground-cumin oregano masa-harina cornmeal rice-flour baking-powder brown-sugar kosher-salt eggs juice-of-lime rice-milk canola-oil spicy-chicken-sausage-links)
+    (seasons any-season))
+
+  ([Recipe_633330] of ONTOLOGY::Recipe
+    (title "Bacon Wrapped Breadsticks")
+    (price 26.66)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood side-dish antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions nut-free shellfish-free soy-free)
+    (ingredients bacon cayenne-pepper garlic-salt long-breadsticks nutmeg parmesan you-will-also-need-parchment-paper)
+    (seasons any-season))
+
+  ([Recipe_641014] of ONTOLOGY::Recipe
+    (title "Cucumber Mint Tea Sandwiches")
+    (price 6.12)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free halal kosher nut-free shellfish-free soy-free vegan vegetarian)
+    (ingredients bread cucumber wasabi-maple-spread pepper-grinder mint-leaves dill vegenaise maple-syrup wasabi-powder pepper)
+    (seasons any-season))
+
+  ([Recipe_664708] of ONTOLOGY::Recipe
+    (title "Vegetarian Spring Rolls With Garlic Lime Sauce")
+    (price 8.6)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free gluten-free kosher nut-free shellfish-free soy-free)
+    (ingredients butter-leaf-lettuce carrots ginger hoisin-sauce garlic-lime-hoisin-sauce jicama lime bell-pepper rice-paper vegetarian-spring-roll thai-basil bell-pepper saracha saracha)
+    (seasons any-season))
+
+  ([Recipe_643809] of ONTOLOGY::Recipe
+    (title "Fried String Cheese Sticks")
+    (price 309.4)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients individual-string-cheese-sticks flour egg-2-water seasoned-bread-crumbs vegetable-oil)
+    (seasons any-season))
+
+  ([Recipe_1039293] of ONTOLOGY::Recipe
+    (title "Pulled Pork Nachos")
+    (price 20.41)
+    (wine_pairing "Red wine")
+    (meal-types fingerfood antipasti lunch main-course starter snack appetizer main-dish antipasto hor-doeuvre dinner)
+    (restrictions gluten-free nut-free shellfish-free soy-free)
+    (ingredients nacho-chips pico-de-gallo pork-rub pork-shoulder cheese cream vegetable-broth)
+    (seasons any-season))
+
+  ([Recipe_716412] of ONTOLOGY::Recipe
+    (title "Roasted Cranberries, Ricotta & Honey Crostini")
+    (price 147.74)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free)
+    (ingredients peasant-bread fresh-ground-pepper honey ricotta ricotta sea-salt roasted-cranberry-sauce)
+    (seasons any-season))
+
+  ([Recipe_631756] of ONTOLOGY::Recipe
+    (title "Savory Radicchio and Prosciutto Crostini Topped with Sweet Syrupy Sapa")
+    (price 29.75)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free)
+    (ingredients toasty-bread garlic glugs-of-olive-oil pancetta radicchio salt-pepper optional-few-of-cheese-we-use-sheeps-milk if-unavailable)
+    (seasons any-season))
+
+  ([Recipe_642638] of ONTOLOGY::Recipe
+    (title "Fava Crostini")
+    (price 23.24)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free)
+    (ingredients broad-bean glugs-of-olive-oil garlic lemon water parmesan salt-pepper crusty-bread)
+    (seasons any-season))
+
+  ([Recipe_645821] of ONTOLOGY::Recipe
+    (title "Grilled Potato Skins")
+    (price 4.32)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions gluten-free nut-free shellfish-free soy-free)
+    (ingredients baking-potatoes bacon finely-chopped-ham picante-sauce cheddar-cheese cream butter)
+    (seasons any-season))
+
+  ([Recipe_642129] of ONTOLOGY::Recipe
+    (title "Easy To Make Spring Rolls")
+    (price 94.41)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free gluten-free nut-free soy-free)
+    (ingredients you-can-use-regular-basil boston-lettuce chili-pepper fish-sauce coriander-leaves garlic lime-juice mint-leaves bell-pepper rice-vinegar shrimp spring-roll-wrappers sugar water nuoc-cham nuoc-cham)
+    (seasons any-season))
+
+  ([Recipe_661765] of ONTOLOGY::Recipe
+    (title "Strawberry Brie Tartlets")
+    (price 0.76)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter dessert snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients brie egg thyme honey puff-pastry salt strawberries)
+    (seasons any-season))
+
+  ([Recipe_644376] of ONTOLOGY::Recipe
+    (title "Garlic-Butter Naan")
+    (price 10.18)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti bread starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients ice-water nonfat-greek-yogurt canola-oil egg-yolk flour sugar rapid-rise-yeast salt butter garlic)
+    (seasons any-season))
+
+  ([Recipe_658753] of ONTOLOGY::Recipe
+    (title "Roma Tomato Bruschetta")
+    (price 47.33)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions dairy-free kosher nut-free shellfish-free soy-free vegan vegetarian)
+    (ingredients balsamic-vinegar extra-virgin-olive-oil bread basil garlic bell-pepper salt tomatoes)
+    (seasons any-season))
+
+  ([Recipe_644846] of ONTOLOGY::Recipe
+    (title "Gluten Free Onion Rings")
+    (price 21.48)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients egg vegetable-oil milk bette-hagans-pizzafrench-bread-flour-mix salt baking-powder onions all-purpose-flour oil)
+    (seasons any-season))
+
+  ([Recipe_636864] of ONTOLOGY::Recipe
+    (title "Candied Spiced Pecans")
+    (price 12.67)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions gluten-free halal kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients allspice brown-sugar butter cinnamon granulated-sugar ground-cloves maple-extract nutmeg pecans water)
+    (seasons any-season))
+
+  ([Recipe_636558] of ONTOLOGY::Recipe
+    (title "Buttermilk Onion Rings")
+    (price 74.92)
+    (wine_pairing "No wine pairing")
+    (meal-types fingerfood antipasti starter snack appetizer antipasto hor-doeuvre)
+    (restrictions kosher nut-free shellfish-free soy-free vegetarian)
+    (ingredients vidalia-onion flour baking-powder salt egg buttermilk bread-crumbs panko-bread-crumbs salt vegetable-oil sriracha-chili-sauce crema-mexicana)
+    (seasons any-season))
 )
