@@ -43,7 +43,7 @@
       (bind ?minPrice_candidatos 1000000) ;;; Valor muy alto inicial
       (bind ?maxPrice_candidatos 0)
       (bind ?candidatos-encontrados FALSE)
-      (bind ?candidate-facts (find-all-facts ((?c candidate-set)) TRUE))
+      (bind ?candidate-facts (find-all-facts ((?c combinationmax)) TRUE))
       
       (if (or (eq ?candidate-facts FALSE) 
                 (and (neq ?candidate-facts FALSE) (= (length$ ?candidate-facts) 0))) then
@@ -54,7 +54,7 @@
       (printout t "Debug: Encontrados " (length$ ?candidate-facts) " candidatos" crlf)
             
       (foreach ?cf ?candidate-facts
-         (bind ?inst (fact-slot-value ?cf recipe-instance))
+         (bind ?inst (fact-slot-value ?cf recipes))
          (bind ?precio (send ?inst get-price))
          
          (if (< ?precio ?minPrice_candidatos) then
@@ -137,8 +137,8 @@
     (bind ?postres (create$))
     
      ;;; Separar candidatos por tipo de plato
-    (do-for-all-facts ((?c candidate-set)) TRUE
-        (bind ?inst (fact-slot-value ?c recipe-instance))
+    (do-for-all-facts ((?c combinationmax)) TRUE
+        (bind ?inst (fact-slot-value ?c recipes))
         (bind ?meal-types (send ?inst get-meal_types))
         
         (if (and (not (member$ main-course ?meal-types))
@@ -297,8 +297,8 @@
     (bind ?postres (create$))
     
     ;;; Separar candidatos por tipo de plato
-    (do-for-all-facts ((?c candidate-set)) TRUE
-        (bind ?inst (fact-slot-value ?c recipe-instance))
+    (do-for-all-facts ((?c combinationMAX)) TRUE
+        (bind ?inst (fact-slot-value ?c recipes))
         (bind ?meal-types (send ?inst get-meal_types))
         
         (if (and (not (member$ main-course ?meal-types))
