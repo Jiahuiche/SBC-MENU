@@ -54,7 +54,7 @@
       (printout t "Debug: Encontrados " (length$ ?candidate-facts) " candidatos" crlf)
             
       (foreach ?cf ?candidate-facts
-         (bind ?inst (fact-slot-value ?cf recipes))
+         (bind ?inst (fact-slot-value ?cf recipe))
          (bind ?precio (send ?inst get-price))
          
          (if (< ?precio ?minPrice_candidatos) then
@@ -138,8 +138,8 @@
     
      ;;; Separar candidatos por tipo de plato
     (do-for-all-facts ((?c combinationMAX)) TRUE
-        (bind ?inst (fact-slot-value ?c recipes))
-        (bind ?meal-types (send ?inst get-meal_types))
+        (bind ?inst (fact-slot-value ?c recipe))
+        (bind ?meal-types (send ?inst get-meal-types))
         
         (if (and (not (member$ main-course ?meal-types))
          (not (member$ dessert ?meal-types))
@@ -188,7 +188,7 @@
     (bind ?bebidas (create$))
     
     ;;; Bebidas basadas en el plato principal
-    (bind ?tipos-principal (send ?principal get-meal_types))
+    (bind ?tipos-principal (send ?principal get-meal-types))
     (bind ?ingredientes-principal (send ?principal get-ingredients))
     
     ;;; Agua siempre incluida
@@ -244,7 +244,7 @@
     )
     
     ;;; Refrescos para postres dulces
-    (bind ?tipos-postre (send ?postre get-meal_types))
+    (bind ?tipos-postre (send ?postre get-meal-types))
     (if (member$ dessert ?tipos-postre) then
         (bind ?bebidas (create$ ?bebidas "café" "té"))
     )
@@ -283,7 +283,7 @@
              " (" (send (fact-slot-value ?m postre) get-price) "€)" crlf)
     
     ;;; SUGERIR BEBIDAS/REFRESCOS BASADO EN LOS PLATOS
-    (printout t "Bebidas sugeridas: ")
+    (printout t "Bebidas incluidas: ")
     (bind ?bebidas-sugeridas (sugerir-bebidas ?m))
     (printout t (implode$ ?bebidas-sugeridas) crlf crlf)
 )
@@ -298,8 +298,8 @@
     
     ;;; Separar candidatos por tipo de plato
     (do-for-all-facts ((?c combinationMAX)) TRUE
-        (bind ?inst (fact-slot-value ?c recipes))
-        (bind ?meal-types (send ?inst get-meal_types))
+        (bind ?inst (fact-slot-value ?c recipe))
+        (bind ?meal-types (send ?inst get-meal-types))
         
         (if (and (not (member$ main-course ?meal-types))
                  (not (member$ dessert ?meal-types))
