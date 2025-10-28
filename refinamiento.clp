@@ -43,7 +43,7 @@
       (bind ?minPrice_candidatos 1000000) ;;; Valor muy alto inicial
       (bind ?maxPrice_candidatos 0)
       (bind ?candidatos-encontrados FALSE)
-      (bind ?candidate-facts (find-all-facts ((?c combinationmax)) TRUE))
+      (bind ?candidate-facts (find-all-facts ((?c combinationMAX)) TRUE))
       
       (if (or (eq ?candidate-facts FALSE) 
                 (and (neq ?candidate-facts FALSE) (= (length$ ?candidate-facts) 0))) then
@@ -137,7 +137,7 @@
     (bind ?postres (create$))
     
      ;;; Separar candidatos por tipo de plato
-    (do-for-all-facts ((?c combinationmax)) TRUE
+    (do-for-all-facts ((?c combinationMAX)) TRUE
         (bind ?inst (fact-slot-value ?c recipes))
         (bind ?meal-types (send ?inst get-meal_types))
         

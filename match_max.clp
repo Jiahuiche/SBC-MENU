@@ -116,7 +116,7 @@
     =>
     (do-for-all-facts ((?c candidate-set)) TRUE (retract ?c))
     (bind ?requested (fact-slot-value ?prefs requested))
-    (bind ?recipes (find-all-instances ((?recipe ONTOLOGY::Recipe)) TRUE))
+    (bind ?recipes (find-all-instances ((?recipe Recipe)) TRUE))
     (bind ?combo-count 0)
     (foreach ?recipe ?recipes
         (bind ?combo-count

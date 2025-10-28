@@ -10,8 +10,8 @@
   (slot price            (type NUMBER) (default 0.0))
   (slot wine_pairing     (type STRING)   (default ""))
   (multislot meal-types
-    (type SYMBOL)
-    (default-dynamic (create$ mixed)))
+    (type SYMBOL))
+    
 
   (multislot restrictions
     (type SYMBOL)
