@@ -9,6 +9,8 @@
 
 (load "match_max.clp")
 
+(load "refinamiento.clp")
+
 (reset)
 
 (run)

@@ -41,9 +41,13 @@
     (if (< ?price ?min-price) then (return FALSE))
     (if (> ?price ?max-price) then (return FALSE))
     (bind ?recipe-season (send ?recipe get-seasons))
-    (if (and (neq ?preferred-season any-season) (neq ?preferred-season ?recipe-season)) then
+    (if (or (eq ?preferred-season any-season)
+            (eq ?recipe-season any-season )
+            (eq ?recipe-season ?preferred-season )) then
+        (return TRUE)
+        else
         (return FALSE))
-    (return TRUE))
+    )
 
 (deffunction MATCH::matched-restrictions (?requested ?recipe)
     "Devuelve las restricciones solicitadas que la receta cumple"
