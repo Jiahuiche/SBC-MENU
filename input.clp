@@ -19,6 +19,7 @@
 
 (deftemplate input::user-restrictions
    (multislot requested (type SYMBOL) (default-dynamic (create$)))
+   (slot max-people (type NUMBER) (default 100))
    (slot max-price (type NUMBER) (default 1000))
    (slot min-price (type NUMBER) (default 0))
    (slot event-type (type SYMBOL) (default unknown-event))
@@ -54,6 +55,10 @@
          (bind ?quiere-tarta FALSE))
       else 
       (bind ?quiere-tarta FALSE))
+      
+   ; === Solicitar número de personas ===
+   (bind ?max-people (prompt-number "Maximum number of people (>=1): " 1))
+   
 
    ;; === Solicitar estación ===
    (printout t "Season (spring/summer/autumn/winter): ")
@@ -91,6 +96,7 @@
              (event-type ?event-type)
              (season ?season)
               (requested ?restrictions)
+               (max-people ?max-people)
               (max-price ?max-price)
               (min-price ?min-price)
               (quiere-tarta ?quiere-tarta)))

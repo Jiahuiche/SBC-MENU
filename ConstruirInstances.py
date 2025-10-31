@@ -239,6 +239,12 @@ def escape_clips_string(text):
     
     return text
 
+def determine_complexity(recipe_id):
+    """
+    Determines if a recipe is complex based on its ID.
+    Returns True for 25% of recipes (when ID mod 4 equals 0)
+    """
+    return 'TRUE' if recipe_id % 4 == 0 else 'FALSE'
 
 def recipe_to_clips_instance(recipe):
     """
@@ -252,7 +258,7 @@ def recipe_to_clips_instance(recipe):
     title = escape_clips_string(recipe.get('title', 'Unknown Recipe'))
     price = calculate_price(recipe)
     wine_pairing = escape_clips_string(recipe.get('winePairing', 'No wine pairing'))
-    
+    is_complex = determine_complexity(recipe_id)
     restrictions = extract_restrictions(recipe)
     ingredients = extract_ingredients(recipe)
     meal_types = extract_mealtypes(recipe)
@@ -263,6 +269,7 @@ def recipe_to_clips_instance(recipe):
     instance_str += f'    (title "{title}")\n'
     instance_str += f'    (price {price})\n'
     instance_str += f'    (wine_pairing "{wine_pairing}")\n'
+    instance_str += f'    (is_complex {is_complex})\n'
     
     # Multislot meal-types
     instance_str += f'    (meal-types {" ".join(meal_types)})\n'
