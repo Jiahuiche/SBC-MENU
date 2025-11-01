@@ -201,7 +201,7 @@
                 (assert (combinationMAX (requested $?requested) (recipe ?recipe-name)))
             (if (= ?perfect-match-count 0) then
                 (printout t crlf "🎯 Se encontraron platos que satisfacen todas las " ?requested-count " restricciones." crlf)
-            (bind ?perfect-match-count (+ ?perfect-match-count 1))))
+            (bind ?perfect-match-count (+ ?perfect-match-count 1))))))
 
     (if (= ?perfect-match-count 0) then
         (printout t crlf "⚠️  Ningún plato cubre las " ?requested-count " restricciones solicitadas." crlf))
