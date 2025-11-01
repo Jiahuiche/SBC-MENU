@@ -78,6 +78,89 @@ def detect_restrictions_from_ingredients(ingredients):
     
     return restrictions
 
+def infer_wine_pairing(recipe):
+    """Determina el tipo de vino recomendado si falta o es 'No wine pairing'."""
+    current = recipe.get('winePairing')
+    if current and current.strip() and current.strip().lower() != 'no wine pairing':
+        return current
+
+    ingredients = recipe.get('ingredients') or []
+    ingredients_text = ' '.join(str(item).lower() for item in ingredients)
+
+    meal_types_field = recipe.get('mealTypes')
+    if isinstance(meal_types_field, str):
+        meal_tokens = [token.strip().lower() for token in meal_types_field.split(',') if token.strip()]
+    elif isinstance(meal_types_field, list):
+        meal_tokens = [str(token).strip().lower() for token in meal_types_field if str(token).strip()]
+    else:
+        meal_tokens = []
+
+    keyword_groups = {
+        'red': {
+            'beef', 'lamb', 'steak', 'venison', 'duck', 'mushroom', 'portobello',
+            'tomato', 'bbq', 'bacon', 'sausage', 'chorizo', 'pork-shoulder'
+        },
+        'white': {
+            'chicken', 'turkey', 'cod', 'halibut', 'sole', 'shrimp', 'scallop',
+            'lobster', 'crab', 'clam', 'mussel', 'tilapia', 'bass', 'lemon', 'herb',
+            'garlic', 'butter', 'goat cheese', 'feta', 'chevre'
+        },
+        'rose': {
+            'salmon', 'tuna', 'charcuterie', 'prosciutto', 'pesto', 'tomato',
+            'berry', 'strawberry', 'raspberry'
+        },
+        'sparkling': {
+            'fried', 'tempura', 'batter', 'quiche', 'cheese', 'brie', 'gouda',
+            'creamy', 'brunch', 'sushi'
+        },
+        'dessert': {
+            'chocolate', 'cocoa', 'caramel', 'honey', 'maple', 'custard', 'cream',
+            'cheesecake', 'ice cream', 'mousse', 'tiramisu', 'pie', 'cake', 'tart'
+        },
+        'aromatic_white': {
+            'curry', 'chili', 'jalapeno', 'chipotle', 'harissa', 'sriracha',
+            'ginger', 'lemongrass', 'thai', 'coconut milk'
+        },
+    }
+
+    scores = {key: 0 for key in keyword_groups.keys()}
+
+    for category, keywords in keyword_groups.items():
+        for keyword in keywords:
+            if keyword in ingredients_text:
+                scores[category] += 1
+
+    if any(token in {'dessert', 'sweet', 'treat'} for token in meal_tokens):
+        scores['dessert'] += 3
+
+    if any(token in {'starter', 'appetizer', 'antipasti', 'snack', 'fingerfood'} for token in meal_tokens):
+        scores['sparkling'] += 1
+
+    wine_types = {
+        'red': "Red wine",
+        'white': "White wine",
+        'rose': "Rosé wine",
+        'sparkling': "Sparkling wine",
+        'dessert': "Dessert wine",
+        'aromatic_white': "Aromatic white wine",
+        'default': "No wine pairing"
+    }
+
+    priority = ['dessert', 'aromatic_white', 'red', 'white', 'rose', 'sparkling']
+    best_category = 'default'
+    best_score = 0
+    for category in priority:
+        score = scores.get(category, 0)
+        if score > best_score:
+            best_score = score
+            best_category = category
+
+    if best_score == 0:
+        return wine_types['default']
+
+    return wine_types.get(best_category, wine_types['default'])
+
+
 def extract_ingredients(recipe):
     """
     Extrae y sanitiza lista de ingredientes para CLIPS.
@@ -246,6 +329,111 @@ def determine_complexity(recipe_id):
     """
     return 'TRUE' if recipe_id % 4 == 0 else 'FALSE'
 
+def generate_explanation(recipe):
+    """
+    Genera una explicación gastronómica única y atractiva para cada plato.
+    Combina información sobre ingredientes, sabor, vino, restricciones y estación.
+    """
+    import random
+    
+    title = recipe.get('title', 'Unknown Recipe')
+    ingredients = recipe.get('ingredients', [])
+    meal_types_raw = recipe.get('mealTypes', '')
+    wine_pairing = infer_wine_pairing(recipe)
+    restrictions = extract_restrictions(recipe)
+    season = extract_seasons(recipe)
+    
+    # Extraer palabras clave de ingredientes
+    key_ingredients = []
+    highlight_words = ['chocolate', 'salmon', 'chicken', 'beef', 'lamb', 'mushroom', 
+                       'cheese', 'shrimp', 'garlic', 'lemon', 'coconut', 'curry',
+                       'tomato', 'bacon', 'avocado', 'strawberry', 'pumpkin']
+    
+    for ing in ingredients[:8]:  # Revisar primeros ingredientes
+        ing_lower = str(ing).lower()
+        for hw in highlight_words:
+            if hw in ing_lower:
+                key_ingredients.append(hw)
+                break
+    
+    # Detectar perfil de sabor
+    flavor_profiles = []
+    spicy_keywords = ['chili', 'chipotle', 'jalapeno', 'cayenne', 'sriracha', 'harissa']
+    comfort_keywords = ['cream', 'cheese', 'butter', 'pasta', 'potato', 'bacon']
+    fresh_keywords = ['lemon', 'lime', 'herb', 'salad', 'vegetable', 'citrus']
+    rich_keywords = ['chocolate', 'caramel', 'wine', 'duck', 'beef', 'cream']
+    
+    ingredients_text = ' '.join(str(i).lower() for i in ingredients)
+    
+    if any(k in ingredients_text for k in spicy_keywords):
+        flavor_profiles.append(random.choice(['spicy', 'bold and spicy', 'fiery', 'with a kick']))
+    if any(k in ingredients_text for k in comfort_keywords):
+        flavor_profiles.append(random.choice(['comforting', 'indulgent', 'rich and creamy', 'satisfying']))
+    if any(k in ingredients_text for k in fresh_keywords):
+        flavor_profiles.append(random.choice(['fresh', 'vibrant', 'light and zesty', 'refreshing']))
+    if any(k in ingredients_text for k in rich_keywords):
+        flavor_profiles.append(random.choice(['luxurious', 'decadent', 'sophisticated', 'elegant']))
+    
+    if not flavor_profiles:
+        flavor_profiles = [random.choice(['delicious', 'flavorful', 'aromatic', 'balanced'])]
+    
+    # Templates variados para estructura
+    templates = []
+    
+    # Template 1: Ingrediente destacado + perfil + vino
+    if key_ingredients:
+        templates.append(
+            f"A {flavor_profiles[0]} dish featuring {', '.join(key_ingredients[:2]) if len(key_ingredients) >= 2 else key_ingredients[0]}, "
+            f"perfect for those seeking {restrictions[0] if 'free' in restrictions[0] else 'authentic'} cuisine. "
+            f"Pairs beautifully with {wine_pairing.lower()}{' and shines in ' + season + ' season' if season != 'any-season' else ''}."
+        )
+    
+    # Template 2: Experiencia sensorial + restricciones
+    templates.append(
+        f"This {flavor_profiles[0]} creation delivers {'complex layers of flavor' if len(ingredients) > 10 else 'simple, honest taste'}. "
+        f"{'Suitable for ' + ', '.join([r.replace('-', ' ') for r in restrictions[:2]]) + ' diets' if len(restrictions) > 1 else 'A versatile choice'}. "
+        f"Enjoy with {wine_pairing.lower()} for an elevated experience."
+    )
+    
+    # Template 3: Estilo culinario + momento
+    meal_descriptor = 'appetizer' if 'starter' in meal_types_raw or 'appetizer' in meal_types_raw else \
+                     'main course' if 'main' in meal_types_raw else \
+                     'dessert' if 'dessert' in meal_types_raw else 'dish'
+    
+    templates.append(
+        f"{'A seasonal favorite' if season != 'any-season' else 'A timeless classic'} "
+        f"that brings {random.choice(['warmth', 'joy', 'comfort', 'delight', 'satisfaction'])} to your table. "
+        f"This {flavor_profiles[0]} {meal_descriptor} is {random.choice(['crafted', 'prepared', 'designed', 'made'])} "
+        f"with {len(ingredients)} quality ingredients and matches wonderfully with {wine_pairing.lower()}."
+    )
+    
+    # Template 4: Ingredientes + beneficio + vino
+    if key_ingredients:
+        templates.append(
+            f"Featuring {' and '.join(key_ingredients[:3]) if len(key_ingredients) >= 2 else 'premium ingredients'}, "
+            f"this {flavor_profiles[0]} recipe offers {'wholesome nourishment' if 'vegetarian' in restrictions or 'vegan' in restrictions else 'satisfying flavors'}. "
+            f"{'Perfect for ' + season + ' dining' if season != 'any-season' else 'Ideal year-round'}. "
+            f"Best enjoyed with {wine_pairing.lower()}."
+        )
+    
+    # Template 5: Estilo narrativo
+    taste_words = ['tender', 'crispy', 'silky', 'robust', 'delicate', 'hearty', 'smooth']
+    templates.append(
+        f"Experience the {random.choice(taste_words)} texture and {flavor_profiles[0]} character of this exceptional dish. "
+        f"{'Crafted for ' + ', '.join([r.replace('-', ' ') for r in restrictions[:2]]) if len(restrictions) >= 2 else 'A culinary delight'} "
+        f"that harmonizes perfectly with {wine_pairing.lower()}."
+    )
+    
+    # Seleccionar template basado en ID para consistencia pero variedad
+    recipe_id = recipe.get('id', 0)
+    selected = templates[recipe_id % len(templates)]
+    
+    # Limitar a ~3 líneas (~200 caracteres)
+    if len(selected) > 250:
+        selected = selected[:247] + '...'
+    
+    return selected
+
 def recipe_to_clips_instance(recipe):
     """
     Convierte una receta JSON a una instancia CLIPS.
@@ -257,7 +445,10 @@ def recipe_to_clips_instance(recipe):
     # Extraer campos
     title = escape_clips_string(recipe.get('title', 'Unknown Recipe'))
     price = calculate_price(recipe)
-    wine_pairing = escape_clips_string(recipe.get('winePairing', 'No wine pairing'))
+    wine = infer_wine_pairing(recipe)
+    wine_pairing = escape_clips_string(wine)
+    explanation_text = generate_explanation(recipe)
+    explanation = escape_clips_string(explanation_text)
     is_complex = determine_complexity(recipe_id)
     restrictions = extract_restrictions(recipe)
     ingredients = extract_ingredients(recipe)
@@ -269,6 +460,7 @@ def recipe_to_clips_instance(recipe):
     instance_str += f'    (title "{title}")\n'
     instance_str += f'    (price {price})\n'
     instance_str += f'    (wine_pairing "{wine_pairing}")\n'
+    instance_str += f'    (explanation "{explanation}")\n'
     instance_str += f'    (is_complex {is_complex})\n'
     
     # Multislot meal-types

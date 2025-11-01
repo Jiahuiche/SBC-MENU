@@ -12,6 +12,7 @@ import os
 import json
 
 #pip install git+https://github.com/ddsky/spoonacular-api-clients.git#subdirectory=python
+
 def is_kosher_ingredient(ingredient_name):
     """Check if an ingredient is kosher-friendly by checking each word"""
     non_kosher_words = {

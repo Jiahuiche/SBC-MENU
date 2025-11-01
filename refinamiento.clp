@@ -537,52 +537,206 @@
     (bind ?user-fact (nth$ 1 (find-all-facts ((?u user-restrictions)) TRUE)))
     (bind ?event-type (fact-slot-value ?user-fact event-type))
     (bind ?quiere-tarta (fact-slot-value ?user-fact quiere-tarta))
+    (bind ?categoria (fact-slot-value ?m categoria))
+    (bind ?precio-base (fact-slot-value ?m precio-base))
+    (bind ?precio-total (fact-slot-value ?m precio-total))
     
-    (printout t " Precio base: " (fact-slot-value ?m precio-base) "€" crlf)
+    ;;; ═══════════════════════════════════════════════════════════════════════
+    ;;; CABECERA ARTÍSTICA DEL MENÚ
+    ;;; ═══════════════════════════════════════════════════════════════════════
+    (printout t "    " crlf)
+    (printout t "    ╔══════════════════════════════════════════════════════════════╗" crlf)
+    (printout t "    ║                                                              ║" crlf)
+    (printout t "    ║           ✨ 🍽️  M E N Ú   G O U R M E T  🍽️ ✨           ║" crlf)
+    (printout t "    ║                                                              ║" crlf)
+    (printout t "    ╠══════════════════════════════════════════════════════════════╣" crlf)
+    
+    ;;; Categoría del menú con iconos específicos
+    (if (eq ?categoria barato) then
+        (printout t "    ║  💰 Categoría: MENÚ ECONÓMICO                               ║" crlf)
+    )
+    (if (eq ?categoria medio) then
+        (printout t "    ║  🌟 Categoría: MENÚ SELECTO                                 ║" crlf)
+    )
+    (if (eq ?categoria caro) then
+        (printout t "    ║  👑 Categoría: MENÚ PREMIUM EXCLUSIVO                       ║" crlf)
+    )
+    
+    ;;; Tipo de evento con emojis temáticos
+    (printout t "    ║                                                              ║" crlf)
+    (if (eq ?event-type wedding) then
+        (printout t "    ║  💐💍 Ocasión: CELEBRACIÓN DE BODA 💍💐                     ║" crlf)
+    )
+    (if (eq ?event-type family) then
+        (printout t "    ║  👨‍👩‍👧‍👦 Ocasión: REUNIÓN FAMILIAR 🏠                          ║" crlf)
+    )
+    (if (eq ?event-type friends) then
+        (printout t "    ║  🎉🥳 Ocasión: ENCUENTRO ENTRE AMIGOS 🎊                    ║" crlf)
+    )
+    
+    (printout t "    ║                                                              ║" crlf)
+    (printout t "    ╠══════════════════════════════════════════════════════════════╣" crlf)
+    (printout t "    ║                                                              ║" crlf)
+    (format t "      ║  💵 Precio base del menú  : %8.2f €                          ║%n" ?precio-base)
+    (format t "      ║  💎 PRECIO TOTAL          : %8.2f €                          ║%n" ?precio-total)
+    (printout t "    ║                                                              ║" crlf)
+    (printout t "    ╚══════════════════════════════════════════════════════════════╝" crlf)
+    (printout t crlf)
 
-    ;;; MOSTRAR APERITIVOS EXTRA SOLO PARA BODAS
+    ;;; ═══════════════════════════════════════════════════════════════════════
+    ;;; APERITIVOS EXTRA (SOLO PARA BODAS)
+    ;;; ═══════════════════════════════════════════════════════════════════════
     (bind ?aperitivos-extra (fact-slot-value ?m aperitivos-extra))
     (if (and (eq ?event-type wedding) (> (length$ ?aperitivos-extra) 0)) then
-        (printout t "Aperitivos extra incluidos:" crlf)
+        (printout t "    ┌──────────────────────────────────────────────────────────────┐" crlf)
+        (printout t "    │                                                              │" crlf)
+        (printout t "    │          🍢  A P E R I T I V O S   E X T R A  🍢            │" crlf)
+        (printout t "    │              ～ Para comenzar con estilo ～                  │" crlf)
+        (printout t "    │                                                              │" crlf)
+        (printout t "    └──────────────────────────────────────────────────────────────┘" crlf)
+        (printout t crlf)
         (foreach ?a ?aperitivos-extra
-            (printout t "  - " (send ?a get-title) " (" (send ?a get-price) "€)" crlf))
+            (printout t "         🔸 " (send ?a get-title) crlf)
+            (format t "            💰 %.2f €%n" (send ?a get-price))
+            (printout t crlf))
+        (printout t "    ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～" crlf)
+        (printout t crlf)
     )
 
-    (printout t "Entrante: " (send (fact-slot-value ?m entrante) get-title) 
-             " (" (send (fact-slot-value ?m entrante) get-price) "€)" crlf)
-    (printout t "Principal: " (send (fact-slot-value ?m principal) get-title) 
-             " (" (send (fact-slot-value ?m principal) get-price) "€)" crlf)
+    ;;; ═══════════════════════════════════════════════════════════════════════
+    ;;; ENTRANTE / PRIMER PLATO
+    ;;; ═══════════════════════════════════════════════════════════════════════
+    (bind ?entrante-inst (fact-slot-value ?m entrante))
+    (printout t "    ┌──────────────────────────────────────────────────────────────┐" crlf)
+    (printout t "    │                                                              │" crlf)
+    (printout t "    │            🥗  P R I M E R   P L A T O  🥗                  │" crlf)
+    (printout t "    │                                                              │" crlf)
+    (printout t "    └──────────────────────────────────────────────────────────────┘" crlf)
+    (printout t crlf)
+    (printout t "         ✦ " (send ?entrante-inst get-title) crlf)
+    (format t "            💰 %.2f €%n" (send ?entrante-inst get-price))
+    (printout t crlf)
+    (printout t "         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" crlf)
+    (printout t "         📝 Descripción:" crlf)
+    (printout t "            " (send ?entrante-inst get-explanation) crlf)
+    (printout t "         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" crlf)
+    (printout t crlf)
+    (printout t "    ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～" crlf)
+    (printout t crlf)
+
+    ;;; ═══════════════════════════════════════════════════════════════════════
+    ;;; PLATO PRINCIPAL
+    ;;; ═══════════════════════════════════════════════════════════════════════
+    (bind ?principal-inst (fact-slot-value ?m principal))
+    (printout t "    ┌──────────────────────────────────────────────────────────────┐" crlf)
+    (printout t "    │                                                              │" crlf)
+    (printout t "    │         🍽️  P L A T O   P R I N C I P A L  🍽️                │" crlf)
+    (printout t "    │              ～ El corazón del menú ～                        │" crlf)
+    (printout t "    │                                                              │" crlf)
+    (printout t "    └──────────────────────────────────────────────────────────────┘" crlf)
+    (printout t crlf)
+    (printout t "         ✦ " (send ?principal-inst get-title) crlf)
+    (format t "            💰 %.2f €%n" (send ?principal-inst get-price))
+    (printout t crlf)
+    (printout t "         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" crlf)
+    (printout t "         📝 Descripción:" crlf)
+    (printout t "            " (send ?principal-inst get-explanation) crlf)
+    (printout t "         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" crlf)
+    (printout t crlf)
     
-    ;;; MOSTRAR VINO RECOMENDADO
-    (bind ?vino-principal (send (fact-slot-value ?m principal) get-wine_pairing))
+    ;;; Vino recomendado con copa decorativa
+    (bind ?vino-principal (send ?principal-inst get-wine_pairing))
+    (printout t "         🍷 ══════════════════════════════════════════════" crlf)
     (if (and (neq ?vino-principal "") (neq ?vino-principal "No wine pairing")) then
-        (printout t "Vino recomendado: " ?vino-principal crlf)
+        (printout t "            🍇 Maridaje sugerido: " ?vino-principal crlf)
     else
-        (printout t "Vino recomendado: Cualquier Vino" crlf)
+        (printout t "            🍇 Maridaje: A su elección, todos armonizan" crlf)
     )
-    
-    (printout t "Postre: " (send (fact-slot-value ?m postre) get-title) 
-             " (" (send (fact-slot-value ?m postre) get-price) "€)" crlf)
-    
-    ; Mostrar tarta como PLUS APARTE (solo informativo)
+    (printout t "         ══════════════════════════════════════════════════" crlf)
+    (printout t crlf)
+    (printout t "    ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～" crlf)
+    (printout t crlf)
+
+    ;;; ═══════════════════════════════════════════════════════════════════════
+    ;;; POSTRE / DULCE FINAL
+    ;;; ═══════════════════════════════════════════════════════════════════════
+    (bind ?postre-inst (fact-slot-value ?m postre))
+    (printout t "    ┌──────────────────────────────────────────────────────────────┐" crlf)
+    (printout t "    │                                                              │" crlf)
+    (printout t "    │              🍰  D U L C E   F I N A L  🍰                  │" crlf)
+    (printout t "    │              ～ El broche perfecto ～                        │" crlf)
+    (printout t "    │                                                              │" crlf)
+    (printout t "    └──────────────────────────────────────────────────────────────┘" crlf)
+    (printout t crlf)
+    (printout t "         ✦ " (send ?postre-inst get-title) crlf)
+    (format t "            💰 %.2f €%n" (send ?postre-inst get-price))
+    (printout t crlf)
+    (printout t "         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" crlf)
+    (printout t "         📝 Descripción:" crlf)
+    (printout t "            " (send ?postre-inst get-explanation) crlf)
+    (printout t "         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" crlf)
+    (printout t crlf)
+    (printout t "    ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～" crlf)
+    (printout t crlf)
+
+    ;;; ═══════════════════════════════════════════════════════════════════════
+    ;;; PLUS OPCIONAL: TARTA ESPECIAL
+    ;;; ═══════════════════════════════════════════════════════════════════════
     (if (eq ?quiere-tarta TRUE) then 
+        (printout t "    ┌──────────────────────────────────────────────────────────────┐" crlf)
+        (printout t "    │                                                              │" crlf)
+        (printout t "    │           🎂  P L U S   E S P E C I A L  🎂                 │" crlf)
+        (printout t "    │                                                              │" crlf)
+        (printout t "    └──────────────────────────────────────────────────────────────┘" crlf)
+        (printout t crlf)
         (if (eq ?event-type wedding) then
-            (printout t "PLUS: Tarta de boda personalizada disponible (+200€)" crlf)
+            (printout t "         🌸 Tarta de boda personalizada disponible" crlf)
+            (printout t "            ✨ Diseño exclusivo para su día especial" crlf)
+            (printout t "            💰 +200.00 € (no incluido en el precio base)" crlf)
         else 
             (if (eq ?event-type family) then
-                (printout t "PLUS: Tarta familiar especial disponible (+50€)" crlf)
+                (printout t "         🎈 Tarta familiar especial disponible" crlf)
+                (printout t "            ✨ Perfecta para celebraciones íntimas" crlf)
+                (printout t "            💰 +50.00 € (no incluido en el precio base)" crlf)
             else
-                (printout t "PLUS: Tarta disponible (consulte precio aparte)" crlf)
+                (printout t "         🎁 Tarta disponible bajo consulta" crlf)
+                (printout t "            ✨ Precio según especificaciones" crlf)
             )
         )
+        (printout t crlf)
+        (printout t "    ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～ ～" crlf)
+        (printout t crlf)
     )
-    ;;; MOSTRAR PRECIO TOTAL
-    (printout t "PRECIO TOTAL: " (fact-slot-value ?m precio-total) "€" crlf)
-    
-    ;;; SUGERIR BEBIDAS
-    (printout t "Bebidas incluidas: ")
+
+    ;;; ═══════════════════════════════════════════════════════════════════════
+    ;;; BEBIDAS INCLUIDAS
+    ;;; ═══════════════════════════════════════════════════════════════════════
     (bind ?bebidas-sugeridas (sugerir-bebidas ?m))
-    (printout t (implode$ ?bebidas-sugeridas) crlf crlf)
+    (printout t "    ┌──────────────────────────────────────────────────────────────┐" crlf)
+    (printout t "    │                                                              │" crlf)
+    (printout t "    │          🥤  B E B I D A S   I N C L U I D A S  🥤         │" crlf)
+    (printout t "    │                                                              │" crlf)
+    (printout t "    └──────────────────────────────────────────────────────────────┘" crlf)
+    (printout t crlf)
+    (printout t "         💧 Selección disponible:" crlf)
+    (printout t "            " (implode$ ?bebidas-sugeridas) crlf)
+    (printout t crlf)
+    (printout t "    ════════════════════════════════════════════════════════════" crlf)
+    (printout t crlf)
+    
+    ;;; ═══════════════════════════════════════════════════════════════════════
+    ;;; PIE DE MENÚ CON PRECIO TOTAL DESTACADO
+    ;;; ═══════════════════════════════════════════════════════════════════════
+    (printout t "    ╔══════════════════════════════════════════════════════════════╗" crlf)
+    (printout t "    ║                                                              ║" crlf)
+    (format t "      ║          💎 PRECIO TOTAL DEL MENÚ: %8.2f €                   ║%n" ?precio-total)
+    (printout t "    ║                                                              ║" crlf)
+    (printout t "    ║         ✨ IVA incluido | Servicio de calidad ✨            ║" crlf)
+    (printout t "    ║                                                              ║" crlf)
+    (printout t "    ╚══════════════════════════════════════════════════════════════╝" crlf)
+    (printout t crlf)
+    (printout t "    ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★" crlf)
+    (printout t crlf)
 )
 
 ;;; Versión relajada de búsqueda (no verifica platos usados)
@@ -1226,41 +1380,94 @@
 (defrule REFINAMIENTO::mostrar-resultados-finales
     (declare (salience -100))
     =>
-    (printout t crlf "========================================" crlf)
-    (printout t "📊 RESUMEN FINAL DE MENÚS" crlf)
-    (printout t "========================================" crlf)
-    
     (bind ?barato (if (> (length$ (find-all-facts ((?m menu-completo)) (eq ?m:categoria barato))) 0) 
                      then "✅" else "❌"))
     (bind ?medio (if (> (length$ (find-all-facts ((?m menu-completo)) (eq ?m:categoria medio))) 0)
                     then "✅" else "❌"))
     (bind ?caro (if (> (length$ (find-all-facts ((?m menu-completo)) (eq ?m:categoria caro))) 0)
                    then "✅" else "❌"))
+
+    (printout t crlf crlf)
+    (printout t "╔══════════════════════════════════════════════════════════════════════════╗" crlf)
+    (printout t "║                                                                          ║" crlf)
+    (printout t "║    ��🎉🎊  ═════════════════════════════════════════  🎊🎉🎊         ║" crlf)
+    (printout t "║                                                                          ║" crlf)
+    (printout t "║           ✨✨  R E S U M E N   F I N A L   D E   M E N Ú S  ✨✨      ║" crlf)
+    (printout t "║                                                                          ║" crlf)
+    (printout t "║    ��🎉🎊  ═════════════════════════════════════════  🎊🎉🎊         ║" crlf)
+    (printout t "║                                                                          ║" crlf)
+    (printout t "╠══════════════════════════════════════════════════════════════════════════╣" crlf)
+    (printout t "║                                                                          ║" crlf)
+    (format t   "║      📋 Estado de disponibilidad:                                        ║%n")
+    (printout t "║                                                                          ║" crlf)
+    (format t "  ║         💰 Menú Económico  : %-3s                                        ║%n" ?barato)
+    (format t "  ║         🌟 Menú Selecto    : %-3s                                        ║%n" ?medio)
+    (format t "  ║         👑 Menú Premium    : %-3s                                        ║%n" ?caro)
+    (printout t "║                                                                          ║" crlf)
+    (printout t "╚══════════════════════════════════════════════════════════════════════════╝" crlf)
+    (printout t crlf crlf)
     
-    (printout t "Barato: " ?barato " | Medio: " ?medio " | Caro: " ?caro crlf crlf)
-    
-    ;;; Mostrar detalles de cada menú creado
+    ;;; Mostrar detalles de cada menú creado con separadores artísticos
     (bind ?menus-baratos (find-all-facts ((?m menu-completo)) (eq ?m:categoria barato)))
     (if (> (length$ ?menus-baratos) 0) then
-        (printout t "🍽️  MENÚ BARATO:" crlf)
+        (printout t "╔═══════════════════════════════════════════════════════════════════════════╗" crlf)
+        (printout t "║                                                                           ║" crlf)
+        (printout t "║         💰💰  M E N Ú   E C O N Ó M I C O  💰💰                        ║" crlf)
+        (printout t "║                 ～ Calidad excepcional, precio accesible ～              ║" crlf)
+        (printout t "║                                                                           ║" crlf)
+        (printout t "╚═══════════════════════════════════════════════════════════════════════════╝" crlf)
+        (printout t crlf)
         (foreach ?m ?menus-baratos
             (mostrar-detalles-menu ?m)))
 
     (bind ?menus-medios (find-all-facts ((?m menu-completo)) (eq ?m:categoria medio)))
     (if (> (length$ ?menus-medios) 0) then
-        (printout t "🍽️  MENÚ MEDIO:" crlf)
+        (printout t "╔═══════════════════════════════════════════════════════════════════════════╗" crlf)
+        (printout t "║                                                                           ║" crlf)
+        (printout t "║            🌟🌟  M E N Ú   S E L E C T O  🌟🌟                        ║" crlf)
+        (printout t "║                 ～ La elección perfecta para el disfrute ～              ║" crlf)
+        (printout t "║                                                                           ║" crlf)
+        (printout t "╚═══════════════════════════════════════════════════════════════════════════╝" crlf)
+        (printout t crlf)
         (foreach ?m ?menus-medios
             (mostrar-detalles-menu ?m)))
 
     (bind ?menus-caros (find-all-facts ((?m menu-completo)) (eq ?m:categoria caro)))
     (if (> (length$ ?menus-caros) 0) then
-        (printout t "🍽️  MENÚ CARO:" crlf)
+        (printout t "╔═══════════════════════════════════════════════════════════════════════════╗" crlf)
+        (printout t "║                                                                           ║" crlf)
+        (printout t "║        👑👑  M E N Ú   P R E M I U M   E X C L U S I V O  👑👑        ║" crlf)
+        (printout t "║              ～ La experiencia culinaria definitiva ～                   ║" crlf)
+        (printout t "║                                                                           ║" crlf)
+        (printout t "╚═══════════════════════════════════════════════════════════════════════════╝" crlf)
+        (printout t crlf)
         (foreach ?m ?menus-caros
             (mostrar-detalles-menu ?m)))
             
     (if (and (= (length$ ?menus-baratos) 0) 
              (= (length$ ?menus-medios) 0) 
              (= (length$ ?menus-caros) 0)) then
-        (printout t "❌ No se pudo crear ningún menú" crlf))
+        (printout t crlf)
+        (printout t "    ╔══════════════════════════════════════════════════════════════╗" crlf)
+        (printout t "    ║                                                              ║" crlf)
+        (printout t "    ║    ❌  Lo sentimos, no se pudo generar ningún menú  ❌      ║" crlf)
+        (printout t "    ║                                                              ║" crlf)
+        (printout t "    ║         Por favor, revise los criterios de búsqueda         ║" crlf)
+        (printout t "    ║                                                              ║" crlf)
+        (printout t "    ╚══════════════════════════════════════════════════════════════╝" crlf)
+        (printout t crlf))
+    
+    ;;; Banner de cierre final
+    (printout t crlf)
+    (printout t "╔═══════════════════════════════════════════════════════════════════════════╗" crlf)
+    (printout t "║                                                                           ║" crlf)
+    (printout t "║                  ✨ Gracias por utilizar nuestro servicio ✨             ║" crlf)
+    (printout t "║                                                                           ║" crlf)
+    (printout t "║              🍽️  ¡Que disfrute de su experiencia culinaria!  🍽️         ║" crlf)
+    (printout t "║                                                                           ║" crlf)
+    (printout t "╚═══════════════════════════════════════════════════════════════════════════╝" crlf)
+    (printout t crlf)
+    (printout t "    ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★" crlf)
+    (printout t crlf crlf)
 )
 

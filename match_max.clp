@@ -43,7 +43,7 @@
     "Verifica umbrales de precio y estación preferida"
     (bind ?price (send ?recipe get-price))
     (bind ?is-complex (send ?recipe get-is_complex))
-    ; (if (< ?price ?min-price) then (return FALSE))
+    ;;; (if (< ?price ?min-price) then (return FALSE))
     (if (> ?price ?max-price) then (return FALSE))
     (bind ?recipe-season (send ?recipe get-seasons))
     (if (not (or (eq ?preferred-season any-season)
@@ -201,8 +201,6 @@
                 (assert (combinationMAX (requested $?requested) (recipe ?recipe-name)))
             (if (= ?perfect-match-count 0) then
                 (printout t crlf "🎯 Se encontraron platos que satisfacen todas las " ?requested-count " restricciones." crlf)
-                (printout t "Recetas compatibles:" crlf))
-                (printout t " - " ?recipe-name crlf)
             (bind ?perfect-match-count (+ ?perfect-match-count 1))))
 
     (if (= ?perfect-match-count 0) then
