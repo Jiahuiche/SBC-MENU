@@ -516,7 +516,7 @@
     (wine_pairing "Dessert wine")
     (explanation "Experience the crispy texture and light and zesty character of this exceptional dish. Crafted for dairy free, gluten free that harmonizes perfectly with dessert wine.")
     (is_complex FALSE)
-    (meal-types side-dish)
+    (meal-types dessert)
     (restrictions dairy-free gluten-free halal kosher nut-free shellfish-free)
     (ingredients rice-flour sorghum-flour arrowroot teff-flour aluminum-free-baking-powder baking-soda nutmeg cinnamon xylitol chocolate-vegan-chocolate-chips coconut-milk juice-of-lemon pear-sauce sunflower-oil kosher-salt earth-balance-soy-free-spread)
     (seasons any-season))

@@ -40,7 +40,7 @@
 
 ;;; Calcula rangos de precio de los menus
 
-(deffunction REFINAMIENTO::calc-intervalo () ;REFINAMIENTO::
+(deffunction REFINAMIENTO::calc-intervalo () 
     (bind ?facts (find-fact ((?f user-restrictions)) TRUE))
    
    (if (neq ?facts FALSE) then
@@ -112,102 +112,11 @@
 )
 
 
-; (deffunction REFINAMIENTO::aperitivo-ya-usado-en-otros-menus (?aperitivo)
-;     "Verifica si un aperitivo ya está usado en otros menús (platos principales o aperitivos)"
-;     (bind ?titulo-aperitivo (send ?aperitivo get-title))
-    
-;     (do-for-all-facts ((?m menu-completo)) TRUE
-;         ; Verificar si coincide con entrante, principal o postre de algún menú
-;         (if (or (str-compare ?titulo-aperitivo (send ?m:entrante get-title))
-;                 (str-compare ?titulo-aperitivo (send ?m:principal get-title))
-;                 (str-compare ?titulo-aperitivo (send ?m:postre get-title))) then
-;             (return TRUE))
-        
-;         ; Verificar si está en los aperitivos extra de algún menú
-;         (foreach ?a ?m:aperitivos-extra
-;             (if (str-compare ?titulo-aperitivo (send ?a get-title)) then
-;                 (return TRUE)))
-;     )
-;     (return FALSE)
-; )
 
-
-(deffunction REFINAMIENTO::plato-ya-usado (?e ?p ?po ?aperitivos)
-    (bind ?titulo-entrante (send ?e get-title))
-    (bind ?titulo-principal (send ?p get-title))
-    (bind ?titulo-postre (send ?po get-title))
-    (bind ?titulos-aperitivos (create$))
-    
-    ;;; Obtener títulos de todos los aperitivos del menú actual
-    (foreach ?a ?aperitivos
-        (bind ?titulos-aperitivos (insert$ ?titulos-aperitivos (length$ ?titulos-aperitivos) (send ?a get-title)))
-    )
-    
-    (do-for-all-facts ((?m menu-completo)) TRUE
-        ;;; Verificar si los platos principales están duplicados
-        (if (or (str-compare (send ?m:entrante get-title) ?titulo-entrante) 
-                (str-compare (send ?m:principal get-title) ?titulo-principal) 
-                (str-compare (send ?m:postre get-title) ?titulo-postre)) then
-            (return TRUE))
-        
-        ;;; Verificar si los aperitivos están duplicados con platos principales de otros menús
-        (foreach ?a-actual ?aperitivos
-            (bind ?titulo-a-actual (send ?a-actual get-title))
-            (if (or (str-compare ?titulo-a-actual (send ?m:entrante get-title))
-                    (str-compare ?titulo-a-actual (send ?m:principal get-title))
-                    (str-compare ?titulo-a-actual (send ?m:postre get-title))) then
-                (return TRUE)
-            )
-        )
-        
-        ;;; Verificar si los aperitivos están duplicados con aperitivos de otros menús
-        (foreach ?a-actual ?aperitivos
-            (bind ?titulo-a-actual (send ?a-actual get-title))
-            (foreach ?a-otro-menu ?m:aperitivos-extra
-                (if (str-compare ?titulo-a-actual (send ?a-otro-menu get-title)) then
-                    (return TRUE)
-                )
-            )
-        )
-    )
-    (return FALSE)
-)
-
-; ;;; Verifica combinacion platos es valida
-
-; (deffunction REFINAMIENTO::combinacion-es-valida (?entrante ?principal ?postre ?aperitivos-extra)
-;     ;;; Verificar que no sean la misma receta (por título)
-;     (bind ?titulo-entrante (send ?entrante get-title))
-;     (bind ?titulo-principal (send ?principal get-title))
-;     (bind ?titulo-postre (send ?postre get-title))
-    
-;     ; Verificar duplicados entre platos principales
-;     (if (or (str-compare ?titulo-entrante ?titulo-principal) 
-;             (str-compare ?titulo-entrante ?titulo-postre) 
-;             (str-compare ?titulo-principal ?titulo-postre)) then
-;         (return FALSE)
-;     )
-    
-;     ; Verificar que aperitivos no dupliquen con platos principales
-;     (foreach ?a ?aperitivos-extra
-;         (bind ?titulo-aperitivo (send ?a get-title))
-;         (if (or (str-compare ?titulo-aperitivo ?titulo-entrante)
-;                 (str-compare ?titulo-aperitivo ?titulo-principal)
-;                 (str-compare ?titulo-aperitivo ?titulo-postre)) then
-;             (return FALSE))
-;     )
-    
-;     ;;; Verificar que no estén ya en otro menú (por título)
-;     (if (plato-ya-usado ?entrante ?principal ?postre ?aperitivos-extra) then
-;         (return FALSE)
-;     )
-    
-;     (return TRUE)
-; )
 
 ;;; Busca combinaciones válidas de platos (verifica duplicados entre menús)
 (deffunction REFINAMIENTO::buscar-combinacion-valida (?precio-min ?precio-max ?aperitivos-extra)
-    ;;; Versión relajada que SÍ verifica duplicados entre menús
+    
     (bind ?entrantes (create$))
     (bind ?principales (create$))
     (bind ?postres (create$))
@@ -526,8 +435,6 @@
 )
 
 ;;; Mostrar detalles menu
-
-
 (deffunction REFINAMIENTO::mostrar-detalles-menu (?m)
 
     (bind ?user-fact (nth$ 1 (find-all-facts ((?u user-restrictions)) TRUE)))
@@ -543,7 +450,7 @@
     (printout t "    " crlf)
     (printout t "    ╔══════════════════════════════════════════════════════════════╗" crlf)
     (printout t "    ║                                                              ║" crlf)
-    (printout t "    ║           ✨ 🍽️  M E N Ú   G O U R M E T  🍽️ ✨           ║" crlf)
+    (printout t "    ║           ✨ 🍽️  M E N Ú   G O U R M E T  🍽️ ✨            ║" crlf)
     (printout t "    ║                                                              ║" crlf)
     (printout t "    ╠══════════════════════════════════════════════════════════════╣" crlf)
     
@@ -626,8 +533,8 @@
     (bind ?principal-inst (fact-slot-value ?m principal))
     (printout t "    ┌──────────────────────────────────────────────────────────────┐" crlf)
     (printout t "    │                                                              │" crlf)
-    (printout t "    │         🍽️  P L A T O   P R I N C I P A L  🍽️                │" crlf)
-    (printout t "    │              ～ El corazón del menú ～                        │" crlf)
+    (printout t "    │         🍽️  P L A T O   P R I N C I P A L  🍽️               │" crlf)
+    (printout t "    │              ～ El corazón del menú ～                       │" crlf)
     (printout t "    │                                                              │" crlf)
     (printout t "    └──────────────────────────────────────────────────────────────┘" crlf)
     (printout t crlf)
@@ -710,7 +617,7 @@
     (bind ?bebidas-sugeridas (sugerir-bebidas ?m))
     (printout t "    ┌──────────────────────────────────────────────────────────────┐" crlf)
     (printout t "    │                                                              │" crlf)
-    (printout t "    │          🥤  B E B I D A S   I N C L U I D A S  🥤         │" crlf)
+    (printout t "    │          🥤  B E B I D A S   I N C L U I D A S  🥤          │" crlf)
     (printout t "    │                                                              │" crlf)
     (printout t "    └──────────────────────────────────────────────────────────────┘" crlf)
     (printout t crlf)
@@ -837,8 +744,7 @@
                     crlf)
     else
         (printout t "     ❌ No se pudo crear menú barato con las especificaciones actuales" crlf)
-        ; Crear un menú vacío para evitar que la regla se reactive
-        ;(assert (menu-completo (categoria barato)))
+
     )
 )
 
@@ -918,8 +824,7 @@
                 crlf)
     else
         (printout t "     ❌ No se pudo crear menú medio con las especificaciones actuales" crlf)
-        ; Crear un menú vacío para evitar que la regla se reactive
-        ;(assert (menu-completo (categoria medio)))
+        
     )
 )
 
@@ -1000,8 +905,7 @@
                 crlf)
     else
         (printout t "     ❌ No se pudo crear menú caro con las especificaciones actuales" crlf)
-        ; Crear un menú vacío para evitar que la regla se reactive
-        ;(assert (menu-completo (categoria caro)))
+        
     )
 )
 
@@ -1043,8 +947,8 @@
     (if (> (length$ ?menus-baratos) 0) then
         (printout t "╔═══════════════════════════════════════════════════════════════════════════╗" crlf)
         (printout t "║                                                                           ║" crlf)
-        (printout t "║         💰💰  M E N Ú   E C O N Ó M I C O  💰💰                        ║" crlf)
-        (printout t "║                 ～ Calidad excepcional, precio accesible ～              ║" crlf)
+        (printout t "║         💰💰  M E N Ú   E C O N Ó M I C O  💰💰                         ║" crlf)
+        (printout t "║                 ～ Calidad excepcional, precio accesible ～               ║" crlf)
         (printout t "║                                                                           ║" crlf)
         (printout t "╚═══════════════════════════════════════════════════════════════════════════╝" crlf)
         (printout t crlf)
@@ -1055,8 +959,8 @@
     (if (> (length$ ?menus-medios) 0) then
         (printout t "╔═══════════════════════════════════════════════════════════════════════════╗" crlf)
         (printout t "║                                                                           ║" crlf)
-        (printout t "║            🌟🌟  M E N Ú   S E L E C T O  🌟🌟                        ║" crlf)
-        (printout t "║                 ～ La elección perfecta para el disfrute ～              ║" crlf)
+        (printout t "║            🌟🌟  M E N Ú   S E L E C T O  🌟🌟                          ║" crlf)
+        (printout t "║                 ～ La elección perfecta para el disfrute ～               ║" crlf)
         (printout t "║                                                                           ║" crlf)
         (printout t "╚═══════════════════════════════════════════════════════════════════════════╝" crlf)
         (printout t crlf)
@@ -1067,8 +971,8 @@
     (if (> (length$ ?menus-caros) 0) then
         (printout t "╔═══════════════════════════════════════════════════════════════════════════╗" crlf)
         (printout t "║                                                                           ║" crlf)
-        (printout t "║        👑👑  M E N Ú   P R E M I U M   E X C L U S I V O  👑👑        ║" crlf)
-        (printout t "║              ～ La experiencia culinaria definitiva ～                   ║" crlf)
+        (printout t "║        👑👑  M E N Ú   P R E M I U M   E X C L U S I V O  👑👑          ║" crlf)
+        (printout t "║              ～ La experiencia culinaria definitiva ～                    ║" crlf)
         (printout t "║                                                                           ║" crlf)
         (printout t "╚═══════════════════════════════════════════════════════════════════════════╝" crlf)
         (printout t crlf)
@@ -1083,7 +987,7 @@
         (printout t "    ║                                                              ║" crlf)
         (printout t "    ║    ❌  Lo sentimos, no se pudo generar ningún menú  ❌      ║" crlf)
         (printout t "    ║                                                              ║" crlf)
-        (printout t "    ║         Por favor, revise los criterios de búsqueda         ║" crlf)
+        (printout t "    ║         Por favor, revise los criterios de búsqueda          ║" crlf)
         (printout t "    ║                                                              ║" crlf)
         (printout t "    ╚══════════════════════════════════════════════════════════════╝" crlf)
         (printout t crlf))
@@ -1094,7 +998,7 @@
     (printout t "║                                                                           ║" crlf)
     (printout t "║                  ✨ Gracias por utilizar nuestro servicio ✨             ║" crlf)
     (printout t "║                                                                           ║" crlf)
-    (printout t "║              🍽️  ¡Que disfrute de su experiencia culinaria!  🍽️         ║" crlf)
+    (printout t "║              🍽️  ¡Que disfrute de su experiencia culinaria!  🍽️          ║" crlf)
     (printout t "║                                                                           ║" crlf)
     (printout t "╚═══════════════════════════════════════════════════════════════════════════╝" crlf)
     (printout t crlf)
