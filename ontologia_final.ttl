@@ -1,0 +1,168 @@
+@prefix : <http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12/> .
+
+<http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#is_desert_of
+:is_desert_of rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Recipe ;
+              rdfs:range :Menu .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#is_ingredient_of
+:is_ingredient_of rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain :Ingredient ;
+                  rdfs:range :Recipe .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#is_main_of
+:is_main_of rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Recipe ;
+            rdfs:range :Menu .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#is_starter_of
+:is_starter_of rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :Recipe ;
+               rdfs:range :Menu .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#satisfies_restriction
+:satisfies_restriction rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain :Menu ,
+                                   :Recipe ;
+                       rdfs:range :Restriction .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#diet_restriction_name
+:diet_restriction_name rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:domain :Diet_restriction ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#explanation
+:explanation rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Recipe ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#is_complex
+:is_complex rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Recipe ;
+            rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#meal-types
+:meal-types rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Recipe ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#price
+:price rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Max_price ,
+                   :Menu ,
+                   :Min_price ,
+                   :Recipe ;
+       rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#seasons
+:seasons rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :Recipe ,
+                     :Season_restriction ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Recipe ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#wine_pairing
+:wine_pairing rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Recipe ;
+              rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#Diet_restriction
+:Diet_restriction rdf:type owl:Class ;
+                  rdfs:subClassOf :Restriction .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#Ingredient
+:Ingredient rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#Max_price
+:Max_price rdf:type owl:Class ;
+           rdfs:subClassOf :Restriction .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#Menu
+:Menu rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#Min_price
+:Min_price rdf:type owl:Class ;
+           rdfs:subClassOf :Restriction .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#Recipe
+:Recipe rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#Restriction
+:Restriction rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/jiaha/ontologies/2025/10/untitled-ontology-12#Season_restriction
+:Season_restriction rdf:type owl:Class ;
+                    rdfs:subClassOf :Restriction .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Diet_restriction
+                :Max_price
+                :Min_price
+                :Season_restriction
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
