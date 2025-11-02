@@ -224,4 +224,5 @@
     =>
     (printout t "========================================" crlf)
     (printout t "✅ SISTEMA FINALIZADO" crlf)
-    (printout t "========================================" crlf))
+    (printout t "========================================" crlf)
+    (focus REFINAMIENTO))

@@ -1,0 +1,2683 @@
+CLIPS> (batch "test_exp.bat")
+TRUE
+CLIPS> (clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> 
+EXPERIMENTO 1: Sin restricciones - Presupuesto moderado
+EXPERIMENTO
+CLIPS> 
+(run)
+Event type (wedding/congress/family): 
+congress
+Maximum number of people (>=1): 100
+Season (spring/summer/autumn/winter): any-season
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 20
+Maximum price per person (>= minimum): 80
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 1382
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+   1382
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+TOTAL de candidatos: 1382
+CÁLCULO DE LÍMITES:
+   Usuario: 20 - 80€
+   Candidatos: 0.05 - 79.6€
+   Final: 20 - 80€
+   Límites: 20 | 40.0 | 60.0 | 80€
+
+ BUSCANDO MENÚ BARATO (≤ 40.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 475 | Principales: 321 | Postres: 293
+        [DEBUG] Combinación válida encontrada: 39.23€
+        [DEBUG]   Funghetti Trifolati | Make Ahead Quiche | Apple Cupcakes
+     ✅ MENÚ BARATO CREADO: 39.23€
+
+BUSCANDO MENÚ MEDIO (40.0€ - 60.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 475 | Principales: 321 | Postres: 293
+        [DEBUG] Combinación válida encontrada: 57.64€
+        [DEBUG]   Stir Fry Mushrooms In Butter, Garlic And White Wine | Beef Pot Pies with Irish Cheddar Crust | Carrot Raisin Chocolate Chip Cookies
+     ✅ MENÚ MEDIO CREADO: 57.64€
+
+BUSCANDO MENÚ CARO (≥ 60.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 475 | Principales: 321 | Postres: 293
+        [DEBUG] Combinación válida encontrada: 73.28€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | How to Make The Ultimate Slow Cooker Potato Soup | Frozen Mojito Pie
+     ✅ MENÚ CARO CREADO: 73.28€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 39.23€
+Entrante: Funghetti Trifolati (24.05€)
+Principal: Make Ahead Quiche (11.51€)
+Vino recomendado: Cualquier Vino
+Postre: Apple Cupcakes (3.67€)
+PRECIO TOTAL: 39.23€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 57.64€
+Entrante: Stir Fry Mushrooms In Butter, Garlic And White Wine (24.39€)
+Principal: Beef Pot Pies with Irish Cheddar Crust (32.94€)
+Vino recomendado: Cualquier Vino
+Postre: Carrot Raisin Chocolate Chip Cookies (0.31€)
+PRECIO TOTAL: 57.64€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 73.28€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: How to Make The Ultimate Slow Cooker Potato Soup (26.38€)
+Vino recomendado: Cualquier Vino
+Postre: Frozen Mojito Pie (17.59€)
+PRECIO TOTAL: 73.28€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> 
+EXPERIMENTO 2: Una restricción - Vegetarian
+EXPERIMENTO
+CLIPS> 
+(run)
+Event type (wedding/congress/family): 
+family
+Will there be a cake? (yes/no): yes
+Maximum number of people (>=1): 80
+Season (spring/summer/autumn/winter): summer
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> vegetarian
+> exit
+Minimum price per person (>= 0): 25
+Maximum price per person (>= minimum): 100
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 0
+Recetas con 1 restricción: 568
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+   568
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+TOTAL de candidatos: 568
+CÁLCULO DE LÍMITES:
+   Usuario: 25 - 100€
+   Candidatos: 0.14 - 98.4€
+   Final: 25 - 100€
+   Límites: 25 | 50.0 | 75.0 | 100€
+
+ BUSCANDO MENÚ BARATO (≤ 50.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 261 | Principales: 22 | Postres: 154
+        [DEBUG] Combinación válida encontrada: 48.6€
+        [DEBUG]   Funghetti Trifolati | Ethiopian Lentil Curry | Brown sugar & Spice Sugar cookie frogs
+     ✅ MENÚ BARATO CREADO: 48.6€
+
+BUSCANDO MENÚ MEDIO (50.0€ - 75.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 261 | Principales: 22 | Postres: 154
+        [DEBUG] Combinación válida encontrada: 61.96€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Big Batch Smoothie Bowl | Apple Cupcakes
+     ✅ MENÚ MEDIO CREADO: 61.96€
+
+BUSCANDO MENÚ CARO (≥ 75.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 261 | Principales: 22 | Postres: 154
+        [DEBUG] Combinación válida encontrada: 97.33€
+        [DEBUG]   Spicy Lemongrass Soup | Moosewood Lentil Soup | Apple Custard Pie With Oatmeal Crust
+     ✅ MENÚ CARO CREADO: 97.33€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 48.6€
+Entrante: Funghetti Trifolati (24.05€)
+Principal: Ethiopian Lentil Curry (24.14€)
+Vino recomendado: Light Red wine or White wine
+Postre: Brown sugar & Spice Sugar cookie frogs (0.41€)
+PLUS: Tarta familiar especial disponible (+50€)
+PRECIO TOTAL: 48.6€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 61.96€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Big Batch Smoothie Bowl (28.98€)
+Vino recomendado: Cualquier Vino
+Postre: Apple Cupcakes (3.67€)
+PLUS: Tarta familiar especial disponible (+50€)
+PRECIO TOTAL: 61.96€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 97.33€
+Entrante: Spicy Lemongrass Soup (78.22€)
+Principal: Moosewood Lentil Soup (12.39€)
+Vino recomendado: Light Red wine or White wine
+Postre: Apple Custard Pie With Oatmeal Crust (6.72€)
+PLUS: Tarta familiar especial disponible (+50€)
+PRECIO TOTAL: 97.33€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 3: Dos restricciones - Vegan + Gluten-free
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+congress
+Maximum number of people (>=1): 150
+Season (spring/summer/autumn/winter): spring
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> vegan
+> gluten-free
+> exit
+Minimum price per person (>= 0): 10
+Maximum price per person (>= minimum): 100
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 0
+Recetas con 1 restricción: 580
+Recetas con 2 restricciones: 106
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+   686
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+TOTAL de candidatos: 106
+CÁLCULO DE LÍMITES:
+   Usuario: 10 - 100€
+   Candidatos: 0.49 - 97.25€
+   Final: 10 - 100€
+   Límites: 10 | 40.0 | 70.0 | 100€
+
+ BUSCANDO MENÚ BARATO (≤ 40.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 76 | Principales: 10 | Postres: 7
+        [DEBUG] Combinación válida encontrada: 29.55€
+        [DEBUG]   Garlic & Spice Plantain Chips | Moosewood Lentil Soup | Tropical Ice Pops
+     ✅ MENÚ BARATO CREADO: 29.55€
+
+BUSCANDO MENÚ MEDIO (40.0€ - 70.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 76 | Principales: 10 | Postres: 7
+        [DEBUG] Combinación válida encontrada: 67.16€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Cauliflower Chickpea Stew | Autumn Pumpkin Cake
+     ✅ MENÚ MEDIO CREADO: 67.16€
+
+BUSCANDO MENÚ CARO (≥ 70.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 76 | Principales: 10 | Postres: 7
+        [DEBUG] Combinación válida encontrada: 97.03€
+        [DEBUG]   Caribbean black bean and sweet potato soup | Gujarati Dry Mung Bean Curry | Strawberry Basil Italian Ice
+     ✅ MENÚ CARO CREADO: 97.03€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 29.55€
+Entrante: Garlic & Spice Plantain Chips (2.51€)
+Principal: Moosewood Lentil Soup (12.39€)
+Vino recomendado: Light Red wine or White wine
+Postre: Tropical Ice Pops (14.65€)
+PRECIO TOTAL: 29.55€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 67.16€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Cauliflower Chickpea Stew (35.06€)
+Vino recomendado:  No wine pairing
+Postre: Autumn Pumpkin Cake (2.79€)
+PRECIO TOTAL: 67.16€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 97.03€
+Entrante: Caribbean black bean and sweet potato soup (32.83€)
+Principal: Gujarati Dry Mung Bean Curry (41.02€)
+Vino recomendado: Light Red wine or White wine
+Postre: Strawberry Basil Italian Ice (23.18€)
+PRECIO TOTAL: 97.03€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 4: Tres restricciones - Vegan + Gluten-free + Nut-free
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+family
+Will there be a cake? (yes/no): no
+Maximum number of people (>=1): 90
+Season (spring/summer/autumn/winter): autumn
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> vegan
+> gluten-free
+> nut-free
+> exit
+Minimum price per person (>= 0): 15
+Maximum price per person (>= minimum): 100
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 0
+Recetas con 1 restricción: 1805
+Recetas con 2 restricciones: 774
+Recetas con 3 restricciones: 118
+Recetas con 4 restricciones: 0
+   2697
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+TOTAL de candidatos: 118
+CÁLCULO DE LÍMITES:
+   Usuario: 15 - 100€
+   Candidatos: 0.49 - 97.25€
+   Final: 15 - 100€
+   Límites: 15 | 43.3333333333333 | 71.6666666666667 | 100€
+
+ BUSCANDO MENÚ BARATO (≤ 43.3333333333333€)...
+        [DEBUG] Recetas disponibles - Entrantes: 90 | Principales: 9 | Postres: 7
+        [DEBUG] Combinación válida encontrada: 39.23€
+        [DEBUG]   Funghetti Trifolati | Moosewood Lentil Soup | Autumn Pumpkin Cake
+     ✅ MENÚ BARATO CREADO: 39.23€
+
+BUSCANDO MENÚ MEDIO (43.3333333333333€ - 71.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 90 | Principales: 9 | Postres: 7
+        [DEBUG] Combinación válida encontrada: 58.7€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Lemony Greek Lentil Soup | Tropical Ice Pops
+     ✅ MENÚ MEDIO CREADO: 58.7€
+
+BUSCANDO MENÚ CARO (≥ 71.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 90 | Principales: 9 | Postres: 7
+        [DEBUG] Combinación válida encontrada: 91.07€
+        [DEBUG]   Caribbean black bean and sweet potato soup | Cauliflower Chickpea Stew | Strawberry Basil Italian Ice
+     ✅ MENÚ CARO CREADO: 91.07€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 39.23€
+Entrante: Funghetti Trifolati (24.05€)
+Principal: Moosewood Lentil Soup (12.39€)
+Vino recomendado: Light Red wine or White wine
+Postre: Autumn Pumpkin Cake (2.79€)
+PRECIO TOTAL: 39.23€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 58.7€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Lemony Greek Lentil Soup (14.74€)
+Vino recomendado: Light Red wine or White wine
+Postre: Tropical Ice Pops (14.65€)
+PRECIO TOTAL: 58.7€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 91.07€
+Entrante: Caribbean black bean and sweet potato soup (32.83€)
+Principal: Cauliflower Chickpea Stew (35.06€)
+Vino recomendado:  No wine pairing
+Postre: Strawberry Basil Italian Ice (23.18€)
+PRECIO TOTAL: 91.07€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 5: Cuatro restricciones - Muy restrictivo
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+congress
+Maximum number of people (>=1): 120
+Season (spring/summer/autumn/winter): winter
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> vegan
+> gluten-free
+> soy-free
+> nut-free
+> exit
+Minimum price per person (>= 0): 20
+Maximum price per person (>= minimum): 90
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 0
+Recetas con 1 restricción: 2276
+Recetas con 2 restricciones: 1870
+Recetas con 3 restricciones: 646
+Recetas con 4 restricciones: 88
+   4880
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+TOTAL de candidatos: 88  
+CÁLCULO DE LÍMITES:
+   Usuario: 20 - 90€
+   Candidatos: 0.49 - 83.69€
+   Final: 20 - 90€
+   Límites: 20 | 43.3333333333333 | 66.6666666666667 | 90€
+
+ BUSCANDO MENÚ BARATO (≤ 43.3333333333333€)...
+        [DEBUG] Recetas disponibles - Entrantes: 62 | Principales: 10 | Postres: 6
+        [DEBUG] Combinación válida encontrada: 40.38€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Tuscan White Bean Soup with Olive Oil and Rosemary | Autumn Pumpkin Cake
+     ✅ MENÚ BARATO CREADO: 40.38€
+
+BUSCANDO MENÚ MEDIO (43.3333333333333€ - 66.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 62 | Principales: 10 | Postres: 6
+        [DEBUG] Combinación válida encontrada: 59.87€
+        [DEBUG]   Caribbean black bean and sweet potato soup | Moosewood Lentil Soup | Tropical Ice Pops
+     ✅ MENÚ MEDIO CREADO: 59.87€
+
+BUSCANDO MENÚ CARO (≥ 66.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 62 | Principales: 10 | Postres: 6
+        [DEBUG] Combinación válida encontrada: 84.01€
+        [DEBUG]   Finger Lickin' Good Stewed Quince Dessert | Herbivoracious' White Bean and Kale Soup | Strawberry Basil Italian Ice
+     ✅ MENÚ CARO CREADO: 84.01€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 40.38€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Tuscan White Bean Soup with Olive Oil and Rosemary (8.28€)
+Vino recomendado: Light Red wine or White wine
+Postre: Autumn Pumpkin Cake (2.79€)
+PRECIO TOTAL: 40.38€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 59.87€
+Entrante: Caribbean black bean and sweet potato soup (32.83€)
+Principal: Moosewood Lentil Soup (12.39€)
+Vino recomendado: Light Red wine or White wine
+Postre: Tropical Ice Pops (14.65€)
+PRECIO TOTAL: 59.87€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 84.01€
+Entrante: Finger Lickin' Good Stewed Quince Dessert (47.82€)
+Principal: Herbivoracious' White Bean and Kale Soup (13.01€)
+Vino recomendado:  No wine pairing
+Postre: Strawberry Basil Italian Ice (23.18€)
+PRECIO TOTAL: 84.01€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 6: Wedding - Presupuesto muy bajo
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+wedding
+Will there be a cake? (yes/no): yes
+Maximum number of people (>=1): 100
+Season (spring/summer/autumn/winter): spring
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 10
+Maximum price per person (>= minimum): 20
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 610
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+   610
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+TOTAL de candidatos: 610
+CÁLCULO DE LÍMITES:
+   Usuario: 10 - 20€
+   Candidatos: 0.05 - 19.89€
+   Final: 10 - 20€
+   Límites: 10 | 13.3333333333333 | 16.6666666666667 | 20€
+
+ BUSCANDO MENÚ BARATO (≤ 13.3333333333333€)...
+      Reservando presupuesto para aperitivos extra...
+      ✅ Presupuesto suficiente, incluyendo aperitivos
+        [DEBUG] Recetas disponibles - Entrantes: 235 | Principales: 32 | Postres: 224
+        [DEBUG] Combinación válida encontrada: 10.02€
+        [DEBUG]   Chocolate Chip Pancakes-gluten free, nut free, vegan | Salsa Verde Chicken Tamales | Bing's Banana Cake
+      [APERITIVOS] Buscando entre 272 opciones, presupuesto: 2.66666666666667€
+      [APERITIVO] ✅ Garlic & Spice Plantain Chips (2.51€)
+      [APERITIVO] ✅ Allergy-Free Thin Mints (0.05€)
+      ✅ 2 aperitivos seleccionados
+      Aperitivos seleccionados: 2 (costo: 2.56€)
+     ✅ MENÚ BARATO CREADO: 12.58€ (incluye 2 aperitivos extra)
+
+BUSCANDO MENÚ MEDIO (13.3333333333333€ - 16.6666666666667€)...
+      Reservando presupuesto para aperitivos extra...
+      ⚠️  Presupuesto insuficiente para aperitivos, creando menú normal
+         Necesita: >13.3333333333333€ | Disponible: 13.3333333333333€
+        [DEBUG] Recetas disponibles - Entrantes: 235 | Principales: 32 | Postres: 224
+        [DEBUG] Combinación válida encontrada: 16.51€
+        [DEBUG]   No Bake Chocolate Bars | Easy Crispy Oven Chicken | Chocolate Wafers
+     ✅ MENÚ MEDIO CREADO: 16.51€
+
+BUSCANDO MENÚ CARO (≥ 16.6666666666667€)...
+      Reservando presupuesto para aperitivos extra...
+      ⚠️  Presupuesto insuficiente para aperitivos, creando menú normal
+         Necesita: >16.6666666666667€ | Disponible: 16.0€
+        [DEBUG] Recetas disponibles - Entrantes: 235 | Principales: 32 | Postres: 224
+        [DEBUG] Combinación válida encontrada: 18.62€
+        [DEBUG]   Green Beans With Roasted Walnuts and Sweet Cranberries | Make Ahead Quiche | Carrot Raisin Chocolate Chip Cookies
+     ✅ MENÚ CARO CREADO: 18.62€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 10.02€
+Aperitivos extra incluidos:
+  - Garlic & Spice Plantain Chips (2.51€)
+  - Allergy-Free Thin Mints (0.05€)
+Entrante: Chocolate Chip Pancakes-gluten free, nut free, vegan (4.41€)
+Principal: Salsa Verde Chicken Tamales (2.9€)
+Vino recomendado: Cualquier Vino
+Postre: Bing's Banana Cake (2.71€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 12.58€
+Bebidas incluidas: "agua" "vino-rosado" "cerveza-rubia" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 16.51€
+Entrante: No Bake Chocolate Bars (8.14€)
+Principal: Easy Crispy Oven Chicken (8.25€)
+Vino recomendado: Cualquier Vino
+Postre: Chocolate Wafers (0.12€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 16.51€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 18.62€
+Entrante: Green Beans With Roasted Walnuts and Sweet Cranberries (6.8€)
+Principal: Make Ahead Quiche (11.51€)
+Vino recomendado: Cualquier Vino
+Postre: Carrot Raisin Chocolate Chip Cookies (0.31€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 18.62€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 7: Wedding - Presupuesto medio
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+wedding
+Will there be a cake? (yes/no): yes
+Maximum number of people (>=1): 120
+Season (spring/summer/autumn/winter): summer
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> vegetarian
+> exit
+Minimum price per person (>= 0): 20
+Maximum price per person (>= minimum): 80
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 0
+Recetas con 1 restricción: 440
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+   440
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+TOTAL de candidatos: 440
+CÁLCULO DE LÍMITES:
+   Usuario: 20 - 80€
+   Candidatos: 0.14 - 78.22€
+   Final: 20 - 80€
+   Límites: 20 | 40.0 | 60.0 | 80€
+
+ BUSCANDO MENÚ BARATO (≤ 40.0€)...
+      Reservando presupuesto para aperitivos extra...
+      ✅ Presupuesto suficiente, incluyendo aperitivos
+        [DEBUG] Recetas disponibles - Entrantes: 202 | Principales: 15 | Postres: 116
+        [DEBUG] Combinación válida encontrada: 31.72€
+        [DEBUG]   Broccoli with cheese soup | Moosewood Lentil Soup | Bing's Banana Cake
+      [APERITIVOS] Buscando entre 145 opciones, presupuesto: 8.0€
+      [APERITIVO] ✅ Garlic & Spice Plantain Chips (2.51€)
+      [APERITIVO] ✅ Cinnamon Sugar Fried Apples (1.89€)
+      [APERITIVO] ✅ Gingerbread Pancakes (1.8€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 6.2€)
+     ✅ MENÚ BARATO CREADO: 37.92€ (incluye 3 aperitivos extra)
+
+BUSCANDO MENÚ MEDIO (40.0€ - 60.0€)...
+      Reservando presupuesto para aperitivos extra...
+      ✅ Presupuesto suficiente, incluyendo aperitivos
+        [DEBUG] Recetas disponibles - Entrantes: 202 | Principales: 15 | Postres: 116
+        [DEBUG] Combinación válida encontrada: 47.72€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Lemony Greek Lentil Soup | Apple Cupcakes
+      [APERITIVOS] Buscando entre 145 opciones, presupuesto: 12.0€
+      [APERITIVO] ✅ Quinoa Tabbouleh Salad (6.44€)
+      [APERITIVO] ✅ Chouquettes (3.98€)
+      [APERITIVO] ✅ Spicy Banana Zucchini Balls (0.64€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 11.06€)
+     ✅ MENÚ MEDIO CREADO: 58.78€ (incluye 3 aperitivos extra)
+
+BUSCANDO MENÚ CARO (≥ 60.0€)...
+      Reservando presupuesto para aperitivos extra...
+      ✅ Presupuesto suficiente, incluyendo aperitivos
+        [DEBUG] Recetas disponibles - Entrantes: 202 | Principales: 15 | Postres: 116
+        [DEBUG] Combinación válida encontrada: 60.73€
+        [DEBUG]   Apple Brown Betty | Big Batch Smoothie Bowl | Apple Custard Pie With Oatmeal Crust
+      [APERITIVOS] Buscando entre 145 opciones, presupuesto: 16.0€
+      [APERITIVO] ✅ Gluten Free Cinnamon Apple Muffins (6.36€)
+      [APERITIVO] ✅ Banana Blueberry Pancakes (6.97€)
+      [APERITIVO] ✅ Gingerbread (1.58€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 14.91€)
+     ✅ MENÚ CARO CREADO: 75.64€ (incluye 3 aperitivos extra)
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 31.72€
+Aperitivos extra incluidos:
+  - Garlic & Spice Plantain Chips (2.51€)
+  - Cinnamon Sugar Fried Apples (1.89€)
+  - Gingerbread Pancakes (1.8€)
+Entrante: Broccoli with cheese soup (16.62€)
+Principal: Moosewood Lentil Soup (12.39€)
+Vino recomendado: Light Red wine or White wine
+Postre: Bing's Banana Cake (2.71€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 37.92€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 47.72€
+Aperitivos extra incluidos:
+  - Quinoa Tabbouleh Salad (6.44€)
+  - Chouquettes (3.98€)
+  - Spicy Banana Zucchini Balls (0.64€)
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Lemony Greek Lentil Soup (14.74€)
+Vino recomendado: Light Red wine or White wine
+Postre: Apple Cupcakes (3.67€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 58.78€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 60.73€
+Aperitivos extra incluidos:
+  - Gluten Free Cinnamon Apple Muffins (6.36€)
+  - Banana Blueberry Pancakes (6.97€)
+  - Gingerbread (1.58€)
+Entrante: Apple Brown Betty (25.03€)
+Principal: Big Batch Smoothie Bowl (28.98€)
+Vino recomendado: Cualquier Vino
+Postre: Apple Custard Pie With Oatmeal Crust (6.72€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 75.64€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+
+
+
+
+
+CLIPS> (batch "test_exp_2.bat")
+TRUE
+CLIPS> (clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 8: Wedding - Presupuesto alto
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+wedding
+Will there be a cake? (yes/no): yes
+Maximum number of people (>=1): 150
+Season (spring/summer/autumn/winter): any-season
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 60
+Maximum price per person (>= minimum): 150
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 1227
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+  1227
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+ TOTAL de candidatos:  1227
+CÁLCULO DE LÍMITES:
+   Usuario: 60 - 150€
+   Candidatos: 0.05 - 148.76€
+   Final: 60 - 150€
+   Límites: 60 | 90.0 | 120.0 | 150€
+
+ BUSCANDO MENÚ BARATO (≤ 90.0€)...
+      Reservando presupuesto para aperitivos extra...
+        [DEBUG] Recetas disponibles - Entrantes: 398 | Principales: 331 | Postres: 222
+        [DEBUG] Combinación válida encontrada: 60.55€
+        [DEBUG]   Stir Fry Mushrooms In Butter, Garlic And White Wine | How to Make The Ultimate Slow Cooker Potato Soup | Chocolate Banana Zucchini Cake
+      [APERITIVOS] Buscando entre 266 opciones, presupuesto: 18.0€
+      [APERITIVO] ✅ Apple, Cherry, Pear and Almond Breakfast Muffins (6.39€)
+      [APERITIVO] ✅ Chocolate Chip Pancakes-gluten free, nut free, vegan (4.41€)
+      [APERITIVO] ✅ Garlic & Spice Plantain Chips (2.51€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 13.31€)
+     ✅ MENÚ BARATO CREADO: 73.86€ (incluye 3 aperitivos extra)
+
+BUSCANDO MENÚ MEDIO (90.0€ - 120.0€)...
+      Reservando presupuesto para aperitivos extra...
+        [DEBUG] Recetas disponibles - Entrantes: 398 | Principales: 331 | Postres: 222
+        [DEBUG] Combinación válida encontrada: 91.93€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Simple Skillet Lasagna | Brownie Cheesecake
+      [APERITIVOS] Buscando entre 266 opciones, presupuesto: 24.0€
+      [APERITIVO] ✅ Broccoli with cheese soup (16.62€)
+      [APERITIVO] ✅ Green Beans With Roasted Walnuts and Sweet Cranberries (6.8€)
+      [APERITIVO] ✅ Peach Melba (0.2€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 23.62€)
+     ✅ MENÚ MEDIO CREADO: 115.55€ (incluye 3 aperitivos extra)
+
+BUSCANDO MENÚ CARO (≥ 120.0€)...
+      Reservando presupuesto para aperitivos extra...
+        [DEBUG] Recetas disponibles - Entrantes: 398 | Principales: 331 | Postres: 222
+        [DEBUG] Combinación válida encontrada: 120.0€
+        [DEBUG]   Vegan Stuffed Portobello Mushroom over Quinoa | Kale and Chickpea Soup with Lemon | Vegan Pumpkin Bundt Cake
+      [APERITIVOS] Buscando entre 266 opciones, presupuesto: 30.0€
+      [APERITIVO] ✅ Palak-tofu (bean curd) (17.82€)
+      [APERITIVO] ✅ Damn Good Corn Pudding ~from 12 Bones Smokehouse (10.07€)
+      [APERITIVO] ✅ Candy Cane Chocolate Marshmallows (0.74€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 28.63€)
+     ✅ MENÚ CARO CREADO: 148.63€ (incluye 3 aperitivos extra)
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 60.55€
+Aperitivos extra incluidos:
+  - Apple, Cherry, Pear and Almond Breakfast Muffins (6.39€)
+  - Chocolate Chip Pancakes-gluten free, nut free, vegan (4.41€)
+  - Garlic & Spice Plantain Chips (2.51€)
+Entrante: Stir Fry Mushrooms In Butter, Garlic And White Wine (24.39€)
+Principal: How to Make The Ultimate Slow Cooker Potato Soup (26.38€)
+Vino recomendado: Cualquier Vino
+Postre: Chocolate Banana Zucchini Cake (9.78€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 73.86€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 91.93€
+Aperitivos extra incluidos:
+  - Broccoli with cheese soup (16.62€)
+  - Green Beans With Roasted Walnuts and Sweet Cranberries (6.8€)
+  - Peach Melba (0.2€)
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Simple Skillet Lasagna (53.39€)
+Vino recomendado: Cualquier Vino
+Postre: Brownie Cheesecake (9.23€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 115.55€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 120.0€
+Aperitivos extra incluidos:
+  - Palak-tofu (bean curd) (17.82€)
+  - Damn Good Corn Pudding ~from 12 Bones Smokehouse (10.07€)
+  - Candy Cane Chocolate Marshmallows (0.74€)
+Entrante: Vegan Stuffed Portobello Mushroom over Quinoa (64.92€)
+Principal: Kale and Chickpea Soup with Lemon (49.45€)
+Vino recomendado: Cualquier Vino
+Postre: Vegan Pumpkin Bundt Cake (5.63€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 148.63€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 9: Presupuesto muy ajustado
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+congress
+Maximum number of people (>=1): 80
+Season (spring/summer/autumn/winter): any-season
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 10
+Maximum price per person (>= minimum): 22
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 699
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+  699
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+ TOTAL de candidatos: 699
+CÁLCULO DE LÍMITES:
+   Usuario: 10 - 22€
+   Candidatos: 0.05 - 21.99€
+   Final: 10 - 22€
+   Límites: 10 | 14.0 | 18.0 | 22€
+
+ BUSCANDO MENÚ BARATO (≤ 14.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 281 | Principales: 48 | Postres: 236
+        [DEBUG] Combinación válida encontrada: 11.35€
+        [DEBUG]   No Bake Chocolate Bars | Salsa Verde Chicken Tamales | Carrot Raisin Chocolate Chip Cookies
+     ✅ MENÚ BARATO CREADO: 11.35€
+
+BUSCANDO MENÚ MEDIO (14.0€ - 18.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 281 | Principales: 48 | Postres: 236
+        [DEBUG] Combinación válida encontrada: 17.19€
+        [DEBUG]   Chocolate Chip Pancakes-gluten free, nut free, vegan | Make Ahead Quiche | Whole Wheat Chocolate Chip Cookies
+     ✅ MENÚ MEDIO CREADO: 17.19€
+
+BUSCANDO MENÚ CARO (≥ 18.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 281 | Principales: 48 | Postres: 236
+        [DEBUG] Combinación válida encontrada: 21.41€
+        [DEBUG]   Havarti and Asparagus Quiche | Make Olive Garden’s Delicious Pasta Fagioli At Home | Brown sugar & Spice Sugar cookie frogs
+     ✅ MENÚ CARO CREADO: 21.41€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 11.35€
+Entrante: No Bake Chocolate Bars (8.14€)
+Principal: Salsa Verde Chicken Tamales (2.9€)
+Vino recomendado: Cualquier Vino
+Postre: Carrot Raisin Chocolate Chip Cookies (0.31€)
+PRECIO TOTAL: 11.35€
+Bebidas incluidas: "agua" "vino-rosado" "cerveza-rubia" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 17.19€
+Entrante: Chocolate Chip Pancakes-gluten free, nut free, vegan (4.41€)
+Principal: Make Ahead Quiche (11.51€)
+Vino recomendado: Cualquier Vino
+Postre: Whole Wheat Chocolate Chip Cookies (1.27€)
+PRECIO TOTAL: 17.19€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 21.41€
+Entrante: Havarti and Asparagus Quiche (13.09€)
+Principal: Make Olive Garden’s Delicious Pasta Fagioli At Home (7.91€)
+Vino recomendado: Cualquier Vino
+Postre: Brown sugar & Spice Sugar cookie frogs (0.41€)
+PRECIO TOTAL: 21.41€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 10: Presupuesto muy amplio
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+family
+Will there be a cake? (yes/no): yes
+Maximum number of people (>=1): 70
+Season (spring/summer/autumn/winter): winter
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 10
+Maximum price per person (>= minimum): 150
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 1405
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+  1405
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+TOTAL de candidatos: 1405
+CÁLCULO DE LÍMITES:
+   Usuario: 10 - 150€
+   Candidatos: 0.05 - 148.76€
+   Final: 10 - 150€
+   Límites: 10 | 56.6666666666667 | 103.333333333333 | 150€
+
+ BUSCANDO MENÚ BARATO (≤ 56.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 437 | Principales: 377 | Postres: 287
+        [DEBUG] Combinación válida encontrada: 56.26€
+        [DEBUG]   Funghetti Trifolati | How to Make The Ultimate Slow Cooker Potato Soup | Cake with wine and olive oil
+     ✅ MENÚ BARATO CREADO: 56.26€
+
+BUSCANDO MENÚ MEDIO (56.6666666666667€ - 103.333333333333€)...
+        [DEBUG] Recetas disponibles - Entrantes: 437 | Principales: 377 | Postres: 287
+        [DEBUG] Combinación válida encontrada: 95.37€
+        [DEBUG]   Stir Fry Mushrooms In Butter, Garlic And White Wine | Simple Skillet Lasagna | Frozen Mojito Pie
+     ✅ MENÚ MEDIO CREADO: 95.37€
+
+BUSCANDO MENÚ CARO (≥ 103.333333333333€)...
+        [DEBUG] Recetas disponibles - Entrantes: 437 | Principales: 377 | Postres: 287
+        [DEBUG] Combinación válida encontrada: 113.64€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Easy Garlic Roast Leg Of Lamb With Rosemary and Parsley | Vegan Chocolate Banana Pie
+     ✅ MENÚ CARO CREADO: 113.64€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 56.26€
+Entrante: Funghetti Trifolati (24.05€)
+Principal: How to Make The Ultimate Slow Cooker Potato Soup (26.38€)
+Vino recomendado: Cualquier Vino
+Postre: Cake with wine and olive oil (5.83€)
+PLUS: Tarta familiar especial disponible (+50€)
+PRECIO TOTAL: 56.26€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 95.37€
+Entrante: Stir Fry Mushrooms In Butter, Garlic And White Wine (24.39€)
+Principal: Simple Skillet Lasagna (53.39€)
+Vino recomendado: Cualquier Vino
+Postre: Frozen Mojito Pie (17.59€)
+PLUS: Tarta familiar especial disponible (+50€)
+PRECIO TOTAL: 95.37€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 113.64€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Easy Garlic Roast Leg Of Lamb With Rosemary and Parsley (66.23€)
+Vino recomendado: Cualquier Vino
+Postre: Vegan Chocolate Banana Pie (18.1€)
+PLUS: Tarta familiar especial disponible (+50€)
+PRECIO TOTAL: 113.64€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 11: Evento pequeño - Permite recetas complejas
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+congress
+Maximum number of people (>=1): 50
+Season (spring/summer/autumn/winter): spring
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 10
+Maximum price per person (>= minimum): 80
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 1249
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+  1249
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+ TOTAL de candidatos: 1249
+CÁLCULO DE LÍMITES:
+   Usuario: 10 - 80€
+   Candidatos: 0.05 - 79.6€
+   Final: 10 - 80€
+   Límites: 10 | 33.3333333333333 | 56.6666666666667 | 80€
+
+ BUSCANDO MENÚ BARATO (≤ 33.3333333333333€)...
+        [DEBUG] Recetas disponibles - Entrantes: 420 | Principales: 277 | Postres: 283
+        [DEBUG] Combinación válida encontrada: 32.78€
+        [DEBUG]   Funghetti Trifolati | Salsa Verde Chicken Tamales | Cake with wine and olive oil
+     ✅ MENÚ BARATO CREADO: 32.78€
+
+BUSCANDO MENÚ MEDIO (33.3333333333333€ - 56.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 420 | Principales: 277 | Postres: 283
+        [DEBUG] Combinación válida encontrada: 54.44€
+        [DEBUG]   Stir Fry Mushrooms In Butter, Garlic And White Wine | How to Make The Ultimate Slow Cooker Potato Soup | Apple Cupcakes
+     ✅ MENÚ MEDIO CREADO: 54.44€
+
+BUSCANDO MENÚ CARO (≥ 56.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 420 | Principales: 277 | Postres: 283
+        [DEBUG] Combinación válida encontrada: 79.84€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Beef Pot Pies with Irish Cheddar Crust | Frozen Mojito Pie
+     ✅ MENÚ CARO CREADO: 79.84€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 32.78€
+Entrante: Funghetti Trifolati (24.05€)
+Principal: Salsa Verde Chicken Tamales (2.9€)
+Vino recomendado: Cualquier Vino
+Postre: Cake with wine and olive oil (5.83€)
+PRECIO TOTAL: 32.78€
+Bebidas incluidas: "agua" "vino-rosado" "cerveza-rubia" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 54.44€
+Entrante: Stir Fry Mushrooms In Butter, Garlic And White Wine (24.39€)
+Principal: How to Make The Ultimate Slow Cooker Potato Soup (26.38€)
+Vino recomendado: Cualquier Vino
+Postre: Apple Cupcakes (3.67€)
+PRECIO TOTAL: 54.44€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 79.84€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Beef Pot Pies with Irish Cheddar Crust (32.94€)
+Vino recomendado: Cualquier Vino
+Postre: Frozen Mojito Pie (17.59€)
+PRECIO TOTAL: 79.84€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 12: Evento grande - Sin recetas complejas
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+congress
+Maximum number of people (>=1): 200
+Season (spring/summer/autumn/winter): summer
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 15
+Maximum price per person (>= minimum): 90
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 1031
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+  1031
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+ TOTAL de candidatos:  1031 
+CÁLCULO DE LÍMITES:
+   Usuario: 15 - 90€
+   Candidatos: 0.05 - 89.96€
+   Final: 15 - 90€
+   Límites: 15 | 40.0 | 65.0 | 90€
+
+ BUSCANDO MENÚ BARATO (≤ 40.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 348 | Principales: 238 | Postres: 216
+        [DEBUG] Combinación válida encontrada: 39.57€
+        [DEBUG]   Stir Fry Mushrooms In Butter, Garlic And White Wine | Make Ahead Quiche | Apple Cupcakes
+     ✅ MENÚ BARATO CREADO: 39.57€
+
+BUSCANDO MENÚ MEDIO (40.0€ - 65.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 348 | Principales: 238 | Postres: 216
+        [DEBUG] Combinación válida encontrada: 64.92€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | How to Make The Ultimate Slow Cooker Potato Soup | Brownie Cheesecake
+     ✅ MENÚ MEDIO CREADO: 64.92€
+
+BUSCANDO MENÚ CARO (≥ 65.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 348 | Principales: 238 | Postres: 216
+        [DEBUG] Combinación válida encontrada: 86.44€
+        [DEBUG]   Spicy Lemongrass Soup | Make Olive Garden’s Delicious Pasta Fagioli At Home | Carrot Raisin Chocolate Chip Cookies
+     ✅ MENÚ CARO CREADO: 86.44€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 39.57€
+Entrante: Stir Fry Mushrooms In Butter, Garlic And White Wine (24.39€)
+Principal: Make Ahead Quiche (11.51€)
+Vino recomendado: Cualquier Vino
+Postre: Apple Cupcakes (3.67€)
+PRECIO TOTAL: 39.57€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 64.92€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: How to Make The Ultimate Slow Cooker Potato Soup (26.38€)
+Vino recomendado: Cualquier Vino
+Postre: Brownie Cheesecake (9.23€)
+PRECIO TOTAL: 64.92€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 86.44€
+Entrante: Spicy Lemongrass Soup (78.22€)
+Principal: Make Olive Garden’s Delicious Pasta Fagioli At Home (7.91€)
+Vino recomendado: Cualquier Vino
+Postre: Carrot Raisin Chocolate Chip Cookies (0.31€)
+PRECIO TOTAL: 86.44€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 13: Estacionalidad - Spring
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+family
+Will there be a cake? (yes/no): no
+Maximum number of people (>=1): 90
+Season (spring/summer/autumn/winter): spring
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 15
+Maximum price per person (>= minimum): 100
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 1332
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+  1332
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+ TOTAL de candidatos: 1332
+CÁLCULO DE LÍMITES:
+   Usuario: 15 - 100€
+   Candidatos: 0.05 - 99.97€
+   Final: 15 - 100€
+   Límites: 15 | 43.3333333333333 | 71.6666666666667 | 100€
+
+ BUSCANDO MENÚ BARATO (≤ 43.3333333333333€)...
+        [DEBUG] Recetas disponibles - Entrantes: 434 | Principales: 330 | Postres: 285
+        [DEBUG] Combinación válida encontrada: 43.33€
+        [DEBUG]   Funghetti Trifolati | Loaded Baked Potato Soup with Crispy-Fried Potato Skins | Chocolate Wafers
+     ✅ MENÚ BARATO CREADO: 43.33€
+
+BUSCANDO MENÚ MEDIO (43.3333333333333€ - 71.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 434 | Principales: 330 | Postres: 285
+        [DEBUG] Combinación válida encontrada: 63.16€
+        [DEBUG]   Stir Fry Mushrooms In Butter, Garlic And White Wine | Beef Pot Pies with Irish Cheddar Crust | Cake with wine and olive oil
+     ✅ MENÚ MEDIO CREADO: 63.16€
+
+BUSCANDO MENÚ CARO (≥ 71.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 434 | Principales: 330 | Postres: 285
+        [DEBUG] Combinación válida encontrada: 91.93€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Simple Skillet Lasagna | Brownie Cheesecake
+     ✅ MENÚ CARO CREADO: 91.93€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 43.33€
+Entrante: Funghetti Trifolati (24.05€)
+Principal: Loaded Baked Potato Soup with Crispy-Fried Potato Skins (19.16€)
+Vino recomendado: Cualquier Vino
+Postre: Chocolate Wafers (0.12€)
+PRECIO TOTAL: 43.33€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 63.16€
+Entrante: Stir Fry Mushrooms In Butter, Garlic And White Wine (24.39€)
+Principal: Beef Pot Pies with Irish Cheddar Crust (32.94€)
+Vino recomendado: Cualquier Vino
+Postre: Cake with wine and olive oil (5.83€)
+PRECIO TOTAL: 63.16€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 91.93€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Simple Skillet Lasagna (53.39€)
+Vino recomendado: Cualquier Vino
+Postre: Brownie Cheesecake (9.23€)
+PRECIO TOTAL: 91.93€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 14: Estacionalidad - Summer
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+family
+Will there be a cake? (yes/no): no
+Maximum number of people (>=1): 90
+Season (spring/summer/autumn/winter): summer
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 15
+Maximum price per person (>= minimum): 100
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 1384
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+  1384
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+ TOTAL de candidatos: 1384
+CÁLCULO DE LÍMITES:
+   Usuario: 15 - 100€
+   Candidatos: 0.05 - 99.97€
+   Final: 15 - 100€
+   Límites: 15 | 43.3333333333333 | 71.6666666666667 | 100€
+
+ BUSCANDO MENÚ BARATO (≤ 43.3333333333333€)...
+        [DEBUG] Recetas disponibles - Entrantes: 451 | Principales: 347 | Postres: 292
+        [DEBUG] Combinación válida encontrada: 43.33€
+        [DEBUG]   Funghetti Trifolati | Loaded Baked Potato Soup with Crispy-Fried Potato Skins | Chocolate Wafers
+     ✅ MENÚ BARATO CREADO: 43.33€
+
+BUSCANDO MENÚ MEDIO (43.3333333333333€ - 71.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 451 | Principales: 347 | Postres: 292
+        [DEBUG] Combinación válida encontrada: 63.16€
+        [DEBUG]   Stir Fry Mushrooms In Butter, Garlic And White Wine | Beef Pot Pies with Irish Cheddar Crust | Cake with wine and olive oil
+     ✅ MENÚ MEDIO CREADO: 63.16€
+
+BUSCANDO MENÚ CARO (≥ 71.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 451 | Principales: 347 | Postres: 292
+        [DEBUG] Combinación válida encontrada: 92.48€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Simple Skillet Lasagna | Chocolate Banana Zucchini Cake
+     ✅ MENÚ CARO CREADO: 92.48€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 43.33€
+Entrante: Funghetti Trifolati (24.05€)
+Principal: Loaded Baked Potato Soup with Crispy-Fried Potato Skins (19.16€)
+Vino recomendado: Cualquier Vino
+Postre: Chocolate Wafers (0.12€)
+PRECIO TOTAL: 43.33€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 63.16€
+Entrante: Stir Fry Mushrooms In Butter, Garlic And White Wine (24.39€)
+Principal: Beef Pot Pies with Irish Cheddar Crust (32.94€)
+Vino recomendado: Cualquier Vino
+Postre: Cake with wine and olive oil (5.83€)
+PRECIO TOTAL: 63.16€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 92.48€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Simple Skillet Lasagna (53.39€)
+Vino recomendado: Cualquier Vino
+Postre: Chocolate Banana Zucchini Cake (9.78€)
+PRECIO TOTAL: 92.48€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> (batch "test_exp_3.bat")
+
+TRUE
+CLIPS> (clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 15: Estacionalidad - Autumn
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+family
+Will there be a cake? (yes/no): no
+Maximum number of people (>=1): 90
+Season (spring/summer/autumn/winter): autumn
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 15
+Maximum price per person (>= minimum): 100
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 1273
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+  1273
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+ TOTAL de candidatos: 1273
+CÁLCULO DE LÍMITES:
+   Usuario: 15 - 100€
+   Candidatos: 0.05 - 99.97€
+   Final: 15 - 100€
+   Límites: 15 | 43.3333333333333 | 71.6666666666667 | 100€
+
+ BUSCANDO MENÚ BARATO (≤ 43.3333333333333€)...
+        [DEBUG] Recetas disponibles - Entrantes: 406 | Principales: 312 | Postres: 282
+        [DEBUG] Combinación válida encontrada: 43.33€
+        [DEBUG]   Funghetti Trifolati | Loaded Baked Potato Soup with Crispy-Fried Potato Skins | Chocolate Wafers
+     ✅ MENÚ BARATO CREADO: 43.33€
+
+BUSCANDO MENÚ MEDIO (43.3333333333333€ - 71.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 406 | Principales: 312 | Postres: 282
+        [DEBUG] Combinación válida encontrada: 63.16€
+        [DEBUG]   Stir Fry Mushrooms In Butter, Garlic And White Wine | Beef Pot Pies with Irish Cheddar Crust | Cake with wine and olive oil
+     ✅ MENÚ MEDIO CREADO: 63.16€
+
+BUSCANDO MENÚ CARO (≥ 71.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 406 | Principales: 312 | Postres: 282
+        [DEBUG] Combinación válida encontrada: 91.93€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Simple Skillet Lasagna | Brownie Cheesecake
+     ✅ MENÚ CARO CREADO: 91.93€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 43.33€
+Entrante: Funghetti Trifolati (24.05€)
+Principal: Loaded Baked Potato Soup with Crispy-Fried Potato Skins (19.16€)
+Vino recomendado: Cualquier Vino
+Postre: Chocolate Wafers (0.12€)
+PRECIO TOTAL: 43.33€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 63.16€
+Entrante: Stir Fry Mushrooms In Butter, Garlic And White Wine (24.39€)
+Principal: Beef Pot Pies with Irish Cheddar Crust (32.94€)
+Vino recomendado: Cualquier Vino
+Postre: Cake with wine and olive oil (5.83€)
+PRECIO TOTAL: 63.16€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 91.93€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Simple Skillet Lasagna (53.39€)
+Vino recomendado: Cualquier Vino
+Postre: Brownie Cheesecake (9.23€)
+PRECIO TOTAL: 91.93€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 16: Estacionalidad - Winter
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+family
+Will there be a cake? (yes/no): no
+Maximum number of people (>=1): 90
+Season (spring/summer/autumn/winter): winter
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 15
+Maximum price per person (>= minimum): 100
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 1302
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+  1302
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+ TOTAL de candidatos: 1302
+CÁLCULO DE LÍMITES:
+   Usuario: 15 - 100€
+   Candidatos: 0.05 - 99.97€
+   Final: 15 - 100€
+   Límites: 15 | 43.3333333333333 | 71.6666666666667 | 100€
+
+ BUSCANDO MENÚ BARATO (≤ 43.3333333333333€)...
+        [DEBUG] Recetas disponibles - Entrantes: 416 | Principales: 324 | Postres: 282
+        [DEBUG] Combinación válida encontrada: 43.33€
+        [DEBUG]   Funghetti Trifolati | Loaded Baked Potato Soup with Crispy-Fried Potato Skins | Chocolate Wafers
+     ✅ MENÚ BARATO CREADO: 43.33€
+
+BUSCANDO MENÚ MEDIO (43.3333333333333€ - 71.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 416 | Principales: 324 | Postres: 282
+        [DEBUG] Combinación válida encontrada: 63.16€
+        [DEBUG]   Stir Fry Mushrooms In Butter, Garlic And White Wine | Beef Pot Pies with Irish Cheddar Crust | Cake with wine and olive oil
+     ✅ MENÚ MEDIO CREADO: 63.16€
+
+BUSCANDO MENÚ CARO (≥ 71.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 416 | Principales: 324 | Postres: 282
+        [DEBUG] Combinación válida encontrada: 91.93€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Simple Skillet Lasagna | Brownie Cheesecake
+     ✅ MENÚ CARO CREADO: 91.93€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 43.33€
+Entrante: Funghetti Trifolati (24.05€)
+Principal: Loaded Baked Potato Soup with Crispy-Fried Potato Skins (19.16€)
+Vino recomendado: Cualquier Vino
+Postre: Chocolate Wafers (0.12€)
+PRECIO TOTAL: 43.33€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 63.16€
+Entrante: Stir Fry Mushrooms In Butter, Garlic And White Wine (24.39€)
+Principal: Beef Pot Pies with Irish Cheddar Crust (32.94€)
+Vino recomendado: Cualquier Vino
+Postre: Cake with wine and olive oil (5.83€)
+PRECIO TOTAL: 63.16€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 91.93€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Simple Skillet Lasagna (53.39€)
+Vino recomendado: Cualquier Vino
+Postre: Brownie Cheesecake (9.23€)
+PRECIO TOTAL: 91.93€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 17: Presupuesto min = max (caso límite)
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+congress
+Maximum number of people (>=1): 100
+Season (spring/summer/autumn/winter): any-season
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 35
+Maximum price per person (>= minimum): 35
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 928
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+  928
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+ TOTAL de candidatos: 928
+ERROR: No hay solapamiento en los rangos de precio
+   Usuario: 35-35€
+   Candidatos: 0.05-34.92€
+No se pudieron calcular los límites
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ❌ | Medio: ❌ | Caro: ❌
+
+❌ No se pudo crear ningún menú
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 18: Todas las restricciones (caso extremo)
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+congress
+Maximum number of people (>=1): 200
+Season (spring/summer/autumn/winter): any-season
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> gluten-free
+> vegetarian
+> vegan
+> dairy-free
+> kosher
+> halal
+> shellfish-free
+> soy-free
+> nut-free
+> exit
+Minimum price per person (>= 0): 10
+Maximum price per person (>= minimum): 100
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 0
+Recetas con 1 restricción: 6178
+Recetas con 2 restricciones: 15269
+Recetas con 3 restricciones: 22770
+Recetas con 4 restricciones: 23001
+  67218
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+ TOTAL de candidatos: 69
+CÁLCULO DE LÍMITES:
+   Usuario: 10 - 100€
+   Candidatos: 0.49 - 97.25€
+   Final: 10 - 100€
+   Límites: 10 | 40.0 | 70.0 | 100€
+
+ BUSCANDO MENÚ BARATO (≤ 40.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 52 | Principales: 6 | Postres: 6
+        [DEBUG] Combinación válida encontrada: 30.17€
+        [DEBUG]   Garlic & Spice Plantain Chips | Herbivoracious' White Bean and Kale Soup | Tropical Ice Pops
+     ✅ MENÚ BARATO CREADO: 30.17€
+
+BUSCANDO MENÚ MEDIO (40.0€ - 70.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 52 | Principales: 6 | Postres: 6
+        [DEBUG] Combinación válida encontrada: 67.23€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Lemony Greek Lentil Soup | Strawberry Basil Italian Ice
+     ✅ MENÚ MEDIO CREADO: 67.23€
+
+BUSCANDO MENÚ CARO (≥ 70.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 52 | Principales: 6 | Postres: 6
+        [DEBUG] Combinación válida encontrada: 91.59€
+        [DEBUG]   Roasted Mediterranean Vegetable Soup | Gujarati Dry Mung Bean Curry | Roasted Strawberry Coconut Milk Ice Cream
+     ✅ MENÚ CARO CREADO: 91.59€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 30.17€
+Entrante: Garlic & Spice Plantain Chips (2.51€)
+Principal: Herbivoracious' White Bean and Kale Soup (13.01€)
+Vino recomendado:  No wine pairing
+Postre: Tropical Ice Pops (14.65€)
+PRECIO TOTAL: 30.17€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 67.23€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Lemony Greek Lentil Soup (14.74€)
+Vino recomendado: Light Red wine or White wine
+Postre: Strawberry Basil Italian Ice (23.18€)
+PRECIO TOTAL: 67.23€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 91.59€
+Entrante: Roasted Mediterranean Vegetable Soup (32.61€)
+Principal: Gujarati Dry Mung Bean Curry (41.02€)
+Vino recomendado: Light Red wine or White wine
+Postre: Roasted Strawberry Coconut Milk Ice Cream (17.96€)
+PRECIO TOTAL: 91.59€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 19: Wedding sin tarta
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+wedding
+Will there be a cake? (yes/no): no
+Maximum number of people (>=1): 100
+Season (spring/summer/autumn/winter): summer
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> vegetarian
+> exit
+Minimum price per person (>= 0): 10
+Maximum price per person (>= minimum): 80
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 0
+Recetas con 1 restricción: 559
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+  559
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+ TOTAL de candidatos: 559
+CÁLCULO DE LÍMITES:
+   Usuario: 10 - 80€
+   Candidatos: 0.14 - 78.22€
+   Final: 10 - 80€
+   Límites: 10 | 33.3333333333333 | 56.6666666666667 | 80€
+
+ BUSCANDO MENÚ BARATO (≤ 33.3333333333333€)...
+      Reservando presupuesto para aperitivos extra...
+        [DEBUG] Recetas disponibles - Entrantes: 256 | Principales: 21 | Postres: 153
+        [DEBUG] Combinación válida encontrada: 25.31€
+        [DEBUG]   Broccoli with cheese soup | Tuscan White Bean Soup with Olive Oil and Rosemary | Brown sugar & Spice Sugar cookie frogs
+      [APERITIVOS] Buscando entre 186 opciones, presupuesto: 6.66666666666667€
+      [APERITIVO] ✅ Garlic & Spice Plantain Chips (2.51€)
+      [APERITIVO] ✅ Cinnamon Sugar Fried Apples (1.89€)
+      [APERITIVO] ✅ Gingerbread Pancakes (1.8€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 6.2€)
+     ✅ MENÚ BARATO CREADO: 31.51€ (incluye 3 aperitivos extra)
+
+BUSCANDO MENÚ MEDIO (33.3333333333333€ - 56.6666666666667€)...
+      Reservando presupuesto para aperitivos extra...
+        [DEBUG] Recetas disponibles - Entrantes: 256 | Principales: 21 | Postres: 153
+        [DEBUG] Combinación válida encontrada: 40.11€
+        [DEBUG]   Funghetti Trifolati | Moosewood Lentil Soup | Apple Cupcakes
+      [APERITIVOS] Buscando entre 186 opciones, presupuesto: 11.3333333333333€
+      [APERITIVO] ✅ Torta (Filipino Omelet) (6.61€)
+      [APERITIVO] ✅ Chouquettes (3.98€)
+      [APERITIVO] ✅ Spicy Banana Zucchini Balls (0.64€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 11.23€)
+     ✅ MENÚ MEDIO CREADO: 51.34€ (incluye 3 aperitivos extra)
+
+BUSCANDO MENÚ CARO (≥ 56.6666666666667€)...
+      Reservando presupuesto para aperitivos extra...
+        [DEBUG] Recetas disponibles - Entrantes: 256 | Principales: 21 | Postres: 153
+        [DEBUG] Combinación válida encontrada: 61.0€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Big Batch Smoothie Bowl | Bing's Banana Cake
+      [APERITIVOS] Buscando entre 186 opciones, presupuesto: 16.0€
+      [APERITIVO] ✅ Watermelon, Kiwi, Apple and Frozen Banana Smoothie (12.3€)
+      [APERITIVO] ✅ Gingerbread (1.58€)
+      [APERITIVO] ✅ Buffalo Wing Hummus (2.0€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 15.88€)
+     ✅ MENÚ CARO CREADO: 76.88€ (incluye 3 aperitivos extra)
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 25.31€
+Aperitivos extra incluidos:
+  - Garlic & Spice Plantain Chips (2.51€)
+  - Cinnamon Sugar Fried Apples (1.89€)
+  - Gingerbread Pancakes (1.8€)
+Entrante: Broccoli with cheese soup (16.62€)
+Principal: Tuscan White Bean Soup with Olive Oil and Rosemary (8.28€)
+Vino recomendado: Light Red wine or White wine
+Postre: Brown sugar & Spice Sugar cookie frogs (0.41€)
+PRECIO TOTAL: 31.51€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 40.11€
+Aperitivos extra incluidos:
+  - Torta (Filipino Omelet) (6.61€)
+  - Chouquettes (3.98€)
+  - Spicy Banana Zucchini Balls (0.64€)
+Entrante: Funghetti Trifolati (24.05€)
+Principal: Moosewood Lentil Soup (12.39€)
+Vino recomendado: Light Red wine or White wine
+Postre: Apple Cupcakes (3.67€)
+PRECIO TOTAL: 51.34€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 61.0€
+Aperitivos extra incluidos:
+  - Watermelon, Kiwi, Apple and Frozen Banana Smoothie (12.3€)
+  - Gingerbread (1.58€)
+  - Buffalo Wing Hummus (2.0€)
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Big Batch Smoothie Bowl (28.98€)
+Vino recomendado: Cualquier Vino
+Postre: Bing's Banana Cake (2.71€)
+PRECIO TOTAL: 76.88€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 20: Family con tarta
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+family
+Will there be a cake? (yes/no): yes
+Maximum number of people (>=1): 60
+Season (spring/summer/autumn/winter): autumn
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 10
+Maximum price per person (>= minimum): 70
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 1145
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+  1145
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+TOTAL de candidatos: 1145
+CÁLCULO DE LÍMITES:
+   Usuario: 10 - 70€
+   Candidatos: 0.05 - 69.84€
+   Final: 10 - 70€
+   Límites: 10 | 30.0 | 50.0 | 70€
+
+ BUSCANDO MENÚ BARATO (≤ 30.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 384 | Principales: 234 | Postres: 279
+        [DEBUG] Combinación válida encontrada: 27.26€
+        [DEBUG]   Funghetti Trifolati | Salsa Verde Chicken Tamales | Carrot Raisin Chocolate Chip Cookies
+     ✅ MENÚ BARATO CREADO: 27.26€
+
+BUSCANDO MENÚ MEDIO (30.0€ - 50.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 384 | Principales: 234 | Postres: 279
+        [DEBUG] Combinación válida encontrada: 49.38€
+        [DEBUG]   Stir Fry Mushrooms In Butter, Garlic And White Wine | Loaded Baked Potato Soup with Crispy-Fried Potato Skins | Cake with wine and olive oil
+     ✅ MENÚ MEDIO CREADO: 49.38€
+
+BUSCANDO MENÚ CARO (≥ 50.0€)...
+        [DEBUG] Recetas disponibles - Entrantes: 384 | Principales: 234 | Postres: 279
+        [DEBUG] Combinación válida encontrada: 65.92€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Beef Pot Pies with Irish Cheddar Crust | Apple Cupcakes
+     ✅ MENÚ CARO CREADO: 65.92€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 27.26€
+Entrante: Funghetti Trifolati (24.05€)
+Principal: Salsa Verde Chicken Tamales (2.9€)
+Vino recomendado: Cualquier Vino
+Postre: Carrot Raisin Chocolate Chip Cookies (0.31€)
+PLUS: Tarta familiar especial disponible (+50€)
+PRECIO TOTAL: 27.26€
+Bebidas incluidas: "agua" "vino-rosado" "cerveza-rubia" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 49.38€
+Entrante: Stir Fry Mushrooms In Butter, Garlic And White Wine (24.39€)
+Principal: Loaded Baked Potato Soup with Crispy-Fried Potato Skins (19.16€)
+Vino recomendado: Cualquier Vino
+Postre: Cake with wine and olive oil (5.83€)
+PLUS: Tarta familiar especial disponible (+50€)
+PRECIO TOTAL: 49.38€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 65.92€
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Beef Pot Pies with Irish Cheddar Crust (32.94€)
+Vino recomendado: Cualquier Vino
+Postre: Apple Cupcakes (3.67€)
+PLUS: Tarta familiar especial disponible (+50€)
+PRECIO TOTAL: 65.92€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 21: Todas las restricciones + wedding (caso extremo con wedding)
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+wedding
+Will there be a cake? (yes/no): yes
+Maximum number of people (>=1): 200
+Season (spring/summer/autumn/winter): any-season
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> gluten-free
+> vegetarian
+> vegan
+> dairy-free
+> kosher
+> halal
+> shellfish-free
+> soy-free
+> nut-free
+> exit
+Minimum price per person (>= 0): 10
+Maximum price per person (>= minimum): 150
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 0
+Recetas con 1 restricción: 6690
+Recetas con 2 restricciones: 16485
+Recetas con 3 restricciones: 24477
+Recetas con 4 restricciones: 24587
+  72239
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+TOTAL de candidatos: 72
+CÁLCULO DE LÍMITES:
+   Usuario: 10 - 150€
+   Candidatos: 0.49 - 139.83€
+   Final: 10 - 150€
+   Límites: 10 | 56.6666666666667 | 103.333333333333 | 150€
+
+ BUSCANDO MENÚ BARATO (≤ 56.6666666666667€)...
+      Reservando presupuesto para aperitivos extra...
+        [DEBUG] Recetas disponibles - Entrantes: 54 | Principales: 6 | Postres: 6
+        [DEBUG] Combinación válida encontrada: 45.11€
+        [DEBUG]   Indian-Style Dill and Turmeric Potato Salad | Herbivoracious' White Bean and Kale Soup | Autumn Pumpkin Cake
+      [APERITIVOS] Buscando entre 32 opciones, presupuesto: 11.3333333333333€
+      [APERITIVO] ✅ Garlic & Spice Plantain Chips (2.51€)
+      [APERITIVO] ✅ Quinoa Tabbouleh Salad (6.44€)
+      [APERITIVO] ✅ Buffalo Wing Hummus (2.0€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 10.95€)
+     ✅ MENÚ BARATO CREADO: 56.06€ (incluye 3 aperitivos extra)
+
+BUSCANDO MENÚ MEDIO (56.6666666666667€ - 103.333333333333€)...
+      Reservando presupuesto para aperitivos extra...
+        [DEBUG] Recetas disponibles - Entrantes: 54 | Principales: 6 | Postres: 6
+        [DEBUG] Combinación válida encontrada: 62.0€
+        [DEBUG]   Roasted Mediterranean Vegetable Soup | Lemony Greek Lentil Soup | Tropical Ice Pops
+      [APERITIVOS] Buscando entre 32 opciones, presupuesto: 20.6666666666667€
+      [APERITIVO] ✅ Basil Lime White Bean Hummus (11.23€)
+      [APERITIVO] ✅ No Cook Cranberry Orange Relish (4.52€)
+      [APERITIVO] ✅ Roasted Beet Hummus (4.13€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 19.88€)
+     ✅ MENÚ MEDIO CREADO: 81.88€ (incluye 3 aperitivos extra)
+
+BUSCANDO MENÚ CARO (≥ 103.333333333333€)...
+      Reservando presupuesto para aperitivos extra...
+        [DEBUG] Recetas disponibles - Entrantes: 54 | Principales: 6 | Postres: 6
+        [DEBUG] Combinación válida encontrada: 119.5€
+        [DEBUG]   Crockpot Applesauce | Tuscan White Bean Soup with Olive Oil and Rosemary | Lemon Mint Sorbet
+      [APERITIVOS] Buscando entre 32 opciones, presupuesto: 30.0€
+      [APERITIVO] ✅ Julia Child's Ratatouille (15.41€)
+      [APERITIVO] ✅ Cinnamon & Sugar Roasted Chickpeas (11.66€)
+      [APERITIVO] ✅ Crockpot "Refried" Beans (1.17€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 28.24€)
+     ✅ MENÚ CARO CREADO: 147.74€ (incluye 3 aperitivos extra)
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 45.11€
+Aperitivos extra incluidos:
+  - Garlic & Spice Plantain Chips (2.51€)
+  - Quinoa Tabbouleh Salad (6.44€)
+  - Buffalo Wing Hummus (2.0€)
+Entrante: Indian-Style Dill and Turmeric Potato Salad (29.31€)
+Principal: Herbivoracious' White Bean and Kale Soup (13.01€)
+Vino recomendado:  No wine pairing
+Postre: Autumn Pumpkin Cake (2.79€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 56.06€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 62.0€
+Aperitivos extra incluidos:
+  - Basil Lime White Bean Hummus (11.23€)
+  - No Cook Cranberry Orange Relish (4.52€)
+  - Roasted Beet Hummus (4.13€)
+Entrante: Roasted Mediterranean Vegetable Soup (32.61€)
+Principal: Lemony Greek Lentil Soup (14.74€)
+Vino recomendado: Light Red wine or White wine
+Postre: Tropical Ice Pops (14.65€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 81.88€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 119.5€
+Aperitivos extra incluidos:
+  - Julia Child's Ratatouille (15.41€)
+  - Cinnamon & Sugar Roasted Chickpeas (11.66€)
+  - Crockpot "Refried" Beans (1.17€)
+Entrante: Crockpot Applesauce (97.25€)
+Principal: Tuscan White Bean Soup with Olive Oil and Rosemary (8.28€)
+Vino recomendado: Light Red wine or White wine
+Postre: Lemon Mint Sorbet (13.97€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 147.74€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> (load "onto.clp")
++#
+TRUE
+CLIPS> (load "recipes_clips.clp") 
++@
+TRUE
+CLIPS> (load "input.clp")
++*%%!*
+TRUE
+CLIPS> (load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> (load "refinamiento.clp")
++*%%%$!!!!!!!!!*****
+TRUE
+CLIPS> (focus input)
+TRUE
+CLIPS> (reset)
+CLIPS> EXPERIMENTO 22: Wedding - Presupuesto bajo
+EXPERIMENTO
+CLIPS> (run)
+Event type (wedding/congress/family): 
+wedding
+Will there be a cake? (yes/no): yes
+Maximum number of people (>=1): 100
+Season (spring/summer/autumn/winter): spring
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> exit
+Minimum price per person (>= 0): 10
+Maximum price per person (>= minimum): 25
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 691
+Recetas con 1 restricción: 0
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+691
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+TOTAL de candidatos: 691 
+CÁLCULO DE LÍMITES:
+   Usuario: 10 - 25€
+   Candidatos: 0.05 - 24.98€
+   Final: 10 - 25€
+   Límites: 10 | 15.0 | 20.0 | 25€
+
+ BUSCANDO MENÚ BARATO (≤ 15.0€)...
+      Reservando presupuesto para aperitivos extra...
+        [DEBUG] Recetas disponibles - Entrantes: 262 | Principales: 54 | Postres: 236
+        [DEBUG] Combinación válida encontrada: 11.35€
+        [DEBUG]   No Bake Chocolate Bars | Salsa Verde Chicken Tamales | Carrot Raisin Chocolate Chip Cookies
+      [APERITIVOS] Buscando entre 300 opciones, presupuesto: 3.0€
+      [APERITIVO] ✅ Garlic & Spice Plantain Chips (2.51€)
+      [APERITIVO] ✅ Chicken Roll-Ups With Feta Cheese and Arugula (0.37€)
+      [APERITIVO] ✅ Allergy-Free Thin Mints (0.05€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 2.93€)
+     ✅ MENÚ BARATO CREADO: 14.28€ (incluye 3 aperitivos extra)
+
+BUSCANDO MENÚ MEDIO (15.0€ - 20.0€)...
+      Reservando presupuesto para aperitivos extra...
+        [DEBUG] Recetas disponibles - Entrantes: 262 | Principales: 54 | Postres: 236
+        [DEBUG] Combinación válida encontrada: 15.35€
+        [DEBUG]   Chocolate Chip Pancakes-gluten free, nut free, vegan | BBQ” Style Chicken Thighs | Whole Wheat Chocolate Chip Cookies
+      [APERITIVOS] Buscando entre 300 opciones, presupuesto: 4.0€
+      [APERITIVO] ✅ Candy Cane Chocolate Marshmallows (0.74€)
+      [APERITIVO] ✅ Cinnamon Sugar Fried Apples (1.89€)
+      [APERITIVO] ✅ Lemon Poppy Seed Muffins (0.92€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 3.55€)
+     ✅ MENÚ MEDIO CREADO: 18.9€ (incluye 3 aperitivos extra)
+
+BUSCANDO MENÚ CARO (≥ 20.0€)...
+      Reservando presupuesto para aperitivos extra...
+        [DEBUG] Recetas disponibles - Entrantes: 262 | Principales: 54 | Postres: 236
+        [DEBUG] Combinación válida encontrada: 20.0€
+        [DEBUG]   Green Beans With Roasted Walnuts and Sweet Cranberries | Moroccan Lemon Shish Kebabs | Apple Cake
+      [APERITIVOS] Buscando entre 300 opciones, presupuesto: 5.0€
+      [APERITIVO] ✅ Gingerbread Pancakes (1.8€)
+      [APERITIVO] ✅ Gingerbread (1.58€)
+      [APERITIVO] ✅ Watching What I Eat: Peanut Butter Banana Oat Breakfast Cookies with Carob / Chocolate Chips (1.46€)
+      ✅ 3 aperitivos seleccionados
+      Aperitivos seleccionados: 3 (costo: 4.84€)
+     ✅ MENÚ CARO CREADO: 24.84€ (incluye 3 aperitivos extra)
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 11.35€
+Aperitivos extra incluidos:
+  - Garlic & Spice Plantain Chips (2.51€)
+  - Chicken Roll-Ups With Feta Cheese and Arugula (0.37€)
+  - Allergy-Free Thin Mints (0.05€)
+Entrante: No Bake Chocolate Bars (8.14€)
+Principal: Salsa Verde Chicken Tamales (2.9€)
+Vino recomendado: Cualquier Vino
+Postre: Carrot Raisin Chocolate Chip Cookies (0.31€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 14.28€
+Bebidas incluidas: "agua" "vino-rosado" "cerveza-rubia" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 15.35€
+Aperitivos extra incluidos:
+  - Candy Cane Chocolate Marshmallows (0.74€)
+  - Cinnamon Sugar Fried Apples (1.89€)
+  - Lemon Poppy Seed Muffins (0.92€)
+Entrante: Chocolate Chip Pancakes-gluten free, nut free, vegan (4.41€)
+Principal: BBQ” Style Chicken Thighs (9.67€)
+Vino recomendado: Cualquier Vino
+Postre: Whole Wheat Chocolate Chip Cookies (1.27€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 18.9€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 20.0€
+Aperitivos extra incluidos:
+  - Gingerbread Pancakes (1.8€)
+  - Gingerbread (1.58€)
+  - Watching What I Eat: Peanut Butter Banana Oat Breakfast Cookies with Carob / Chocolate Chips (1.46€)
+Entrante: Green Beans With Roasted Walnuts and Sweet Cranberries (6.8€)
+Principal: Moroccan Lemon Shish Kebabs (8.07€)
+Vino recomendado: White wine or light Red wine
+Postre: Apple Cake (5.13€)
+PLUS: Tarta de boda personalizada disponible (+200€)
+PRECIO TOTAL: 24.84€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+CLIPS> 
+(clear)
+CLIPS> 
+(load "onto.clp")
++#
+TRUE
+CLIPS> 
+(load "recipes_clips.clp")
++@
+TRUE
+CLIPS> 
+(load "input.clp")
++*%%!*
+TRUE
+CLIPS> 
+(load "match_max.clp")
++%%%%!!!!******
+TRUE
+CLIPS> 
+(load "refinamiento.clp")
++%%%$!!!!!!!*****
+TRUE
+CLIPS> 
+(focus input)
+TRUE
+CLIPS> 
+(reset)
+EXPERIMENTO 23: Buscar validacion relajada
+CLIPS> 
+(run)
+Event type (wedding/congress/family): 
+
+
+congress
+Maximum number of people (>=1): 2
+Season (spring/summer/autumn/winter): summer
+What diet restrictions do you have? (type 'exit' or press Enter to finish)
+Restrictions names: gluten-free, vegetarian, vegan, dairy-free, kosher, halal, shellfish-free, soy-free and nut-free
+> vegetarian
+> 
+Minimum price per person (>= 0): 10
+Maximum price per person (>= minimum): 12
+
+Data successfully recorded.
+
+========================================
+📊 ESTADÍSTICAS DE CANDIDATOS
+========================================
+
+Recetas con 0 restricciones: 0
+Recetas con 1 restricción: 248
+Recetas con 2 restricciones: 0
+Recetas con 3 restricciones: 0
+Recetas con 4 restricciones: 0
+ 248
+========================================
+✅ SISTEMA FINALIZADO
+========================================
+INICIANDO CREACIÓN DE MENÚS
+TOTAL de candidatos: 248 
+CÁLCULO DE LÍMITES:
+   Usuario: 10 - 12€
+   Candidatos: 0.14 - 11.97€
+   Final: 10 - 12€
+   Límites: 10 | 10.6666666666667 | 11.3333333333333 | 12€
+
+ BUSCANDO MENÚ BARATO (≤ 10.6666666666667€)...
+        [DEBUG] Recetas disponibles - Entrantes: 96 | Principales: 1 | Postres: 91
+        [DEBUG] Combinación válida encontrada: 10.58€
+        [DEBUG]   Cinnamon Sugar Fried Apples | Tuscan White Bean Soup with Olive Oil and Rosemary | Brown sugar & Spice Sugar cookie frogs
+     ✅ MENÚ BARATO CREADO: 10.58€
+
+BUSCANDO MENÚ MEDIO (10.6666666666667€ - 11.3333333333333€)...
+        [DEBUG] Recetas disponibles - Entrantes: 96 | Principales: 1 | Postres: 91
+        [DEBUG] No se encontró combinación sin duplicados en rango 10.6666666666667-11.3333333333333€
+      ⚠️  No se pudo crear menú con restricciones estrictas, intentando versión relajada...
+        [DEBUG-RELAJADA] Recetas disponibles - Entrantes: 96 | Principales: 1 | Postres: 91
+        [DEBUG-RELAJADA] ✅ Combinación encontrada: 11.2€
+        [DEBUG-RELAJADA]   Garlic & Spice Plantain Chips | Tuscan White Bean Soup with Olive Oil and Rosemary | Brown sugar & Spice Sugar cookie frogs
+     ✅ MENÚ MEDIO CREADO: 11.2€
+
+BUSCANDO MENÚ CARO (≥ 11.3333333333333€)...
+        [DEBUG] Recetas disponibles - Entrantes: 96 | Principales: 1 | Postres: 91
+        [DEBUG] No se encontró combinación sin duplicados en rango 11.3333333333333-12€
+      ⚠️  No se pudo crear menú con restricciones estrictas, intentando versión relajada...
+        [DEBUG-RELAJADA] Recetas disponibles - Entrantes: 96 | Principales: 1 | Postres: 91
+        [DEBUG-RELAJADA] ✅ Combinación encontrada: 11.66€
+        [DEBUG-RELAJADA]   Garlic & Spice Plantain Chips | Tuscan White Bean Soup with Olive Oil and Rosemary | Brownie Cupcakes
+     ✅ MENÚ CARO CREADO: 11.66€
+
+========================================
+📊 RESUMEN FINAL DE MENÚS
+========================================
+Barato: ✅ | Medio: ✅ | Caro: ✅
+
+🍽️  MENÚ BARATO:
+ Precio base: 10.58€
+Entrante: Cinnamon Sugar Fried Apples (1.89€)
+Principal: Tuscan White Bean Soup with Olive Oil and Rosemary (8.28€)
+Vino recomendado: Light Red wine or White wine
+Postre: Brown sugar & Spice Sugar cookie frogs (0.41€)
+PRECIO TOTAL: 10.58€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ MEDIO:
+ Precio base: 11.2€
+Entrante: Garlic & Spice Plantain Chips (2.51€)
+Principal: Tuscan White Bean Soup with Olive Oil and Rosemary (8.28€)
+Vino recomendado: Light Red wine or White wine
+Postre: Brown sugar & Spice Sugar cookie frogs (0.41€)
+PRECIO TOTAL: 11.2€
+Bebidas incluidas: "agua" "café" "té" "refrescos"
+
+🍽️  MENÚ CARO:
+ Precio base: 11.66€
+Entrante: Garlic & Spice Plantain Chips (2.51€)
+Principal: Tuscan White Bean Soup with Olive Oil and Rosemary (8.28€)
+Vino recomendado: Light Red wine or White wine
+Postre: Brownie Cupcakes (0.87€)
+PRECIO TOTAL: 11.66€
+Bebidas incluidas: "agua" "café" "té" "refrescos"

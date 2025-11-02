@@ -1,11 +1,11 @@
 (defmodule REFINAMIENTO (import ONTOLOGY ?ALL) 
                         (import MATCH ?ALL )
                         (import DATA ?ALL)
-                        (import input ?ALL) (export ?ALL))
+                        (import input ?ALL) )
 
-(defrule MAIN::auto-focus-refinamiento
-    =>
-    (focus REFINAMIENTO))
+; (defrule MAIN::auto-focus-refinamiento
+;     =>
+;     (focus REFINAMIENTO))
 
 (deftemplate REFINAMIENTO::menu
     (slot categoria (type SYMBOL)) ;;; barato, medio, caro
@@ -19,7 +19,7 @@
     (slot entrante (type INSTANCE))
     (slot principal (type INSTANCE))
     (slot postre (type INSTANCE))
-    (multislot aperitivos-extra (type INSTANCE)) ;;; Nuevo: aperitivos para bodas
+    (multislot aperitivos-extra (type INSTANCE)) ;;; Aperitivos para bodas
     (slot precio-base (type FLOAT)) ;;; Precio sin aperitivos extra
     (slot precio-total (type FLOAT)))
 
@@ -35,96 +35,6 @@
 (deffacts sistema-inicio
     (match-control (phase complete))
 )
-
-; (deffunction REFINAMIENTO::clasificar-recetas-por-tipo ()
-;     "Clasifica todas las recetas candidatas por tipo de plato"
-;     (bind ?entrantes (create$))
-;     (bind ?principales (create$))
-;     (bind ?postres (create$))
-;     (bind ?aperitivos (create$))
-    
-;     (do-for-all-facts ((?c combinationMAX)) TRUE
-;         (bind ?inst (fact-slot-value ?c recipe))
-;         (bind ?meal-types (send ?inst get-meal-types))
-        
-;         (if (and (not (member$ main-course ?meal-types))
-;                  (not (member$ dessert ?meal-types))
-;                  (or (member$ starter ?meal-types)
-;                      (member$ appetizer ?meal-types)
-;                      (member$ side-dish ?meal-types))) then
-;             (bind ?entrantes (create$ ?entrantes ?inst)))
-        
-;         (if (and (not (member$ starter ?meal-types))
-;                  (not (member$ dessert ?meal-types))
-;                  (not (member$ appetizer ?meal-types))
-;                  (not (member$ side-dish ?meal-types))
-;                  (or (member$ main-course ?meal-types)
-;                      (member$ main-dish ?meal-types))) then
-;             (bind ?principales (create$ ?principales ?inst)))
-            
-;         (if (and (not (member$ starter ?meal-types))
-;                  (not (member$ main-course ?meal-types))
-;                  (not (member$ appetizer ?meal-types))
-;                  (not (member$ side-dish ?meal-types))
-;                  (not (member$ brunch ?meal-types))
-;                  (member$ dessert ?meal-types)) then
-;             (bind ?postres (create$ ?postres ?inst)))
-        
-;         ; Aperitivos específicos para finger food (solo para bodas)
-        
-;     )
-
-    ; ; DEBUG: Mostrar resultados de la clasificación
-    ; (printout t "        [DEBUG] Resultados clasificación:" crlf)
-    ; (printout t "          Entrantes: " (length$ ?entrantes) crlf)
-    ; (printout t "          Principales: " (length$ ?principales) crlf)
-    ; (printout t "          Postres: " (length$ ?postres) crlf)
-    ; (printout t "          Aperitivos: " (length$ ?aperitivos) crlf)
-
-    ; ; ; Asegurar que siempre retornemos multifields válidos
-    ; ; (if (= (length$ ?entrantes) 0) then (bind ?entrantes (create$)))
-    ; ; (if (= (length$ ?principales) 0) then (bind ?principales (create$)))
-    ; ; (if (= (length$ ?postres) 0) then (bind ?postres (create$)))
-    ; ; (if (= (length$ ?aperitivos) 0) then (bind ?aperitivos (create$)))
-    
-    ; ; (return (create$ ?entrantes ?principales ?postres ?aperitivos))
-    ; (return (list ?entrantes ?principales ?postres ?aperitivos))
-; )
-    
-
-; (deffunction REFINAMIENTO::buscar-aperitivos-extra-wedding (?presupuesto-aperitivos)
-;     "Busca aperitivos extra para bodas dentro de un presupuesto específico"
-;     (bind ?aperitivos-disponibles (create$))
-
-;     (do-for-all-facts ((?c combinationMAX)) TRUE
-;         (bind ?inst (fact-slot-value ?c recipe))
-;         (bind ?meal-types (send ?inst get-meal-types))
-;         (if (or (member$ hor-doeuvre ?meal-types)
-;                 (member$ fingerfood ?meal-types)
-;                 (member$ appetizer ?meal-types)
-;                 (member$ snack ?meal-types)) then
-;             (bind ?aperitivos-disponibles (create$ ?aperitivos-disponibles ?inst))))
-    
-;     ;; Asegurar que ?aperitivos-disponibles sea siempre un multifield
-;     (if (neq (type ?aperitivos-disponibles) MULTIFIELD) then
-;         (bind ?aperitivos-disponibles (create$))
-;     )
-
-;     (bind ?aperitivos-seleccionados (create$))
-;     (bind ?presupuesto-restante ?presupuesto-aperitivos)
-    
-;     ; Seleccionar aperitivos que quepan en el presupuesto (máximo 3)
-;     (foreach ?a ?aperitivos-disponibles
-;         (if (and (< (length$ ?aperitivos-seleccionados) 3)
-;                  (<= (send ?a get-price) ?presupuesto-restante)) then
-;             (bind ?aperitivos-seleccionados (create$ ?aperitivos-seleccionados ?a))
-;             (bind ?presupuesto-restante (- ?presupuesto-restante (send ?a get-price)))
-;         )
-;     )
-    
-;     (return ?aperitivos-seleccionados)
-; )
-
 
 
 
@@ -201,53 +111,25 @@
    )
 )
 
-; ;;;Verifica platos usados
 
-; (deffunction REFINAMIENTO::plato-ya-usado (?e ?p ?po)
-;     (do-for-all-facts ((?m menu)) TRUE
-;         (if (or (eq ?m:entrante ?e) 
-;                 (eq ?m:principal ?p) 
-;                 (eq ?m:postre ?po)) then
-;             (return TRUE)))
+; (deffunction REFINAMIENTO::aperitivo-ya-usado-en-otros-menus (?aperitivo)
+;     "Verifica si un aperitivo ya está usado en otros menús (platos principales o aperitivos)"
+;     (bind ?titulo-aperitivo (send ?aperitivo get-title))
+    
+;     (do-for-all-facts ((?m menu-completo)) TRUE
+;         ; Verificar si coincide con entrante, principal o postre de algún menú
+;         (if (or (str-compare ?titulo-aperitivo (send ?m:entrante get-title))
+;                 (str-compare ?titulo-aperitivo (send ?m:principal get-title))
+;                 (str-compare ?titulo-aperitivo (send ?m:postre get-title))) then
+;             (return TRUE))
+        
+;         ; Verificar si está en los aperitivos extra de algún menú
+;         (foreach ?a ?m:aperitivos-extra
+;             (if (str-compare ?titulo-aperitivo (send ?a get-title)) then
+;                 (return TRUE)))
+;     )
 ;     (return FALSE)
 ; )
-
-; ;;;Verifica combinacion platos es valida
-
-; (deffunction REFINAMIENTO::combinacion-es-valida (?entrante ?principal ?postre)
-;     ;;; Verificar que no sean la misma receta
-;     (if (or (eq ?entrante ?principal) 
-;             (eq ?entrante ?postre) 
-;             (eq ?principal ?postre)) then
-;         (return FALSE)
-;     )
-    
-;     ;;; Verificar que no estén ya en otro menú
-;     (if (plato-ya-usado ?entrante ?principal ?postre) then
-;         (return FALSE)
-;     )
-    
-;     (return TRUE)
-; )
-
-(deffunction REFINAMIENTO::aperitivo-ya-usado-en-otros-menus (?aperitivo)
-    "Verifica si un aperitivo ya está usado en otros menús (platos principales o aperitivos)"
-    (bind ?titulo-aperitivo (send ?aperitivo get-title))
-    
-    (do-for-all-facts ((?m menu-completo)) TRUE
-        ; Verificar si coincide con entrante, principal o postre de algún menú
-        (if (or (str-compare ?titulo-aperitivo (send ?m:entrante get-title))
-                (str-compare ?titulo-aperitivo (send ?m:principal get-title))
-                (str-compare ?titulo-aperitivo (send ?m:postre get-title))) then
-            (return TRUE))
-        
-        ; Verificar si está en los aperitivos extra de algún menú
-        (foreach ?a ?m:aperitivos-extra
-            (if (str-compare ?titulo-aperitivo (send ?a get-title)) then
-                (return TRUE)))
-    )
-    (return FALSE)
-)
 
 
 (deffunction REFINAMIENTO::plato-ya-usado (?e ?p ?po ?aperitivos)
@@ -291,47 +173,46 @@
     (return FALSE)
 )
 
-;;; Verifica combinacion platos es valida
+; ;;; Verifica combinacion platos es valida
 
-(deffunction REFINAMIENTO::combinacion-es-valida (?entrante ?principal ?postre ?aperitivos-extra)
-    ;;; Verificar que no sean la misma receta (por título)
-    (bind ?titulo-entrante (send ?entrante get-title))
-    (bind ?titulo-principal (send ?principal get-title))
-    (bind ?titulo-postre (send ?postre get-title))
+; (deffunction REFINAMIENTO::combinacion-es-valida (?entrante ?principal ?postre ?aperitivos-extra)
+;     ;;; Verificar que no sean la misma receta (por título)
+;     (bind ?titulo-entrante (send ?entrante get-title))
+;     (bind ?titulo-principal (send ?principal get-title))
+;     (bind ?titulo-postre (send ?postre get-title))
     
-    ; Verificar duplicados entre platos principales
-    (if (or (str-compare ?titulo-entrante ?titulo-principal) 
-            (str-compare ?titulo-entrante ?titulo-postre) 
-            (str-compare ?titulo-principal ?titulo-postre)) then
-        (return FALSE)
-    )
+;     ; Verificar duplicados entre platos principales
+;     (if (or (str-compare ?titulo-entrante ?titulo-principal) 
+;             (str-compare ?titulo-entrante ?titulo-postre) 
+;             (str-compare ?titulo-principal ?titulo-postre)) then
+;         (return FALSE)
+;     )
     
-    ; Verificar que aperitivos no dupliquen con platos principales
-    (foreach ?a ?aperitivos-extra
-        (bind ?titulo-aperitivo (send ?a get-title))
-        (if (or (str-compare ?titulo-aperitivo ?titulo-entrante)
-                (str-compare ?titulo-aperitivo ?titulo-principal)
-                (str-compare ?titulo-aperitivo ?titulo-postre)) then
-            (return FALSE))
-    )
+;     ; Verificar que aperitivos no dupliquen con platos principales
+;     (foreach ?a ?aperitivos-extra
+;         (bind ?titulo-aperitivo (send ?a get-title))
+;         (if (or (str-compare ?titulo-aperitivo ?titulo-entrante)
+;                 (str-compare ?titulo-aperitivo ?titulo-principal)
+;                 (str-compare ?titulo-aperitivo ?titulo-postre)) then
+;             (return FALSE))
+;     )
     
-    ;;; Verificar que no estén ya en otro menú (por título)
-    (if (plato-ya-usado ?entrante ?principal ?postre ?aperitivos-extra) then
-        (return FALSE)
-    )
+;     ;;; Verificar que no estén ya en otro menú (por título)
+;     (if (plato-ya-usado ?entrante ?principal ?postre ?aperitivos-extra) then
+;         (return FALSE)
+;     )
     
-    (return TRUE)
-)
+;     (return TRUE)
+; )
 
-;;; Busca combinacion de platos valida para el menu
-
+;;; Busca combinaciones válidas de platos (verifica duplicados entre menús)
 (deffunction REFINAMIENTO::buscar-combinacion-valida (?precio-min ?precio-max ?aperitivos-extra)
-    
+    ;;; Versión relajada que SÍ verifica duplicados entre menús
     (bind ?entrantes (create$))
     (bind ?principales (create$))
     (bind ?postres (create$))
     
-     ;;; Separar candidatos por tipo de plato
+    ;;; Separar candidatos por tipo de plato
     (do-for-all-facts ((?c combinationMAX)) TRUE
         (bind ?inst (fact-slot-value ?c recipe))
         (bind ?meal-types (send ?inst get-meal-types))
@@ -358,19 +239,134 @@
          (not (member$ brunch ?meal-types))
          (member$ dessert ?meal-types)) then
             (bind ?postres (create$ ?postres ?inst))))
+
+    ;;; DEBUG: Mostrar estadísticas
+    (printout t "        [DEBUG] Recetas disponibles - " 
+             "Entrantes: " (length$ ?entrantes) 
+             " | Principales: " (length$ ?principales) 
+             " | Postres: " (length$ ?postres) crlf)
     
-    ;;; Buscar combinación que cumpla con el rango de precio
+    ;;; Si alguna lista está vacía, retornar FALSE
+    (if (or (= (length$ ?entrantes) 0) 
+            (= (length$ ?principales) 0) 
+            (= (length$ ?postres) 0)) then
+        (printout t "        [DEBUG] No hay suficientes recetas de algún tipo" crlf)
+        (return FALSE)
+    )
+    
+    ;;; Obtener títulos ya usados en otros menús para evitar duplicados
+    (bind ?titulos-ya-usados (create$))
+    (do-for-all-facts ((?m menu-completo)) TRUE
+        (bind ?titulos-ya-usados (create$ ?titulos-ya-usados 
+            (send ?m:entrante get-title)
+            (send ?m:principal get-title) 
+            (send ?m:postre get-title)))
+        (foreach ?a ?m:aperitivos-extra
+            (bind ?titulos-ya-usados (create$ ?titulos-ya-usados (send ?a get-title))))
+    )
+    
+    ;;; Buscar combinación (verifica duplicados con otros menús)
     (foreach ?e ?entrantes
+        (bind ?titulo-e (send ?e get-title))
         (foreach ?p ?principales
+            (bind ?titulo-p (send ?p get-title))
             (foreach ?po ?postres
-                (if (combinacion-es-valida ?e ?p ?po ?aperitivos-extra) then
+                (bind ?titulo-po (send ?po get-title))
+                
+                ;;; Verificar que no sean la misma receta y no estén en otros menús
+                (if (and (str-compare ?titulo-e ?titulo-p)
+                         (str-compare ?titulo-e ?titulo-po)
+                         (str-compare ?titulo-p ?titulo-po)
+                         (not (member$ ?titulo-e ?titulos-ya-usados))
+                         (not (member$ ?titulo-p ?titulos-ya-usados))
+                         (not (member$ ?titulo-po ?titulos-ya-usados))) then
                     (bind ?precio-total (+ (send ?e get-price) 
                                          (send ?p get-price) 
                                          (send ?po get-price)))
                     (if (and (>= ?precio-total ?precio-min) 
                              (<= ?precio-total ?precio-max)) then
+                        (printout t "        [DEBUG] Combinación válida encontrada: " ?precio-total "€" crlf)
+                        (printout t "        [DEBUG]   " ?titulo-e " | " ?titulo-p " | " ?titulo-po crlf)
                         (return (create$ ?e ?p ?po ?precio-total)))))))
     
+    (printout t "        [DEBUG] No se encontró combinación sin duplicados en rango " ?precio-min "-" ?precio-max "€" crlf)
+    (return FALSE)
+)
+
+
+;;; Versión relajada de búsqueda (no verifica platos usados)
+
+(deffunction REFINAMIENTO::buscar-combinacion-valida-relajada (?precio-min ?precio-max ?aperitivos-extra)
+    "Versión RELAJADA que PERMITE repetir platos entre menús"
+    (bind ?entrantes (create$))
+    (bind ?principales (create$))
+    (bind ?postres (create$))
+    
+    ;;; Separar candidatos por tipo de plato
+    (do-for-all-facts ((?c combinationMAX)) TRUE
+        (bind ?inst (fact-slot-value ?c recipe))
+        (bind ?meal-types (send ?inst get-meal-types))
+        
+        (if (and (not (member$ main-course ?meal-types))
+         (not (member$ dessert ?meal-types))
+         (or (member$ starter ?meal-types)
+             (member$ appetizer ?meal-types)
+             (member$ side-dish ?meal-types))) then
+            (bind ?entrantes (create$ ?entrantes ?inst)))
+        
+        (if (and (not (member$ starter ?meal-types))
+         (not (member$ dessert ?meal-types))
+         (not (member$ appetizer ?meal-types))
+         (not (member$ side-dish ?meal-types))
+         (or (member$ main-course ?meal-types)
+             (member$ main-dish ?meal-types)))then
+            (bind ?principales (create$ ?principales ?inst)))
+            
+        (if (and (not (member$ starter ?meal-types))
+         (not (member$ main-course ?meal-types))
+         (not (member$ appetizer ?meal-types))
+         (not (member$ side-dish ?meal-types))
+         (not (member$ brunch ?meal-types))
+         (member$ dessert ?meal-types)) then
+            (bind ?postres (create$ ?postres ?inst))))
+
+    ;;; DEBUG: Mostrar estadísticas
+    (printout t "        [DEBUG-RELAJADA] Recetas disponibles - " 
+             "Entrantes: " (length$ ?entrantes) 
+             " | Principales: " (length$ ?principales) 
+             " | Postres: " (length$ ?postres) crlf)
+    
+    ;;; Si alguna lista está vacía, retornar FALSE
+    (if (or (= (length$ ?entrantes) 0) 
+            (= (length$ ?principales) 0) 
+            (= (length$ ?postres) 0)) then
+        (printout t "        [DEBUG-RELAJADA] No hay suficientes recetas de algún tipo" crlf)
+        (return FALSE)
+    )
+    
+    ;;; Buscar combinación SIN verificar duplicados con otros menús
+    (foreach ?e ?entrantes
+        (bind ?titulo-e (send ?e get-title))
+        (foreach ?p ?principales
+            (bind ?titulo-p (send ?p get-title))
+            (foreach ?po ?postres
+                (bind ?titulo-po (send ?po get-title))
+                
+                ;;; SOLO verificar que no sean la misma receta dentro del mismo menú
+                ;;; NO verificar si ya están en otros menús
+                (if (and (str-compare ?titulo-e ?titulo-p)
+                         (str-compare ?titulo-e ?titulo-po)
+                         (str-compare ?titulo-p ?titulo-po)) then
+                    (bind ?precio-total (+ (send ?e get-price) 
+                                         (send ?p get-price) 
+                                         (send ?po get-price)))
+                    (if (and (>= ?precio-total ?precio-min) 
+                             (<= ?precio-total ?precio-max)) then
+                        (printout t "        [DEBUG-RELAJADA] ✅ Combinación encontrada: " ?precio-total "€" crlf)
+                        (printout t "        [DEBUG-RELAJADA]   " ?titulo-e " | " ?titulo-p " | " ?titulo-po crlf)
+                        (return (create$ ?e ?p ?po ?precio-total)))))))
+    
+    (printout t "        [DEBUG-RELAJADA] ❌ No se encontró combinación en rango " ?precio-min "-" ?precio-max "€" crlf)
     (return FALSE)
 )
 
@@ -739,176 +735,6 @@
     (printout t crlf)
 )
 
-;;; Versión relajada de búsqueda (no verifica platos usados)
-
-(deffunction REFINAMIENTO::buscar-combinacion-valida-relajada (?precio-min ?precio-max ?aperitivos-extra)
-    ;;; Versión relajada que SÍ verifica duplicados entre menús
-    (bind ?entrantes (create$))
-    (bind ?principales (create$))
-    (bind ?postres (create$))
-    
-    ;;; Separar candidatos por tipo de plato
-    (do-for-all-facts ((?c combinationMAX)) TRUE
-        (bind ?inst (fact-slot-value ?c recipe))
-        (bind ?meal-types (send ?inst get-meal-types))
-        
-        (if (and (not (member$ main-course ?meal-types))
-         (not (member$ dessert ?meal-types))
-         (or (member$ starter ?meal-types)
-             (member$ appetizer ?meal-types)
-             (member$ side-dish ?meal-types))) then
-            (bind ?entrantes (create$ ?entrantes ?inst)))
-        
-        (if (and (not (member$ starter ?meal-types))
-         (not (member$ dessert ?meal-types))
-         (not (member$ appetizer ?meal-types))
-         (not (member$ side-dish ?meal-types))
-         (or (member$ main-course ?meal-types)
-             (member$ main-dish ?meal-types)))then
-            (bind ?principales (create$ ?principales ?inst)))
-            
-        (if (and (not (member$ starter ?meal-types))
-         (not (member$ main-course ?meal-types))
-         (not (member$ appetizer ?meal-types))
-         (not (member$ side-dish ?meal-types))
-         (not (member$ brunch ?meal-types))
-         (member$ dessert ?meal-types)) then
-            (bind ?postres (create$ ?postres ?inst))))
-
-    ;;; DEBUG: Mostrar estadísticas
-    (printout t "        [DEBUG] Recetas disponibles - " 
-             "Entrantes: " (length$ ?entrantes) 
-             " | Principales: " (length$ ?principales) 
-             " | Postres: " (length$ ?postres) crlf)
-    
-    ;;; Si alguna lista está vacía, retornar FALSE
-    (if (or (= (length$ ?entrantes) 0) 
-            (= (length$ ?principales) 0) 
-            (= (length$ ?postres) 0)) then
-        (printout t "        [DEBUG] No hay suficientes recetas de algún tipo" crlf)
-        (return FALSE)
-    )
-    
-    ;;; Obtener títulos ya usados en otros menús para evitar duplicados
-    (bind ?titulos-ya-usados (create$))
-    (do-for-all-facts ((?m menu-completo)) TRUE
-        (bind ?titulos-ya-usados (create$ ?titulos-ya-usados 
-            (send ?m:entrante get-title)
-            (send ?m:principal get-title) 
-            (send ?m:postre get-title)))
-        (foreach ?a ?m:aperitivos-extra
-            (bind ?titulos-ya-usados (create$ ?titulos-ya-usados (send ?a get-title))))
-    )
-    
-    ;;; Buscar combinación (verifica duplicados con otros menús)
-    (foreach ?e ?entrantes
-        (bind ?titulo-e (send ?e get-title))
-        (foreach ?p ?principales
-            (bind ?titulo-p (send ?p get-title))
-            (foreach ?po ?postres
-                (bind ?titulo-po (send ?po get-title))
-                
-                ;;; Verificar que no sean la misma receta y no estén en otros menús
-                (if (and (str-compare ?titulo-e ?titulo-p)
-                         (str-compare ?titulo-e ?titulo-po)
-                         (str-compare ?titulo-p ?titulo-po)
-                         (not (member$ ?titulo-e ?titulos-ya-usados))
-                         (not (member$ ?titulo-p ?titulos-ya-usados))
-                         (not (member$ ?titulo-po ?titulos-ya-usados))) then
-                    (bind ?precio-total (+ (send ?e get-price) 
-                                         (send ?p get-price) 
-                                         (send ?po get-price)))
-                    (if (and (>= ?precio-total ?precio-min) 
-                             (<= ?precio-total ?precio-max)) then
-                        (printout t "        [DEBUG] Combinación válida encontrada: " ?precio-total "€" crlf)
-                        (printout t "        [DEBUG]   " ?titulo-e " | " ?titulo-p " | " ?titulo-po crlf)
-                        (return (create$ ?e ?p ?po ?precio-total)))))))
-    
-    (printout t "        [DEBUG] No se encontró combinación sin duplicados en rango " ?precio-min "-" ?precio-max "€" crlf)
-    (return FALSE)
-)
-
-;;; Reintentar creando menus permitiendo platos repetidos
-
-;;; Reintentar creando menus permitiendo platos repetidos
-; (deffunction REFINAMIENTO::reintentar-con-platos-repetidos (?limites)
-;     (bind ?min (fact-slot-value ?limites min-price))
-;     (bind ?limBarato (fact-slot-value ?limites limite-barato))
-;     (bind ?limMedio (fact-slot-value ?limites limite-medio))
-;     (bind ?max (fact-slot-value ?limites max-price))
-    
-;     (printout t "      Permitiendo platos repetidos entre menús..." crlf)
-    
-;     ;;; Limpiar menús existentes
-;     (do-for-all-facts ((?m menu)) TRUE (retract ?m))
-    
-;     ;;; DEBUG: Mostrar rangos de precio
-;     (printout t "      Rangos: Barato(" ?min "-" ?limBarato 
-;              ") Medio(" ?limBarato "-" ?limMedio 
-;              ") Caro(" ?limMedio "-" ?max ")" crlf)
-    
-;     ;;; Crear menús barato (sin verificar platos usados)
-    
-;     (bind ?menu-barato (buscar-combinacion-valida-relajada ?min ?limBarato ))
-;     (if (neq ?menu-barato FALSE) then
-;         (assert (menu (categoria barato)
-;                      (entrante (nth$ 1 ?menu-barato))
-;                      (principal (nth$ 2 ?menu-barato))
-;                      (postre (nth$ 3 ?menu-barato))
-;                      (precio-total (nth$ 4 ?menu-barato))))
-;         (printout t "      ✅ Menú barato creado: " (nth$ 4 ?menu-barato) "€" crlf)
-;     else
-;         (printout t "      ❌ No se pudo crear menú barato" crlf)
-;     )
-    
-;     ;;; Crear menú medio (sin verificar platos usados)
-;     (bind ?menu-medio (buscar-combinacion-valida-relajada ?limBarato ?limMedio ))
-;     (if (neq ?menu-medio FALSE) then
-;         (assert (menu (categoria medio)
-;                      (entrante (nth$ 1 ?menu-medio))
-;                      (principal (nth$ 2 ?menu-medio))
-;                      (postre (nth$ 3 ?menu-medio))
-;                      (precio-total (nth$ 4 ?menu-medio))))
-;         (printout t "      ✅ Menú medio creado: " (nth$ 4 ?menu-medio) "€" crlf)
-;     else
-;         (printout t "      ❌ No se pudo crear menú medio" crlf)
-;     )
-    
-;     ;;; Crear menú caro (sin verificar platos usados)
-;     (bind ?menu-caro (buscar-combinacion-valida-relajada ?limMedio ?max))
-;     (if (neq ?menu-caro FALSE) then
-;         (assert (menu (categoria caro)
-;                      (entrante (nth$ 1 ?menu-caro))
-;                      (principal (nth$ 2 ?menu-caro))
-;                      (postre (nth$ 3 ?menu-caro))
-;                      (precio-total (nth$ 4 ?menu-caro))))
-;         (printout t "      ✅ Menú caro creado: " (nth$ 4 ?menu-caro) "€" crlf)
-;     else
-;         (printout t "      ❌ No se pudo crear menú caro" crlf)
-;     )
-    
-;     ;;; DEBUG: Contar menús creados
-;     (bind ?count-barato (length$ (find-all-facts ((?m menu)) (eq ?m:categoria barato))))
-;     (bind ?count-medio (length$ (find-all-facts ((?m menu)) (eq ?m:categoria medio))))
-;     (bind ?count-caro (length$ (find-all-facts ((?m menu)) (eq ?m:categoria caro))))
-    
-;     (printout t "      Menús creados: Barato(" ?count-barato 
-;              ") Medio(" ?count-medio ") Caro(" ?count-caro ")" crlf)
-    
-;     ; Verificar si se crearon todos los menús
-;     (if (and (> ?count-barato 0) (> ?count-medio 0) (> ?count-caro 0)) then
-;         (printout t "      ✅ TODOS los menús creados exitosamente" crlf)
-;         (return TRUE)
-;     else
-;         ;Limpiar si no se completó
-;         (do-for-all-facts ((?m menu)) TRUE (retract ?m))
-;         (printout t "      ❌ No se pudieron crear todos los menús" crlf)
-;         (return FALSE)
-;     )
-; )
-
-
-
 ;;; REGLAS PARA CREAR MENUS
 
 (defrule REFINAMIENTO::iniciar-creacion-menus
@@ -933,207 +759,6 @@
 )
 
 
-; (defrule REFINAMIENTO::crear-menu-barato
-;     (declare (salience 90))
-;     ?limites <- (limites-calculados 
-;         (min-price ?min) 
-;         (limite-barato ?limBarato)
-;         (limite-medio ?limMedio) 
-;         (max-price ?max))
-;     ?user <- (user-restrictions (event-type ?event-type) (quiere-tarta ?quiere-tarta))
-;     (not (menu-completo (categoria barato)))
-;     =>
-;     (printout t crlf " BUSCANDO MENÚ BARATO (≤ " ?limBarato "€)..." crlf)
-    
-;     (bind ?presupuesto-total ?limBarato)
-;     (bind ?presupuesto-menu ?limBarato)
-;     (bind ?aperitivos-extra (create$))
-;     (bind ?costo-aperitivos 0.0)
-    
-;     ; PASO 1: Si es boda, reservar 20% para aperitivos extra
-;     (if (eq ?event-type wedding) then
-;         (printout t "      Reservando presupuesto para aperitivos extra..." crlf)
-;         (bind ?presupuesto-aperitivos (* ?presupuesto-total 0.2))
-;         (bind ?presupuesto-menu (- ?presupuesto-total ?presupuesto-aperitivos))
-        
-;         ; Buscar aperitivos dentro del presupuesto reservado
-;         (bind ?clasificacion (clasificar-recetas-por-tipo))
-;         (bind ?aperitivos-extra (buscar-aperitivos-extra-wedding ?presupuesto-aperitivos ?clasificacion))
-        
-;         ; Calcular costo real de los aperitivos
-;         (foreach ?a ?aperitivos-extra
-;             (bind ?costo-aperitivos (+ ?costo-aperitivos (send ?a get-price))))
-        
-;         (printout t "      Presupuesto menu: " ?presupuesto-menu "€ | Aperitivos: " ?costo-aperitivos "€" crlf)
-;     )
-    
-;     ; PASO 2: Buscar combinación válida con el presupuesto restante
-;     (bind ?clasificacion (clasificar-recetas-por-tipo))
-;     (bind ?menu-normal (buscar-combinacion-valida ?min ?presupuesto-menu ?clasificacion))
-    
-;     (if (neq ?menu-normal FALSE) then
-;         (bind ?entrante (nth$ 1 ?menu-normal))
-;         (bind ?principal (nth$ 2 ?menu-normal))
-;         (bind ?postre (nth$ 3 ?menu-normal))
-;         (bind ?precio-base (nth$ 4 ?menu-normal))
-;         (bind ?precio-total (+ ?precio-base ?costo-aperitivos))
-        
-        
-;         ; PASO 4: Crear menú completo
-;         (assert (menu-completo 
-;             (categoria barato)
-;             (entrante ?entrante)
-;             (principal ?principal)
-;             (postre ?postre)
-;             (aperitivos-extra ?aperitivos-extra)
-;             (precio-base ?precio-base)
-;             (precio-total ?precio-total)))
-        
-;         (printout t "     MENÚ BARATO CREADO: " ?precio-total "€" 
-;                  (if (> ?costo-aperitivos 0) then (str-cat " (incluye " (length$ ?aperitivos-extra) " aperitivos extra)") else "") 
-;                     crlf)
-;     else
-;         (printout t "       No se pudo crear menú barato" crlf)
-;         (if (> ?costo-aperitivos 0) then
-;             (printout t "      Presupuesto de aperitivos reservado pero no se pudo encontrar menú base" crlf)
-;         )
-;     )
-; )
-
-; (defrule REFINAMIENTO::crear-menu-medio
-;     (declare (salience 80))
-;     ?limites <- (limites-calculados 
-;         (min-price ?min) 
-;         (limite-barato ?limBarato)
-;         (limite-medio ?limMedio) 
-;         (max-price ?max))
-;     ?user <- (user-restrictions (event-type ?event-type) (quiere-tarta ?quiere-tarta))
-;     (not (menu-completo (categoria medio)))
-;     =>
-;     (printout t crlf "BUSCANDO MENÚ MEDIO (" ?limBarato "€ - " ?limMedio "€)..." crlf)
-    
-;     (bind ?presupuesto-total ?limMedio)
-;     (bind ?presupuesto-menu ?limMedio)
-;     (bind ?aperitivos-extra (create$))
-;     (bind ?costo-aperitivos 0.0)
-    
-;     ; PASO 1: Si es boda, reservar 20% para aperitivos extra
-;     (if (eq ?event-type wedding) then
-;         (printout t "      Reservando presupuesto para aperitivos extra..." crlf)
-;         (bind ?presupuesto-aperitivos (* ?presupuesto-total 0.2))
-;         (bind ?presupuesto-menu (- ?presupuesto-total ?presupuesto-aperitivos))
-        
-;         ; Buscar aperitivos dentro del presupuesto reservado
-;         (bind ?clasificacion (clasificar-recetas-por-tipo))
-;         (bind ?aperitivos-extra (buscar-aperitivos-extra-wedding ?presupuesto-aperitivos ?clasificacion))
-
-;         ; Calcular costo real de los aperitivos
-;         (foreach ?a ?aperitivos-extra
-;             (bind ?costo-aperitivos (+ ?costo-aperitivos (send ?a get-price))))
-        
-;         (printout t "      Presupuesto menu: " ?presupuesto-menu "€ | Aperitivos: " ?costo-aperitivos "€" crlf)
-;     )
-    
-;     ; PASO 2: Buscar combinación válida con el presupuesto restante
-;     (bind ?clasificacion (clasificar-recetas-por-tipo))
-;     (bind ?menu-normal (buscar-combinacion-valida ?limBarato ?presupuesto-menu ?clasificacion))
-    
-;     (if (neq ?menu-normal FALSE) then
-;         (bind ?entrante (nth$ 1 ?menu-normal))
-;         (bind ?principal (nth$ 2 ?menu-normal))
-;         (bind ?postre (nth$ 3 ?menu-normal))
-;         (bind ?precio-base (nth$ 4 ?menu-normal))
-;         (bind ?precio-total (+ ?precio-base ?costo-aperitivos))
-        
-        
-;         ; PASO 4: Crear menú completo
-;         (assert (menu-completo 
-;             (categoria medio)
-;             (entrante ?entrante)
-;             (principal ?principal)
-;             (postre ?postre)
-;             (aperitivos-extra ?aperitivos-extra)
-;             (precio-base ?precio-base)
-;             (precio-total ?precio-total)))
-        
-;         (printout t "     MENÚ MEDIO CREADO: " ?precio-total "€" 
-;                  (if (> ?costo-aperitivos 0) then (str-cat " (incluye " (length$ ?aperitivos-extra) " aperitivos extra)") else "") 
-;                 crlf)
-;     else
-;         (printout t "       No se pudo crear menú medio" crlf)
-;         (if (> ?costo-aperitivos 0) then
-;             (printout t "       Presupuesto de aperitivos reservado pero no se pudo encontrar menú base" crlf)
-;         )
-;     )
-; )
-
-; (defrule REFINAMIENTO::crear-menu-caro
-;     (declare (salience 70))
-;     ?limites <- (limites-calculados 
-;         (min-price ?min) 
-;         (limite-barato ?limBarato)
-;         (limite-medio ?limMedio) 
-;         (max-price ?max))
-;     ?user <- (user-restrictions (event-type ?event-type) (quiere-tarta ?quiere-tarta))
-;     (not (menu-completo (categoria caro)))
-;     =>
-;     (printout t crlf "BUSCANDO MENÚ CARO (≥ " ?limMedio "€)..." crlf)
-    
-;     (bind ?presupuesto-total ?max)
-;     (bind ?presupuesto-menu ?max)
-;     (bind ?aperitivos-extra (create$))
-;     (bind ?costo-aperitivos 0.0)
-    
-;     ; PASO 1: Si es boda, reservar 20% para aperitivos extra
-;     (if (eq ?event-type wedding) then
-;         (printout t "      Reservando presupuesto para aperitivos extra..." crlf)
-;         (bind ?presupuesto-aperitivos (* ?presupuesto-total 0.2))
-;         (bind ?presupuesto-menu (- ?presupuesto-total ?presupuesto-aperitivos))
-        
-;         ; Buscar aperitivos dentro del presupuesto reservado
-;         (bind ?clasificacion (clasificar-recetas-por-tipo))
-;         (bind ?aperitivos-extra (buscar-aperitivos-extra-wedding ?presupuesto-aperitivos ?clasificacion))
-
-;         ; Calcular costo real de los aperitivos
-;         (foreach ?a ?aperitivos-extra
-;             (bind ?costo-aperitivos (+ ?costo-aperitivos (send ?a get-price))))
-        
-;         (printout t "      Presupuesto menu: " ?presupuesto-menu "€ | Aperitivos: " ?costo-aperitivos "€" crlf)
-;     )
-    
-;     ; PASO 2: Buscar combinación válida con el presupuesto restante
-;     (bind ?clasificacion (clasificar-recetas-por-tipo))
-;     (bind ?menu-normal (buscar-combinacion-valida ?limMedio ?presupuesto-menu ?clasificacion))
-    
-;     (if (neq ?menu-normal FALSE) then
-;         (bind ?entrante (nth$ 1 ?menu-normal))
-;         (bind ?principal (nth$ 2 ?menu-normal))
-;         (bind ?postre (nth$ 3 ?menu-normal))
-;         (bind ?precio-base (nth$ 4 ?menu-normal))
-;         (bind ?precio-total (+ ?precio-base ?costo-aperitivos))
-        
-       
-        
-;         ; PASO 4: Crear menú completo
-;         (assert (menu-completo 
-;             (categoria caro)
-;             (entrante ?entrante)
-;             (principal ?principal)
-;             (postre ?postre)
-;             (aperitivos-extra ?aperitivos-extra)
-;             (precio-base ?precio-base)
-;             (precio-total ?precio-total)))
-        
-;         (printout t "     MENÚ CARO CREADO: " ?precio-total "€" 
-;                  (if (> ?costo-aperitivos 0) then (str-cat " (incluye " (length$ ?aperitivos-extra) " aperitivos extra)") else "") 
-;                 crlf)
-;     else
-;         (printout t "       No se pudo crear menú caro" crlf)
-;         (if (> ?costo-aperitivos 0) then
-;             (printout t "       Presupuesto de aperitivos reservado pero no se pudo encontrar menú base" crlf)
-;         )
-;     )
-; )
 
 (defrule REFINAMIENTO::crear-menu-barato
     (declare (salience 90))
@@ -1157,6 +782,18 @@
         (printout t "      Reservando presupuesto para aperitivos extra..." crlf)
         (bind ?presupuesto-aperitivos (* ?presupuesto-total 0.2))
         (bind ?presupuesto-menu (- ?presupuesto-total ?presupuesto-aperitivos))
+
+        ; VERIFICAR SI HAY PRESUPUESTO SUFICIENTE DESPUÉS DE APERITIVOS
+        (if (> ?presupuesto-menu ?min) then
+            (printout t "      ✅ Presupuesto suficiente, incluyendo aperitivos" crlf)
+            
+            (bind ?modo-boda? TRUE)
+        else
+            (printout t "      ⚠️  Presupuesto insuficiente para aperitivos, creando menú normal" crlf)
+            (printout t "         Necesita: >" ?min "€ | Disponible: " ?presupuesto-menu "€" crlf)
+            (bind ?presupuesto-menu ?presupuesto-total)
+            (bind ?modo-boda? FALSE)
+        )
     )
     
     ; PASO 2: Buscar combinación válida con el presupuesto restante, SIN aperitivos
@@ -1174,8 +811,8 @@
         (bind ?postre (nth$ 3 ?menu-normal))
         (bind ?precio-base (nth$ 4 ?menu-normal))
         
-        ; PASO 3: Si es boda, buscar aperitivos que no dupliquen con la combinación encontrada
-        (if (eq ?event-type wedding) then
+        ; PASO 3: Si es boda, buscar aperitivos que no dupliquen con la combinación encontrada (solo si se puede)
+        (if (and (eq ?event-type wedding) (eq ?modo-boda? TRUE)) then
             (bind ?aperitivos-extra (buscar-aperitivos-extra-wedding-con-combinacion ?presupuesto-aperitivos ?entrante ?principal ?postre))
             ; Calcular costo real de los aperitivos
             (foreach ?a ?aperitivos-extra
@@ -1201,7 +838,7 @@
     else
         (printout t "     ❌ No se pudo crear menú barato con las especificaciones actuales" crlf)
         ; Crear un menú vacío para evitar que la regla se reactive
-        (assert (menu-completo (categoria barato)))
+        ;(assert (menu-completo (categoria barato)))
     )
 )
 
@@ -1227,6 +864,17 @@
         (printout t "      Reservando presupuesto para aperitivos extra..." crlf)
         (bind ?presupuesto-aperitivos (* ?presupuesto-total 0.2))
         (bind ?presupuesto-menu (- ?presupuesto-total ?presupuesto-aperitivos))
+
+        (if (> ?presupuesto-menu ?limBarato) then
+            (printout t "      ✅ Presupuesto suficiente, incluyendo aperitivos" crlf)
+            
+            (bind ?modo-boda? TRUE)
+        else
+            (printout t "      ⚠️  Presupuesto insuficiente para aperitivos, creando menú normal" crlf)
+            (printout t "         Necesita: >" ?limBarato "€ | Disponible: " ?presupuesto-menu "€" crlf)
+            (bind ?presupuesto-menu ?presupuesto-total)
+            (bind ?modo-boda? FALSE)
+        )
     )
     
     ; PASO 2: Buscar combinación válida con el presupuesto restante, SIN aperitivos
@@ -1245,7 +893,7 @@
         (bind ?precio-base (nth$ 4 ?menu-normal))
         
         ; PASO 3: Si es boda, buscar aperitivos que no dupliquen con la combinación encontrada
-        (if (eq ?event-type wedding) then
+        (if (and (eq ?event-type wedding) (eq ?modo-boda? TRUE)) then
             (bind ?aperitivos-extra (buscar-aperitivos-extra-wedding-con-combinacion ?presupuesto-aperitivos ?entrante ?principal ?postre))
             ; Calcular costo real de los aperitivos
             (foreach ?a ?aperitivos-extra
@@ -1271,7 +919,7 @@
     else
         (printout t "     ❌ No se pudo crear menú medio con las especificaciones actuales" crlf)
         ; Crear un menú vacío para evitar que la regla se reactive
-        (assert (menu-completo (categoria medio)))
+        ;(assert (menu-completo (categoria medio)))
     )
 )
 
@@ -1297,6 +945,18 @@
         (printout t "      Reservando presupuesto para aperitivos extra..." crlf)
         (bind ?presupuesto-aperitivos (* ?presupuesto-total 0.2))
         (bind ?presupuesto-menu (- ?presupuesto-total ?presupuesto-aperitivos))
+
+        ; VERIFICAR SI HAY PRESUPUESTO SUFICIENTE DESPUÉS DE APERITIVOS
+        (if (> ?presupuesto-menu ?limMedio) then
+            (printout t "      ✅ Presupuesto suficiente, incluyendo aperitivos" crlf)
+            
+            (bind ?modo-boda? TRUE)
+        else
+            (printout t "      ⚠️  Presupuesto insuficiente para aperitivos, creando menú normal" crlf)
+            (printout t "         Necesita: >" ?limMedio "€ | Disponible: " ?presupuesto-menu "€" crlf)
+            (bind ?presupuesto-menu ?presupuesto-total)
+            (bind ?modo-boda? FALSE)
+        )
     )
     
     ; PASO 2: Buscar combinación válida con el presupuesto restante, SIN aperitivos
@@ -1315,7 +975,7 @@
         (bind ?precio-base (nth$ 4 ?menu-normal))
         
         ; PASO 3: Si es boda, buscar aperitivos que no dupliquen con la combinación encontrada
-        (if (eq ?event-type wedding) then
+        (if (and (eq ?event-type wedding) (eq ?modo-boda? TRUE)) then
             (bind ?aperitivos-extra (buscar-aperitivos-extra-wedding-con-combinacion ?presupuesto-aperitivos ?entrante ?principal ?postre))
             ; Calcular costo real de los aperitivos
             (foreach ?a ?aperitivos-extra
@@ -1341,38 +1001,9 @@
     else
         (printout t "     ❌ No se pudo crear menú caro con las especificaciones actuales" crlf)
         ; Crear un menú vacío para evitar que la regla se reactive
-        (assert (menu-completo (categoria caro)))
+        ;(assert (menu-completo (categoria caro)))
     )
 )
-;;; Reintentar con otro metodo si es necesario
-
-; (defrule REFINAMIENTO::reintentar-con-metodo-alternativo
-;     (declare (salience 50))
-;     ?limites <- (limites-calculados (min-price ?min) (limite-barato ?lb) 
-;                                    (limite-medio ?lm) (max-price ?max))
-;     (or (not (menu-completo (categoria barato)))
-;         (not (menu-completo (categoria medio)))
-;         (not (menu-completo (categoria caro))))
-
-;     ; (test (and (= (length$ (find-all-facts ((?m menu-completo)) TRUE)) 0)
-;     ;            (= (length$ (find-all-facts ((?m menu)) TRUE)) 0)))
-;     =>
-;     (printout t crlf "Algunos menús no se pudieron crear, intentando ajustar..." crlf)
-    
-;     ;;;; Permitir repetir platos
-;     (printout t "  Estrategia 1: Permitir platos repetidos..." crlf)
-;     (bind ?exito-repetidos (reintentar-con-platos-repetidos ?limites))
-    
-;     (if (eq ?exito-repetidos TRUE) then
-;         (printout t "  Éxito con platos repetidos" crlf)
-;     else
-;         (printout t "  No se pudieron crear menús ni siquiera permitiendo repetición" crlf)
-;         (printout t "  Sugerencias:" crlf)
-;         (printout t "     - Ampliar el rango de precios" crlf)
-;         (printout t "     - Relajar las restricciones dietéticas" crlf)
-;         (printout t "     - Considerar menos categorías de menú" crlf)
-;     )
-; )
 
 
 ; ;;; Mostrar resultados finales

@@ -1,0 +1,882 @@
+[
+  {
+    "num": "1",
+    "name": "Sin restricciones - Presupuesto moderado",
+    "config": {
+      "event_type": "congress",
+      "max_people": 100,
+      "season": "any-season",
+      "restrictions": [],
+      "min_price": 20,
+      "max_price": 80
+    },
+    "candidates": {
+      "total": 1382,
+      "rest_0": 1382,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 39.23,
+      "medio_price": 57.64,
+      "caro_price": 73.28
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 20.0,
+      "max": 80.0
+    },
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "2",
+    "name": "Una restricción - Vegetarian",
+    "config": {
+      "event_type": "family",
+      "cake": true,
+      "max_people": 80,
+      "season": "summer",
+      "restrictions": [
+        "vegetarian"
+      ],
+      "min_price": 25,
+      "max_price": 100
+    },
+    "candidates": {
+      "total": 568,
+      "rest_0": 0,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 48.6,
+      "medio_price": 61.96,
+      "caro_price": 97.33
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 25.0,
+      "max": 100.0
+    },
+    "aperitivos": 0,
+    "cake_included": true,
+    "fallback": false
+  },
+  {
+    "num": "3",
+    "name": "Dos restricciones - Vegan + Gluten-free",
+    "config": {
+      "event_type": "congress",
+      "max_people": 150,
+      "season": "spring",
+      "restrictions": [
+        "vegan",
+        "gluten-free"
+      ],
+      "min_price": 10,
+      "max_price": 100
+    },
+    "candidates": {
+      "total": 106,
+      "rest_0": 0,
+      "rest_2": 106,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 29.55,
+      "medio_price": 67.16,
+      "caro_price": 97.03
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 10.0,
+      "max": 100.0
+    },
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "4",
+    "name": "Tres restricciones - Vegan + Gluten-free + Nut-free",
+    "config": {
+      "event_type": "family",
+      "cake": false,
+      "max_people": 90,
+      "season": "autumn",
+      "restrictions": [
+        "vegan",
+        "gluten-free",
+        "nut-free"
+      ],
+      "min_price": 15,
+      "max_price": 100
+    },
+    "candidates": {
+      "total": 118,
+      "rest_0": 0,
+      "rest_2": 774,
+      "rest_3": 118,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 39.23,
+      "medio_price": 58.7,
+      "caro_price": 91.07
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 15.0,
+      "max": 100.0
+    },
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "5",
+    "name": "Cuatro restricciones - Muy restrictivo",
+    "config": {
+      "event_type": "congress",
+      "max_people": 120,
+      "season": "winter",
+      "restrictions": [
+        "vegan",
+        "gluten-free",
+        "soy-free",
+        "nut-free"
+      ],
+      "min_price": 20,
+      "max_price": 90
+    },
+    "candidates": {
+      "total": 88,
+      "rest_0": 0,
+      "rest_2": 1870,
+      "rest_3": 646,
+      "rest_4": 88
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 40.38,
+      "medio_price": 59.87,
+      "caro_price": 84.01
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 20.0,
+      "max": 90.0
+    },
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "6",
+    "name": "Wedding - Presupuesto muy bajo",
+    "config": {
+      "event_type": "wedding",
+      "cake": true,
+      "max_people": 100,
+      "season": "spring",
+      "restrictions": [],
+      "min_price": 10,
+      "max_price": 20
+    },
+    "candidates": {
+      "total": 610,
+      "rest_0": 610,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 12.58,
+      "medio_price": 16.51,
+      "caro_price": 18.62
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 10.0,
+      "max": 20.0
+    },
+    "aperitivos": 2,
+    "cake_included": true,
+    "fallback": false
+  },
+  {
+    "num": "7",
+    "name": "Wedding - Presupuesto medio",
+    "config": {
+      "event_type": "wedding",
+      "cake": true,
+      "max_people": 120,
+      "season": "summer",
+      "restrictions": [
+        "vegetarian"
+      ],
+      "min_price": 20,
+      "max_price": 80
+    },
+    "candidates": {
+      "total": 440,
+      "rest_0": 0,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 37.92,
+      "medio_price": 58.78,
+      "caro_price": 75.64
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 20.0,
+      "max": 80.0
+    },
+    "aperitivos": 3,
+    "cake_included": true,
+    "fallback": false
+  },
+  {
+    "num": "8",
+    "name": "Wedding - Presupuesto alto",
+    "config": {
+      "event_type": "wedding",
+      "cake": true,
+      "max_people": 150,
+      "season": "any-season",
+      "restrictions": [],
+      "min_price": 60,
+      "max_price": 150
+    },
+    "candidates": {
+      "total": 1227,
+      "rest_0": 1227,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 73.86,
+      "medio_price": 115.55,
+      "caro_price": 148.63
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 60.0,
+      "max": 150.0
+    },
+    "aperitivos": 3,
+    "cake_included": true,
+    "fallback": false
+  },
+  {
+    "num": "9",
+    "name": "Presupuesto muy ajustado",
+    "config": {
+      "event_type": "congress",
+      "max_people": 80,
+      "season": "any-season",
+      "restrictions": [],
+      "min_price": 10,
+      "max_price": 22
+    },
+    "candidates": {
+      "total": 699,
+      "rest_0": 699,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 11.35,
+      "medio_price": 17.19,
+      "caro_price": 21.41
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 10.0,
+      "max": 22.0
+    },
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "10",
+    "name": "Presupuesto muy amplio",
+    "config": {
+      "event_type": "family",
+      "cake": true,
+      "max_people": 70,
+      "season": "winter",
+      "restrictions": [],
+      "min_price": 10,
+      "max_price": 150
+    },
+    "candidates": {
+      "total": 1405,
+      "rest_0": 1405,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 56.26,
+      "medio_price": 95.37,
+      "caro_price": 113.64
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 10.0,
+      "max": 150.0
+    },
+    "aperitivos": 0,
+    "cake_included": true,
+    "fallback": false
+  },
+  {
+    "num": "11",
+    "name": "Evento pequeño - Permite recetas complejas",
+    "config": {
+      "event_type": "congress",
+      "max_people": 50,
+      "season": "spring",
+      "restrictions": [],
+      "min_price": 10,
+      "max_price": 80
+    },
+    "candidates": {
+      "total": 1249,
+      "rest_0": 1249,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 32.78,
+      "medio_price": 54.44,
+      "caro_price": 79.84
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 10.0,
+      "max": 80.0
+    },
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "12",
+    "name": "Evento grande - Sin recetas complejas",
+    "config": {
+      "event_type": "congress",
+      "max_people": 200,
+      "season": "summer",
+      "restrictions": [],
+      "min_price": 15,
+      "max_price": 90
+    },
+    "candidates": {
+      "total": 1031,
+      "rest_0": 1031,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 39.57,
+      "medio_price": 64.92,
+      "caro_price": 86.44
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 15.0,
+      "max": 90.0
+    },
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "13",
+    "name": "Estacionalidad - Spring",
+    "config": {
+      "event_type": "family",
+      "cake": false,
+      "max_people": 90,
+      "season": "spring",
+      "restrictions": [],
+      "min_price": 15,
+      "max_price": 100
+    },
+    "candidates": {
+      "total": 1332,
+      "rest_0": 1332,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 43.33,
+      "medio_price": 63.16,
+      "caro_price": 91.93
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 15.0,
+      "max": 100.0
+    },
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "14",
+    "name": "Estacionalidad - Summer",
+    "config": {
+      "event_type": "family",
+      "cake": false,
+      "max_people": 90,
+      "season": "summer",
+      "restrictions": [],
+      "min_price": 15,
+      "max_price": 100
+    },
+    "candidates": {
+      "total": 1384,
+      "rest_0": 1384,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 43.33,
+      "medio_price": 63.16,
+      "caro_price": 92.48
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 15.0,
+      "max": 100.0
+    },
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "15",
+    "name": "Estacionalidad - Autumn",
+    "config": {
+      "event_type": "family",
+      "cake": false,
+      "max_people": 90,
+      "season": "autumn",
+      "restrictions": [],
+      "min_price": 15,
+      "max_price": 100
+    },
+    "candidates": {
+      "total": 1273,
+      "rest_0": 1273,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 43.33,
+      "medio_price": 63.16,
+      "caro_price": 91.93
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 15.0,
+      "max": 100.0
+    },
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "16",
+    "name": "Estacionalidad - Winter",
+    "config": {
+      "event_type": "family",
+      "cake": false,
+      "max_people": 90,
+      "season": "winter",
+      "restrictions": [],
+      "min_price": 15,
+      "max_price": 100
+    },
+    "candidates": {
+      "total": 1302,
+      "rest_0": 1302,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 43.33,
+      "medio_price": 63.16,
+      "caro_price": 91.93
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 15.0,
+      "max": 100.0
+    },
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "17",
+    "name": "Presupuesto min = max (caso límite)",
+    "config": {
+      "event_type": "congress",
+      "max_people": 100,
+      "season": "any-season",
+      "restrictions": [],
+      "min_price": 35,
+      "max_price": 35
+    },
+    "candidates": {
+      "total": 928,
+      "rest_0": 928,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": false,
+      "medio": false,
+      "caro": false
+    },
+    "perfect_match": false,
+    "errors": [
+      "ERROR encontrado",
+      "No se pudo crear menú"
+    ],
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "18",
+    "name": "Todas las restricciones (caso extremo)",
+    "config": {
+      "event_type": "congress",
+      "max_people": 200,
+      "season": "any-season",
+      "restrictions": [
+        "gluten-free",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "kosher",
+        "halal",
+        "shellfish-free",
+        "soy-free",
+        "nut-free"
+      ],
+      "min_price": 10,
+      "max_price": 100
+    },
+    "candidates": {
+      "total": 69,
+      "rest_0": 0,
+      "rest_2": 15269,
+      "rest_3": 22770,
+      "rest_4": 23001
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 30.17,
+      "medio_price": 67.23,
+      "caro_price": 91.59
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 10.0,
+      "max": 100.0
+    },
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "19",
+    "name": "Wedding sin tarta",
+    "config": {
+      "event_type": "wedding",
+      "cake": false,
+      "max_people": 100,
+      "season": "summer",
+      "restrictions": [
+        "vegetarian"
+      ],
+      "min_price": 10,
+      "max_price": 80
+    },
+    "candidates": {
+      "total": 559,
+      "rest_0": 0,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 31.51,
+      "medio_price": 51.34,
+      "caro_price": 76.88
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 10.0,
+      "max": 80.0
+    },
+    "aperitivos": 3,
+    "cake_included": false,
+    "fallback": false
+  },
+  {
+    "num": "20",
+    "name": "Family con tarta",
+    "config": {
+      "event_type": "family",
+      "cake": true,
+      "max_people": 60,
+      "season": "autumn",
+      "restrictions": [],
+      "min_price": 10,
+      "max_price": 70
+    },
+    "candidates": {
+      "total": 1145,
+      "rest_0": 1145,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 27.26,
+      "medio_price": 49.38,
+      "caro_price": 65.92
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 10.0,
+      "max": 70.0
+    },
+    "aperitivos": 0,
+    "cake_included": true,
+    "fallback": false
+  },
+  {
+    "num": "21",
+    "name": "Todas las restricciones + wedding (caso extremo con wedding)",
+    "config": {
+      "event_type": "wedding",
+      "cake": true,
+      "max_people": 200,
+      "season": "any-season",
+      "restrictions": [
+        "gluten-free",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "kosher",
+        "halal",
+        "shellfish-free",
+        "soy-free",
+        "nut-free"
+      ],
+      "min_price": 10,
+      "max_price": 150
+    },
+    "candidates": {
+      "total": 72,
+      "rest_0": 0,
+      "rest_2": 16485,
+      "rest_3": 24477,
+      "rest_4": 24587
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 56.06,
+      "medio_price": 81.88,
+      "caro_price": 147.74
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 10.0,
+      "max": 150.0
+    },
+    "aperitivos": 3,
+    "cake_included": true,
+    "fallback": false
+  },
+  {
+    "num": "22",
+    "name": "Wedding - Presupuesto bajo",
+    "config": {
+      "event_type": "wedding",
+      "cake": true,
+      "max_people": 100,
+      "season": "spring",
+      "restrictions": [],
+      "min_price": 10,
+      "max_price": 25
+    },
+    "candidates": {
+      "total": 691,
+      "rest_0": 691,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 14.28,
+      "medio_price": 18.9,
+      "caro_price": 24.84
+    },
+    "perfect_match": false,
+    "errors": [],
+    "limits": {
+      "min": 10.0,
+      "max": 25.0
+    },
+    "aperitivos": 3,
+    "cake_included": true,
+    "fallback": false
+  },
+  {
+    "num": "23",
+    "name": "Buscar version relajada",
+    "config": {
+      "event_type": "congress",
+      "max_people": 2,
+      "season": "summer",
+      "restrictions": [
+        "vegetarian"
+      ],
+      "min_price": 10,
+      "max_price": 12
+    },
+    "candidates": {
+      "total": 248,
+      "rest_0": 0,
+      "rest_2": 0,
+      "rest_3": 0,
+      "rest_4": 0
+    },
+    "menus": {
+      "barato": true,
+      "medio": true,
+      "caro": true,
+      "barato_price": 10.58,
+      "medio_price": 11.2,
+      "caro_price": 11.66
+    },
+    "perfect_match": false,
+    "errors": [
+      "No se pudo crear menú"
+    ],
+    "limits": {
+      "min": 10.0,
+      "max": 12.0
+    },
+    "aperitivos": 0,
+    "cake_included": false,
+    "fallback": true
+  }
+]

@@ -24,6 +24,8 @@
    ;;(slot num_people)
 )
 
+
+
 (deftemplate input::user-restrictions
    (multislot requested (type SYMBOL) (default-dynamic (create$)))
    (slot max-people (type NUMBER) (default 100))
@@ -245,7 +247,7 @@
    ;; 💾 GUARDAR PREFERENCIAS DEL USUARIO
    ;;═══════════════════════════════════════════════════════════════════════════
    (assert (user-restrictions
-             (event-type ?event-type)
+            (event-type ?event-type)
              (season ?season)
               (requested ?restrictions)
                (max-people ?max-people)
