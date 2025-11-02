@@ -95,13 +95,13 @@
 
    ;; Crear hecho de preferencias del usuario
    (assert (user-restrictions
-            (requested ?restrictions)
-            (max-price ?max-price)
-            (min-price ?min-price)
-            (max-people ?max-people)
             (event-type ?event-type)
-            (season ?season)
-            (quiere-tarta ?quiere-tarta)))
+             (season ?season)
+              (requested ?restrictions)
+               (max-people ?max-people)
+              (max-price ?max-price)
+              (min-price ?min-price)
+              (quiere-tarta ?quiere-tarta)))
 
    (printout t crlf "Data successfully recorded." crlf)
    (focus MATCH)
