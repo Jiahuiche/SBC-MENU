@@ -17,6 +17,8 @@
    ;;(slot num_people)
 )
 
+
+
 (deftemplate input::user-restrictions
    (multislot requested (type SYMBOL) (default-dynamic (create$)))
    (slot max-people (type NUMBER) (default 100))
@@ -93,13 +95,13 @@
 
    ;; Crear hecho de preferencias del usuario
    (assert (user-restrictions
-             (event-type ?event-type)
-             (season ?season)
-              (requested ?restrictions)
-               (max-people ?max-people)
-              (max-price ?max-price)
-              (min-price ?min-price)
-              (quiere-tarta ?quiere-tarta)))
+            (requested ?restrictions)
+            (max-price ?max-price)
+            (min-price ?min-price)
+            (max-people ?max-people)
+            (event-type ?event-type)
+            (season ?season)
+            (quiere-tarta ?quiere-tarta)))
 
    (printout t crlf "Data successfully recorded." crlf)
    (focus MATCH)

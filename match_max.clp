@@ -108,9 +108,9 @@
 (defrule MATCH::init-system
     (declare (salience 100))
     =>
-    (printout t "========================================" crlf)
-    (printout t "🔍 SISTEMA DE MATCHING DE RECETAS" crlf)
-    (printout t "========================================" crlf)
+    ; (printout t "========================================" crlf)
+    ; (printout t "🔍 SISTEMA DE MATCHING DE RECETAS" crlf)
+    ; (printout t "========================================" crlf)
     (assert (match-control (phase init))))
 
 ;;;----------------------------------------------------------------------------
@@ -137,7 +137,7 @@
                     ?max-people))))
     (retract ?ctrl)
     (assert (match-control (phase complete)))
-    (printout t crlf "📋 Evaluadas combinaciones de restricciones: " ?combo-count crlf)
+    ;(printout t crlf "📋 Evaluadas combinaciones de restricciones: " ?combo-count crlf)
 )
 
 
@@ -200,23 +200,23 @@
                 (bind ?recipe-name (instance-name ?inst))
                 (assert (combinationMAX (requested $?requested) (recipe ?recipe-name)))
             (if (= ?perfect-match-count 0) then
-                (printout t crlf "🎯 Se encontraron platos que satisfacen todas las " ?requested-count " restricciones." crlf)
-                (printout t "Recetas compatibles:" crlf))
-                (printout t " - " ?recipe-name crlf)
+                ;out t crlf "🎯 Se encontraron platos que satisfacen todas las " ?requested-count " restricciones." crlf)
+                ;(printout t "Recetas compatibles:" crlf))
+                ;(printout t " - " ?recipe-name crlf)
             (bind ?perfect-match-count (+ ?perfect-match-count 1))))
 
     (if (= ?perfect-match-count 0) then
         (printout t crlf "⚠️  Ningún plato cubre las " ?requested-count " restricciones solicitadas." crlf))
 
     (if (>= ?max-count 0) then
-        (printout t crlf "========================================" crlf)
-        (printout t "🏆 MEJORES CANDIDATOS (" ?max-count " restricciones)" crlf)
-        (printout t "========================================" crlf)
+        ; (printout t crlf "========================================" crlf)
+        ; (printout t "🏆 MEJORES CANDIDATOS (" ?max-count " restricciones)" crlf)
+        ; (printout t "========================================" crlf)
         (do-for-all-facts ((?c candidate-set)) (= ?c:restriction-count ?max-count)
             (bind ?inst ?c:recipe-instance)
-            (printout t "• " (send ?inst get-title) crlf)
-            (printout t "  Precio: " (send ?inst get-price) crlf)
-            (printout t "  Restricciones: "
+            ; (printout t "• " (send ?inst get-title) crlf)
+            ; (printout t "  Precio: " (send ?inst get-price) crlf)
+            ; (printout t "  Restricciones: "
                         (if (= ?max-count 0) then "sin requisitos" else (implode$ ?c:restrictions-met))
                         crlf crlf))))
 
@@ -226,4 +226,5 @@
     =>
     (printout t "========================================" crlf)
     (printout t "✅ SISTEMA FINALIZADO" crlf)
-    (printout t "========================================" crlf))
+    (printout t "========================================" crlf)
+    (focus REFINAMIENTO))
