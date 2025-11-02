@@ -19,13 +19,6 @@
 ;; 📋 PLANTILLAS DE DATOS EXCLUSIVOS
 ;;═══════════════════════════════════════════════════════════════════════════
 
-(deftemplate input::restriction
-   (slot name)
-   ;;(slot num_people)
-)
-
-
-
 (deftemplate input::user-restrictions
    (multislot requested (type SYMBOL) (default-dynamic (create$)))
    (slot max-people (type NUMBER) (default 100))
@@ -215,9 +208,7 @@
             (bind ?symbol (string-to-field ?entry))
             (if (not (member$ ?symbol ?restrictions)) then
                (bind ?restrictions (create$ ?restrictions ?symbol))
-               (printout t "       ✓ Agregado: " ?entry crlf))
-            (if (not (any-factp ((?f restriction)) (eq ?f:name ?symbol)))
-               then (assert (restriction (name ?symbol))))))
+               (printout t "       ✓ Agregado: " ?entry crlf))))
    
    (printout t crlf)
    (printout t "    ═══════════════════════════════════════════════════════════════════════" crlf)
