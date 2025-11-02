@@ -39,15 +39,22 @@
 ;;; Funciones auxiliares
 ;;;------------------------------------------------------------------------
 
-(deffunction MATCH::passes-thresholds (?recipe ?min-price ?max-price ?preferred-season)
+(deffunction MATCH::passes-thresholds (?recipe ?min-price ?max-price ?preferred-season ?max-people)
     "Verifica umbrales de precio y estación preferida"
     (bind ?price (send ?recipe get-price))
-    (if (< ?price ?min-price) then (return FALSE))
+    (bind ?is-complex (send ?recipe get-is_complex))
+    ;;; (if (< ?price ?min-price) then (return FALSE))
     (if (> ?price ?max-price) then (return FALSE))
     (bind ?recipe-season (send ?recipe get-seasons))
-    (if (and (neq ?preferred-season any-season) (neq ?preferred-season ?recipe-season)) then
+    (if (not (or (eq ?preferred-season any-season)
+            (eq ?recipe-season any-season )
+            (eq ?recipe-season ?preferred-season ))) then
         (return FALSE))
-    (return TRUE))
+    (if (and(> ?max-people 100) (eq ?is-complex TRUE)) then
+        (return FALSE)
+    )
+    (return TRUE)
+)
 
 (deffunction MATCH::matched-restrictions (?requested ?recipe)
     "Devuelve las restricciones solicitadas que la receta cumple"
@@ -75,9 +82,9 @@
         (bind ?total (+ ?total (emit-subsets ?rest ?current ?recipe))))
     (return ?total))
 
-(deffunction MATCH::generate-candidates-for-recipe (?recipe ?requested ?min-price ?max-price ?preferred-season)
+(deffunction MATCH::generate-candidates-for-recipe (?recipe ?requested ?min-price ?max-price ?preferred-season ?max-people)
     "Genera candidatos para una receta específica y devuelve cuántos se crearon"
-    (if (not (passes-thresholds ?recipe ?min-price ?max-price ?preferred-season)) then
+    (if (not (passes-thresholds ?recipe ?min-price ?max-price ?preferred-season ?max-people)) then
         (return 0))
 
     (bind ?requested-count (length$ ?requested))
@@ -112,7 +119,7 @@
 
 (defrule MATCH::build-candidates
     ?ctrl <- (match-control (phase init))
-    ?prefs <- (user-restrictions (min-price ?min-p) (max-price ?max-p) (season ?season-pref))
+    ?prefs <- (user-restrictions (min-price ?min-p) (max-price ?max-p) (season ?season-pref) (max-people ?max-people))
     =>
     (do-for-all-facts ((?c candidate-set)) TRUE (retract ?c))
     (bind ?requested (fact-slot-value ?prefs requested))
@@ -126,7 +133,8 @@
                     ?requested
                     ?min-p
                     ?max-p
-                    ?season-pref))))
+                    ?season-pref
+                    ?max-people))))
     (retract ?ctrl)
     (assert (match-control (phase complete)))
     (printout t crlf "📋 Evaluadas combinaciones de restricciones: " ?combo-count crlf)
@@ -193,9 +201,7 @@
                 (assert (combinationMAX (requested $?requested) (recipe ?recipe-name)))
             (if (= ?perfect-match-count 0) then
                 (printout t crlf "🎯 Se encontraron platos que satisfacen todas las " ?requested-count " restricciones." crlf)
-                (printout t "Recetas compatibles:" crlf))
-                (printout t " - " ?recipe-name crlf)
-            (bind ?perfect-match-count (+ ?perfect-match-count 1))))
+            (bind ?perfect-match-count (+ ?perfect-match-count 1)))))
 
     (if (= ?perfect-match-count 0) then
         (printout t crlf "⚠️  Ningún plato cubre las " ?requested-count " restricciones solicitadas." crlf))
@@ -218,4 +224,5 @@
     =>
     (printout t "========================================" crlf)
     (printout t "✅ SISTEMA FINALIZADO" crlf)
-    (printout t "========================================" crlf))
+    (printout t "========================================" crlf)
+    (focus REFINAMIENTO))

@@ -12,6 +12,7 @@ import os
 import json
 
 #pip install git+https://github.com/ddsky/spoonacular-api-clients.git#subdirectory=python
+
 def is_kosher_ingredient(ingredient_name):
     """Check if an ingredient is kosher-friendly by checking each word"""
     non_kosher_words = {
@@ -175,9 +176,9 @@ configuration = spoonacular.Configuration(
 configuration.api_key['apiKeyScheme'] = os.environ["API_KEY"]
 
 # Definir filtros de búsqueda
-diets = 'vegan'  # Puedes cambiar a 'vegan', 'pescetarian', etc.
+diets = None  # Puedes cambiar a 'vegan', 'pescetarian', etc.
 intolerances = None  # Pon None para no filtrar por intolerancias
-meal_type = 'main course'  # Pon uno de estos main course, appetizer o side dish, dessert (para que salga wine pairing)
+meal_type = 'fingerfood'  # Pon uno de estos main course, appetizer o side dish, dessert (para que salga wine pairing)
 num_recipes = 500
 
 tags = []

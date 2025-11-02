@@ -9,6 +9,8 @@
   (slot title            (type STRING))
   (slot price            (type NUMBER) (default 0.0))
   (slot wine_pairing     (type STRING)   (default ""))
+  (slot explanation      (type STRING)   (default ""))
+  (slot is_complex       (type SYMBOL)  (default FALSE))
   (multislot meal-types
     (type SYMBOL))
     

@@ -11,8 +11,6 @@
 
 (load "refinamiento.clp")
 
-(focus input)
-
 (reset)
 
 (run)
