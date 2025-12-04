@@ -1,0 +1,936 @@
+id,food_name,category,natural_source,synonyms,molecule_count
+1,bakery products,bakery,poacceae,bakery products,6
+2,bread,bakery,poacceae,bread,129
+3,rye bread,bakery,rye,rye bread,30
+4,wheaten bread,bakery,wheat,soda scones@soda farls,30
+5,white bread,bakery,wheat,white bread,13
+6,wholewheat bread,bakery,wheat,wholewheat bread,58
+7,wort,beverage,barley,wort,63
+8,arrack,beverage alcoholic,grape,arak,5
+9,beer,beverage alcoholic,poacceae,beer,263
+10,bantu beer,beverage alcoholic,eragrostideae,millet beer@malwa@kaffir beer@pombe@opaque beer,13
+11,brandy,beverage alcoholic,vitis vinifera,cognac@armagnac@pisco@stravencchio@kanyak@konyak,50
+12,anise brandy,beverage alcoholic,anise,brandy,51
+13,apple brandy,beverage alcoholic,apple,anise brandy,74
+14,armagnac brandy,beverage alcoholic,vitis vinifera,armanac brandy,51
+15,blackberry brandy,beverage alcoholic,blackberry ,brackberry brandy,51
+16,cherry brandy,beverage alcoholic,prunus,cherry brandy,52
+17,cognac brandy,beverage alcoholic,vitis,cognac brandy,204
+18,papaya brandy,beverage alcoholic,papaya,papaya brandy,51
+19,pear brandy,beverage alcoholic,pear,pear brandy@palinka@poire williams@rakia@tuica,64
+20,plum brandy,beverage alcoholic,damson,plum brandy@slivovitz@tuica@ljivovica@asliwowica@slivovitza@schlivowitz@slivovitsa,75
+21,raspberry brandy,beverage alcoholic,rubus idaeus,raspberry brandy,52
+22,weinbrand brandy,beverage alcoholic,vitis vinifera,weinbrand brandy,53
+23,gin,beverage alcoholic,juniperus communis,gin,17
+24,rum,beverage alcoholic,saccharum,rum,195
+25,whisky,beverage alcoholic,maize,whisky,108
+26,bourbon whisky,beverage alcoholic,corn,bourbon whisky,114
+27,canadian whisky,beverage alcoholic,corn,canadian whisky,105
+28,finnish whisky,beverage alcoholic,maize,finnish whisky,112
+29,japanese whisky,beverage alcoholic,maize,japanese whisky,111
+30,malt whisky,beverage alcoholic,maize,malt whisky,133
+31,scotch whisky,beverage alcoholic,maize,scotch,123
+32,wine,beverage alcoholic,grape ,wine,155
+33,bilberry wine,beverage alcoholic,vaccinium myrtillus,bilberry wine,130
+34,botrytized wine,beverage alcoholic,grape ,botrytized wine,133
+35,champagne,beverage alcoholic,grape ,champagne,128
+36,cider,beverage alcoholic,apple,cider,87
+37,plum wine,beverage alcoholic,plum,plum wine,129
+38,port wine,beverage alcoholic,vitis vinifera,vinho do porto,142
+39,red wine,beverage alcoholic,grape ,red wine,167
+40,rose wine,beverage alcoholic,grape ,rosada@rosato,134
+41,sake,beverage alcoholic,oryza sativa,sake,35
+42,sherry,beverage alcoholic,grape ,sherry,184
+43,sparkling wine,beverage alcoholic,grape ,sparkling wine,142
+44,strawberry wine,beverage alcoholic,strawberry,strawberry wine,132
+45,white wine,beverage alcoholic,grape ,white wine,225
+46,coffee,beverage caffeinated,coffea,coffee,269
+47,mate,beverage caffeinated,yerba mate,yerba@yerba mate,51
+48,black tea,beverage caffeinated,camellia sinensis,black tea,85
+49,green tea,beverage caffeinated,camellia sinensis,green tea,35
+50,roibos tea,beverage caffeinated,aspalathus,bush tea,13
+51,barley,cereal,hordeum,barley,141
+52,crispbread,cereal,rye,crispbread@cracker,23
+53,malt,cereal,poacceae,malt,107
+54,oats,cereal,avena,oats,170
+55,rice,cereal,oryza sativa,rice,199
+56,corn,maize,zea,corn,200
+57,corn oil,maize,maize,maize oil,46
+58,popcorn,maize,maize,popcorn,37
+59,sweetcorn,maize,maize,sugar corn@pole corn,36
+60,butter,dairy,cattle,butter@ghee,131
+61,buttermilk,dairy,cattle,buttermilk,16
+62,cheese,dairy,cattle,cheese,117
+63,blue cheese,dairy,penicillium,blue cheese,155
+64,camembert cheese,dairy,cattle,camembert cheese,132
+65,cheddar cheese,dairy,cattle,cheddar cheese,148
+66,comte cheese,dairy,cattle,comte cheese,126
+67,cottage cheese,dairy,cattle,cottage cheese,117
+68,cream cheese,dairy,cattle,cream cheese,116
+69,domiati cheese,dairy,water buffalo,domiati cheese@white cheese,114
+70,emmental cheese,dairy,cattle,emmentaler@emmenthal,114
+71,feta cheese,dairy,sheep,feta cheese,116
+72,goat cheese,dairy,goat,goat cheese,117
+73,gruyere cheese,dairy,cattle,gruyere cheese,146
+74,limburger cheese,dairy,cattle,limburger cheese,116
+75,mozzarella cheese,dairy,italian buffalo,mozzarella cheese,120
+76,munster cheese,dairy,cattle,menschterkaas,113
+77,other cheeses,dairy,cattle,other cheeses,128
+78,parmesan cheese,dairy,cattle,parmigiano-reggiano@parmesan cheese,165
+79,provolone cheese,dairy,cattle,provolone cheese,125
+80,romano cheese,dairy,cattle,romano cheese,121
+81,roquefort cheese,dairy,sheep,roquefort cheese,114
+82,russian cheese,dairy,cattle,russian cheese,122
+83,sheep cheese,dairy,sheep,sheep cheese,116
+84,swiss cheese,dairy,cattle,swiss cheese,140
+85,tilsit cheese,dairy,cattle,tilsit cheese,114
+86,dairy products,dairy,water buffalo,dairy products,11
+87,ghee,dairy,cattle,ghee,1
+88,milk,dairy,cattle,milk,111
+89,milk fat,dairy,cattle,milk fat,28
+90,goat milk,dairy,goat,goat milk,4
+91,milk powder,dairy,cattle,milk powder,24
+92,sheep milk,dairy,sheep,sheep milk,3
+93,skimmed milk,dairy,cattle,skimmed milk,5
+94,yogurt,dairy,cattle,curd,31
+95,achilleas,essential oil,achillea,achillea@yarrow@allheal@bloodwort,1
+96,arar,essential oil,juniperus phoenicea,phoenicean juniper,13
+97,buchu,essential oil,agathosma,boegoe@bucco@bookoo@diosma,27
+98,cajeput,essential oil,melaleuca,cajeput,6
+99,camphor,essential oil,cinnamomum,camphor,13
+100,cascarilla,essential oil,croton,cascarilla,2
+101,cedar,essential oil,cedrus,cedar,1
+102,chamomile,essential oil,chamaemelum,camomile@roman chamomile@english chamomile@garden chamomile@ground apple,187
+103,citronella,essential oil,cymbopogon,citronella,24
+104,citrus peel oil,essential oil,citrus,citrus peel oil,57
+105,eucalyptus,essential oil,eucalyptus,eucalyptus,43
+106,fir,essential oil,abies,fir,2
+107,geranium,essential oil,geranium,cranesbills,25
+108,grapefruit peel oil,essential oil,citrus,grapefruit peel oil,13
+109,grass,essential oil,andropogon,bluestem grass@â broomsedge,2
+110,hops oil,essential oil,humulus lupulus,hops oil,108
+111,hyacinth,essential oil,hyacinthus orientalis,common hyacinth@garden hyacinth@dutch hyacinth,11
+112,hyssop oil,essential oil,hyssopus officinalis,hyssop oil,162
+113,lemon grass,essential oil,cymbopogon citratus,barbed wire grass@silky heads@citronella grass@fever grass,121
+114,lemon peel oil,essential oil,citrus,lemon peel oil,36
+115,lime peel oil,essential oil,citrus ã— aurantiifolia,lime peel oil,16
+116,lovage,essential oil,levisticum officinale,lovage,164
+117,mandarin orange peel oil,essential oil,citrus,mandarin orange peel oil,23
+118,mastic gum,essential oil,pistacia lentiscus,arabic gum@yemen gum@tears of chios,49
+119,mentha oil,essential oil,mentha spicata l.,mentha oil,42
+120,myrrh,essential oil,commiphora,myrrh,3
+121,neroli oil,essential oil,bitter orange,neroli oil,15
+122,orange oil,essential oil,citrus,seville orange@sour orange@bigarade orange@marmalade orange,34
+123,orris,essential oil,iris germanica,orris,10
+124,clary sage,essential oil,salvia,clary,43
+125,red sage,essential oil,lantana,big-sage@wild-sage@red-sage,7
+126,spanish sage,essential oil,salvia,spanish sage,8
+127,sandalwood,essential oil,santalum,sandalwood,2
+128,sea buckthorns,berry,hippophae rhamnoides,sandthorn@sallowthorn@seaberry,113
+129,sweet grass,essential oil,hierochloe odorata,manna grass@mary's grass@vanilla grass@holy grass@bison grass,19
+130,valerian,essential oil,valeriana officinalis,garden valerian@garden heliotrope@setwall@all-heal,9
+131,wattle,essential oil,vachellia,sweet acacia@farnese wattle@dead finish@mimosa wattle@mimosa bush@prickly mimosa bush@prickly moses@needle bush@sponge wattle@thorny acacia@thorny feather wattle@wild briar@huisache@cassie@cascalotte@cassic,11
+132,yarrow,essential oil,achillea,plumajillo gordaldo@nosebleed plant@old man's pepper@devil's nettle@sanguinary@milfoil@soldier's woundwort@thousand-leaf@thousand-seal,1
+133,ylang-ylang,essential oil,cananga,ylang-ylang,21
+134,clam,seafood,mollusca,clam,61
+135,crab,seafood,crustacean,crab,38
+136,crayfish,seafood,crustacean,crawfish,32
+137,kelp,seafood,kelp,kelp,104
+138,krill,seafood,crustacean,krill,22
+139,lobster,seafood,crustacean,lobster@clawed lobster,6
+140,mollusc,seafood,mollusca,mollusc,20
+141,oyster,seafood,mollusca,oyster,29
+142,prawn,seafood,crustacean,prawn,1
+143,scallop,seafood,mollusca,scallop,41
+144,shellfish,seafood,mollusca,shellfish,2
+145,shrimp,seafood,crustacean,shrimp,76
+146,trassi,seafood,crustacean,trassi,28
+147,squid,seafood,cephalopod,squid,22
+148,bonito,fish,skipjack tuna,katsuobushi@bonito flakes@okaka,60
+149,caviar,fish,fish,caviar,26
+150,codfish,fish,gadus,codfish,7
+151,fish,fish,fish,fish,47
+152,fatty fish,fish,fish,fatty fish,38
+153,lean fish,fish,fish,lean fish,18
+154,fish oil,fish,fish,fish oil,23
+155,smoked fish,fish,fish,smoked fish,15
+156,salmon,fish,ray finned fish,salmon,6
+157,artichoke,flower,cynara,globe artichoke,101
+158,champaca,flower,magnolia,champak,7
+159,jasmine,flower,jasminum officinale,jasmine,18
+160,lavendar,flower,lavandula angustifolia,lavendar,46
+161,rose,flower,rosa,rose,14
+162,apple,fruit,malus,apple,300
+163,apple sauce,fruit,malus,apple sauce,1
+164,apricot,fruit,prunus,armenia@zardalu,207
+165,avocado,fruit,persea,avocado pear@alligator pear,134
+166,babaco,fruit,vasconcellea,babaco,17
+167,banana,fruit,musa,banana,206
+168,beli,fruit,aegle marmelos,bael@bengal quince@golden apple@japanese bitter orange@wood apple,3
+169,byrsonima crassifolia,fruit,byrsonima,changunga@nanche@serrette@savanna serret@golden spoon,1
+170,cashew apple,fruit,anacardium,cashew apple,7
+171,cherimoya,fruit,annona,custard apple,166
+172,coconut,fruit,cocos nucifera,coconut,161
+173,currant,fruit,ribes,currant,37
+174,black currant,fruit,ribes,black currant,213
+175,red currant,fruit,ribes,red currant,143
+176,white currant,fruit,ribes,white currant,37
+177,dates,fruit,date palm,date palm,101
+178,durian,fruit,durio,durian,138
+179,elderberry,fruit-berry,sambucus nigra,elder,153
+180,feijoa,fruit,acca sellowiana,pineapple guava@guavasteen,106
+181,fig,fruit,ficus carica,fig,168
+182,grape,fruit,vitis,grape,261
+183,guava,fruit,psidium guajava,guava,259
+184,hogplum,fruit,spondias,jobo@yellow mombin@spanish plum@gully plum@coolie plum@hug plum@true yellow mombin@golden apple@java plum@ambaralla,102
+185,jackfruit,fruit,artocarpus,jak fruit,107
+186,kiwifruit,fruit,actinidia,kiwi@chinese gooseberry,147
+187,litchi,fruit,litchi,liechee@liche@lizhi@lichee@lychee,120
+188,loquat,fruit,eriobotrya,japanese medlar@pipa@japanese plum@chinese plum,134
+189,malay apple,fruit,syzygium malaccense,malay rose apple@mountain apple@rose apple@otaheite apple@pink satin-ash@pommerac,5
+190,mango,fruit,mangifera,mango,238
+191,melon,fruit,cucurbitaceae,melon,207
+192,musk melon,fruit,cucumis,musk melon,129
+193,naranjilla,fruit,solanum,lulo@little orange,110
+194,orange,fruit,citrus,orange,245
+195,bitter orange,fruit,citrus,seville orange@sour orange@bigarade orange@marmalade orange,22
+196,papaya,fruit,carica,papaw@pawpaw,241
+197,mountain papaya,fruit,vasconcellea,papaya@mountain pawpaw@papayuelo@chamburo,54
+198,passionfruit,fruit,passiflora,passionfruit,227
+199,yellow passionfruit,fruit,passiflora,yellow passionfruit,40
+200,pawpaw,fruit,asiminia,papaw@common pawpaw,25
+201,peach,fruit,prunus,nectarine,199
+202,pear,fruit,pyrus,pear,149
+203,bartlett pear,fruit,pyrus communis,williams pear@bartlett pear,50
+204,prickly pear,fruit,opuntia,prickly pear,128
+205,pepino,fruit,solanum,sweet cucumber,7
+206,pineapple,fruit,ananas,ananas,220
+207,plum,fruit,prunus,plum,189
+208,plumcot,fruit,prunus,apriums@apriplums@plumcots,24
+209,pumpkin,fruit,cucurbita pepo,pumpkin,106
+210,quince,fruit,cydonia,quince,147
+211,chinese quince,fruit,pseudocydonia,chinese quince,45
+212,raisin,fruit,vitis vinifera,dried grape@sultana@currant,23
+213,roseapple,fruit,syzygium,java apple@semarang rose-apple@wax jambu@watery rose apple@water apple@bell fruit@jamb@java rose apple@malay rose apple@malay apple@mountain apple@rose apple@otaheite apple@pink satin-ash@pommerac,105
+214,sapodilla,fruit,manilkara zapota,zapota,106
+215,soursop,fruit,annona muricata,soursop,118
+216,spineless monkey orange,fruit,strychnos,muquaqua,20
+217,starfruit,fruit,averrhoa carambola,carambola,190
+218,tamarind,fruit,tamarind,tamarind,164
+219,woodapple,fruit,aegle marmelos,bael@bengal quince@golden apple@japanese bitter orange,6
+220,berry,berry,eudicots,berry,39
+221,bilberry,berry,vaccinium,blaeberry@whortleberry@winberry@whinberry@wimberry@whimberry,169
+222,blackberry,berry,rubus,blackberry,150
+223,blueberry,berry,vaccinium,cherry,152
+224,cherry,berry,prunus,cherry,114
+225,bitter cherry,berry,prunus,bitter berry@virginia bird cherry@western chokecherry@black chokecherry,106
+226,sour cherry,berry,prunus,sour cherry@tart cherry@dwarf cherry,136
+227,wild cherry,berry,prunus,wild cherry@gean,13
+228,cloudberry,berry,rubus,bakeapple@kotberry@knoutberry@averin@evron,116
+229,cranberry,berry,vaccinium,cranberry,182
+230,gooseberry,berry,ribes,gooseberry,138
+231,lingonberry,berry,vaccinium,partridgeberry@cowberry,125
+232,loganberry,berry,rubus ã— loganobaccus,loganberry,109
+233,raspberry,berry,rubus,raspberry,187
+234,strawberry,berry,fragaria,strawberry,257
+235,strawberry jam,berry,fragaria,strawberry jam,28
+236,bergamot,fruit citrus,citrus,bergamot,16
+237,citrus fruits,fruit citrus,citrus,citrus fruits,42
+238,grapefruit,fruit citrus,citrus,grapefruit,165
+239,kumquat,fruit citrus,citrus,cumquat,129
+240,lemon,fruit citrus,citrus,lemon,193
+241,lime,fruit citrus,citrus ã— aurantiifolia,west indian lime@bartender's lime@omani lime@mexican lime@dayap@bilolo,164
+242,mandarin orange,fruit citrus,citrus,mandarin@mandarine,183
+243,satsuma orange,fruit citrus,citrus unshiu,unshu mikan@cold hardy mandarin@satsuma mandarin@satsuma orange@tangerine,5
+244,tangerine,fruit citrus,citrus tangerina,tangerine,21
+245,vanilla,fruit essence,vanilla,vanilla,174
+246,mushroom,fungus,agaricus bisporus,mushroom,227
+247,truffle,fungus,ascomycota,truffle,20
+248,angelica,herb,angelica,garden angelica,112
+249,artemisia,herb,artemisia,mugwort@wormwood@sagebrush,121
+250,basil,herb,ocimum,great basil,210
+251,buckwheat,herb,fagopyrum,common buckwheat@japanese buckwheat@silverhull buckwheat,163
+252,calamus,herb,acorus,sweet flag,31
+253,chervil,herb,anthriscus,garden chervil@french parsley,102
+254,coriander,herb,coriandrum sativum,coriander,196
+255,cornmint,herb,mentha,field mint@wild mint,155
+256,dill,herb,apiaceae,dill,200
+257,fennel,herb,foeniculum vulgare,fennel,147
+258,fenugreek,herb,trigonella foenum-graecum,fenugreek,123
+259,garlic,herb,allium,garlic,143
+260,lemon balm,herb,melissa officinalis,balm@common balm@balm mint,177
+261,liqourice,herb,glycyrrhiza glabra,licorice,42
+262,mint,herb,lamiaceae,mint,162
+263,rhubarb,herb,rheum,rhubarb,115
+264,rosemary,herb,rosmarinus,anthos,207
+265,sage,herb,salvia,garden sage@common sage@culinary sage,159
+266,spearmint,herb,mentha,garden mint@common mint@lamb mint@mackerel mint,237
+267,scotch spearmint,herb,scotch spearmint,scotch spearmint,36
+268,tarragon,herb,artemisia,estragon,144
+269,thyme,herb,thymus,thyme,174
+270,beef,meat,cattle,beef,92
+271,beef processed,meat,cattle,processed beef,209
+272,chicken,meat,fowl,chicken,131
+273,frankfurter sausage,dish,domestic pig,frankfurt sausage,4
+274,ham,meat,domestic pig,ham,6
+275,lamb,meat,sheep,lamb,37
+276,meat,meat,mammal,meat,47
+277,mutton,meat,sheep,mutton,47
+278,pork,meat,domestic pig,pork@bacon,157
+279,sukiyaki,meat,cattle,sukiyaki,10
+280,turkey,meat,domesticate turkey,turkey,17
+281,almond,nut,prunus,almond,130
+282,brazil nut,nut,bertholletia excelsa,brazil nut,111
+283,cocoa,seed,theobroma,cocoa,294
+284,beans,legume,fabaceae,beans,178
+285,lima beans,legume,phaseolus lunatus,lima bean@butter bean@sieva bean,174
+286,kidney beans,legume,phaseolus vulgaris,red kidney bean@common kidney bean@rajma@string bean@field bean@flageolet bean@french bean@garden bean@green bean@haricot bean,91
+287,peanut,nut,arachis,groundnut@goober,212
+288,peas,legume,pisum sativum,peas,169
+289,soybean,legume,glycine,soya bean,225
+290,soybean oil,legume,glycine,soya bean oil,4
+291,soybean sauce,plant derivative,glycine,soya sauce,19
+292,filbert,nut,corylus,hazel nut,100
+293,hazelnut,nut,hazel ,cobnut@filbert nut,109
+294,macadamia nut,nut,macadamia,queensland nut@bush nut@maroochi nut@bauple nut@hawaii nut,111
+295,nuts,nut,fagaceae,nuts,7
+296,pecans,nut,hickory,pecans,148
+297,walnut,nut,juglans,walnut,135
+298,muskmallow,seed,abelmoschus,abelmosk@ambrette seeds@annual hibiscus@bamia moschata@galu gasturi@muskdana@musk okra@musk seeds@ornamental okra,1
+299,sesame,seed,sesamum,sesame,130
+300,allium,plant,allium,allium@allium caucas,8
+301,alpinia,plant,alpinia,alpinia@ginger lilly,1
+302,ceriman,plant,monstera,fruit salad plant@fruit salad tree@swiss cheese plant@cheese plant@monster fruit@monsterio delicio@monstereo@mexican breadfruit,2
+303,chicory,plant,cichorium,blue daisy@blue dandelion@blue sailors@blue weed@bunk@coffeeweed@wild bachelors bbuttons@wild endive,112
+304,hops,plant,humulus lupulus,hops,16
+305,laurel,plant,laurus,bay laurel@sweet bay@bay@true laurel@grecian laurel@laurel tree,209
+306,myrtle,plant,myrtus,myrtle,30
+307,olive,plant,olea,olive,155
+308,pine,plant,pinus,pine,120
+309,sassafras,plant,sassafras,sassafras,7
+310,tea,plant,camellia sinensis,tea,391
+311,fermented tea,plant derivative,camellia sinensis,dark tea,8
+312,tobacco,plant,nicotiana,tobacco,46
+313,watercress,plant,nasturtium,watercress,105
+314,creosote,plant derivative,archaeopteris,creosote,7
+315,honey,plant derivative,bees,honey,60
+316,macaroni,plant derivative,drurum,macaroni,3
+317,mustard oil,plant derivative,brassica,mustard oil,2
+318,peanut butter,plant derivative,arachis,peanut butter,9
+319,peanut oil,plant derivative,arachis,peanut oil,20
+320,rye,cereal,secale cereale,rye,100
+321,storax,plant derivative,liquidambar orientalis,styrax@storax@storax balsam,1
+322,vinegar,plant derivative,apple,vinegar,49
+323,anise,spice,pimpinella,aniseed@saunf,145
+324,anise hyssop,spice,agastache,blue giant hyssop@fragrant giant hyssop,9
+325,star anise,spice,illicium,star anise@staranise@star anise seed@chinese star anise@badiam,150
+326,caraway,spice,carum,meridian fennel@persian cumin,16
+327,cardamom,spice,elattaria,cardamom,173
+328,cassia,spice,cinnamomum,chinese cassia@chinese cinnamon,145
+329,celery,spice,apium,celery,217
+330,cinnamon,spice,cinnamomum,cinnamon,183
+331,clove,spice,syzygium,clove,177
+332,cumin,spice,cuminum,cumin,149
+333,ginger,spice,zingiber,ginger,251
+334,mace,spice,myristica,mace,21
+335,marjoram,spice,origanum majorana,oregano@sweet marjoram@knotted marjoram@pot marjoram,180
+336,nutmeg,spice,myristica,nutmeg,170
+337,oregano,spice,origanum vulgare,oregano,193
+338,parsley,spice,petroselinum,parsley,167
+339,pepper,spice,piper,pepper,223
+340,saffron,spice,crocus sativus,saffron,127
+341,turmeric,spice,curcuma,turmeric,130
+342,green beans,vegetable,phaseolus vulgaris,french beans@string beans@snap beans,189
+343,chive,vegetable,allium,chive,126
+344,endive,vegetable,cichorium,endive,118
+345,leek,vegetable,allium ampeloprasum,leek,128
+346,lettuce,vegetable,lettuce,lettuce,140
+347,okra,vegetable,abelmosch,okro@lady's fingers@ngombo,121
+348,onion,vegetable,allium,bulb onion,180
+349,shallot,vegetable,allium,shallot,108
+350,peppermint,herb,mentha,peppermint,227
+351,broccoli,cabbage,brassica oleracea,broccoli,130
+352,brussels sprout,cabbage,brassica oleracea,breussels sprout,115
+353,cabbage,cabbage,brassicaceae,cabbage,173
+354,cauliflower,cabbage,brassica oleracea,cauliflower,125
+355,horseradish,cabbage,armoracia rusticana,horseradish,118
+356,mustard,cabbage,brassica,mustard,134
+357,radish,vegetable root,raphanus,radish,113
+358,turnip,vegetable root,brassica,white turnip@swedish turnip,104
+359,kohlrabi,cabbage,brassica oleracea,german turnip@turnip cabbage,142
+360,rutabaga,vegetable root,brassica napus,swede@neep,113
+361,wasabi,cabbage,wasabi,wasabi,100
+362,capsicum,vegetable fruit,capsicum annuum,sweet pepper,218
+363,cherry pepper,vegetable fruit,capsicum annuum,pimento@cherry pepper,12
+364,tomato,vegetable fruit,solanum,tomato,271
+365,chayote,gourd,sechium,christophine@cho-cho@pipinola@pear squash@vegetable pear@choko,96
+366,cucumber,gourd,cucumis,cucumber,134
+367,beetroot,vegetable root,beta vulgaris,beet@table beet@garden beet@red beet@golden beet@sugar beet,121
+368,carrot,vegetable root,daucus,carrot,191
+369,parsnip,vegetable root,pastinaca,parsnip,132
+370,sweet potato,vegetable root,ipomoea,sweet potato,104
+371,asparagus,vegetable stem,asparagus,garden asparagus,168
+372,cassava,vegetable tuber,manihot,yuca@manioc@mandioca@brazilian arrowroot,101
+373,potato,vegetable tuber,solanum,potato,254
+374,fried potato,bakery,solanum,fried potato,68
+375,allspice,spice,pimenta,allspice@pimenta@myrtle pepper,166
+376,asafoetida,spice,ferula,hing@asant@asafedity@kayam@henjana@jowani badian@ingu@devil's dung,37
+377,ashgourd,gourd,benincasa,ash gourd@white gourd@tallow goud@chinese preserving melon,94
+378,bittergourd,gourd,momordica,bitter gourd@bitter squash@balsam pear@kugua@nigauri@kaipakka@kakarakaya@hagala@pakal@karela@kareli@uchche@cerasee,119
+379,bottlegourd,gourd,lagenaria,bottle gourd@white-flowered gourd@opo squash@long melon@suzza melon@new guinea bean@tasmania bean,114
+380,canola oil,essential oil,brassicaceae,canola oil,153
+381,carom seed,spice,ajwain,ajwain@ajowan@ajowan caraway@bishops weed,155
+382,chard,vegetable,sea beet,chard,100
+383,apple cider vinegar,plant derivative,apple,apple cider vinegar,16
+384,colocasia,vegetable,araceae,colocasia,59
+385,curry leaf,herb,murraya,sweet neem leaves,31
+386,drumstick leaf,vegetable,moringa,moringa,84
+387,eggplant,vegetable,solanum,aubergine@brinjal,132
+388,flaxseed,seed,linum,flaxseed,132
+389,jalapeno,spice,capsicum annuum,huachinango@cuaresmeno@xalapa,1
+390,kenaf,essential oil,hibiscus cannabinus,deccan hemp@java jute@shougri@ambaadi@palungu@kanaf@ambari@kudrum@mesta@gongura@bimli,52
+391,lotus,essential oil,nelumbo nucifera,lotus,170
+392,nigella seed,seed,nigella,black caraway@kalonji@black cumin@fennel flower@nutmeg flower@roman coriander,30
+393,kewda,essential oil,pandanus,screw-pine@kewda@pandanus fasicularis,18
+394,pomegranate,fruit,punica,pomegranate,128
+395,poppy seed,spice,papaver,poppy seed,131
+396,spinach,vegetable,spinacia,palak,137
+397,turkey berry,vegetable fruit,solanum,solanum torvum@prickly nightshade@shoo-shoo bush@wild eggplant@pea eggplant@susumber@kudanekayi@sundaikkai,38
+398,water chestnut,fruit,trapa natans,water caltrop@buffalo nut@bat nut@devil pod@ling nut@lin kok@ling kio nut@singhara@singhada@paniphal,101
+399,white pepper,spice,piper,white pepper,18
+400,garcinia indica,fruit,garnicia,kokum,6
+401,cluster bean,legume,cyamopsis,guar@gavar bean@guwar bean@guvar bean,12
+402,paneer,dairy,cattle,chhena,29
+403,pigeon pea,legume,cajanus,no-eye pea@tropical green pea@arhar@red gram@gandule bean,99
+404,basmati rice,cereal,oryza,basmati rice,30
+405,ricotta cheese,dairy,cattle,ricotta cheese,42
+408,silver linden,herb,malvaceae,silver lime,94
+409,redskin onion,vegetable,allium,redskin onion,98
+410,lemon verbena,herb,aloyisa,lemon beebrush,92
+411,cashew nut,nut,anacardium,cashew nut,106
+412,burdock,vegetable,arcticum,greater burdock@gob@edible burdock@lappa@beggar's buttons@thorny burr@happy major,104
+413,borage,herb,borago,sar flower,95
+414,capers,herb,capparis,flinders rose,99
+415,safflower,herb,carthamus,safflower,138
+416,chestnut,nut,chestnut,chestnut,99
+417,chickpea,legume,cicer,bengal gram@garbanzo@garbanzo bean@egyptian pea.,103
+418,pummelo,fruit citrus,citrus,pomello@pummelo@pommelo@pamplemousse@jabong@batabi@jambura@zambura@shaddock,111
+419,arabica coffee,beverage caffeinated,coffee,arabica coffee,11
+421,japanese persimmon,fruit,diospyros,diospyros kaki,100
+422,black crowberry,berry,empetrum,crowberry@black crowberry,93
+423,rocket salad,herb,eruca,arugula@rucola@rucoli@rugula@colewort@roquette@garden rocket@rocket@eruca,119
+424,tartary buckwheat,cereal,fagopyrum,duckwheat@india buckwheat@india wheat@green buckwheat@ku qiao@bitter buckwheat,92
+425,black huckleberry,berry,gaylussacia,black huckleberry,93
+426,sunflower,flower,helianthus,helianthus,140
+427,swamp cabbage,cabbage,ipomoea,water spinach@river spinach@water morning glory@water convolvulus,93
+428,grass pea,legume,lathyrus,grass pea@blue sweet pea@chickling pea@chickling vetch@indian pea@white pea@white vetch,92
+429,lentils,legume,lens,lentils,103
+430,garden cress,herb,lepidium,mustard@cress@garden pepper cress@pepperwort@pepper grass@poor man's pepper,103
+431,mexican oregano,herb,lippia,mexican oregano@redbrush lippia@orégano cimmaron@scented lippia@scented matgrass,97
+432,lupine,plant,lupinus,lupin@tarwi@chocho,92
+433,medlar,fruit, mespilus,common medlar,98
+434,mulberry,berry,morus,mulberry,93
+435,black mulberry,berry,morus,black mulberry,94
+436,evening primrose,herb,oenothera,evening primrose,93
+437,millet,legume,poaceae,millet,95
+438,scarlet bean,legume,phaseolus,runner bean@scarlet runner bean@multiflora bean,93
+439,pistachio,nut,pistacia,pistachio,103
+440,purslane,plant,portulaca,purslane,95
+441,red raspberry,berry,rubus,european raspberry,123
+442,black raspberry,berry,rubus,wild black raspberry@black caps@black cap raspberry@thimbleberry@scotch cap,95
+443,sorrel,herb,rumex,common sorrel@garden sorrel@spinach dock@narrow-leaved dock,96
+444,summer savory,herb,satureja,summer savory,122
+445,winter savory,herb,satureja,winter savory,138
+446,cherry tomato,berry,solanum,cherry tomato,94
+447,rowanberry,berry,sorbus,rowan@mountain-ash@amur mountain ash@european mountain ash@quick beam@quickbeam@rowan berry,94
+448,sorghum,cereal,sorghum,sorghum@great millet@durra@jowari@milo@,94
+449,dandelion,flower,taraxacum,common dandelion,102
+450,linden,herb,tilia,linden@common linden,109
+451,small leaf linden,plant,tilia,small-leaved lime@littleleaf linden@small-leaved linden,93
+452,wheat,cereal,triticum,common wheat@bread wheat,112
+453,sparkleberry,berry,vaccinium,farkleberry,92
+454,common verbena,herb,verbena,common vervain@common verbena,93
+455,adzuki bean,legume,vigna,azuki@aduki@red mung bean,97
+456,gram bean,legume,vigna,vigna mungo@black gram@urad bean@mungo bean@black matpe bean,95
+457,mung bean,legume,vigna,moong bean@green gram@mung,100
+458,climbing bean,legume,vigna,ricebean@rice bean,92
+459,muscadine grape,fruit,vitis,muscadine,92
+460,bayberry,berry,myrica,bay-rum tree@candleberry@sweet gale@wax-myrtle,92
+461,elliott's blueberry,berry,vaccinium,elliott's blueberry,92
+462,canada blueberry,berry,vaccinium,common blueberry@velvetleaf huckleberry@velvetleaf blueberry@sourtop blueberry.,92
+463,buffalo currant,fruit,ribes,golden currant@clove currant@pruterberry@buffalo currant@,92
+464,deerberry,berry,vaccinium,deerberry@tall deerberry@squaw huckleberry@highbush huckleberry@buckberry@southern gooseberry,92
+465,ginseng,vegetable root,panax,ginseng,92
+466,longan,plant,dimocarpus,longan,93
+467,pepper c. baccatum,vegetable,capsicum baccatum,capsicum baccatum,92
+468,pepper c. chinense,vegetable,capsicum chinense,capsicum chinese,92
+469,rambutan,fruit,nephelium,rambutan,93
+470,red rice,cereal,oryza,brownbeard rice@wild rice@red rice,92
+471,annual wild rice,cereal,zizania,canada rice@indian rice@water oats,92
+472,welsh onion,vegetable,allium fistulosum,bunching onion@long green onion@japanese bunching onion@scallion@spring onion@welsh onion,94
+473,hard wheat,cereal,triticum durum,durum wheat@pasta wheat@macaroni wheat,94
+474,triticale,cereal,triticosecale,triticale,93
+475,komatsuna,cabbage,brassica rapa,japanese mustard spinach@mustard spinach,93
+476,pak choy,cabbage,brassica rapa,bok choy,96
+477,jostaberry,berry,ribes,jostaberry,92
+478,kai lan,cabbage,brassica oleracea,chinese broccoli@chinese kale,93
+480,pineappple sage,herb,salvia,tangerine sage,92
+481,skunk currant,fruit,ribes,skunk currant,92
+482,breakfast cereal,cereal,wheat,breakfast cereal,95
+484,pasta,bakery,durum,pasta,95
+485,biscuit,bakery,,biscuit,95
+486,sourdough,cereal,,sourdough,92
+487,spirit,beverage alcoholic,plant,distilled beverage@spirit@liquor@hard liquor@hard alcohol,10
+488,beverage alcolohic other,beverage alcoholic,,beverage alcolohic other,2
+489,abalone,fungus,haliotis,ear shells@sea ears@muttonfish@muttonshells@ormer@perlemoen,93
+490,abiyuch,plant,crateva,sacred garlic pear@temple plant,92
+491,acerola,berry,malpighia,barbados cherry@west indian cherry@wild crepe myrtle@seriz,93
+492,acorn,nut,fagaceae,oak nut,93
+493,winter squash,fruit,cucurbita,winter squash,93
+494,agar,additive,algae,agar-agar,93
+495,red king crab,seafood,king crab,paralithodes camtschaticus@kamchatka crab@alaskan king crab,2
+496,alfalfa,herb,medicago,lucerne,97
+497,amaranth,herb,amaranthus,amaranthus,94
+498,arrowhead,vegetable tuber,sagittaria,broadleaf arrowhead@duck-potato@indian potato@wapato,93
+499,arrowroot,vegetable tuber,maranta ,arrowroot@maranta@west indian arrowroot@obedience plant@bermuda arrowroot@araru@ararao@hulankeeriya@,95
+500,atlantic herring,fish,clupea,atlantic herring,93
+501,atlantic mackerel,fish,scomber,boston mackerel@norwegian mackerel@scottish mackerel@mackerel,2
+502,painted comber,fish,serranus,painted comber,3
+503,atlantic pollock,fish,pollachius,european pollock,2
+504,atlantic wolffish,fish,anarhichas,seawolf@atlantic catfish@ocean catfish@devil fish@wolf eel@woof@sea cat,4
+505,bamboo shoots,plant,bamboo,bamboo sprouts,95
+506,striped bass,fish,morone,atlantic striped bass@striper@linesider@rock@rockfish,2
+507,beaver,meat,castor,beaver,3
+508,beech nut,nut,fagaceae,beech nut,93
+509,beluga whale,fish,monodontidae,white whale@beluga@melonhead@sea canary,4
+510,bison,meat,bison,bison,4
+511,black bear,meat,ursus,black bear,1
+512,alaska blackfish,fish,dallia,alaska blackfish,1
+513,northern bluefin tuna,fish,thunnus,northern bluefin tuna@giant bluefin tuna@tunny,2
+514,bluefish,fish, pomatomidae,tailor@elf@shad@blue@chopper@anchoa,2
+515,wild boar,meat,sus,wild swine@eurasian wild pig@,3
+516,bowhead whale,fish,balaena,greenland right whale@arctic whale@steeple-top@polar whale@russian whale,1
+517,breadfruit,fruit,artocarpus,breadfruit,94
+518,breadnut tree seed,plant derivative,brosimum,breadnut@maya nut,93
+519,rapini,cabbage,brassica rapa,broccoli raab@broccoli rabe,94
+520,brown bear,meat,ursus ,brown bear,3
+521,buffalo,meat,bubalus,domestic asian water buffalo,3
+522,burbot,fish,lota,bubbot@mariah@freshwater ling@the lawyer@coney-fish@lingcod@freshwater cusk@eelpout,95
+523,giant butterbur,plant,petasites,butterbur@great butterbur@sweet coltsfoot,95
+524,american butterfish,fish,peprilus,american butterfish,93
+525,butternut,nut,juglans,white walnut,93
+526,butternut squash,fruit,cucurbita,butternut pumpkin@gramma,93
+527,cardoon,plant,cynara,artichoke thistle,94
+528,caribou,meat,reindeer,caribou,4
+529,natal plum,fruit,carissa,large num num,93
+530,carob,plant,ceratonia,st john's bread@locust bean@locust tree,98
+531,common carp,fish,cyprinus,european carp,2
+532,channel catfish,fish,catfish,channel cat,3
+533,chia,herb,salvia,chia,94
+534,chinese chestnut,nut,castanea,chinese chestnut,93
+535,garland chrysanthemum,flower,glebionis,chrysanthemum greens@edible chrysanthemum@crowndaisy chrysanthemum@chop suey green@crown daisy@japanese green.,93
+536,cisco,fish,coregonus,cisco,2
+537,nuttall cockle,fish,clinocardium,nuttall's cockle@basket cockle@heart cockle,1
+538,common octopus,seafood,octopus,common octopus,4
+539,corn salad,vegetable,valerianella,common cornsalad@lamb's lettuce@mâche@fetticus@feldsalat@nut lettuce@field salad@rapunzel.,93
+540,cottonseed,plant derivative,cotton,cotton seed,112
+541,catjang pea,legume,vigna,catjang,93
+542,squashberry,berry,viburnum,squash berry@mooseberry@pembina@pimbina,93
+543,atlantic croaker,fish,micropogonias,atlantic croaker,2
+544,cusk,fish,lotidae,tusk@brismak@brosmius@torsk@moonfish,2
+545,cuttlefish,fish,cephalopoda,cuttlefish,2
+546,mule deer,meat,odocoileus,mule deer,2
+547,devilfish,fish,mobula mobular,giant devil ray,93
+548,dock,herb,rumex,dock,93
+549,dolphin fish,fish,coryphaena,mahi-mahi@common dolphinfish@dorado@dolphin,2
+550,freshwater drum,fish,sciaenidae,aplodinotus grunniens,2
+551,mallard duck,meat,anas,mallard@wild duck,3
+552,freshwater eel,fish,anguillidae,freshwater eel,2
+553,elk,meat,cervus,wapiti,3
+554,emu,meat,dromaius,emu,3
+555,oregon yampah,plant,perideridia,eppaw,93
+556,european anchovy,fish,engraulis,european anchovy,2
+557,european chestnut,nut,castanea,sweet chestnut,94
+558,turbot,fish,scophthalmus,turbot,4
+559,fireweed,herb,chamaenerion,great willowherb@rosebay willowherb,93
+560,florida pompano,fish,pompano,florida pompano,2
+561,ginkgo nuts,nut,ginkgo,ginkgo@gingko,117
+562,greylag goose,meat,anser,greylag goose,5
+563,greenland halibut,fish,reinhardtius,greenland turbot@greenland halibut,4
+564,groundcherry,berry,physalis,inca berry@cape gooseberry@poha berries@golden berries,95
+565,grouper,fish,epinephelus,grouper,2
+566,haddock,fish,gadidae,haddock,4
+567,hippoglossus,fish,hippoglossus,common halibut,3
+568,horse,meat,equus,horse,4
+569,hyacinth bean,legume,lablab,hyacinth bean@lablab-bean@bonavist bean@dolichos bean@seim bean@lablab bean@egyptian kidney bean@indian bean@bataw@australian pea,93
+570,irish moss,seafood,red algae,carrageen moss,93
+571,pacific jack mackerel,fish,trachurus,californian jack mackerel@jack mackerel,2
+572,japanese chestnut,nut,castanea,korean chestnut@korean castanea,93
+573,jerusalem artichoke,vegetable tuber,helianthus,sunroot@sunchoke@earth apple@topinambour,95
+574,jujube,fruit,ziziphus,red date@chinese date@korean date@indian date,93
+575,jute,plant derivative,corchorus,jute,93
+576,kale,cabbage,brassica oleracea,leaf cabbage,95
+577,king mackerel,fish,scomberomorus,kingfish,2
+578,lambsquarters,plant,chenopodium,lamb's quarters@melde@goosefoot@fat hen,95
+579,leather chiton,seafood,katharina,black katy chiton@black leather chiton@black chiton,2
+580,common ling,fish,molva,ling@molva molva,4
+581,lingcod,fish,hexagrammidae,ling cod@buffalo cod@cultus cod,2
+582,white lupine,plant,lupinus,field lupine,94
+583,malabar spinach,vegetable,basella,vine spinach@red vine spinach@climbing spinach@creeping spinach@buffalo spinach@ceylon spinach,94
+584,mammee apple,fruit,mammea,mammee@mamey@mamey apple@santo domingo apricot@tropical apricot@south american apricot,93
+585,purple mangosteen,fruit,garcinia,mangosteen,95
+586,alpine sweetvetch,plant,hedysarum,alpine sweetvetch,93
+587,milkfish,fish, chanidae,milkfish,2
+588,monkfish,fish,lophius,fishing frogs@frog fish and sea devils,2
+589,moose,meat,capreolinae,moose,3
+590,moth bean,legume,vigna,mat bean@matki@turkish gram@dew bean.,93
+591,mountain yam,vegetable tuber,dioscorea,chinese yam@cinnamon vine,93
+592,striped mullet,fish,mugil,flathead mullet@striped mullet@black mullet@bully mullet@common mullet@grey mullet@sea mullet@mullet@flathead grey mullet,2
+593,muskrat,meat,arvicolinae,muskrat,2
+594,new zealand spinach,vegetable,tetragonia,botany bay spinach@cook's cabbage@kōkihi@sea spinach@tetragon@warrigal greens and warrigal cabbage,93
+595,nopal,plant,opuntia,nopal,93
+596,ocean pout,fish,zoarces,ocean pout,2
+597,north pacific giant octopus,seafood,enteroctopus,giant pacific octopus,2
+598,ohelo berry,berry,vaccinium,ohelo berry,93
+600,opossum,meat,marsupial,opossum,3
+601,ostrich,meat,struthio,common ostrich,4
+602,spotted seal,seafood,phoca,larga seal@largha seal,3
+603,pacific herring,fish, clupea,pacific herring,2
+604,pacific rockfish,fish,lotella,rock_cod,3
+606,common persimmon,fruit,diospyros,american persimmon@eastern persimmon@simmon@possumwood@sugar plum,98
+607,pheasant,meat,phasianus,common pheasant,5
+608,northern pike,fish,esox,pike,4
+609,pili nut,nut,canarium,pili nut,93
+610,colorado pinyon,plant,pinus,two-needle piñon@pinyon pine@simply piñon@,93
+611,pitanga,berry,eugenia,suriname cherry@brazilian cherry@cayenne cherry@cerisier carré,95
+612,french plantain,plant,musa × paradisiaca,french plantain,105
+613,american pokeweed,herb,phytolacca,pokeweed,95
+614,polar bear,meat,ursus,polar bear,2
+615,prairie turnip,cabbage,psoralea,tipsin@teepsenee@breadroot@breadroot scurf pea@large indian breadroot@pomme blanche,93
+616,quinoa,cereal,chenopodium,quinoa,94
+617,european rabbit,meat,leporidae,common rabbit,3
+618,raccoon,meat,procyon,common raccoon@north american raccoon@northern raccoon@coon,3
+619,rainbow smelt,fish,osmerus,rainbow smelt,2
+620,rainbow trout,fish,oncorhynchus,rainbow trout,4
+621,malabar plum,fruit,syzygium,champakka@chom pu@chom phu,93
+622,rose hip,fruit,rose,rose haw@rose hep,97
+623,roselle,herb,hibiscus,roselle,114
+624,orange roughy,fish,hoplostethus,red roughy@slimehead@deep sea perch,3
+625,sablefish,fish,anoplopomatidae,sable@butterfish@black cod@blue cod@bluefish@candlefish@coal cod@coalfish@beshow@skilfish),2
+626,pink salmon,fish,oncorhynchus,humpback salmon,4
+627,chum salmon,fish,oncorhynchus,dog salmon@keta salmon@silverbrite salmon,4
+628,coho salmon,fish,oncorhynchus,silver salmon@silvers,3
+629,sockeye salmon,fish,oncorhynchus,red salmon@kokanee salmon@blueback salmon,4
+630,chinook salmon,fish,oncorhynchus,king salmon@quinnat salmon@spring salmon@tyee salmon,4
+631,atlantic salmon,fish,salmo,atlantic salmon,4
+632,salmonberry,berry,rubus,salmonberry,94
+633,common salsify,plant,tragopogon,purple salsify@oyster plant@vegetable oyster@jerusalem star,93
+634,spanish mackerel,fish,scomberomorus,seerfishes,2
+635,pacific sardine,fish,sardine,south american pilchard@blue pilchard@australian pilchard (s. s. neopilchardus)@blue-bait@pacific sardine@southern african pilchard,3
+636,scup,fish,sparidae,porgy,2
+637,sea cucumber,seafood,echinozoa,giant california sea cucumber,1
+638,steller sea lion,seafood, otariidae,northern sea lion@steller's sea lion,1
+639,bearded seal,seafood, phocidae,square flipper seal,4
+640,ringed seal,seafood,pusa,jar seal@netsik@nattiq,1
+641,sea trout,fish,salmo,salmo trutta@morpha trutta,2
+642,sesbania flower,flower,sesbania,sesbania flower,93
+643,american shad,fish,alosa,american shad,2
+644,shark,fish,shark,shark,2
+645,sheefish,fish,stenodus,nelma@sheefish@inconnu@connie,4
+646,sheepshead,fish,archosargus,sheepshead,2
+647,hedge mustard,cabbage,sisymbrium,hedge mustard,93
+648,snapper,fish,lutjanidae,snapper,2
+649,spelt,cereal,wheat,dinkel wheat@hulled wheat,94
+650,spirulina,additive,cyanobacteria,,93
+651,squab,meat,domestic pigeon,squab,4
+652,squirrel,meat, sciuridae,squirrel,3
+653,greater sturgeon,fish,acipenser,greater sturgeon,2
+654,white sucker,fish,catostomus,bay fish@brook sucker@common sucker@mullet@sucker,2
+655,pumpkinseed sunfish,fish,lepomis,pumpkinseed@pond perch@common sunfish@punkys@sunfish@sunny@kivver,2
+656,swordfish,fish,perciformes,swordfish,3
+657,taro,vegetable tuber,colocasia esculenta,taro,93
+658,teff,herb,eragrostis,williams' lovegrass@annual bunch grass,94
+659,tilefish,fish,lopholatilus,golden tile,2
+660,mexican groundcherry,berry,physalis,tomatillo@mexican husk tomato,93
+661,towel gourd,gourd,cucurbitaceae,towel gourd,94
+662,salmonidae,fish,salmonidae,salmonidae,4
+663,walleye,fish,sander,yellow walleye@pickerel,2
+664,alaska pollock,fish,gadus,walleye pollock,3
+665,whelk,seafood,sea snail,whelk,2
+667,broad whitefish,fish,coregonus,broad whitefish,1
+668,whitefish,fish,coregonus,whitefish,5
+669,whiting,fish,gadidae,merling,4
+670,wild rice,cereal,zizania,canada rice@indian rice@water oats,93
+671,tea leaf willow,herb,willow,diamondleaf willow@tealeaf willow@thin red willow,92
+672,winged bean,legume,psophocarpus,goa bean@four-angled bean@four-cornered bean@manila bean@dragon bean,93
+673,yam,vegetable tuber,dioscorea,yam,95
+674,jicama,vegetable tuber,pachyrhizus,mexican yam bean@mexican turnip,93
+675,yautia,plant,xanthosoma,arrowleaf elephant ear@arrowleaf elephant's ear@,93
+676,yellowfin tuna,fish,tuna,ahi,3
+677,yellowtail amberjack,fish,seriola,southern yellowtail amberjack@yellowtail kingfish@great amberjack@seriola lalandi@,2
+678,pollock,fish,gadidae,pollock,3
+679,albacore tuna,fish,tuna,longfin tuna,2
+680,atlantic halibut,fish,flatfish,atlantic halibut,3
+682,smelt,fish,osmeriformes,freshwater smelts@typical smelts,2
+683,clupeinae,fish,clupeidae,herring@sardine@sprat,4
+684,spiny lobster,seafood,,langustas@langouste@rock lobsters,2
+685,black-eyed pea,legume,vigna unguiculata,goat pea@black eyed bean@,94
+686,deer,meat,cervidae,deer,4
+687,percoidei,fish,percoidei,percoidei,2
+688,perciformes,fish,acanthopterygii,perciformes,4
+690,rabbit,meat,leporidae,rabbit,5
+691,beefalo,meat,cattle,cattalo@american hybrid,2
+693,bivalvia,seafood,mollusca,lamellibranchiata@pelecypoda@,3
+694,flatfish,fish,acanthopterygii,flatfish,4
+695,walrus,seafood,odobenidae,walrus,1
+696,alaska wild rhubarb,plant,aconogonon,alaska wild rhubarb,93
+697,oriental wheat,cereal,wheat,oriental wheat@kamut,94
+698,yardlong bean,legume,cowpea,bora@bodi@long-podded cowpea@asparagus bean@pea bean@snake bean@chinese long bean,93
+699,great horned owl,meat,horned owl,tiger owl@hoot owl,92
+700,quail,meat,phasianidae,quail,3
+701,boysenberry,berry,rubus,boysenberry,93
+702,rowal,plant,pangium,rowal,92
+703,jew's ear,fungus,auricularia,wood ear@jelly ear,93
+704,shiitake,fungus,lentinula,shiitake,101
+705,purple laver,seafood,seaweed,purple laver,93
+706,wakame,seafood,edible seaweed,wakame,94
+707,enokitake,fungus,flammulina,enokidake@enoki,94
+708,epazote,herb,dysphania,wormseed@jesuit's tea@mexican-tea@payqu@epazote@herba sancti mariæ@,93
+709,oyster mushroom,fungus,pleurotaceae,abalone mushrooms@tree mushrooms,94
+710,cloud ear fungus,fungus,jelly fungus,black fungus@black chinese fungus (or mushroom)@wood ear fungus@wood fungus@ear fungus@tree ear fungus,93
+711,maitake,fungus,grifola,hen of the woods@ram's head@sheep's head.,94
+712,ostrich fern,plant,fern,fiddlehead fern@shuttlecock fern,93
+713,spot croaker,fish, leiostomus,norfolk spot,2
+714,sourdock,herb,rumex,arctic dock,93
+715,tinda,gourd,cucurbitaceae,indian squash@round melon@indian round gourd@apple gourd@indian baby pumpkin,93
+716,atlantic menhaden,fish,menhaden,atlantic menhaden,2
+717,agave,plant,agavoideae,agave,93
+718,narrowleaf cattail,herb,typha,lesser bulrush@narrowleaf cattail@lesser reedmace,93
+719,jellyfish,seafood,medusozoa,jellies,2
+720,anchovy,fish,clupeiformes,anchovy,3
+721,blue whiting,fish,micromesistius,blue whiting,3
+722,carp bream,fish,cyprinidae,common bream@freshwater bream@bream@bronze bream@carp bream,3
+723,chanterelle,fungus,cantharellus,girolle,95
+724,sturgeon,fish,acipenseriformes,sturgeon,3
+725,charr,fish,salmon,char,3
+726,common dab,fish,flatfish,common dab,3
+727,spiny dogfish,fish,spurdog,spiny dogfish@spurdog@mud shark@piked dogfish,3
+728,anatidae,meat,antidea,anatidae,3
+729,anguilliformes,fish,elopomorpha,anguilliformes,3
+730,true frog,meat,frog,true frog,4
+731,garfish,fish,belone,sea needle,3
+732,gadiformes,fish,,anacanthini,3
+733,mountain hare,meat,hare,blue hare@tundra hare@variable hare@white hare@snow hare@alpine hare@irish hare,3
+734,lake trout,fish,salvelinus,mackinaw@lake char@touladi@togue@grey trout.,3
+735,lemon sole,fish,flatfish,lemon sole,3
+736,lumpsucker,fish,scorpaeniformes,lumpfish,3
+737,scombridae,fish,,scombridae,3
+738,norway haddock,fish,sebastes,ocean perch@atlantic redfish@norway haddock@red perch@red bream@golden redfish@hemdurgan@,3
+739,norway pout,fish,trisopterus,norway pout,3
+740,oil palm,plant,elaeis,oil palm,95
+741,sago palm,plant,metroxylon,true sago palm,92
+742,persimmon,fruit,diospyros,persimon,94
+743,pikeperch,fish,percidae,pike-perch,3
+744,pleuronectidae,fish,pleuronectidae,righteye flounders,3
+745,rock ptarmigan,meat,lagopus,ptarmigan@snow chicken,3
+746,pacific ocean perch,fish,sebastes,pacific rockfish@rose fish@red bream@red perch,3
+747,black salsify,plant,scorzonera,spanish salsify@black oyster plant@serpent root@viper's herb@viper's grass@scorzonera,94
+748,true seal,seafood,phocoidea,earless seals@crawling seals,2
+749,red algae,seafood,eukaryote,rhodophyta,94
+750,kombu,seafood,saccharina japonica,kombu,94
+751,snail,meat,gastropoda,snail,4
+752,true sole,fish,flatfish,true sole,3
+753,catfish,fish,ostariophysi,catfish,4
+754,thistle,plant,asteraceae,thistle,94
+755,common tuna,fish,thunnus,common tuna,5
+756,cetacea,fish,cetacea,cetacea,3
+757,columbidae,meat,columbidae,columbidae,3
+758,conch,fish,strombus,conch,93
+759,berry wine,beverage alcoholic,flowering plant,berry wine@fruit wine,4
+762,vodka,beverage alcoholic,cereal grains,vodka,4
+763,ice cream,dish,,,5
+764,vermouth,beverage alcoholic,grape,vermouth,3
+765,madeira wine,beverage alcoholic,grape,madeira wine,2
+766,nougat,dish,,,4
+767,toffee,dish,,,3
+768,cake,dish,,,4
+769,pizza,dish,,,5
+770,ymer,dairy,,,3
+771,other snack food,dish,,,5
+772,pastry,dish,,,5
+773,dragée,dish,,,2
+774,chewing gum,dish,,,3
+775,marzipan,dish,,,3
+776,salad dressing,dish,,,5
+777,sauce,additive,,,5
+778,salt,additive,,,4
+780,cream,dairy,cattle,,5
+781,sugar,additive,,,5
+782,sausage,dish,,,5
+783,meatball,dish,,,3
+784,pate,dish,,,5
+785,sugar substitute,additive,,,4
+786,meat bouillon,dish,,,3
+787,other meat product,meat,animalia,,4
+788,whey,dairy,cattle,,4
+789,casein,additive,,,3
+790,fruit preserve,additive,,,4
+791,leavening agent,additive,,,5
+792,marshmallow,bakery,maize,marshmallow,3
+793,gelatin,additive,,,3
+794,water,additive,,,4
+795,other fish product,fish,,,5
+796,milk human,dairy,human,,4
+799,dumpling,dish,,,2
+800,soup,dish,,,5
+803,syrup,additive,,,4
+805,remoulade,dish,,,3
+806,chocolate spread,plant derivative,theobroma,,4
+807,fruit gum,dish,,,3
+810,meringue,bakery,,,3
+814,cocoa butter,plant derivative,theobroma,,4
+815,cocoa powder,plant derivative,theobroma,,11
+817,chocolate,plant derivative,theobroma,,13
+818,hot chocolate,beverage,theobroma,,15
+820,kefir,dairy,cattle,,3
+821,other fermented milk,dairy,cattle,,3
+822,miso,additive,,,8
+823,tofu,plant derivative,glycine,,9
+824,zwieback,dish,,,3
+825,roe,fish,,,2
+826,cichlidae,fish,cichlid,,4
+827,icing,additive,,,4
+828,snack bar,dish,,,4
+829,green turtle,meat,cheloniidae,green turtle@black turtle@pacific green turtle,2
+830,energy drink,beverage,,,3
+831,burrito,dish,,,4
+832,hamburger,dish,,,4
+833,chili,dish,,,3
+834,taco,dish,,,4
+835,tortilla,dish,,,4
+836,nachos,dish,,,4
+837,salad,dish,,,3
+839,dulce de leche,dairy,cattle,,3
+840,topping,additive,,,4
+841,sweet custard,dairy,cattle,,4
+842,egg roll,dish,,,4
+843,heart of palm,vegetable,arecaceae,arecaceae,2
+845,potato chip,bakery,,,4
+846,tortilla chip,bakery,,,4
+847,corn chip,bakery,,,4
+848,hibiscus tea,beverage,roselle,,2
+849,stew,dish,,,4
+850,gelatin dessert,additive,,,5
+851,junket,dairy,cattle,,2
+852,falafel,dish,,,2
+853,frybread,dish,,,2
+854,other frozen dessert,dish,,,4
+855,lasagna,dish,,,4
+856,morchella,fungus,ascomycota,morchella,2
+857,pancake,dish,,,4
+858,pectin,additive,,,2
+859,pudding,dish,,,4
+860,waffle,dish,,,3
+861,soy milk,beverage,glycine,,9
+862,meatloaf,dish,,,4
+863,cocktail,beverage,,,2
+864,couscous,dish,,,2
+865,bulgur,cereal,,,3
+867,coffee mocha,beverage caffeinated,,,2
+868,chimichanga,dish,,,2
+869,semolina,cereal,,,5
+870,tapioca pearl,vegetable tuber,cassava,,2
+871,tostada,dish,,,2
+872,quesadilla,dish,,,3
+873,baked potato,dish,,,2
+874,hot dog,dish,,,2
+875,spread,additive,,,3
+876,enchilada,dish,,,2
+878,nutritional drink,beverage,,,3
+879,other sandwich,dish,,,4
+880,ketchup,additive,,,5
+881,breakfast sandwich,dish,,,4
+882,adobo,dish,,,2
+883,macaroni and cheese,dish,,,4
+884,horned melon,fruit,,,93
+885,hushpuppy,dish,,,3
+886,fruit juice,beverage,fruits,,5
+887,relish,dish,,,3
+889,fruit salad,dish,fruits,,2
+890,soy yogurt,plant derivative,glycine,,6
+891,vegetarian food,dish,,,4
+893,cold cut,dish,,,4
+894,mixed nuts,nut,,,94
+895,babassu palm,plant,attalea (palm),babaçu@cusi,93
+896,cupuau,fruit,theobroma grandiflorum,,95
+897,shea tree,plant,sapotaceae,shi tree@vitellaria,93
+898,oil-seed camellia,plant,camellia,ooil-seed camellia@tea oil camellia,93
+899,ucuhuba,plant,virola surinamensis,baboonwood@chalviande,94
+900,phyllo dough,bakery,,phyllo dough,2
+901,cooking oil,additive,,,4
+902,pie crust,bakery,,,4
+904,pie,dish,,,4
+905,shortening,additive,,,3
+906,soy cream,dish,,,1
+907,ice cream cone,dish,,,3
+908,molasses,additive,sugar,black treacle,2
+909,nance,fruit,byrsonima,changunga@muruçi@nanche@nance@chacunga@craboo@kraabu@savanna serrette@golden spoon.,93
+911,natto,dish,,,2
+912,ravioli,dish,,,3
+913,scrapple,dish,,,3
+914,other pasta dish,dish,,,4
+915,succotash,dish,,,2
+916,tamale,dish,,,4
+917,rice cake,dish,,,2
+918,tree fern,plant,tree fern,tree fern,93
+919,evaporated milk,dairy,cattle,,2
+920,flour,cereal,,,3
+921,akutaq,dish,,,2
+923,pita bread,bakery,poacceae,pita bread,2
+924,focaccia,bakery,poacceae,focaccia,4
+925,bagel,bakery,poacceae,bagel,4
+926,other bread product,bakery,poacceae,other bread product,4
+927,piki bread,bakery,poacceae,piki bread,2
+928,french toast,bakery,poacceae,french toast,4
+929,oat bread,bakery,poacceae,oat bread,2
+930,potato bread,bakery,poacceae,potato bread,3
+931,cornbread,maize,corn,cornbread,2
+932,corn grits,maize,corn,corn grits,4
+933,multigrain bread,bakery,poacceae,multigrain bread,3
+934,rice bread,bakery,poacceae,rice bread,2
+935,pan dulce,bakery,poacceae,pan dulce,3
+936,raisin bread,bakery,poacceae,raisin bread,2
+937,wonton wrapper,bakery,poacceae,wonton wrapper,2
+938,trail mix,dish,,,2
+939,greenthread tea,beverage,,,92
+941,vegetable juice,beverage,vegetables,,4
+942,horchata,beverage,,orxata,3
+943,soft drink,beverage,,,5
+944,milkshake,beverage,,,4
+945,chocolate mousse,bakery,theobroma,,3
+947,pupusa,dish,,,3
+948,empanada,dish,,,2
+949,arepa,dish,,,3
+950,ascidians,seafood,tunicate,ascidians@sea squirts,2
+951,gefilte fish,dish,,,2
+952,yellow pond lily,plant,nuphar,brandy bottle,94
+953,fish burger,dish,,,2
+954,other dish,dish,,,5
+955,pot pie,dish,,,4
+956,stuffing,additive,,,4
+958,fudge,bakery,cattle,,3
+959,candy bar,bakery,theobroma,,4
+960,condensed milk,dairy,cattle,,2
+961,margarine,additive,vegetable oil,,4
+962,margarine like spread,additive,,,5
+963,hummus,dish,,,3
+964,potato puffs,dish,,,4
+965,potato gratin,dish,potato,,2
+967,chinese bayberry,berry,myrica,yangmei@yamamomo@mountain peach@chinese bayberry@japanese bayberry@red bayberry@yumberry@waxberry@chinese strawberry,92
+968,green zucchini,vegetable,cucurbita_pepo,courgette,107
+969,yellow zucchini,vegetable,cucurbita_pepo,yellow zucchini,103
+970,saskatoon berry,berry,amelanchier,saskatoon@pacific serviceberry@western serviceberry@alder-leaf shadbush@dwarf shadbush@chuckley pear@western juneberry,94
+971,nanking cherry,berry,prunus cerasus,korean cherry@manchu cherry@downy cherry@shanghai cherry@ando cherry@mountain cherry@chinese bush cherry@chinese dwarf cherry,94
+972,japanese pumpkin,fruit,winter squash,japanese pumpkin@kabocha,100
+977,guinea hen,meat,galliformes,pet speckled hen@original fowl@guinea fowl,2
+978,cucurbita,gourd,cucurbita,cucurbita,102
