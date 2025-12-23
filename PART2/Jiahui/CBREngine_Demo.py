@@ -3,17 +3,25 @@ Motor CBR Simple para Recomendación de Menús
 - Lee cbr_menu_database.json
 - Calcula similitud entre preferencias de usuario y menús existentes
 - Recupera los menús más similares
+- Adapta culturalmente los ingredientes
 - Demuestra el ciclo CBR: Retrieve → Reuse → Revise → Retain
 """
 import json
 import math
 from typing import Dict, List, Tuple
+import os
 
 def load_cbr_database(filepath='cbr_menu_database.json'):
     """Carga la base de datos CBR"""
     with open(filepath, 'r', encoding='utf-8') as f:
         database = json.load(f)
     return database
+
+def load_cultural_ingredients(filepath='cultural_ingredients_database.json'):
+    """Carga la base de datos de ingredientes culturales"""
+    with open(filepath, 'r', encoding='utf-8') as f:
+        cultural_db = json.load(f)
+    return cultural_db
 
 def calculate_similarity(user_prefs: Dict, menu: Dict) -> float:
     """

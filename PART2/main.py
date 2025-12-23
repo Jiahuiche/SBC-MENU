@@ -1,12 +1,11 @@
 """
-PIPELINE COMPLETO DE CLUSTERING Y CBR PARA MENÚS
-==================================================
+PIPELINE COMPLETO DE SISTEMA CBR PARA MENÚS
+=============================================
 
 Este script ejecuta automáticamente todos los pasos necesarios:
-1. Conversión de formato antiguo a optimizado (si es necesario)
-2. Feature Engineering (extracción y transformación)
-3. Clustering (K-Means) y selección de representativos
-4. Generación de visualizaciones y métricas
+1. Captura de preferencias del usuario (intput_cbr.py)
+2. Motor CBR: Retrieve, Reuse, Revise, Retain (CBREngine_Demo.py)
+3. Generación de recomendaciones adaptadas culturalmente
 
 Uso:
     python main.py
@@ -27,210 +26,192 @@ def check_dependencies():
     print(f"{'='*70}\n")
     
     required_packages = {
-        'pandas': 'pandas',
-        'numpy': 'numpy',
-        'sklearn': 'scikit-learn',
-        'matplotlib': 'matplotlib',
-        'seaborn': 'seaborn'
+        'json': 'built-in',
     }
     
-    missing = []
-    for module, package in required_packages.items():
-        try:
-            __import__(module)
-            print(f"✅ {package}")
-        except ImportError:
-            print(f"❌ {package} - NO INSTALADO")
-            missing.append(package)
-    
-    if missing:
-        print(f"\n⚠️ Faltan {len(missing)} paquetes:")
-        print(f"   Instalar con: pip install {' '.join(missing)}\n")
-        return False
-    
-    print(f"\n✅ Todas las dependencias están instaladas\n")
+    print(f"✅ Todas las dependencias básicas están disponibles\n")
     return True
 
 # ============================================================================
-# PASO 1: CONVERSIÓN DE FORMATO
+# PASO 1: CAPTURA DE PREFERENCIAS DEL USUARIO
 # ============================================================================
 
-def step1_convert_format():
-    """Paso 1: Convertir formato antiguo a optimizado"""
+def step1_get_user_input():
+    """Paso 1: Capturar las preferencias del usuario"""
     print(f"\n{'='*70}")
-    print(f"📋 PASO 1: CONVERSIÓN DE FORMATO")
+    print(f"📋 PASO 1: CAPTURA DE PREFERENCIAS DEL USUARIO")
     print(f"{'='*70}\n")
     
-    # Verificar si ya existe recipes_optimized.json
-    if os.path.exists('recipes_optimized.json'):
-        print(f"✅ recipes_optimized.json ya existe")
-        user_input = input("¿Deseas reconvertir desde filtered_recipes111.json? (s/N): ")
-        if user_input.lower() not in ['s', 'si', 'sí', 'y', 'yes']:
-            print("⏭️  Saltando conversión...\n")
-            return True
-    
-    # Ejecutar conversión
     try:
-        from ConvertOldToOptimized import convert_old_to_optimized
+        # Importar el módulo de input
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from intput_cbr import get_user_restrictions
         
-        success = convert_old_to_optimized()
-                
+        # Obtener preferencias
+        user_data = get_user_restrictions()
         
-        if not success:
-            print("❌ Error en la conversión. Abortando pipeline.")
-            return False
-        
-        print("✅ Paso 1 completado\n")
-        return True
+        print("\n✅ Preferencias capturadas exitosamente\n")
+        return user_data
         
     except Exception as e:
-        print(f"❌ Error en conversión: {e}")
-        return False
-
-# ============================================================================
-# PASO 2: FEATURE ENGINEERING
-# ============================================================================
-
-def step2_feature_engineering():
-    """Paso 2: Extracción y transformación de features"""
-    print(f"\n{'='*70}")
-    print(f"📋 PASO 2: FEATURE ENGINEERING")
-    print(f"{'='*70}\n")
-    
-    # Verificar si ya existen los archivos
-    files_exist = all([
-        os.path.exists('recipe_features_raw.csv'),
-        os.path.exists('recipe_features_normalized.csv'),
-        os.path.exists('recipe_features_pca.csv')
-    ])
-    
-    if files_exist:
-        print(f"✅ Archivos de features ya existen:")
-        print(f"   - recipe_features_raw.csv")
-        print(f"   - recipe_features_normalized.csv")
-        print(f"   - recipe_features_pca.csv")
-        user_input = input("¿Deseas regenerar las features? (s/N): ")
-        if user_input.lower() not in ['s', 'si', 'sí', 'y', 'yes']:
-            print("⏭️  Saltando feature engineering...\n")
-            return True
-    
-    # Ejecutar feature engineering
-    try:
-        from FeatureEngineering import main as feature_main
-        feature_main()
-        
-        print("✅ Paso 2 completado\n")
-        return True
-        
-    except Exception as e:
-        print(f"❌ Error en feature engineering: {e}")
+        print(f"❌ Error capturando preferencias: {e}")
         import traceback
         traceback.print_exc()
-        return False
+        return None
 
 # ============================================================================
-# PASO 3: CLUSTERING
+# PASO 2: EJECUTAR MOTOR CBR
 # ============================================================================
 
-def step3_clustering():
-    """Paso 3: Clustering y selección de representativos"""
+def step2_run_cbr_engine(user_data):
+    """Paso 2: Ejecutar el motor CBR con las preferencias del usuario"""
     print(f"\n{'='*70}")
-    print(f"📋 PASO 3: CLUSTERING Y SELECCIÓN DE REPRESENTATIVOS")
+    print(f"📋 PASO 2: EJECUTANDO MOTOR CBR")
     print(f"{'='*70}\n")
     
-    # Verificar si ya existen resultados
-    files_exist = all([
-        os.path.exists('representative_recipes.json'),
-        os.path.exists('clustering_metrics.json')
-    ])
-    
-    if files_exist:
-        print(f"✅ Archivos de clustering ya existen:")
-        print(f"   - representative_recipes.json")
-        print(f"   - clustering_metrics.json")
-        user_input = input("¿Deseas regenerar el clustering? (s/N): ")
-        if user_input.lower() not in ['s', 'si', 'sí', 'y', 'yes']:
-            print("⏭️  Saltando clustering...\n")
-            return True
-    
-    # Ejecutar clustering
     try:
-        from ClusteringPipeline import main as clustering_main
-        clustering_main()
+        # Importar el motor CBR
+        from CBREngine_Demo import run_cbr_system
         
-        print("✅ Paso 3 completado\n")
-        return True
+        # Convertir datos del usuario al formato esperado por CBR
+        user_prefs = convert_user_data_to_cbr_format(user_data)
+        
+        # Ejecutar sistema CBR
+        adapted_menu, is_valid = run_cbr_system(user_prefs)
+        
+        print("\n✅ Motor CBR ejecutado exitosamente\n")
+        return adapted_menu, is_valid
         
     except Exception as e:
-        print(f"❌ Error en clustering: {e}")
+        print(f"❌ Error ejecutando motor CBR: {e}")
         import traceback
         traceback.print_exc()
-        return False
+        return None, False
+
+def convert_user_data_to_cbr_format(user_data):
+    """Convierte datos del formulario de usuario al formato CBR"""
+    cbr_prefs = {}
+    
+    # Mapear cultura
+    cuisine_mapping = {
+        'italian': 'Italiana',
+        'italiana': 'Italiana',
+        'chinese': 'China',
+        'china': 'China',
+        'mexican': 'Mexicana/Tex-Mex',
+        'mexicana': 'Mexicana/Tex-Mex',
+        'indian': 'India',
+        'india': 'India',
+        'mediterranean': 'Mediterránea',
+        'mediterránea': 'Mediterránea',
+        'american': 'Americana',
+        'americana': 'Americana',
+        'peruvian': 'Peruana',
+        'peruana': 'Peruana',
+        'japanese': 'Japonesa',
+        'japonesa': 'Japonesa'
+    }
+    
+    if 'cuisine' in user_data:
+        cuisine_key = user_data['cuisine'].lower()
+        cbr_prefs['cultura'] = cuisine_mapping.get(cuisine_key, user_data['cuisine'])
+    
+    # Mapear estilo de cocina
+    style_mapping = {
+        'traditional': 'Tradicional',
+        'modern': 'Moderno',
+        'regional': 'Regional',
+        'sybarite': 'Gourmet'
+    }
+    
+    if 'food_style' in user_data:
+        style_key = user_data['food_style'].lower()
+        cbr_prefs['estilo_cocina'] = style_mapping.get(style_key, user_data['food_style'])
+    
+    # Mapear temporada
+    season_mapping = {
+        'spring': 'Spring',
+        'summer': 'Summer',
+        'autumn': 'Fall',
+        'fall': 'Fall',
+        'winter': 'Winter',
+        'any-season': 'any-season'
+    }
+    
+    if 'season' in user_data:
+        season_key = user_data['season'].lower()
+        cbr_prefs['season'] = season_mapping.get(season_key, user_data['season'])
+    
+    # Precio
+    if 'max_price' in user_data:
+        cbr_prefs['max_price'] = user_data['max_price']
+    if 'min_price' in user_data:
+        cbr_prefs['min_price'] = user_data['min_price']
+    
+    # Restricciones dietéticas
+    restrictions = user_data.get('restrictions', [])
+    cbr_prefs['is_vegan'] = 'vegan' in restrictions
+    cbr_prefs['is_vegetarian'] = 'vegetarian' in restrictions or cbr_prefs['is_vegan']
+    cbr_prefs['is_gluten_free'] = 'gluten-free' in restrictions or 'gluten free' in restrictions
+    cbr_prefs['is_dairy_free'] = 'dairy-free' in restrictions or 'dairy free' in restrictions
+    cbr_prefs['is_kosher'] = 'kosher' in restrictions
+    cbr_prefs['is_halal'] = 'halal' in restrictions
+    
+    # Otros datos
+    if 'max_people' in user_data:
+        cbr_prefs['max_people'] = user_data['max_people']
+    if 'event_type' in user_data:
+        cbr_prefs['event_type'] = user_data['event_type']
+    if 'quiere_tarta' in user_data:
+        cbr_prefs['quiere_tarta'] = user_data['quiere_tarta']
+    
+    return cbr_prefs
 
 # ============================================================================
 # RESUMEN FINAL
 # ============================================================================
 
-def generate_summary():
-    """Genera resumen final de los resultados"""
+def generate_summary(adapted_menu, is_valid):
+    """Genera resumen final de la recomendación"""
     print(f"\n{'='*70}")
-    print(f"📊 RESUMEN FINAL DEL PIPELINE")
+    print(f"📊 RESUMEN FINAL")
     print(f"{'='*70}\n")
     
-    # Leer métricas
-    import json
-    
-    try:
-        with open('clustering_metrics.json', 'r') as f:
-            metrics = json.load(f)
+    if adapted_menu:
+        print(f"✅ RECOMENDACIÓN GENERADA CON ÉXITO")
+        print(f"\n🍽️  Menú: {adapted_menu['menu_name']}")
+        print(f"🌍 Cultura: {adapted_menu['features'].get('cultura', 'N/A')}")
+        print(f"👨‍🍳 Estilo: {adapted_menu['features'].get('estilo_cocina', 'N/A')}")
+        print(f"💰 Precio: ${adapted_menu['features']['total_price_per_serving']:.2f}")
         
-        print(f"✅ CLUSTERING COMPLETADO CON ÉXITO")
-        print(f"\n📈 Métricas:")
-        print(f"   - Recetas totales: {metrics['total_recipes']}")
-        print(f"   - K óptimo: {metrics['optimal_k']}")
-        print(f"   - Recetas representativas: {metrics['total_representatives']}")
-        print(f"   - Silhouette Score: {metrics['kmeans_metrics']['silhouette']:.3f}")
-        print(f"   - Davies-Bouldin Index: {metrics['kmeans_metrics']['davies_bouldin']:.3f}")
+        if 'cultural_substitutions' in adapted_menu and adapted_menu['cultural_substitutions']:
+            print(f"\n🔄 Adaptaciones culturales: {len(adapted_menu['cultural_substitutions'])} ingredientes")
         
-        reduction_pct = (1 - metrics['total_representatives'] / metrics['total_recipes']) * 100
-        print(f"\n🎯 Reducción de datos: {reduction_pct:.1f}%")
-        print(f"   ({metrics['total_recipes']} → {metrics['total_representatives']} recetas)")
+        if 'adaptations' in adapted_menu and adapted_menu['adaptations']:
+            print(f"🔧 Otras adaptaciones: {len(adapted_menu['adaptations'])}")
         
-        print(f"\n📁 Archivos generados:")
-        print(f"   1. recipes_optimized.json - Recetas en formato optimizado")
-        print(f"   2. recipe_features_normalized.csv - Features normalizadas")
-        print(f"   3. representative_recipes.json - Recetas representativas")
-        print(f"   4. clustering_metrics.json - Métricas de calidad")
-        print(f"   5. kmeans_clusters.png - Visualización de clusters")
-        print(f"   6. optimal_k_analysis.png - Análisis de K óptimo")
+        if is_valid:
+            print(f"\n✅ El menú cumple todas las restricciones del usuario")
+        else:
+            print(f"\n⚠️  El menú requiere revisión adicional")
         
         print(f"\n{'='*70}")
-        print(f"🎉 PIPELINE COMPLETADO EXITOSAMENTE")
+        print(f"🎉 SISTEMA CBR COMPLETADO EXITOSAMENTE")
         print(f"{'='*70}\n")
-        
-        print(f"🔜 PRÓXIMOS PASOS:")
-        print(f"   1. Revisar representative_recipes.json")
-        print(f"   2. Validar clustering en kmeans_clusters.png")
-        print(f"   3. Implementar CBR Engine para recuperación de casos")
-        print(f"   4. Crear sistema de composición de menús (Starter + Main + Dessert)\n")
-        
-    except FileNotFoundError:
-        print("⚠️ No se encontró clustering_metrics.json")
-        print("   El clustering puede no haberse ejecutado correctamente.\n")
-    except Exception as e:
-        print(f"⚠️ Error leyendo métricas: {e}\n")
+    else:
+        print(f"❌ No se pudo generar una recomendación\n")
 
 # ============================================================================
 # PIPELINE PRINCIPAL
 # ============================================================================
 
 def main():
-    """Ejecuta el pipeline completo"""
+    """Ejecuta el pipeline completo del sistema CBR"""
     
     start_time = time.time()
     
     print(f"\n{'#'*70}")
-    print(f"# PIPELINE COMPLETO DE CLUSTERING Y CBR PARA MENÚS")
+    print(f"# SISTEMA CBR DE RECOMENDACIÓN DE MENÚS")
     print(f"# Inicio: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'#'*70}")
     
@@ -239,23 +220,20 @@ def main():
         print("\n❌ Pipeline abortado: Dependencias faltantes\n")
         return
     
-    # Paso 1: Conversión de formato
-    if not step1_convert_format():
+    # Paso 1: Capturar preferencias del usuario
+    user_data = step1_get_user_input()
+    if not user_data:
         print("\n❌ Pipeline abortado en Paso 1\n")
         return
     
-    # Paso 2: Feature Engineering
-    if not step2_feature_engineering():
+    # Paso 2: Ejecutar motor CBR
+    adapted_menu, is_valid = step2_run_cbr_engine(user_data)
+    if not adapted_menu:
         print("\n❌ Pipeline abortado en Paso 2\n")
         return
     
-    # Paso 3: Clustering
-    if not step3_clustering():
-        print("\n❌ Pipeline abortado en Paso 3\n")
-        return
-    
     # Resumen final
-    generate_summary()
+    generate_summary(adapted_menu, is_valid)
     
     # Tiempo total
     elapsed = time.time() - start_time

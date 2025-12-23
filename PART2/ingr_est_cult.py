@@ -70,6 +70,7 @@ def generar_bd_ingredientes(archivo_origen, archivo_destino):
 if __name__ == "__main__":
     # Asegúrate de que el nombre del archivo coincida con el tuyo
     INPUT_FILE = "cbr_menu_database.json" 
+
     OUTPUT_FILE = "ingredientes_por_contexto.json"
     
     generar_bd_ingredientes(INPUT_FILE, OUTPUT_FILE)
