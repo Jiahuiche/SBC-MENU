@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍽️ Sistema CBR de Menús Gastronómicos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">🍽️</div>
+            <h1>Sistema CBR de Menús</h1>
+            <p class="tagline">Adaptación Inteligente de Menús Gastronómicos</p>
+        </header>
+
+        <!-- Indicador de sesión -->
+        <div class="session-tracker" id="sessionTracker">
+            <span class="session-label">Sesión:</span>
+            <span class="session-id" id="sessionId">Nueva sesión</span>
+            <span class="search-count" id="searchCount"></span>
+        </div>
+
+        <!-- Panel de Preferencias -->
+        <section class="panel preferences-panel" id="preferencesPanel">
+            <h2>📋 Tus Preferencias</h2>
+            
+            <form id="preferencesForm">
+                <!-- Cultura Gastronómica -->
+                <div class="form-group">
+                    <label>🌍 Cultura Gastronómica</label>
+                    <div class="radio-group cuisine-grid">
+                        <label class="radio-card">
+                            <input type="radio" name="cultura" value="Italiana">
+                            <span class="card-icon">🇮🇹</span>
+                            <span class="card-label">Italiana</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="cultura" value="Mediterránea">
+                            <span class="card-icon">🌊</span>
+                            <span class="card-label">Mediterránea</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="cultura" value="Mexicana">
+                            <span class="card-icon">🇲🇽</span>
+                            <span class="card-label">Mexicana</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="cultura" value="China">
+                            <span class="card-icon">🇨🇳</span>
+                            <span class="card-label">China</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="cultura" value="India">
+                            <span class="card-icon">🇮🇳</span>
+                            <span class="card-label">India</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="cultura" value="Japonesa">
+                            <span class="card-icon">🇯🇵</span>
+                            <span class="card-label">Japonesa</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Estilo de Cocina -->
+                <div class="form-group">
+                    <label>👨‍🍳 Estilo de Cocina</label>
+                    <div class="radio-group style-grid">
+                        <label class="radio-card">
+                            <input type="radio" name="estilo_cocina" value="Tradicional">
+                            <span class="card-icon">🏺</span>
+                            <span class="card-label">Tradicional</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="estilo_cocina" value="Moderno">
+                            <span class="card-icon">✨</span>
+                            <span class="card-label">Moderno</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="estilo_cocina" value="Gourmet">
+                            <span class="card-icon">⭐</span>
+                            <span class="card-label">Gourmet</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="estilo_cocina" value="Casero">
+                            <span class="card-icon">🏠</span>
+                            <span class="card-label">Casero</span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="estilo_cocina" value="Saludable">
+                            <span class="card-icon">🥗</span>
+                            <span class="card-label">Saludable</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Temporada -->
+                <div class="form-group">
+                    <label>🍂 Temporada</label>
+                    <div class="radio-group season-grid">
+                        <label class="radio-card season-spring">
+                            <input type="radio" name="season" value="Spring">
+                            <span class="card-icon">🌸</span>
+                            <span class="card-label">Primavera</span>
+                        </label>
+                        <label class="radio-card season-summer">
+                            <input type="radio" name="season" value="Summer">
+                            <span class="card-icon">☀️</span>
+                            <span class="card-label">Verano</span>
+                        </label>
+                        <label class="radio-card season-fall">
+                            <input type="radio" name="season" value="Fall">
+                            <span class="card-icon">🍁</span>
+                            <span class="card-label">Otoño</span>
+                        </label>
+                        <label class="radio-card season-winter">
+                            <input type="radio" name="season" value="Winter">
+                            <span class="card-icon">❄️</span>
+                            <span class="card-label">Invierno</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Restricciones Dietéticas -->
+                <div class="form-group">
+                    <label>🥗 Restricciones Dietéticas</label>
+                    <div class="checkbox-group dietary-grid">
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="is_vegan" value="true">
+                            <span class="card-icon">🌱</span>
+                            <span class="card-label">Vegano</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="is_vegetarian" value="true">
+                            <span class="card-icon">🥬</span>
+                            <span class="card-label">Vegetariano</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="is_gluten_free" value="true">
+                            <span class="card-icon">🌾</span>
+                            <span class="card-label">Sin Gluten</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="is_dairy_free" value="true">
+                            <span class="card-icon">🥛</span>
+                            <span class="card-label">Sin Lácteos</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="is_kosher" value="true">
+                            <span class="card-icon">✡️</span>
+                            <span class="card-label">Kosher</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="is_halal" value="true">
+                            <span class="card-icon">☪️</span>
+                            <span class="card-label">Halal</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Presupuesto -->
+                <div class="form-group">
+                    <label>💰 Presupuesto Máximo (€ por persona)</label>
+                    <div class="price-input">
+                        <input type="range" id="maxPrice" name="max_price" min="100" max="800" value="400" step="50">
+                        <output id="priceOutput">400€</output>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary" id="searchBtn">
+                    🔍 Buscar Menú Ideal
+                </button>
+            </form>
+        </section>
+
+        <!-- Panel de Resultados -->
+        <section class="panel results-panel hidden" id="resultsPanel">
+            <h2>🍽️ Menú Recomendado</h2>
+            
+            <!-- Indicador de similitud -->
+            <div class="similarity-badge" id="similarityBadge">
+                <span class="similarity-value">--</span>% coincidencia
+            </div>
+            
+            <!-- Info del menú -->
+            <div class="menu-header" id="menuHeader">
+                <h3 id="menuName">Cargando...</h3>
+                <div class="menu-tags" id="menuTags"></div>
+            </div>
+
+            <!-- Cursos del menú -->
+            <div class="courses-container" id="coursesContainer">
+                <!-- Se llena dinámicamente -->
+            </div>
+
+            <!-- Adaptaciones realizadas -->
+            <div class="adaptations-section" id="adaptationsSection">
+                <h4>🔄 Adaptaciones Realizadas</h4>
+                <div class="adaptations-list" id="adaptationsList"></div>
+            </div>
+
+            <!-- Validación -->
+            <div class="validation-section" id="validationSection">
+                <!-- Se llena dinámicamente -->
+            </div>
+
+            <!-- Totales -->
+            <div class="menu-totals" id="menuTotals">
+                <div class="total-item">
+                    <span class="total-label">💰 Precio Total</span>
+                    <span class="total-value" id="totalPrice">--€</span>
+                </div>
+                <div class="total-item">
+                    <span class="total-label">⏱️ Tiempo Aprox.</span>
+                    <span class="total-value" id="totalTime">-- min</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panel de Evaluación -->
+        <section class="panel evaluation-panel hidden" id="evaluationPanel">
+            <h2>⭐ Evalúa este Menú</h2>
+            <p class="eval-subtitle">Tu opinión ayuda a mejorar nuestras recomendaciones</p>
+            
+            <form id="evaluationForm">
+                <!-- Rating de estrellas -->
+                <div class="form-group">
+                    <label>¿Qué te parece este menú?</label>
+                    <div class="star-rating" id="starRating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <input type="hidden" name="rating" id="ratingInput" value="0">
+                </div>
+
+                <!-- Satisfacción -->
+                <div class="form-group">
+                    <label>¿El menú cumple tus expectativas?</label>
+                    <div class="satisfaction-buttons">
+                        <button type="button" class="sat-btn" data-value="muy_satisfecho">😍 Muy satisfecho</button>
+                        <button type="button" class="sat-btn" data-value="satisfecho">😊 Satisfecho</button>
+                        <button type="button" class="sat-btn" data-value="neutral">😐 Neutral</button>
+                        <button type="button" class="sat-btn" data-value="insatisfecho">😕 Insatisfecho</button>
+                    </div>
+                    <input type="hidden" name="satisfaction" id="satisfactionInput" value="">
+                </div>
+
+                <!-- Comentarios -->
+                <div class="form-group">
+                    <label>Comentarios (opcional)</label>
+                    <textarea name="comments" id="commentsInput" placeholder="¿Alguna sugerencia o comentario?"></textarea>
+                </div>
+
+                <div class="eval-buttons">
+                    <button type="submit" class="btn-primary" id="submitEvalBtn">
+                        ✅ Enviar Evaluación
+                    </button>
+                    <button type="button" class="btn-secondary" id="newSearchBtn">
+                        🔄 Nueva Búsqueda
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Loading overlay -->
+        <div class="loading-overlay hidden" id="loadingOverlay">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Analizando menús...</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Sistema CBR de Menús Gastronómicos © 2025</p>
+            <p class="tech">Powered by Case-Based Reasoning</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

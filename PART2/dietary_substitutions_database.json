@@ -1,0 +1,450 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Base de datos de sustituciones dietéticas para adaptación CBR",
+    "created_date": "2025-12-15",
+    "dietary_categories": [
+      "vegan",
+      "vegetarian", 
+      "gluten_free",
+      "dairy_free",
+      "kosher",
+      "halal",
+      "nut_free",
+      "low_sodium",
+      "low_sugar"
+    ]
+  },
+  "ingredient_classifications": {
+    "proteins": {
+      "animal_proteins": ["beef", "chicken", "pork", "lamb", "veal", "duck", "turkey", "bacon", "ham", "sausage"],
+      "seafood": ["fish", "salmon", "tuna", "shrimp", "crab", "lobster", "squid", "mussels", "oyster", "anchovy"],
+      "plant_proteins": ["tofu", "tempeh", "seitan", "chickpeas", "lentils", "black beans", "white beans", "quinoa", "edamame", "textured vegetable protein"],
+      "dairy_proteins": ["cheese", "milk", "cream", "butter", "yogurt", "whey"]
+    },
+    "dairy": {
+      "milk_based": ["milk", "cream", "half-and-half", "evaporated milk", "condensed milk"],
+      "cheese": ["parmesan", "mozzarella", "cheddar", "feta", "ricotta", "goat cheese", "brie", "pecorino", "cream cheese"],
+      "butter_based": ["butter", "ghee", "clarified butter"],
+      "cultured": ["yogurt", "sour cream", "crème fraîche", "kefir"]
+    },
+    "gluten_containing": {
+      "grains": ["wheat", "barley", "rye", "spelt", "kamut", "triticale"],
+      "products": ["bread", "pasta", "flour", "couscous", "bulgur", "semolina", "seitan", "crackers", "breadcrumbs", "panko"],
+      "sauces": ["soy sauce", "teriyaki", "hoisin sauce", "worcestershire sauce", "malt vinegar"]
+    },
+    "nuts_and_seeds": {
+      "tree_nuts": ["almonds", "walnuts", "pecans", "cashews", "pistachios", "hazelnuts", "macadamia", "pine nuts", "brazil nuts"],
+      "peanuts": ["peanuts", "peanut butter", "peanut oil"],
+      "seeds": ["sesame seeds", "sunflower seeds", "pumpkin seeds", "chia seeds", "flax seeds", "hemp seeds"]
+    }
+  },
+  "substitution_rules": {
+    "vegan": {
+      "proteins": {
+        "beef": {
+          "substitute": "seitan",
+          "alternatives": ["portobello mushroom", "textured vegetable protein", "jackfruit", "lentils"],
+          "notes": "Seitan provides similar texture for grilling; jackfruit works well for pulled/shredded preparations"
+        },
+        "chicken": {
+          "substitute": "tofu",
+          "alternatives": ["tempeh", "seitan", "cauliflower", "chickpeas"],
+          "notes": "Press tofu well and marinate for best results; tempeh adds nutty flavor"
+        },
+        "pork": {
+          "substitute": "jackfruit",
+          "alternatives": ["tempeh", "mushrooms", "seitan"],
+          "notes": "Young green jackfruit mimics pulled pork texture"
+        },
+        "lamb": {
+          "substitute": "eggplant",
+          "alternatives": ["portobello mushroom", "seitan", "lentils"],
+          "notes": "Eggplant provides hearty texture; season well with lamb spices"
+        },
+        "duck": {
+          "substitute": "seitan",
+          "alternatives": ["king oyster mushroom", "portobello mushroom"],
+          "notes": "King oyster mushrooms can mimic duck texture when sliced"
+        },
+        "bacon": {
+          "substitute": "coconut bacon",
+          "alternatives": ["tempeh bacon", "shiitake bacon", "rice paper bacon", "smoked tofu"],
+          "notes": "Use liquid smoke and maple syrup for authentic flavor"
+        },
+        "fish": {
+          "substitute": "hearts of palm",
+          "alternatives": ["jackfruit", "banana blossom", "tofu"],
+          "notes": "Hearts of palm mimic crab/fish texture; marinate in nori for ocean flavor"
+        },
+        "shrimp": {
+          "substitute": "king oyster mushroom",
+          "alternatives": ["hearts of palm", "konjac"],
+          "notes": "Cut king oyster stems to mimic shrimp shape"
+        }
+      },
+      "dairy": {
+        "milk": {
+          "substitute": "oat milk",
+          "alternatives": ["almond milk", "soy milk", "coconut milk", "cashew milk", "rice milk"],
+          "notes": "Oat milk is creamiest for cooking; soy milk best for protein content"
+        },
+        "cream": {
+          "substitute": "coconut cream",
+          "alternatives": ["cashew cream", "silken tofu blended", "oat cream"],
+          "notes": "Coconut cream works best in sauces; cashew cream is neutral-flavored"
+        },
+        "butter": {
+          "substitute": "vegan butter",
+          "alternatives": ["coconut oil", "olive oil", "avocado"],
+          "notes": "Use vegan butter for baking; oils work well for sautéing"
+        },
+        "cheese": {
+          "substitute": "nutritional yeast",
+          "alternatives": ["cashew cheese", "vegan cheese", "tofu ricotta"],
+          "notes": "Nutritional yeast adds cheesy flavor; cashew cheese melts well"
+        },
+        "parmesan": {
+          "substitute": "nutritional yeast with cashews",
+          "alternatives": ["vegan parmesan", "hemp seed parmesan"],
+          "notes": "Blend nutritional yeast with cashews and garlic for parmesan flavor"
+        },
+        "mozzarella": {
+          "substitute": "vegan mozzarella",
+          "alternatives": ["cashew mozzarella", "tofu fior di latte"],
+          "notes": "For melting, use vegan mozzarella; for fresh, use cashew-based"
+        },
+        "yogurt": {
+          "substitute": "coconut yogurt",
+          "alternatives": ["soy yogurt", "almond yogurt", "cashew yogurt"],
+          "notes": "Coconut yogurt is creamiest; soy yogurt has most protein"
+        },
+        "sour cream": {
+          "substitute": "cashew sour cream",
+          "alternatives": ["coconut cream with lemon", "vegan sour cream", "silken tofu blend"],
+          "notes": "Blend cashews with lemon juice and salt for authentic tang"
+        }
+      },
+      "eggs": {
+        "eggs": {
+          "substitute": "flax egg",
+          "alternatives": ["chia egg", "aquafaba", "silken tofu", "commercial egg replacer", "mashed banana", "applesauce"],
+          "notes": "Flax egg for binding; aquafaba for meringues; tofu for scrambles"
+        }
+      },
+      "honey": {
+        "honey": {
+          "substitute": "maple syrup",
+          "alternatives": ["agave nectar", "date syrup", "brown rice syrup", "coconut nectar"],
+          "notes": "Maple syrup is most versatile; agave is sweeter"
+        }
+      }
+    },
+    "vegetarian": {
+      "proteins": {
+        "beef": {
+          "substitute": "portobello mushroom",
+          "alternatives": ["seitan", "tempeh", "black bean patty", "lentil loaf"],
+          "notes": "Portobello works as steak substitute; lentils for ground beef"
+        },
+        "chicken": {
+          "substitute": "halloumi",
+          "alternatives": ["tofu", "paneer", "tempeh", "cauliflower"],
+          "notes": "Halloumi provides similar texture and protein; paneer works in curries"
+        },
+        "pork": {
+          "substitute": "jackfruit",
+          "alternatives": ["tempeh", "seitan", "mushrooms"],
+          "notes": "Jackfruit for pulled preparations; tempeh for sliced"
+        },
+        "bacon": {
+          "substitute": "smoked tempeh",
+          "alternatives": ["smoked cheese", "sun-dried tomatoes", "shiitake mushrooms"],
+          "notes": "Smoked tempeh or marinated shiitakes provide umami"
+        },
+        "fish": {
+          "substitute": "halloumi",
+          "alternatives": ["tofu", "hearts of palm", "artichoke hearts"],
+          "notes": "Season with nori/seaweed for ocean flavor"
+        }
+      }
+    },
+    "gluten_free": {
+      "grains": {
+        "pasta": {
+          "substitute": "rice pasta",
+          "alternatives": ["corn pasta", "quinoa pasta", "chickpea pasta", "lentil pasta", "zucchini noodles"],
+          "notes": "Rice pasta closest to wheat; chickpea pasta adds protein"
+        },
+        "bread": {
+          "substitute": "gluten-free bread",
+          "alternatives": ["rice bread", "corn tortillas", "lettuce wraps", "potato bread"],
+          "notes": "Use certified gluten-free products; toast for better texture"
+        },
+        "flour": {
+          "substitute": "rice flour blend",
+          "alternatives": ["almond flour", "coconut flour", "oat flour (GF certified)", "tapioca flour", "chickpea flour"],
+          "notes": "Rice flour blend works as 1:1 substitute; almond flour adds richness"
+        },
+        "couscous": {
+          "substitute": "quinoa",
+          "alternatives": ["cauliflower rice", "millet", "buckwheat groats"],
+          "notes": "Quinoa has similar texture and cooks quickly"
+        },
+        "bulgur": {
+          "substitute": "quinoa",
+          "alternatives": ["millet", "buckwheat", "brown rice"],
+          "notes": "Quinoa matches bulgur's fluffy texture"
+        },
+        "breadcrumbs": {
+          "substitute": "gluten-free breadcrumbs",
+          "alternatives": ["crushed rice cereal", "almond flour", "ground oats (GF)", "crushed corn flakes"],
+          "notes": "Crushed rice cereal provides similar crunch"
+        }
+      },
+      "sauces": {
+        "soy sauce": {
+          "substitute": "tamari",
+          "alternatives": ["coconut aminos", "liquid aminos"],
+          "notes": "Tamari is traditionally wheat-free; always verify label"
+        },
+        "teriyaki": {
+          "substitute": "gluten-free teriyaki",
+          "alternatives": ["homemade with tamari", "coconut aminos-based"],
+          "notes": "Make fresh with tamari, mirin, and sugar"
+        }
+      }
+    },
+    "dairy_free": {
+      "milk_products": {
+        "milk": {
+          "substitute": "oat milk",
+          "alternatives": ["almond milk", "soy milk", "coconut milk", "rice milk"],
+          "notes": "Oat milk is creamiest for cooking and baking"
+        },
+        "cream": {
+          "substitute": "coconut cream",
+          "alternatives": ["cashew cream", "oat cream", "silken tofu blended"],
+          "notes": "Full-fat coconut milk provides richest results"
+        },
+        "butter": {
+          "substitute": "dairy-free butter",
+          "alternatives": ["coconut oil", "olive oil", "avocado oil"],
+          "notes": "For baking, use solid fats; for cooking, use oils"
+        },
+        "cheese": {
+          "substitute": "nutritional yeast",
+          "alternatives": ["dairy-free cheese", "cashew cheese", "tofu-based cheese"],
+          "notes": "Nutritional yeast for flavor; dairy-free cheese for melting"
+        },
+        "yogurt": {
+          "substitute": "coconut yogurt",
+          "alternatives": ["almond yogurt", "soy yogurt", "oat yogurt"],
+          "notes": "Choose unsweetened for savory applications"
+        },
+        "sour cream": {
+          "substitute": "cashew sour cream",
+          "alternatives": ["coconut cream with lemon", "dairy-free sour cream"],
+          "notes": "Blend soaked cashews with lemon and salt"
+        }
+      }
+    },
+    "kosher": {
+      "non_kosher_items": {
+        "pork": {
+          "substitute": "beef",
+          "alternatives": ["lamb", "chicken", "turkey", "duck"],
+          "notes": "Must use kosher-certified meat"
+        },
+        "bacon": {
+          "substitute": "beef bacon",
+          "alternatives": ["turkey bacon", "lamb bacon", "duck prosciutto"],
+          "notes": "Kosher beef bacon or turkey bacon"
+        },
+        "shellfish": {
+          "substitute": "kosher fish",
+          "alternatives": ["salmon", "tilapia", "cod", "halibut"],
+          "notes": "Fish must have fins and scales to be kosher"
+        },
+        "shrimp": {
+          "substitute": "surimi (imitation)",
+          "alternatives": ["kosher fish", "hearts of palm"],
+          "notes": "Use kosher-certified surimi if available"
+        },
+        "crab": {
+          "substitute": "imitation crab (kosher)",
+          "alternatives": ["artichoke hearts", "hearts of palm"],
+          "notes": "Verify kosher certification on imitation products"
+        }
+      },
+      "dairy_meat_separation": {
+        "rule": "Do not mix dairy and meat in the same dish",
+        "wait_time": "Wait 6 hours between meat and dairy consumption",
+        "pareve_alternatives": "Use pareve (neutral) ingredients to maintain flexibility"
+      }
+    },
+    "halal": {
+      "non_halal_items": {
+        "pork": {
+          "substitute": "beef",
+          "alternatives": ["lamb", "chicken", "goat", "turkey"],
+          "notes": "Must use halal-certified meat"
+        },
+        "bacon": {
+          "substitute": "beef bacon",
+          "alternatives": ["turkey bacon", "lamb bacon"],
+          "notes": "Use halal-certified bacon alternatives"
+        },
+        "ham": {
+          "substitute": "turkey ham",
+          "alternatives": ["smoked beef", "smoked lamb"],
+          "notes": "Halal-certified alternatives available"
+        },
+        "gelatin": {
+          "substitute": "halal gelatin",
+          "alternatives": ["agar agar", "carrageenan", "pectin"],
+          "notes": "Agar agar is vegetable-based and always halal"
+        }
+      },
+      "alcohol_based": {
+        "wine": {
+          "substitute": "grape juice",
+          "alternatives": ["pomegranate juice", "verjuice", "halal cooking wine"],
+          "notes": "For cooking, the alcohol evaporates but purists prefer alternatives"
+        },
+        "beer": {
+          "substitute": "non-alcoholic beer",
+          "alternatives": ["vegetable broth", "ginger ale (for batters)"],
+          "notes": "Use halal-certified non-alcoholic beer if available"
+        },
+        "vanilla extract": {
+          "substitute": "vanilla powder",
+          "alternatives": ["vanilla paste", "vanilla bean", "halal vanilla extract"],
+          "notes": "Vanilla powder or scraped vanilla beans are alcohol-free"
+        }
+      }
+    },
+    "nut_free": {
+      "nuts": {
+        "almonds": {
+          "substitute": "sunflower seeds",
+          "alternatives": ["pumpkin seeds", "hemp seeds", "coconut flakes"],
+          "notes": "Sunflower seeds have similar crunch; toast for enhanced flavor"
+        },
+        "cashews": {
+          "substitute": "sunflower seeds",
+          "alternatives": ["hemp seeds", "coconut cream (for cream)"],
+          "notes": "Sunflower seed butter can replace cashew-based sauces"
+        },
+        "walnuts": {
+          "substitute": "pumpkin seeds",
+          "alternatives": ["sunflower seeds", "hemp seeds"],
+          "notes": "Pumpkin seeds provide similar omega profile"
+        },
+        "peanuts": {
+          "substitute": "sunflower seed butter",
+          "alternatives": ["soy nut butter", "tahini"],
+          "notes": "Sunflower butter has similar consistency to peanut butter"
+        },
+        "pine nuts": {
+          "substitute": "hemp seeds",
+          "alternatives": ["sunflower seeds", "pumpkin seeds"],
+          "notes": "For pesto, hemp seeds work well"
+        }
+      },
+      "nut_milks": {
+        "almond milk": {
+          "substitute": "oat milk",
+          "alternatives": ["soy milk", "rice milk", "coconut milk"],
+          "notes": "Oat milk is safe and creamy"
+        },
+        "cashew cream": {
+          "substitute": "coconut cream",
+          "alternatives": ["sunflower seed cream", "oat cream"],
+          "notes": "Blend sunflower seeds with water for nut-free cream"
+        }
+      }
+    },
+    "low_sodium": {
+      "high_sodium_items": {
+        "salt": {
+          "substitute": "herbs and spices",
+          "alternatives": ["lemon juice", "vinegar", "herb blends", "potassium salt substitute"],
+          "notes": "Use fresh herbs generously; acid brightens food"
+        },
+        "soy sauce": {
+          "substitute": "low-sodium soy sauce",
+          "alternatives": ["coconut aminos", "reduced soy + water"],
+          "notes": "Coconut aminos has 73% less sodium than soy sauce"
+        },
+        "canned vegetables": {
+          "substitute": "no-salt-added canned",
+          "alternatives": ["fresh vegetables", "frozen vegetables", "rinsed canned"],
+          "notes": "Rinsing canned vegetables reduces sodium by 40%"
+        },
+        "broth": {
+          "substitute": "low-sodium broth",
+          "alternatives": ["homemade stock", "water with herbs", "vegetable scraps broth"],
+          "notes": "Make broth from scratch for sodium control"
+        }
+      }
+    },
+    "low_sugar": {
+      "high_sugar_items": {
+        "sugar": {
+          "substitute": "stevia",
+          "alternatives": ["monk fruit sweetener", "erythritol", "allulose", "mashed banana"],
+          "notes": "Stevia is 200-300x sweeter than sugar; use sparingly"
+        },
+        "honey": {
+          "substitute": "sugar-free syrup",
+          "alternatives": ["monk fruit syrup", "stevia drops", "date paste (in moderation)"],
+          "notes": "Date paste provides fiber but still contains natural sugars"
+        },
+        "maple syrup": {
+          "substitute": "sugar-free maple syrup",
+          "alternatives": ["monk fruit maple flavored", "walnut butter (for richness)"],
+          "notes": "Sugar-free versions use sugar alcohols"
+        }
+      }
+    }
+  },
+  "cooking_method_adaptations": {
+    "vegan": {
+      "replace_frying_in_butter": "Use vegetable oil, olive oil, or coconut oil",
+      "replace_egg_wash": "Use plant milk with maple syrup or aquafaba",
+      "replace_cream_sauces": "Use cashew cream, coconut cream, or silken tofu blended",
+      "replace_stock": "Use vegetable stock with miso for depth"
+    },
+    "kosher": {
+      "separate_utensils": "Use separate cookware for meat and dairy",
+      "no_blood_in_meat": "Ensure meat is properly koshered (soaked and salted)",
+      "wait_between_meals": "Plan menu to respect waiting periods between meat and dairy"
+    },
+    "halal": {
+      "no_cross_contamination": "Ensure no contact with non-halal products",
+      "proper_slaughter": "Use zabiha halal meat only",
+      "no_alcohol_in_cooking": "Avoid wine reductions; use alternatives"
+    }
+  },
+  "certification_notes": {
+    "vegan": {
+      "symbols": ["Certified Vegan", "V-Label"],
+      "watch_for": ["hidden dairy (casein, whey)", "hidden eggs (albumen)", "honey", "gelatin", "cochineal/carmine"]
+    },
+    "kosher": {
+      "symbols": ["OU", "OK", "Star-K", "CRC"],
+      "levels": ["Pareve", "Dairy", "Meat"],
+      "special": ["Kosher for Passover requires additional certification"]
+    },
+    "halal": {
+      "symbols": ["ISNA", "IFANCA", "HFA", "MUI"],
+      "watch_for": ["animal-derived ingredients", "alcohol-based extracts", "gelatin"]
+    },
+    "gluten_free": {
+      "symbols": ["GFCO", "Celiac Support Association"],
+      "threshold": "< 20 ppm gluten",
+      "watch_for": ["cross-contamination in facilities", "hidden gluten in sauces", "modified food starch"]
+    }
+  }
+}

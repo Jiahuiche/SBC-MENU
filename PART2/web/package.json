@@ -1,0 +1,16 @@
+{
+  "name": "cbr-menu-system",
+  "version": "1.0.0",
+  "description": "Sistema CBR Profesional para Adaptación de Menús Gastronómicos",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "author": "CBR Menu System",
+  "license": "MIT"
+}

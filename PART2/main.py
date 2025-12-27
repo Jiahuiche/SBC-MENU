@@ -1,11 +1,15 @@
 """
-PIPELINE COMPLETO DE SISTEMA CBR PARA MENÚS
-=============================================
+PIPELINE COMPLETO DE SISTEMA CBR PROFESIONAL PARA MENÚS
+=========================================================
 
 Este script ejecuta automáticamente todos los pasos necesarios:
 1. Captura de preferencias del usuario (intput_cbr.py)
-2. Motor CBR: Retrieve, Reuse, Revise, Retain (CBREngine_Demo.py)
-3. Generación de recomendaciones adaptadas culturalmente
+2. Motor CBR Profesional: Retrieve, Reuse, Revise, Retain (CBREngine_Complete.py)
+3. Generación de recomendaciones con adaptaciones:
+   - Cultural: Ingredientes de diferentes culturas gastronómicas
+   - Dietética: Vegano, vegetariano, kosher, halal, sin gluten, etc.
+   - Estacional: Ingredientes de temporada
+   - Estilo: Tradicional, moderno, gourmet, saludable, etc.
 
 Uso:
     python main.py
@@ -20,17 +24,37 @@ from datetime import datetime
 # ============================================================================
 
 def check_dependencies():
-    """Verifica que todas las librerías estén instaladas"""
+    """Verifica que todas las librerías y bases de datos estén disponibles"""
     print(f"\n{'='*70}")
-    print(f"🔍 VERIFICANDO DEPENDENCIAS")
+    print(f"🔍 VERIFICANDO DEPENDENCIAS Y BASES DE DATOS")
     print(f"{'='*70}\n")
     
-    required_packages = {
-        'json': 'built-in',
-    }
+    # Verificar bases de datos requeridas
+    required_databases = [
+        'cbr_menu_database.json',
+        'cultural_ingredients_database.json',
+        'dietary_substitutions_database.json',
+        'seasonal_ingredients_database.json',
+        'cooking_style_database.json'
+    ]
     
-    print(f"✅ Todas las dependencias básicas están disponibles\n")
-    return True
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    all_present = True
+    
+    for db_file in required_databases:
+        db_path = os.path.join(current_dir, db_file)
+        if os.path.exists(db_path):
+            print(f"   ✅ {db_file}")
+        else:
+            print(f"   ❌ {db_file} - NO ENCONTRADO")
+            all_present = False
+    
+    if all_present:
+        print(f"\n✅ Todas las dependencias están disponibles\n")
+    else:
+        print(f"\n⚠️ Algunas bases de datos faltan\n")
+    
+    return all_present
 
 # ============================================================================
 # PASO 1: CAPTURA DE PREFERENCIAS DEL USUARIO
@@ -64,14 +88,14 @@ def step1_get_user_input():
 # ============================================================================
 
 def step2_run_cbr_engine(user_data):
-    """Paso 2: Ejecutar el motor CBR con las preferencias del usuario"""
+    """Paso 2: Ejecutar el motor CBR profesional con las preferencias del usuario"""
     print(f"\n{'='*70}")
-    print(f"📋 PASO 2: EJECUTANDO MOTOR CBR")
+    print(f"📋 PASO 2: EJECUTANDO MOTOR CBR PROFESIONAL")
     print(f"{'='*70}\n")
     
     try:
-        # Importar el motor CBR
-        from CBREngine_Demo import run_cbr_system
+        # Importar el motor CBR completo (con todas las adaptaciones)
+        from CBREngine_Complete import run_cbr_system
         
         # Convertir datos del usuario al formato esperado por CBR
         user_prefs = convert_user_data_to_cbr_format(user_data)
