@@ -1,0 +1,28 @@
+{
+  "sessions": {
+    "user_1765883724516_d8g1kvtjj": [
+      {
+        "sessionId": "session_1765883725269_kiziug4b4",
+        "searchNumber": 1,
+        "timestamp": "2025-12-16T11:15:40.919Z",
+        "preferences": {
+          "cultura": "China",
+          "estilo_cocina": "Moderno",
+          "season": "Summer",
+          "is_vegan": true,
+          "is_vegetarian": false,
+          "is_gluten_free": false,
+          "is_dairy_free": false,
+          "is_kosher": false,
+          "is_halal": false,
+          "max_price": 400
+        },
+        "result": {
+          "menuId": 10,
+          "menuName": "Menu 10: Watermelon Popsicles with Mint, Basil & Lime",
+          "similarity": 48.9
+        }
+      }
+    ]
+  }
+}
