@@ -149,6 +149,7 @@ def select_menu_for_cluster(meta_case: dict):
             "season": chosen.get("season"),
             "ingredients": chosen.get("ingredients", []),
             "restrictions": chosen.get("restrictions", []),
+            "instructions": chosen.get("instructions", ""),
             "ready_in_minutes": chosen.get("ready_in_minutes"),
             "price_per_serving": chosen.get("price_per_serving"),
             "complexity_score": chosen.get("complexity_score"),
