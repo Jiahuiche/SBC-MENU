@@ -119,7 +119,7 @@ def add_instructions_to_database(json_path, api_key):
 
 if __name__ == "__main__":
     # Configuration
-    JSON_PATH = r'C:\Users\jiaha\Documents\Universidad\SBC\SBC-MENU\PART2\cbr_menu_database.json'
+    JSON_PATH = r'filtered_recipes111.json'
     
     # Get API key from environment variable
     api_key = os.environ.get("API_KEY")

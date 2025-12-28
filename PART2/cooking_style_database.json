@@ -135,8 +135,7 @@
       "avoid": ["productos animales", "imitaciones pobres", "nutrición deficiente"]
     },
     "Saludable": {
-      "description": "Cocina nutritiva sin sacrificar sabor",
-      "philosophy": "Alimento como medicina; placer y salud unidos",
+      "description": "Cocina nutritiva sin sacrificar sabor",     "philosophy": "Alimento como medicina; placer y salud unidos",
       "characteristics": [
         "Balance nutricional",
         "Ingredientes integrales",
