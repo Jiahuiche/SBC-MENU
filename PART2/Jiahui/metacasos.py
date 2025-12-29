@@ -198,9 +198,6 @@ def to_jsonable(x):
 
 meta_cases = []
 for topic_id in sorted(df["topic"].unique()):
-    if topic_id == -1:
-        continue
-
     idxs = df.index[df["topic"] == topic_id].to_list()
     E = embeddings[idxs]
 
