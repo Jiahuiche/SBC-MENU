@@ -141,15 +141,17 @@ def calculate_performance_score(
 def calculate_similarity_to_case_base(
     new_case: Dict[str, Any],
     case_base: List[Dict[str, Any]],
-    similarity_function
+    similarity_function=None
 ) -> float:
     """
     Calculate maximum similarity between new case and existing cases.
+    Uses Jaccard similarity on ingredients if no function provided.
     
     Parameters:
         new_case: The case to evaluate
         case_base: List of existing cases
         similarity_function: Function that takes two cases and returns similarity (0-1)
+                           If None, uses default ingredient-based Jaccard
     
     Returns:
         float: Maximum similarity to any existing case (0-1)
@@ -157,9 +159,158 @@ def calculate_similarity_to_case_base(
     if not case_base:
         return 0.0
     
+    # Use default Jaccard similarity on ingredients if no function provided
+    if similarity_function is None:
+        similarity_function = _jaccard_ingredient_similarity
+    
     similarities = [similarity_function(new_case, existing_case) 
                    for existing_case in case_base]
     return max(similarities) if similarities else 0.0
+
+
+def _jaccard_ingredient_similarity(case1: Dict[str, Any], case2: Dict[str, Any]) -> float:
+    """
+    Similarity function based on USER QUERY (input problem), not menu.
+    Compares the problems being solved, not the solutions.
+    
+    This is more appropriate for CBR case retention:
+    - High similarity = solving the SAME problem = redundant case
+    - Low similarity = solving DIFFERENT problem = valuable diversity
+    
+    Compatible with retrieve_module structure.
+    """
+    # Extract user queries (the input problems) - use P from case base
+    query1 = case1.get('query', case1.get('P', {}))
+    query2 = case2.get('query', case2.get('P', {}))
+    
+    # If no queries, fall back to ingredient comparison
+    if not query1 or not query2:
+        return _fallback_ingredient_similarity(case1, case2)
+    
+    # Extract hard constraints - support both 'hard' and 'restricciones_duras'
+    hard1 = query1.get('hard', query1.get('restricciones_duras', []))
+    hard2 = query2.get('hard', query2.get('restricciones_duras', []))
+    
+    # For restricciones_duras (list format), extract as restrictions
+    if isinstance(hard1, list):
+        hard1_restrictions = set(str(r).lower().strip() for r in hard1)
+        diets1 = hard1_restrictions
+        forbidden1 = hard1_restrictions
+    else:
+        # Required diets
+        diets1 = set(str(d).lower().strip() for d in hard1.get('required_diets', []))
+        # Forbidden ingredients + allergens
+        forbidden1 = set(str(f).lower().strip() for f in hard1.get('forbidden_ingredients', []))
+        forbidden1.update(str(a).lower().strip() for a in hard1.get('allergens', []))
+    
+    if isinstance(hard2, list):
+        hard2_restrictions = set(str(r).lower().strip() for r in hard2)
+        diets2 = hard2_restrictions
+        forbidden2 = hard2_restrictions
+    else:
+        diets2 = set(str(d).lower().strip() for d in hard2.get('required_diets', []))
+        forbidden2 = set(str(f).lower().strip() for f in hard2.get('forbidden_ingredients', []))
+        forbidden2.update(str(a).lower().strip() for a in hard2.get('allergens', []))
+    
+    # Extract soft preferences - support both 'soft' and 'preferencias_blandas'
+    soft1 = query1.get('soft', query1.get('preferencias_blandas', {}))
+    soft2 = query2.get('soft', query2.get('preferencias_blandas', {}))
+    
+    # Cultura preferences
+    cultura1_raw = soft1.get('cultura', [])
+    cultura1 = set([str(cultura1_raw).lower().strip()]) if isinstance(cultura1_raw, str) else set(str(c).lower().strip() for c in cultura1_raw if c)
+    
+    cultura2_raw = soft2.get('cultura', [])
+    cultura2 = set([str(cultura2_raw).lower().strip()]) if isinstance(cultura2_raw, str) else set(str(c).lower().strip() for c in cultura2_raw if c)
+    
+    # Estilo preferences (can be string or list)
+    estilo1_raw = soft1.get('estilo', [])
+    estilo1 = set([str(estilo1_raw).lower().strip()]) if isinstance(estilo1_raw, str) else set(str(e).lower().strip() for e in estilo1_raw if e)
+    
+    estilo2_raw = soft2.get('estilo', [])
+    estilo2 = set([str(estilo2_raw).lower().strip()]) if isinstance(estilo2_raw, str) else set(str(e).lower().strip() for e in estilo2_raw if e)
+    
+    # Season preferences (from evento.estacion_mes)
+    season1 = str(soft1.get('season', '')).lower().strip()
+    if not season1 and isinstance(query1, dict):
+        evento1 = query1.get('evento', {})
+        season1 = str(evento1.get('estacion_mes', '')).lower().strip()
+    
+    season2 = str(soft2.get('season', '')).lower().strip()
+    if not season2 and isinstance(query2, dict):
+        evento2 = query2.get('evento', {})
+        season2 = str(evento2.get('estacion_mes', '')).lower().strip()
+    
+    # Calculate Jaccard similarity for each component
+    similarities = []
+    
+    # Hard constraints similarity (most important)
+    if diets1 or diets2:
+        diet_sim = _jaccard_set(diets1, diets2)
+        similarities.append(diet_sim * 3)  # Weight more heavily
+    
+    if forbidden1 or forbidden2:
+        forbidden_sim = _jaccard_set(forbidden1, forbidden2)
+        similarities.append(forbidden_sim * 2)  # Weight moderately
+    
+    # Soft preferences similarity
+    if cultura1 or cultura2:
+        cultura_sim = _jaccard_set(cultura1, cultura2)
+        similarities.append(cultura_sim)
+    
+    if estilo1 or estilo2:
+        estilo_sim = _jaccard_set(estilo1, estilo2)
+        similarities.append(estilo_sim)
+    
+    # Season similarity (exact match or both empty)
+    if season1 or season2:
+        season_sim = 1.0 if (season1 == season2 or season1 == 'all' or season2 == 'all') else 0.0
+        similarities.append(season_sim)
+    
+    # Return weighted average
+    if similarities:
+        return sum(similarities) / len(similarities)
+    else:
+        # If no query information, fall back to ingredient similarity
+        return _fallback_ingredient_similarity(case1, case2)
+
+
+def _jaccard_set(set1: set, set2: set) -> float:
+    """Calculate Jaccard similarity between two sets"""
+    if not set1 and not set2:
+        return 1.0  # Both empty = similar
+    if not set1 or not set2:
+        return 0.0  # One empty, one not = dissimilar
+    
+    intersection = len(set1 & set2)
+    union = len(set1 | set2)
+    return intersection / union if union > 0 else 0.0
+
+
+def _fallback_ingredient_similarity(case1: Dict[str, Any], case2: Dict[str, Any]) -> float:
+    """
+    Fallback: Compare based on menu ingredients if no query information available.
+    """
+    ing1 = set()
+    ing2 = set()
+    
+    # Extract ingredients from menu
+    menu1 = case1.get('menu', case1.get('S', {}).get('menu', {}))
+    menu2 = case2.get('menu', case2.get('S', {}).get('menu', {}))
+    
+    for course in menu1.values():
+        if isinstance(course, dict):
+            ingredients = course.get('ingredients', [])
+            if isinstance(ingredients, list):
+                ing1.update(ing.lower().strip() for ing in ingredients)
+    
+    for course in menu2.values():
+        if isinstance(course, dict):
+            ingredients = course.get('ingredients', [])
+            if isinstance(ingredients, list):
+                ing2.update(ing.lower().strip() for ing in ingredients)
+    
+    return _jaccard_set(ing1, ing2)
 
 
 def calculate_novelty_score(
@@ -191,10 +342,14 @@ def calculate_novelty_score(
     
     # Calculate ingredient rarity
     if ingredient_frequency is None:
-        # Build frequency from case base
+        # Build frequency from case base (support both 'menu' and 'S.menu')
         ingredient_frequency = {}
         for case in case_base:
+            # Try 'menu' first, then 'S' (solution)
             case_menu = case.get('menu', {})
+            if not case_menu and 'S' in case:
+                case_menu = case['S'].get('menu', {})
+            
             for course_data in case_menu.values():
                 if isinstance(course_data, dict) and 'ingredients' in course_data:
                     ingredients = course_data['ingredients']
@@ -222,40 +377,23 @@ def calculate_trace_score(
 ) -> float:
     """
     Calculate trace score based on adaptation effort.
+    SIMPLIFIED: Only counts the number of operations, no complexity weighting.
     
     Parameters:
         adaptation_steps: List of adaptation operations performed
         max_steps: Maximum expected number of steps (for normalization)
     
     Returns:
-        float: Trace score (0-1), higher means more complex adaptation
+        float: Trace score (0-1), higher means more adaptations
     """
     if not adaptation_steps:
         return 0.0
     
     num_steps = len(adaptation_steps)
     
-    # Count different types of operations (weighted)
-    operation_weights = {
-        'substitute_ingredient': 0.8,
-        'add_ingredient': 0.6,
-        'remove_ingredient': 0.6,
-        'substitute_technique': 0.7,
-        'swap_recipe': 1.0,  # Most complex
-        'adjust_portions': 0.3
-    }
+    # Simple normalization: just count the operations
+    trace = min(num_steps / max_steps, 1.0)
     
-    weighted_complexity = sum(
-        operation_weights.get(step.get('operator', ''), 0.5)
-        for step in adaptation_steps
-    )
-    
-    # Normalize by both count and complexity
-    step_score = min(num_steps / max_steps, 1.0)
-    complexity_score = min(weighted_complexity / (max_steps * 0.7), 1.0)
-    
-    # Combine (favor complexity over just number of steps)
-    trace = 0.4 * step_score + 0.6 * complexity_score
     return float(trace)
 
 
@@ -329,7 +467,11 @@ def evaluate_case_usefulness(
         constraint_satisfaction=constraint_satisfaction
     )
     
-    new_case = {'menu': menu}
+    # Wrap new case with both formats for compatibility
+    new_case = {
+        'menu': menu,
+        'S': {'menu': menu}
+    }
     similarity = calculate_similarity_to_case_base(
         new_case, case_base, similarity_function
     )
