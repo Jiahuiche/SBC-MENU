@@ -1,0 +1,20 @@
+--- TEST 1 ---
+wedding
+yes
+150
+summer
+italian
+vegan
+halal
+
+50
+100
+
+--- TEST 2 ---
+congress
+200
+winter
+mexican
+
+80
+120

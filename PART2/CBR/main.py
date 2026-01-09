@@ -31,18 +31,23 @@ def check_dependencies():
     
     # Verificar bases de datos requeridas
     required_databases = [
-        'cbr_menu_database.json',
-        'cultural_ingredients_database.json',
-        'dietary_substitutions_database.json',
-        'seasonal_ingredients_database.json',
-        'cooking_style_database.json'
+        'cbr_recipes_database.json',
+        'ingredientes_por_contexto.json',
+        'ingredientes_restricciones.json',
+        'ingredients_substitude.json',
+        'meta_cases_cultura_estilo.json',
+        'ontologia_ingredientes_cultura.json',
+        'seasonal_ingredients_database.json'
     ]
     
+    # Obtener el directorio actual (CBR) y subir un nivel para acceder a Bases_Conocimientos
     current_dir = os.path.dirname(os.path.abspath(__file__))
+    parent_dir = os.path.dirname(current_dir)
+    bases_conocimientos_dir = os.path.join(parent_dir, 'Bases_Conocimientos')
     all_present = True
     
     for db_file in required_databases:
-        db_path = os.path.join(current_dir, db_file)
+        db_path = os.path.join(bases_conocimientos_dir, db_file)
         if os.path.exists(db_path):
             print(f"   ✅ {db_file}")
         else:
@@ -60,7 +65,7 @@ def check_dependencies():
 # PASO 1: CAPTURA DE PREFERENCIAS DEL USUARIO
 # ============================================================================
 
-def step1_get_user_input():
+def step1_get_user_input(first_input=None):
     """Paso 1: Capturar las preferencias del usuario"""
     print(f"\n{'='*70}")
     print(f"📋 PASO 1: CAPTURA DE PREFERENCIAS DEL USUARIO")
@@ -69,10 +74,10 @@ def step1_get_user_input():
     try:
         # Importar el módulo de input
         sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-        from intput_cbr import get_user_restrictions
+        from input_module import get_user_restrictions
         
         # Obtener preferencias
-        user_data = get_user_restrictions()
+        user_data = get_user_restrictions(first_input=first_input)
         
         print("\n✅ Preferencias capturadas exitosamente\n")
         return user_data
@@ -94,14 +99,10 @@ def step2_run_cbr_engine(user_data):
     print(f"{'='*70}\n")
     
     try:
-        # Importar el motor CBR completo (con todas las adaptaciones)
-        from CBREngine_Complete import run_cbr_system
-        
         # Convertir datos del usuario al formato esperado por CBR
         user_prefs = convert_user_data_to_cbr_format(user_data)
         
-        # Ejecutar sistema CBR
-        adapted_menu, is_valid = run_cbr_system(user_prefs)
+        # TODO
         
         print("\n✅ Motor CBR ejecutado exitosamente\n")
         return adapted_menu, is_valid
@@ -229,7 +230,7 @@ def generate_summary(adapted_menu, is_valid):
 # PIPELINE PRINCIPAL
 # ============================================================================
 
-def main():
+def main(first_input=None):
     """Ejecuta el pipeline completo del sistema CBR"""
     
     start_time = time.time()
@@ -245,7 +246,7 @@ def main():
         return
     
     # Paso 1: Capturar preferencias del usuario
-    user_data = step1_get_user_input()
+    user_data = step1_get_user_input(first_input=first_input)
     if not user_data:
         print("\n❌ Pipeline abortado en Paso 1\n")
         return
@@ -267,8 +268,26 @@ def main():
     print(f"⏱️  Tiempo total de ejecución: {minutes}m {seconds}s\n")
 
 if __name__ == "__main__":
+    # Detectamos si la entrada es un archivo redirigido (ej. python script.py < test.txt)
+    is_redirected = not sys.stdin.isatty()
     try:
-        main()
+        if is_redirected:
+            # MODO TEST: Bucle para procesar múltiples casos en el archivo
+            while True:
+                linea = sys.stdin.readline()
+                if not linea: break # Fin del archivo
+                
+                linea = linea.strip()
+                # Saltamos líneas vacías, comentarios o separadores como ---
+                if not linea or linea.startswith(('-', '#')):
+                    print(linea)
+                    continue
+                
+                # Ejecutamos la función pasando la línea como el tipo de evento
+                main(first_input=linea.lower())
+        else:
+            # MODO MANUAL: Funciona como siempre
+            main()
     except KeyboardInterrupt:
         print("\n\n⚠️ Pipeline interrumpido por el usuario\n")
         sys.exit(1)
