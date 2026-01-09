@@ -104,11 +104,20 @@ class CBRValidator:
         """
         violations = []
         
-        # Extract hard constraints
+        # Extract hard constraints - support both formats
         hard = user_query.get('hard', {})
-        forbidden = set(hard.get('forbidden_ingredients', []))
-        required_diets = set(hard.get('required_diets', []))
-        allergens = set(hard.get('allergens', []))
+        restricciones = user_query.get('restricciones_duras', [])
+        
+        # Handle restricciones_duras (list format from case base)
+        if isinstance(restricciones, list) and restricciones:
+            forbidden = set(str(r).lower().strip() for r in restricciones)
+            required_diets = forbidden  # Restrictions are both forbidden and dietary
+            allergens = forbidden
+        else:
+            # Handle 'hard' dict format
+            forbidden = set(hard.get('forbidden_ingredients', []))
+            required_diets = set(hard.get('required_diets', []))
+            allergens = set(hard.get('allergens', []))
         
         # Check each course
         for course_name, course_data in menu.items():
@@ -165,10 +174,22 @@ class CBRValidator:
         Returns:
             float: Satisfaction score (0-1)
         """
-        soft = user_query.get('soft', {})
-        preferred_cultura = set(soft.get('cultura', []))
-        preferred_estilo = set(soft.get('estilo', []))
+        # Extract soft preferences - support both formats
+        soft = user_query.get('soft', user_query.get('preferencias_blandas', {}))
+        
+        # Handle cultura (can be string or list)
+        cultura_raw = soft.get('cultura', [])
+        preferred_cultura = set([str(cultura_raw).lower()]) if isinstance(cultura_raw, str) else set(str(c).lower() for c in cultura_raw if c)
+        
+        # Handle estilo (can be string or list)
+        estilo_raw = soft.get('estilo', [])
+        preferred_estilo = set([str(estilo_raw).lower()]) if isinstance(estilo_raw, str) else set(str(e).lower() for e in estilo_raw if e)
+        
+        # Season from evento.estacion_mes or soft.season
         preferred_season = soft.get('season', '')
+        if not preferred_season and 'evento' in user_query:
+            preferred_season = user_query['evento'].get('estacion_mes', '')
+        
         preferred_ingredients = set(soft.get('preferred_ingredients', []))
         
         scores = []
@@ -281,10 +302,12 @@ class CBRValidator:
         adaptation_steps: List[Dict[str, Any]],
         revision_results: Dict[str, Any],
         user_feedback: Optional[float] = None,
-        similarity_function = None
+        similarity_function = None,
+        save_failed_cases: bool = True
     ) -> Dict[str, Any]:
         """
         RETAIN phase: Decide whether to save the case in the case base.
+        NOW SAVES FAILED CASES for learning from mistakes.
         
         Parameters:
             adapted_menu: The adapted menu
@@ -292,7 +315,8 @@ class CBRValidator:
             adaptation_steps: List of adaptation operations
             revision_results: Results from the revise phase
             user_feedback: Optional user satisfaction rating
-            similarity_function: Function to calculate similarity between cases
+            similarity_function: Function to calculate similarity (uses Jaccard if None)
+            save_failed_cases: Whether to save cases that failed validation
         
         Returns:
             dict: Retention decision and detailed metrics
@@ -301,16 +325,12 @@ class CBRValidator:
         print("💾 RETAIN PHASE: Evaluating case usefulness")
         print("="*70)
         
-        # Use simple similarity if none provided
-        if similarity_function is None:
-            similarity_function = self._simple_similarity
-        
-        # Evaluate usefulness
+        # Evaluate usefulness (similarity_function is optional now)
         evaluation = evaluate_case_usefulness(
             menu=adapted_menu,
             adaptation_steps=adaptation_steps,
             case_base=self.case_base,
-            similarity_function=similarity_function,
+            similarity_function=similarity_function,  # Will use default if None
             user_feedback=user_feedback,
             constraint_satisfaction=revision_results['constraint_satisfaction']
         )
@@ -323,11 +343,26 @@ class CBRValidator:
         print(f"   Trace:          {evaluation['trace']:.3f}")
         print(f"   → Usefulness:   {evaluation['usefulness']:.3f}")
         
+        # Check if case is valid
+        is_valid = revision_results['is_valid']
+        
         # Make retention decision
         should_save = evaluation['should_retain']
         
+        # SPECIAL HANDLING FOR FAILED CASES
+        if not is_valid and save_failed_cases:
+            print(f"\n⚠️ FAILED CASE DETECTION")
+            print(f"   Case failed validation but will be saved for learning")
+            should_save = True  # Always save failed cases
+            evaluation['saved_as_failed'] = True
+        else:
+            evaluation['saved_as_failed'] = False
+        
         if should_save:
-            print(f"\n✅ DECISION: RETAIN CASE")
+            if is_valid:
+                print(f"\n✅ DECISION: RETAIN CASE (Successful)")
+            else:
+                print(f"\n⚠️ DECISION: RETAIN CASE (Failed - for learning)")
             print(f"   {evaluation['rationale']}")
             
             # Create new case
@@ -368,11 +403,40 @@ class CBRValidator:
         # Generate unique case ID
         case_id = f"case_{len(self.case_base) + 1}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         
+        # Determine if this is a failed case
+        is_failed = not revision_results['is_valid']
+        
+        # Create case using P, S, U, T structure from case base
         return {
             'case_id': case_id,
+            # P: Problem/Query (the input)
+            'P': user_query,
+            # S: Solution (the adapted menu)
+            'S': {
+                'menu': menu,
+                'menu_stats': {}
+            },
+            # U: Utility score
+            'U': {
+                'utility_score': evaluation['usefulness'],
+                'components': {
+                    'performance': evaluation['performance'],
+                    'novelty': evaluation['novelty'],
+                    'trace': evaluation['trace'],
+                    'similarity': evaluation['similarity']
+                },
+                'note': 'Calculated by case usefulness system'
+            },
+            # T: Trace (construction and adaptation)
+            'T': {
+                'construction_trace': [],
+                'adaptation_steps': adaptation_steps
+            },
+            # Keep legacy fields for backward compatibility
             'menu': menu,
             'query': user_query,
             'adaptation_steps': adaptation_steps,
+            'is_failed_case': is_failed,
             'metadata': {
                 'created_at': datetime.now().isoformat(),
                 'usefulness': evaluation['usefulness'],
@@ -382,29 +446,12 @@ class CBRValidator:
                 'similarity': evaluation['similarity'],
                 'adaptation_count': len(adaptation_steps),
                 'constraint_satisfaction': revision_results['constraint_satisfaction'],
-                'soft_satisfaction': revision_results['soft_satisfaction']
+                'soft_satisfaction': revision_results['soft_satisfaction'],
+                'is_valid': revision_results['is_valid'],
+                'saved_as_failed': evaluation.get('saved_as_failed', False),
+                'violations': revision_results.get('violations', [])
             }
         }
-    
-    def _simple_similarity(self, case1: Dict[str, Any], case2: Dict[str, Any]) -> float:
-        """Simple Jaccard similarity on ingredients"""
-        ing1 = set()
-        ing2 = set()
-        
-        for course in case1.get('menu', {}).values():
-            if isinstance(course, dict):
-                ing1.update(ing.lower().strip() for ing in course.get('ingredients', []))
-        
-        for course in case2.get('menu', {}).values():
-            if isinstance(course, dict):
-                ing2.update(ing.lower().strip() for ing in course.get('ingredients', []))
-        
-        if not ing1 or not ing2:
-            return 0.0
-        
-        intersection = len(ing1 & ing2)
-        union = len(ing1 | ing2)
-        return intersection / union if union > 0 else 0.0
     
     def _prune_case_base(self):
         """Remove least useful cases when case base is too large"""
@@ -424,24 +471,49 @@ class CBRValidator:
         print(f"   New case base size: {len(self.case_base)}")
     
     def get_case_base_statistics(self) -> Dict[str, Any]:
-        """Get statistics about the case base"""
+        """Get statistics about the case base, including failed cases"""
         if not self.case_base:
             return {'size': 0, 'message': 'Case base is empty'}
         
-        usefulness_scores = [
-            c.get('metadata', {}).get('usefulness', 0)
-            for c in self.case_base
+        # Extract usefulness from U.utility_score or metadata
+        usefulness_scores = []
+        for c in self.case_base:
+            if 'U' in c:
+                usefulness_scores.append(c['U'].get('utility_score', 0))
+            else:
+                usefulness_scores.append(c.get('metadata', {}).get('usefulness', 0))
+        
+        usefulness_scores = [s for s in usefulness_scores if s > 0]  # Filter out zeros
+        
+        failed_cases = [
+            c for c in self.case_base 
+            if c.get('is_failed_case', False) or c.get('metadata', {}).get('saved_as_failed', False)
         ]
+        
+        successful_cases = [
+            c for c in self.case_base 
+            if not (c.get('is_failed_case', False) or c.get('metadata', {}).get('saved_as_failed', False))
+        ]
+        
+        # Count adaptations from T.adaptation_steps or metadata
+        cases_with_adaptations = 0
+        for c in self.case_base:
+            if 'T' in c:
+                adaptation_count = len(c['T'].get('adaptation_steps', []))
+            else:
+                adaptation_count = c.get('metadata', {}).get('adaptation_count', 0)
+            if adaptation_count > 0:
+                cases_with_adaptations += 1
         
         return {
             'size': len(self.case_base),
-            'avg_usefulness': sum(usefulness_scores) / len(usefulness_scores),
-            'min_usefulness': min(usefulness_scores),
-            'max_usefulness': max(usefulness_scores),
-            'cases_with_adaptations': sum(
-                1 for c in self.case_base 
-                if c.get('metadata', {}).get('adaptation_count', 0) > 0
-            )
+            'successful_cases': len(successful_cases),
+            'failed_cases': len(failed_cases),
+            'avg_usefulness': sum(usefulness_scores) / len(usefulness_scores) if usefulness_scores else 0,
+            'min_usefulness': min(usefulness_scores) if usefulness_scores else 0,
+            'max_usefulness': max(usefulness_scores) if usefulness_scores else 0,
+            'cases_with_adaptations': cases_with_adaptations,
+            'failed_case_percentage': (len(failed_cases) / len(self.case_base) * 100) if self.case_base else 0
         }
 
 
@@ -486,8 +558,9 @@ def example_validation_workflow():
         }
     }
     
-    # Example user query
+    # Example user query (supports both formats)
     user_query = {
+        # Old format (still supported)
         'hard': {
             'required_diets': ['vegan'],
             'forbidden_ingredients': ['meat', 'dairy'],
@@ -498,6 +571,15 @@ def example_validation_workflow():
             'estilo': ['healthy', 'modern'],
             'season': 'summer',
             'preferred_ingredients': ['quinoa', 'avocado', 'vegetables']
+        },
+        # New format (P structure from case base)
+        'restricciones_duras': [],  # or list of restrictions
+        'preferencias_blandas': {
+            'cultura': 'Mediterranea',
+            'estilo': 'Moderno'
+        },
+        'evento': {
+            'estacion_mes': 'Summer'
         }
     }
     
