@@ -204,8 +204,7 @@
                         "dairy free"
                     ],
                     "instructions": "<ol><li>Combine all of the above ingredients in a bowl.</li><li>Combine the ingredients for the dressing and add to the salsa.</li><li>Serve chilled.</li></ol>",
-                    "structured_instructions": {
-                        "steps": [
+                    "structured_instructions": [
                             {
                                 "order": 1,
                                 "preparation_action": "combine",
