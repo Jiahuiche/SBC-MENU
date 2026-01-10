@@ -26,12 +26,13 @@ import copy
 import time
 import requests
 import re
+from time import sleep
 
 # -------------------------------------------------
 # CONFIGURATION
 # -------------------------------------------------
-INPUT_JSON = r'C:\Users\jiaha\Documents\Universidad\SBC\SBC-MENU\PART2\cbr_menu_database.json'
-OUTPUT_JSON = r'C:\Users\jiaha\Documents\Universidad\SBC\SBC-MENU\PART2\cbr_dataset_estructurado.json'
+INPUT_JSON = r'C:\Users\jiaha\Documents\Universidad\SBC\SBC-MENU\PART2\Otras_Bases\cbr_dataset_estructurado.json'
+OUTPUT_JSON = r'C:\Users\jiaha\Documents\Universidad\SBC\SBC-MENU\PART2\Otras_Bases\cbr_dataset_estructurado.json'
 
 HF_API_KEY = os.environ.get("HUGGINGFACE_API_KEY")
 HF_MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
@@ -69,7 +70,7 @@ def parse_llm_response(content):
 # -------------------------------------------------
 # LLM CALL
 # -------------------------------------------------
-def structure_with_llm(raw_instructions, ingredients=""):
+def structure_with_llm(raw_instructions, ingredients="", max_retries=3):
     if not HF_API_KEY:
         return {"error": "HUGGINGFACE_API_KEY not set"}
 
@@ -105,22 +106,52 @@ Take into account that the following is all the ingredients used in the recipe (
         "max_new_tokens": 1000
     }
 
-    try:
-        response = requests.post(HF_CHAT_URL, headers=HEADERS, json=payload, timeout=120)
-        if response.status_code != 200:
-            return {"error": f"HTTP {response.status_code}", "details": response.text}
+    # Retry logic with exponential backoff
+    for attempt in range(max_retries):
+        try:
+            print(f"    📡 API call (attempt {attempt + 1}/{max_retries})...", end="", flush=True)
+            response = requests.post(HF_CHAT_URL, headers=HEADERS, json=payload, timeout=120)
+            
+            if response.status_code == 200:
+                print(" ✓")
+                result = response.json()
+                content = result["choices"][0]["message"]["content"]
+                return parse_llm_response(content)
+            elif response.status_code in [502, 503, 504]:
+                # Server errors - retry with backoff
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt  # 1s, 2s, 4s...
+                    print(f" ⚠️  HTTP {response.status_code}, retrying in {wait_time}s...")
+                    sleep(wait_time)
+                else:
+                    print(f" ✗")
+                    return {"error": f"HTTP {response.status_code}", "details": response.text[:500]}
+            else:
+                # Other errors - don't retry
+                print(f" ✗")
+                return {"error": f"HTTP {response.status_code}", "details": response.text[:500]}
 
-        result = response.json()
-        content = result["choices"][0]["message"]["content"]
-        return parse_llm_response(content)
-
-    except Exception as e:
-        return {"error": "llm_call_failed", "details": str(e)}
+        except requests.Timeout:
+            if attempt < max_retries - 1:
+                wait_time = 2 ** attempt
+                print(f" ⚠️  Timeout, retrying in {wait_time}s...")
+                sleep(wait_time)
+            else:
+                print(f" ✗")
+                return {"error": "llm_call_failed", "details": "Request timeout after all retries"}
+        except Exception as e:
+            if attempt < max_retries - 1:
+                wait_time = 2 ** attempt
+                print(f" ⚠️  Error ({str(e)[:50]}), retrying in {wait_time}s...")
+                sleep(wait_time)
+            else:
+                print(f" ✗")
+                return {"error": "llm_call_failed", "details": str(e)[:500]}
 
 # -------------------------------------------------
 # MAIN PROCESS
 # -------------------------------------------------
-def structure_dataset(input_path, output_path):
+def structure_dataset(input_path, output_path, interval=None):
     print(f"📖 Loading dataset: {input_path}")
 
     with open(input_path, "r", encoding="utf-8") as f:
@@ -131,7 +162,10 @@ def structure_dataset(input_path, output_path):
 
     for menu_idx, menu in enumerate(structured_db.get("menus", []), 1):
         print(f"\n🍽️  Menu {menu_idx}: {menu.get('menu_name', 'Unnamed menu')}")
-
+        start, end = interval
+        if interval and (menu_idx < start or menu_idx >= end):
+            print("  ⏭️  Skipping (outside interval)")
+            continue
         for course_type in ["starter", "main", "dessert"]:
             course = menu.get("courses", {}).get(course_type)
 
@@ -160,4 +194,4 @@ def structure_dataset(input_path, output_path):
 # ENTRY POINT
 # -------------------------------------------------
 if __name__ == "__main__":
-    structure_dataset(INPUT_JSON, OUTPUT_JSON)
+    structure_dataset(INPUT_JSON, OUTPUT_JSON,interval=(9,10))
