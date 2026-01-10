@@ -3060,7 +3060,7 @@
         },
         "Legumbres frescas": {
           "__ingredients": [
-            "peanutsn"
+            "peanut"
           ]
         },
         "Chiles y pimientos": {
@@ -6462,7 +6462,6 @@
             "roasted-cranberry-sauce",
             "salsa",
             "sauce",
-            "soy-sauce",
             "spaghetti-sauce",
             "steak-sauce",
             "tabasco-sauce",
@@ -6848,7 +6847,6 @@
           "eggplant",
           "garden-tomato",
           "grape-tomato",
-          "jalapeno",
           "kale",
           "leek",
           "leek-confit",
