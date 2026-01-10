@@ -17,8 +17,7 @@ from typing import Dict, List, Tuple, Optional, Set
 # ============================================================================
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE_DIR = os.path.join(SCRIPT_DIR, '..')
-
+BASE_DIR = os.path.dirname(SCRIPT_DIR)
 # Bases de conocimiento
 RESTRICCIONES_FILE = os.path.join(BASE_DIR, 'Bases_Conocimientos', 'ingredientes_por_restriccion.json')
 CONTEXTO_FILE = os.path.join(BASE_DIR, 'Bases_Conocimientos', 'ingredientes_por_contexto.json')
@@ -927,7 +926,7 @@ def main():
     
     # 2. Cargar base de casos
     print("\nPaso 2: Cargando bases de datos...")
-    case_base = load_case_base('../Base_Casos/casos_cbr.json')
+    case_base = load_case_base(os.path.join(BASE_DIR, 'Base_Casos', 'casos_cbr.json'))
     restricciones_db, contexto_db, ontologia_db, pairing_db = load_all_knowledge_bases()
     
     if not case_base:
@@ -970,4 +969,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    print(BASE_DIR)
+    adapt_result = main()
+    print("Adaptation Result:", adapt_result)
