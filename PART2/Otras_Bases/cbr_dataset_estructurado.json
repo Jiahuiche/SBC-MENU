@@ -204,8 +204,7 @@
                         "dairy free"
                     ],
                     "instructions": "<ol><li>Combine all of the above ingredients in a bowl.</li><li>Combine the ingredients for the dressing and add to the salsa.</li><li>Serve chilled.</li></ol>",
-                    "structured_instructions": {
-                        "steps": [
+                    "structured_instructions": [
                             {
                                 "order": 1,
                                 "preparation_action": "combine",
@@ -253,7 +252,6 @@
                                 "time": null
                             }
                         ]
-                    }
                 },
                 "dessert": {
                     "recipe_id": 655202,
@@ -1838,8 +1836,7 @@
                         "dairy free"
                     ],
                     "instructions": "1. Heat the oil in a large pan, add the potato, onion and garlic and saut, covered, for 10 minutes.\n2. Add the carrots, leek  and celery and saut for 5 minutes.\n3. Add broad beans and vegetable stock. Cover and simmer gently for 10 minutes, until the potatoes and broad beans are soft.\n4. Add parsley and salt  and pepper if needed.\nServe with crusty bread.",
-                    "structured_instructions": {
-                        "steps": [
+                    "structured_instructions": [
                             {
                                 "order": 1,
                                 "preparation_action": "heat",
@@ -1966,7 +1963,7 @@
                                 "time": null
                             }
                         ]
-                    }
+                    
                 },
                 "dessert": {
                     "recipe_id": 655515,
@@ -3254,8 +3251,7 @@
                         "vegetarian"
                     ],
                     "instructions": "In a pot, boil milk, cocoa, butter, and brown sugar for two minutes.\nRemove from heat and add vanilla.\nAdd oats and coconut. Mix well!\nWith a spoon, scoop out mixture onto wax paper and set aside to cool.\nGarnish with a dollop of peanut butter to your hearts desire. The sloppier, the better.",
-                    "structured_instructions": {
-                        "steps": [
+                    "structured_instructions": [
                             {
                                 "order": 1,
                                 "preparation_action": "boil",
@@ -3341,7 +3337,6 @@
                                 "time": null
                             }
                         ]
-                    }
                 }
             },
             "features": {
@@ -5072,8 +5067,7 @@
                         "dairy free"
                     ],
                     "instructions": "<ol><li>Combine basil, lime juice, mint leaves, salt, and cubed watermelon in a blender.  Blend at highest speed until liquefied.</li><li>Pour into popsicle molds or ice cube tray and freeze for a minimum of 4 hours.</li><li>Serve.</li></ol>",
-                    "structured_instructions": {
-                        "steps": [
+                    "structured_instructions": [
                             {
                                 "order": 1,
                                 "preparation_action": "combine",
@@ -5115,7 +5109,7 @@
                                 "time": null
                             }
                         ]
-                    }
+                    
                 },
                 "dessert": {
                     "recipe_id": 657341,
