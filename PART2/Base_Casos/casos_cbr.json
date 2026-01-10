@@ -418,9 +418,9 @@
       },
       "utilidad": 1,
       "traza": {
-        "operadores_aplicados": [],
-        "elementos_afectados": [],
-        "ingredientes_nuevos": []
+        "sustitucion": [],
+        "eliminacion": [],
+        "adicion": []
       }
     },
     {
@@ -854,9 +854,9 @@
       },
       "utilidad": 1,
       "traza": {
-        "operadores_aplicados": [],
-        "elementos_afectados": [],
-        "ingredientes_nuevos": []
+        "sustitucion": [],
+        "eliminacion": [],
+        "adicion": []
       }
     },
     {
@@ -1376,9 +1376,9 @@
       },
       "utilidad": 1,
       "traza": {
-        "operadores_aplicados": [],
-        "elementos_afectados": [],
-        "ingredientes_nuevos": []
+        "sustitucion": [],
+        "eliminacion": [],
+        "adicion": []
       }
     },
     {
@@ -1722,9 +1722,9 @@
       },
       "utilidad": 1,
       "traza": {
-        "operadores_aplicados": [],
-        "elementos_afectados": [],
-        "ingredientes_nuevos": []
+        "sustitucion": [],
+        "eliminacion": [],
+        "adicion": []
       }
     },
     {
@@ -2139,9 +2139,9 @@
       },
       "utilidad": 1,
       "traza": {
-        "operadores_aplicados": [],
-        "elementos_afectados": [],
-        "ingredientes_nuevos": []
+        "sustitucion": [],
+        "eliminacion": [],
+        "adicion": []
       }
     },
     {
@@ -2866,9 +2866,9 @@
       },
       "utilidad": 1,
       "traza": {
-        "operadores_aplicados": [],
-        "elementos_afectados": [],
-        "ingredientes_nuevos": []
+        "sustitucion": [],
+        "eliminacion": [],
+        "adicion": []
       }
     },
     {
@@ -3468,9 +3468,9 @@
       },
       "utilidad": 1,
       "traza": {
-        "operadores_aplicados": [],
-        "elementos_afectados": [],
-        "ingredientes_nuevos": []
+        "sustitucion": [],
+        "eliminacion": [],
+        "adicion": []
       }
     },
     {
@@ -4257,9 +4257,9 @@
       },
       "utilidad": 1,
       "traza": {
-        "operadores_aplicados": [],
-        "elementos_afectados": [],
-        "ingredientes_nuevos": []
+        "sustitucion": [],
+        "eliminacion": [],
+        "adicion": []
       }
     },
     {
@@ -5038,9 +5038,9 @@
       },
       "utilidad": 1,
       "traza": {
-        "operadores_aplicados": [],
-        "elementos_afectados": [],
-        "ingredientes_nuevos": []
+        "sustitucion": [],
+        "eliminacion": [],
+        "adicion": []
       }
     },
     {
@@ -5732,9 +5732,9 @@
       },
       "utilidad": 1,
       "traza": {
-        "operadores_aplicados": [],
-        "elementos_afectados": [],
-        "ingredientes_nuevos": []
+        "sustitucion": [],
+        "eliminacion": [],
+        "adicion": []
       }
     }
   ]
