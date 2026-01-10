@@ -1,0 +1,527 @@
+{
+  "add and mix": [
+    "add",
+    "add and combine",
+    "combine"
+  ],
+  "add and spread": [
+    "add",
+    "add and mix",
+    "add and scrape",
+    "spread"
+  ],
+  "add and work": [
+    "add",
+    "add and combine",
+    "add and mix",
+    "add and scrape",
+    "add and spread",
+    "combine",
+    "spread"
+  ],
+  "add and scrape": [
+    "add and combine",
+    "add and mix",
+    "combine"
+  ],
+  "mix": [
+    "add and scrape",
+    "add and spread",
+    "add and work",
+    "blend",
+    "fold",
+    "mix in",
+    "mix with",
+    "pulse",
+    "puree",
+    "shake",
+    "spread",
+    "stir",
+    "toss",
+    "toss in"
+  ],
+  "mix in": [
+    "add and spread",
+    "add and work",
+    "blend",
+    "fold",
+    "mix",
+    "mix with",
+    "pulse",
+    "puree",
+    "shake",
+    "stir",
+    "toss",
+    "toss in"
+  ],
+  "combine": [
+    "add and work",
+    "fold",
+    "mix with",
+    "shake",
+    "stir",
+    "toss",
+    "toss in"
+  ],
+  "let": [
+    "allow",
+    "leave"
+  ],
+  "leave": [
+    "allow",
+    "let"
+  ],
+  "let cool": [
+    "allow",
+    "cool",
+    "leave",
+    "let",
+    "refrigerate"
+  ],
+  "roast": [
+    "bake",
+    "char",
+    "cook",
+    "saute"
+  ],
+  "cook": [
+    "bake",
+    "boil",
+    "char",
+    "reduce",
+    "roast",
+    "saute",
+    "simmer"
+  ],
+  "re-heat": [
+    "bake",
+    "boil",
+    "bring",
+    "cook",
+    "heat",
+    "preheat",
+    "reduce",
+    "reduce heat",
+    "roast",
+    "simmer",
+    "warm"
+  ],
+  "drizzle": [
+    "baste",
+    "brush",
+    "spray"
+  ],
+  "spray": [
+    "baste",
+    "brush",
+    "coat",
+    "drizzle",
+    "garnish",
+    "grease",
+    "grease and flour",
+    "pour",
+    "season",
+    "serve"
+  ],
+  "brush": [
+    "baste",
+    "drizzle",
+    "spray"
+  ],
+  "whip": [
+    "beat",
+    "sift or whisk",
+    "whisk"
+  ],
+  "whisk": [
+    "beat",
+    "sift or whisk",
+    "whip"
+  ],
+  "sift or whisk": [
+    "beat",
+    "whip",
+    "whisk"
+  ],
+  "pulse": [
+    "blend",
+    "mix",
+    "mix in"
+  ],
+  "reduce heat": [
+    "boil",
+    "bring",
+    "heat",
+    "preheat",
+    "re-heat",
+    "simmer",
+    "warm"
+  ],
+  "heat": [
+    "bring",
+    "preheat",
+    "re-heat",
+    "reduce heat",
+    "warm"
+  ],
+  "baste": [
+    "brush",
+    "drizzle",
+    "spray"
+  ],
+  "saute": [
+    "char"
+  ],
+  "test": [
+    "check",
+    "taste"
+  ],
+  "taste": [
+    "check",
+    "test"
+  ],
+  "look": [
+    "check",
+    "taste",
+    "test"
+  ],
+  "cut": [
+    "chop",
+    "core",
+    "crumble",
+    "cut up",
+    "dice",
+    "divide",
+    "peel",
+    "press",
+    "pull",
+    "roll",
+    "scoop",
+    "score",
+    "seed",
+    "slice",
+    "scoop up",
+    "squeeze",
+    "tear"
+  ],
+  "cut up": [
+    "chop",
+    "core",
+    "crumble",
+    "cut",
+    "dice",
+    "divide",
+    "peel",
+    "press",
+    "pull",
+    "roll",
+    "scoop",
+    "score",
+    "seed",
+    "slice",
+    "scoop up",
+    "squeeze",
+    "tear"
+  ],
+  "dice": [
+    "chop",
+    "core",
+    "crumble",
+    "cut",
+    "cut up",
+    "scoop",
+    "score",
+    "seed",
+    "slice",
+    "scoop up"
+  ],
+  "grease and flour": [
+    "coat",
+    "grease"
+  ],
+  "grease": [
+    "coat",
+    "grease and flour"
+  ],
+  "bake": [
+    "cook",
+    "roast"
+  ],
+  "refrigerate": [
+    "cool",
+    "keep",
+    "let cool",
+    "remove and let cool",
+    "store",
+    "transfer and cool",
+    "turn off and let cool"
+  ],
+  "store": [
+    "cool",
+    "keep",
+    "let cool",
+    "refrigerate",
+    "remove and let cool",
+    "transfer and cool",
+    "turn off and let cool"
+  ],
+  "line": [
+    "cover"
+  ],
+  "place": [
+    "cover",
+    "lay",
+    "line",
+    "put"
+  ],
+  "put": [
+    "cover",
+    "lay",
+    "line",
+    "place",
+    "transfer"
+  ],
+  "chop": [
+    "cut",
+    "cut up",
+    "dice"
+  ],
+  "soak": [
+    "dip"
+  ],
+  "immerse": [
+    "dip",
+    "soak"
+  ],
+  "submerge": [
+    "dip",
+    "soak"
+  ],
+  "remove": [
+    "discard",
+    "drain",
+    "open",
+    "strain and pour"
+  ],
+  "take": [
+    "discard",
+    "gather",
+    "have",
+    "open",
+    "remove",
+    "remove and lift",
+    "transfer"
+  ],
+  "throw away": [
+    "discard",
+    "remove",
+    "remove and lift"
+  ],
+  "slice": [
+    "divide",
+    "peel",
+    "press",
+    "roll"
+  ],
+  "strain and pour": [
+    "drain",
+    "pour"
+  ],
+  "discard": [
+    "drain",
+    "open",
+    "remove",
+    "remove and lift",
+    "strain and pour"
+  ],
+  "turn": [
+    "flip",
+    "invert"
+  ],
+  "turn off and let cool": [
+    "flip",
+    "invert",
+    "turn"
+  ],
+  "invert": [
+    "flip",
+    "turn"
+  ],
+  "top": [
+    "garnish",
+    "season",
+    "serve",
+    "sprinkle"
+  ],
+  "sprinkle": [
+    "garnish",
+    "season",
+    "serve",
+    "top"
+  ],
+  "collect": [
+    "gather"
+  ],
+  "get": [
+    "gather",
+    "have",
+    "take"
+  ],
+  "prepare": [
+    "get ready",
+    "make",
+    "measure and add",
+    "start"
+  ],
+  "measure and add": [
+    "get ready"
+  ],
+  "start": [
+    "get ready",
+    "make",
+    "measure and add",
+    "prepare"
+  ],
+  "coat": [
+    "grease",
+    "grease and flour"
+  ],
+  "obtain": [
+    "have",
+    "take"
+  ],
+  "bring": [
+    "heat",
+    "re-heat",
+    "reduce heat"
+  ],
+  "flip": [
+    "invert",
+    "turn"
+  ],
+  "freeze": [
+    "keep",
+    "store"
+  ],
+  "put down": [
+    "lay",
+    "place",
+    "put"
+  ],
+  "allow": [
+    "leave",
+    "let"
+  ],
+  "cool": [
+    "let cool",
+    "refrigerate",
+    "remove and let cool",
+    "transfer and cool",
+    "turn off and let cool"
+  ],
+  "set": [
+    "let set",
+    "let sit"
+  ],
+  "set aside": [
+    "let set",
+    "let sit",
+    "reserve",
+    "set"
+  ],
+  "let sit": [
+    "let set",
+    "reserve",
+    "set",
+    "set aside"
+  ],
+  "let set": [
+    "let sit",
+    "reserve",
+    "set",
+    "set aside"
+  ],
+  "cover": [
+    "line"
+  ],
+  "get ready": [
+    "make",
+    "measure and add",
+    "prepare",
+    "start"
+  ],
+  "blend": [
+    "mix",
+    "mix in",
+    "pulse",
+    "puree"
+  ],
+  "lay": [
+    "place",
+    "put"
+  ],
+  "drain": [
+    "pour",
+    "strain and pour"
+  ],
+  "make": [
+    "prepare",
+    "start"
+  ],
+  "tear": [
+    "pull"
+  ],
+  "boil": [
+    "reduce"
+  ],
+  "wash": [
+    "rinse"
+  ],
+  "clean": [
+    "rinse"
+  ],
+  "scrub": [
+    "rinse"
+  ],
+  "char": [
+    "saute"
+  ],
+  "reserve": [
+    "set aside"
+  ],
+  "beat": [
+    "sift or whisk",
+    "whip",
+    "whisk"
+  ],
+  "dip": [
+    "soak"
+  ],
+  "garnish": [
+    "sprinkle",
+    "top"
+  ],
+  "season": [
+    "sprinkle",
+    "top"
+  ],
+  "press": [
+    "squeeze"
+  ],
+  "keep": [
+    "store"
+  ],
+  "have": [
+    "take"
+  ],
+  "check": [
+    "taste",
+    "test"
+  ],
+  "pull": [
+    "tear"
+  ],
+  "move": [
+    "transfer"
+  ]
+}
