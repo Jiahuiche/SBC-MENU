@@ -73,16 +73,17 @@ def denormalize_ingredient_for_ontology(ingredient: str) -> str:
 
 # Mapeo de culturas en inglés a español/variantes
 CULTURE_MAPPINGS = {
-    'mediterranean': ['mediterránea', 'mediterranea', 'mediterranean', 'italiana', 'francesa'],
-    'american': ['americana', 'american', 'estadounidense'],
-    'mexican': ['mexicana', 'tex-mex', 'mexican', 'latina'],
-    'italian': ['italiana', 'italian', 'mediterránea/italiana'],
-    'french': ['francesa', 'french', 'mediterránea/francesa'],
-    'asian': ['asiática', 'asian', 'china', 'japonesa', 'thai'],
-    'indian': ['india', 'indian', 'hindú'],
-    'latin': ['latina', 'latin', 'sudamericana', 'latinoamericana'],
-    'european': ['europea', 'european'],
-    'spanish': ['española', 'spanish'],
+    'latin american': ['latina', 'latin', 'latin american', 'latinoamericana', 'sudamericana', 'mexicana', 'tex-mex', 'central american', 'south american', 'caribbean', 'caribeña'],
+    'french/western european': ['french/western european,''francesa', 'french', 'western european', 'europea occidental', 'european', 'alemana', 'german', 'british', 'británica', 'holandesa', 'dutch', 'belga', 'belgian'],
+    'mediterranean': ['mediterránea', 'mediterranea', 'mediterranean', 'griega', 'greek', 'italiana', 'francesa', 'española', 'spanish', 'turkish', 'turca'],
+    'south asian': ['india', 'indian', 'south asian', 'asiática del sur', 'hindú', 'pakistani', 'paquistaní', 'bangladeshi', 'sri lankan', 'nepalese', 'nepalí'],
+    'chinese': ['china', 'chinese', 'chino', 'cantonese', 'cantonés', 'szechuan', 'sichuan', 'mandarin', 'hunan', 'shanghai'],
+    'american': ['americana', 'american', 'estadounidense', 'usa', 'us', 'north american', 'norteamericana'],
+    'italian': ['italiana', 'italian', 'italy', 'italia', 'mediterránea/italiana', 'sicilian', 'siciliana', 'tuscan', 'toscana'],
+    'east asian': ['asiática', 'asian', 'east asian', 'asiática oriental', 'oriental', 'southeast asian', 'asiática del sudeste'],
+    'japanese': ['japonesa', 'japanese', 'japan', 'japón', 'nippon'],
+    'middle eastern/north african': ['middle eastern/north african', 'middle eastern', 'north african', 'medio oriente', 'norte de áfrica', 'árabe', 'arab', 'turkish', 'turca', 'persian', 'persa', 'moroccan', 'marroquí', 'lebanese', 'libanesa', 'egyptian', 'egipcia'],
+    'korean': ['coreana', 'korean', 'korea', 'corea', 'south korean', 'norte coreana'],
 }
 
 # Sustitutos conocidos para ingredientes que no tienen alternativas en su categoría

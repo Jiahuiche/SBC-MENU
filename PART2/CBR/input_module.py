@@ -51,11 +51,17 @@ def get_user_restrictions(first_input=None):
 
     # Gastronomia cultural
     print("\nGastronomía Cultural")
-    print("  - italian    : Italiana")
-    print("  - chinese    : China")
-    print("  - mexican    : Mexicana")
-    print("  - indian     : India")
-    print("  - mediterranean : Mediterránea")
+    print("  - Italian  : Italiana")
+    print("  - Chinese  : China")
+    print("  - Japanese  : Japonesa")
+    print("  - Korean  : Coreana")
+    print("  - Latin American  : Latinoamericana")
+    print("  - South Asian  : Sudasiática")
+    print("  - Mediterranean : Mediterránea")
+    print("  - French/Western European : Francesa/Europa Occidental")
+    print("  - Middle Eastern/North African : Oriente Medio/Norteafricana")
+    print("  - East Asian : Este Asiática (General)")
+    print("  - American : Estadounidense")
     cuisine = input("\nCocina preferida: ").strip().lower()
     
     # Restricciones dietéticas
