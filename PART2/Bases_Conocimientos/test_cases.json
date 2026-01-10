@@ -1,0 +1,99 @@
+{
+  "test_cases": [
+    {
+      "id": "TEST_001",
+      "description": "Boda italiana vegana y halal en verano",
+      "input": {
+        "event_type": "wedding",
+        "quiere_tarta": true,
+        "max_people": 150,
+        "season": "summer",
+        "cuisine": "italian",
+        "culture": "italian",
+        "restrictions": ["vegan", "halal"],
+        "min_price": 50,
+        "max_price": 100
+      },
+      "expected": {
+        "should_find_case": true,
+        "min_score": 1
+      }
+    },
+    {
+      "id": "TEST_002",
+      "description": "Congreso mexicano sin restricciones en invierno",
+      "input": {
+        "event_type": "congress",
+        "quiere_tarta": false,
+        "max_people": 200,
+        "season": "winter",
+        "cuisine": "mexican",
+        "culture": "mexican",
+        "restrictions": [],
+        "min_price": 80,
+        "max_price": 120
+      },
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0
+      }
+    },
+    {
+      "id": "TEST_003",
+      "description": "Reunión familiar mediterránea vegetariana y sin gluten",
+      "input": {
+        "event_type": "family",
+        "quiere_tarta": true,
+        "max_people": 25,
+        "season": "spring",
+        "cuisine": "mediterranean",
+        "culture": "mediterranean",
+        "restrictions": ["vegetarian", "gluten-free"],
+        "min_price": 30,
+        "max_price": 60
+      },
+      "expected": {
+        "should_find_case": true,
+        "min_score": 1
+      }
+    },
+    {
+      "id": "TEST_004",
+      "description": "Boda americana sin lactosa en otoño",
+      "input": {
+        "event_type": "wedding",
+        "quiere_tarta": true,
+        "max_people": 100,
+        "season": "autumn",
+        "cuisine": "american",
+        "culture": "american",
+        "restrictions": ["dairy-free"],
+        "min_price": 40,
+        "max_price": 80
+      },
+      "expected": {
+        "should_find_case": true,
+        "min_score": 1
+      }
+    },
+    {
+      "id": "TEST_005",
+      "description": "Congreso francés kosher vegano",
+      "input": {
+        "event_type": "congress",
+        "quiere_tarta": false,
+        "max_people": 300,
+        "season": "any",
+        "cuisine": "french",
+        "culture": "french",
+        "restrictions": ["kosher", "vegan"],
+        "min_price": 100,
+        "max_price": 200
+      },
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0
+      }
+    }
+  ]
+}

@@ -206,56 +206,54 @@
               "dairy free"
             ],
             "instructions": "<ol><li>Combine all of the above ingredients in a bowl.</li><li>Combine the ingredients for the dressing and add to the salsa.</li><li>Serve chilled.</li></ol>",
-            "structured_instructions": {
-              "steps": [
-                {
-                  "order": 1,
-                  "preparation_action": "combine",
-                  "where": [
-                    "bowl"
-                  ],
-                  "ingredients": [
-                    "bell pepper",
-                    "celery",
-                    "ears of corn",
-                    "basil",
-                    "garlic",
-                    "jalapeño",
-                    "onion",
-                    "salt",
-                    "sugar",
-                    "pickle",
-                    "vine tomato"
-                  ],
-                  "tools": [
-                    "bowl"
-                  ],
-                  "temperature": null,
-                  "time": null
-                },
-                {
-                  "order": 2,
-                  "preparation_action": "combine",
-                  "where": [],
-                  "ingredients": [
-                    "vinegar",
-                    "salsa"
-                  ],
-                  "tools": [],
-                  "temperature": null,
-                  "time": null
-                },
-                {
-                  "order": 3,
-                  "preparation_action": "serve",
-                  "where": [],
-                  "ingredients": [],
-                  "tools": [],
-                  "temperature": "chilled",
-                  "time": null
-                }
-              ]
-            }
+            "structured_instructions": [
+              {
+                "order": 1,
+                "preparation_action": "combine",
+                "where": [
+                  "bowl"
+                ],
+                "ingredients": [
+                  "bell pepper",
+                  "celery",
+                  "ears of corn",
+                  "basil",
+                  "garlic",
+                  "jalapeño",
+                  "onion",
+                  "salt",
+                  "sugar",
+                  "pickle",
+                  "vine tomato"
+                ],
+                "tools": [
+                  "bowl"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 2,
+                "preparation_action": "combine",
+                "where": [],
+                "ingredients": [
+                  "vinegar",
+                  "salsa"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 3,
+                "preparation_action": "serve",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": "chilled",
+                "time": null
+              }
+            ]
           },
           "dessert": {
             "recipe_id": 655202,
@@ -1902,135 +1900,133 @@
               "dairy free"
             ],
             "instructions": "1. Heat the oil in a large pan, add the potato, onion and garlic and saut, covered, for 10 minutes.\n2. Add the carrots, leek  and celery and saut for 5 minutes.\n3. Add broad beans and vegetable stock. Cover and simmer gently for 10 minutes, until the potatoes and broad beans are soft.\n4. Add parsley and salt  and pepper if needed.\nServe with crusty bread.",
-            "structured_instructions": {
-              "steps": [
-                {
-                  "order": 1,
-                  "preparation_action": "heat",
-                  "where": [
-                    "large pan"
-                  ],
-                  "ingredients": [
-                    "sunflower oil"
-                  ],
-                  "tools": [],
-                  "temperature": "high",
-                  "time": "10 minutes"
-                },
-                {
-                  "order": 2,
-                  "preparation_action": "add",
-                  "where": [
-                    "large pan"
-                  ],
-                  "ingredients": [
-                    "potatoes",
-                    "onion",
-                    "garlic"
-                  ],
-                  "tools": [],
-                  "temperature": null,
-                  "time": "10 minutes"
-                },
-                {
-                  "order": 3,
-                  "preparation_action": "saut",
-                  "where": [
-                    "large pan"
-                  ],
-                  "ingredients": [],
-                  "tools": [],
-                  "temperature": null,
-                  "time": null
-                },
-                {
-                  "order": 4,
-                  "preparation_action": "add",
-                  "where": [
-                    "large pan"
-                  ],
-                  "ingredients": [
-                    "carrots",
-                    "leek",
-                    "celery"
-                  ],
-                  "tools": [],
-                  "temperature": null,
-                  "time": "5 minutes"
-                },
-                {
-                  "order": 5,
-                  "preparation_action": "saut",
-                  "where": [
-                    "large pan"
-                  ],
-                  "ingredients": [],
-                  "tools": [],
-                  "temperature": null,
-                  "time": "5 minutes"
-                },
-                {
-                  "order": 6,
-                  "preparation_action": "add",
-                  "where": [
-                    "large pan"
-                  ],
-                  "ingredients": [
-                    "broad beans",
-                    "vegetable stock"
-                  ],
-                  "tools": [],
-                  "temperature": null,
-                  "time": "10 minutes"
-                },
-                {
-                  "order": 7,
-                  "preparation_action": "cover",
-                  "where": [
-                    "large pan"
-                  ],
-                  "ingredients": [],
-                  "tools": [],
-                  "temperature": null,
-                  "time": "10 minutes"
-                },
-                {
-                  "order": 8,
-                  "preparation_action": "simmer",
-                  "where": [
-                    "large pan"
-                  ],
-                  "ingredients": [],
-                  "tools": [],
-                  "temperature": "low",
-                  "time": "10 minutes"
-                },
-                {
-                  "order": 9,
-                  "preparation_action": "add",
-                  "where": [
-                    "large pan"
-                  ],
-                  "ingredients": [
-                    "parsley",
-                    "salt",
-                    "pepper"
-                  ],
-                  "tools": [],
-                  "temperature": null,
-                  "time": null
-                },
-                {
-                  "order": 10,
-                  "preparation_action": "serve",
-                  "where": [],
-                  "ingredients": [],
-                  "tools": [],
-                  "temperature": null,
-                  "time": null
-                }
-              ]
-            }
+            "structured_instructions": [
+              {
+                "order": 1,
+                "preparation_action": "heat",
+                "where": [
+                  "large pan"
+                ],
+                "ingredients": [
+                  "sunflower oil"
+                ],
+                "tools": [],
+                "temperature": "high",
+                "time": "10 minutes"
+              },
+              {
+                "order": 2,
+                "preparation_action": "add",
+                "where": [
+                  "large pan"
+                ],
+                "ingredients": [
+                  "potatoes",
+                  "onion",
+                  "garlic"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": "10 minutes"
+              },
+              {
+                "order": 3,
+                "preparation_action": "saut",
+                "where": [
+                  "large pan"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 4,
+                "preparation_action": "add",
+                "where": [
+                  "large pan"
+                ],
+                "ingredients": [
+                  "carrots",
+                  "leek",
+                  "celery"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": "5 minutes"
+              },
+              {
+                "order": 5,
+                "preparation_action": "saut",
+                "where": [
+                  "large pan"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": "5 minutes"
+              },
+              {
+                "order": 6,
+                "preparation_action": "add",
+                "where": [
+                  "large pan"
+                ],
+                "ingredients": [
+                  "broad beans",
+                  "vegetable stock"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": "10 minutes"
+              },
+              {
+                "order": 7,
+                "preparation_action": "cover",
+                "where": [
+                  "large pan"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": "10 minutes"
+              },
+              {
+                "order": 8,
+                "preparation_action": "simmer",
+                "where": [
+                  "large pan"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": "low",
+                "time": "10 minutes"
+              },
+              {
+                "order": 9,
+                "preparation_action": "add",
+                "where": [
+                  "large pan"
+                ],
+                "ingredients": [
+                  "parsley",
+                  "salt",
+                  "pepper"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 10,
+                "preparation_action": "serve",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              }
+            ]
           },
           "dessert": {
             "recipe_id": 655515,
@@ -3349,94 +3345,92 @@
               "vegetarian"
             ],
             "instructions": "In a pot, boil milk, cocoa, butter, and brown sugar for two minutes.\nRemove from heat and add vanilla.\nAdd oats and coconut. Mix well!\nWith a spoon, scoop out mixture onto wax paper and set aside to cool.\nGarnish with a dollop of peanut butter to your hearts desire. The sloppier, the better.",
-            "structured_instructions": {
-              "steps": [
-                {
-                  "order": 1,
-                  "preparation_action": "boil",
-                  "where": [
-                    "pot"
-                  ],
-                  "ingredients": [
-                    "milk",
-                    "cocoa",
-                    "butter",
-                    "brown sugar"
-                  ],
-                  "tools": [],
-                  "temperature": null,
-                  "time": "two minutes"
-                },
-                {
-                  "order": 2,
-                  "preparation_action": "remove",
-                  "where": [
-                    "heat"
-                  ],
-                  "ingredients": [],
-                  "tools": [],
-                  "temperature": null,
-                  "time": null
-                },
-                {
-                  "order": 3,
-                  "preparation_action": "add",
-                  "where": [],
-                  "ingredients": [
-                    "vanilla",
-                    "oats",
-                    "coconut"
-                  ],
-                  "tools": [],
-                  "temperature": null,
-                  "time": null
-                },
-                {
-                  "order": 4,
-                  "preparation_action": "mix",
-                  "where": [],
-                  "ingredients": [],
-                  "tools": [
-                    "spoon"
-                  ],
-                  "temperature": null,
-                  "time": null
-                },
-                {
-                  "order": 5,
-                  "preparation_action": "scoop",
-                  "where": [
-                    "wax paper"
-                  ],
-                  "ingredients": [],
-                  "tools": [
-                    "spoon"
-                  ],
-                  "temperature": null,
-                  "time": null
-                },
-                {
-                  "order": 6,
-                  "preparation_action": "set aside",
-                  "where": [],
-                  "ingredients": [],
-                  "tools": [],
-                  "temperature": null,
-                  "time": "to cool"
-                },
-                {
-                  "order": 7,
-                  "preparation_action": "garnish",
-                  "where": [],
-                  "ingredients": [
-                    "peanut butter"
-                  ],
-                  "tools": [],
-                  "temperature": null,
-                  "time": null
-                }
-              ]
-            }
+            "structured_instructions": [
+              {
+                "order": 1,
+                "preparation_action": "boil",
+                "where": [
+                  "pot"
+                ],
+                "ingredients": [
+                  "milk",
+                  "cocoa",
+                  "butter",
+                  "brown sugar"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": "two minutes"
+              },
+              {
+                "order": 2,
+                "preparation_action": "remove",
+                "where": [
+                  "heat"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 3,
+                "preparation_action": "add",
+                "where": [],
+                "ingredients": [
+                  "vanilla",
+                  "oats",
+                  "coconut"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 4,
+                "preparation_action": "mix",
+                "where": [],
+                "ingredients": [],
+                "tools": [
+                  "spoon"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 5,
+                "preparation_action": "scoop",
+                "where": [
+                  "wax paper"
+                ],
+                "ingredients": [],
+                "tools": [
+                  "spoon"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 6,
+                "preparation_action": "set aside",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": "to cool"
+              },
+              {
+                "order": 7,
+                "preparation_action": "garnish",
+                "where": [],
+                "ingredients": [
+                  "peanut butter"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              }
+            ]
           }
         },
         "features": {
@@ -4308,11 +4302,10 @@
                 "order": 1,
                 "preparation_action": "soak",
                 "where": [
-                  "in several inches of water"
+                  "in water"
                 ],
                 "ingredients": [
-                  "black-eyed peas",
-                  "water"
+                  "black-eyed peas"
                 ],
                 "tools": [],
                 "temperature": null,
@@ -4322,7 +4315,7 @@
                 "order": 2,
                 "preparation_action": "transfer",
                 "where": [
-                  "a large saucepan"
+                  "to a large saucepan"
                 ],
                 "ingredients": [
                   "black-eyed peas"
@@ -4335,11 +4328,10 @@
                 "order": 3,
                 "preparation_action": "boil",
                 "where": [
-                  "a large saucepan"
+                  "in a large saucepan"
                 ],
                 "ingredients": [
-                  "black-eyed peas",
-                  "water"
+                  "black-eyed peas"
                 ],
                 "tools": [],
                 "temperature": null,
@@ -4349,12 +4341,9 @@
                 "order": 4,
                 "preparation_action": "reduce heat",
                 "where": [
-                  "a large saucepan"
+                  "to medium-low"
                 ],
-                "ingredients": [
-                  "black-eyed peas",
-                  "water"
-                ],
+                "ingredients": [],
                 "tools": [],
                 "temperature": "medium-low",
                 "time": null
@@ -4363,18 +4352,28 @@
                 "order": 5,
                 "preparation_action": "cover",
                 "where": [
-                  "a large saucepan"
+                  "in a large saucepan"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 6,
+                "preparation_action": "simmer",
+                "where": [
+                  "in a large saucepan"
                 ],
                 "ingredients": [
-                  "black-eyed peas",
-                  "water"
+                  "black-eyed peas"
                 ],
                 "tools": [],
                 "temperature": null,
                 "time": "40 to 60 minutes"
               },
               {
-                "order": 6,
+                "order": 7,
                 "preparation_action": "drain",
                 "where": [],
                 "ingredients": [
@@ -4385,22 +4384,11 @@
                 "time": null
               },
               {
-                "order": 7,
+                "order": 8,
                 "preparation_action": "set aside",
                 "where": [],
                 "ingredients": [
                   "black-eyed peas"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 8,
-                "preparation_action": "cut",
-                "where": [],
-                "ingredients": [
-                  "eggplant"
                 ],
                 "tools": [],
                 "temperature": null,
@@ -4419,7 +4407,7 @@
               },
               {
                 "order": 10,
-                "preparation_action": "score",
+                "preparation_action": "cut",
                 "where": [],
                 "ingredients": [
                   "eggplant"
@@ -4441,6 +4429,17 @@
               },
               {
                 "order": 12,
+                "preparation_action": "score",
+                "where": [],
+                "ingredients": [
+                  "eggplant"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 13,
                 "preparation_action": "sprinkle",
                 "where": [],
                 "ingredients": [
@@ -4452,7 +4451,7 @@
                 "time": "40 minutes"
               },
               {
-                "order": 13,
+                "order": 14,
                 "preparation_action": "rinse",
                 "where": [],
                 "ingredients": [
@@ -4463,7 +4462,7 @@
                 "time": null
               },
               {
-                "order": 14,
+                "order": 15,
                 "preparation_action": "squeeze",
                 "where": [],
                 "ingredients": [
@@ -4474,11 +4473,9 @@
                 "time": null
               },
               {
-                "order": 15,
+                "order": 16,
                 "preparation_action": "brush",
-                "where": [
-                  "a roasting pan"
-                ],
+                "where": [],
                 "ingredients": [
                   "eggplant",
                   "oil"
@@ -4488,10 +4485,10 @@
                 "time": null
               },
               {
-                "order": 16,
+                "order": 17,
                 "preparation_action": "transfer",
                 "where": [
-                  "a roasting pan"
+                  "to a roasting pan"
                 ],
                 "ingredients": [
                   "eggplant"
@@ -4501,10 +4498,10 @@
                 "time": null
               },
               {
-                "order": 17,
+                "order": 18,
                 "preparation_action": "bake",
                 "where": [
-                  "a preheated 400 oven"
+                  "in a preheated 400 oven"
                 ],
                 "ingredients": [
                   "eggplant"
@@ -4514,7 +4511,7 @@
                 "time": null
               },
               {
-                "order": 18,
+                "order": 19,
                 "preparation_action": "remove",
                 "where": [],
                 "ingredients": [
@@ -4522,10 +4519,10 @@
                 ],
                 "tools": [],
                 "temperature": null,
-                "time": "about 10 minutes"
+                "time": "10 minutes"
               },
               {
-                "order": 19,
+                "order": 20,
                 "preparation_action": "season",
                 "where": [],
                 "ingredients": [
@@ -4537,19 +4534,8 @@
                 "time": null
               },
               {
-                "order": 20,
-                "preparation_action": "remove",
-                "where": [],
-                "ingredients": [
-                  "eggplant"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
                 "order": 21,
-                "preparation_action": "drain",
+                "preparation_action": "remove",
                 "where": [],
                 "ingredients": [
                   "eggplant"
@@ -4560,7 +4546,7 @@
               },
               {
                 "order": 22,
-                "preparation_action": "set aside",
+                "preparation_action": "drain",
                 "where": [],
                 "ingredients": [
                   "eggplant"
@@ -4571,62 +4557,51 @@
               },
               {
                 "order": 23,
+                "preparation_action": "set aside",
+                "where": [],
+                "ingredients": [
+                  "eggplant"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 24,
                 "preparation_action": "heat",
                 "where": [
-                  "the same saucepan used to cook the black-eyed peas"
+                  "in the same saucepan"
                 ],
                 "ingredients": [
                   "oil"
                 ],
                 "tools": [],
-                "temperature": "medium",
+                "temperature": null,
                 "time": null
               },
               {
-                "order": 24,
+                "order": 25,
                 "preparation_action": "toss",
                 "where": [
-                  "the same saucepan used to cook the black-eyed peas"
+                  "in the same saucepan"
                 ],
                 "ingredients": [
                   "shallots",
-                  "chilies",
-                  "oil"
+                  "chilies"
                 ],
                 "tools": [],
                 "temperature": null,
                 "time": "2 to 3 minutes"
               },
               {
-                "order": 25,
-                "preparation_action": "stir",
+                "order": 26,
+                "preparation_action": "saute",
                 "where": [
-                  "the same saucepan used to cook the black-eyed peas"
+                  "in the same saucepan"
                 ],
                 "ingredients": [
-                  "spices",
-                  "oil",
                   "shallots",
                   "chilies"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": "1 minute"
-              },
-              {
-                "order": 26,
-                "preparation_action": "add",
-                "where": [
-                  "the same saucepan used to cook the black-eyed peas"
-                ],
-                "ingredients": [
-                  "tomato",
-                  "oil",
-                  "shallots",
-                  "chilies",
-                  "spices",
-                  "black-eyed peas",
-                  "eggplant"
                 ],
                 "tools": [],
                 "temperature": null,
@@ -4634,32 +4609,25 @@
               },
               {
                 "order": 27,
-                "preparation_action": "cook",
+                "preparation_action": "stir",
                 "where": [
-                  "the same saucepan used to cook the black-eyed peas"
+                  "in the same saucepan"
                 ],
                 "ingredients": [
-                  "tomato",
-                  "oil",
-                  "shallots",
-                  "chilies",
-                  "spices",
-                  "black-eyed peas",
-                  "eggplant"
+                  "spices"
                 ],
                 "tools": [],
                 "temperature": null,
-                "time": null
+                "time": "1 minute"
               },
               {
                 "order": 28,
                 "preparation_action": "add",
                 "where": [
-                  "the same saucepan used to cook the black-eyed peas"
+                  "in the same saucepan"
                 ],
                 "ingredients": [
-                  "water",
-                  "chard"
+                  "tomato"
                 ],
                 "tools": [],
                 "temperature": null,
@@ -4667,13 +4635,12 @@
               },
               {
                 "order": 29,
-                "preparation_action": "add",
+                "preparation_action": "cook",
                 "where": [
-                  "the same saucepan used to cook the black-eyed peas"
+                  "in the same saucepan"
                 ],
                 "ingredients": [
-                  "water",
-                  "chard"
+                  "tomato"
                 ],
                 "tools": [],
                 "temperature": null,
@@ -4683,7 +4650,74 @@
                 "order": 30,
                 "preparation_action": "add",
                 "where": [
-                  "the same saucepan used to cook the black-eyed peas"
+                  "in the same saucepan"
+                ],
+                "ingredients": [
+                  "eggplant",
+                  "black-eyed peas"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 31,
+                "preparation_action": "cook",
+                "where": [
+                  "in the same saucepan"
+                ],
+                "ingredients": [
+                  "eggplant",
+                  "black-eyed peas"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 32,
+                "preparation_action": "add",
+                "where": [
+                  "in the same saucepan"
+                ],
+                "ingredients": [
+                  "water"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 33,
+                "preparation_action": "add",
+                "where": [
+                  "in the same saucepan"
+                ],
+                "ingredients": [
+                  "chard"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 34,
+                "preparation_action": "add",
+                "where": [
+                  "in the same saucepan"
+                ],
+                "ingredients": [
+                  "water"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 35,
+                "preparation_action": "add",
+                "where": [
+                  "in the same saucepan"
                 ],
                 "ingredients": [
                   "lemon juice",
@@ -4694,7 +4728,7 @@
                 "time": null
               },
               {
-                "order": 31,
+                "order": 36,
                 "preparation_action": "remove",
                 "where": [],
                 "ingredients": [],
@@ -4703,16 +4737,16 @@
                 "time": null
               },
               {
-                "order": 32,
+                "order": 37,
                 "preparation_action": "cover",
                 "where": [],
                 "ingredients": [],
                 "tools": [],
                 "temperature": null,
-                "time": "a few minutes"
+                "time": null
               },
               {
-                "order": 33,
+                "order": 38,
                 "preparation_action": "let sit",
                 "where": [],
                 "ingredients": [],
@@ -4830,11 +4864,13 @@
                 "order": 6,
                 "preparation_action": "cook",
                 "where": [
-                  "oil"
+                  "oil",
+                  "small batches"
                 ],
                 "ingredients": [
                   "apple rings",
-                  "oil"
+                  "oil",
+                  "batter"
                 ],
                 "tools": [
                   "stove"
@@ -4866,7 +4902,7 @@
                 "ingredients": [],
                 "tools": [],
                 "temperature": null,
-                "time": null
+                "time": "immediately"
               },
               {
                 "order": 9,
@@ -4909,7 +4945,11 @@
                 "where": [
                   "saucepan"
                 ],
-                "ingredients": [],
+                "ingredients": [
+                  "sugar",
+                  "corn syrup",
+                  "cinnamon"
+                ],
                 "tools": [
                   "stirring spoon"
                 ],
@@ -4922,7 +4962,11 @@
                 "where": [
                   "saucepan"
                 ],
-                "ingredients": [],
+                "ingredients": [
+                  "sugar",
+                  "corn syrup",
+                  "cinnamon"
+                ],
                 "tools": [
                   "stirring spoon"
                 ],
@@ -4935,8 +4979,14 @@
                 "where": [
                   "saucepan"
                 ],
-                "ingredients": [],
-                "tools": [],
+                "ingredients": [
+                  "sugar",
+                  "corn syrup",
+                  "cinnamon"
+                ],
+                "tools": [
+                  "stirring spoon"
+                ],
                 "temperature": null,
                 "time": null
               },
@@ -4946,7 +4996,11 @@
                 "where": [
                   "saucepan"
                 ],
-                "ingredients": [],
+                "ingredients": [
+                  "sugar",
+                  "corn syrup",
+                  "cinnamon"
+                ],
                 "tools": [],
                 "temperature": null,
                 "time": "5 minutes"
@@ -4958,6 +5012,9 @@
                   "saucepan"
                 ],
                 "ingredients": [
+                  "sugar",
+                  "corn syrup",
+                  "cinnamon",
                   "evaporated milk"
                 ],
                 "tools": [
@@ -4977,7 +5034,7 @@
                 ],
                 "tools": [],
                 "temperature": null,
-                "time": null
+                "time": "warm"
               }
             ]
           },
@@ -5006,10 +5063,643 @@
             ],
             "restrictions": [],
             "instructions": "<ol><li>Sponge Cake</li><li>Heat the oven to 350 degrees F.</li><li>Lightly grease a jellyroll pan (10-1/2 x 15-1/2 inch pan; also called half-sheet pan) and line it with wax or parchment paper that is sprayed with baking spray.</li><li>In a medium bowl, combine the cake flour, salt, cinnamon, powdered espresso and cocoa powder.  Set this aside.</li><li>In a bowl of a standing mixer, beat the eggs for 10 minutes on high speed.  The eggs will have the consistency of soft whipped cream.   Continue beating on high speed while slowly adding the granulated sugar, one tablespoon at a time. The resulting mixture will have the appearance and consistency of a batter ready to be baked to create a sponge cake. When you lift the wire-whip from the egg mixture, the mixture should fall back to the bowl, as if it was a ribbon. That is why pastry chefs state that beat the egg mixture to a ribbon stage.</li><li>Finally, add the vanilla.</li><li>Set the standing mixer speed to its lowest setting and add the dry ingredients very slowly (i.e. like about one tablespoon at a time). Use a rubber spatula to scrape the sides of the bowl periodically and beat until just all the dry ingredients are incorporated.  Caution: over mixing will cause the eggs to deflate.</li><li>Spread the cake batter in the prepared jelly roll pan.</li><li>Bake for 12-15 minutes or until the cake starts to pull away from the sides of the pan.  Do not over bake.</li><li>Cool for a few minutes on a wire rack, then invert the cake onto a rack. Carefully remove the parchment (or wax) paper and allow the cake to cool completely.</li><li>Mousse Filling</li><li>Place the chocolate pieces in a bowl.</li><li>Bring the heavy cream to a boil on the stovetop and pour over the chocolate pieces.</li><li>Let the mixture stand for 5 minutes.</li><li>Add the rum and vanilla and stir the mixture, starting in the middle and slowly moving outward with the circular motion until you attain a smooth, shiny chocolate mousse.</li><li>Refrigerate this mixture for 2 hours</li><li>With a hand held electric mixer, whip the chilled chocolate mousse filling, scrapping the sides of the bowl with a rubber spatula, until the volume has doubled.</li><li>Whipped Cream Filling</li><li>Place the heavy cream in a cold bowl and with a hand-held electric mixer, whip up the cream to soft peaks</li><li>slowly add the sugar, 1 tablespoon at time without stopping the electric mixer.</li><li>Fold in the vanilla and refrigerate.</li><li>Note: It is also called: Chantilly Cream</li><li>Assembly:</li><li>Cut the cake in half and place one half on a large serving dish.  (Try to match the shape of the serving plate with that of the chocolate cake; in other words, do not use a circular shape serving plate, when the cake is square)</li><li>Spread the whipped chocolate mousse over the top of one half cake.</li><li>Refrigerate for one hour.</li><li>Spread the whipped cream over the chocolate mousse evenly and let it set for one hour in the refrigerator.</li><li>Place a parchment paper that is cut 1 inch larger than the cake itself, under the cake to catch the chocolate drips.</li><li>Pour the chocolate ganache over this half of the plain cake (see directions for preparation below), let it run down the sides of the cake and let it set at room temperature. (Note: if the ganache is too heavy, just warm it up either in a microwave, or with a hair dryer, blowing hot air over the surface of the ganache and it will thin-out).</li><li>Prior to placing it in the refrigerator, remove the excess ganache from the sides of the cake.</li><li>Place it in the refrigerator for a faster and more solid setting.</li><li>Once the glaze is set, cut this half cake into a cube shape, measuring either 2 X 2 or 3 X 3 inches and place it evenly on the whipped cream.</li><li>Let it set for one hour in the refrigerator.</li><li>Take the cake out of the refrigerator and slice it through, in accordance with the top slices and the cake is ready to be served.</li><li>Note: Use the serrated knife that is dipped into hot water; dip the knife as many times needed into hot water, to obtain even, smooth slices.</li><li>Glaze</li><li>Place the chocolate pieces in a medium bowl.</li><li>Bring the heavy cream to boil on the stovetop and pour the cream over the chocolate.</li><li>Let it stand for 5 minutes.</li><li>Start to mix the chocolate and cream in a circular motion, starting in the middle and slowly moving outward.</li><li>When you attain a smooth, shiny chocolate ganache, add the butter and the vanilla and stir until smooth.</li><li>Refrigerate until ready to be used.</li></ol>",
-            "structured_instructions": {
-              "error": "llm_call_failed",
-              "details": "HTTPSConnectionPool(host='router.huggingface.co', port=443): Read timed out. (read timeout=120)"
-            }
+            "structured_instructions": [
+              {
+                "order": 1,
+                "preparation_action": "heat",
+                "where": [
+                  "oven"
+                ],
+                "ingredients": [
+                  "bitter chocolate",
+                  "bittersweet chocolate",
+                  "butter",
+                  "cake flour",
+                  "cinnamon",
+                  "cocoa powder",
+                  "confectioners' sugar",
+                  "corn syrup",
+                  "eggs",
+                  "espresso powder",
+                  "granulated sugar",
+                  "heavy cream",
+                  "salt",
+                  "vanilla"
+                ],
+                "tools": [
+                  "oven"
+                ],
+                "temperature": "350F",
+                "time": null
+              },
+              {
+                "order": 2,
+                "preparation_action": "grease",
+                "where": [
+                  "jellyroll pan"
+                ],
+                "ingredients": [],
+                "tools": [
+                  "baking spray"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 3,
+                "preparation_action": "line",
+                "where": [
+                  "jellyroll pan"
+                ],
+                "ingredients": [
+                  "wax",
+                  "parchment paper"
+                ],
+                "tools": [
+                  "baking spray"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 4,
+                "preparation_action": "combine",
+                "where": [
+                  "medium bowl"
+                ],
+                "ingredients": [
+                  "cake flour",
+                  "salt",
+                  "cinnamon",
+                  "powdered espresso",
+                  "cocoa powder"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 5,
+                "preparation_action": "beat",
+                "where": [
+                  "standing mixer"
+                ],
+                "ingredients": [
+                  "eggs"
+                ],
+                "tools": [
+                  "wire-whip"
+                ],
+                "temperature": null,
+                "time": "10 minutes"
+              },
+              {
+                "order": 6,
+                "preparation_action": "add",
+                "where": [
+                  "standing mixer"
+                ],
+                "ingredients": [
+                  "granulated sugar"
+                ],
+                "tools": [
+                  "wire-whip"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 7,
+                "preparation_action": "add",
+                "where": [
+                  "standing mixer"
+                ],
+                "ingredients": [
+                  "vanilla"
+                ],
+                "tools": [
+                  "wire-whip"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 8,
+                "preparation_action": "set",
+                "where": [
+                  "standing mixer"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 9,
+                "preparation_action": "add",
+                "where": [
+                  "standing mixer"
+                ],
+                "ingredients": [
+                  "dry ingredients"
+                ],
+                "tools": [
+                  "rubber spatula"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 10,
+                "preparation_action": "spread",
+                "where": [
+                  "jellyroll pan"
+                ],
+                "ingredients": [
+                  "cake batter"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 11,
+                "preparation_action": "bake",
+                "where": [
+                  "oven"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": "12-15 minutes"
+              },
+              {
+                "order": 12,
+                "preparation_action": "cool",
+                "where": [
+                  "wire rack"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 13,
+                "preparation_action": "invert",
+                "where": [
+                  "wire rack"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 14,
+                "preparation_action": "remove",
+                "where": [
+                  "wire rack"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 15,
+                "preparation_action": "cool",
+                "where": [
+                  "wire rack"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 16,
+                "preparation_action": "place",
+                "where": [],
+                "ingredients": [
+                  "chocolate pieces"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 17,
+                "preparation_action": "bring",
+                "where": [
+                  "stovetop"
+                ],
+                "ingredients": [
+                  "heavy cream"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 18,
+                "preparation_action": "pour",
+                "where": [],
+                "ingredients": [
+                  "heavy cream",
+                  "chocolate pieces"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 19,
+                "preparation_action": "let",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": "5 minutes"
+              },
+              {
+                "order": 20,
+                "preparation_action": "add",
+                "where": [],
+                "ingredients": [
+                  "rum",
+                  "vanilla"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 21,
+                "preparation_action": "stir",
+                "where": [],
+                "ingredients": [
+                  "chocolate mousse"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 22,
+                "preparation_action": "refrigerate",
+                "where": [],
+                "ingredients": [
+                  "chocolate mousse"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": "2 hours"
+              },
+              {
+                "order": 23,
+                "preparation_action": "whip",
+                "where": [],
+                "ingredients": [
+                  "chocolate mousse"
+                ],
+                "tools": [
+                  "hand held electric mixer",
+                  "rubber spatula"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 24,
+                "preparation_action": "place",
+                "where": [],
+                "ingredients": [
+                  "heavy cream"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 25,
+                "preparation_action": "whip",
+                "where": [],
+                "ingredients": [
+                  "heavy cream"
+                ],
+                "tools": [
+                  "hand-held electric mixer"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 26,
+                "preparation_action": "add",
+                "where": [],
+                "ingredients": [
+                  "sugar"
+                ],
+                "tools": [
+                  "hand-held electric mixer"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 27,
+                "preparation_action": "fold",
+                "where": [],
+                "ingredients": [
+                  "vanilla"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 28,
+                "preparation_action": "refrigerate",
+                "where": [],
+                "ingredients": [
+                  "whipped cream"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 29,
+                "preparation_action": "cut",
+                "where": [],
+                "ingredients": [
+                  "cake"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 30,
+                "preparation_action": "place",
+                "where": [],
+                "ingredients": [
+                  "cake"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 31,
+                "preparation_action": "spread",
+                "where": [],
+                "ingredients": [
+                  "chocolate mousse"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 32,
+                "preparation_action": "refrigerate",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": "1 hour"
+              },
+              {
+                "order": 33,
+                "preparation_action": "spread",
+                "where": [],
+                "ingredients": [
+                  "whipped cream"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 34,
+                "preparation_action": "let",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": "1 hour"
+              },
+              {
+                "order": 35,
+                "preparation_action": "place",
+                "where": [],
+                "ingredients": [
+                  "parchment paper"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 36,
+                "preparation_action": "pour",
+                "where": [],
+                "ingredients": [
+                  "chocolate ganache"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 37,
+                "preparation_action": "let",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 38,
+                "preparation_action": "remove",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 39,
+                "preparation_action": "place",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 40,
+                "preparation_action": "refrigerate",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 41,
+                "preparation_action": "cut",
+                "where": [],
+                "ingredients": [
+                  "cake"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 42,
+                "preparation_action": "place",
+                "where": [],
+                "ingredients": [
+                  "cake"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 43,
+                "preparation_action": "let",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": "1 hour"
+              },
+              {
+                "order": 44,
+                "preparation_action": "take",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 45,
+                "preparation_action": "slice",
+                "where": [],
+                "ingredients": [],
+                "tools": [
+                  "serrated knife"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 46,
+                "preparation_action": "place",
+                "where": [],
+                "ingredients": [
+                  "chocolate pieces"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 47,
+                "preparation_action": "bring",
+                "where": [
+                  "stovetop"
+                ],
+                "ingredients": [
+                  "heavy cream"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 48,
+                "preparation_action": "pour",
+                "where": [],
+                "ingredients": [
+                  "heavy cream",
+                  "chocolate pieces"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 49,
+                "preparation_action": "let",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": "5 minutes"
+              },
+              {
+                "order": 50,
+                "preparation_action": "start",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 51,
+                "preparation_action": "mix",
+                "where": [],
+                "ingredients": [
+                  "chocolate ganache"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 52,
+                "preparation_action": "add",
+                "where": [],
+                "ingredients": [
+                  "butter",
+                  "vanilla"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 53,
+                "preparation_action": "stir",
+                "where": [],
+                "ingredients": [
+                  "chocolate ganache"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 54,
+                "preparation_action": "refrigerate",
+                "where": [],
+                "ingredients": [
+                  "chocolate ganache"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              }
+            ]
           }
         },
         "features": {
@@ -5083,7 +5773,7 @@
                 "order": 1,
                 "preparation_action": "soak",
                 "where": [
-                  "in warm water"
+                  "warm water"
                 ],
                 "ingredients": [
                   "dates"
@@ -5105,7 +5795,7 @@
                 "order": 3,
                 "preparation_action": "combine",
                 "where": [
-                  "in your food processor"
+                  "food processor"
                 ],
                 "ingredients": [
                   "pistachios",
@@ -5123,7 +5813,7 @@
                 "order": 4,
                 "preparation_action": "pulse",
                 "where": [
-                  "in your food processor"
+                  "food processor"
                 ],
                 "ingredients": [],
                 "tools": [
@@ -5136,7 +5826,7 @@
                 "order": 5,
                 "preparation_action": "add",
                 "where": [
-                  "in your food processor"
+                  "food processor"
                 ],
                 "ingredients": [
                   "vanilla",
@@ -5152,7 +5842,7 @@
                 "order": 6,
                 "preparation_action": "pulse",
                 "where": [
-                  "in your food processor"
+                  "food processor"
                 ],
                 "ingredients": [],
                 "tools": [
@@ -5183,7 +5873,7 @@
                 "order": 9,
                 "preparation_action": "store",
                 "where": [
-                  "in the fridge"
+                  "fridge"
                 ],
                 "ingredients": [],
                 "tools": [],
@@ -5212,50 +5902,48 @@
               "dairy free"
             ],
             "instructions": "<ol><li>Combine basil, lime juice, mint leaves, salt, and cubed watermelon in a blender.  Blend at highest speed until liquefied.</li><li>Pour into popsicle molds or ice cube tray and freeze for a minimum of 4 hours.</li><li>Serve.</li></ol>",
-            "structured_instructions": {
-              "steps": [
-                {
-                  "order": 1,
-                  "preparation_action": "combine",
-                  "where": [
-                    "blender"
-                  ],
-                  "ingredients": [
-                    "basil",
-                    "lime juice",
-                    "mint leaves",
-                    "salt",
-                    "watermelon flesh"
-                  ],
-                  "tools": [
-                    "blender"
-                  ],
-                  "temperature": null,
-                  "time": null
-                },
-                {
-                  "order": 2,
-                  "preparation_action": "pour",
-                  "where": [
-                    "popsicle molds",
-                    "ice cube tray"
-                  ],
-                  "ingredients": [],
-                  "tools": [],
-                  "temperature": null,
-                  "time": "a minimum of 4 hours"
-                },
-                {
-                  "order": 3,
-                  "preparation_action": "serve",
-                  "where": [],
-                  "ingredients": [],
-                  "tools": [],
-                  "temperature": null,
-                  "time": null
-                }
-              ]
-            }
+            "structured_instructions": [
+              {
+                "order": 1,
+                "preparation_action": "combine",
+                "where": [
+                  "blender"
+                ],
+                "ingredients": [
+                  "basil",
+                  "lime juice",
+                  "mint leaves",
+                  "salt",
+                  "watermelon flesh"
+                ],
+                "tools": [
+                  "blender"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 2,
+                "preparation_action": "pour",
+                "where": [
+                  "popsicle molds",
+                  "ice cube tray"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": "4 hours"
+              },
+              {
+                "order": 3,
+                "preparation_action": "serve",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              }
+            ]
           },
           "dessert": {
             "recipe_id": 657341,
@@ -5306,8 +5994,14 @@
                   "9-inch spring form pan",
                   "9-inch cake pan"
                 ],
-                "ingredients": [],
-                "tools": [],
+                "ingredients": [
+                  "aluminum free baking soda",
+                  "brown sugar",
+                  "kosher salt"
+                ],
+                "tools": [
+                  "spatula"
+                ],
                 "temperature": null,
                 "time": null
               },
@@ -5327,7 +6021,7 @@
                   "small bowl"
                 ],
                 "ingredients": [
-                  "flours",
+                  "oat flour",
                   "brown sugar",
                   "cinnamon",
                   "kosher salt"
@@ -5338,20 +6032,13 @@
               },
               {
                 "order": 5,
-                "preparation_action": "add",
-                "where": [],
+                "preparation_action": "add and work",
+                "where": [
+                  "small bowl"
+                ],
                 "ingredients": [
                   "Earth Balance Soy Free Spread"
                 ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 6,
-                "preparation_action": "work",
-                "where": [],
-                "ingredients": [],
                 "tools": [
                   "hands"
                 ],
@@ -5359,9 +6046,11 @@
                 "time": null
               },
               {
-                "order": 7,
-                "preparation_action": "add",
-                "where": [],
+                "order": 6,
+                "preparation_action": "add and combine",
+                "where": [
+                  "small bowl"
+                ],
                 "ingredients": [
                   "pecans"
                 ],
@@ -5370,16 +6059,7 @@
                 "time": null
               },
               {
-                "order": 8,
-                "preparation_action": "combine",
-                "where": [],
-                "ingredients": [],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 9,
+                "order": 7,
                 "preparation_action": "prepare",
                 "where": [],
                 "ingredients": [],
@@ -5388,8 +6068,8 @@
                 "time": null
               },
               {
-                "order": 10,
-                "preparation_action": "measure",
+                "order": 8,
+                "preparation_action": "measure and add",
                 "where": [],
                 "ingredients": [
                   "coconut milk",
@@ -5400,8 +6080,8 @@
                 "time": null
               },
               {
-                "order": 11,
-                "preparation_action": "let",
+                "order": 9,
+                "preparation_action": "let sit",
                 "where": [],
                 "ingredients": [],
                 "tools": [],
@@ -5409,15 +6089,15 @@
                 "time": null
               },
               {
-                "order": 12,
-                "preparation_action": "sift together",
+                "order": 10,
+                "preparation_action": "sift or whisk",
                 "where": [
                   "medium bowl"
                 ],
                 "ingredients": [
-                  "flours",
-                  "baking powder",
-                  "baking soda",
+                  "oat flour",
+                  "aluminum free baking powder",
+                  "aluminum free baking soda",
                   "cinnamon",
                   "ginger",
                   "nutmeg",
@@ -5428,36 +6108,30 @@
                 "time": null
               },
               {
-                "order": 13,
+                "order": 11,
                 "preparation_action": "beat",
                 "where": [
-                  "electric mixer",
-                  "flat beater"
+                  "electric mixer"
                 ],
                 "ingredients": [
                   "butter",
                   "brown sugar"
                 ],
-                "tools": [],
+                "tools": [
+                  "flat beater"
+                ],
                 "temperature": null,
                 "time": null
               },
               {
-                "order": 14,
-                "preparation_action": "add",
-                "where": [],
+                "order": 12,
+                "preparation_action": "add and scrape",
+                "where": [
+                  "electric mixer"
+                ],
                 "ingredients": [
                   "mashed banana"
                 ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 15,
-                "preparation_action": "scrape",
-                "where": [],
-                "ingredients": [],
                 "tools": [
                   "rubber spatula"
                 ],
@@ -5465,50 +6139,53 @@
                 "time": null
               },
               {
-                "order": 16,
-                "preparation_action": "add",
-                "where": [],
+                "order": 13,
+                "preparation_action": "add and mix",
+                "where": [
+                  "electric mixer"
+                ],
                 "ingredients": [
                   "pumpkin puree",
                   "sour cream mixture"
                 ],
-                "tools": [],
+                "tools": [
+                  "flat beater"
+                ],
                 "temperature": null,
                 "time": null
               },
               {
-                "order": 17,
-                "preparation_action": "mix",
-                "where": [],
-                "ingredients": [],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 18,
+                "order": 14,
                 "preparation_action": "add",
-                "where": [],
+                "where": [
+                  "electric mixer"
+                ],
                 "ingredients": [
                   "flour mixture"
                 ],
-                "tools": [],
+                "tools": [
+                  "flat beater"
+                ],
                 "temperature": null,
                 "time": null
               },
               {
-                "order": 19,
+                "order": 15,
                 "preparation_action": "spread",
-                "where": [],
+                "where": [
+                  "prepared pan"
+                ],
                 "ingredients": [],
                 "tools": [],
                 "temperature": null,
                 "time": null
               },
               {
-                "order": 20,
+                "order": 16,
                 "preparation_action": "sprinkle",
-                "where": [],
+                "where": [
+                  "prepared pan"
+                ],
                 "ingredients": [
                   "streusel"
                 ],
@@ -5517,67 +6194,59 @@
                 "time": null
               },
               {
-                "order": 21,
-                "preparation_action": "add",
-                "where": [],
+                "order": 17,
+                "preparation_action": "add and spread",
+                "where": [
+                  "prepared pan"
+                ],
                 "ingredients": [
-                  "remaining batter"
+                  "batter"
                 ],
                 "tools": [],
                 "temperature": null,
                 "time": null
               },
               {
-                "order": 22,
-                "preparation_action": "spread",
-                "where": [],
-                "ingredients": [],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 23,
+                "order": 18,
                 "preparation_action": "sprinkle",
-                "where": [],
+                "where": [
+                  "prepared pan"
+                ],
                 "ingredients": [
-                  "remaining streusel"
+                  "streusel"
                 ],
                 "tools": [],
                 "temperature": null,
                 "time": null
               },
               {
-                "order": 24,
+                "order": 19,
                 "preparation_action": "bake",
-                "where": [],
+                "where": [
+                  "oven"
+                ],
                 "ingredients": [],
                 "tools": [],
                 "temperature": null,
                 "time": "55-60 minutes"
               },
               {
-                "order": 25,
-                "preparation_action": "transfer",
-                "where": [],
-                "ingredients": [],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 26,
-                "preparation_action": "cool",
-                "where": [],
+                "order": 20,
+                "preparation_action": "transfer and cool",
+                "where": [
+                  "stovetop"
+                ],
                 "ingredients": [],
                 "tools": [],
                 "temperature": null,
                 "time": "40 minutes"
               },
               {
-                "order": 27,
-                "preparation_action": "remove",
-                "where": [],
+                "order": 21,
+                "preparation_action": "remove and lift",
+                "where": [
+                  "cake pan"
+                ],
                 "ingredients": [],
                 "tools": [
                   "spreader type knife"
@@ -5586,16 +6255,7 @@
                 "time": null
               },
               {
-                "order": 28,
-                "preparation_action": "lift",
-                "where": [],
-                "ingredients": [],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 29,
+                "order": 22,
                 "preparation_action": "refrigerate",
                 "where": [],
                 "ingredients": [],
@@ -5604,7 +6264,7 @@
                 "time": "an hour"
               },
               {
-                "order": 30,
+                "order": 23,
                 "preparation_action": "transfer",
                 "where": [],
                 "ingredients": [],
@@ -5613,7 +6273,7 @@
                 "time": null
               },
               {
-                "order": 31,
+                "order": 24,
                 "preparation_action": "put",
                 "where": [],
                 "ingredients": [],
@@ -5622,7 +6282,7 @@
                 "time": null
               },
               {
-                "order": 32,
+                "order": 25,
                 "preparation_action": "prepare",
                 "where": [],
                 "ingredients": [],
@@ -5631,41 +6291,35 @@
                 "time": null
               },
               {
-                "order": 33,
+                "order": 26,
                 "preparation_action": "combine",
                 "where": [
                   "glass bowl",
-                  "small saucepan"
+                  "saucepan"
                 ],
                 "ingredients": [
-                  "mini chips",
-                  "Earth Balance spread"
+                  "Enjoy Life Brand Chocolate Chips",
+                  "Earth Balance Soy Free Spread"
                 ],
                 "tools": [],
                 "temperature": null,
                 "time": null
               },
               {
-                "order": 34,
+                "order": 27,
                 "preparation_action": "mix",
-                "where": [],
+                "where": [
+                  "glass bowl",
+                  "saucepan"
+                ],
                 "ingredients": [],
                 "tools": [],
                 "temperature": null,
                 "time": null
               },
               {
-                "order": 35,
-                "preparation_action": "remove",
-                "where": [],
-                "ingredients": [],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 36,
-                "preparation_action": "let",
+                "order": 28,
+                "preparation_action": "remove and let cool",
                 "where": [],
                 "ingredients": [],
                 "tools": [],
@@ -5673,7 +6327,7 @@
                 "time": "5 minutes"
               },
               {
-                "order": 37,
+                "order": 29,
                 "preparation_action": "drizzle",
                 "where": [],
                 "ingredients": [],
@@ -5684,7 +6338,7 @@
                 "time": null
               },
               {
-                "order": 38,
+                "order": 30,
                 "preparation_action": "pull",
                 "where": [],
                 "ingredients": [],
@@ -5693,13 +6347,13 @@
                 "time": null
               },
               {
-                "order": 39,
+                "order": 31,
                 "preparation_action": "serve",
                 "where": [],
                 "ingredients": [],
                 "tools": [],
-                "temperature": null,
-                "time": "chilled, or room temperature"
+                "temperature": "room temperature",
+                "time": null
               }
             ]
           }

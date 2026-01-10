@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-01-10T18:23:55.912646",
+  "total_tests": 1,
+  "passed": 1,
+  "failed": 0,
+  "errors": 0,
+  "total_time": 0.025240421295166016,
+  "test_results": [
+    {
+      "test_id": "TEST_001",
+      "description": "Boda italiana vegana y halal en verano",
+      "status": "PASSED",
+      "passed": true,
+      "execution_time": 0.025240421295166016,
+      "phases": {
+        "retrieve": {
+          "success": true,
+          "cases_found": 12,
+          "best_score": 2,
+          "time": 0.00032019615173339844
+        },
+        "adapt": {
+          "success": true,
+          "substitutions": 1,
+          "time": 0.007454633712768555
+        },
+        "revise": {
+          "success": false,
+          "performance": 0.9400000000000001,
+          "violations": 1,
+          "violation_details": [
+            {
+              "course": "dessert",
+              "ingredient": "ground flaxseed",
+              "restriction": "vegan",
+              "message": "'ground flaxseed' viola restricción 'vegan'"
+            }
+          ],
+          "time": 0.014649152755737305
+        },
+        "retain": {
+          "success": true,
+          "usefulness": 0.6112844202898552,
+          "would_save": true,
+          "time": 0.00042819976806640625
+        }
+      },
+      "error": null
+    }
+  ]
+}
