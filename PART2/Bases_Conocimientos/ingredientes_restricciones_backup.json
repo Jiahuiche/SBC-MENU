@@ -863,7 +863,7 @@
         "Frutos secos"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -1679,8 +1679,8 @@
       ],
       "restrictions": {
         "gluten_free": "UNKNOWN",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -2970,8 +2970,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -4973,8 +4973,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -5669,8 +5669,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "FALSE",
         "kosher": "FALSE",
         "dairy_free": "TRUE",
@@ -6498,8 +6498,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -7055,7 +7055,7 @@
         "Mezclas de especias"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -7082,7 +7082,7 @@
         "Mezclas de especias"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -9184,7 +9184,7 @@
         "Pan y bollería"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -10193,10 +10193,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -10557,7 +10557,7 @@
         "Bulgur"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -10691,7 +10691,7 @@
         "Verduras/Hortalizas"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -10717,7 +10717,7 @@
         "Verduras/Hortalizas"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -10854,7 +10854,7 @@
         "Panificados"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -10922,10 +10922,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -10976,10 +10976,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -11003,10 +11003,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -11032,10 +11032,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -11059,10 +11059,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -11140,10 +11140,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -11167,10 +11167,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -11194,10 +11194,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -11221,10 +11221,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -11248,10 +11248,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -11304,7 +11304,7 @@
         "vegan": "FALSE",
         "halal": "FALSE",
         "kosher": "FALSE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -12073,7 +12073,7 @@
         "Mezclas de especias"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -12263,8 +12263,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -12817,10 +12817,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -14069,8 +14069,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -14580,8 +14580,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -14607,8 +14607,8 @@
       ],
       "restrictions": {
         "gluten_free": "UNKNOWN",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -18239,7 +18239,7 @@
         "Mezclas de especias"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -18455,7 +18455,7 @@
         "Chocolate y cacao"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "UNKNOWN",
         "halal": "UNKNOWN",
@@ -18727,10 +18727,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -18752,7 +18752,7 @@
         "Chocolate y cacao"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "UNKNOWN",
         "halal": "UNKNOWN",
@@ -19674,8 +19674,8 @@
       ],
       "restrictions": {
         "gluten_free": "UNKNOWN",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -19756,7 +19756,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -20867,8 +20867,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -21394,8 +21394,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -23863,7 +23863,7 @@
         "kosher": "UNKNOWN",
         "dairy_free": "TRUE",
         "soy_free": "TRUE",
-        "shellfish_free": "FALSE",
+        "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
       "notes": ""
@@ -23884,13 +23884,13 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
         "soy_free": "TRUE",
-        "shellfish_free": "FALSE",
+        "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
       "notes": "Reclasificado automáticamente desde 'Otros'."
@@ -24200,10 +24200,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -24227,10 +24227,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -24253,10 +24253,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -25499,7 +25499,7 @@
         "Verduras/Hortalizas"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -26024,7 +26024,7 @@
         "Mezclas de especias"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -26857,7 +26857,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -27053,7 +27053,7 @@
         "Verduras/Hortalizas"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -27295,8 +27295,8 @@
       ],
       "restrictions": {
         "gluten_free": "FALSE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -27836,7 +27836,7 @@
       "restrictions": {
         "gluten_free": "UNKNOWN",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -28025,7 +28025,7 @@
         "Mezclas de especias"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -28429,10 +28429,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -29651,7 +29651,7 @@
         "Carne"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "FALSE",
         "vegan": "FALSE",
         "halal": "UNKNOWN",
@@ -29678,7 +29678,7 @@
         "Huevos"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "FALSE",
         "halal": "TRUE",
@@ -30108,7 +30108,7 @@
         "Endulzantes"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -30444,7 +30444,7 @@
         "Granos enteros"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -31538,8 +31538,8 @@
       ],
       "restrictions": {
         "gluten_free": "UNKNOWN",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -33352,7 +33352,7 @@
         "Panificados"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -35061,8 +35061,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -35171,10 +35171,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -35199,10 +35199,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -35482,7 +35482,7 @@
         "Especias"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -35625,7 +35625,7 @@
         "Especias"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -35952,8 +35952,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -36301,7 +36301,7 @@
         "Genéricos"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -36383,8 +36383,8 @@
       ],
       "restrictions": {
         "gluten_free": "FALSE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -36410,8 +36410,8 @@
       ],
       "restrictions": {
         "gluten_free": "FALSE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -36437,8 +36437,8 @@
       ],
       "restrictions": {
         "gluten_free": "FALSE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -36463,9 +36463,9 @@
         "Pan y bollería"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "gluten_free": "TRUE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -36491,8 +36491,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -36681,7 +36681,7 @@
         "Panificados"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -38475,8 +38475,8 @@
       ],
       "restrictions": {
         "gluten_free": "FALSE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -38502,8 +38502,8 @@
       ],
       "restrictions": {
         "gluten_free": "FALSE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -39453,7 +39453,7 @@
         "Cerdo"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -40033,7 +40033,7 @@
       ],
       "restrictions": {
         "gluten_free": "FALSE",
-        "vegetarian": "FALSE",
+        "vegetarian": "TRUE",
         "vegan": "UNKNOWN",
         "halal": "UNKNOWN",
         "kosher": "UNKNOWN",
@@ -41198,7 +41198,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -41224,7 +41224,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -41277,7 +41277,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -41303,7 +41303,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -41330,7 +41330,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -42507,7 +42507,7 @@
         "Genéricos"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -42615,7 +42615,7 @@
         "Pan y bollería"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -43408,7 +43408,7 @@
         "Verduras/Hortalizas"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -43688,10 +43688,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -43859,7 +43859,7 @@
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
-        "soy_free": "FALSE",
+        "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
@@ -44209,7 +44209,7 @@
       "restrictions": {
         "gluten_free": "UNKNOWN",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -44678,8 +44678,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -44733,8 +44733,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "FALSE",
         "kosher": "FALSE",
         "dairy_free": "TRUE",
@@ -44980,7 +44980,7 @@
         "Mezclas de especias"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -45203,7 +45203,7 @@
         "Frutas"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -45505,10 +45505,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -48436,7 +48436,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -48498,7 +48498,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -48549,7 +48549,7 @@
         "Genéricos"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -48687,7 +48687,7 @@
       "restrictions": {
         "gluten_free": "FALSE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -49563,7 +49563,7 @@
         "Mezclas de especias"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -50369,10 +50369,10 @@
       "restrictions": {
         "gluten_free": "UNKNOWN",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -50421,7 +50421,7 @@
         "Pan y bollería"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "UNKNOWN",
         "halal": "UNKNOWN",
@@ -51035,10 +51035,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -52039,10 +52039,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -54473,7 +54473,7 @@
         "Pan y bollería"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -54777,8 +54777,8 @@
       ],
       "restrictions": {
         "gluten_free": "UNKNOWN",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "UNKNOWN",
         "kosher": "FALSE",
         "dairy_free": "TRUE",
@@ -55237,7 +55237,7 @@
         "Mezclas de especias"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -55263,7 +55263,7 @@
         "Endulzantes"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -56498,7 +56498,7 @@
         "Lácteos"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "FALSE",
         "halal": "TRUE",
@@ -57759,7 +57759,7 @@
         "Pasta y fideos"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -57813,7 +57813,7 @@
         "Pasta y fideos"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -59761,7 +59761,7 @@
         "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
-        "nut_free": "FALSE"
+        "nut_free": "TRUE"
       },
       "notes": ""
     },
@@ -60353,7 +60353,7 @@
         "Pasta y fideos"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -62282,7 +62282,7 @@
         "Endulzantes"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -63020,7 +63020,7 @@
         "Verduras/Hortalizas"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -63315,7 +63315,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -64602,7 +64602,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -64629,7 +64629,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -64792,10 +64792,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -66574,7 +66574,7 @@
         "Pan y bollería"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -67186,10 +67186,10 @@
       "restrictions": {
         "gluten_free": "FALSE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -67480,7 +67480,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -68250,8 +68250,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -69250,8 +69250,8 @@
       ],
       "restrictions": {
         "gluten_free": "UNKNOWN",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -71831,8 +71831,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "FALSE",
         "kosher": "FALSE",
         "dairy_free": "TRUE",
@@ -72541,8 +72541,8 @@
       ],
       "restrictions": {
         "gluten_free": "FALSE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -73620,7 +73620,7 @@
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "FALSE",
-        "soy_free": "FALSE",
+        "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
@@ -73647,7 +73647,7 @@
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
-        "soy_free": "FALSE",
+        "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
@@ -73674,7 +73674,7 @@
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
-        "soy_free": "FALSE",
+        "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
@@ -73701,7 +73701,7 @@
         "halal": "UNKNOWN",
         "kosher": "UNKNOWN",
         "dairy_free": "FALSE",
-        "soy_free": "FALSE",
+        "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
@@ -73802,7 +73802,7 @@
         "Verduras/Hortalizas"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -73939,7 +73939,7 @@
         "Espelta"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -73967,7 +73967,7 @@
         "Espelta"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -73995,7 +73995,7 @@
         "Espelta"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -74293,7 +74293,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -75905,8 +75905,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -76555,7 +76555,7 @@
         "Pan y bollería"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -78170,10 +78170,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -78479,7 +78479,7 @@
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
-        "soy_free": "FALSE",
+        "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
@@ -78506,7 +78506,7 @@
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
-        "soy_free": "FALSE",
+        "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
@@ -78532,7 +78532,7 @@
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
-        "soy_free": "FALSE",
+        "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
@@ -78558,7 +78558,7 @@
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
-        "soy_free": "FALSE",
+        "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
@@ -78586,7 +78586,7 @@
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
-        "soy_free": "FALSE",
+        "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
@@ -78614,7 +78614,7 @@
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
-        "soy_free": "FALSE",
+        "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
@@ -79022,7 +79022,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -79485,8 +79485,8 @@
       ],
       "restrictions": {
         "gluten_free": "UNKNOWN",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -80063,10 +80063,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -81519,7 +81519,7 @@
         "Panificados"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -81546,7 +81546,7 @@
         "Panificados"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -83333,10 +83333,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -83690,10 +83690,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -83717,10 +83717,10 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
-        "dairy_free": "FALSE",
+        "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
@@ -84283,7 +84283,7 @@
         "Especias"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -84958,8 +84958,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -85525,7 +85525,7 @@
         "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",
-        "nut_free": "FALSE"
+        "nut_free": "TRUE"
       },
       "notes": "Reclasificado automáticamente desde 'Otros'."
     },
@@ -86463,7 +86463,7 @@
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
-        "soy_free": "FALSE",
+        "soy_free": "TRUE",
         "shellfish_free": "TRUE",
         "nut_free": "TRUE"
       },
@@ -87455,7 +87455,7 @@
       "restrictions": {
         "gluten_free": "UNKNOWN",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -87508,7 +87508,7 @@
         "Panificados"
       ],
       "restrictions": {
-        "gluten_free": "FALSE",
+        "gluten_free": "TRUE",
         "vegetarian": "TRUE",
         "vegan": "TRUE",
         "halal": "TRUE",
@@ -87786,7 +87786,7 @@
       "restrictions": {
         "gluten_free": "TRUE",
         "vegetarian": "TRUE",
-        "vegan": "FALSE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
@@ -87951,8 +87951,8 @@
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
         "halal": "TRUE",
         "kosher": "TRUE",
         "dairy_free": "TRUE",
