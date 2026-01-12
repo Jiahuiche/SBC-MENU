@@ -71,21 +71,6 @@ def denormalize_ingredient_for_ontology(ingredient: str) -> str:
     return ingredient.lower().strip().replace(' ', '-').replace('_', '-')
 
 
-# Mapeo de culturas en inglés a español/variantes
-CULTURE_MAPPINGS = {
-    'latin american': ['latina', 'latin', 'latin american', 'latinoamericana', 'sudamericana', 'mexicana', 'tex-mex', 'central american', 'south american', 'caribbean', 'caribeña'],
-    'french/western european': ['french/western european,''francesa', 'french', 'western european', 'europea occidental', 'european', 'alemana', 'german', 'british', 'británica', 'holandesa', 'dutch', 'belga', 'belgian'],
-    'mediterranean': ['mediterránea', 'mediterranea', 'mediterranean', 'griega', 'greek', 'italiana', 'francesa', 'española', 'spanish', 'turkish', 'turca'],
-    'south asian': ['india', 'indian', 'south asian', 'asiática del sur', 'hindú', 'pakistani', 'paquistaní', 'bangladeshi', 'sri lankan', 'nepalese', 'nepalí'],
-    'chinese': ['china', 'chinese', 'chino', 'cantonese', 'cantonés', 'szechuan', 'sichuan', 'mandarin', 'hunan', 'shanghai'],
-    'american': ['americana', 'american', 'estadounidense', 'usa', 'us', 'north american', 'norteamericana'],
-    'italian': ['italiana', 'italian', 'italy', 'italia', 'mediterránea/italiana', 'sicilian', 'siciliana', 'tuscan', 'toscana'],
-    'east asian': ['asiática', 'asian', 'east asian', 'asiática oriental', 'oriental', 'southeast asian', 'asiática del sudeste'],
-    'japanese': ['japonesa', 'japanese', 'japan', 'japón', 'nippon'],
-    'middle eastern/north african': ['middle eastern/north african', 'middle eastern', 'north african', 'medio oriente', 'norte de áfrica', 'árabe', 'arab', 'turkish', 'turca', 'persian', 'persa', 'moroccan', 'marroquí', 'lebanese', 'libanesa', 'egyptian', 'egipcia'],
-    'korean': ['coreana', 'korean', 'korea', 'corea', 'south korean', 'norte coreana'],
-}
-
 # Sustitutos conocidos para ingredientes que no tienen alternativas en su categoría
 # Útil para restricciones como vegan donde necesitamos cambiar a otra categoría
 KNOWN_SUBSTITUTES = {
@@ -190,78 +175,153 @@ def find_ingredients_violating_restriction(
 
 
 # ============================================================================
-# ANÁLISIS DE CULTURA
+# ANÁLISIS DE CULTURA (usando ontología)
 # ============================================================================
 
-def find_culture_ingredients(culture: str, contexto_db: dict) -> Set[str]:
+# Culturas disponibles en la ontología
+AVAILABLE_CULTURES = [
+    'Latin American', 'French/Western European', 'Mediterranean', 'South Asian',
+    'Chinese', 'American', 'Italian', 'East Asian', 'Japanese',
+    'Middle Eastern/North African', 'Korean', 'Global/Common', 'Unspecified'
+]
+
+# Mapeo de culturas específicas a culturas de la ontología
+CULTURE_TO_ONTOLOGY = {
+    # Latin American
+    'mexican': 'Latin American',
+    'tex-mex': 'Latin American',
+    'caribbean': 'Latin American',
+    'brazilian': 'Latin American',
+    'peruvian': 'Latin American',
+    'argentinian': 'Latin American',
+    # French/Western European
+    'french': 'French/Western European',
+    'german': 'French/Western European',
+    'british': 'French/Western European',
+    'dutch': 'French/Western European',
+    'belgian': 'French/Western European',
+    # Mediterranean
+    'greek': 'Mediterranean',
+    'spanish': 'Mediterranean',
+    'turkish': 'Mediterranean',
+    # East Asian
+    'thai': 'East Asian',
+    'vietnamese': 'East Asian',
+    'southeast asian': 'East Asian',
+    # Middle Eastern
+    'arab': 'Middle Eastern/North African',
+    'persian': 'Middle Eastern/North African',
+    'moroccan': 'Middle Eastern/North African',
+    'lebanese': 'Middle Eastern/North African',
+    'egyptian': 'Middle Eastern/North African',
+    # South Asian
+    'indian': 'South Asian',
+    'pakistani': 'South Asian',
+    'bangladeshi': 'South Asian',
+}
+
+
+def normalize_culture_name(culture: str) -> Optional[str]:
     """
-    Encuentra todos los ingredientes asociados a una cultura.
-    Usa coincidencia parcial y mapeo de traducciones para manejar variaciones.
+    Normaliza el nombre de una cultura para que coincida con las claves de la ontología.
     
     Args:
-        culture: Cultura buscada (ej: 'American', 'Mexican', 'Mediterranean')
-        contexto_db: Base de datos de ingredientes por contexto
+        culture: Nombre de cultura del usuario
         
     Returns:
-        Set de ingredientes normalizados asociados a la cultura
+        Nombre normalizado que coincide con la ontología, o None si no se encuentra
     """
     culture_lower = culture.lower().strip()
-    all_ingredients = set()
     
-    # Obtener variantes de la cultura
-    culture_variants = CULTURE_MAPPINGS.get(culture_lower, [culture_lower])
-    # Siempre incluir la cultura original
-    if culture_lower not in culture_variants:
-        culture_variants = [culture_lower] + list(culture_variants)
+    # Primero, verificar si es una cultura específica que debe mapearse
+    if culture_lower in CULTURE_TO_ONTOLOGY:
+        return CULTURE_TO_ONTOLOGY[culture_lower]
     
-    for context_key, context_data in contexto_db.items():
-        context_culture = context_data.get('culture', '').lower()
-        context_key_lower = context_key.lower()
+    # Luego, buscar coincidencia directa o parcial con las culturas disponibles
+    for available in AVAILABLE_CULTURES:
+        if culture_lower == available.lower():
+            return available
+        # También buscar coincidencia parcial
+        if culture_lower in available.lower() or available.lower() in culture_lower:
+            return available
+    
+    return None
+
+
+def is_ingredient_in_culture(
+    ingredient: str,
+    culture: str,
+    ontologia_db: dict
+) -> bool:
+    """
+    Verifica si un ingrediente pertenece a una cultura específica en la ontología.
+    
+    Args:
+        ingredient: Ingrediente a verificar
+        culture: Cultura deseada (debe coincidir con las claves de la ontología)
+        ontologia_db: Base de datos de ontología
         
-        # Verificar coincidencia con cualquier variante
-        match_found = False
-        for variant in culture_variants:
-            if (variant in context_culture or 
-                context_culture in variant or
-                variant in context_key_lower):
-                match_found = True
-                break
-        
-        if match_found:
-            ingredients = context_data.get('ingredients', [])
-            for ing in ingredients:
-                all_ingredients.add(normalize_ingredient(ing))
+    Returns:
+        True si el ingrediente está en esa cultura, False si no
+    """
+    ing_normalized = denormalize_ingredient_for_ontology(ingredient)
+    ontology_tree = ontologia_db.get('ontology_tree', {})
     
-    return all_ingredients
+    # Normalizar nombre de cultura
+    culture_key = normalize_culture_name(culture)
+    if not culture_key:
+        return False
+    
+    # Obtener el nodo de la cultura
+    culture_node = ontology_tree.get(culture_key, {})
+    if not culture_node:
+        return False
+    
+    # Buscar el ingrediente en todas las categorías de esta cultura
+    def search_in_node(node: dict) -> bool:
+        if '__ingredients' in node:
+            if ing_normalized in node['__ingredients']:
+                return True
+        
+        for key, value in node.items():
+            if key != '__ingredients' and isinstance(value, dict):
+                if search_in_node(value):
+                    return True
+        
+        return False
+    
+    return search_in_node(culture_node)
 
 
 def find_ingredients_not_in_culture(
     ingredients: List[str], 
     culture: str, 
-    contexto_db: dict
+    ontologia_db: dict
 ) -> List[str]:
     """
-    Encuentra ingredientes que no pertenecen a la cultura deseada.
+    Encuentra ingredientes que NO pertenecen a la cultura deseada.
+    Busca directamente en la ontología.
     
     Args:
         ingredients: Lista de ingredientes del plato
-        culture: Cultura deseada
-        contexto_db: Base de datos de ingredientes por contexto
+        culture: Cultura deseada (ej: 'Italian', 'Mediterranean', 'American')
+        ontologia_db: Base de datos de ontología
         
     Returns:
-        Lista de ingredientes que no pertenecen a la cultura
+        Lista de ingredientes que NO están en la cultura deseada
     """
-    culture_ingredients = find_culture_ingredients(culture, contexto_db)
-    
-    if not culture_ingredients:
-        print(f"⚠️  No se encontraron ingredientes para la cultura '{culture}'")
+    # Verificar que la cultura existe
+    culture_key = normalize_culture_name(culture)
+    if not culture_key:
+        print(f"⚠️  Cultura '{culture}' no encontrada en la ontología")
+        print(f"   Culturas disponibles: {', '.join(AVAILABLE_CULTURES)}")
         return []
     
     not_in_culture = []
     
     for ingredient in ingredients:
-        ing_normalized = normalize_ingredient(ingredient)
-        if ing_normalized not in culture_ingredients:
+        # Verificar si el ingrediente está en la cultura deseada
+        if not is_ingredient_in_culture(ingredient, culture_key, ontologia_db):
             not_in_culture.append(ingredient)
     
     return not_in_culture
@@ -353,17 +413,16 @@ def get_ingredients_from_node(node: dict) -> List[str]:
 
 def find_substitute_candidates(
     ingredient: str, 
-    ontologia_db: dict,
-    search_all_cultures: bool = False
+    ontologia_db: dict
 ) -> Tuple[List[str], str]:
     """
     Encuentra ingredientes candidatos para sustituir al ingrediente dado.
     Busca primero en la subcategoría, luego en la categoría.
+    Solo busca dentro de la cultura original del ingrediente.
     
     Args:
         ingredient: Ingrediente a sustituir
         ontologia_db: Base de datos de ontología
-        search_all_cultures: Si True, busca en todas las culturas en la misma categoría
         
     Returns:
         Tuple de (lista de candidatos, nivel donde se encontraron)
@@ -374,6 +433,7 @@ def find_substitute_candidates(
         return [], 'not_found'
     
     ontology_tree = ontologia_db.get('ontology_tree', {})
+    culture = location['culture']
     category = location['category']
     subcategory = location.get('subcategory')
     
@@ -381,45 +441,22 @@ def find_substitute_candidates(
     candidates = []
     level = 'subcategory'
     
-    if search_all_cultures:
-        # Buscar en todas las culturas dentro de la misma categoría/subcategoría
-        for culture_name, categories in ontology_tree.items():
-            if not isinstance(categories, dict):
-                continue
-            
-            if category in categories:
-                category_node = categories[category]
-                if not isinstance(category_node, dict):
-                    continue
-                
-                # Si hay subcategoría, buscar primero ahí
-                if subcategory and subcategory in category_node:
-                    subcategory_node = category_node[subcategory]
-                    candidates.extend(get_ingredients_from_node(subcategory_node))
-                else:
-                    # Buscar en toda la categoría
-                    candidates.extend(get_ingredients_from_node(category_node))
-        
-        level = 'all_cultures'
-    else:
-        culture = location['culture']
-        
-        # Intentar primero en subcategoría
-        if subcategory:
-            try:
-                subcategory_node = ontology_tree[culture][category][subcategory]
-                candidates = get_ingredients_from_node(subcategory_node)
-            except (KeyError, TypeError):
-                pass
-        
-        # Si no hay suficientes candidatos, buscar en categoría
-        if len(candidates) <= 1:
-            level = 'category'
-            try:
-                category_node = ontology_tree[culture][category]
-                candidates = get_ingredients_from_node(category_node)
-            except (KeyError, TypeError):
-                pass
+    # Intentar primero en subcategoría
+    if subcategory:
+        try:
+            subcategory_node = ontology_tree[culture][category][subcategory]
+            candidates = get_ingredients_from_node(subcategory_node)
+        except (KeyError, TypeError):
+            pass
+    
+    # Si no hay suficientes candidatos, buscar en categoría
+    if len(candidates) <= 1:
+        level = 'category'
+        try:
+            category_node = ontology_tree[culture][category]
+            candidates = get_ingredients_from_node(category_node)
+        except (KeyError, TypeError):
+            pass
     
     # Eliminar duplicados y excluir el ingrediente original
     candidates = list(set(c for c in candidates if c != ing_normalized))
@@ -600,7 +637,7 @@ def adapt_course(
     restrictions_not_met: List[str],
     culture_not_met: Optional[str],
     restricciones_db: dict,
-    contexto_db: dict,
+    contexto_db: dict,  # DEPRECATED: Ya no se usa, se mantiene por compatibilidad
     ontologia_db: dict,
     pairing_db: dict
 ) -> Dict:
@@ -615,8 +652,8 @@ def adapt_course(
         restrictions_not_met: Lista de restricciones no cumplidas
         culture_not_met: Cultura no cumplida (o None)
         restricciones_db: Base de datos de restricciones
-        contexto_db: Base de datos de ingredientes por contexto
-        ontologia_db: Base de datos de ontología
+        contexto_db: DEPRECATED - Ya no se usa (se mantiene por compatibilidad)
+        ontologia_db: Base de datos de ontología (usada para cultura)
         pairing_db: Base de datos de food pairing
         
     Returns:
@@ -643,10 +680,11 @@ def adapt_course(
             restriction_violations[ing].append(restriction)
     
     # 2. Verificar cultura (SOFT CONSTRAINT - no eliminar si no hay sustituto)
+    #    Ahora usa la ontología directamente
     culture_violations = set()
     if culture_not_met:
         not_in_culture = find_ingredients_not_in_culture(
-            original_ingredients, culture_not_met, contexto_db
+            original_ingredients, culture_not_met, ontologia_db
         )
         for ing in not_in_culture:
             ingredients_to_substitute.add(ing)
@@ -668,13 +706,13 @@ def adapt_course(
             # Determinar si es hard constraint (restricción) o soft (cultura)
             is_hard_constraint = ingredient in restriction_violations and len(restriction_violations[ingredient]) > 0
             
-            # Estrategia de búsqueda progresiva
+            # Estrategia de búsqueda
             best_substitute = None
             search_attempts = []
             
-            # Intento 1: Buscar en la misma cultura/categoría
-            candidates, level = find_substitute_candidates(ingredient, ontologia_db, search_all_cultures=False)
-            search_attempts.append(f"misma cultura ({level}): {len(candidates)} candidatos")
+            # Intento 1: Buscar en la misma cultura (subcategoría → categoría)
+            candidates, level = find_substitute_candidates(ingredient, ontologia_db)
+            search_attempts.append(f"ontología ({level}): {len(candidates)} candidatos")
             
             if candidates:
                 best_substitute = select_best_substitute(
@@ -685,24 +723,10 @@ def adapt_course(
                     restricciones_db=restricciones_db
                 )
             
-            # Intento 2: Si no se encontró, buscar en todas las culturas
-            if not best_substitute:
-                candidates, level = find_substitute_candidates(ingredient, ontologia_db, search_all_cultures=True)
-                search_attempts.append(f"todas culturas ({level}): {len(candidates)} candidatos")
-                
-                if candidates:
-                    best_substitute = select_best_substitute(
-                        candidates, 
-                        other_ingredients, 
-                        pairing_db,
-                        all_restrictions=restrictions_not_met,
-                        restricciones_db=restricciones_db
-                    )
-            
-            # Intento 3: Usar sustitutos conocidos como fallback
+            # Intento 2: Usar sustitutos conocidos como fallback
             if not best_substitute:
                 known_subs = get_known_substitutes(ingredient, restrictions_not_met, restricciones_db)
-                search_attempts.append(f"sustitutos conocidos: {len(known_subs)} candidatos")
+                search_attempts.append(f"fallback conocidos: {len(known_subs)} candidatos")
                 
                 if known_subs:
                     # Seleccionar el mejor usando food pairing

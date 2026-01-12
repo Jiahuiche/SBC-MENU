@@ -125,9 +125,9 @@ def test_specific_case():
     for ingredient in violating:
         print(f"🔍 Buscando sustituto para: {ingredient}")
         
-        # Intento 1: Ontología (misma cultura)
-        candidates, level = find_substitute_candidates(ingredient, ontologia_db, search_all_cultures=False)
-        print(f"   Ontología (misma cultura): {len(candidates)} candidatos")
+        # Intento 1: Ontología (subcategoría → categoría de la misma cultura)
+        candidates, level = find_substitute_candidates(ingredient, ontologia_db)
+        print(f"   Ontología ({level}): {len(candidates)} candidatos")
         
         other_ingredients = [i for i in test_ingredients if i not in violating]
         
@@ -141,31 +141,17 @@ def test_specific_case():
                 restricciones_db=restricciones_db
             )
         
-        # Intento 2: Ontología (todas las culturas)
-        if not best:
-            candidates, level = find_substitute_candidates(ingredient, ontologia_db, search_all_cultures=True)
-            print(f"   Ontología (todas culturas): {len(candidates)} candidatos")
-            
-            if candidates:
-                best = select_best_substitute(
-                    candidates, 
-                    other_ingredients, 
-                    pairing_db,
-                    all_restrictions=restrictions,
-                    restricciones_db=restricciones_db
-                )
-        
-        # Intento 3: Sustitutos conocidos
+        # Intento 2: Sustitutos conocidos
         if not best:
             known = get_known_substitutes(ingredient, restrictions, restricciones_db)
-            print(f"   Sustitutos conocidos: {known}")
+            print(f"   Fallback conocidos: {known}")
             if known:
                 best = known[0]  # Tomar el primero como fallback
         
         if best:
             print(f"   ✅ Mejor sustituto: {best}")
         else:
-            print(f"   ⚠️  No se encontró sustituto válido")
+            print(f"   ⚠️  No se encontró sustituto válido → se eliminará (hard) o mantendrá (soft)")
         print()
 
 
