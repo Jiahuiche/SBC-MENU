@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-01-12T14:45:55.714808",
-  "total_tests": 5,
-  "passed": 5,
+  "timestamp": "2026-01-12T16:59:46.164831",
+  "total_tests": 1,
+  "passed": 1,
   "failed": 0,
   "errors": 0,
-  "total_time": 0.20554852485656738,
+  "total_time": 0.03116154670715332,
   "test_results": [
     {
       "test_id": "TEST_001",
       "description": "Boda italiana vegana y halal en verano",
       "status": "PASSED",
       "passed": true,
-      "execution_time": 0.026173114776611328,
+      "execution_time": 0.03116154670715332,
       "phases": {
         "retrieve": {
           "success": true,
           "cases_found": 10,
           "best_score": 3.5,
-          "time": 0.0014269351959228516
+          "time": 0.000621795654296875
         },
         "adapt": {
           "success": true,
           "substitutions": 1,
-          "time": 0.006621599197387695
+          "time": 0.0043239593505859375
         },
         "revise": {
           "success": false,
@@ -36,162 +36,13 @@
               "message": "'ground flaxseed' viola restricción 'vegan'"
             }
           ],
-          "time": 0.017595529556274414
+          "time": 0.022673606872558594
         },
         "retain": {
           "success": true,
           "usefulness": 0.6105597826086957,
           "would_save": true,
-          "time": 0.0004892349243164062
-        }
-      },
-      "error": null
-    },
-    {
-      "test_id": "TEST_002",
-      "description": "Congreso mexicano sin restricciones en invierno",
-      "status": "PASSED",
-      "passed": true,
-      "execution_time": 0.08018922805786133,
-      "phases": {
-        "retrieve": {
-          "success": true,
-          "cases_found": 10,
-          "best_score": 1.0,
-          "time": 0.0005393028259277344
-        },
-        "adapt": {
-          "success": true,
-          "substitutions": 9,
-          "time": 0.06553030014038086
-        },
-        "revise": {
-          "success": true,
-          "performance": 0.8,
-          "violations": 0,
-          "violation_details": [],
-          "time": 0.013637542724609375
-        },
-        "retain": {
-          "success": true,
-          "usefulness": 0.6956396103896104,
-          "would_save": true,
-          "time": 0.00040078163146972656
-        }
-      },
-      "error": null
-    },
-    {
-      "test_id": "TEST_003",
-      "description": "Reunión familiar mediterránea vegetariana y sin gluten",
-      "status": "PASSED",
-      "passed": true,
-      "execution_time": 0.018079280853271484,
-      "phases": {
-        "retrieve": {
-          "success": true,
-          "cases_found": 10,
-          "best_score": 5.5,
-          "time": 0.0005419254302978516
-        },
-        "adapt": {
-          "success": true,
-          "substitutions": 0,
-          "time": 6.67572021484375e-06
-        },
-        "revise": {
-          "success": false,
-          "performance": 0.88,
-          "violations": 2,
-          "violation_details": [
-            {
-              "course": "main",
-              "ingredient": "navy",
-              "restriction": "vegetarian",
-              "message": "'navy' viola restricción 'vegetarian'"
-            },
-            {
-              "course": "main",
-              "ingredient": "dinosaur kale",
-              "restriction": "gluten-free",
-              "message": "'dinosaur kale' viola restricción 'gluten-free'"
-            }
-          ],
-          "time": 0.01705646514892578
-        },
-        "retain": {
-          "success": true,
-          "usefulness": 0.561,
-          "would_save": true,
-          "time": 0.0004572868347167969
-        }
-      },
-      "error": null
-    },
-    {
-      "test_id": "TEST_004",
-      "description": "Boda americana sin lactosa en otoño",
-      "status": "PASSED",
-      "passed": true,
-      "execution_time": 0.012243032455444336,
-      "phases": {
-        "retrieve": {
-          "success": true,
-          "cases_found": 10,
-          "best_score": 3.5,
-          "time": 0.0002608299255371094
-        },
-        "adapt": {
-          "success": true,
-          "substitutions": 0,
-          "time": 6.67572021484375e-06
-        },
-        "revise": {
-          "success": true,
-          "performance": 1.0,
-          "violations": 0,
-          "violation_details": [],
-          "time": 0.011522531509399414
-        },
-        "retain": {
-          "success": true,
-          "usefulness": 0.62,
-          "would_save": true,
-          "time": 0.0004336833953857422
-        }
-      },
-      "error": null
-    },
-    {
-      "test_id": "TEST_005",
-      "description": "Congreso francés kosher vegano",
-      "status": "PASSED",
-      "passed": true,
-      "execution_time": 0.0688638687133789,
-      "phases": {
-        "retrieve": {
-          "success": true,
-          "cases_found": 10,
-          "best_score": 3.0,
-          "time": 0.0004725456237792969
-        },
-        "adapt": {
-          "success": true,
-          "substitutions": 6,
-          "time": 0.05165743827819824
-        },
-        "revise": {
-          "success": true,
-          "performance": 0.8,
-          "violations": 0,
-          "violation_details": [],
-          "time": 0.016348838806152344
-        },
-        "retain": {
-          "success": true,
-          "usefulness": 0.6558146853146853,
-          "would_save": true,
-          "time": 0.00036787986755371094
+          "time": 0.0002677440643310547
         }
       },
       "error": null
