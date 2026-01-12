@@ -9,7 +9,7 @@ import json
 import os
 
 
-def load_case_base(filepath='Bases_Casos/casos_cbr.json'):
+def load_case_base(filepath='Base_Casos/casos_cbr.json'):
     """Carga la base de casos desde el archivo JSON."""
     # Ajustar la ruta si estamos en el directorio CBR
     try:
@@ -22,6 +22,30 @@ def load_case_base(filepath='Bases_Casos/casos_cbr.json'):
     except json.JSONDecodeError:
         print(f"⚠️  Error: El archivo {filepath} no es un JSON válido")
         return []
+
+
+def retrieve_case_by_id(case_id: int, case_base: list = None, filepath: str = 'Base_Casos/casos_cbr.json') -> dict:
+    """
+    Recupera un caso específico por su ID.
+    Útil para segundas rondas donde queremos el caso de la ronda anterior.
+    
+    Args:
+        case_id: ID del caso a recuperar
+        case_base: Base de casos (opcional, se carga si no se proporciona)
+        filepath: Ruta al archivo de casos
+        
+    Returns:
+        Dict con el caso encontrado o None si no existe
+    """
+    if case_base is None:
+        case_base = load_case_base(filepath)
+    
+    for case in case_base:
+        if case.get('id_caso') == case_id:
+            return case
+    
+    print(f"⚠️  No se encontró el caso con ID: {case_id}")
+    return None
 
 
 def normalize_restriction(restriction):
@@ -51,21 +75,106 @@ def check_culture_match(user_cuisine, case_culture):
     return user_norm == case_norm or user_norm in case_norm or case_norm in user_norm
 
 
-def calculate_similarity(user_input, case_problem):
+def normalize_season(season):
+    """Normaliza una estación para comparación."""
+    return season.lower().replace('-', ' ').replace('_', ' ').strip()
+
+
+# Valores que indican "cualquier estación" (acepta todas)
+ANY_SEASON_VALUES = ['any', 'any season', 'todas', 'all', 'all seasons', '', 'any-season']
+
+
+def is_any_season(season):
+    """Verifica si el valor de estación significa 'cualquier estación'."""
+    if not season:
+        return True
+    return normalize_season(season) in ANY_SEASON_VALUES
+
+
+def check_season_match(user_season, case_season):
+    """
+    Verifica si hay coincidencia de estación.
+    
+    Args:
+        user_season: Estación solicitada por el usuario
+        case_season: Estación del caso
+        
+    Returns:
+        bool: True si hay coincidencia, si el usuario acepta cualquier estación,
+              o False si no especifica estación (no suma punto)
+    """
+    # Si el usuario no especifica estación, no suma punto
+    if not user_season:
+        return False
+    
+    # Si el usuario acepta cualquier estación, siempre hay match
+    if is_any_season(user_season):
+        return True
+    
+    if not case_season:
+        return False
+    
+    user_norm = normalize_season(user_season)
+    case_norm = normalize_season(case_season)
+    
+    # Matching exacto o parcial
+    return user_norm == case_norm or user_norm in case_norm or case_norm in user_norm
+
+
+def check_price_in_range(min_price, max_price, case_price):
+    """
+    Verifica si el precio del caso está dentro del rango del usuario.
+    
+    Args:
+        min_price: Precio mínimo del usuario
+        max_price: Precio máximo del usuario
+        case_price: Precio por ración del caso
+        
+    Returns:
+        bool: True si el precio está dentro del rango
+    """
+    if case_price is None or case_price <= 0:
+        return False
+    
+    # Si el usuario no especifica rango, no suma puntos
+    if min_price is None and max_price is None:
+        return False
+    
+    # Usar valores por defecto si no se especifican
+    min_p = min_price if min_price is not None else 0
+    max_p = max_price if max_price is not None else float('inf')
+    
+    return min_p <= case_price <= max_p
+
+
+# Pesos para la función de similitud
+SIMILARITY_WEIGHTS = {
+    'restriction': 2.0,   # Mayor peso: restricciones alimentarias
+    'culture': 1.5,       # Peso intermedio: cultura culinaria
+    'season': 1.0,        # Peso base: estación
+    'price': 1.0          # Peso base: precio
+}
+
+
+def calculate_similarity(user_input, case_problem, case_solution=None):
     """
     Calcula la similitud entre el input del usuario y el problema del caso.
-    Matching exacto: cada coincidencia suma 1 punto.
+    Sistema de pesos:
+      - Restricciones alimentarias: 2.0 puntos cada una (mayor importancia)
+      - Cultura culinaria: 1.5 puntos (importancia intermedia)
+      - Estación y precio: 1.0 punto cada uno (importancia base)
     
     Args:
         user_input (dict): Diccionario con las preferencias del usuario
         case_problem (dict): Campo 'problema' del caso
+        case_solution (dict): Campo 'solucion' del caso (para price y season)
         
     Returns:
-        int: Puntuación de similitud
+        float: Puntuación de similitud ponderada
     """
-    score = 0
+    score = 0.0
     
-    # 1. Matching de restricciones alimentarias
+    # 1. Matching de restricciones alimentarias (PESO ALTO: 2.0 por cada una)
     user_restrictions = user_input.get('restrictions', [])
     case_restrictions = case_problem.get('restricciones_alimentarias', [])
     
@@ -76,14 +185,32 @@ def calculate_similarity(user_input, case_problem):
     # Contar coincidencias exactas
     for user_rest in user_restrictions_normalized:
         if user_rest in case_restrictions_normalized:
-            score += 1
+            score += SIMILARITY_WEIGHTS['restriction']
     
-    # 2. Matching de cultura culinaria
+    # 2. Matching de cultura culinaria (PESO MEDIO: 1.5)
     user_cuisine = user_input.get('cuisine', '').lower()
     case_culture = case_problem.get('cultura_preferible', '').lower()
     
     if check_culture_match(user_cuisine, case_culture):
-        score += 1
+        score += SIMILARITY_WEIGHTS['culture']
+    
+    # 3. Matching de estación (season) (PESO BASE: 1.0)
+    if case_solution:
+        features = case_solution.get('features', {})
+        
+        user_season = user_input.get('season', '')
+        case_season = features.get('season', '')
+        
+        if check_season_match(user_season, case_season):
+            score += SIMILARITY_WEIGHTS['season']
+        
+        # 4. Matching de precio (price_per_serving dentro del rango) (PESO BASE: 1.0)
+        min_price = user_input.get('min_price')
+        max_price = user_input.get('max_price')
+        case_price = features.get('total_price_per_serving')
+        
+        if check_price_in_range(min_price, max_price, case_price):
+            score += SIMILARITY_WEIGHTS['price']
     
     return score
 
@@ -100,11 +227,15 @@ def analyze_case_compliance(user_input, case):
         dict: Diccionario con:
             - 'restrictions_not_met': lista de restricciones no cumplidas
             - 'culture_not_met': cultura no cumplida (o None si cumple)
+            - 'season_not_met': estación no cumplida (o None si cumple)
+            - 'price_not_met': True si el precio está fuera del rango
             - 'courses_analysis': análisis detallado por plato
     """
     result = {
         'restrictions_not_met': [],
         'culture_not_met': None,
+        'season_not_met': None,
+        'price_not_met': False,
         'courses_analysis': {}
     }
     
@@ -113,6 +244,7 @@ def analyze_case_compliance(user_input, case):
     
     solution = case.get('solucion', {})
     courses = solution.get('courses', {})
+    features = solution.get('features', {})
     
     # Analizar cada plato (starter, main, dessert)
     for course_name, course_data in courses.items():
@@ -142,6 +274,25 @@ def analyze_case_compliance(user_input, case):
     if user_cuisine and not check_culture_match(user_cuisine, case_culture):
         result['culture_not_met'] = user_cuisine
     
+    # Verificar estación
+    user_season = user_input.get('season', '')
+    case_season = features.get('season', '')
+    # Solo verificar si el usuario especificó una estación concreta (no 'any')
+    if user_season and not is_any_season(user_season):
+        if not check_season_match(user_season, case_season):
+            result['season_not_met'] = user_season
+    
+    # Verificar precio
+    min_price = user_input.get('min_price')
+    max_price = user_input.get('max_price')
+    case_price = features.get('total_price_per_serving')
+    
+    if (min_price is not None or max_price is not None) and case_price is not None:
+        if not check_price_in_range(min_price, max_price, case_price):
+            result['price_not_met'] = True
+            result['case_price'] = case_price
+            result['user_price_range'] = {'min': min_price, 'max': max_price}
+    
     return result
 
 
@@ -164,7 +315,8 @@ def retrieve_cases(user_input, case_base):
     
     for case in case_base:
         problem = case.get('problema', {})
-        score = calculate_similarity(user_input, problem)
+        solution = case.get('solucion', {})
+        score = calculate_similarity(user_input, problem, solution)
         
         # Analizar qué restricciones/cultura no cumple
         compliance = analyze_case_compliance(user_input, case)
@@ -208,6 +360,7 @@ def print_results(results, top_n=5):
         case_id = case.get('id_caso', 'N/A')
         solution = case.get('solucion', {})
         menu_name = solution.get('menu_name', 'Sin nombre')
+        features = solution.get('features', {})
         
         print(f"🏆 Ranking #{i}  |  Caso ID: {case_id}  |  Puntuación: {score} puntos")
         print(f"   {menu_name}")
@@ -220,18 +373,32 @@ def print_results(results, top_n=5):
         print(f"   • Cultura: {culture}")
         print(f"   • Restricciones: {', '.join(restrictions) if restrictions else 'Ninguna'}")
         
+        # Mostrar estación y precio
+        case_season = features.get('season', 'N/A')
+        case_price = features.get('total_price_per_serving', 'N/A')
+        print(f"   • Estación: {case_season}")
+        print(f"   • Precio por ración: {case_price}€" if isinstance(case_price, (int, float)) else f"   • Precio por ración: {case_price}")
+        
         # Mostrar análisis de cumplimiento
         restrictions_not_met = compliance.get('restrictions_not_met', [])
         culture_not_met = compliance.get('culture_not_met')
+        season_not_met = compliance.get('season_not_met')
+        price_not_met = compliance.get('price_not_met', False)
         
-        if restrictions_not_met or culture_not_met:
+        if restrictions_not_met or culture_not_met or season_not_met or price_not_met:
             print(f"   ⚠️  Adaptaciones necesarias:")
             if restrictions_not_met:
                 print(f"      - Restricciones no cumplidas: {', '.join(restrictions_not_met)}")
             if culture_not_met:
                 print(f"      - Cultura no cumplida: {culture_not_met}")
+            if season_not_met:
+                print(f"      - Estación no cumplida: {season_not_met}")
+            if price_not_met:
+                user_range = compliance.get('user_price_range', {})
+                case_price_val = compliance.get('case_price', 'N/A')
+                print(f"      - Precio fuera de rango: {case_price_val}€ (rango usuario: {user_range.get('min', 0)}€ - {user_range.get('max', '∞')}€)")
         else:
-            print(f"   ✅ Cumple todas las restricciones y cultura")
+            print(f"   ✅ Cumple todas las restricciones, cultura, estación y precio")
         
         print()
     

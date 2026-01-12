@@ -37,7 +37,7 @@ from Retain import retain_case, get_case_base_stats, calculate_similarity_to_bas
 
 BASE_DIR = os.path.join(SCRIPT_DIR, '..')
 CASE_BASE_PATH = os.path.join(BASE_DIR, 'Base_Casos', 'casos_cbr.json')
-TEST_CASES_PATH = os.path.join(BASE_DIR, 'Bases_Conocimientos', 'test_cases.json')
+TEST_CASES_PATH = os.path.join(BASE_DIR, 'Juegos_Prueba', 'test_cases.json')
 RESULTS_PATH = os.path.join(SCRIPT_DIR, 'test_results.json')
 
 

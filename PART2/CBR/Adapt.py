@@ -583,6 +583,279 @@ def select_best_substitute(
 # MÓDULO PRINCIPAL DE ADAPTACIÓN
 # ============================================================================
 
+# Configuración de adaptación gradual para cultura
+MAX_CULTURE_SUBSTITUTIONS_PER_ROUND = 3  # Máximo de ingredientes a cambiar por cultura en cada ronda
+
+
+# ============================================================================
+# AJUSTE CULTURAL (SEGUNDA RONDA)
+# ============================================================================
+
+def get_all_ingredients_from_culture(culture: str, ontologia_db: dict) -> List[str]:
+    """
+    Obtiene TODOS los ingredientes de una cultura específica de la ontología.
+    
+    Args:
+        culture: Nombre de la cultura (ej: 'Italian', 'Mediterranean')
+        ontologia_db: Base de datos de ontología
+        
+    Returns:
+        Lista de todos los ingredientes de esa cultura
+    """
+    culture_key = normalize_culture_name(culture)
+    if not culture_key:
+        print(f"⚠️  Cultura '{culture}' no encontrada en la ontología")
+        return []
+    
+    ontology_tree = ontologia_db.get('ontology_tree', {})
+    culture_node = ontology_tree.get(culture_key, {})
+    
+    if not culture_node:
+        return []
+    
+    return get_ingredients_from_node(culture_node)
+
+
+def find_ingredient_to_remove_from_culture(
+    ingredients: List[str],
+    culture: str,
+    ontologia_db: dict
+) -> Optional[str]:
+    """
+    Encuentra un ingrediente del plato que pertenezca a la cultura especificada
+    para poder eliminarlo (operación 'remove').
+    
+    Args:
+        ingredients: Lista de ingredientes actuales del plato
+        culture: Cultura de la cual queremos eliminar un ingrediente
+        ontologia_db: Base de datos de ontología
+        
+    Returns:
+        Ingrediente a eliminar o None si no hay ninguno de esa cultura
+    """
+    for ingredient in ingredients:
+        if is_ingredient_in_culture(ingredient, culture, ontologia_db):
+            return ingredient
+    return None
+
+
+def find_ingredient_to_add_from_culture(
+    current_ingredients: List[str],
+    culture: str,
+    ontologia_db: dict,
+    pairing_db: dict,
+    restrictions: List[str] = None,
+    restricciones_db: dict = None
+) -> Optional[str]:
+    """
+    Encuentra un ingrediente de la cultura especificada para añadir al plato.
+    Usa food pairing para elegir el mejor candidato.
+    
+    Args:
+        current_ingredients: Ingredientes actuales del plato
+        culture: Cultura de la cual queremos añadir un ingrediente
+        ontologia_db: Base de datos de ontología
+        pairing_db: Base de datos de food pairing
+        restrictions: Restricciones alimentarias a cumplir
+        restricciones_db: Base de datos de restricciones
+        
+    Returns:
+        Ingrediente a añadir o None si no se encuentra ninguno válido
+    """
+    # Obtener todos los ingredientes de la cultura
+    culture_ingredients = get_all_ingredients_from_culture(culture, ontologia_db)
+    
+    if not culture_ingredients:
+        return None
+    
+    # Excluir ingredientes que ya están en el plato
+    current_normalized = set(normalize_ingredient(i) for i in current_ingredients)
+    candidates = [
+        ing for ing in culture_ingredients 
+        if normalize_ingredient(ing.replace('-', ' ')) not in current_normalized
+    ]
+    
+    if not candidates:
+        return None
+    
+    # Filtrar por restricciones si las hay
+    if restrictions and restricciones_db:
+        valid_candidates = []
+        for candidate in candidates:
+            is_valid = True
+            for restriction in restrictions:
+                restriction_key = normalize_restriction(restriction)
+                restriction_data = restricciones_db.get(restriction_key, {})
+                forbidden = set(normalize_ingredient(i) for i in restriction_data.get('ingredients_forbidden', []))
+                
+                if normalize_ingredient(candidate.replace('-', ' ')) in forbidden:
+                    is_valid = False
+                    break
+            
+            if is_valid:
+                valid_candidates.append(candidate)
+        
+        candidates = valid_candidates
+    
+    if not candidates:
+        return None
+    
+    # Usar food pairing para seleccionar el mejor
+    best_candidate = select_best_substitute(
+        candidates,
+        current_ingredients,
+        pairing_db,
+        all_restrictions=restrictions,
+        restricciones_db=restricciones_db
+    )
+    
+    # Si no hay match de pairing, elegir uno aleatorio de los primeros 10
+    if not best_candidate and candidates:
+        import random
+        best_candidate = random.choice(candidates[:min(10, len(candidates))])
+    
+    return best_candidate
+
+
+def apply_culture_adjustment(
+    menu: dict,
+    adjustment_type: str,
+    target_culture: str,
+    ontologia_db: dict = None,
+    pairing_db: dict = None,
+    restrictions: List[str] = None,
+    restricciones_db: dict = None
+) -> Dict:
+    """
+    Aplica un ajuste cultural obligatorio al menú (añadir o eliminar ingrediente).
+    
+    Esta función se usa en SEGUNDA RONDA cuando el usuario quiere:
+    - 'add': Añadir un toque de una cultura → añade 1 ingrediente de esa cultura
+    - 'remove': Eliminar un toque de una cultura → elimina 1 ingrediente de esa cultura
+    
+    Args:
+        menu: Menú a ajustar (estructura con 'courses')
+        adjustment_type: 'add' o 'remove'
+        target_culture: Cultura objetivo del ajuste
+        ontologia_db: Base de datos de ontología
+        pairing_db: Base de datos de food pairing
+        restrictions: Restricciones alimentarias a respetar
+        restricciones_db: Base de datos de restricciones
+        
+    Returns:
+        Dict con el menú ajustado e información del cambio
+    """
+    # Cargar bases si no se proporcionan
+    if ontologia_db is None or pairing_db is None:
+        _, _, ontologia_db, pairing_db = load_all_knowledge_bases()
+    if restricciones_db is None:
+        restricciones_db, _, _, _ = load_all_knowledge_bases()
+    
+    adjusted_menu = copy.deepcopy(menu)
+    courses = adjusted_menu.get('courses', {})
+    
+    adjustment_made = False
+    adjustment_details = {
+        'type': adjustment_type,
+        'culture': target_culture,
+        'course_affected': None,
+        'ingredient_added': None,
+        'ingredient_removed': None
+    }
+    
+    # Intentar aplicar el ajuste en uno de los platos (preferir main, luego starter, luego dessert)
+    course_priority = ['main', 'starter', 'dessert']
+    
+    for course_name in course_priority:
+        if course_name not in courses:
+            continue
+        
+        course_data = courses[course_name]
+        current_ingredients = course_data.get('ingredients', [])
+        
+        if adjustment_type == 'add':
+            # AÑADIR ingrediente de la cultura
+            new_ingredient = find_ingredient_to_add_from_culture(
+                current_ingredients,
+                target_culture,
+                ontologia_db,
+                pairing_db,
+                restrictions,
+                restricciones_db
+            )
+            
+            if new_ingredient:
+                # Añadir el ingrediente
+                current_ingredients.append(new_ingredient.replace('-', ' '))
+                courses[course_name]['ingredients'] = current_ingredients
+                
+                adjustment_made = True
+                adjustment_details['course_affected'] = course_name
+                adjustment_details['ingredient_added'] = new_ingredient.replace('-', ' ')
+                
+                # Añadir info de adaptación
+                if '_adaptation' not in courses[course_name]:
+                    courses[course_name]['_adaptation'] = {'substitutions': []}
+                courses[course_name]['_adaptation']['substitutions'].append({
+                    'original': None,
+                    'substitute': new_ingredient.replace('-', ' '),
+                    'reason': [f"Añadido toque de cultura '{target_culture}'"],
+                    'action': 'added'
+                })
+                break
+                
+        elif adjustment_type == 'remove':
+            # ELIMINAR ingrediente de la cultura
+            ingredient_to_remove = find_ingredient_to_remove_from_culture(
+                current_ingredients,
+                target_culture,
+                ontologia_db
+            )
+            
+            if ingredient_to_remove:
+                # Eliminar el ingrediente
+                current_ingredients.remove(ingredient_to_remove)
+                courses[course_name]['ingredients'] = current_ingredients
+                
+                adjustment_made = True
+                adjustment_details['course_affected'] = course_name
+                adjustment_details['ingredient_removed'] = ingredient_to_remove
+                
+                # Añadir info de adaptación
+                if '_adaptation' not in courses[course_name]:
+                    courses[course_name]['_adaptation'] = {'substitutions': []}
+                courses[course_name]['_adaptation']['substitutions'].append({
+                    'original': ingredient_to_remove,
+                    'substitute': None,
+                    'reason': [f"Eliminado toque de cultura '{target_culture}'"],
+                    'action': 'removed'
+                })
+                break
+    
+    adjusted_menu['courses'] = courses
+    
+    return {
+        'adjusted': adjustment_made,
+        'menu': adjusted_menu,
+        'adjustment_details': adjustment_details,
+        'message': _generate_adjustment_message(adjustment_made, adjustment_details)
+    }
+
+
+def _generate_adjustment_message(success: bool, details: dict) -> str:
+    """Genera un mensaje descriptivo del ajuste realizado."""
+    if not success:
+        if details['type'] == 'add':
+            return f"❌ No se pudo añadir ingrediente de cultura '{details['culture']}' (no hay candidatos válidos)"
+        else:
+            return f"❌ No se pudo eliminar ingrediente de cultura '{details['culture']}' (no hay ingredientes de esa cultura)"
+    
+    if details['type'] == 'add':
+        return f"✅ Añadido '{details['ingredient_added']}' ({details['culture']}) en {details['course_affected']}"
+    else:
+        return f"✅ Eliminado '{details['ingredient_removed']}' ({details['culture']}) de {details['course_affected']}"
+
+
 def get_known_substitutes(ingredient: str, restrictions: List[str], restricciones_db: dict) -> List[str]:
     """
     Obtiene sustitutos conocidos para un ingrediente que cumplan las restricciones.
@@ -639,13 +912,16 @@ def adapt_course(
     restricciones_db: dict,
     contexto_db: dict,  # DEPRECATED: Ya no se usa, se mantiene por compatibilidad
     ontologia_db: dict,
-    pairing_db: dict
+    pairing_db: dict,
+    max_culture_subs: int = MAX_CULTURE_SUBSTITUTIONS_PER_ROUND
 ) -> Dict:
     """
     Adapta un plato individual para cumplir con restricciones y cultura.
     
-    IMPORTANTE: Las restricciones alimentarias son HARD CONDITIONS.
-    Si no se encuentra sustituto, el ingrediente se ELIMINA.
+    IMPORTANTE: 
+    - Las restricciones alimentarias son HARD CONDITIONS: se cambian TODOS de una vez.
+    - La cultura es SOFT CONSTRAINT: se cambian máximo 2-3 ingredientes por ronda
+      para permitir adaptaciones graduales en rondas siguientes.
     
     Args:
         course_data: Datos del plato (ingredientes, título, etc.)
@@ -655,6 +931,7 @@ def adapt_course(
         contexto_db: DEPRECATED - Ya no se usa (se mantiene por compatibilidad)
         ontologia_db: Base de datos de ontología (usada para cultura)
         pairing_db: Base de datos de food pairing
+        max_culture_subs: Máximo de sustituciones por cultura en esta ronda (default: 3)
         
     Returns:
         Dict con el plato adaptado e información de cambios
@@ -662,36 +939,46 @@ def adapt_course(
     original_ingredients = course_data.get('ingredients', [])
     
     # Conjunto de ingredientes a sustituir y sus razones
-    ingredients_to_substitute = set()
+    restriction_ingredients = set()  # Ingredientes que violan restricciones (HARD)
+    culture_ingredients = []  # Ingredientes que no cuadran con la cultura (SOFT, lista ordenada)
     substitution_reasons = {}  # ingredient -> lista de razones
     restriction_violations = {}  # ingredient -> lista de restricciones violadas (hard constraints)
     
-    # 1. Verificar restricciones alimentarias (HARD CONSTRAINTS)
+    # 1. Verificar restricciones alimentarias (HARD CONSTRAINTS - cambiar TODOS)
     for restriction in restrictions_not_met:
         violating = find_ingredients_violating_restriction(
             original_ingredients, restriction, restricciones_db
         )
         for ing in violating:
-            ingredients_to_substitute.add(ing)
+            restriction_ingredients.add(ing)
             if ing not in substitution_reasons:
                 substitution_reasons[ing] = []
                 restriction_violations[ing] = []
             substitution_reasons[ing].append(f"viola restricción '{restriction}'")
             restriction_violations[ing].append(restriction)
     
-    # 2. Verificar cultura (SOFT CONSTRAINT - no eliminar si no hay sustituto)
+    # 2. Verificar cultura (SOFT CONSTRAINT - cambiar solo max_culture_subs por ronda)
     #    Ahora usa la ontología directamente
-    culture_violations = set()
+    culture_violations_all = []  # Todos los que violan cultura
     if culture_not_met:
         not_in_culture = find_ingredients_not_in_culture(
             original_ingredients, culture_not_met, ontologia_db
         )
         for ing in not_in_culture:
-            ingredients_to_substitute.add(ing)
-            culture_violations.add(ing)
-            if ing not in substitution_reasons:
-                substitution_reasons[ing] = []
-            substitution_reasons[ing].append(f"no pertenece a cultura '{culture_not_met}'")
+            # Solo agregar si NO viola también una restricción (evitar duplicados)
+            if ing not in restriction_ingredients:
+                culture_violations_all.append(ing)
+                if ing not in substitution_reasons:
+                    substitution_reasons[ing] = []
+                substitution_reasons[ing].append(f"no pertenece a cultura '{culture_not_met}'")
+    
+    # Limitar las sustituciones de cultura a max_culture_subs por ronda
+    culture_ingredients_to_change = culture_violations_all[:max_culture_subs]
+    culture_ingredients_pending = culture_violations_all[max_culture_subs:]
+    
+    # Combinar: todas las restricciones + cultura limitada
+    ingredients_to_substitute = restriction_ingredients.union(set(culture_ingredients_to_change))
+    culture_violations = set(culture_ingredients_to_change)
     
     # 3. Realizar sustituciones
     substitutions = []
@@ -781,13 +1068,35 @@ def adapt_course(
     # 4. Crear el resultado
     adapted_course = copy.deepcopy(course_data)
     adapted_course['ingredients'] = new_ingredients
+    
+    # Actualizar las restricciones del plato para reflejar que ahora cumple las restricciones adaptadas
+    current_restrictions = set(adapted_course.get('restrictions', []))
+    for restriction in restrictions_not_met:
+        # Normalizar la restricción antes de añadirla
+        normalized_restriction = restriction.lower().replace('-', ' ').strip()
+        current_restrictions.add(normalized_restriction)
+    adapted_course['restrictions'] = list(current_restrictions)
+    
+    # Calcular cuántas sustituciones de cultura se hicieron realmente
+    culture_subs_done = len([s for s in substitutions 
+                             if s.get('action') == 'substituted' 
+                             and any('cultura' in r for r in s.get('reason', []))])
+    
     adapted_course['_adaptation'] = {
         'substitutions': substitutions,
         'original_ingredients': original_ingredients,
         'ingredients_substituted': len([s for s in substitutions if s.get('action') == 'substituted']),
         'ingredients_removed': len(removed_ingredients),
         'ingredients_kept': len([s for s in substitutions if s.get('action') == 'kept']),
-        'removed_ingredients': removed_ingredients
+        'removed_ingredients': removed_ingredients,
+        # Info sobre adaptación gradual de cultura
+        'culture_adaptation': {
+            'total_culture_violations': len(culture_violations_all) if culture_not_met else 0,
+            'culture_changed_this_round': len(culture_ingredients_to_change),
+            'culture_pending_next_rounds': len(culture_ingredients_pending),
+            'pending_ingredients': culture_ingredients_pending,
+            'max_per_round': max_culture_subs
+        }
     }
     
     return adapted_course
@@ -804,9 +1113,22 @@ def adapt_menu(
     """
     Adapta un menú completo basándose en el análisis de cumplimiento.
     
+    IMPORTANTE:
+    - Las restricciones alimentarias son HARD CONDITIONS: se cambian TODOS de una vez.
+    - La cultura es SOFT CONSTRAINT: se cambian máximo 2-3 ingredientes por ronda,
+      permitiendo adaptaciones graduales en rondas siguientes si el usuario pide
+      más toque de la misma cultura.
+    
+    SEGUNDA RONDA (ajuste cultural):
+    Si user_input contiene 'culture_adjustment' ('add' o 'remove') y 'culture_adjustment_target',
+    se aplica el ajuste cultural obligatorio en lugar de la adaptación normal.
+    
     Args:
         retrieved_result: Resultado del módulo Retrieve (contiene 'case' y 'compliance')
         user_input: Input del usuario con restricciones y cultura
+                    Campos especiales para segunda ronda:
+                    - culture_adjustment: 'add' | 'remove' | None
+                    - culture_adjustment_target: cultura objetivo del ajuste
         restricciones_db, contexto_db, ontologia_db, pairing_db: Bases de conocimiento
         
     Returns:
@@ -819,15 +1141,60 @@ def adapt_menu(
     case = retrieved_result.get('case', {})
     compliance = retrieved_result.get('compliance', {})
     
+    # =========================================================================
+    # SEGUNDA RONDA: Ajuste cultural obligatorio
+    # =========================================================================
+    culture_adjustment = user_input.get('culture_adjustment')
+    culture_adjustment_target = user_input.get('culture_adjustment_target')
+    
+    if culture_adjustment and culture_adjustment_target:
+        # Es una segunda ronda con ajuste cultural
+        menu = case.get('solucion', {})
+        user_restrictions = user_input.get('restrictions', [])
+        
+        adjustment_result = apply_culture_adjustment(
+            menu=menu,
+            adjustment_type=culture_adjustment,
+            target_culture=culture_adjustment_target,
+            ontologia_db=ontologia_db,
+            pairing_db=pairing_db,
+            restrictions=user_restrictions,
+            restricciones_db=restricciones_db
+        )
+        
+        return {
+            'adapted': adjustment_result['adjusted'],
+            'is_culture_adjustment': True,
+            'culture_adjustment_type': culture_adjustment,
+            'culture_adjustment_target': culture_adjustment_target,
+            'adjustment_details': adjustment_result['adjustment_details'],
+            'message': adjustment_result['message'],
+            'menu': adjustment_result['menu'],
+            'restrictions_adapted': [],
+            'culture_adapted': None,
+            'total_substitutions': 1 if adjustment_result['adjusted'] else 0,
+            'total_removed': 1 if adjustment_result['adjusted'] and culture_adjustment == 'remove' else 0,
+            'culture_pending': False,
+            'culture_pending_count': 0
+        }
+    
+    # =========================================================================
+    # PRIMERA RONDA: Adaptación normal
+    # =========================================================================
     restrictions_not_met = compliance.get('restrictions_not_met', [])
     culture_not_met = compliance.get('culture_not_met')
+    
+    # Obtener todas las restricciones del usuario (no solo las no cumplidas)
+    user_restrictions = retrieved_result.get('user_restrictions', [])
     
     # Si cumple todo, devolver el caso sin cambios
     if not restrictions_not_met and not culture_not_met:
         return {
             'adapted': False,
             'reason': 'El caso cumple con todas las restricciones y cultura',
-            'menu': case.get('solucion', {})
+            'menu': case.get('solucion', {}),
+            'culture_pending': False,
+            'culture_pending_count': 0
         }
     
     # Adaptar cada plato
@@ -837,6 +1204,8 @@ def adapt_menu(
     adapted_courses = {}
     total_substitutions = 0
     total_removed = 0
+    total_culture_pending = 0
+    all_pending_ingredients = []
     
     for course_name, course_data in courses.items():
         adapted_course = adapt_course(
@@ -848,14 +1217,40 @@ def adapt_menu(
             ontologia_db,
             pairing_db
         )
+        
+        # IMPORTANTE: Actualizar las restricciones del plato después de la adaptación
+        # Si se adaptó para cumplir restricciones, añadirlas a la lista de restricciones del plato
+        current_restrictions = set(adapted_course.get('restrictions', []))
+        for restriction in restrictions_not_met:
+            # Normalizar para añadir de forma consistente
+            restriction_normalized = restriction.lower().replace('_', ' ').replace('-', ' ')
+            # Añadir la restricción si no está ya
+            if restriction_normalized not in [r.lower().replace('_', ' ').replace('-', ' ') for r in current_restrictions]:
+                current_restrictions.add(restriction)
+        adapted_course['restrictions'] = list(current_restrictions)
+        
         adapted_courses[course_name] = adapted_course
         adaptation_info = adapted_course.get('_adaptation', {})
         total_substitutions += adaptation_info.get('ingredients_substituted', 0)
         total_removed += adaptation_info.get('ingredients_removed', 0)
+        
+        # Recopilar info de adaptación gradual de cultura
+        culture_info = adaptation_info.get('culture_adaptation', {})
+        total_culture_pending += culture_info.get('culture_pending_next_rounds', 0)
+        all_pending_ingredients.extend(culture_info.get('pending_ingredients', []))
     
     # Construir resultado
     adapted_solution = copy.deepcopy(solution)
     adapted_solution['courses'] = adapted_courses
+    
+    # Actualizar también las features del menú para reflejar las restricciones adaptadas
+    if 'features' in adapted_solution:
+        features = adapted_solution['features']
+        # Añadir las restricciones adaptadas a common_dietary_restrictions
+        current_common = set(features.get('common_dietary_restrictions', []))
+        for restriction in restrictions_not_met:
+            current_common.add(restriction)
+        features['common_dietary_restrictions'] = list(current_common)
     
     return {
         'adapted': True,
@@ -863,7 +1258,14 @@ def adapt_menu(
         'culture_adapted': culture_not_met,
         'total_substitutions': total_substitutions,
         'total_removed': total_removed,
-        'menu': adapted_solution
+        'menu': adapted_solution,
+        # Info sobre adaptación gradual de cultura
+        'culture_pending': total_culture_pending > 0,
+        'culture_pending_count': total_culture_pending,
+        'culture_pending_ingredients': all_pending_ingredients,
+        'culture_adaptation_note': f"Se adaptaron {MAX_CULTURE_SUBSTITUTIONS_PER_ROUND} ingredientes por plato. "
+                                   f"Quedan {total_culture_pending} ingredientes pendientes para próximas rondas." 
+                                   if total_culture_pending > 0 else None
     }
 
 
@@ -882,7 +1284,7 @@ def print_adaptation_results(adaptation_result: dict):
         return
     
     print(f"🔄 Adaptaciones realizadas:")
-    print(f"   • Restricciones adaptadas: {', '.join(adaptation_result.get('restrictions_adapted', []))}")
+    print(f"   • Restricciones adaptadas: {', '.join(adaptation_result.get('restrictions_adapted', [])) or 'Ninguna'}")
     
     culture = adaptation_result.get('culture_adapted')
     if culture:
@@ -890,6 +1292,19 @@ def print_adaptation_results(adaptation_result: dict):
     
     print(f"   • Total de sustituciones: {adaptation_result.get('total_substitutions', 0)}")
     print(f"   • Total de ingredientes eliminados: {adaptation_result.get('total_removed', 0)}")
+    
+    # Mostrar info de adaptación gradual de cultura
+    if adaptation_result.get('culture_pending'):
+        pending_count = adaptation_result.get('culture_pending_count', 0)
+        pending_ingredients = adaptation_result.get('culture_pending_ingredients', [])
+        print(f"\n   📌 ADAPTACIÓN GRADUAL DE CULTURA:")
+        print(f"      • Ingredientes pendientes para próximas rondas: {pending_count}")
+        if pending_ingredients:
+            print(f"      • Ingredientes que se pueden adaptar: {', '.join(pending_ingredients[:5])}")
+            if len(pending_ingredients) > 5:
+                print(f"        ... y {len(pending_ingredients) - 5} más")
+        print(f"      💡 Tip: Pide 'más toque {culture}' para continuar adaptando")
+    
     print()
     
     menu = adaptation_result.get('menu', {})
@@ -901,9 +1316,10 @@ def print_adaptation_results(adaptation_result: dict):
         adaptation_info = course_data.get('_adaptation', {})
         substitutions = adaptation_info.get('substitutions', [])
         removed = adaptation_info.get('removed_ingredients', [])
+        culture_info = adaptation_info.get('culture_adaptation', {})
         
         if substitutions:
-            print("   Cambios:")
+            print("   Cambios realizados:")
             for sub in substitutions:
                 original = sub.get('original')
                 substitute = sub.get('substitute')
@@ -925,6 +1341,12 @@ def print_adaptation_results(adaptation_result: dict):
         
         if removed:
             print(f"   🗑️  Ingredientes eliminados: {', '.join(removed)}")
+        
+        # Mostrar info de cultura pendiente por plato
+        if culture_info.get('culture_pending_next_rounds', 0) > 0:
+            pending = culture_info.get('pending_ingredients', [])
+            print(f"   ⏳ Pendiente cultura ({len(pending)}): {', '.join(pending[:3])}" + 
+                  (f"... +{len(pending)-3}" if len(pending) > 3 else ""))
         
         print(f"   📋 Ingredientes finales: {', '.join(course_data.get('ingredients', []))}")
         print()

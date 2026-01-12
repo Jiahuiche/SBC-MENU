@@ -292,10 +292,20 @@ def create_new_case(
             if substitute and substitute not in adiciones:
                 adiciones.append(substitute)
     
+    # Extraer las restricciones que el menú REALMENTE cumple después de la adaptación
+    # Esto viene del campo features.common_dietary_restrictions del menú adaptado
+    menu_restrictions = []
+    if 'features' in menu and 'common_dietary_restrictions' in menu['features']:
+        menu_restrictions = menu['features']['common_dietary_restrictions']
+    
+    # Si no hay restricciones en features, usar las del problema (fallback)
+    if not menu_restrictions:
+        menu_restrictions = problema.get('restrictions', [])
+    
     return {
         'id_caso': case_id,
         'problema': {
-            'restricciones_alimentarias': problema.get('restrictions', []),
+            'restricciones_alimentarias': menu_restrictions,
             'cultura_preferible': problema.get('culture', problema.get('cuisine', ''))
         },
         'solucion': menu,
