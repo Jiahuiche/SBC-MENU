@@ -25,9 +25,10 @@ sys.path.insert(0, SCRIPT_DIR)
 # Importar módulos CBR
 from input_module import get_user_restrictions
 from Retrieve import load_case_base, retrieve_cases, print_results
-from Adapt import adapt_menu, print_adaptation_results, load_all_knowledge_bases
+from Adapt import adapt_menu, load_all_knowledge_bases
 from Revise import revise_menu, print_menu_summary
 from Retain import retain_case, get_case_base_stats
+from adapt_tecnic import adapt_menu_tecniques, print_adaptation_results
 
 
 # ============================================================================
@@ -135,8 +136,8 @@ def run_cbr_cycle(user_input: dict) -> dict:
             ontologia_db=ontologia_db,
             pairing_db=pairing_db
         )
-        
-        print_adaptation_results(adaptation_result)
+        adaptation_result_tecnic = adapt_menu_tecniques(current_input, adaptation_result)
+        print_adaptation_results(adaptation_result_tecnic)
         
         # Obtener menú adaptado
         adapted_menu = adaptation_result.get('menu', {})
