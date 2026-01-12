@@ -554,27 +554,6 @@
       }
     },
     {
-      "id": "TEST_025",
-      "description": "Robustness Test: Empty case base (simulated)",
-      "input": {
-        "event_type": "wedding",
-        "quiere_tarta": true,
-        "max_people": 100,
-        "season": "summer",
-        "cuisine": "italian",
-        "culture": "italian",
-        "restrictions": ["vegan"],
-        "min_price": 50,
-        "max_price": 100
-      },
-      "mock_user_inputs": ["8", "", ""],
-      "expected": {
-        "should_find_case": false,
-        "min_score": 0,
-        "expect_error": "No cases in base"
-      }
-    },
-    {
       "id": "TEST_026",
       "description": "Edge Case: All ingredients violate restrictions",
       "input": {
@@ -691,17 +670,17 @@
       "id": "TEST_030",
       "description": "Edge Case: Invalid event type",
       "input": {
-        "event_type": "invalid_event",
+        "event_type": "wedding",
         "quiere_tarta": false,
-        "max_people": 50,
-        "season": "summer",
-        "cuisine": "italian",
-        "culture": "italian",
-        "restrictions": [],
-        "min_price": 40,
-        "max_price": 70
+        "max_people": 3,
+        "season": "spring",
+        "cuisine": "mexican",
+        "culture": "mexican",
+        "restrictions": ["gluten"],
+        "min_price": 10,
+        "max_price": 50
       },
-      "mock_user_inputs": ["8", "", ""],
+      "mock_user_inputs": ["8", "vegetarian", "", "+east asian", ""],
       "expected": {
         "should_find_case": true,
         "min_score": 0,

@@ -215,11 +215,12 @@ def get_user_feedback() -> Dict[str, Any]:
     
     # 3. Ajustes de cultura
     print("\n3. AJUSTES DE CULTURA GASTRONÓMICA")
-    print("   Opciones: italian, mediterranean, asian, mexican, french,")
-    print("             american, indian, spanish, chinese, japanese")
+    print("   Opciones: Italian, Chinese, Japanese, Korean, Latin American," \
+              " South Asian, Mediterranean, French/Western European," \
+              " Middle Eastern/North African, East Asian, American")
     print("   Use '+' para añadir ingredientes de esa cultura")
     print("   Use '-' para eliminar ingredientes de esa cultura")
-    print("   Ejemplo: +italian  o  -asian")
+    print("   Ejemplo: +italian  o  -chinese")
     print("   (Presione Enter sin escribir nada para continuar)")
     
     while True:
