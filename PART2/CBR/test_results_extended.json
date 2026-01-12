@@ -1,0 +1,578 @@
+{
+  "timestamp": "2026-01-12T13:48:29.627712",
+  "total_tests": 30,
+  "passed": 1,
+  "failed": 0,
+  "errors": 29,
+  "total_time": 0.005166053771972656,
+  "test_results": [
+    {
+      "test_id": "TEST_001",
+      "description": "Happy Path: Italian vegan+halal wedding in summer (existing case match)",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 3.5,
+          "top_case_id": 8
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_002",
+      "description": "Happy Path: Large congress Mexican no restrictions in winter",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 1.0,
+          "top_case_id": 5
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_003",
+      "description": "Happy Path: Mediterranean family vegetarian+gluten-free in spring",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 5.5,
+          "top_case_id": 7
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_004",
+      "description": "Happy Path: American wedding dairy-free in autumn",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 3.5,
+          "top_case_id": 2
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_005",
+      "description": "Happy Path: French congress kosher+vegan high budget any season",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 3.0,
+          "top_case_id": 2
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_006",
+      "description": "Edge Case: Single person family event (min people)",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 3.5,
+          "top_case_id": 8
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_007",
+      "description": "Culture Test: Japanese wedding vegan in winter",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 3.0,
+          "top_case_id": 8
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_008",
+      "description": "Restriction Test: Duplicate restrictions + format variants",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 8.0,
+          "top_case_id": 2
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_009",
+      "description": "Restriction Test: Complex multi-restriction (vegan+nut-free+soy-free)",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 3.0,
+          "top_case_id": 2
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_010",
+      "description": "Adaptation Test: Restriction requiring ingredient removal (no substitute)",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 1.5,
+          "top_case_id": 1
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_011",
+      "description": "Restriction Test: Single restriction kosher",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 2.5,
+          "top_case_id": 3
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_012",
+      "description": "Compliance Test: Case already meets all requirements (no adaptation needed)",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 6.5,
+          "top_case_id": 1
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_013",
+      "description": "Compliance Test: Exact match on all criteria",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 6.5,
+          "top_case_id": 1
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_014",
+      "description": "Culture Test: Chinese cuisine (East Asian ontology mapping)",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 2.0,
+          "top_case_id": 1
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_015",
+      "description": "Budget Edge Case: Zero budget and min > max",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.00405120849609375,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 2.5,
+          "top_case_id": 3
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_016",
+      "description": "Retain Test: High usefulness case (many adaptations + novel + valid)",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 4.0,
+          "top_case_id": 2
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_017",
+      "description": "Retain Test: Low usefulness case (high similarity to existing)",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 6.5,
+          "top_case_id": 1
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_018",
+      "description": "Iteration Test: Failed validation triggers revision (interactive=False)",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 2.0,
+          "top_case_id": 2
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_019",
+      "description": "Iteration Test: Max iterations reached without valid solution",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 3.0,
+          "top_case_id": 2
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_020",
+      "description": "Edge Case: Unknown culture (should use fallback matching)",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 3.0,
+          "top_case_id": 1
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_021",
+      "description": "Edge Case: Unknown restriction (should ignore gracefully)",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 1.5,
+          "top_case_id": 1
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_022",
+      "description": "Edge Case: Contradictory restrictions (vegan + dairy)",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 3.5,
+          "top_case_id": 8
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_023",
+      "description": "Retain Test: Near-duplicate case (high similarity, low novelty)",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 6.5,
+          "top_case_id": 1
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_024",
+      "description": "Edge Case: Empty ingredient list in a course",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 2.5,
+          "top_case_id": 3
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_025",
+      "description": "Robustness Test: Empty case base (simulated)",
+      "status": "PASS",
+      "passed": true,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 0,
+          "top_score": 0
+        }
+      },
+      "validations": {
+        "should_find_case": true
+      },
+      "error": null
+    },
+    {
+      "test_id": "TEST_026",
+      "description": "Edge Case: All ingredients violate restrictions",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0011148452758789062,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 4.5,
+          "top_case_id": 6
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_027",
+      "description": "Interactive Test: User feedback with rating and additional restriction",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 3.5,
+          "top_case_id": 8
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_028",
+      "description": "Interactive Test: User feedback with culture adjustment",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 3.5,
+          "top_case_id": 3
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_029",
+      "description": "Interactive Test: Low user rating triggers revision",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 4.5,
+          "top_case_id": 2
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    },
+    {
+      "test_id": "TEST_030",
+      "description": "Edge Case: Invalid event type",
+      "status": "ERROR",
+      "passed": false,
+      "execution_time": 0.0,
+      "phases": {
+        "retrieve": {
+          "found_cases": 10,
+          "top_score": 1.5,
+          "top_case_id": 8
+        }
+      },
+      "validations": {
+        "should_find_case": true,
+        "min_score": true
+      },
+      "error": "adapt_menu() takes from 2 to 6 positional arguments but 7 were given"
+    }
+  ]
+}
