@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-01-12T13:02:46.260625",
+  "timestamp": "2026-01-12T14:45:55.714808",
   "total_tests": 5,
   "passed": 5,
   "failed": 0,
   "errors": 0,
-  "total_time": 0.1564633846282959,
+  "total_time": 0.20554852485656738,
   "test_results": [
     {
       "test_id": "TEST_001",
       "description": "Boda italiana vegana y halal en verano",
       "status": "PASSED",
       "passed": true,
-      "execution_time": 0.019984960556030273,
+      "execution_time": 0.026173114776611328,
       "phases": {
         "retrieve": {
           "success": true,
-          "cases_found": 11,
-          "best_score": 5.5,
-          "time": 0.0005397796630859375
+          "cases_found": 10,
+          "best_score": 3.5,
+          "time": 0.0014269351959228516
         },
         "adapt": {
           "success": true,
           "substitutions": 1,
-          "time": 1.0013580322265625e-05
+          "time": 0.006621599197387695
         },
         "revise": {
           "success": false,
@@ -36,13 +36,13 @@
               "message": "'ground flaxseed' viola restricción 'vegan'"
             }
           ],
-          "time": 0.01887035369873047
+          "time": 0.017595529556274414
         },
         "retain": {
           "success": true,
-          "usefulness": 0.5785316205533597,
+          "usefulness": 0.6105597826086957,
           "would_save": true,
-          "time": 0.0005171298980712891
+          "time": 0.0004892349243164062
         }
       },
       "error": null
@@ -52,31 +52,31 @@
       "description": "Congreso mexicano sin restricciones en invierno",
       "status": "PASSED",
       "passed": true,
-      "execution_time": 0.05828428268432617,
+      "execution_time": 0.08018922805786133,
       "phases": {
         "retrieve": {
           "success": true,
-          "cases_found": 11,
+          "cases_found": 10,
           "best_score": 1.0,
-          "time": 0.00019049644470214844
+          "time": 0.0005393028259277344
         },
         "adapt": {
           "success": true,
           "substitutions": 9,
-          "time": 0.04699897766113281
+          "time": 0.06553030014038086
         },
         "revise": {
           "success": true,
           "performance": 0.8,
           "violations": 0,
           "violation_details": [],
-          "time": 0.010686635971069336
+          "time": 0.013637542724609375
         },
         "retain": {
           "success": true,
-          "usefulness": 0.6947467532467533,
+          "usefulness": 0.6956396103896104,
           "would_save": true,
-          "time": 0.00037384033203125
+          "time": 0.00040078163146972656
         }
       },
       "error": null
@@ -86,18 +86,18 @@
       "description": "Reunión familiar mediterránea vegetariana y sin gluten",
       "status": "PASSED",
       "passed": true,
-      "execution_time": 0.013779878616333008,
+      "execution_time": 0.018079280853271484,
       "phases": {
         "retrieve": {
           "success": true,
-          "cases_found": 11,
+          "cases_found": 10,
           "best_score": 5.5,
-          "time": 0.00024318695068359375
+          "time": 0.0005419254302978516
         },
         "adapt": {
           "success": true,
           "substitutions": 0,
-          "time": 5.9604644775390625e-06
+          "time": 6.67572021484375e-06
         },
         "revise": {
           "success": false,
@@ -117,13 +117,13 @@
               "message": "'dinosaur kale' viola restricción 'gluten-free'"
             }
           ],
-          "time": 0.013137102127075195
+          "time": 0.01705646514892578
         },
         "retain": {
           "success": true,
-          "usefulness": 0.5638181818181819,
+          "usefulness": 0.561,
           "would_save": true,
-          "time": 0.0003781318664550781
+          "time": 0.0004572868347167969
         }
       },
       "error": null
@@ -133,31 +133,31 @@
       "description": "Boda americana sin lactosa en otoño",
       "status": "PASSED",
       "passed": true,
-      "execution_time": 0.013629674911499023,
+      "execution_time": 0.012243032455444336,
       "phases": {
         "retrieve": {
           "success": true,
-          "cases_found": 11,
+          "cases_found": 10,
           "best_score": 3.5,
-          "time": 0.0002186298370361328
+          "time": 0.0002608299255371094
         },
         "adapt": {
           "success": true,
           "substitutions": 0,
-          "time": 4.76837158203125e-06
+          "time": 6.67572021484375e-06
         },
         "revise": {
           "success": true,
           "performance": 1.0,
           "violations": 0,
           "violation_details": [],
-          "time": 0.013003826141357422
+          "time": 0.011522531509399414
         },
         "retain": {
           "success": true,
-          "usefulness": 0.620889328063241,
+          "usefulness": 0.62,
           "would_save": true,
-          "time": 0.0003879070281982422
+          "time": 0.0004336833953857422
         }
       },
       "error": null
@@ -167,31 +167,31 @@
       "description": "Congreso francés kosher vegano",
       "status": "PASSED",
       "passed": true,
-      "execution_time": 0.05078458786010742,
+      "execution_time": 0.0688638687133789,
       "phases": {
         "retrieve": {
           "success": true,
-          "cases_found": 11,
+          "cases_found": 10,
           "best_score": 3.0,
-          "time": 0.0002357959747314453
+          "time": 0.0004725456237792969
         },
         "adapt": {
           "success": true,
           "substitutions": 6,
-          "time": 0.03810238838195801
+          "time": 0.05165743827819824
         },
         "revise": {
           "success": true,
           "performance": 0.8,
           "violations": 0,
           "violation_details": [],
-          "time": 0.012099027633666992
+          "time": 0.016348838806152344
         },
         "retain": {
           "success": true,
-          "usefulness": 0.6570543547361729,
+          "usefulness": 0.6558146853146853,
           "would_save": true,
-          "time": 0.0003333091735839844
+          "time": 0.00036787986755371094
         }
       },
       "error": null

@@ -136,6 +136,15 @@ def run_cbr_cycle(user_input: dict) -> dict:
             ontologia_db=ontologia_db,
             pairing_db=pairing_db
         )
+        
+        # Si fue un ajuste cultural de segunda ronda, mostrar el resultado especial
+        if adaptation_result.get('is_culture_adjustment'):
+            print(f"\n🎨 AJUSTE CULTURAL APLICADO:")
+            print(f"   {adaptation_result.get('message')}")
+            # Limpiar los campos de ajuste para evitar que se repitan
+            current_input.pop('culture_adjustment', None)
+            current_input.pop('culture_adjustment_target', None)
+        
         adaptation_result_tecnic = adapt_menu_tecniques(current_input, adaptation_result)
         print_adaptation_results(adaptation_result_tecnic)
         
@@ -204,8 +213,13 @@ def run_cbr_cycle(user_input: dict) -> dict:
             # Aplicar ajustes culturales
             culture_adjustments = revision_results.get('culture_adjustments', [])
             if culture_adjustments:
-                # Por ahora, solo cambiar la cultura preferida
+                # Pasar el ajuste cultural al módulo de adaptación
                 for adj in culture_adjustments:
+                    # Añadir campos especiales para que adapt_menu aplique el ajuste obligatorio
+                    current_input['culture_adjustment'] = adj['action']  # 'add' o 'remove'
+                    current_input['culture_adjustment_target'] = adj['culture']  # cultura objetivo
+                    
+                    # También actualizar la cultura preferida si es 'add'
                     if adj['action'] == 'add':
                         current_input['culture'] = adj['culture']
                         current_input['cuisine'] = adj['culture']
