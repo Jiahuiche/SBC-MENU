@@ -66,8 +66,8 @@ from adapt_tecnic import adapt_menu_tecniques, print_adaptation_results
 
 BASE_DIR = os.path.join(SCRIPT_DIR, '..')
 CASE_BASE_PATH = os.path.join(BASE_DIR, 'Base_Casos', 'casos_cbr.json')
-TEST_CASES_PATH = os.path.join(BASE_DIR, 'Juegos_Prueba', 'test_cases_extended.json')
-TEST_RESULTS_PATH = os.path.join(SCRIPT_DIR, 'test_results_extended.json')
+TEST_CASES_PATH = os.path.join(BASE_DIR, 'Juegos_Prueba', 'Juegos_de_pruebas.json')
+TEST_RESULTS_PATH = os.path.join(SCRIPT_DIR, 'juegos_prueba_casos_output.json')
 
 
 # ============================================================================
@@ -635,7 +635,7 @@ def test_mode(
         Dict con resumen de resultados
     """
     # Crear archivo de log
-    log_filename = os.path.join(SCRIPT_DIR, f'test_execution_{datetime.now().strftime("%Y%m%d_%H%M%S")}.txt')
+    log_filename = os.path.join(SCRIPT_DIR, f'Juegosdeprueba_outputs_{datetime.now().strftime("%Y%m%d_%H%M%S")}.txt')
     
     print("\n" + "="*70)
     print("🧪 JUEGOS DE PRUEBA - Sistema CBR de Menús")
