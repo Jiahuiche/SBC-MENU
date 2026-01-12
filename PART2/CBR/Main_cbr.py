@@ -474,6 +474,13 @@ def run_single_test(
     original_stdout = sys.stdout
     
     try:
+        # ================================================================
+        # REDIRIGIR STDOUT A ARCHIVO Y CONSOLA DESDE EL INICIO
+        # ================================================================
+        if log_file:
+            tee = TeeOutput(log_file, original_stdout)
+            sys.stdout = tee
+        
         if verbose:
             print(f"\n{'='*70}")
             print(f"🧪 TEST: {test_id}")
@@ -486,18 +493,12 @@ def run_single_test(
         # CASO ESPECIAL: Base de casos vacía (TEST_025)
         # ================================================================
         if test_id == "TEST_025":
+            sys.stdout = original_stdout  # Restaurar antes de salir
             retrieved = retrieve_cases(user_input, [])
             result['status'] = 'PASS' if len(retrieved) == 0 else 'FAIL'
             result['passed'] = (len(retrieved) == 0)
             result['execution_time'] = time.time() - start_time
             return result
-        
-        # ================================================================
-        # REDIRIGIR STDOUT A ARCHIVO Y CONSOLA
-        # ================================================================
-        if log_file:
-            tee = TeeOutput(log_file, original_stdout)
-            sys.stdout = tee
         
         # ================================================================
         # EJECUTAR CICLO CBR COMPLETO (como modo manual)

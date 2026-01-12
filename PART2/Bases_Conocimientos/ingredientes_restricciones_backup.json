@@ -38409,16 +38409,17 @@
         "Unspecified"
       ],
       "classification_path": [
-        "Proteínas",
-        "Carne",
-        "Ternera"
+        "Frutos secos y semillas",
+        "Semillas"
+        
+        
       ],
       "restrictions": {
         "gluten_free": "TRUE",
-        "vegetarian": "FALSE",
-        "vegan": "FALSE",
-        "halal": "UNKNOWN",
-        "kosher": "UNKNOWN",
+        "vegetarian": "TRUE",
+        "vegan": "TRUE",
+        "halal": "TRUE",
+        "kosher": "TRUE",
         "dairy_free": "TRUE",
         "soy_free": "TRUE",
         "shellfish_free": "TRUE",

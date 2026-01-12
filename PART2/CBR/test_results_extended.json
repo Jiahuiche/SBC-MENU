@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-01-12T18:32:49.532608",
+  "timestamp": "2026-01-12T19:19:34.718300",
   "total_tests": 30,
   "passed": 30,
   "failed": 0,
   "errors": 0,
-  "total_time": 2.8471198081970215,
+  "total_time": 2.1518640518188477,
   "test_results": [
     {
       "test_id": "TEST_001",
       "description": "Happy Path: Italian vegan+halal wedding in summer (existing case match)",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.08341574668884277,
+      "execution_time": 0.06042361259460449,
       "iterations": 1,
       "final_menu": {
         "menu_id": 8,
@@ -32,11 +32,11 @@
               "olive oil"
             ],
             "restrictions": [
-              "dairy free",
-              "vegetarian",
-              "vegan",
               "gluten free",
-              "halal"
+              "dairy free",
+              "halal",
+              "vegan",
+              "vegetarian"
             ],
             "instructions": "Preheat oven to 400 degrees\nPeel sunchokes (best you can but don't obsess) and cut into die-sized pieces\nLarge dice onion\nSlice apple in half lengthwise and core\nToss all three in olive oil and place on a sheet pan on the bottom rack\nSet timer for 20 mins and then shake pan\nAfter that, shake and check more frequently\nRemove apples when soft and let cool then peel\nLeave sunchokes and onion in until some of the onion start to char\nAdd roasted vegetables to 4 cups liquid (stock)\nHeat until sunchokes are soft; they may already be from the roasting\nPuree in blender",
             "structured_instructions": [
@@ -348,10 +348,10 @@
               "ziti"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "halal",
               "vegetarian",
-              "halal"
+              "vegan"
             ],
             "instructions": "<ol><li>Set a large pot of water to boil, and add salt. Cut the kale stems into 2-3 inch pieces; chop the leaves coarsely and set aside. Boil the stems until they are nearly tender; then, add the greens. Cook until kale is quite tender but stillbright green. Scoop it out with a slotted spoon, place in a bowl of ice water, and keep pot boiling. When the kale cools, squeeze out excess water, gather it into a mass and chop rather finely. Meanwhile, place olive oil in a large skillet over ve</li><li>Warm the garlic mixture over medium heat, and add the cooked pasta, the chickpeas and the chopped kale.</li><li>Toss well, taste for seasoning, garnish with parsley and serve immediately.</li></ol>",
             "structured_instructions": [
@@ -647,11 +647,11 @@
               "vanilla extract"
             ],
             "restrictions": [
-              "dairy free",
-              "vegetarian",
-              "vegan",
               "gluten free",
-              "halal"
+              "dairy free",
+              "halal",
+              "vegan",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Preheat oven to 350 F.</li><li>Spray an 8x8 inch pan with cooking spray. Set aside.</li><li>In a food processor, puree kidney beans and beets. Transfer to a large bowl.</li><li>Add remaining ingredients and mix by hand until smooth and fully combined.</li><li>Fold batter into the greased pan.</li><li>Bake for 35-40 minutes, turning the pan halfway through.</li><li>When the brownies are done, test them with a toothpick. You want some batter to cling to the toothpick. Do not over bake.</li><li>Let cool completely. Refrigerate for one hour.</li><li>Cut into squares or use cookie cutters to make heart shapes.</li></ol>",
             "structured_instructions": [
@@ -858,10 +858,10 @@
           "is_kosher": false,
           "is_halal": true,
           "common_dietary_restrictions": [
-            "vegan",
             "dairy free",
+            "halal",
             "vegetarian",
-            "halal"
+            "vegan"
           ],
           "is_vegetarian": true,
           "is_vegan": true,
@@ -886,7 +886,7 @@
       "description": "Happy Path: Large congress Mexican no restrictions in winter",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.09997010231018066,
+      "execution_time": 0.08431196212768555,
       "iterations": 1,
       "final_menu": {
         "menu_id": 5,
@@ -1120,10 +1120,10 @@
               "salt and pepper"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "vegetarian",
               "gluten free",
-              "vegetarian"
+              "vegan"
             ],
             "instructions": "1. Heat the oil in a large pan, add the potato, onion and garlic and saut, covered, for 10 minutes.\n2. Add the carrots, leek  and celery and saut for 5 minutes.\n3. Add broad beans and vegetable stock. Cover and simmer gently for 10 minutes, until the potatoes and broad beans are soft.\n4. Add parsley and salt  and pepper if needed.\nServe with crusty bread.",
             "structured_instructions": [
@@ -1329,7 +1329,7 @@
             "ready_in_minutes": 0,
             "ingredients": [
               "butter",
-              "honey",
+              "clear honey",
               "applesauce",
               "flour",
               "pecan halves",
@@ -1404,7 +1404,7 @@
               "substitutions": [
                 {
                   "original": "corn syrup",
-                  "substitute": "honey",
+                  "substitute": "clear honey",
                   "reason": [
                     "no pertenece a cultura 'mexican'"
                   ],
@@ -1500,7 +1500,7 @@
       "description": "Happy Path: Mediterranean family vegetarian+gluten-free in spring",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.10081934928894043,
+      "execution_time": 0.0640869140625,
       "iterations": 1,
       "final_menu": {
         "menu_id": 7,
@@ -2095,7 +2095,7 @@
       "description": "Happy Path: American wedding dairy-free in autumn",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.10051560401916504,
+      "execution_time": 0.07198214530944824,
       "iterations": 1,
       "final_menu": {
         "menu_id": 2,
@@ -2524,7 +2524,7 @@
       "description": "Happy Path: French congress kosher+vegan high budget any season",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.09963750839233398,
+      "execution_time": 0.0878303050994873,
       "iterations": 1,
       "final_menu": {
         "menu_id": 2,
@@ -2545,11 +2545,11 @@
               "salt"
             ],
             "restrictions": [
-              "kosher",
+              "gluten free",
               "dairy free",
-              "vegetarian",
               "vegan",
-              "gluten free"
+              "kosher",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Preheat oven to 400 F. Line a baking sheet with parchment paper or a silicone mat.</li><li>Rinse the outside of the acorn squash and then chop it in half. Seed the squash and chop off the stem. Next, slice it into one-inch wedges. I like use the natural grooves on the squash as a guide for thickness.</li><li>Place the sliced acorn squash in a medium-sized bowl. Add the rest of the ingredients to the bowl and stir until everything is well incorporated.</li><li>Lay the acorn squash in a single layer on top of the lined baking sheet, cut side down.</li><li>Bake for about 15 minutes. Flip the acorn squash slices to the other side so that both sides will be browned equally.</li><li>Bake the squash for another 10 to 15 minutes or until the pieces can be easily pierced with a fork.</li></ol>",
             "structured_instructions": [
@@ -2749,11 +2749,11 @@
             "price_per_serving": 57.39,
             "ready_in_minutes": 0,
             "ingredients": [
-              "thumb sized piece of ginger",
+              "ginger",
               "pepper",
               "parsley",
               "garlic",
-              "thumb sized piece of ginger",
+              "ginger",
               "capers plus caper juice",
               "lemon",
               "onion",
@@ -2765,11 +2765,11 @@
               "zucchini"
             ],
             "restrictions": [
-              "kosher",
+              "gluten free",
               "dairy free",
-              "vegetarian",
               "vegan",
-              "gluten free"
+              "kosher",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Combine all of the ingredients the salad ingredients in a bowl.</li><li>Combine all of the dressing ingredients in a cup and stir, adjust the ingredients to taste. </li><li> Pour this over the salad and toss. </li><li> Let the salad sit in the refrigerator for a few hours before serving.</li></ol>",
             "structured_instructions": [
@@ -2840,7 +2840,7 @@
               "substitutions": [
                 {
                   "original": "bell pepper",
-                  "substitute": "thumb sized piece of ginger",
+                  "substitute": "ginger",
                   "reason": [
                     "no pertenece a cultura 'french'"
                   ],
@@ -2852,7 +2852,7 @@
                 },
                 {
                   "original": "garlic powder",
-                  "substitute": "thumb sized piece of ginger",
+                  "substitute": "ginger",
                   "reason": [
                     "no pertenece a cultura 'french'"
                   ],
@@ -2921,15 +2921,15 @@
               "sugar",
               "water",
               "mint leaves",
-              "chives and dill",
+              "hibiscus petal",
               "ice water"
             ],
             "restrictions": [
-              "kosher",
+              "gluten free",
               "dairy free",
-              "vegetarian",
               "vegan",
-              "gluten free"
+              "kosher",
+              "vegetarian"
             ],
             "instructions": "Lay the clean, drained berries in a single layer on a cookie sheet and place in the freezer until frozen through. It is best to do both this and the next step the day or night before you plan to make the sorbet - just make sure you leave enough time for everything to freeze.\nMake the herb-infused simple syrup by combining the water and sugar in a small heavy-bottomed saucepan and heat over a medium flame until it comes to a boil. Turn it off and let cool completely.\nStrain out the mint leaves and lavender and pour the cooled syrup into an ice cube tray - should make roughly 4 syrup cubes. Place the tray in the freezer until syrup is frozen (the cubes may remain a little mushy as a result of all the sugar.)\nOnce the berries and herb-infused syrup cubes have frozen, you can make the sorbet. Place the frozen berries and syrup cubes in the bowl of a cuisinart or blender and add a few teaspoons of ice water to aid in blending. Continue to process or blend, adding small amounts of the ice water as needed, until smooth.\nServe, topped with a sprig of mint leaves and/or lavender.",
             "structured_instructions": [
@@ -3040,7 +3040,7 @@
                 },
                 {
                   "original": "lavender",
-                  "substitute": "chives and dill",
+                  "substitute": "hibiscus petal",
                   "reason": [
                     "no pertenece a cultura 'french'"
                   ],
@@ -3083,11 +3083,11 @@
           "is_kosher": true,
           "is_halal": true,
           "common_dietary_restrictions": [
-            "kosher",
+            "gluten free",
             "dairy free",
-            "vegetarian",
             "vegan",
-            "gluten free"
+            "kosher",
+            "vegetarian"
           ],
           "is_vegetarian": true,
           "is_vegan": true,
@@ -3112,577 +3112,7 @@
       "description": "Edge Case: Single person family event (min people)",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.11024999618530273,
-      "iterations": 1,
-      "final_menu": {
-        "menu_id": 1,
-        "menu_name": "Menu 1: Corn Salsa",
-        "description": "Complete menu featuring Corn Salsa as main course",
-        "courses": {
-          "starter": {
-            "recipe_id": 640062,
-            "title": "Corn Avocado Salsa",
-            "servings": 2,
-            "price_per_serving": 130.73,
-            "ready_in_minutes": 0,
-            "ingredients": [
-              "avocado",
-              "balsamic vinegar",
-              "cumin",
-              "corn",
-              "garlic",
-              "bell pepper"
-            ],
-            "restrictions": [
-              "vegan",
-              "dairy free",
-              "gluten free",
-              "vegetarian"
-            ],
-            "instructions": "<ol><li>Preheat oven to 375 degrees.</li><li>Spread corn flat on a baking sheet.</li><li>Spray lightly with olive oil spray.</li><li>Roast corn in the oven for about 8-10 minutes. (Be careful not to brown too much or burn.)</li><li>Remove from heat and allow to cool.</li><li>Finely chop red pepper and garlic and mix in a bowl.</li><li>Peel and coarsely chop avocado and add to bowl.</li><li>Add cooled corn.</li><li>Mix in cumin and vinegar and blend well.</li></ol>",
-            "structured_instructions": [
-              {
-                "order": 1,
-                "preparation_action": "preheat",
-                "where": [],
-                "ingredients": [],
-                "tools": [],
-                "temperature": "375 degrees",
-                "time": null
-              },
-              {
-                "order": 2,
-                "preparation_action": "spread",
-                "where": [
-                  "baking sheet"
-                ],
-                "ingredients": [
-                  "corn"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 3,
-                "preparation_action": "spray",
-                "where": [],
-                "ingredients": [],
-                "tools": [
-                  "olive oil spray"
-                ],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 4,
-                "preparation_action": "roast",
-                "where": [
-                  "oven"
-                ],
-                "ingredients": [
-                  "corn"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": "8-10 minutes"
-              },
-              {
-                "order": 5,
-                "preparation_action": "remove",
-                "where": [],
-                "ingredients": [],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 6,
-                "preparation_action": "allow",
-                "where": [],
-                "ingredients": [],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 7,
-                "preparation_action": "chop",
-                "where": [],
-                "ingredients": [
-                  "red pepper",
-                  "garlic"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 8,
-                "preparation_action": "peel",
-                "where": [],
-                "ingredients": [
-                  "avocado"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 9,
-                "preparation_action": "chop",
-                "where": [],
-                "ingredients": [
-                  "avocado"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 10,
-                "preparation_action": "add",
-                "where": [],
-                "ingredients": [
-                  "corn"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 11,
-                "preparation_action": "mix",
-                "where": [
-                  "bowl"
-                ],
-                "ingredients": [],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 12,
-                "preparation_action": "add",
-                "where": [],
-                "ingredients": [
-                  "cumin",
-                  "vinegar"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 13,
-                "preparation_action": "blend",
-                "where": [],
-                "ingredients": [],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              }
-            ],
-            "_adaptation": {
-              "substitutions": [],
-              "original_ingredients": [
-                "avocado",
-                "balsamic vinegar",
-                "cumin",
-                "corn",
-                "garlic",
-                "bell pepper"
-              ],
-              "ingredients_substituted": 0,
-              "ingredients_removed": 0,
-              "ingredients_kept": 0,
-              "removed_ingredients": [],
-              "culture_adaptation": {
-                "total_culture_violations": 0,
-                "culture_changed_this_round": 0,
-                "culture_pending_next_rounds": 0,
-                "pending_ingredients": [],
-                "max_per_round": 3
-              }
-            }
-          },
-          "main": {
-            "recipe_id": 640104,
-            "title": "Corn Salsa",
-            "servings": 4,
-            "price_per_serving": 150.92,
-            "ready_in_minutes": 0,
-            "ingredients": [
-              "bell pepper",
-              "celery",
-              "ears of corn - boil and from the cob",
-              "basil",
-              "garlic",
-              "jalapeño",
-              "onion",
-              "salt",
-              "sugar",
-              "marinated jalapeno",
-              "vine tomato",
-              "vinegar"
-            ],
-            "restrictions": [
-              "vegan",
-              "dairy free",
-              "gluten free",
-              "vegetarian"
-            ],
-            "instructions": "<ol><li>Combine all of the above ingredients in a bowl.</li><li>Combine the ingredients for the dressing and add to the salsa.</li><li>Serve chilled.</li></ol>",
-            "structured_instructions": [
-              {
-                "order": 1,
-                "preparation_action": "combine",
-                "where": [
-                  "bowl"
-                ],
-                "ingredients": [
-                  "bell pepper",
-                  "celery",
-                  "ears of corn",
-                  "basil",
-                  "garlic",
-                  "jalapeño",
-                  "onion",
-                  "salt",
-                  "sugar",
-                  "pickle",
-                  "vine tomato"
-                ],
-                "tools": [
-                  "bowl"
-                ],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 2,
-                "preparation_action": "combine",
-                "where": [],
-                "ingredients": [
-                  "vinegar",
-                  "salsa"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 3,
-                "preparation_action": "serve",
-                "where": [],
-                "ingredients": [],
-                "tools": [],
-                "temperature": "chilled",
-                "time": null
-              }
-            ],
-            "_adaptation": {
-              "substitutions": [
-                {
-                  "original": "ears of corn - boil and from the cob",
-                  "substitute": null,
-                  "reason": [
-                    "no pertenece a cultura 'italian'"
-                  ],
-                  "search_attempts": [
-                    "ontología (not_found): 0 candidatos",
-                    "fallback conocidos: 0 candidatos"
-                  ],
-                  "action": "kept",
-                  "note": "Mantenido (solo viola cultura, no restricción alimentaria)"
-                },
-                {
-                  "original": "jalapeño",
-                  "substitute": null,
-                  "reason": [
-                    "no pertenece a cultura 'italian'"
-                  ],
-                  "search_attempts": [
-                    "ontología (not_found): 0 candidatos",
-                    "fallback conocidos: 0 candidatos"
-                  ],
-                  "action": "kept",
-                  "note": "Mantenido (solo viola cultura, no restricción alimentaria)"
-                },
-                {
-                  "original": "pickle",
-                  "substitute": "marinated jalapeno",
-                  "reason": [
-                    "no pertenece a cultura 'italian'"
-                  ],
-                  "search_attempts": [
-                    "ontología (subcategory): 1 candidatos"
-                  ],
-                  "candidates_found": 1,
-                  "action": "substituted"
-                }
-              ],
-              "original_ingredients": [
-                "bell pepper",
-                "celery",
-                "ears of corn - boil and from the cob",
-                "basil",
-                "garlic",
-                "jalapeño",
-                "onion",
-                "salt",
-                "sugar",
-                "pickle",
-                "vine tomato",
-                "vinegar"
-              ],
-              "ingredients_substituted": 1,
-              "ingredients_removed": 0,
-              "ingredients_kept": 2,
-              "removed_ingredients": [],
-              "culture_adaptation": {
-                "total_culture_violations": 4,
-                "culture_changed_this_round": 3,
-                "culture_pending_next_rounds": 1,
-                "pending_ingredients": [
-                  "vine tomato"
-                ],
-                "max_per_round": 3
-              }
-            }
-          },
-          "dessert": {
-            "recipe_id": 655202,
-            "title": "Peanut Brittle",
-            "servings": 4,
-            "price_per_serving": 107.1,
-            "ready_in_minutes": 0,
-            "ingredients": [
-              "butter",
-              "carbonated water",
-              "strawberry",
-              "honey",
-              "peanuts",
-              "salt",
-              "sugar",
-              "water"
-            ],
-            "restrictions": [
-              "gluten free",
-              "vegetarian"
-            ],
-            "instructions": "<ol><li>Pour sugar, corn syrup and water into saucepan. Cook, stirring only until sugar is dissolved. Continue cooking until sugar begins to turn light brown (300 degrees) by candy thermometer. Remove from heat. Add salt, soda, butter and stir as little as possible, only to mix well. Stir in peanuts and coconut.Spread on a greased sheet of waxed paper set on top of a baking sheet and let the mixture cool and harden.</li></ol>",
-            "structured_instructions": [
-              {
-                "order": 1,
-                "preparation_action": "pour",
-                "where": [
-                  "saucepan"
-                ],
-                "ingredients": [
-                  "sugar",
-                  "corn syrup",
-                  "water"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 2,
-                "preparation_action": "cook",
-                "where": [
-                  "saucepan"
-                ],
-                "ingredients": [
-                  "sugar",
-                  "corn syrup",
-                  "water"
-                ],
-                "tools": [
-                  "candy thermometer"
-                ],
-                "temperature": "300 degrees",
-                "time": null
-              },
-              {
-                "order": 3,
-                "preparation_action": "remove",
-                "where": [
-                  "saucepan"
-                ],
-                "ingredients": [],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 4,
-                "preparation_action": "add",
-                "where": [
-                  "saucepan"
-                ],
-                "ingredients": [
-                  "salt",
-                  "soda",
-                  "butter"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 5,
-                "preparation_action": "stir",
-                "where": [
-                  "saucepan"
-                ],
-                "ingredients": [
-                  "salt",
-                  "soda",
-                  "butter"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 6,
-                "preparation_action": "stir",
-                "where": [
-                  "saucepan"
-                ],
-                "ingredients": [
-                  "peanuts",
-                  "coconut"
-                ],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 7,
-                "preparation_action": "spread",
-                "where": [
-                  "baking sheet"
-                ],
-                "ingredients": [],
-                "tools": [],
-                "temperature": null,
-                "time": null
-              },
-              {
-                "order": 8,
-                "preparation_action": "let",
-                "where": [],
-                "ingredients": [],
-                "tools": [],
-                "temperature": null,
-                "time": "cool and harden"
-              }
-            ],
-            "_adaptation": {
-              "substitutions": [
-                {
-                  "original": "soda",
-                  "substitute": "carbonated water",
-                  "reason": [
-                    "no pertenece a cultura 'italian'"
-                  ],
-                  "search_attempts": [
-                    "ontología (subcategory): 3 candidatos"
-                  ],
-                  "candidates_found": 3,
-                  "action": "substituted"
-                },
-                {
-                  "original": "coconut",
-                  "substitute": "strawberry",
-                  "reason": [
-                    "no pertenece a cultura 'italian'"
-                  ],
-                  "search_attempts": [
-                    "ontología (category): 33 candidatos"
-                  ],
-                  "candidates_found": 33,
-                  "action": "substituted"
-                },
-                {
-                  "original": "corn syrup",
-                  "substitute": "honey",
-                  "reason": [
-                    "no pertenece a cultura 'italian'"
-                  ],
-                  "search_attempts": [
-                    "ontología (category): 7 candidatos"
-                  ],
-                  "candidates_found": 7,
-                  "action": "substituted"
-                }
-              ],
-              "original_ingredients": [
-                "butter",
-                "soda",
-                "coconut",
-                "corn syrup",
-                "peanuts",
-                "salt",
-                "sugar",
-                "water"
-              ],
-              "ingredients_substituted": 3,
-              "ingredients_removed": 0,
-              "ingredients_kept": 0,
-              "removed_ingredients": [],
-              "culture_adaptation": {
-                "total_culture_violations": 4,
-                "culture_changed_this_round": 3,
-                "culture_pending_next_rounds": 1,
-                "pending_ingredients": [
-                  "peanuts"
-                ],
-                "max_per_round": 3
-              }
-            }
-          }
-        },
-        "features": {
-          "total_price_per_serving": 388.75,
-          "price_category": "moderate",
-          "avg_ready_time_minutes": 0,
-          "time_category": "quick",
-          "season": "Summer",
-          "wine_pairing": " No wine pairing",
-          "is_kosher": true,
-          "is_halal": true,
-          "common_dietary_restrictions": [
-            "gluten free",
-            "vegetarian"
-          ],
-          "is_vegetarian": true,
-          "is_vegan": false,
-          "is_gluten_free": true,
-          "is_dairy_free": false,
-          "cultura": "American",
-          "estilo_cocina": "Tradicional"
-        },
-        "similarity_features": {
-          "total_ingredients_count": 22,
-          "complexity_score": 52.0,
-          "health_factor": 61.7,
-          "cuisine_diversity": 0
-        }
-      },
-      "case_saved": true,
-      "error": null,
-      "success": true
-    },
-    {
-      "test_id": "TEST_007",
-      "description": "Culture Test: Japanese wedding vegan in winter",
-      "status": "PASS",
-      "passed": true,
-      "execution_time": 0.12872886657714844,
+      "execution_time": 0.0657339096069336,
       "iterations": 1,
       "final_menu": {
         "menu_id": 8,
@@ -3698,16 +3128,799 @@
             "ingredients": [
               "sunchokes",
               "onion",
-              "pineapple juice",
-              "vegetable broth",
+              "apple",
+              "vegetable stock",
               "olive oil",
               "s&p"
             ],
             "restrictions": [
               "vegan",
-              "dairy free",
               "gluten free",
-              "vegetarian"
+              "vegetarian",
+              "dairy free"
+            ],
+            "instructions": "Preheat oven to 400 degrees\nPeel sunchokes (best you can but don't obsess) and cut into die-sized pieces\nLarge dice onion\nSlice apple in half lengthwise and core\nToss all three in olive oil and place on a sheet pan on the bottom rack\nSet timer for 20 mins and then shake pan\nAfter that, shake and check more frequently\nRemove apples when soft and let cool then peel\nLeave sunchokes and onion in until some of the onion start to char\nAdd roasted vegetables to 4 cups liquid (stock)\nHeat until sunchokes are soft; they may already be from the roasting\nPuree in blender",
+            "structured_instructions": [
+              {
+                "order": 1,
+                "preparation_action": "preheat",
+                "where": [],
+                "ingredients": [],
+                "tools": [
+                  "oven"
+                ],
+                "temperature": "400 degrees",
+                "time": null
+              },
+              {
+                "order": 2,
+                "preparation_action": "peel",
+                "where": [
+                  "sunchokes"
+                ],
+                "ingredients": [
+                  "sunchokes"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 2,
+                "preparation_action": "cut",
+                "where": [
+                  "sunchokes"
+                ],
+                "ingredients": [
+                  "sunchokes"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 3,
+                "preparation_action": "dice",
+                "where": [
+                  "onion"
+                ],
+                "ingredients": [
+                  "onion"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 4,
+                "preparation_action": "slice",
+                "where": [
+                  "apple"
+                ],
+                "ingredients": [
+                  "apple"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 4,
+                "preparation_action": "core",
+                "where": [
+                  "apple"
+                ],
+                "ingredients": [
+                  "apple"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 5,
+                "preparation_action": "toss",
+                "where": [
+                  "sheet pan"
+                ],
+                "ingredients": [
+                  "sunchokes",
+                  "onion",
+                  "apple",
+                  "olive oil"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 5,
+                "preparation_action": "place",
+                "where": [
+                  "sheet pan"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 6,
+                "preparation_action": "set",
+                "where": [],
+                "ingredients": [],
+                "tools": [
+                  "timer"
+                ],
+                "temperature": null,
+                "time": "20 mins"
+              },
+              {
+                "order": 7,
+                "preparation_action": "shake",
+                "where": [
+                  "sheet pan"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 8,
+                "preparation_action": "shake",
+                "where": [
+                  "sheet pan"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 8,
+                "preparation_action": "check",
+                "where": [
+                  "sheet pan"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 9,
+                "preparation_action": "remove",
+                "where": [
+                  "apples"
+                ],
+                "ingredients": [
+                  "apples"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 9,
+                "preparation_action": "let cool",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 9,
+                "preparation_action": "peel",
+                "where": [
+                  "apples"
+                ],
+                "ingredients": [
+                  "apples"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 10,
+                "preparation_action": "leave",
+                "where": [
+                  "sunchokes",
+                  "onion"
+                ],
+                "ingredients": [
+                  "sunchokes",
+                  "onion"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 11,
+                "preparation_action": "char",
+                "where": [
+                  "onion"
+                ],
+                "ingredients": [
+                  "onion"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 12,
+                "preparation_action": "add",
+                "where": [],
+                "ingredients": [
+                  "sunchokes",
+                  "onion",
+                  "vegetable stock"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 13,
+                "preparation_action": "heat",
+                "where": [],
+                "ingredients": [
+                  "sunchokes",
+                  "onion",
+                  "vegetable stock"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 13,
+                "preparation_action": "puree",
+                "where": [],
+                "ingredients": [
+                  "sunchokes",
+                  "onion",
+                  "vegetable stock"
+                ],
+                "tools": [
+                  "blender"
+                ],
+                "temperature": null,
+                "time": null
+              }
+            ]
+          },
+          "main": {
+            "recipe_id": 654905,
+            "title": "Pasta With Chickpeas and Kale",
+            "servings": 4,
+            "price_per_serving": 243.81,
+            "ready_in_minutes": 0,
+            "ingredients": [
+              "bell pepper",
+              "chickpeas",
+              "garlic",
+              "kale",
+              "olive oil",
+              "parsley",
+              "salt and pepper",
+              "ziti"
+            ],
+            "restrictions": [
+              "vegan",
+              "vegetarian",
+              "dairy free"
+            ],
+            "instructions": "<ol><li>Set a large pot of water to boil, and add salt. Cut the kale stems into 2-3 inch pieces; chop the leaves coarsely and set aside. Boil the stems until they are nearly tender; then, add the greens. Cook until kale is quite tender but stillbright green. Scoop it out with a slotted spoon, place in a bowl of ice water, and keep pot boiling. When the kale cools, squeeze out excess water, gather it into a mass and chop rather finely. Meanwhile, place olive oil in a large skillet over ve</li><li>Warm the garlic mixture over medium heat, and add the cooked pasta, the chickpeas and the chopped kale.</li><li>Toss well, taste for seasoning, garnish with parsley and serve immediately.</li></ol>",
+            "structured_instructions": [
+              {
+                "order": 1,
+                "preparation_action": "set",
+                "where": [
+                  "pot"
+                ],
+                "ingredients": [
+                  "water",
+                  "salt"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 1,
+                "preparation_action": "cut",
+                "where": [
+                  "kale stems"
+                ],
+                "ingredients": [
+                  "kale"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 1,
+                "preparation_action": "chop",
+                "where": [
+                  "kale leaves"
+                ],
+                "ingredients": [
+                  "kale"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 1,
+                "preparation_action": "boil",
+                "where": [
+                  "pot"
+                ],
+                "ingredients": [
+                  "kale stems",
+                  "water",
+                  "salt"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 1,
+                "preparation_action": "boil",
+                "where": [
+                  "pot"
+                ],
+                "ingredients": [
+                  "kale"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 1,
+                "preparation_action": "cook",
+                "where": [
+                  "pot"
+                ],
+                "ingredients": [
+                  "kale"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 1,
+                "preparation_action": "scoop",
+                "where": [
+                  "pot"
+                ],
+                "ingredients": [
+                  "kale"
+                ],
+                "tools": [
+                  "slotted spoon"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 1,
+                "preparation_action": "place",
+                "where": [
+                  "bowl of ice water"
+                ],
+                "ingredients": [
+                  "kale"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 1,
+                "preparation_action": "keep",
+                "where": [
+                  "pot"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 1,
+                "preparation_action": "cool",
+                "where": [
+                  "kale"
+                ],
+                "ingredients": [
+                  "kale"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 1,
+                "preparation_action": "squeeze",
+                "where": [
+                  "kale"
+                ],
+                "ingredients": [
+                  "kale"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 1,
+                "preparation_action": "gather",
+                "where": [
+                  "kale"
+                ],
+                "ingredients": [
+                  "kale"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 1,
+                "preparation_action": "chop",
+                "where": [
+                  "kale"
+                ],
+                "ingredients": [
+                  "kale"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 2,
+                "preparation_action": "warm",
+                "where": [
+                  "garlic mixture"
+                ],
+                "ingredients": [
+                  "garlic mixture"
+                ],
+                "tools": [],
+                "temperature": "medium heat",
+                "time": null
+              },
+              {
+                "order": 2,
+                "preparation_action": "add",
+                "where": [
+                  "garlic mixture"
+                ],
+                "ingredients": [
+                  "cooked pasta",
+                  "chickpeas",
+                  "chopped kale"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 3,
+                "preparation_action": "toss",
+                "where": [
+                  "garlic mixture"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 3,
+                "preparation_action": "taste",
+                "where": [
+                  "garlic mixture"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 3,
+                "preparation_action": "garnish",
+                "where": [
+                  "garlic mixture"
+                ],
+                "ingredients": [
+                  "parsley"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 3,
+                "preparation_action": "serve",
+                "where": [
+                  "garlic mixture"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              }
+            ]
+          },
+          "dessert": {
+            "recipe_id": 646524,
+            "title": "Healthy Vegan Red Velvet Brownies",
+            "servings": 8,
+            "price_per_serving": 41.97,
+            "ready_in_minutes": 0,
+            "ingredients": [
+              "almond extract",
+              "apple sauce",
+              "baking powder",
+              "baking soda",
+              "beets",
+              "brown sugar",
+              "cocoa powder",
+              "ground flaxseed",
+              "kidney beans",
+              "salt",
+              "vanilla extract"
+            ],
+            "restrictions": [
+              "vegan",
+              "gluten free",
+              "vegetarian",
+              "dairy free"
+            ],
+            "instructions": "<ol><li>Preheat oven to 350 F.</li><li>Spray an 8x8 inch pan with cooking spray. Set aside.</li><li>In a food processor, puree kidney beans and beets. Transfer to a large bowl.</li><li>Add remaining ingredients and mix by hand until smooth and fully combined.</li><li>Fold batter into the greased pan.</li><li>Bake for 35-40 minutes, turning the pan halfway through.</li><li>When the brownies are done, test them with a toothpick. You want some batter to cling to the toothpick. Do not over bake.</li><li>Let cool completely. Refrigerate for one hour.</li><li>Cut into squares or use cookie cutters to make heart shapes.</li></ol>",
+            "structured_instructions": [
+              {
+                "order": 1,
+                "preparation_action": "preheat",
+                "where": [
+                  "oven"
+                ],
+                "ingredients": [],
+                "tools": [
+                  "oven"
+                ],
+                "temperature": "350 F",
+                "time": null
+              },
+              {
+                "order": 2,
+                "preparation_action": "spray",
+                "where": [
+                  "pan"
+                ],
+                "ingredients": [],
+                "tools": [
+                  "cooking spray"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 2,
+                "preparation_action": "set",
+                "where": [
+                  "aside"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 3,
+                "preparation_action": "puree",
+                "where": [
+                  "food processor"
+                ],
+                "ingredients": [
+                  "kidney beans",
+                  "beets"
+                ],
+                "tools": [
+                  "food processor"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 3,
+                "preparation_action": "transfer",
+                "where": [
+                  "large bowl"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 4,
+                "preparation_action": "add",
+                "where": [],
+                "ingredients": [
+                  "almond extract",
+                  "apple sauce",
+                  "baking powder",
+                  "baking soda",
+                  "brown sugar",
+                  "cocoa powder",
+                  "ground flaxseed",
+                  "salt",
+                  "vanilla extract"
+                ],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 4,
+                "preparation_action": "mix",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 5,
+                "preparation_action": "fold",
+                "where": [
+                  "greased pan"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 6,
+                "preparation_action": "bake",
+                "where": [
+                  "oven"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": "35-40 minutes"
+              },
+              {
+                "order": 6,
+                "preparation_action": "turn",
+                "where": [
+                  "pan"
+                ],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 7,
+                "preparation_action": "test",
+                "where": [],
+                "ingredients": [],
+                "tools": [
+                  "toothpick"
+                ],
+                "temperature": null,
+                "time": null
+              },
+              {
+                "order": 8,
+                "preparation_action": "let",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": "completely"
+              },
+              {
+                "order": 8,
+                "preparation_action": "refrigerate",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": "one hour"
+              },
+              {
+                "order": 9,
+                "preparation_action": "cut",
+                "where": [],
+                "ingredients": [],
+                "tools": [],
+                "temperature": null,
+                "time": null
+              }
+            ]
+          }
+        },
+        "features": {
+          "total_price_per_serving": 488.57,
+          "price_category": "premium",
+          "avg_ready_time_minutes": 0,
+          "time_category": "quick",
+          "season": "Winter",
+          "wine_pairing": " No wine pairing",
+          "is_kosher": false,
+          "is_halal": true,
+          "common_dietary_restrictions": [
+            "vegetarian",
+            "vegan",
+            "dairy free"
+          ],
+          "is_vegetarian": true,
+          "is_vegan": true,
+          "is_gluten_free": false,
+          "is_dairy_free": true,
+          "cultura": "Italian",
+          "estilo_cocina": "Moderno/Saludable"
+        },
+        "similarity_features": {
+          "total_ingredients_count": 24,
+          "complexity_score": 50.0,
+          "health_factor": 70.0,
+          "cuisine_diversity": 0
+        }
+      },
+      "case_saved": true,
+      "error": null,
+      "success": true
+    },
+    {
+      "test_id": "TEST_007",
+      "description": "Culture Test: Japanese wedding vegan in winter",
+      "status": "PASS",
+      "passed": true,
+      "execution_time": 0.08455610275268555,
+      "iterations": 1,
+      "final_menu": {
+        "menu_id": 8,
+        "menu_name": "Menu 8: Pasta With Chickpeas and Kale",
+        "description": "Complete menu featuring Pasta With Chickpeas and Kale as main course",
+        "courses": {
+          "starter": {
+            "recipe_id": 658674,
+            "title": "Roasted Sunchoke, Apple, and Onion Soup",
+            "servings": 12,
+            "price_per_serving": 202.79,
+            "ready_in_minutes": 0,
+            "ingredients": [
+              "sunchokes",
+              "onion",
+              "pineapple",
+              "flavor concentrated seafood broth",
+              "olive oil",
+              "s&p"
+            ],
+            "restrictions": [
+              "dairy free",
+              "vegetarian",
+              "gluten free",
+              "vegan"
             ],
             "instructions": "Preheat oven to 400 degrees\nPeel sunchokes (best you can but don't obsess) and cut into die-sized pieces\nLarge dice onion\nSlice apple in half lengthwise and core\nToss all three in olive oil and place on a sheet pan on the bottom rack\nSet timer for 20 mins and then shake pan\nAfter that, shake and check more frequently\nRemove apples when soft and let cool then peel\nLeave sunchokes and onion in until some of the onion start to char\nAdd roasted vegetables to 4 cups liquid (stock)\nHeat until sunchokes are soft; they may already be from the roasting\nPuree in blender",
             "structured_instructions": [
@@ -3980,7 +4193,7 @@
                 },
                 {
                   "original": "apple",
-                  "substitute": "pineapple juice",
+                  "substitute": "pineapple",
                   "reason": [
                     "no pertenece a cultura 'japanese'"
                   ],
@@ -3992,7 +4205,7 @@
                 },
                 {
                   "original": "vegetable stock",
-                  "substitute": "vegetable broth",
+                  "substitute": "flavor concentrated seafood broth",
                   "reason": [
                     "no pertenece a cultura 'japanese'"
                   ],
@@ -4043,9 +4256,9 @@
               "elbow macaroni"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
-              "vegetarian"
+              "vegetarian",
+              "vegan"
             ],
             "instructions": "<ol><li>Set a large pot of water to boil, and add salt. Cut the kale stems into 2-3 inch pieces; chop the leaves coarsely and set aside. Boil the stems until they are nearly tender; then, add the greens. Cook until kale is quite tender but stillbright green. Scoop it out with a slotted spoon, place in a bowl of ice water, and keep pot boiling. When the kale cools, squeeze out excess water, gather it into a mass and chop rather finely. Meanwhile, place olive oil in a large skillet over ve</li><li>Warm the garlic mixture over medium heat, and add the cooked pasta, the chickpeas and the chopped kale.</li><li>Toss well, taste for seasoning, garnish with parsley and serve immediately.</li></ol>",
             "structured_instructions": [
@@ -4367,7 +4580,7 @@
             "ready_in_minutes": 0,
             "ingredients": [
               "nut",
-              "tomato paste",
+              "tomato sauce",
               "cornstarch",
               "baking soda",
               "beets",
@@ -4379,10 +4592,10 @@
               "vanilla extract"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "vegetarian",
               "gluten free",
-              "vegetarian"
+              "vegan"
             ],
             "instructions": "<ol><li>Preheat oven to 350 F.</li><li>Spray an 8x8 inch pan with cooking spray. Set aside.</li><li>In a food processor, puree kidney beans and beets. Transfer to a large bowl.</li><li>Add remaining ingredients and mix by hand until smooth and fully combined.</li><li>Fold batter into the greased pan.</li><li>Bake for 35-40 minutes, turning the pan halfway through.</li><li>When the brownies are done, test them with a toothpick. You want some batter to cling to the toothpick. Do not over bake.</li><li>Let cool completely. Refrigerate for one hour.</li><li>Cut into squares or use cookie cutters to make heart shapes.</li></ol>",
             "structured_instructions": [
@@ -4566,7 +4779,7 @@
                 },
                 {
                   "original": "apple sauce",
-                  "substitute": "tomato paste",
+                  "substitute": "tomato sauce",
                   "reason": [
                     "no pertenece a cultura 'japanese'"
                   ],
@@ -4633,9 +4846,9 @@
           "is_kosher": false,
           "is_halal": true,
           "common_dietary_restrictions": [
-            "vegan",
             "dairy free",
-            "vegetarian"
+            "vegetarian",
+            "vegan"
           ],
           "is_vegetarian": true,
           "is_vegan": true,
@@ -4660,7 +4873,7 @@
       "description": "Restriction Test: Duplicate restrictions + format variants",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.07872152328491211,
+      "execution_time": 0.06713294982910156,
       "iterations": 1,
       "final_menu": {
         "menu_id": 2,
@@ -4681,10 +4894,10 @@
               "salt"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "vegetarian",
               "gluten free",
-              "vegetarian"
+              "vegan"
             ],
             "instructions": "<ol><li>Preheat oven to 400 F. Line a baking sheet with parchment paper or a silicone mat.</li><li>Rinse the outside of the acorn squash and then chop it in half. Seed the squash and chop off the stem. Next, slice it into one-inch wedges. I like use the natural grooves on the squash as a guide for thickness.</li><li>Place the sliced acorn squash in a medium-sized bowl. Add the rest of the ingredients to the bowl and stir until everything is well incorporated.</li><li>Lay the acorn squash in a single layer on top of the lined baking sheet, cut side down.</li><li>Bake for about 15 minutes. Flip the acorn squash slices to the other side so that both sides will be browned equally.</li><li>Bake the squash for another 10 to 15 minutes or until the pieces can be easily pierced with a fork.</li></ol>",
             "structured_instructions": [
@@ -4900,10 +5113,10 @@
               "zucchini"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "vegetarian",
               "gluten free",
-              "vegetarian"
+              "vegan"
             ],
             "instructions": "<ol><li>Combine all of the ingredients the salad ingredients in a bowl.</li><li>Combine all of the dressing ingredients in a cup and stir, adjust the ingredients to taste. </li><li> Pour this over the salad and toss. </li><li> Let the salad sit in the refrigerator for a few hours before serving.</li></ol>",
             "structured_instructions": [
@@ -5026,14 +5239,14 @@
               "sugar",
               "water",
               "mint leaves",
-              "chives and dill",
+              "hibiscus petal",
               "ice water"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "vegetarian",
               "gluten free",
-              "vegetarian"
+              "vegan"
             ],
             "instructions": "Lay the clean, drained berries in a single layer on a cookie sheet and place in the freezer until frozen through. It is best to do both this and the next step the day or night before you plan to make the sorbet - just make sure you leave enough time for everything to freeze.\nMake the herb-infused simple syrup by combining the water and sugar in a small heavy-bottomed saucepan and heat over a medium flame until it comes to a boil. Turn it off and let cool completely.\nStrain out the mint leaves and lavender and pour the cooled syrup into an ice cube tray - should make roughly 4 syrup cubes. Place the tray in the freezer until syrup is frozen (the cubes may remain a little mushy as a result of all the sugar.)\nOnce the berries and herb-infused syrup cubes have frozen, you can make the sorbet. Place the frozen berries and syrup cubes in the bowl of a cuisinart or blender and add a few teaspoons of ice water to aid in blending. Continue to process or blend, adding small amounts of the ice water as needed, until smooth.\nServe, topped with a sprig of mint leaves and/or lavender.",
             "structured_instructions": [
@@ -5144,7 +5357,7 @@
                 },
                 {
                   "original": "lavender",
-                  "substitute": "chives and dill",
+                  "substitute": "hibiscus petal",
                   "reason": [
                     "no pertenece a cultura 'mediterranean'"
                   ],
@@ -5187,10 +5400,10 @@
           "is_kosher": true,
           "is_halal": true,
           "common_dietary_restrictions": [
-            "vegan",
-            "dairy free",
             "gluten free",
-            "vegetarian"
+            "dairy free",
+            "vegetarian",
+            "vegan"
           ],
           "is_vegetarian": true,
           "is_vegan": true,
@@ -5215,7 +5428,7 @@
       "description": "Restriction Test: Complex multi-restriction (vegan+nut-free+soy-free)",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.09250664710998535,
+      "execution_time": 0.0760040283203125,
       "iterations": 1,
       "final_menu": {
         "menu_id": 2,
@@ -5236,12 +5449,12 @@
               "salt"
             ],
             "restrictions": [
-              "soy free",
-              "dairy free",
-              "vegetarian",
-              "vegan",
+              "gluten free",
               "nut free",
-              "gluten free"
+              "dairy free",
+              "vegan",
+              "soy free",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Preheat oven to 400 F. Line a baking sheet with parchment paper or a silicone mat.</li><li>Rinse the outside of the acorn squash and then chop it in half. Seed the squash and chop off the stem. Next, slice it into one-inch wedges. I like use the natural grooves on the squash as a guide for thickness.</li><li>Place the sliced acorn squash in a medium-sized bowl. Add the rest of the ingredients to the bowl and stir until everything is well incorporated.</li><li>Lay the acorn squash in a single layer on top of the lined baking sheet, cut side down.</li><li>Bake for about 15 minutes. Flip the acorn squash slices to the other side so that both sides will be browned equally.</li><li>Bake the squash for another 10 to 15 minutes or until the pieces can be easily pierced with a fork.</li></ol>",
             "structured_instructions": [
@@ -5457,12 +5670,12 @@
               "zucchini"
             ],
             "restrictions": [
-              "soy free",
-              "dairy free",
-              "vegetarian",
-              "vegan",
+              "gluten free",
               "nut free",
-              "gluten free"
+              "dairy free",
+              "vegan",
+              "soy free",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Combine all of the ingredients the salad ingredients in a bowl.</li><li>Combine all of the dressing ingredients in a cup and stir, adjust the ingredients to taste. </li><li> Pour this over the salad and toss. </li><li> Let the salad sit in the refrigerator for a few hours before serving.</li></ol>",
             "structured_instructions": [
@@ -5571,16 +5784,16 @@
               "sugar",
               "water",
               "mint leaves",
-              "chives and dill",
+              "hibiscus petal",
               "ice water"
             ],
             "restrictions": [
-              "soy free",
-              "dairy free",
-              "vegetarian",
-              "vegan",
+              "gluten free",
               "nut free",
-              "gluten free"
+              "dairy free",
+              "vegan",
+              "soy free",
+              "vegetarian"
             ],
             "instructions": "Lay the clean, drained berries in a single layer on a cookie sheet and place in the freezer until frozen through. It is best to do both this and the next step the day or night before you plan to make the sorbet - just make sure you leave enough time for everything to freeze.\nMake the herb-infused simple syrup by combining the water and sugar in a small heavy-bottomed saucepan and heat over a medium flame until it comes to a boil. Turn it off and let cool completely.\nStrain out the mint leaves and lavender and pour the cooled syrup into an ice cube tray - should make roughly 4 syrup cubes. Place the tray in the freezer until syrup is frozen (the cubes may remain a little mushy as a result of all the sugar.)\nOnce the berries and herb-infused syrup cubes have frozen, you can make the sorbet. Place the frozen berries and syrup cubes in the bowl of a cuisinart or blender and add a few teaspoons of ice water to aid in blending. Continue to process or blend, adding small amounts of the ice water as needed, until smooth.\nServe, topped with a sprig of mint leaves and/or lavender.",
             "structured_instructions": [
@@ -5668,7 +5881,7 @@
                 "sugar",
                 "water",
                 "mint leaves",
-                "chives and dill",
+                "hibiscus petal",
                 "ice water"
               ],
               "ingredients_substituted": 0,
@@ -5695,12 +5908,12 @@
           "is_kosher": true,
           "is_halal": true,
           "common_dietary_restrictions": [
-            "soy free",
-            "dairy free",
-            "vegetarian",
-            "vegan",
+            "gluten free",
             "nut free",
-            "gluten free"
+            "dairy free",
+            "vegan",
+            "soy free",
+            "vegetarian"
           ],
           "is_vegetarian": true,
           "is_vegan": true,
@@ -5725,7 +5938,7 @@
       "description": "Adaptation Test: Restriction requiring ingredient removal (no substitute)",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.10030245780944824,
+      "execution_time": 0.06715583801269531,
       "iterations": 1,
       "final_menu": {
         "menu_id": 1,
@@ -5748,10 +5961,10 @@
             ],
             "restrictions": [
               "shellfish free",
+              "gluten free",
               "dairy free",
-              "vegetarian",
               "vegan",
-              "gluten free"
+              "vegetarian"
             ],
             "instructions": "<ol><li>Preheat oven to 375 degrees.</li><li>Spread corn flat on a baking sheet.</li><li>Spray lightly with olive oil spray.</li><li>Roast corn in the oven for about 8-10 minutes. (Be careful not to brown too much or burn.)</li><li>Remove from heat and allow to cool.</li><li>Finely chop red pepper and garlic and mix in a bowl.</li><li>Peel and coarsely chop avocado and add to bowl.</li><li>Add cooled corn.</li><li>Mix in cumin and vinegar and blend well.</li></ol>",
             "structured_instructions": [
@@ -5942,10 +6155,10 @@
             ],
             "restrictions": [
               "shellfish free",
+              "gluten free",
               "dairy free",
-              "vegetarian",
               "vegan",
-              "gluten free"
+              "vegetarian"
             ],
             "instructions": "<ol><li>Combine all of the above ingredients in a bowl.</li><li>Combine the ingredients for the dressing and add to the salsa.</li><li>Serve chilled.</li></ol>",
             "structured_instructions": [
@@ -6042,8 +6255,8 @@
               "water"
             ],
             "restrictions": [
-              "shellfish free",
               "gluten free",
+              "shellfish free",
               "vegetarian"
             ],
             "instructions": "<ol><li>Pour sugar, corn syrup and water into saucepan. Cook, stirring only until sugar is dissolved. Continue cooking until sugar begins to turn light brown (300 degrees) by candy thermometer. Remove from heat. Add salt, soda, butter and stir as little as possible, only to mix well. Stir in peanuts and coconut.Spread on a greased sheet of waxed paper set on top of a baking sheet and let the mixture cool and harden.</li></ol>",
@@ -6192,8 +6405,8 @@
           "is_kosher": true,
           "is_halal": true,
           "common_dietary_restrictions": [
-            "shellfish free",
             "gluten free",
+            "shellfish free",
             "vegetarian"
           ],
           "is_vegetarian": true,
@@ -6219,7 +6432,7 @@
       "description": "Restriction Test: Single restriction kosher",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.10776114463806152,
+      "execution_time": 0.07465505599975586,
       "iterations": 1,
       "final_menu": {
         "menu_id": 2,
@@ -6240,11 +6453,11 @@
               "salt"
             ],
             "restrictions": [
-              "kosher",
+              "gluten free",
               "dairy free",
-              "vegetarian",
               "vegan",
-              "gluten free"
+              "kosher",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Preheat oven to 400 F. Line a baking sheet with parchment paper or a silicone mat.</li><li>Rinse the outside of the acorn squash and then chop it in half. Seed the squash and chop off the stem. Next, slice it into one-inch wedges. I like use the natural grooves on the squash as a guide for thickness.</li><li>Place the sliced acorn squash in a medium-sized bowl. Add the rest of the ingredients to the bowl and stir until everything is well incorporated.</li><li>Lay the acorn squash in a single layer on top of the lined baking sheet, cut side down.</li><li>Bake for about 15 minutes. Flip the acorn squash slices to the other side so that both sides will be browned equally.</li><li>Bake the squash for another 10 to 15 minutes or until the pieces can be easily pierced with a fork.</li></ol>",
             "structured_instructions": [
@@ -6444,11 +6657,11 @@
             "price_per_serving": 57.39,
             "ready_in_minutes": 0,
             "ingredients": [
-              "clove garlic",
+              "ginger",
               "pepper",
               "parsley",
               "garlic",
-              "clove garlic",
+              "ginger",
               "capers plus caper juice",
               "lemon",
               "onion",
@@ -6460,11 +6673,11 @@
               "zucchini"
             ],
             "restrictions": [
-              "kosher",
+              "gluten free",
               "dairy free",
-              "vegetarian",
               "vegan",
-              "gluten free"
+              "kosher",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Combine all of the ingredients the salad ingredients in a bowl.</li><li>Combine all of the dressing ingredients in a cup and stir, adjust the ingredients to taste. </li><li> Pour this over the salad and toss. </li><li> Let the salad sit in the refrigerator for a few hours before serving.</li></ol>",
             "structured_instructions": [
@@ -6534,32 +6747,6 @@
             "_adaptation": {
               "substitutions": [
                 {
-                  "original": "thumb sized piece of ginger",
-                  "substitute": "clove garlic",
-                  "reason": [
-                    "no pertenece a cultura 'mediterranean'",
-                    "no pertenece a cultura 'mediterranean'"
-                  ],
-                  "search_attempts": [
-                    "ontología (subcategory): 84 candidatos"
-                  ],
-                  "candidates_found": 84,
-                  "action": "substituted"
-                },
-                {
-                  "original": "thumb sized piece of ginger",
-                  "substitute": "clove garlic",
-                  "reason": [
-                    "no pertenece a cultura 'mediterranean'",
-                    "no pertenece a cultura 'mediterranean'"
-                  ],
-                  "search_attempts": [
-                    "ontología (subcategory): 84 candidatos"
-                  ],
-                  "candidates_found": 84,
-                  "action": "substituted"
-                },
-                {
                   "original": "pepper flakes",
                   "substitute": null,
                   "reason": [
@@ -6574,11 +6761,11 @@
                 }
               ],
               "original_ingredients": [
-                "thumb sized piece of ginger",
+                "ginger",
                 "pepper",
                 "parsley",
                 "garlic",
-                "thumb sized piece of ginger",
+                "ginger",
                 "capers plus caper juice",
                 "lemon",
                 "onion",
@@ -6589,13 +6776,13 @@
                 "vinegar",
                 "zucchini"
               ],
-              "ingredients_substituted": 2,
+              "ingredients_substituted": 0,
               "ingredients_removed": 0,
               "ingredients_kept": 1,
               "removed_ingredients": [],
               "culture_adaptation": {
-                "total_culture_violations": 3,
-                "culture_changed_this_round": 3,
+                "total_culture_violations": 1,
+                "culture_changed_this_round": 1,
                 "culture_pending_next_rounds": 0,
                 "pending_ingredients": [],
                 "max_per_round": 3
@@ -6613,15 +6800,15 @@
               "sugar",
               "water",
               "mint leaves",
-              "old bay",
+              "lavender bud",
               "ice water"
             ],
             "restrictions": [
-              "kosher",
+              "gluten free",
               "dairy free",
-              "vegetarian",
               "vegan",
-              "gluten free"
+              "kosher",
+              "vegetarian"
             ],
             "instructions": "Lay the clean, drained berries in a single layer on a cookie sheet and place in the freezer until frozen through. It is best to do both this and the next step the day or night before you plan to make the sorbet - just make sure you leave enough time for everything to freeze.\nMake the herb-infused simple syrup by combining the water and sugar in a small heavy-bottomed saucepan and heat over a medium flame until it comes to a boil. Turn it off and let cool completely.\nStrain out the mint leaves and lavender and pour the cooled syrup into an ice cube tray - should make roughly 4 syrup cubes. Place the tray in the freezer until syrup is frozen (the cubes may remain a little mushy as a result of all the sugar.)\nOnce the berries and herb-infused syrup cubes have frozen, you can make the sorbet. Place the frozen berries and syrup cubes in the bowl of a cuisinart or blender and add a few teaspoons of ice water to aid in blending. Continue to process or blend, adding small amounts of the ice water as needed, until smooth.\nServe, topped with a sprig of mint leaves and/or lavender.",
             "structured_instructions": [
@@ -6731,8 +6918,8 @@
                   "note": "Mantenido (solo viola cultura, no restricción alimentaria)"
                 },
                 {
-                  "original": "chives and dill",
-                  "substitute": "old bay",
+                  "original": "hibiscus petal",
+                  "substitute": "lavender bud",
                   "reason": [
                     "no pertenece a cultura 'mediterranean'"
                   ],
@@ -6748,7 +6935,7 @@
                 "sugar",
                 "water",
                 "mint leaves",
-                "chives and dill",
+                "hibiscus petal",
                 "ice water"
               ],
               "ingredients_substituted": 1,
@@ -6775,11 +6962,11 @@
           "is_kosher": true,
           "is_halal": true,
           "common_dietary_restrictions": [
-            "kosher",
+            "gluten free",
             "dairy free",
-            "vegetarian",
             "vegan",
-            "gluten free"
+            "kosher",
+            "vegetarian"
           ],
           "is_vegetarian": true,
           "is_vegan": true,
@@ -6804,7 +6991,7 @@
       "description": "Compliance Test: Case already meets all requirements (no adaptation needed)",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.09994125366210938,
+      "execution_time": 0.06886577606201172,
       "iterations": 1,
       "final_menu": {
         "menu_id": 1,
@@ -7220,7 +7407,7 @@
       "description": "Compliance Test: Exact match on all criteria",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.09971261024475098,
+      "execution_time": 0.06271076202392578,
       "iterations": 1,
       "final_menu": {
         "menu_id": 1,
@@ -7636,7 +7823,7 @@
       "description": "Culture Test: Chinese cuisine (East Asian ontology mapping)",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.10094022750854492,
+      "execution_time": 0.07636713981628418,
       "iterations": 1,
       "final_menu": {
         "menu_id": 1,
@@ -7650,18 +7837,18 @@
             "price_per_serving": 130.73,
             "ready_in_minutes": 0,
             "ingredients": [
-              "navel orange",
-              "rice wine vinegar",
+              "orange",
+              "rice vinegar",
               "shallotsred onion",
               "corn",
               "garlic",
               "bell pepper"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "vegetarian",
               "gluten free",
-              "vegetarian"
+              "vegan"
             ],
             "instructions": "<ol><li>Preheat oven to 375 degrees.</li><li>Spread corn flat on a baking sheet.</li><li>Spray lightly with olive oil spray.</li><li>Roast corn in the oven for about 8-10 minutes. (Be careful not to brown too much or burn.)</li><li>Remove from heat and allow to cool.</li><li>Finely chop red pepper and garlic and mix in a bowl.</li><li>Peel and coarsely chop avocado and add to bowl.</li><li>Add cooled corn.</li><li>Mix in cumin and vinegar and blend well.</li></ol>",
             "structured_instructions": [
@@ -7811,7 +7998,7 @@
               "substitutions": [
                 {
                   "original": "avocado",
-                  "substitute": "navel orange",
+                  "substitute": "orange",
                   "reason": [
                     "no pertenece a cultura 'chinese'"
                   ],
@@ -7823,7 +8010,7 @@
                 },
                 {
                   "original": "balsamic vinegar",
-                  "substitute": "rice wine vinegar",
+                  "substitute": "rice vinegar",
                   "reason": [
                     "no pertenece a cultura 'chinese'"
                   ],
@@ -7890,10 +8077,10 @@
               "vinegar"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "vegetarian",
               "gluten free",
-              "vegetarian"
+              "vegan"
             ],
             "instructions": "<ol><li>Combine all of the above ingredients in a bowl.</li><li>Combine the ingredients for the dressing and add to the salsa.</li><li>Serve chilled.</li></ol>",
             "structured_instructions": [
@@ -8246,7 +8433,7 @@
       "description": "Budget Edge Case: Zero budget and min > max",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.1082460880279541,
+      "execution_time": 0.06607413291931152,
       "iterations": 1,
       "final_menu": {
         "menu_id": 3,
@@ -8764,7 +8951,7 @@
       "description": "Retain Test: High usefulness case (many adaptations + novel + valid)",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.10983586311340332,
+      "execution_time": 0.09392118453979492,
       "iterations": 1,
       "final_menu": {
         "menu_id": 2,
@@ -8778,19 +8965,19 @@
             "price_per_serving": 57.52,
             "ready_in_minutes": 0,
             "ingredients": [
-              "baking potatoes recommended",
+              "sweet potato",
               "cocoa powder",
               "chocolate",
               "olive oil",
               "salt"
             ],
             "restrictions": [
-              "soy free",
-              "dairy free",
-              "vegetarian",
-              "vegan",
+              "gluten free",
               "nut free",
-              "gluten free"
+              "dairy free",
+              "vegan",
+              "soy free",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Preheat oven to 400 F. Line a baking sheet with parchment paper or a silicone mat.</li><li>Rinse the outside of the acorn squash and then chop it in half. Seed the squash and chop off the stem. Next, slice it into one-inch wedges. I like use the natural grooves on the squash as a guide for thickness.</li><li>Place the sliced acorn squash in a medium-sized bowl. Add the rest of the ingredients to the bowl and stir until everything is well incorporated.</li><li>Lay the acorn squash in a single layer on top of the lined baking sheet, cut side down.</li><li>Bake for about 15 minutes. Flip the acorn squash slices to the other side so that both sides will be browned equally.</li><li>Bake the squash for another 10 to 15 minutes or until the pieces can be easily pierced with a fork.</li></ol>",
             "structured_instructions": [
@@ -8965,7 +9152,7 @@
               "substitutions": [
                 {
                   "original": "acorn squash",
-                  "substitute": "baking potatoes recommended",
+                  "substitute": "sweet potato",
                   "reason": [
                     "no pertenece a cultura 'korean'"
                   ],
@@ -9029,7 +9216,7 @@
             "ingredients": [
               "clove garlic",
               "pepper",
-              "basil shred",
+              "basil in ribbon",
               "garlic",
               "clove garlic",
               "capers plus 2 tablespoons caper juice",
@@ -9043,12 +9230,12 @@
               "zucchini"
             ],
             "restrictions": [
-              "soy free",
-              "dairy free",
-              "vegetarian",
-              "vegan",
+              "gluten free",
               "nut free",
-              "gluten free"
+              "dairy free",
+              "vegan",
+              "soy free",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Combine all of the ingredients the salad ingredients in a bowl.</li><li>Combine all of the dressing ingredients in a cup and stir, adjust the ingredients to taste. </li><li> Pour this over the salad and toss. </li><li> Let the salad sit in the refrigerator for a few hours before serving.</li></ol>",
             "structured_instructions": [
@@ -9131,7 +9318,7 @@
                 },
                 {
                   "original": "parsley",
-                  "substitute": "basil shred",
+                  "substitute": "basil in ribbon",
                   "reason": [
                     "no pertenece a cultura 'korean'"
                   ],
@@ -9200,16 +9387,16 @@
               "sugar",
               "water",
               "mint leaves",
-              "old bay",
+              "lavender bud",
               "ice water"
             ],
             "restrictions": [
-              "soy free",
-              "dairy free",
-              "vegetarian",
-              "vegan",
+              "gluten free",
               "nut free",
-              "gluten free"
+              "dairy free",
+              "vegan",
+              "soy free",
+              "vegetarian"
             ],
             "instructions": "Lay the clean, drained berries in a single layer on a cookie sheet and place in the freezer until frozen through. It is best to do both this and the next step the day or night before you plan to make the sorbet - just make sure you leave enough time for everything to freeze.\nMake the herb-infused simple syrup by combining the water and sugar in a small heavy-bottomed saucepan and heat over a medium flame until it comes to a boil. Turn it off and let cool completely.\nStrain out the mint leaves and lavender and pour the cooled syrup into an ice cube tray - should make roughly 4 syrup cubes. Place the tray in the freezer until syrup is frozen (the cubes may remain a little mushy as a result of all the sugar.)\nOnce the berries and herb-infused syrup cubes have frozen, you can make the sorbet. Place the frozen berries and syrup cubes in the bowl of a cuisinart or blender and add a few teaspoons of ice water to aid in blending. Continue to process or blend, adding small amounts of the ice water as needed, until smooth.\nServe, topped with a sprig of mint leaves and/or lavender.",
             "structured_instructions": [
@@ -9319,8 +9506,8 @@
                   "note": "Mantenido (solo viola cultura, no restricción alimentaria)"
                 },
                 {
-                  "original": "chives and dill",
-                  "substitute": "old bay",
+                  "original": "hibiscus petal",
+                  "substitute": "lavender bud",
                   "reason": [
                     "no pertenece a cultura 'korean'"
                   ],
@@ -9336,7 +9523,7 @@
                 "sugar",
                 "water",
                 "mint leaves",
-                "chives and dill",
+                "hibiscus petal",
                 "ice water"
               ],
               "ingredients_substituted": 1,
@@ -9365,12 +9552,12 @@
           "is_kosher": true,
           "is_halal": true,
           "common_dietary_restrictions": [
-            "soy free",
-            "dairy free",
-            "vegetarian",
-            "vegan",
+            "gluten free",
             "nut free",
-            "gluten free"
+            "dairy free",
+            "vegan",
+            "soy free",
+            "vegetarian"
           ],
           "is_vegetarian": true,
           "is_vegan": true,
@@ -9395,7 +9582,7 @@
       "description": "Retain Test: Low usefulness case (high similarity to existing)",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.09891676902770996,
+      "execution_time": 0.07063746452331543,
       "iterations": 1,
       "final_menu": {
         "menu_id": 1,
@@ -9811,7 +9998,7 @@
       "description": "Iteration Test: Failed validation triggers revision (interactive=False)",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.07913565635681152,
+      "execution_time": 0.0741262435913086,
       "iterations": 1,
       "final_menu": {
         "menu_id": 2,
@@ -9832,12 +10019,12 @@
               "salt"
             ],
             "restrictions": [
-              "kosher",
-              "dairy free",
-              "vegetarian",
-              "vegan",
               "gluten free",
-              "halal"
+              "dairy free",
+              "halal",
+              "vegan",
+              "kosher",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Preheat oven to 400 F. Line a baking sheet with parchment paper or a silicone mat.</li><li>Rinse the outside of the acorn squash and then chop it in half. Seed the squash and chop off the stem. Next, slice it into one-inch wedges. I like use the natural grooves on the squash as a guide for thickness.</li><li>Place the sliced acorn squash in a medium-sized bowl. Add the rest of the ingredients to the bowl and stir until everything is well incorporated.</li><li>Lay the acorn squash in a single layer on top of the lined baking sheet, cut side down.</li><li>Bake for about 15 minutes. Flip the acorn squash slices to the other side so that both sides will be browned equally.</li><li>Bake the squash for another 10 to 15 minutes or until the pieces can be easily pierced with a fork.</li></ol>",
             "structured_instructions": [
@@ -10037,11 +10224,11 @@
             "price_per_serving": 57.39,
             "ready_in_minutes": 0,
             "ingredients": [
-              "clove garlic",
+              "ginger",
               "pepper",
               "parsley",
               "garlic",
-              "clove garlic",
+              "ginger",
               "capers plus caper juice",
               "lemon",
               "onion",
@@ -10053,12 +10240,12 @@
               "zucchini"
             ],
             "restrictions": [
-              "kosher",
-              "dairy free",
-              "vegetarian",
-              "vegan",
               "gluten free",
-              "halal"
+              "dairy free",
+              "halal",
+              "vegan",
+              "kosher",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Combine all of the ingredients the salad ingredients in a bowl.</li><li>Combine all of the dressing ingredients in a cup and stir, adjust the ingredients to taste. </li><li> Pour this over the salad and toss. </li><li> Let the salad sit in the refrigerator for a few hours before serving.</li></ol>",
             "structured_instructions": [
@@ -10128,11 +10315,11 @@
             "_adaptation": {
               "substitutions": [],
               "original_ingredients": [
-                "clove garlic",
+                "ginger",
                 "pepper",
                 "parsley",
                 "garlic",
-                "clove garlic",
+                "ginger",
                 "capers plus caper juice",
                 "lemon",
                 "onion",
@@ -10167,16 +10354,16 @@
               "sugar",
               "water",
               "mint leaves",
-              "old bay",
+              "lavender bud",
               "ice water"
             ],
             "restrictions": [
-              "kosher",
-              "dairy free",
-              "vegetarian",
-              "vegan",
               "gluten free",
-              "halal"
+              "dairy free",
+              "halal",
+              "vegan",
+              "kosher",
+              "vegetarian"
             ],
             "instructions": "Lay the clean, drained berries in a single layer on a cookie sheet and place in the freezer until frozen through. It is best to do both this and the next step the day or night before you plan to make the sorbet - just make sure you leave enough time for everything to freeze.\nMake the herb-infused simple syrup by combining the water and sugar in a small heavy-bottomed saucepan and heat over a medium flame until it comes to a boil. Turn it off and let cool completely.\nStrain out the mint leaves and lavender and pour the cooled syrup into an ice cube tray - should make roughly 4 syrup cubes. Place the tray in the freezer until syrup is frozen (the cubes may remain a little mushy as a result of all the sugar.)\nOnce the berries and herb-infused syrup cubes have frozen, you can make the sorbet. Place the frozen berries and syrup cubes in the bowl of a cuisinart or blender and add a few teaspoons of ice water to aid in blending. Continue to process or blend, adding small amounts of the ice water as needed, until smooth.\nServe, topped with a sprig of mint leaves and/or lavender.",
             "structured_instructions": [
@@ -10264,7 +10451,7 @@
                 "sugar",
                 "water",
                 "mint leaves",
-                "old bay",
+                "lavender bud",
                 "ice water"
               ],
               "ingredients_substituted": 0,
@@ -10291,12 +10478,12 @@
           "is_kosher": true,
           "is_halal": true,
           "common_dietary_restrictions": [
-            "kosher",
-            "dairy free",
-            "vegetarian",
-            "vegan",
             "gluten free",
-            "halal"
+            "dairy free",
+            "halal",
+            "vegan",
+            "kosher",
+            "vegetarian"
           ],
           "is_vegetarian": true,
           "is_vegan": true,
@@ -10312,7 +10499,7 @@
           "cuisine_diversity": 0
         }
       },
-      "case_saved": false,
+      "case_saved": true,
       "error": null,
       "success": true
     },
@@ -10321,7 +10508,7 @@
       "description": "Iteration Test: Max iterations reached without valid solution",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.049242258071899414,
+      "execution_time": 0.07691669464111328,
       "iterations": 1,
       "final_menu": {
         "menu_id": 2,
@@ -10342,14 +10529,14 @@
               "salt"
             ],
             "restrictions": [
+              "gluten free",
+              "nut free",
+              "dairy free",
+              "halal",
+              "vegan",
               "soy free",
               "kosher",
-              "dairy free",
-              "vegetarian",
-              "vegan",
-              "nut free",
-              "gluten free",
-              "halal"
+              "vegetarian"
             ],
             "instructions": "<ol><li>Preheat oven to 400 F. Line a baking sheet with parchment paper or a silicone mat.</li><li>Rinse the outside of the acorn squash and then chop it in half. Seed the squash and chop off the stem. Next, slice it into one-inch wedges. I like use the natural grooves on the squash as a guide for thickness.</li><li>Place the sliced acorn squash in a medium-sized bowl. Add the rest of the ingredients to the bowl and stir until everything is well incorporated.</li><li>Lay the acorn squash in a single layer on top of the lined baking sheet, cut side down.</li><li>Bake for about 15 minutes. Flip the acorn squash slices to the other side so that both sides will be browned equally.</li><li>Bake the squash for another 10 to 15 minutes or until the pieces can be easily pierced with a fork.</li></ol>",
             "structured_instructions": [
@@ -10565,14 +10752,14 @@
               "zucchini"
             ],
             "restrictions": [
+              "gluten free",
+              "nut free",
+              "dairy free",
+              "halal",
+              "vegan",
               "soy free",
               "kosher",
-              "dairy free",
-              "vegetarian",
-              "vegan",
-              "nut free",
-              "gluten free",
-              "halal"
+              "vegetarian"
             ],
             "instructions": "<ol><li>Combine all of the ingredients the salad ingredients in a bowl.</li><li>Combine all of the dressing ingredients in a cup and stir, adjust the ingredients to taste. </li><li> Pour this over the salad and toss. </li><li> Let the salad sit in the refrigerator for a few hours before serving.</li></ol>",
             "structured_instructions": [
@@ -10681,18 +10868,18 @@
               "sugar",
               "water",
               "mint leaves",
-              "chives and dill",
+              "hibiscus petal",
               "ice water"
             ],
             "restrictions": [
+              "gluten free",
+              "nut free",
+              "dairy free",
+              "halal",
+              "vegan",
               "soy free",
               "kosher",
-              "dairy free",
-              "vegetarian",
-              "vegan",
-              "nut free",
-              "gluten free",
-              "halal"
+              "vegetarian"
             ],
             "instructions": "Lay the clean, drained berries in a single layer on a cookie sheet and place in the freezer until frozen through. It is best to do both this and the next step the day or night before you plan to make the sorbet - just make sure you leave enough time for everything to freeze.\nMake the herb-infused simple syrup by combining the water and sugar in a small heavy-bottomed saucepan and heat over a medium flame until it comes to a boil. Turn it off and let cool completely.\nStrain out the mint leaves and lavender and pour the cooled syrup into an ice cube tray - should make roughly 4 syrup cubes. Place the tray in the freezer until syrup is frozen (the cubes may remain a little mushy as a result of all the sugar.)\nOnce the berries and herb-infused syrup cubes have frozen, you can make the sorbet. Place the frozen berries and syrup cubes in the bowl of a cuisinart or blender and add a few teaspoons of ice water to aid in blending. Continue to process or blend, adding small amounts of the ice water as needed, until smooth.\nServe, topped with a sprig of mint leaves and/or lavender.",
             "structured_instructions": [
@@ -10780,7 +10967,7 @@
                 "sugar",
                 "water",
                 "mint leaves",
-                "chives and dill",
+                "hibiscus petal",
                 "ice water"
               ],
               "ingredients_substituted": 0,
@@ -10807,14 +10994,14 @@
           "is_kosher": true,
           "is_halal": true,
           "common_dietary_restrictions": [
+            "gluten free",
+            "nut free",
+            "dairy free",
+            "halal",
+            "vegan",
             "soy free",
             "kosher",
-            "dairy free",
-            "vegetarian",
-            "vegan",
-            "nut free",
-            "gluten free",
-            "halal"
+            "vegetarian"
           ],
           "is_vegetarian": true,
           "is_vegan": true,
@@ -10830,7 +11017,7 @@
           "cuisine_diversity": 0
         }
       },
-      "case_saved": false,
+      "case_saved": true,
       "error": null,
       "success": true
     },
@@ -10839,7 +11026,7 @@
       "description": "Edge Case: Unknown culture (should use fallback matching)",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.04900097846984863,
+      "execution_time": 0.07365822792053223,
       "iterations": 1,
       "final_menu": {
         "menu_id": 1,
@@ -10861,10 +11048,10 @@
               "bell pepper"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "vegetarian",
               "gluten free",
-              "vegetarian"
+              "vegan"
             ],
             "instructions": "<ol><li>Preheat oven to 375 degrees.</li><li>Spread corn flat on a baking sheet.</li><li>Spray lightly with olive oil spray.</li><li>Roast corn in the oven for about 8-10 minutes. (Be careful not to brown too much or burn.)</li><li>Remove from heat and allow to cool.</li><li>Finely chop red pepper and garlic and mix in a bowl.</li><li>Peel and coarsely chop avocado and add to bowl.</li><li>Add cooled corn.</li><li>Mix in cumin and vinegar and blend well.</li></ol>",
             "structured_instructions": [
@@ -11054,10 +11241,10 @@
               "vinegar"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "vegetarian",
               "gluten free",
-              "vegetarian"
+              "vegan"
             ],
             "instructions": "<ol><li>Combine all of the above ingredients in a bowl.</li><li>Combine the ingredients for the dressing and add to the salsa.</li><li>Serve chilled.</li></ol>",
             "structured_instructions": [
@@ -11320,7 +11507,7 @@
           "cuisine_diversity": 0
         }
       },
-      "case_saved": false,
+      "case_saved": true,
       "error": null,
       "success": true
     },
@@ -11329,7 +11516,7 @@
       "description": "Edge Case: Unknown restriction (should ignore gracefully)",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.07486081123352051,
+      "execution_time": 0.07095766067504883,
       "iterations": 1,
       "final_menu": {
         "menu_id": 1,
@@ -11351,13 +11538,13 @@
               "bell pepper"
             ],
             "restrictions": [
-              "dairy free",
-              "paleo",
-              "keto",
+              "gluten free",
               "unknown restriction",
-              "vegetarian",
+              "keto",
+              "dairy free",
               "vegan",
-              "gluten free"
+              "vegetarian",
+              "paleo"
             ],
             "instructions": "<ol><li>Preheat oven to 375 degrees.</li><li>Spread corn flat on a baking sheet.</li><li>Spray lightly with olive oil spray.</li><li>Roast corn in the oven for about 8-10 minutes. (Be careful not to brown too much or burn.)</li><li>Remove from heat and allow to cool.</li><li>Finely chop red pepper and garlic and mix in a bowl.</li><li>Peel and coarsely chop avocado and add to bowl.</li><li>Add cooled corn.</li><li>Mix in cumin and vinegar and blend well.</li></ol>",
             "structured_instructions": [
@@ -11547,13 +11734,13 @@
               "vinegar"
             ],
             "restrictions": [
-              "dairy free",
-              "paleo",
-              "keto",
+              "gluten free",
               "unknown restriction",
-              "vegetarian",
+              "keto",
+              "dairy free",
               "vegan",
-              "gluten free"
+              "vegetarian",
+              "paleo"
             ],
             "instructions": "<ol><li>Combine all of the above ingredients in a bowl.</li><li>Combine the ingredients for the dressing and add to the salsa.</li><li>Serve chilled.</li></ol>",
             "structured_instructions": [
@@ -11650,11 +11837,11 @@
               "water"
             ],
             "restrictions": [
-              "paleo",
-              "vegetarian",
-              "keto",
+              "gluten free",
               "unknown restriction",
-              "gluten free"
+              "keto",
+              "vegetarian",
+              "paleo"
             ],
             "instructions": "<ol><li>Pour sugar, corn syrup and water into saucepan. Cook, stirring only until sugar is dissolved. Continue cooking until sugar begins to turn light brown (300 degrees) by candy thermometer. Remove from heat. Add salt, soda, butter and stir as little as possible, only to mix well. Stir in peanuts and coconut.Spread on a greased sheet of waxed paper set on top of a baking sheet and let the mixture cool and harden.</li></ol>",
             "structured_instructions": [
@@ -11802,11 +11989,11 @@
           "is_kosher": true,
           "is_halal": true,
           "common_dietary_restrictions": [
-            "paleo",
+            "gluten free",
             "unknown restriction",
             "keto",
             "vegetarian",
-            "gluten free"
+            "paleo"
           ],
           "is_vegetarian": true,
           "is_vegan": false,
@@ -11831,7 +12018,7 @@
       "description": "Edge Case: Contradictory restrictions (vegan + dairy)",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.1004328727722168,
+      "execution_time": 0.08116984367370605,
       "iterations": 1,
       "final_menu": {
         "menu_id": 8,
@@ -11853,11 +12040,11 @@
               "s&p"
             ],
             "restrictions": [
-              "dairy free",
-              "vegetarian",
-              "vegan",
               "gluten free",
-              "dairy"
+              "dairy free",
+              "vegan",
+              "dairy",
+              "vegetarian"
             ],
             "instructions": "Preheat oven to 400 degrees\nPeel sunchokes (best you can but don't obsess) and cut into die-sized pieces\nLarge dice onion\nSlice apple in half lengthwise and core\nToss all three in olive oil and place on a sheet pan on the bottom rack\nSet timer for 20 mins and then shake pan\nAfter that, shake and check more frequently\nRemove apples when soft and let cool then peel\nLeave sunchokes and onion in until some of the onion start to char\nAdd roasted vegetables to 4 cups liquid (stock)\nHeat until sunchokes are soft; they may already be from the roasting\nPuree in blender",
             "structured_instructions": [
@@ -12153,10 +12340,10 @@
               "ziti"
             ],
             "restrictions": [
-              "vegan",
-              "dairy free",
               "dairy",
-              "vegetarian"
+              "vegan",
+              "vegetarian",
+              "dairy free"
             ],
             "instructions": "<ol><li>Set a large pot of water to boil, and add salt. Cut the kale stems into 2-3 inch pieces; chop the leaves coarsely and set aside. Boil the stems until they are nearly tender; then, add the greens. Cook until kale is quite tender but stillbright green. Scoop it out with a slotted spoon, place in a bowl of ice water, and keep pot boiling. When the kale cools, squeeze out excess water, gather it into a mass and chop rather finely. Meanwhile, place olive oil in a large skillet over ve</li><li>Warm the garlic mixture over medium heat, and add the cooked pasta, the chickpeas and the chopped kale.</li><li>Toss well, taste for seasoning, garnish with parsley and serve immediately.</li></ol>",
             "structured_instructions": [
@@ -12452,11 +12639,11 @@
               "vanilla extract"
             ],
             "restrictions": [
-              "dairy free",
-              "vegetarian",
-              "vegan",
               "gluten free",
-              "dairy"
+              "dairy free",
+              "vegan",
+              "dairy",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Preheat oven to 350 F.</li><li>Spray an 8x8 inch pan with cooking spray. Set aside.</li><li>In a food processor, puree kidney beans and beets. Transfer to a large bowl.</li><li>Add remaining ingredients and mix by hand until smooth and fully combined.</li><li>Fold batter into the greased pan.</li><li>Bake for 35-40 minutes, turning the pan halfway through.</li><li>When the brownies are done, test them with a toothpick. You want some batter to cling to the toothpick. Do not over bake.</li><li>Let cool completely. Refrigerate for one hour.</li><li>Cut into squares or use cookie cutters to make heart shapes.</li></ol>",
             "structured_instructions": [
@@ -12663,10 +12850,10 @@
           "is_kosher": false,
           "is_halal": true,
           "common_dietary_restrictions": [
-            "vegan",
-            "dairy free",
             "dairy",
-            "vegetarian"
+            "dairy free",
+            "vegetarian",
+            "vegan"
           ],
           "is_vegetarian": true,
           "is_vegan": true,
@@ -12691,7 +12878,7 @@
       "description": "Retain Test: Near-duplicate case (high similarity, low novelty)",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.11419987678527832,
+      "execution_time": 0.0730903148651123,
       "iterations": 1,
       "final_menu": {
         "menu_id": 1,
@@ -13107,7 +13294,7 @@
       "description": "Edge Case: Empty ingredient list in a course",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.097076416015625,
+      "execution_time": 0.07026362419128418,
       "iterations": 1,
       "final_menu": {
         "menu_id": 3,
@@ -13636,7 +13823,7 @@
       "description": "Edge Case: All ingredients violate restrictions",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.13507819175720215,
+      "execution_time": 0.08133697509765625,
       "iterations": 1,
       "final_menu": {
         "menu_id": 2,
@@ -13657,12 +13844,12 @@
               "salt"
             ],
             "restrictions": [
-              "soy free",
-              "dairy free",
-              "vegetarian",
-              "vegan",
+              "gluten free",
               "nut free",
-              "gluten free"
+              "dairy free",
+              "vegan",
+              "soy free",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Preheat oven to 400 F. Line a baking sheet with parchment paper or a silicone mat.</li><li>Rinse the outside of the acorn squash and then chop it in half. Seed the squash and chop off the stem. Next, slice it into one-inch wedges. I like use the natural grooves on the squash as a guide for thickness.</li><li>Place the sliced acorn squash in a medium-sized bowl. Add the rest of the ingredients to the bowl and stir until everything is well incorporated.</li><li>Lay the acorn squash in a single layer on top of the lined baking sheet, cut side down.</li><li>Bake for about 15 minutes. Flip the acorn squash slices to the other side so that both sides will be browned equally.</li><li>Bake the squash for another 10 to 15 minutes or until the pieces can be easily pierced with a fork.</li></ol>",
             "structured_instructions": [
@@ -13878,12 +14065,12 @@
               "zucchini"
             ],
             "restrictions": [
-              "soy free",
-              "dairy free",
-              "vegetarian",
-              "vegan",
+              "gluten free",
               "nut free",
-              "gluten free"
+              "dairy free",
+              "vegan",
+              "soy free",
+              "vegetarian"
             ],
             "instructions": "<ol><li>Combine all of the ingredients the salad ingredients in a bowl.</li><li>Combine all of the dressing ingredients in a cup and stir, adjust the ingredients to taste. </li><li> Pour this over the salad and toss. </li><li> Let the salad sit in the refrigerator for a few hours before serving.</li></ol>",
             "structured_instructions": [
@@ -13992,16 +14179,16 @@
               "sugar",
               "water",
               "mint leaves",
-              "chives and dill",
+              "hibiscus petal",
               "ice water"
             ],
             "restrictions": [
-              "soy free",
-              "dairy free",
-              "vegetarian",
-              "vegan",
+              "gluten free",
               "nut free",
-              "gluten free"
+              "dairy free",
+              "vegan",
+              "soy free",
+              "vegetarian"
             ],
             "instructions": "Lay the clean, drained berries in a single layer on a cookie sheet and place in the freezer until frozen through. It is best to do both this and the next step the day or night before you plan to make the sorbet - just make sure you leave enough time for everything to freeze.\nMake the herb-infused simple syrup by combining the water and sugar in a small heavy-bottomed saucepan and heat over a medium flame until it comes to a boil. Turn it off and let cool completely.\nStrain out the mint leaves and lavender and pour the cooled syrup into an ice cube tray - should make roughly 4 syrup cubes. Place the tray in the freezer until syrup is frozen (the cubes may remain a little mushy as a result of all the sugar.)\nOnce the berries and herb-infused syrup cubes have frozen, you can make the sorbet. Place the frozen berries and syrup cubes in the bowl of a cuisinart or blender and add a few teaspoons of ice water to aid in blending. Continue to process or blend, adding small amounts of the ice water as needed, until smooth.\nServe, topped with a sprig of mint leaves and/or lavender.",
             "structured_instructions": [
@@ -14089,7 +14276,7 @@
                 "sugar",
                 "water",
                 "mint leaves",
-                "chives and dill",
+                "hibiscus petal",
                 "ice water"
               ],
               "ingredients_substituted": 0,
@@ -14116,12 +14303,12 @@
           "is_kosher": true,
           "is_halal": true,
           "common_dietary_restrictions": [
-            "soy free",
-            "dairy free",
-            "vegetarian",
-            "vegan",
+            "gluten free",
             "nut free",
-            "gluten free"
+            "dairy free",
+            "vegan",
+            "soy free",
+            "vegetarian"
           ],
           "is_vegetarian": true,
           "is_vegan": true,
@@ -14146,7 +14333,7 @@
       "description": "Interactive Test: User feedback with rating and additional restriction",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.13136887550354004,
+      "execution_time": 0.1111135482788086,
       "iterations": 2,
       "final_menu": {
         "menu_id": 1,
@@ -14168,10 +14355,10 @@
               "bell pepper"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "vegetarian",
               "gluten free",
-              "vegetarian"
+              "vegan"
             ],
             "instructions": "<ol><li>Preheat oven to 375 degrees.</li><li>Spread corn flat on a baking sheet.</li><li>Spray lightly with olive oil spray.</li><li>Roast corn in the oven for about 8-10 minutes. (Be careful not to brown too much or burn.)</li><li>Remove from heat and allow to cool.</li><li>Finely chop red pepper and garlic and mix in a bowl.</li><li>Peel and coarsely chop avocado and add to bowl.</li><li>Add cooled corn.</li><li>Mix in cumin and vinegar and blend well.</li></ol>",
             "structured_instructions": [
@@ -14361,10 +14548,10 @@
               "vinegar"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "vegetarian",
               "gluten free",
-              "vegetarian"
+              "vegan"
             ],
             "instructions": "<ol><li>Combine all of the above ingredients in a bowl.</li><li>Combine the ingredients for the dressing and add to the salsa.</li><li>Serve chilled.</li></ol>",
             "structured_instructions": [
@@ -14494,8 +14681,8 @@
             "ingredients": [
               "butter",
               "carbonated water",
-              "strawberry",
-              "honey",
+              "strawberry jam",
+              "clear honey",
               "peanuts",
               "salt",
               "sugar",
@@ -14631,7 +14818,7 @@
                 },
                 {
                   "original": "coconut",
-                  "substitute": "strawberry",
+                  "substitute": "strawberry jam",
                   "reason": [
                     "no pertenece a cultura 'italian'"
                   ],
@@ -14643,7 +14830,7 @@
                 },
                 {
                   "original": "corn syrup",
-                  "substitute": "honey",
+                  "substitute": "clear honey",
                   "reason": [
                     "no pertenece a cultura 'italian'"
                   ],
@@ -14716,7 +14903,7 @@
       "description": "Interactive Test: User feedback with culture adjustment",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.11858558654785156,
+      "execution_time": 0.07581782341003418,
       "iterations": 1,
       "final_menu": {
         "menu_id": 3,
@@ -15234,7 +15421,7 @@
       "description": "Interactive Test: Low user rating triggers revision",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.06835007667541504,
+      "execution_time": 0.06184029579162598,
       "iterations": 1,
       "final_menu": {
         "menu_id": 2,
@@ -15663,7 +15850,7 @@
       "description": "Edge Case: Invalid event type",
       "status": "PASS",
       "passed": true,
-      "execution_time": 0.10956645011901855,
+      "execution_time": 0.05912351608276367,
       "iterations": 1,
       "final_menu": {
         "menu_id": 1,
@@ -15685,10 +15872,10 @@
               "bell pepper"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "vegetarian",
               "gluten free",
-              "vegetarian"
+              "vegan"
             ],
             "instructions": "<ol><li>Preheat oven to 375 degrees.</li><li>Spread corn flat on a baking sheet.</li><li>Spray lightly with olive oil spray.</li><li>Roast corn in the oven for about 8-10 minutes. (Be careful not to brown too much or burn.)</li><li>Remove from heat and allow to cool.</li><li>Finely chop red pepper and garlic and mix in a bowl.</li><li>Peel and coarsely chop avocado and add to bowl.</li><li>Add cooled corn.</li><li>Mix in cumin and vinegar and blend well.</li></ol>",
             "structured_instructions": [
@@ -15878,10 +16065,10 @@
               "vinegar"
             ],
             "restrictions": [
-              "vegan",
               "dairy free",
+              "vegetarian",
               "gluten free",
-              "vegetarian"
+              "vegan"
             ],
             "instructions": "<ol><li>Combine all of the above ingredients in a bowl.</li><li>Combine the ingredients for the dressing and add to the salsa.</li><li>Serve chilled.</li></ol>",
             "structured_instructions": [
@@ -16011,8 +16198,8 @@
             "ingredients": [
               "butter",
               "carbonated water",
-              "strawberry",
-              "honey",
+              "strawberry jam",
+              "clear honey",
               "peanuts",
               "salt",
               "sugar",
@@ -16148,7 +16335,7 @@
                 },
                 {
                   "original": "coconut",
-                  "substitute": "strawberry",
+                  "substitute": "strawberry jam",
                   "reason": [
                     "no pertenece a cultura 'italian'"
                   ],
@@ -16160,7 +16347,7 @@
                 },
                 {
                   "original": "corn syrup",
-                  "substitute": "honey",
+                  "substitute": "clear honey",
                   "reason": [
                     "no pertenece a cultura 'italian'"
                   ],
