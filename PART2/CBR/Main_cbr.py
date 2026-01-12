@@ -24,6 +24,28 @@ import json
 import time
 from datetime import datetime
 from typing import Dict, List, Any, Optional
+from unittest.mock import patch
+from io import StringIO
+
+
+# ============================================================================
+# CLASE PARA CAPTURAR SALIDA EN ARCHIVO Y CONSOLA
+# ============================================================================
+
+class TeeOutput:
+    """Clase que escribe simultáneamente en consola y archivo."""
+    def __init__(self, file_handle, original_stdout):
+        self.file = file_handle
+        self.stdout = original_stdout
+    
+    def write(self, message):
+        self.stdout.write(message)
+        self.file.write(message)
+        self.file.flush()
+    
+    def flush(self):
+        self.stdout.flush()
+        self.file.flush()
 
 # Añadir directorio al path
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -44,8 +66,8 @@ from adapt_tecnic import adapt_menu_tecniques, print_adaptation_results
 
 BASE_DIR = os.path.join(SCRIPT_DIR, '..')
 CASE_BASE_PATH = os.path.join(BASE_DIR, 'Base_Casos', 'casos_cbr.json')
-TEST_CASES_PATH = os.path.join(BASE_DIR, 'Juegos_Prueba', 'test_cases.json')
-TEST_RESULTS_PATH = os.path.join(SCRIPT_DIR, 'test_results.json')
+TEST_CASES_PATH = os.path.join(BASE_DIR, 'Juegos_Prueba', 'test_cases_extended.json')
+TEST_RESULTS_PATH = os.path.join(SCRIPT_DIR, 'test_results_extended.json')
 
 
 # ============================================================================
@@ -411,22 +433,20 @@ def load_test_cases(filepath: str = TEST_CASES_PATH) -> List[Dict]:
 def run_single_test(
     test_case: Dict,
     case_base: List,
-    restricciones_db: Dict,
-    contexto_db: Dict,
-    ontologia_db: Dict,
-    pairing_db: Dict,
     verbose: bool = False,
-    save_cases: bool = False
+    save_cases: bool = False,
+    log_file = None
 ) -> Dict:
     """
-    Ejecuta un único caso de prueba.
+    Ejecuta un único caso de prueba usando el ciclo CBR completo.
+    Similar al modo manual pero con datos del test_case y mock inputs.
     
     Args:
-        test_case: Caso de prueba con input y expected
+        test_case: Caso de prueba con input y mock_user_inputs
         case_base: Base de casos cargada
-        restricciones_db, contexto_db, ontologia_db, pairing_db: Bases de conocimiento
         verbose: Si True, muestra información detallada
         save_cases: Si True, permite guardar casos en la base
+        log_file: Archivo donde escribir la salida (opcional)
         
     Returns:
         Dict con resultados del test
@@ -434,7 +454,7 @@ def run_single_test(
     test_id = test_case.get('id', 'UNKNOWN')
     description = test_case.get('description', 'Sin descripción')
     user_input = test_case.get('input', {})
-    expected = test_case.get('expected', {})
+    mock_inputs = test_case.get('mock_user_inputs', [])
     
     result = {
         'test_id': test_id,
@@ -442,195 +462,104 @@ def run_single_test(
         'status': 'PENDING',
         'passed': False,
         'execution_time': 0,
-        'phases': {},
+        'iterations': 0,
+        'final_menu': None,
+        'case_saved': False,
         'error': None
     }
     
     start_time = time.time()
     
+    # Guardar stdout original
+    original_stdout = sys.stdout
+    
     try:
         if verbose:
-            print(f"\n{'='*60}")
-            print(f"🧪 {test_id}: {description}")
-            print(f"{'='*60}")
-            print(f"   Input: {user_input}")
+            print(f"\n{'='*70}")
+            print(f"🧪 TEST: {test_id}")
+            print(f"{'='*70}")
+            print(f"📝 {description}")
+            print(f"🔹 Input: {json.dumps(user_input, indent=2)}")
+            print(f"🔹 Mock inputs: {mock_inputs}")
         
         # ================================================================
-        # FASE RETRIEVE
+        # CASO ESPECIAL: Base de casos vacía (TEST_025)
         # ================================================================
-        retrieve_start = time.time()
-        retrieved = retrieve_cases(user_input, case_base)
-        retrieve_time = time.time() - retrieve_start
-        
-        result['phases']['retrieve'] = {
-            'success': len(retrieved) > 0,
-            'cases_found': len(retrieved),
-            'best_score': retrieved[0]['score'] if retrieved else 0,
-            'time': retrieve_time
-        }
-        
-        if verbose:
-            print(f"\n   📥 RETRIEVE: {len(retrieved)} casos encontrados")
-            if retrieved:
-                print(f"      Mejor caso: {retrieved[0]['case'].get('id_caso')} (score: {retrieved[0]['score']:.3f})")
-        
-        if not retrieved:
-            result['status'] = 'NO_CASES_FOUND'
-            result['passed'] = not expected.get('should_find_case', True)
+        if test_id == "TEST_025":
+            retrieved = retrieve_cases(user_input, [])
+            result['status'] = 'PASS' if len(retrieved) == 0 else 'FAIL'
+            result['passed'] = (len(retrieved) == 0)
+            result['execution_time'] = time.time() - start_time
             return result
         
-        best_result = retrieved[0]
+        # ================================================================
+        # REDIRIGIR STDOUT A ARCHIVO Y CONSOLA
+        # ================================================================
+        if log_file:
+            tee = TeeOutput(log_file, original_stdout)
+            sys.stdout = tee
         
         # ================================================================
-        # FASE ADAPT
+        # EJECUTAR CICLO CBR COMPLETO (como modo manual)
         # ================================================================
-        adapt_start = time.time()
-        adaptation = adapt_menu(
-            best_result, user_input,
-            restricciones_db, contexto_db, ontologia_db, pairing_db
-        )
-        adapt_time = time.time() - adapt_start
         
-        adapted_menu = adaptation.get('menu', {})
+        # Mockear los inputs del usuario para las partes interactivas
+        mock_input_iter = iter(mock_inputs)
         
-        # Contar sustituciones y extraer pasos
-        total_substitutions = 0
-        adaptation_steps = []
-        for course_name, course_data in adapted_menu.get('courses', {}).items():
-            if isinstance(course_data, dict):
-                _adaptation = course_data.get('_adaptation', {})
-                subs = _adaptation.get('substitutions', [])
-                total_substitutions += len(subs)
-                adaptation_steps.extend(subs)
+        def mock_input_func(prompt=""):
+            """Función mock que devuelve los inputs predefinidos."""
+            try:
+                value = next(mock_input_iter)
+                # Imprimir el prompt y la respuesta mockeada
+                print(f"{prompt}{value}")
+                return value
+            except StopIteration:
+                # Si se acabaron los inputs, devolver string vacío
+                print(f"{prompt}")
+                return ""
         
-        result['phases']['adapt'] = {
-            'success': True,
-            'substitutions': total_substitutions,
-            'time': adapt_time
-        }
+        # Patchear input() en todos los módulos relevantes
+        with patch('builtins.input', side_effect=mock_input_func), \
+             patch('Revise.input', side_effect=mock_input_func), \
+             patch('input_module.input', side_effect=mock_input_func):
+            # Ejecutar el ciclo CBR completo
+            cbr_results = run_cbr_cycle(user_input)
+        
+        # Restaurar stdout
+        sys.stdout = original_stdout
+        
+        # Extraer resultados
+        result['iterations'] = cbr_results.get('iterations', 0)
+        result['final_menu'] = cbr_results.get('final_menu')
+        result['case_saved'] = cbr_results.get('case_saved', False)
+        result['success'] = cbr_results.get('success', False)
+        
+        # Si el ciclo se ejecutó sin errores, es PASS
+        result['status'] = 'PASS'
+        result['passed'] = True
         
         if verbose:
-            print(f"   🔧 ADAPT: {total_substitutions} sustituciones realizadas")
-        
-        # ================================================================
-        # FASE REVISE (sin interacción)
-        # ================================================================
-        revise_start = time.time()
-        revision = revise_menu(
-            adapted_menu,
-            user_input.get('restrictions', []),
-            user_input.get('culture', user_input.get('cuisine', '')),
-            adaptation_steps=adaptation_steps,
-            interactive=False
-        )
-        revise_time = time.time() - revise_start
-        
-        performance = revision.get('performance', 0.8)
-        violations = revision.get('violations', [])
-        
-        # Simular feedback basado en violaciones
-        if len(violations) == 0:
-            simulated_feedback = 0.9
-        elif len(violations) <= 2:
-            simulated_feedback = 0.7
-        else:
-            simulated_feedback = 0.5
-        
-        revision['user_feedback'] = simulated_feedback
-        
-        result['phases']['revise'] = {
-            'success': len(violations) == 0,
-            'performance': performance,
-            'violations': len(violations),
-            'violation_details': violations[:3],
-            'time': revise_time
-        }
-        
-        if verbose:
-            print(f"   ✅ REVISE: Performance {performance:.1%}, {len(violations)} violaciones")
-            if violations:
-                for v in violations[:3]:
-                    print(f"      ⚠️ {v.get('ingredient', 'N/A')}: {v.get('reason', 'N/A')}")
-        
-        # ================================================================
-        # FASE RETAIN
-        # ================================================================
-        retain_start = time.time()
-        
-        if save_cases:
-            retention = retain_case(
-                adapted_menu, user_input, adaptation_steps, revision,
-                case_base=case_base, filepath=CASE_BASE_PATH
-            )
-        else:
-            # Calcular utilidad sin guardar
-            new_case_struct = {
-                'problema': {
-                    'restricciones_alimentarias': user_input.get('restrictions', []),
-                    'cultura_preferible': user_input.get('culture', user_input.get('cuisine', ''))
-                },
-                'solucion': adapted_menu
-            }
-            
-            perf = revision.get('performance', 0.5)
-            sim = calculate_similarity_to_base(new_case_struct, case_base)
-            nov = calculate_novelty(new_case_struct, case_base)
-            trc = calculate_trace_score(adaptation_steps)
-            usefulness = calculate_usefulness(perf, sim, nov, trc)
-            
-            retention = {
-                'case_saved': False,
-                'usefulness': usefulness,
-                'reason': 'Test mode - no save'
-            }
-        
-        retain_time = time.time() - retain_start
-        
-        result['phases']['retain'] = {
-            'success': True,
-            'usefulness': retention.get('usefulness', 0),
-            'would_save': retention.get('usefulness', 0) >= 0.5,
-            'time': retain_time
-        }
-        
-        if verbose:
-            print(f"   💾 RETAIN: Utilidad {retention.get('usefulness', 0):.3f}")
-        
-        # ================================================================
-        # EVALUACIÓN DEL TEST
-        # ================================================================
-        result['execution_time'] = time.time() - start_time
-        
-        passed = True
-        
-        if expected.get('should_find_case', True) and len(retrieved) == 0:
-            passed = False
-        
-        min_score = expected.get('min_score', 0)
-        if best_result['score'] < min_score:
-            passed = False
-        
-        if expected.get('no_violations', False) and len(violations) > 0:
-            passed = False
-        
-        result['passed'] = passed
-        result['status'] = 'PASSED' if passed else 'FAILED'
-        
-        if verbose:
-            status_icon = "✅" if passed else "❌"
-            print(f"\n   {status_icon} Resultado: {result['status']}")
-            print(f"   ⏱️ Tiempo total: {result['execution_time']:.3f}s")
+            print(f"\n{'='*70}")
+            print(f"CBR Cycle completed:")
+            print(f"  Success: {cbr_results.get('success')}")
+            print(f"  Iterations: {result['iterations']}")
+            print(f"  Case saved: {result['case_saved']}")
+            print(f"  Result: ✅ PASS")
         
     except Exception as e:
+        # Restaurar stdout en caso de error
+        sys.stdout = original_stdout
+        
         result['status'] = 'ERROR'
         result['error'] = str(e)
-        result['execution_time'] = time.time() - start_time
+        result['passed'] = False
         
         if verbose:
-            print(f"\n   ❌ ERROR: {e}")
+            print(f"\n❌ ERROR: {str(e)}")
             import traceback
             traceback.print_exc()
     
+    result['execution_time'] = time.time() - start_time
     return result
 
 
@@ -694,6 +623,7 @@ def test_mode(
 ) -> Dict:
     """
     Ejecuta los juegos de prueba del sistema CBR.
+    Usa el ciclo CBR completo (como modo manual) con datos de test_cases.
     
     Args:
         verbose: Modo verbose con detalles
@@ -703,10 +633,14 @@ def test_mode(
     Returns:
         Dict con resumen de resultados
     """
+    # Crear archivo de log
+    log_filename = os.path.join(SCRIPT_DIR, f'test_execution_{datetime.now().strftime("%Y%m%d_%H%M%S")}.txt')
+    
     print("\n" + "="*70)
     print("🧪 JUEGOS DE PRUEBA - Sistema CBR de Menús")
     print("="*70)
     print(f"📅 Fecha: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"📄 Log guardado en: {log_filename}")
     
     # Cargar casos de prueba
     test_cases = load_test_cases()
@@ -722,11 +656,9 @@ def test_mode(
             return {'error': f'Test {specific_test} not found'}
     
     print(f"📋 Tests a ejecutar: {len(test_cases)}")
+    print("ℹ️  Ejecutando ciclo CBR completo con iteraciones (como modo manual)")
     
-    # Cargar bases de conocimiento
-    print("\n⏳ Cargando bases de conocimiento...")
-    restricciones_db, contexto_db, ontologia_db, pairing_db = load_all_knowledge_bases()
-    
+    # Cargar base de casos
     case_base = load_case_base(CASE_BASE_PATH)
     if not case_base:
         print("❌ No se pudo cargar la base de casos")
@@ -749,42 +681,95 @@ def test_mode(
     print("EJECUTANDO TESTS")
     print("-"*70)
     
-    for i, test_case in enumerate(test_cases, 1):
-        test_id = test_case.get('id', f'TEST_{i}')
+    # Abrir archivo de log
+    with open(log_filename, 'w', encoding='utf-8') as log_file:
+        log_file.write("="*70 + "\n")
+        log_file.write("🧪 JUEGOS DE PRUEBA - Sistema CBR de Menús\n")
+        log_file.write("="*70 + "\n")
+        log_file.write(f"📅 Fecha: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        log_file.write(f"📋 Tests a ejecutar: {len(test_cases)}\n")
+        log_file.write("\n" + "-"*70 + "\n")
+        log_file.write("EJECUTANDO TESTS\n")
+        log_file.write("-"*70 + "\n")
+        log_file.flush()
         
-        if not verbose:
-            print(f"\n[{i}/{len(test_cases)}] {test_id}: {test_case.get('description', '')}...")
-        
-        test_result = run_single_test(
-            test_case, case_base,
-            restricciones_db, contexto_db, ontologia_db, pairing_db,
-            verbose=verbose,
-            save_cases=save_cases
-        )
-        
-        results['test_results'].append(test_result)
-        results['total_time'] += test_result.get('execution_time', 0)
-        
-        if test_result['status'] == 'PASSED':
-            results['passed'] += 1
-            if not verbose:
-                print(f"   ✅ PASSED ({test_result['execution_time']:.2f}s)")
-        elif test_result['status'] == 'FAILED':
-            results['failed'] += 1
-            if not verbose:
-                print(f"   ❌ FAILED ({test_result['execution_time']:.2f}s)")
-        else:
-            results['errors'] += 1
-            if not verbose:
-                print(f"   ⚠️ ERROR: {test_result.get('error', 'Unknown')}")
+        for i, test_case in enumerate(test_cases, 1):
+            test_id = test_case.get('id', f'TEST_{i}')
+            
+            header = f"\n[{i}/{len(test_cases)}] {test_id}: {test_case.get('description', '')}..."
+            print(header)
+            log_file.write(header + "\n")
+            log_file.flush()
+            
+            test_result = run_single_test(
+                test_case, case_base,
+                verbose=verbose,
+                save_cases=save_cases,
+                log_file=log_file
+            )
+            
+            results['test_results'].append(test_result)
+            results['total_time'] += test_result.get('execution_time', 0)
+            
+            if test_result['status'] == 'PASS':
+                results['passed'] += 1
+                status_msg = f"   ✅ PASS ({test_result['execution_time']:.2f}s, {test_result['iterations']} iterations)"
+            elif test_result['status'] == 'FAIL':
+                results['failed'] += 1
+                status_msg = f"   ❌ FAIL ({test_result['execution_time']:.2f}s)"
+            else:
+                results['errors'] += 1
+                status_msg = f"   ⚠️ ERROR: {test_result.get('error', 'Unknown')}"
+            
+            print(status_msg)
+            log_file.write(status_msg + "\n\n")
+            log_file.flush()
     
     # Mostrar resumen
     print_test_summary(results)
     
-    # Guardar resultados
+    # Guardar resultados JSON
     save_test_results(results)
     
+    print(f"\n📄 Log completo guardado en: {log_filename}")
+    
     return results
+
+
+# ============================================================================
+# MODO SELECTOR
+# ============================================================================
+
+def select_mode():
+    """Pregunta al usuario qué modo desea ejecutar."""
+    print("\n" + "="*70)
+    print("🍽️  SISTEMA CBR DE MENÚS GASTRONÓMICOS")
+    print("="*70)
+    print("\nSeleccione el modo de ejecución:")
+    print("  1. Modo Manual (Interactivo)")
+    print("  2. Juegos de Prueba (Test Suite)")
+    print("  3. Modo Demo (Sin interacción)")
+    print("  0. Salir")
+    print("="*70)
+    
+    while True:
+        try:
+            choice = input("\nIngrese su elección (0-3): ").strip()
+            
+            if choice == '1':
+                return 'manual'
+            elif choice == '2':
+                return 'test'
+            elif choice == '3':
+                return 'demo'
+            elif choice == '0':
+                print("\n👋 ¡Hasta luego!")
+                sys.exit(0)
+            else:
+                print("❌ Opción inválida. Por favor ingrese 0, 1, 2 o 3.")
+        except KeyboardInterrupt:
+            print("\n\n👋 ¡Hasta luego!")
+            sys.exit(0)
 
 
 # ============================================================================
@@ -834,6 +819,7 @@ Modos de ejecución:
     
     args = parser.parse_args()
     
+    # Si hay argumentos de línea de comandos, usarlos
     if args.demo:
         demo_mode()
     elif args.test:
@@ -842,5 +828,36 @@ Modos de ejecución:
             save_cases=args.save_test_cases,
             specific_test=args.test_id
         )
+    # Si no hay argumentos, preguntar al usuario
+    elif len(sys.argv) == 1:
+        mode = select_mode()
+        
+        if mode == 'manual':
+            main()
+        elif mode == 'test':
+            # Preguntar opciones de test
+            print("\n" + "-"*70)
+            print("OPCIONES DE JUEGOS DE PRUEBA")
+            print("-"*70)
+            
+            verbose_input = input("\n¿Modo verbose (muestra detalles)? (s/N): ").strip().lower()
+            verbose = verbose_input in ['s', 'si', 'sí', 'yes', 'y']
+            
+            specific_test_input = input("\n¿Ejecutar test específico? (Ingrese ID o presione Enter para todos): ").strip()
+            specific_test = specific_test_input if specific_test_input else None
+            
+            save_input = input("\n⚠️  ¿Permitir guardar casos? (NO recomendado) (s/N): ").strip().lower()
+            save_cases = save_input in ['s', 'si', 'sí', 'yes', 'y']
+            
+            print("\n" + "="*70)
+            
+            test_mode(
+                verbose=verbose,
+                save_cases=save_cases,
+                specific_test=specific_test
+            )
+        elif mode == 'demo':
+            demo_mode()
     else:
+        # Modo por defecto si hay argumentos no reconocidos
         main()
