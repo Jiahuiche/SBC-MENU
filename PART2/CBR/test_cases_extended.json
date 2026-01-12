@@ -1,0 +1,714 @@
+{
+  "test_cases": [
+    {
+      "id": "TEST_001",
+      "description": "Happy Path: Italian vegan+halal wedding in summer (existing case match)",
+      "input": {
+        "event_type": "wedding",
+        "quiere_tarta": true,
+        "max_people": 150,
+        "season": "summer",
+        "cuisine": "italian",
+        "culture": "italian",
+        "restrictions": ["vegan", "halal"],
+        "min_price": 50,
+        "max_price": 100
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 2,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_002",
+      "description": "Happy Path: Large congress Mexican no restrictions in winter",
+      "input": {
+        "event_type": "congress",
+        "quiere_tarta": false,
+        "max_people": 300,
+        "season": "winter",
+        "cuisine": "mexican",
+        "culture": "mexican",
+        "restrictions": [],
+        "min_price": 80,
+        "max_price": 120
+      },
+      "mock_user_inputs": ["9", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0,
+        "expect_adaptation": false,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_003",
+      "description": "Happy Path: Mediterranean family vegetarian+gluten-free in spring",
+      "input": {
+        "event_type": "family",
+        "quiere_tarta": true,
+        "max_people": 25,
+        "season": "spring",
+        "cuisine": "mediterranean",
+        "culture": "mediterranean",
+        "restrictions": ["vegetarian", "gluten-free"],
+        "min_price": 30,
+        "max_price": 60
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 4,
+        "expect_adaptation": false,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_004",
+      "description": "Happy Path: American wedding dairy-free in autumn",
+      "input": {
+        "event_type": "wedding",
+        "quiere_tarta": true,
+        "max_people": 100,
+        "season": "autumn",
+        "cuisine": "american",
+        "culture": "american",
+        "restrictions": ["dairy-free"],
+        "min_price": 40,
+        "max_price": 80
+      },
+      "mock_user_inputs": ["7", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 2,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_005",
+      "description": "Happy Path: French congress kosher+vegan high budget any season",
+      "input": {
+        "event_type": "congress",
+        "quiere_tarta": false,
+        "max_people": 300,
+        "season": "any",
+        "cuisine": "french",
+        "culture": "french",
+        "restrictions": ["kosher", "vegan"],
+        "min_price": 100,
+        "max_price": 200
+      },
+      "mock_user_inputs": ["9", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_should_retain": true
+      }
+    },
+    {
+      "id": "TEST_006",
+      "description": "Edge Case: Single person family event (min people)",
+      "input": {
+        "event_type": "family",
+        "quiere_tarta": false,
+        "max_people": 1,
+        "season": "summer",
+        "cuisine": "italian",
+        "culture": "italian",
+        "restrictions": ["vegetarian"],
+        "min_price": 20,
+        "max_price": 40
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 1,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_007",
+      "description": "Culture Test: Japanese wedding vegan in winter",
+      "input": {
+        "event_type": "wedding",
+        "quiere_tarta": true,
+        "max_people": 80,
+        "season": "winter",
+        "cuisine": "japanese",
+        "culture": "japanese",
+        "restrictions": ["vegan"],
+        "min_price": 60,
+        "max_price": 100
+      },
+      "mock_user_inputs": ["9", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_should_retain": true
+      }
+    },
+    {
+      "id": "TEST_008",
+      "description": "Restriction Test: Duplicate restrictions + format variants",
+      "input": {
+        "event_type": "family",
+        "quiere_tarta": false,
+        "max_people": 20,
+        "season": "spring",
+        "cuisine": "mediterranean",
+        "culture": "mediterranean",
+        "restrictions": ["gluten-free", "gluten free", "gluten_free", "dairy-free"],
+        "min_price": 30,
+        "max_price": 50
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 2,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_009",
+      "description": "Restriction Test: Complex multi-restriction (vegan+nut-free+soy-free)",
+      "input": {
+        "event_type": "wedding",
+        "quiere_tarta": true,
+        "max_people": 120,
+        "season": "summer",
+        "cuisine": "mediterranean",
+        "culture": "mediterranean",
+        "restrictions": ["vegan", "nut-free", "soy-free"],
+        "min_price": 50,
+        "max_price": 90
+      },
+      "mock_user_inputs": ["9", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 1,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_should_retain": true
+      }
+    },
+    {
+      "id": "TEST_010",
+      "description": "Adaptation Test: Restriction requiring ingredient removal (no substitute)",
+      "input": {
+        "event_type": "congress",
+        "quiere_tarta": false,
+        "max_people": 100,
+        "season": "autumn",
+        "cuisine": "american",
+        "culture": "american",
+        "restrictions": ["shellfish-free"],
+        "min_price": 40,
+        "max_price": 70
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 1,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_011",
+      "description": "Restriction Test: Single restriction kosher",
+      "input": {
+        "event_type": "family",
+        "quiere_tarta": false,
+        "max_people": 30,
+        "season": "any",
+        "cuisine": "mediterranean",
+        "culture": "mediterranean",
+        "restrictions": ["kosher"],
+        "min_price": 35,
+        "max_price": 60
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 1,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_012",
+      "description": "Compliance Test: Case already meets all requirements (no adaptation needed)",
+      "input": {
+        "event_type": "family",
+        "quiere_tarta": true,
+        "max_people": 25,
+        "season": "summer",
+        "cuisine": "american",
+        "culture": "american",
+        "restrictions": ["vegetarian", "gluten-free"],
+        "min_price": 30,
+        "max_price": 70
+      },
+      "mock_user_inputs": ["9", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 4,
+        "expect_adaptation": false,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_013",
+      "description": "Compliance Test: Exact match on all criteria",
+      "input": {
+        "event_type": "wedding",
+        "quiere_tarta": true,
+        "max_people": 100,
+        "season": "summer",
+        "cuisine": "american",
+        "culture": "american",
+        "restrictions": ["vegetarian", "gluten-free"],
+        "min_price": 100,
+        "max_price": 150
+      },
+      "mock_user_inputs": ["10", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 5,
+        "expect_adaptation": false,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_014",
+      "description": "Culture Test: Chinese cuisine (East Asian ontology mapping)",
+      "input": {
+        "event_type": "congress",
+        "quiere_tarta": false,
+        "max_people": 200,
+        "season": "spring",
+        "cuisine": "chinese",
+        "culture": "chinese",
+        "restrictions": ["vegetarian"],
+        "min_price": 40,
+        "max_price": 80
+      },
+      "mock_user_inputs": ["9", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_should_retain": true
+      }
+    },
+    {
+      "id": "TEST_015",
+      "description": "Budget Edge Case: Zero budget and min > max",
+      "input": {
+        "event_type": "family",
+        "quiere_tarta": false,
+        "max_people": 10,
+        "season": "any",
+        "cuisine": "mediterranean",
+        "culture": "mediterranean",
+        "restrictions": [],
+        "min_price": 100,
+        "max_price": 50
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0,
+        "expect_adaptation": false,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_016",
+      "description": "Retain Test: High usefulness case (many adaptations + novel + valid)",
+      "input": {
+        "event_type": "wedding",
+        "quiere_tarta": true,
+        "max_people": 150,
+        "season": "winter",
+        "cuisine": "korean",
+        "culture": "korean",
+        "restrictions": ["vegan", "gluten-free", "soy-free"],
+        "min_price": 70,
+        "max_price": 120
+      },
+      "mock_user_inputs": ["9", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_should_retain": true
+      }
+    },
+    {
+      "id": "TEST_017",
+      "description": "Retain Test: Low usefulness case (high similarity to existing)",
+      "input": {
+        "event_type": "family",
+        "quiere_tarta": true,
+        "max_people": 24,
+        "season": "summer",
+        "cuisine": "american",
+        "culture": "american",
+        "restrictions": ["vegetarian", "gluten-free"],
+        "min_price": 32,
+        "max_price": 62
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 4,
+        "expect_adaptation": false,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_018",
+      "description": "Iteration Test: Failed validation triggers revision (interactive=False)",
+      "input": {
+        "event_type": "congress",
+        "quiere_tarta": false,
+        "max_people": 150,
+        "season": "spring",
+        "cuisine": "mediterranean",
+        "culture": "mediterranean",
+        "restrictions": ["vegan", "halal", "kosher"],
+        "min_price": 60,
+        "max_price": 100
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 1,
+        "expect_adaptation": true,
+        "expect_is_valid": false,
+        "expect_needs_revision": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_019",
+      "description": "Iteration Test: Max iterations reached without valid solution",
+      "input": {
+        "event_type": "wedding",
+        "quiere_tarta": true,
+        "max_people": 200,
+        "season": "summer",
+        "cuisine": "mediterranean",
+        "culture": "mediterranean",
+        "restrictions": ["vegan", "halal", "kosher", "nut-free", "soy-free"],
+        "min_price": 80,
+        "max_price": 150
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 1,
+        "expect_adaptation": true,
+        "expect_is_valid": false,
+        "expect_max_iterations": true
+      }
+    },
+    {
+      "id": "TEST_020",
+      "description": "Edge Case: Unknown culture (should use fallback matching)",
+      "input": {
+        "event_type": "family",
+        "quiere_tarta": false,
+        "max_people": 30,
+        "season": "summer",
+        "cuisine": "ethiopian",
+        "culture": "ethiopian",
+        "restrictions": ["vegetarian"],
+        "min_price": 25,
+        "max_price": 50
+      },
+      "mock_user_inputs": ["9", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_should_retain": true
+      }
+    },
+    {
+      "id": "TEST_021",
+      "description": "Edge Case: Unknown restriction (should ignore gracefully)",
+      "input": {
+        "event_type": "congress",
+        "quiere_tarta": false,
+        "max_people": 100,
+        "season": "autumn",
+        "cuisine": "american",
+        "culture": "american",
+        "restrictions": ["paleo", "keto", "unknown-restriction"],
+        "min_price": 50,
+        "max_price": 90
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0,
+        "expect_adaptation": false,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_022",
+      "description": "Edge Case: Contradictory restrictions (vegan + dairy)",
+      "input": {
+        "event_type": "family",
+        "quiere_tarta": true,
+        "max_people": 20,
+        "season": "spring",
+        "cuisine": "italian",
+        "culture": "italian",
+        "restrictions": ["vegan", "dairy"],
+        "min_price": 30,
+        "max_price": 60
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0,
+        "expect_adaptation": true,
+        "expect_is_valid": false,
+        "expect_needs_revision": true
+      }
+    },
+    {
+      "id": "TEST_023",
+      "description": "Retain Test: Near-duplicate case (high similarity, low novelty)",
+      "input": {
+        "event_type": "family",
+        "quiere_tarta": true,
+        "max_people": 26,
+        "season": "summer",
+        "cuisine": "american",
+        "culture": "american",
+        "restrictions": ["vegetarian", "gluten-free"],
+        "min_price": 31,
+        "max_price": 61
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 4,
+        "expect_adaptation": false,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_024",
+      "description": "Edge Case: Empty ingredient list in a course",
+      "input": {
+        "event_type": "congress",
+        "quiere_tarta": false,
+        "max_people": 50,
+        "season": "any",
+        "cuisine": "mediterranean",
+        "culture": "mediterranean",
+        "restrictions": [],
+        "min_price": 40,
+        "max_price": 70
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0,
+        "expect_adaptation": false,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_025",
+      "description": "Robustness Test: Empty case base (simulated)",
+      "input": {
+        "event_type": "wedding",
+        "quiere_tarta": true,
+        "max_people": 100,
+        "season": "summer",
+        "cuisine": "italian",
+        "culture": "italian",
+        "restrictions": ["vegan"],
+        "min_price": 50,
+        "max_price": 100
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": false,
+        "min_score": 0,
+        "expect_error": "No cases in base"
+      }
+    },
+    {
+      "id": "TEST_026",
+      "description": "Edge Case: All ingredients violate restrictions",
+      "input": {
+        "event_type": "family",
+        "quiere_tarta": false,
+        "max_people": 15,
+        "season": "winter",
+        "cuisine": "mediterranean",
+        "culture": "mediterranean",
+        "restrictions": ["vegan", "gluten-free", "nut-free", "soy-free"],
+        "min_price": 30,
+        "max_price": 60
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0,
+        "expect_adaptation": true,
+        "expect_is_valid": false,
+        "expect_needs_revision": true
+      }
+    },
+    {
+      "id": "TEST_027",
+      "description": "Interactive Test: User feedback with rating and additional restriction",
+      "input": {
+        "event_type": "wedding",
+        "quiere_tarta": true,
+        "max_people": 100,
+        "season": "spring",
+        "cuisine": "italian",
+        "culture": "italian",
+        "restrictions": ["vegetarian"],
+        "min_price": 50,
+        "max_price": 90
+      },
+      "mock_user_inputs": [
+        "7",
+        "gluten-free",
+        "",
+        "",
+        ""
+      ],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 2,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_needs_revision": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_028",
+      "description": "Interactive Test: User feedback with culture adjustment",
+      "input": {
+        "event_type": "congress",
+        "quiere_tarta": false,
+        "max_people": 150,
+        "season": "autumn",
+        "cuisine": "mediterranean",
+        "culture": "mediterranean",
+        "restrictions": ["dairy-free"],
+        "min_price": 60,
+        "max_price": 100
+      },
+      "mock_user_inputs": [
+        "8",
+        "",
+        "",
+        "+italian",
+        ""
+      ],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 1,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_needs_revision": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_029",
+      "description": "Interactive Test: Low user rating triggers revision",
+      "input": {
+        "event_type": "family",
+        "quiere_tarta": true,
+        "max_people": 40,
+        "season": "summer",
+        "cuisine": "american",
+        "culture": "american",
+        "restrictions": ["vegan"],
+        "min_price": 35,
+        "max_price": 65
+      },
+      "mock_user_inputs": [
+        "3",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 1,
+        "expect_adaptation": true,
+        "expect_is_valid": true,
+        "expect_needs_revision": true,
+        "expect_should_retain": false
+      }
+    },
+    {
+      "id": "TEST_030",
+      "description": "Edge Case: Invalid event type",
+      "input": {
+        "event_type": "invalid_event",
+        "quiere_tarta": false,
+        "max_people": 50,
+        "season": "summer",
+        "cuisine": "italian",
+        "culture": "italian",
+        "restrictions": [],
+        "min_price": 40,
+        "max_price": 70
+      },
+      "mock_user_inputs": ["8", "", ""],
+      "expected": {
+        "should_find_case": true,
+        "min_score": 0,
+        "expect_adaptation": false,
+        "expect_is_valid": true,
+        "expect_should_retain": false
+      }
+    }
+  ]
+}
