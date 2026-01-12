@@ -3,231 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🍽️ Sistema CBR de Menús Gastronómicos</title>
+    <title>MAISON CBR | Menús Gastronómicos de Alta Cocina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="app">
         <!-- Header -->
         <header class="header">
-            <div class="logo">🍽️</div>
-            <h1>Sistema CBR de Menús</h1>
-            <p class="tagline">Adaptación Inteligente de Menús Gastronómicos</p>
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-symbol">◆</span>
+                    <h1>MAISON CBR</h1>
+                    <span class="logo-symbol">◆</span>
+                </div>
+                <p class="tagline">Menús Gastronómicos Personalizados</p>
+            </div>
         </header>
 
-        <!-- Indicador de sesión -->
-        <div class="session-tracker" id="sessionTracker">
-            <span class="session-label">Sesión:</span>
-            <span class="session-id" id="sessionId">Nueva sesión</span>
-            <span class="search-count" id="searchCount"></span>
-        </div>
-
-        <!-- Panel de Preferencias -->
-        <section class="panel preferences-panel" id="preferencesPanel">
-            <h2>📋 Tus Preferencias</h2>
+        <!-- Main Content -->
+        <main class="main">
             
-            <form id="preferencesForm">
-                <!-- Cultura Gastronómica -->
-                <div class="form-group">
-                    <label>🌍 Cultura Gastronómica</label>
-                    <div class="radio-group cuisine-grid">
-                        <label class="radio-card">
-                            <input type="radio" name="cultura" value="Italiana">
-                            <span class="card-icon">🇮🇹</span>
-                            <span class="card-label">Italiana</span>
-                        </label>
-                        <label class="radio-card">
-                            <input type="radio" name="cultura" value="Mediterránea">
-                            <span class="card-icon">🌊</span>
-                            <span class="card-label">Mediterránea</span>
-                        </label>
-                        <label class="radio-card">
-                            <input type="radio" name="cultura" value="Mexicana">
-                            <span class="card-icon">🇲🇽</span>
-                            <span class="card-label">Mexicana</span>
-                        </label>
-                        <label class="radio-card">
-                            <input type="radio" name="cultura" value="China">
-                            <span class="card-icon">🇨🇳</span>
-                            <span class="card-label">China</span>
-                        </label>
-                        <label class="radio-card">
-                            <input type="radio" name="cultura" value="India">
-                            <span class="card-icon">🇮🇳</span>
-                            <span class="card-label">India</span>
-                        </label>
-                        <label class="radio-card">
-                            <input type="radio" name="cultura" value="Japonesa">
-                            <span class="card-icon">🇯🇵</span>
-                            <span class="card-label">Japonesa</span>
-                        </label>
+            <!-- Panel: Preferencias -->
+            <section class="panel" id="preferencesPanel">
+                <div class="panel-header">
+                    <h2>Defina su Experiencia</h2>
+                    <p class="subtitle">Seleccione sus preferencias para crear el menú perfecto</p>
+                </div>
+
+                <form id="preferencesForm" class="form">
+                    
+                    <!-- Tipo de Evento -->
+                    <div class="form-section">
+                        <label class="section-label">Tipo de Evento</label>
+                        <div class="options-grid cols-3">
+                            <label class="option-card">
+                                <input type="radio" name="event_type" value="wedding">
+                                <span class="option-content">
+                                    <span class="option-icon">💍</span>
+                                    <span class="option-text">Boda</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="event_type" value="congress">
+                                <span class="option-content">
+                                    <span class="option-icon">🎯</span>
+                                    <span class="option-text">Congreso</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="event_type" value="family_reunion">
+                                <span class="option-content">
+                                    <span class="option-icon">👨‍👩‍👧‍👦</span>
+                                    <span class="option-text">Reunión Familiar</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cultura Gastronómica -->
+                    <div class="form-section">
+                        <label class="section-label">Cultura Gastronómica</label>
+                        <div class="options-grid cols-4">
+                            <label class="option-card">
+                                <input type="radio" name="culture" value="italian">
+                                <span class="option-content">
+                                    <span class="option-icon">🇮🇹</span>
+                                    <span class="option-text">Italiana</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="culture" value="french">
+                                <span class="option-content">
+                                    <span class="option-icon">🇫🇷</span>
+                                    <span class="option-text">Francesa</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="culture" value="mediterranean">
+                                <span class="option-content">
+                                    <span class="option-icon">🌊</span>
+                                    <span class="option-text">Mediterránea</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="culture" value="american">
+                                <span class="option-content">
+                                    <span class="option-icon">🇺🇸</span>
+                                    <span class="option-text">Americana</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="culture" value="mexican">
+                                <span class="option-content">
+                                    <span class="option-icon">🇲🇽</span>
+                                    <span class="option-text">Mexicana</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="culture" value="japanese">
+                                <span class="option-content">
+                                    <span class="option-icon">🇯🇵</span>
+                                    <span class="option-text">Japonesa</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="culture" value="chinese">
+                                <span class="option-content">
+                                    <span class="option-icon">🇨🇳</span>
+                                    <span class="option-text">China</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="culture" value="indian">
+                                <span class="option-content">
+                                    <span class="option-icon">🇮🇳</span>
+                                    <span class="option-text">India</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Temporada -->
+                    <div class="form-section">
+                        <label class="section-label">Temporada</label>
+                        <div class="options-grid cols-5">
+                            <label class="option-card">
+                                <input type="radio" name="season" value="spring">
+                                <span class="option-content">
+                                    <span class="option-icon">🌸</span>
+                                    <span class="option-text">Primavera</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="season" value="summer">
+                                <span class="option-content">
+                                    <span class="option-icon">☀️</span>
+                                    <span class="option-text">Verano</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="season" value="fall">
+                                <span class="option-content">
+                                    <span class="option-icon">🍂</span>
+                                    <span class="option-text">Otoño</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="season" value="winter">
+                                <span class="option-content">
+                                    <span class="option-icon">❄️</span>
+                                    <span class="option-text">Invierno</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="season" value="any">
+                                <span class="option-content">
+                                    <span class="option-icon">✨</span>
+                                    <span class="option-text">Cualquiera</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Restricciones Dietéticas -->
+                    <div class="form-section">
+                        <label class="section-label">Restricciones Dietéticas</label>
+                        <div class="options-grid cols-3">
+                            <label class="option-card checkbox">
+                                <input type="checkbox" name="restrictions" value="vegan">
+                                <span class="option-content">
+                                    <span class="option-icon">🌱</span>
+                                    <span class="option-text">Vegano</span>
+                                </span>
+                            </label>
+                            <label class="option-card checkbox">
+                                <input type="checkbox" name="restrictions" value="vegetarian">
+                                <span class="option-content">
+                                    <span class="option-icon">🥬</span>
+                                    <span class="option-text">Vegetariano</span>
+                                </span>
+                            </label>
+                            <label class="option-card checkbox">
+                                <input type="checkbox" name="restrictions" value="gluten-free">
+                                <span class="option-content">
+                                    <span class="option-icon">🌾</span>
+                                    <span class="option-text">Sin Gluten</span>
+                                </span>
+                            </label>
+                            <label class="option-card checkbox">
+                                <input type="checkbox" name="restrictions" value="dairy-free">
+                                <span class="option-content">
+                                    <span class="option-icon">🥛</span>
+                                    <span class="option-text">Sin Lácteos</span>
+                                </span>
+                            </label>
+                            <label class="option-card checkbox">
+                                <input type="checkbox" name="restrictions" value="kosher">
+                                <span class="option-content">
+                                    <span class="option-icon">✡️</span>
+                                    <span class="option-text">Kosher</span>
+                                </span>
+                            </label>
+                            <label class="option-card checkbox">
+                                <input type="checkbox" name="restrictions" value="halal">
+                                <span class="option-content">
+                                    <span class="option-icon">☪️</span>
+                                    <span class="option-text">Halal</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Rango de Precio -->
+                    <div class="form-section">
+                        <label class="section-label">Rango de Precio (€ por persona)</label>
+                        <div class="price-range">
+                            <div class="price-inputs">
+                                <div class="price-field">
+                                    <label>Mínimo</label>
+                                    <input type="number" id="minPrice" name="min_price" value="20" min="10" max="200">
+                                </div>
+                                <span class="price-separator">—</span>
+                                <div class="price-field">
+                                    <label>Máximo</label>
+                                    <input type="number" id="maxPrice" name="max_price" value="80" min="20" max="500">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opciones adicionales para bodas -->
+                    <div class="form-section wedding-options hidden" id="weddingOptions">
+                        <label class="section-label">Opciones de Boda</label>
+                        <div class="options-grid cols-2">
+                            <label class="option-card checkbox">
+                                <input type="checkbox" name="quiere_tarta" value="true">
+                                <span class="option-content">
+                                    <span class="option-icon">🎂</span>
+                                    <span class="option-text">Incluir Tarta Nupcial</span>
+                                </span>
+                            </label>
+                            <div class="guests-field">
+                                <label>Número de invitados</label>
+                                <input type="number" name="max_people" value="100" min="20" max="500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        <span>Crear Menú</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Panel: Resultados -->
+            <section class="panel hidden" id="resultsPanel">
+                <div class="panel-header">
+                    <h2>Su Menú Personalizado</h2>
+                    <div class="score-badge" id="scoreBadge">
+                        <span class="score-value">--</span>
+                        <span class="score-label">puntos</span>
                     </div>
                 </div>
 
-                <!-- Estilo de Cocina -->
-                <div class="form-group">
-                    <label>👨‍🍳 Estilo de Cocina</label>
-                    <div class="radio-group style-grid">
-                        <label class="radio-card">
-                            <input type="radio" name="estilo_cocina" value="Tradicional">
-                            <span class="card-icon">🏺</span>
-                            <span class="card-label">Tradicional</span>
-                        </label>
-                        <label class="radio-card">
-                            <input type="radio" name="estilo_cocina" value="Moderno">
-                            <span class="card-icon">✨</span>
-                            <span class="card-label">Moderno</span>
-                        </label>
-                        <label class="radio-card">
-                            <input type="radio" name="estilo_cocina" value="Gourmet">
-                            <span class="card-icon">⭐</span>
-                            <span class="card-label">Gourmet</span>
-                        </label>
-                        <label class="radio-card">
-                            <input type="radio" name="estilo_cocina" value="Casero">
-                            <span class="card-icon">🏠</span>
-                            <span class="card-label">Casero</span>
-                        </label>
-                        <label class="radio-card">
-                            <input type="radio" name="estilo_cocina" value="Saludable">
-                            <span class="card-icon">🥗</span>
-                            <span class="card-label">Saludable</span>
-                        </label>
+                <!-- Información del menú -->
+                <div class="menu-info" id="menuInfo">
+                    <span class="menu-tag" id="menuCulture"></span>
+                    <span class="menu-tag" id="menuSeason"></span>
+                    <span class="menu-tag" id="menuPrice"></span>
+                </div>
+
+                <!-- Cursos del menú -->
+                <div class="courses" id="coursesContainer">
+                    <!-- Se llena dinámicamente -->
+                </div>
+
+                <!-- Adaptaciones realizadas -->
+                <div class="adaptations-section hidden" id="adaptationsSection">
+                    <h3>🔄 Trazabilidad de Adaptaciones</h3>
+                    <p class="adaptations-summary" id="adaptationsSummary"></p>
+                    <div class="adaptations-list" id="adaptationsList"></div>
+                    
+                    <!-- Cultura pendiente -->
+                    <div class="culture-pending hidden" id="culturePendingInfo">
+                        <h4>⏳ Adaptación Cultural Gradual</h4>
+                        <p class="pending-note" id="pendingNote"></p>
+                        <div class="pending-ingredients" id="pendingIngredients"></div>
                     </div>
                 </div>
 
-                <!-- Temporada -->
-                <div class="form-group">
-                    <label>🍂 Temporada</label>
-                    <div class="radio-group season-grid">
-                        <label class="radio-card season-spring">
-                            <input type="radio" name="season" value="Spring">
-                            <span class="card-icon">🌸</span>
-                            <span class="card-label">Primavera</span>
-                        </label>
-                        <label class="radio-card season-summer">
-                            <input type="radio" name="season" value="Summer">
-                            <span class="card-icon">☀️</span>
-                            <span class="card-label">Verano</span>
-                        </label>
-                        <label class="radio-card season-fall">
-                            <input type="radio" name="season" value="Fall">
-                            <span class="card-icon">🍁</span>
-                            <span class="card-label">Otoño</span>
-                        </label>
-                        <label class="radio-card season-winter">
-                            <input type="radio" name="season" value="Winter">
-                            <span class="card-icon">❄️</span>
-                            <span class="card-label">Invierno</span>
-                        </label>
+                <!-- Validación -->
+                <div class="validation-section" id="validationSection">
+                    <div class="validation-header">
+                        <span class="validation-icon" id="validationIcon">✓</span>
+                        <span class="validation-text" id="validationText">Validando...</span>
                     </div>
+                    <div class="validation-details" id="validationDetails"></div>
                 </div>
 
-                <!-- Restricciones Dietéticas -->
-                <div class="form-group">
-                    <label>🥗 Restricciones Dietéticas</label>
-                    <div class="checkbox-group dietary-grid">
-                        <label class="checkbox-card">
-                            <input type="checkbox" name="is_vegan" value="true">
-                            <span class="card-icon">🌱</span>
-                            <span class="card-label">Vegano</span>
-                        </label>
-                        <label class="checkbox-card">
-                            <input type="checkbox" name="is_vegetarian" value="true">
-                            <span class="card-icon">🥬</span>
-                            <span class="card-label">Vegetariano</span>
-                        </label>
-                        <label class="checkbox-card">
-                            <input type="checkbox" name="is_gluten_free" value="true">
-                            <span class="card-icon">🌾</span>
-                            <span class="card-label">Sin Gluten</span>
-                        </label>
-                        <label class="checkbox-card">
-                            <input type="checkbox" name="is_dairy_free" value="true">
-                            <span class="card-icon">🥛</span>
-                            <span class="card-label">Sin Lácteos</span>
-                        </label>
-                        <label class="checkbox-card">
-                            <input type="checkbox" name="is_kosher" value="true">
-                            <span class="card-icon">✡️</span>
-                            <span class="card-label">Kosher</span>
-                        </label>
-                        <label class="checkbox-card">
-                            <input type="checkbox" name="is_halal" value="true">
-                            <span class="card-icon">☪️</span>
-                            <span class="card-label">Halal</span>
-                        </label>
+                <!-- Ajuste Cultural (Segunda Ronda) -->
+                <div class="culture-adjust-section" id="cultureAdjustSection">
+                    <h3>Ajustar Toque Cultural</h3>
+                    <p class="adjust-hint">¿Desea modificar el perfil cultural del menú?</p>
+                    <div class="adjust-controls">
+                        <select id="adjustCulture" class="select-elegant">
+                            <option value="">Seleccione cultura...</option>
+                            <option value="italian">Italiana</option>
+                            <option value="french">Francesa</option>
+                            <option value="mediterranean">Mediterránea</option>
+                            <option value="mexican">Mexicana</option>
+                            <option value="japanese">Japonesa</option>
+                            <option value="chinese">China</option>
+                            <option value="american">Americana</option>
+                            <option value="indian">India</option>
+                        </select>
+                        <button type="button" class="btn-secondary" id="btnAddCulture">
+                            + Añadir toque
+                        </button>
+                        <button type="button" class="btn-secondary btn-remove" id="btnRemoveCulture">
+                            − Quitar toque
+                        </button>
                     </div>
+                    <div class="adjust-message hidden" id="adjustMessage"></div>
                 </div>
 
-                <!-- Presupuesto -->
-                <div class="form-group">
-                    <label>💰 Presupuesto Máximo (€ por persona)</label>
-                    <div class="price-input">
-                        <input type="range" id="maxPrice" name="max_price" min="100" max="800" value="400" step="50">
-                        <output id="priceOutput">400€</output>
-                    </div>
-                </div>
-
-                <button type="submit" class="btn-primary" id="searchBtn">
-                    🔍 Buscar Menú Ideal
-                </button>
-            </form>
-        </section>
-
-        <!-- Panel de Resultados -->
-        <section class="panel results-panel hidden" id="resultsPanel">
-            <h2>🍽️ Menú Recomendado</h2>
-            
-            <!-- Indicador de similitud -->
-            <div class="similarity-badge" id="similarityBadge">
-                <span class="similarity-value">--</span>% coincidencia
-            </div>
-            
-            <!-- Info del menú -->
-            <div class="menu-header" id="menuHeader">
-                <h3 id="menuName">Cargando...</h3>
-                <div class="menu-tags" id="menuTags"></div>
-            </div>
-
-            <!-- Cursos del menú -->
-            <div class="courses-container" id="coursesContainer">
-                <!-- Se llena dinámicamente -->
-            </div>
-
-            <!-- Adaptaciones realizadas -->
-            <div class="adaptations-section" id="adaptationsSection">
-                <h4>🔄 Adaptaciones Realizadas</h4>
-                <div class="adaptations-list" id="adaptationsList"></div>
-            </div>
-
-            <!-- Validación -->
-            <div class="validation-section" id="validationSection">
-                <!-- Se llena dinámicamente -->
-            </div>
-
-            <!-- Totales -->
-            <div class="menu-totals" id="menuTotals">
-                <div class="total-item">
-                    <span class="total-label">💰 Precio Total</span>
-                    <span class="total-value" id="totalPrice">--€</span>
-                </div>
-                <div class="total-item">
-                    <span class="total-label">⏱️ Tiempo Aprox.</span>
-                    <span class="total-value" id="totalTime">-- min</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Panel de Evaluación -->
-        <section class="panel evaluation-panel hidden" id="evaluationPanel">
-            <h2>⭐ Evalúa este Menú</h2>
-            <p class="eval-subtitle">Tu opinión ayuda a mejorar nuestras recomendaciones</p>
-            
-            <form id="evaluationForm">
-                <!-- Rating de estrellas -->
-                <div class="form-group">
-                    <label>¿Qué te parece este menú?</label>
+                <!-- Evaluación -->
+                <div class="evaluation-section" id="evaluationSection">
+                    <h3>Evalúe este Menú</h3>
                     <div class="star-rating" id="starRating">
                         <span class="star" data-value="1">★</span>
                         <span class="star" data-value="2">★</span>
@@ -235,50 +341,33 @@
                         <span class="star" data-value="4">★</span>
                         <span class="star" data-value="5">★</span>
                     </div>
-                    <input type="hidden" name="rating" id="ratingInput" value="0">
-                </div>
-
-                <!-- Satisfacción -->
-                <div class="form-group">
-                    <label>¿El menú cumple tus expectativas?</label>
-                    <div class="satisfaction-buttons">
-                        <button type="button" class="sat-btn" data-value="muy_satisfecho">😍 Muy satisfecho</button>
-                        <button type="button" class="sat-btn" data-value="satisfecho">😊 Satisfecho</button>
-                        <button type="button" class="sat-btn" data-value="neutral">😐 Neutral</button>
-                        <button type="button" class="sat-btn" data-value="insatisfecho">😕 Insatisfecho</button>
-                    </div>
-                    <input type="hidden" name="satisfaction" id="satisfactionInput" value="">
-                </div>
-
-                <!-- Comentarios -->
-                <div class="form-group">
-                    <label>Comentarios (opcional)</label>
-                    <textarea name="comments" id="commentsInput" placeholder="¿Alguna sugerencia o comentario?"></textarea>
-                </div>
-
-                <div class="eval-buttons">
-                    <button type="submit" class="btn-primary" id="submitEvalBtn">
-                        ✅ Enviar Evaluación
-                    </button>
-                    <button type="button" class="btn-secondary" id="newSearchBtn">
-                        🔄 Nueva Búsqueda
+                    <input type="hidden" id="ratingValue" value="0">
+                    <button type="button" class="btn-primary" id="btnSubmitRating" disabled>
+                        Enviar Evaluación
                     </button>
                 </div>
-            </form>
-        </section>
 
-        <!-- Loading overlay -->
+                <!-- Botones de acción -->
+                <div class="action-buttons">
+                    <button type="button" class="btn-outline" id="btnNewSearch">
+                        Nueva Búsqueda
+                    </button>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Loading Overlay -->
         <div class="loading-overlay hidden" id="loadingOverlay">
-            <div class="loading-spinner">
-                <div class="spinner"></div>
-                <p>Analizando menús...</p>
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <p>Preparando su experiencia gastronómica...</p>
             </div>
         </div>
 
         <!-- Footer -->
         <footer class="footer">
-            <p>Sistema CBR de Menús Gastronómicos © 2025</p>
-            <p class="tech">Powered by Case-Based Reasoning</p>
+            <p>MAISON CBR © 2025 · Case-Based Reasoning · Alta Cocina Personalizada</p>
         </footer>
     </div>
 

@@ -1,84 +1,62 @@
 /**
- * Sistema CBR de Menús - JavaScript Cliente
- * ==========================================
- * Maneja la lógica de UI, llamadas a API y flujo del usuario
+ * MAISON CBR - Cliente JavaScript
+ * ================================
+ * Sistema de Menús Gastronómicos con CBR
  */
 
 // Estado de la aplicación
 const state = {
-    userId: localStorage.getItem('cbr_user_id') || generateUserId(),
     sessionId: null,
-    searchCount: 0,
-    currentMenuId: null,
-    currentResult: null
+    currentCaseId: null,
+    currentMenu: null,
+    currentResult: null,
+    currentPreferences: null
 };
 
-// Guardar userId en localStorage
-localStorage.setItem('cbr_user_id', state.userId);
-
-// Generar ID de usuario único
-function generateUserId() {
-    return 'user_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-}
-
-// Generar ID de sesión
-function generateSessionId() {
-    return 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-}
-
-// =============================================================================
+// ============================================================================
 // INICIALIZACIÓN
-// =============================================================================
+// ============================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
     initApp();
 });
 
 function initApp() {
-    // Iniciar nueva sesión
     state.sessionId = generateSessionId();
-    updateSessionDisplay();
     
-    // Event listeners
     setupFormListeners();
-    setupEvaluationListeners();
-    setupPriceSlider();
+    setupResultsListeners();
+    setupStarRating();
 }
 
-// =============================================================================
-// UI: SESSION TRACKER
-// =============================================================================
-
-function updateSessionDisplay() {
-    document.getElementById('sessionId').textContent = state.sessionId.slice(0, 12) + '...';
-    
-    const countEl = document.getElementById('searchCount');
-    if (state.searchCount > 0) {
-        countEl.textContent = `(Búsqueda #${state.searchCount})`;
-    } else {
-        countEl.textContent = '';
-    }
+function generateSessionId() {
+    return 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
 }
 
-// =============================================================================
-// FORM: PREFERENCIAS
-// =============================================================================
+// ============================================================================
+// FORM LISTENERS
+// ============================================================================
 
 function setupFormListeners() {
     const form = document.getElementById('preferencesForm');
     
+    // Submit form
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
         await handleSearch();
     });
-}
-
-function setupPriceSlider() {
-    const slider = document.getElementById('maxPrice');
-    const output = document.getElementById('priceOutput');
     
-    slider.addEventListener('input', () => {
-        output.textContent = slider.value + '€';
+    // Mostrar opciones de boda cuando se selecciona
+    const eventRadios = document.querySelectorAll('input[name="event_type"]');
+    eventRadios.forEach(radio => {
+        radio.addEventListener('change', () => {
+            const weddingOptions = document.getElementById('weddingOptions');
+            if (radio.value === 'wedding' && radio.checked) {
+                weddingOptions.classList.remove('hidden');
+            } else if (radio.checked) {
+                weddingOptions.classList.add('hidden');
+            }
+        });
     });
 }
 
@@ -88,45 +66,49 @@ function getFormPreferences() {
     
     const preferences = {};
     
-    // Cultura
-    const cultura = formData.get('cultura');
-    if (cultura) preferences.cultura = cultura;
+    // Tipo de evento
+    const eventType = formData.get('event_type');
+    if (eventType) preferences.event_type = eventType;
     
-    // Estilo
-    const estilo = formData.get('estilo_cocina');
-    if (estilo) preferences.estilo_cocina = estilo;
+    // Cultura
+    const culture = formData.get('culture');
+    if (culture) preferences.culture = culture;
     
     // Temporada
     const season = formData.get('season');
     if (season) preferences.season = season;
     
-    // Restricciones dietéticas (checkboxes)
-    preferences.is_vegan = formData.get('is_vegan') === 'true';
-    preferences.is_vegetarian = formData.get('is_vegetarian') === 'true';
-    preferences.is_gluten_free = formData.get('is_gluten_free') === 'true';
-    preferences.is_dairy_free = formData.get('is_dairy_free') === 'true';
-    preferences.is_kosher = formData.get('is_kosher') === 'true';
-    preferences.is_halal = formData.get('is_halal') === 'true';
+    // Restricciones (múltiples checkboxes)
+    const restrictions = formData.getAll('restrictions');
+    if (restrictions.length > 0) preferences.restrictions = restrictions;
     
     // Precio
-    preferences.max_price = parseInt(formData.get('max_price'));
+    preferences.min_price = parseInt(formData.get('min_price')) || 20;
+    preferences.max_price = parseInt(formData.get('max_price')) || 80;
+    
+    // Opciones de boda
+    if (eventType === 'wedding') {
+        preferences.quiere_tarta = formData.get('quiere_tarta') === 'true';
+        preferences.max_people = parseInt(formData.get('max_people')) || 100;
+    }
     
     return preferences;
 }
 
-// =============================================================================
+// ============================================================================
 // API: BÚSQUEDA CBR
-// =============================================================================
+// ============================================================================
 
 async function handleSearch() {
     const preferences = getFormPreferences();
     
-    // Validar que hay al menos una preferencia
-    if (!preferences.cultura && !preferences.estilo_cocina && !preferences.season) {
-        alert('Por favor, selecciona al menos una cultura, estilo o temporada.');
+    // Validar
+    if (!preferences.event_type && !preferences.culture && !preferences.season) {
+        alert('Por favor, seleccione al menos un tipo de evento, cultura o temporada.');
         return;
     }
     
+    state.currentPreferences = preferences;
     showLoading(true);
     
     try {
@@ -134,7 +116,6 @@ async function handleSearch() {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                userId: state.userId,
                 sessionId: state.sessionId,
                 preferences
             })
@@ -143,136 +124,83 @@ async function handleSearch() {
         const data = await response.json();
         
         if (data.success) {
-            state.searchCount = data.searchNumber;
-            state.currentResult = data.result;
-            state.currentMenuId = data.result.menu?.menu_id;
+            state.currentCaseId = data.case_id;
+            state.currentResult = data;
+            state.currentMenu = data.menu;
             
-            updateSessionDisplay();
-            displayResults(data.result);
+            displayResults(data);
             showPanel('results');
         } else {
-            alert('Error: ' + data.error);
+            alert('Error: ' + (data.error || 'No se encontraron menús'));
         }
+        
     } catch (error) {
         console.error('Error en búsqueda:', error);
-        alert('Error de conexión. Por favor, intenta de nuevo.');
+        alert('Error de conexión. Por favor, intente de nuevo.');
     } finally {
         showLoading(false);
     }
 }
 
-// =============================================================================
-// UI: MOSTRAR RESULTADOS
-// =============================================================================
+// ============================================================================
+// MOSTRAR RESULTADOS
+// ============================================================================
 
-function displayResults(result) {
-    if (!result.success) {
-        alert('No se encontraron menús: ' + result.error);
-        return;
-    }
+function displayResults(data) {
+    // Score
+    document.querySelector('.score-value').textContent = data.score.toFixed(2);
     
-    const menu = result.menu;
+    // Menu info tags
+    const menu = data.menu;
+    document.getElementById('menuCulture').textContent = `🌍 ${capitalizeFirst(menu.culture)}`;
+    document.getElementById('menuSeason').textContent = `🍂 ${translateSeason(menu.season)}`;
+    document.getElementById('menuPrice').textContent = `💰 ${menu.price_per_serving?.toFixed(2) || '--'}€/persona`;
     
-    // Similitud
-    document.querySelector('.similarity-value').textContent = result.similarity;
-    
-    // Nombre del menú
-    document.getElementById('menuName').textContent = menu.menu_name || 'Menú Recomendado';
-    
-    // Tags del menú
-    const tagsContainer = document.getElementById('menuTags');
-    tagsContainer.innerHTML = '';
-    
-    const tags = [
-        { icon: '🌍', text: menu.culture },
-        { icon: '👨‍🍳', text: menu.style },
-        { icon: '🍂', text: translateSeason(menu.season) },
-        { icon: '🍷', text: menu.wine_pairing }
-    ];
-    
-    tags.forEach(tag => {
-        if (tag.text && tag.text !== 'N/A') {
-            const span = document.createElement('span');
-            span.className = 'menu-tag';
-            span.textContent = `${tag.icon} ${tag.text}`;
-            tagsContainer.appendChild(span);
-        }
-    });
-    
-    // Certificaciones
-    const certs = menu.certifications;
-    if (certs) {
-        if (certs.is_vegan) addTag(tagsContainer, '🌱 Vegano');
-        if (certs.is_vegetarian && !certs.is_vegan) addTag(tagsContainer, '🥬 Vegetariano');
-        if (certs.is_gluten_free) addTag(tagsContainer, '🌾 Sin Gluten');
-        if (certs.is_dairy_free) addTag(tagsContainer, '🥛 Sin Lácteos');
-        if (certs.is_kosher) addTag(tagsContainer, '✡️ Kosher');
-        if (certs.is_halal) addTag(tagsContainer, '☪️ Halal');
-    }
-    
-    // Cursos
+    // Courses
     const coursesContainer = document.getElementById('coursesContainer');
     coursesContainer.innerHTML = '';
     
-    const courseNames = {
-        starter: { name: 'Entrante', icon: '🥗' },
-        main: { name: 'Principal', icon: '🍖' },
-        dessert: { name: 'Postre', icon: '🍰' }
+    const courseLabels = {
+        starter: 'Entrante',
+        main: 'Principal',
+        dessert: 'Postre'
     };
     
     for (const [key, course] of Object.entries(menu.courses || {})) {
-        const info = courseNames[key] || { name: key, icon: '🍽️' };
-        const card = createCourseCard(key, info, course);
+        const card = document.createElement('div');
+        card.className = 'course-card';
+        
+        card.innerHTML = `
+            <span class="course-type">${courseLabels[key] || key}</span>
+            <h4 class="course-title">${course.title || 'Sin título'}</h4>
+            <div class="course-ingredients">
+                ${(course.ingredients || []).slice(0, 12).map(ing => 
+                    `<span class="ingredient-tag">${ing}</span>`
+                ).join('')}
+            </div>
+            <span class="course-price">${course.price?.toFixed(2) || '--'}€</span>
+        `;
+        
         coursesContainer.appendChild(card);
     }
     
-    // Adaptaciones
-    displayAdaptations(result.adaptations);
+    // Adaptations
+    displayAdaptations(data.adaptation);
     
-    // Validación
-    displayValidation(result.validation);
+    // Validation
+    displayValidation(data.validation);
     
-    // Totales
-    document.getElementById('totalPrice').textContent = `${menu.total_price?.toFixed(2) || '--'}€`;
-    document.getElementById('totalTime').textContent = `${menu.avg_time || '--'} min`;
-    
-    // Mostrar panel de evaluación
-    document.getElementById('evaluationPanel').classList.remove('hidden');
-    resetEvaluationForm();
+    // Reset evaluation
+    resetStarRating();
 }
 
-function addTag(container, text) {
-    const span = document.createElement('span');
-    span.className = 'menu-tag';
-    span.textContent = text;
-    container.appendChild(span);
-}
-
-function createCourseCard(key, info, course) {
-    const card = document.createElement('div');
-    card.className = `course-card ${key} fade-in`;
-    
-    card.innerHTML = `
-        <div class="course-header">
-            <span class="course-type">${info.icon} ${info.name}</span>
-            <span class="course-price">${course.price?.toFixed(2) || '--'}€</span>
-        </div>
-        <div class="course-title">${course.title || 'Sin título'}</div>
-        <div class="course-ingredients">
-            ${(course.ingredients || []).map(ing => 
-                `<span class="ingredient-tag">${ing}</span>`
-            ).join('')}
-        </div>
-    `;
-    
-    return card;
-}
-
-function displayAdaptations(adaptations) {
+function displayAdaptations(adaptation) {
     const section = document.getElementById('adaptationsSection');
     const list = document.getElementById('adaptationsList');
+    const summary = document.getElementById('adaptationsSummary');
+    const culturePending = document.getElementById('culturePendingInfo');
     
-    if (!adaptations || adaptations.total_changes === 0) {
+    if (!adaptation || (!adaptation.substitutions || adaptation.substitutions.length === 0) && !adaptation.adapted) {
         section.classList.add('hidden');
         return;
     }
@@ -280,149 +208,316 @@ function displayAdaptations(adaptations) {
     section.classList.remove('hidden');
     list.innerHTML = '';
     
-    // Mostrar sustituciones
-    (adaptations.substitutions || []).slice(0, 8).forEach(sub => {
+    // Resumen de adaptaciones
+    let summaryText = '';
+    if (adaptation.restrictions_adapted && adaptation.restrictions_adapted.length > 0) {
+        summaryText += `Restricciones adaptadas: ${adaptation.restrictions_adapted.join(', ')}. `;
+    }
+    if (adaptation.culture_adapted) {
+        summaryText += `Cultura adaptada: ${adaptation.culture_adapted}. `;
+    }
+    summaryText += `Total de cambios: ${adaptation.total_changes}.`;
+    summary.textContent = summaryText;
+    
+    // Renderizar cada sustitución con trazabilidad
+    adaptation.substitutions.forEach(sub => {
         const item = document.createElement('div');
         item.className = 'adaptation-item';
         
-        const typeName = getAdaptationTypeName(sub.type);
-        
-        item.innerHTML = `
-            <span class="adaptation-type ${sub.type}">${typeName}</span>
-            <span class="adaptation-change">
-                <strong>${sub.original}</strong>
-                <span class="adaptation-arrow">→</span>
-                <strong>${sub.substitute}</strong>
-            </span>
+        // Header con curso y acción
+        let headerHTML = `
+            <div class="adaptation-header">
+                <span class="adaptation-course">${translateCourse(sub.course)}</span>
+                <span class="adaptation-action ${sub.action}">${translateAction(sub.action)}</span>
+            </div>
         `;
+        
+        // Cambio principal
+        let changeHTML = '<div class="adaptation-change">';
+        if (sub.action === 'removed') {
+            changeHTML += `
+                <span class="original">${sub.original}</span>
+                <span class="arrow">→</span>
+                <span class="removed">ELIMINADO</span>
+            `;
+        } else if (sub.action === 'added') {
+            changeHTML += `
+                <span class="arrow">+</span>
+                <span class="substitute">${sub.substitute}</span>
+            `;
+        } else if (sub.action === 'kept') {
+            changeHTML += `
+                <span class="original">${sub.original}</span>
+                <span class="arrow">→</span>
+                <span style="color: var(--warning);">MANTENIDO</span>
+            `;
+        } else {
+            changeHTML += `
+                <span class="original">${sub.original || '?'}</span>
+                <span class="arrow">→</span>
+                <span class="substitute">${sub.substitute || '?'}</span>
+            `;
+        }
+        changeHTML += '</div>';
+        
+        // Razones/justificaciones
+        let reasonsHTML = '';
+        if (sub.reason && sub.reason.length > 0) {
+            reasonsHTML = '<div class="adaptation-reasons">';
+            sub.reason.forEach(r => {
+                reasonsHTML += `<div class="reason">${r}</div>`;
+            });
+            reasonsHTML += '</div>';
+        }
+        
+        // Traza de búsqueda
+        let traceHTML = '';
+        if (sub.search_attempts && sub.search_attempts.length > 0) {
+            traceHTML = `<div class="adaptation-trace">Búsqueda: ${sub.search_attempts.join(' → ')}`;
+            if (sub.candidates_found > 0) {
+                traceHTML += ` (${sub.candidates_found} candidatos evaluados)`;
+            }
+            traceHTML += '</div>';
+        }
+        
+        // Nota o warning
+        let noteHTML = '';
+        if (sub.warning) {
+            noteHTML = `<div class="adaptation-warning">⚠️ ${sub.warning}</div>`;
+        } else if (sub.note) {
+            noteHTML = `<div class="adaptation-trace">ℹ️ ${sub.note}</div>`;
+        }
+        
+        item.innerHTML = headerHTML + changeHTML + reasonsHTML + traceHTML + noteHTML;
         list.appendChild(item);
     });
     
-    // Mostrar cambios de proceso
-    (adaptations.process_changes || []).slice(0, 4).forEach(proc => {
-        const item = document.createElement('div');
-        item.className = 'adaptation-item';
+    // Mostrar información de cultura pendiente
+    if (adaptation.culture_pending && adaptation.culture_pending_count > 0) {
+        culturePending.classList.remove('hidden');
         
-        item.innerHTML = `
-            <span class="adaptation-type style">PROCESO</span>
-            <span class="adaptation-change">
-                <strong>${proc.original_method}</strong>
-                <span class="adaptation-arrow">→</span>
-                <strong>${proc.new_method}</strong>
-            </span>
-        `;
-        list.appendChild(item);
-    });
+        document.getElementById('pendingNote').textContent = 
+            adaptation.adaptation_note || 
+            `Quedan ${adaptation.culture_pending_count} ingredientes por adaptar culturalmente. ` +
+            `Puede solicitar más ajustes usando el panel de abajo.`;
+        
+        const pendingContainer = document.getElementById('pendingIngredients');
+        pendingContainer.innerHTML = '';
+        
+        if (adaptation.culture_pending_ingredients && adaptation.culture_pending_ingredients.length > 0) {
+            adaptation.culture_pending_ingredients.slice(0, 8).forEach(ing => {
+                const span = document.createElement('span');
+                span.className = 'pending-ingredient';
+                span.textContent = ing;
+                pendingContainer.appendChild(span);
+            });
+            
+            if (adaptation.culture_pending_ingredients.length > 8) {
+                const more = document.createElement('span');
+                more.className = 'pending-ingredient';
+                more.textContent = `+${adaptation.culture_pending_ingredients.length - 8} más`;
+                pendingContainer.appendChild(more);
+            }
+        }
+    } else {
+        culturePending.classList.add('hidden');
+    }
+}
+
+function translateCourse(course) {
+    const translations = {
+        'starter': 'Entrante',
+        'main': 'Principal',
+        'dessert': 'Postre'
+    };
+    return translations[course] || course;
+}
+
+function translateAction(action) {
+    const translations = {
+        'substituted': 'Sustituido',
+        'removed': 'Eliminado',
+        'added': 'Añadido',
+        'kept': 'Mantenido'
+    };
+    return translations[action] || action;
 }
 
 function displayValidation(validation) {
     const section = document.getElementById('validationSection');
+    const icon = document.getElementById('validationIcon');
+    const text = document.getElementById('validationText');
+    const details = document.getElementById('validationDetails');
     
-    if (!validation) {
-        section.classList.add('hidden');
-        return;
+    if (validation.is_valid) {
+        section.className = 'validation-section valid';
+        icon.textContent = '✓';
+        text.textContent = `Menú validado · Performance: ${validation.performance}%`;
+        details.innerHTML = '';
+    } else {
+        section.className = 'validation-section invalid';
+        icon.textContent = '⚠';
+        text.textContent = `${validation.violations} violaciones encontradas`;
+        
+        if (validation.violation_details && validation.violation_details.length > 0) {
+            details.innerHTML = validation.violation_details.map(v => 
+                `<div>• ${v.ingredient || v}: ${v.reason || 'violación detectada'}</div>`
+            ).join('');
+        }
     }
-    
-    section.classList.remove('hidden');
-    section.className = `validation-section ${validation.is_valid ? 'valid' : 'invalid'}`;
-    
-    const icon = validation.is_valid ? '✅' : '⚠️';
-    const message = validation.is_valid ? 'Menú validado correctamente' : 'Menú con advertencias';
-    
-    let detailsHTML = '';
-    
-    if (validation.critical_issues?.length > 0) {
-        detailsHTML += validation.critical_issues.map(issue => `<div>${issue}</div>`).join('');
-    }
-    
-    if (validation.warnings?.length > 0) {
-        detailsHTML += validation.warnings.map(warn => `<div>${warn}</div>`).join('');
-    }
-    
-    section.innerHTML = `
-        <span class="validation-icon">${icon}</span>
-        <span class="validation-message">${message}</span>
-        ${detailsHTML ? `<div class="validation-details">${detailsHTML}</div>` : ''}
-    `;
 }
 
-// =============================================================================
-// EVALUACIÓN
-// =============================================================================
+// ============================================================================
+// AJUSTE CULTURAL
+// ============================================================================
 
-function setupEvaluationListeners() {
-    // Stars
+function setupResultsListeners() {
+    // Botón añadir cultura
+    document.getElementById('btnAddCulture').addEventListener('click', async () => {
+        const culture = document.getElementById('adjustCulture').value;
+        if (!culture) {
+            alert('Por favor, seleccione una cultura.');
+            return;
+        }
+        await handleCultureAdjust('add', culture);
+    });
+    
+    // Botón quitar cultura
+    document.getElementById('btnRemoveCulture').addEventListener('click', async () => {
+        const culture = document.getElementById('adjustCulture').value;
+        if (!culture) {
+            alert('Por favor, seleccione una cultura.');
+            return;
+        }
+        await handleCultureAdjust('remove', culture);
+    });
+    
+    // Nueva búsqueda
+    document.getElementById('btnNewSearch').addEventListener('click', () => {
+        showPanel('preferences');
+        resetForm();
+    });
+    
+    // Enviar evaluación
+    document.getElementById('btnSubmitRating').addEventListener('click', handleEvaluation);
+}
+
+async function handleCultureAdjust(action, culture) {
+    showLoading(true);
+    
+    try {
+        const response = await fetch('/api/cbr/adjust', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                case_id: state.currentCaseId,
+                culture_adjustment: action,
+                culture_adjustment_target: culture,
+                restrictions: state.currentPreferences?.restrictions || []
+            })
+        });
+        
+        const data = await response.json();
+        const messageDiv = document.getElementById('adjustMessage');
+        
+        if (data.success && data.adjusted) {
+            messageDiv.className = 'adjust-message success';
+            messageDiv.textContent = data.message;
+            messageDiv.classList.remove('hidden');
+            
+            // Actualizar menú mostrado
+            if (data.menu) {
+                state.currentMenu = data.menu;
+                // Actualizar visualización de cursos
+                updateCoursesDisplay(data.menu);
+            }
+        } else {
+            messageDiv.className = 'adjust-message error';
+            messageDiv.textContent = data.message || data.error || 'No se pudo realizar el ajuste';
+            messageDiv.classList.remove('hidden');
+        }
+        
+    } catch (error) {
+        console.error('Error en ajuste:', error);
+        alert('Error de conexión.');
+    } finally {
+        showLoading(false);
+    }
+}
+
+function updateCoursesDisplay(menu) {
+    const coursesContainer = document.getElementById('coursesContainer');
+    coursesContainer.innerHTML = '';
+    
+    const courseLabels = {
+        starter: 'Entrante',
+        main: 'Principal',
+        dessert: 'Postre'
+    };
+    
+    for (const [key, course] of Object.entries(menu.courses || {})) {
+        const card = document.createElement('div');
+        card.className = 'course-card';
+        
+        card.innerHTML = `
+            <span class="course-type">${courseLabels[key] || key}</span>
+            <h4 class="course-title">${course.title || 'Sin título'}</h4>
+            <div class="course-ingredients">
+                ${(course.ingredients || []).slice(0, 12).map(ing => 
+                    `<span class="ingredient-tag">${ing}</span>`
+                ).join('')}
+            </div>
+            <span class="course-price">${course.price_per_serving?.toFixed(2) || '--'}€</span>
+        `;
+        
+        coursesContainer.appendChild(card);
+    }
+}
+
+// ============================================================================
+// EVALUACIÓN (RETAIN)
+// ============================================================================
+
+function setupStarRating() {
     const stars = document.querySelectorAll('#starRating .star');
-    stars.forEach(star => {
+    
+    stars.forEach((star, index) => {
         star.addEventListener('click', () => {
             const value = parseInt(star.dataset.value);
-            document.getElementById('ratingInput').value = value;
+            document.getElementById('ratingValue').value = value;
             
-            stars.forEach((s, idx) => {
-                s.classList.toggle('active', idx < value);
+            stars.forEach((s, i) => {
+                s.classList.toggle('active', i < value);
             });
+            
+            document.getElementById('btnSubmitRating').disabled = false;
         });
         
         star.addEventListener('mouseenter', () => {
-            const value = parseInt(star.dataset.value);
-            stars.forEach((s, idx) => {
-                s.style.color = idx < value ? 'var(--primary-color)' : '';
+            stars.forEach((s, i) => {
+                s.classList.toggle('hovered', i <= index);
             });
         });
-    });
-    
-    document.getElementById('starRating').addEventListener('mouseleave', () => {
-        const currentValue = parseInt(document.getElementById('ratingInput').value);
-        const stars = document.querySelectorAll('#starRating .star');
-        stars.forEach((s, idx) => {
-            s.style.color = '';
+        
+        star.addEventListener('mouseleave', () => {
+            stars.forEach(s => s.classList.remove('hovered'));
         });
-    });
-    
-    // Satisfaction buttons
-    const satBtns = document.querySelectorAll('.sat-btn');
-    satBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            satBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            document.getElementById('satisfactionInput').value = btn.dataset.value;
-        });
-    });
-    
-    // Submit evaluation
-    document.getElementById('evaluationForm').addEventListener('submit', async (e) => {
-        e.preventDefault();
-        await handleEvaluation();
-    });
-    
-    // New search
-    document.getElementById('newSearchBtn').addEventListener('click', () => {
-        showPanel('preferences');
-        resetEvaluationForm();
     });
 }
 
-function resetEvaluationForm() {
-    document.getElementById('ratingInput').value = '0';
-    document.getElementById('satisfactionInput').value = '';
-    document.getElementById('commentsInput').value = '';
-    
-    document.querySelectorAll('#starRating .star').forEach(s => s.classList.remove('active'));
-    document.querySelectorAll('.sat-btn').forEach(b => b.classList.remove('active'));
+function resetStarRating() {
+    document.getElementById('ratingValue').value = '0';
+    document.querySelectorAll('#starRating .star').forEach(s => {
+        s.classList.remove('active', 'hovered');
+    });
+    document.getElementById('btnSubmitRating').disabled = true;
 }
 
 async function handleEvaluation() {
-    const rating = parseInt(document.getElementById('ratingInput').value);
-    const satisfaction = document.getElementById('satisfactionInput').value;
-    const comments = document.getElementById('commentsInput').value;
+    const rating = parseInt(document.getElementById('ratingValue').value);
     
     if (rating === 0) {
-        alert('Por favor, selecciona una puntuación de estrellas.');
-        return;
-    }
-    
-    if (!satisfaction) {
-        alert('Por favor, indica tu nivel de satisfacción.');
+        alert('Por favor, seleccione una puntuación.');
         return;
     }
     
@@ -433,95 +528,76 @@ async function handleEvaluation() {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                userId: state.userId,
-                sessionId: state.sessionId,
-                menuId: state.currentMenuId,
-                rating,
-                satisfaction,
-                comments
+                menu: state.currentMenu,
+                original_input: state.currentPreferences,
+                adaptation_steps: state.currentResult?.adaptation?.substitutions || [],
+                revision: {
+                    performance: (state.currentResult?.validation?.performance || 80) / 100,
+                    violations: state.currentResult?.validation?.violation_details || []
+                },
+                user_feedback: rating
             })
         });
         
         const data = await response.json();
         
         if (data.success) {
-            const message = `¡Gracias por tu evaluación!\n\nUtilidad del menú: ${data.menuUtility.toFixed(1)}/5\nTotal de evaluaciones: ${data.totalRatings}`;
+            let message = `¡Gracias por su evaluación!\n\nUtilidad calculada: ${(data.usefulness * 100).toFixed(1)}%`;
+            if (data.case_saved) {
+                message += '\n\nEste caso ha sido guardado en nuestra base de conocimiento.';
+            }
             alert(message);
             
-            // Si no está satisfecho, permitir nueva búsqueda
-            if (satisfaction === 'insatisfecho' || satisfaction === 'neutral') {
-                if (confirm('¿Deseas realizar una nueva búsqueda con preferencias diferentes?')) {
-                    showPanel('preferences');
-                }
-            } else {
-                // Satisfecho - ofrecer nueva sesión o terminar
-                if (confirm('¿Deseas buscar otro menú?')) {
-                    showPanel('preferences');
-                }
+            if (confirm('¿Desea buscar otro menú?')) {
+                showPanel('preferences');
+                resetForm();
             }
-            
-            resetEvaluationForm();
         } else {
             alert('Error al guardar evaluación: ' + data.error);
         }
+        
     } catch (error) {
         console.error('Error en evaluación:', error);
-        alert('Error de conexión. Por favor, intenta de nuevo.');
+        alert('Error de conexión.');
     } finally {
         showLoading(false);
     }
 }
 
-// =============================================================================
+// ============================================================================
 // UTILIDADES
-// =============================================================================
+// ============================================================================
 
 function showPanel(panelName) {
-    const panels = {
-        preferences: document.getElementById('preferencesPanel'),
-        results: document.getElementById('resultsPanel'),
-        evaluation: document.getElementById('evaluationPanel')
-    };
+    document.getElementById('preferencesPanel').classList.toggle('hidden', panelName !== 'preferences');
+    document.getElementById('resultsPanel').classList.toggle('hidden', panelName !== 'results');
     
-    // Ocultar todos primero
-    Object.values(panels).forEach(p => p.classList.add('hidden'));
-    
-    // Mostrar los necesarios
-    if (panelName === 'preferences') {
-        panels.preferences.classList.remove('hidden');
-        panels.results.classList.add('hidden');
-        panels.evaluation.classList.add('hidden');
-    } else if (panelName === 'results') {
-        panels.preferences.classList.add('hidden');
-        panels.results.classList.remove('hidden');
-        panels.evaluation.classList.remove('hidden');
-    }
-    
-    // Scroll al inicio
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function showLoading(show) {
-    const overlay = document.getElementById('loadingOverlay');
-    overlay.classList.toggle('hidden', !show);
+    document.getElementById('loadingOverlay').classList.toggle('hidden', !show);
+}
+
+function resetForm() {
+    document.getElementById('preferencesForm').reset();
+    document.getElementById('weddingOptions').classList.add('hidden');
+    document.getElementById('adjustMessage').classList.add('hidden');
+    resetStarRating();
+}
+
+function capitalizeFirst(str) {
+    if (!str) return 'N/A';
+    return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 function translateSeason(season) {
     const translations = {
-        'Spring': 'Primavera',
-        'Summer': 'Verano',
-        'Fall': 'Otoño',
-        'Winter': 'Invierno'
+        'spring': 'Primavera',
+        'summer': 'Verano',
+        'fall': 'Otoño',
+        'winter': 'Invierno',
+        'any': 'Cualquier temporada'
     };
-    return translations[season] || season;
-}
-
-function getAdaptationTypeName(type) {
-    const names = {
-        'cultural': 'CULTURAL',
-        'dietary': 'DIETÉTICO',
-        'seasonal': 'ESTACIONAL',
-        'style': 'ESTILO'
-    };
-    return names[type] || type.toUpperCase();
+    return translations[season?.toLowerCase()] || season || 'N/A';
 }
